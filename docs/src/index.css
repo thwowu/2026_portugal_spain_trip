@@ -69,7 +69,8 @@
   /* Keep user's variable names for easy copy/paste */
   --primary-color: #a05d34;
   --border-color: #d1a878;
-  --card-bg: #fdf3d7;
+  /* Slightly transparent so the map shows through */
+  --card-bg: rgba(253, 243, 215, 0.84);
   --text-color: #4a4a4a;
   --card-position: right;
   color: var(--text-color);
@@ -81,15 +82,22 @@
 
 .pageItinerary .card {
   background-color: var(--card-bg);
-  border-color: var(--border-color);
-  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
-  background-image: url("https://assets.codepen.io/252820/soft-wallpaper.png");
-  background-size: cover;
+  border-color: color-mix(in oklab, var(--border-color) 90%, transparent);
+  box-shadow: 2px 8px 20px rgba(0, 0, 0, 0.18);
+  /* Avoid opaque textures so the "map behind" is visible. */
+  background-image: none;
 }
 
 @media (hover: hover) and (pointer: fine) {
   .pageItinerary .card:hover {
     transform: translateY(-4px);
+  }
+}
+
+@supports ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  .pageItinerary .card {
+    -webkit-backdrop-filter: blur(10px) saturate(1.08);
+    backdrop-filter: blur(10px) saturate(1.08);
   }
 }
 
@@ -106,8 +114,8 @@
 }
 
 .pageItinerary .overlay {
-  /* Keep the map readable: too much white haze makes tiles/labels disappear */
-  background: rgba(255, 255, 255, 0.18);
+  /* User request: no haze/overlay on maps */
+  background: transparent;
 }
 
 /* Optional styles kept from the provided snippet (currently not required by our markup) */
@@ -566,6 +574,29 @@ select:focus-visible {
 
 .prose {
   /* Readable long-form text blocks (details, notes, etc.) */
+}
+
+.attrProse {
+  /* Attractions/Extensions: editorial long-form reading */
+  font-size: var(--text-md);
+  line-height: 1.75;
+  letter-spacing: 0.002em;
+}
+
+.attrProse h3 {
+  margin: 14px 0 0 0;
+  font-weight: 950;
+  letter-spacing: 0.005em;
+}
+
+.attrProse h4 {
+  margin: 12px 0 0 0;
+  font-weight: 900;
+  letter-spacing: 0.003em;
+}
+
+.attrProse p {
+  color: color-mix(in oklab, var(--muted) 85%, var(--text));
 }
 
 .prose p {

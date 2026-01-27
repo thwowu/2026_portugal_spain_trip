@@ -6,7 +6,7 @@ title: 里斯本（Lisbon）→ 拉各斯（Lagos）
 
 # 里斯本（Lisbon）→ 拉各斯（Lagos）
 
-🧳 先看 tldr｜🚌/🚆 再看 options｜🅱️ 走 planB（誤點/班次取消時）
+🧳 先看 tldr｜🚌/🚆 再看 options
 
 ## tldr
 - recommended: bus
@@ -54,12 +54,6 @@ title: 里斯本（Lisbon）→ 拉各斯（Lagos）
   - 出發站點（Oriente/Sete Rios）要先確認，避免跑錯站
 - screenshots:
   - 巴士班次/票價（示意） | /images/transport/lisbon-lagos-bus.png
-
-## planB
-- 火車轉乘看起來太緊/太麻煩 → 改直達巴士（FlixBus / Rede Expressos）
-- 巴士滿位 → 往前/往後找鄰近班次；或改從另一個里斯本站點出發（Oriente ↔ Sete Rios）
-- 晚到/誤點 → 抵達後先「入住＋吃飯」，把海邊行程挪到隔天早上
-- 想更彈性/想中途停靠 → 改自駕/包車（成本高但最省心，車型要能放下行李）
 
 ## legacy_notes
 - 舊版長文筆記（含更多住宿分析）已搬到 `stays.lisbon.legacy.md`。

@@ -77,7 +77,6 @@ export function parseTransportSegmentMd({ sourcePath, raw }) {
 
   if (!tldrH2) throw mdError(sourcePath, h1.line, 'Missing section: ## tldr')
   if (!optionsH2) throw mdError(sourcePath, h1.line, 'Missing section: ## options')
-  if (!planBH2) throw mdError(sourcePath, h1.line, 'Missing section: ## planB')
 
   const { scalars: tldrScalars, lists: tldrLists } = parseKeyedBullets(tldrH2, sourcePath)
   const recommended = tldrScalars.get('recommended')
@@ -133,8 +132,8 @@ export function parseTransportSegmentMd({ sourcePath, raw }) {
 
   if (!options.length) throw mdError(sourcePath, optionsH2.line, '## options must include at least 1 ### option')
 
-  const planB = listTopLevelBullets(planBH2.content).map((r) => r.text)
-  if (!planB.length) throw mdError(sourcePath, planBH2.line, '## planB must include at least 1 bullet')
+  // planB is optional; if present but empty, just ignore (don't fail the build).
+  const planB = planBH2 ? listTopLevelBullets(planBH2.content).map((r) => r.text).filter(Boolean) : []
 
   return {
     id,
@@ -145,7 +144,7 @@ export function parseTransportSegmentMd({ sourcePath, raw }) {
       reminders,
     },
     options,
-    planB,
+    ...(planB.length ? { planB } : {}),
   }
 }
 

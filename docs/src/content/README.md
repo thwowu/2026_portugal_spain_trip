@@ -103,12 +103,6 @@ title: 里斯本（Lisbon）住宿
 ## moneySavingTips
 - ...
 
-## riskMatrix
-| 項目 | Option A | Option B |
-| --- | --- | --- |
-| 電梯 | ✅ | ✅ |
-| 櫃檯服務 | 24H | 24H |
-
 ## scoringModel
 ### weights
 - 抵達日穩定性（長途交通後/第一晚） | weight=0.3

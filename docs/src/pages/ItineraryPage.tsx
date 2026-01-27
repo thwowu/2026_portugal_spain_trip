@@ -141,15 +141,6 @@ export function ItineraryPage() {
   const expandAll = () => setOpenDays(Object.fromEntries(allDays.map((d) => [d.day, true])))
   const collapseAll = () => setOpenDays({})
 
-  const adjacentDays = useMemo(() => {
-    const idx = allDays.findIndex((d) => d.day === activeDay)
-    if (idx < 0) return { prev: null as ItineraryDay | null, next: null as ItineraryDay | null }
-    return {
-      prev: allDays[idx - 1] ?? null,
-      next: allDays[idx + 1] ?? null,
-    }
-  }, [allDays, activeDay])
-
   const activeCityId = useMemo<CityId>(() => {
     const d = allDays.find((x) => x.day === activeDay)
     return d ? cityIdFromLabel(d.cityLabel) : 'lisbon'
@@ -218,13 +209,6 @@ export function ItineraryPage() {
                 if (el) dayRefs.current.set(day, el)
               }}
             />
-
-            <AdjacentDayDock
-              motionEnabled={motionEnabled}
-              activeDay={activeDay}
-              prev={adjacentDays.prev}
-              next={adjacentDays.next}
-            />
           </>
         ) : (
           // Scrollytelling layout owns the scroll container + fixed map.
@@ -273,63 +257,6 @@ export function ItineraryPage() {
           />
         )}
       </div>
-    </div>
-  )
-}
-
-function AdjacentDayDock({
-  motionEnabled,
-  activeDay,
-  prev,
-  next,
-}: {
-  motionEnabled: boolean
-  activeDay: number
-  prev: ItineraryDay | null
-  next: ItineraryDay | null
-}) {
-  const jump = (day: number) => scrollToId(`day-${day}`, motionEnabled)
-  const label = (d: ItineraryDay) => `Day ${d.day}｜${d.cityLabel}｜${d.title}`
-
-  // Avoid showing an empty dock in weird edge states.
-  if (!prev && !next) return null
-
-  return (
-    <div className={styles.adjacentDock} aria-label="前後一天">
-      <button
-        type="button"
-        className={`card ${styles.adjacentCard} ${styles.adjacentCardTop} ${!prev ? styles.adjacentCardDisabled : ''}`}
-        onClick={() => prev && jump(prev.day)}
-        disabled={!prev}
-        aria-label={prev ? `上一天：${label(prev)}` : '沒有上一天'}
-        title={prev ? `上一天：${label(prev)}` : '沒有上一天'}
-      >
-        <div className="cardInner" style={{ padding: 12 }}>
-          <div className={styles.adjacentMeta}>上一天</div>
-          <div className={styles.adjacentTitle}>{prev ? `Day ${prev.day}` : '—'}</div>
-          <div className={styles.adjacentSub}>{prev ? `${prev.cityLabel}｜${prev.title}` : '已經是第一天'}</div>
-        </div>
-      </button>
-
-      <button
-        type="button"
-        className={`card ${styles.adjacentCard} ${styles.adjacentCardBottom} ${!next ? styles.adjacentCardDisabled : ''}`}
-        onClick={() => next && jump(next.day)}
-        disabled={!next}
-        aria-label={next ? `下一天：${label(next)}` : '沒有下一天'}
-        title={next ? `下一天：${label(next)}` : '沒有下一天'}
-      >
-        <div className="cardInner" style={{ padding: 12 }}>
-          <div className={styles.adjacentMeta}>下一天</div>
-          <div className={styles.adjacentTitle}>{next ? `Day ${next.day}` : '—'}</div>
-          <div className={styles.adjacentSub}>{next ? `${next.cityLabel}｜${next.title}` : '已經是最後一天'}</div>
-        </div>
-      </button>
-
-      {/* Keep a tiny center indicator for screen readers only. */}
-      <span aria-hidden="true" style={{ position: 'absolute', left: -9999, top: -9999 }}>
-        Day {activeDay}
-      </span>
     </div>
   )
 }

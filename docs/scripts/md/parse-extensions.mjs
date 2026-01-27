@@ -5,7 +5,6 @@ import {
   mdError,
   parseFrontmatter,
   parseLines,
-  listBulletsAll,
 } from './md.mjs'
 
 function slugify(s) {
@@ -58,28 +57,47 @@ export function parseExtensionsCityMd({ sourcePath, raw }) {
 
     if (!id) throw mdError(sourcePath, h2.line, 'Invalid trip heading (expected "id | title")')
 
-    const sections = []
+    let sections = []
 
     // H3 sections preferred.
     const h3s = findChildren(h2, 3)
     for (const h3 of h3s) {
       const key = slugify(h3.text.trim() || 'section')
-      const items = listBulletsAll(h3.content).map((x) => x.text)
-      if (!items.length) continue
+      const content = h3.content.map((r) => r.text).join('\n').trim()
+      if (!content) continue
       sections.push({
         key,
         title: DEFAULT_SECTION_TITLES[key] || h3.text.trim() || key,
-        items,
+        content,
       })
     }
 
-    // If the trip has bullets directly under H2, collect them as a "notes" section.
-    const topItems = listBulletsAll(h2.content).map((x) => x.text)
-    if (topItems.length) {
-      sections.unshift({ key: 'notes', title: '重點（Notes）', items: topItems })
+    // If the trip has content directly under H2, collect it as a "notes" section (prose).
+    // (This allows a short intro before the first H3 section.)
+    const topContent = h2.content.map((r) => r.text).join('\n').trim()
+    if (topContent) {
+      sections.unshift({ key: 'notes', title: '重點（Notes）', content: topContent })
     }
 
-    if (!sections.length) throw mdError(sourcePath, h2.line, `Trip "${id}" must include at least 1 bullet item`)
+    // Collapse overview content into a single `notes` section.
+    // Authoring may include:
+    // - H2 top content (notes)
+    // - H3 `summary`
+    // - H3 `why`
+    // We merge them to reduce fragmentation in the UI and keep authoring flexible.
+    const OVERVIEW_KEYS = ['notes', 'summary', 'why']
+    const overviewChunks = []
+    for (const k of OVERVIEW_KEYS) {
+      const sec = sections.find((s) => s.key === k)
+      if (sec?.content?.trim()) overviewChunks.push(sec.content.trim())
+    }
+    if (overviewChunks.length) {
+      const mergedNotes = overviewChunks.join('\n\n').trim()
+      const rest = sections.filter((s) => !OVERVIEW_KEYS.includes(s.key))
+      sections = [{ key: 'notes', title: '重點（Notes）', content: mergedNotes }, ...rest]
+    }
+
+    if (!sections.length) throw mdError(sourcePath, h2.line, `Trip "${id}" must include at least 1 non-empty section`)
 
     trips.push({ id, title: tripTitle, sections })
   }

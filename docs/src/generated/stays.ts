@@ -10,7 +10,7 @@ export const STAYS_DATA: CityStay[] = [
     "title": "格拉納達（Granada）住宿",
     "options": [
       {
-        "name": "Centro（市中心；大教堂/格蘭大道 Gran Vía 一帶，首選：省坡）",
+        "name": "市中心（Centro；大教堂/格蘭大道 Gran Vía 一帶，首選：省坡）",
         "why": [],
         "risks": [
           "旺季價格浮動，熱門路段可能有噪音（餐廳/人流）"
@@ -62,64 +62,6 @@ export const STAYS_DATA: CityStay[] = [
       "善用「60 分鐘免費轉乘」：把行程拆成「上坡搭車、下坡步行」或「去程搭車、回程走路」，通常最省錢也最省力。（Movilidad Granada：[`Bus fares`](http://www.movilidadgranada.com/bus_tarifas.php?idioma=en)）",
       "坡段把錢花在省體力：上阿爾拜辛/阿爾罕布拉那種坡，公車票錢通常比膝蓋受傷與時間成本更便宜。（Wikivoyage：[`Granada`](https://en.wikivoyage.org/wiki/Granada_(Spain))）"
     ],
-    "riskMatrix": {
-      "headers": [
-        "項目",
-        "Centro",
-        "Realejo",
-        "Albaicín"
-      ],
-      "rows": [
-        {
-          "label": "爬坡風險",
-          "values": [
-            "低",
-            "中",
-            "高"
-          ]
-        },
-        {
-          "label": "拖行李友善度",
-          "values": [
-            "高",
-            "中",
-            "低"
-          ]
-        },
-        {
-          "label": "去餐廳/補給",
-          "values": [
-            "高",
-            "高",
-            "中"
-          ]
-        },
-        {
-          "label": "去 Alhambra 動線",
-          "values": [
-            "中",
-            "高",
-            "中"
-          ]
-        },
-        {
-          "label": "去 Albaicín 動線",
-          "values": [
-            "中",
-            "中",
-            "高（但你已在那）"
-          ]
-        },
-        {
-          "label": "夜間安全/好走度",
-          "values": [
-            "中高",
-            "中",
-            "中低（看巷弄）"
-          ]
-        }
-      ]
-    },
     "scoringModel": {
       "weights": [
         {
@@ -250,80 +192,6 @@ export const STAYS_DATA: CityStay[] = [
       "若你打算用巴士跑阿爾加維多城：用 VAMUS 的 3 日/7 日 `Tourist Pass` 可能比單次買票省腦也省錢（以行程密度為準）。（VAMUS：[`Passe Turístico / Tourist Pass` PDF](http://vamus.pt/wp-content/uploads/2022/06/Flyer-Passe-Turistico-_08Abril2022-2.pdf)）",
       "行李多/晚上回住宿：底層策略是「住平地、離車站/terminal 近」（例如 Meia Praia / 火車站一帶）來減少搬運；真的卡住就把行程節奏放慢、沿大路走，或改成先回住宿放行李再出門；若你還是覺得不安全/太累，短程計程車通常很便宜，直接搭。（Wikivoyage：[`Lagos (Portugal)`](https://en.wikivoyage.org/wiki/Lagos_(Portugal))）"
     ],
-    "riskMatrix": {
-      "headers": [
-        "項目",
-        "Lagos Old Town / Marina",
-        "Praia Dona Ana / Ponta da Piedade",
-        "Meia Praia / 火車站一帶"
-      ],
-      "rows": [
-        {
-          "label": "走路解決比例",
-          "values": [
-            "高",
-            "中",
-            "低～中"
-          ]
-        },
-        {
-          "label": "夜間噪音風險",
-          "values": [
-            "中高（旺季）",
-            "中",
-            "低～中"
-          ]
-        },
-        {
-          "label": "去海灘/步道",
-          "values": [
-            "中",
-            "高",
-            "高（Meia Praia）"
-          ]
-        },
-        {
-          "label": "去舊城餐廳密度",
-          "values": [
-            "高",
-            "中",
-            "低～中"
-          ]
-        },
-        {
-          "label": "搬行李友善度",
-          "values": [
-            "中",
-            "中低（可能有坡/階）",
-            "高（多為平地）"
-          ]
-        },
-        {
-          "label": "轉乘/跨城交通方便",
-          "values": [
-            "高",
-            "中",
-            "中（火車方便、巴士看距離）"
-          ]
-        },
-        {
-          "label": "適合「不自駕」",
-          "values": [
-            "✅",
-            "✅",
-            "✅"
-          ]
-        },
-        {
-          "label": "適合「自駕」",
-          "values": [
-            "⚠️ 停車麻煩",
-            "⚠️ 停車看地點",
-            "✅ 相對好找"
-          ]
-        }
-      ]
-    },
     "scoringModel": {
       "weights": [
         {
@@ -468,107 +336,6 @@ export const STAYS_DATA: CityStay[] = [
       "驗票時把卡/手機從皮夾拿出來，避免多張 *contactless* 卡一起感應造成失敗或扣錯。（Metro Lisboa：[`Viajar no Metro com cartão bancário contactless`](https://www.metrolisboa.pt/comprar/viajar-no-metro-com-cartao-bancario-contactless/)）",
       "行李日/坡多的區域：最省錢的底層策略是「住宿選平地＋離地鐵近」＋「該搭地鐵就搭」；如果你已經卡在上坡/行李很重/晚到，就把節奏放慢、走大路，或先回到最近的地鐵/公車主幹線再轉（避免走錯路與摔倒風險）。（Wikivoyage：[`Lisbon`](https://en.wikivoyage.org/wiki/Lisbon)；Wikitravel：[`Lisbon`](https://wikitravel.org/en/Lisbon)）"
     ],
-    "riskMatrix": {
-      "headers": [
-        "項目",
-        "Luzeiros Suites",
-        "Lx Soho Boutique",
-        "Republica 83",
-        "easyHotel Lisbon"
-      ],
-      "rows": [
-        {
-          "label": "住宿型態",
-          "values": [
-            "正規飯店",
-            "正規飯店",
-            "公寓式",
-            "連鎖平價飯店"
-          ]
-        },
-        {
-          "label": "電梯",
-          "values": [
-            "✅ 穩定",
-            "✅ 穩定",
-            "⚠️ 老樓電梯",
-            "✅ 穩定"
-          ]
-        },
-        {
-          "label": "櫃檯服務",
-          "values": [
-            "24H",
-            "24H",
-            "無",
-            "24H"
-          ]
-        },
-        {
-          "label": "行李寄放",
-          "values": [
-            "可",
-            "可",
-            "需外部方案",
-            "可"
-          ]
-        },
-        {
-          "label": "交通便利",
-          "values": [
-            "高",
-            "高",
-            "高",
-            "中"
-          ]
-        },
-        {
-          "label": "爬坡風險",
-          "values": [
-            "低",
-            "低",
-            "低",
-            "低"
-          ]
-        },
-        {
-          "label": "房間空間",
-          "values": [
-            "大",
-            "中",
-            "中",
-            "小"
-          ]
-        },
-        {
-          "label": "評論穩定度",
-          "values": [
-            "高",
-            "中高",
-            "中低",
-            "中"
-          ]
-        },
-        {
-          "label": "第一晚風險",
-          "values": [
-            "低",
-            "低",
-            "高",
-            "中"
-          ]
-        },
-        {
-          "label": "成本",
-          "values": [
-            "中",
-            "中高",
-            "低",
-            "低"
-          ]
-        }
-      ]
-    },
     "scoringModel": {
       "weights": [
         {
@@ -656,7 +423,7 @@ export const STAYS_DATA: CityStay[] = [
     "title": "馬德里（Madrid）住宿",
     "options": [
       {
-        "name": "Centro（市中心；太陽門 Puerta del Sol / 格蘭大道 Gran Vía / 主廣場 Plaza Mayor 一帶，首選：步行動線最直覺）",
+        "name": "市中心（Centro；太陽門 Puerta del Sol / 格蘭大道 Gran Vía / 主廣場 Plaza Mayor 一帶，首選：步行動線最直覺）",
         "why": [],
         "risks": [
           "人潮密度高、噪音風險較高；價格也較浮動"
@@ -669,7 +436,7 @@ export const STAYS_DATA: CityStay[] = [
         ]
       },
       {
-        "name": "Retiro / Paseo del Arte / Atocha（麗池公園 Parque del Retiro / 藝術大道 Paseo del Arte / 阿托查 Atocha；次選：博物館/公園動線方便）",
+        "name": "麗池／藝術大道／阿托查（Retiro / Paseo del Arte / Atocha；麗池公園 Parque del Retiro / 藝術大道 Paseo del Arte / 阿托查 Atocha；次選：博物館/公園動線方便）",
         "why": [],
         "risks": [
           "去 Centro 夜生活/逛街多半要搭一段地鐵或走 20–40 分鐘"
@@ -682,7 +449,7 @@ export const STAYS_DATA: CityStay[] = [
         ]
       },
       {
-        "name": "Salamanca / Chueca（薩拉曼卡 Salamanca / 丘埃卡 Chueca；備選：乾淨好走＋咖啡店多）",
+        "name": "薩拉曼卡／丘埃卡（Salamanca / Chueca；薩拉曼卡 Salamanca / 丘埃卡 Chueca；備選：乾淨好走＋咖啡店多）",
         "why": [],
         "risks": [
           "距離主要觀光點看你選的位置（可能需要更頻繁搭車）"
@@ -707,72 +474,6 @@ export const STAYS_DATA: CityStay[] = [
       "機場日別為了省幾站票錢繞路：機場地鐵有 €3 suplemento 的規則，直接照售票機流程買最省時間（別到現場才卡在票種組合）。（Aena：[`Cómo llegar en metro`](https://www.aena.es/es/adolfo-suarez-madrid-barajas/como-llegar/metro.html)）",
       "行李日／機場日：人潮多＋扒手風險高，寧可多留時間、少轉乘；把住宿選在「離地鐵站近、平路好走」的點，降低拖行李走遠路的機率。（Wikivoyage：[`Madrid`](https://en.wikivoyage.org/wiki/Madrid)；Wikitravel：[`Madrid`](https://wikitravel.org/en/Madrid)）"
     ],
-    "riskMatrix": {
-      "headers": [
-        "項目",
-        "Centro（Sol/Gran Vía；市中心）",
-        "Retiro / Paseo del Arte（麗池公園/藝術大道）",
-        "Salamanca / Chueca（薩拉曼卡/丘埃卡）"
-      ],
-      "rows": [
-        {
-          "label": "走路解決比例",
-          "values": [
-            "高",
-            "中",
-            "中"
-          ]
-        },
-        {
-          "label": "夜間噪音風險",
-          "values": [
-            "中高",
-            "中",
-            "低～中"
-          ]
-        },
-        {
-          "label": "交通便利（地鐵/轉乘）",
-          "values": [
-            "高",
-            "高",
-            "高"
-          ]
-        },
-        {
-          "label": "安全/扒手風險（人潮）",
-          "values": [
-            "中高",
-            "中",
-            "中"
-          ]
-        },
-        {
-          "label": "適合「晚到入住」",
-          "values": [
-            "✅",
-            "✅",
-            "✅"
-          ]
-        },
-        {
-          "label": "適合「博物館日」",
-          "values": [
-            "中",
-            "✅",
-            "中"
-          ]
-        },
-        {
-          "label": "適合「緩衝日慢逛」",
-          "values": [
-            "中",
-            "✅",
-            "✅"
-          ]
-        }
-      ]
-    },
     "scoringModel": {
       "weights": [
         {
@@ -849,7 +550,7 @@ export const STAYS_DATA: CityStay[] = [
     "title": "塞維爾（Seville）住宿",
     "options": [
       {
-        "name": "Centro / Santa Cruz（市中心 / 聖十字街區 Barrio Santa Cruz；首選：景點密度高、步行最好用）",
+        "name": "市中心／聖十字街區（Centro / Santa Cruz；市中心 / 聖十字街區 Barrio Santa Cruz；首選：景點密度高、步行最好用）",
         "why": [],
         "risks": [
           "旺季（含 Semana Santa）人潮大、價格浮動，晚上也可能較吵",
@@ -901,72 +602,6 @@ export const STAYS_DATA: CityStay[] = [
       "機場當天若確定會回機場：同日來回直接買 EA return（€6）省一步。（TUSSAM：[`How to get here`（EA）](https://www.tussam.es/en/descubre-sevilla/how-get-here)）",
       "中午最熱/帶行李的移動：優先選「有遮蔭、少走路」的公車/電車路線；如果你發現會變成「走很遠＋曝曬」或「爬樓梯/拖行李」，就把移動改成「先回住宿休息／或把行程砍一段」更保險；真的卡住就短程計程車（通常不貴，買體力也避免中暑）。（Wikitravel：[`Seville`](https://wikitravel.org/en/Seville)）"
     ],
-    "riskMatrix": {
-      "headers": [
-        "項目",
-        "Centro / Santa Cruz",
-        "Santa Justa / Nervión",
-        "Triana"
-      ],
-      "rows": [
-        {
-          "label": "走路解決比例",
-          "values": [
-            "高",
-            "中",
-            "中"
-          ]
-        },
-        {
-          "label": "交通/轉乘便利",
-          "values": [
-            "中",
-            "高",
-            "中"
-          ]
-        },
-        {
-          "label": "夜間噪音風險",
-          "values": [
-            "中高（旺季）",
-            "中",
-            "中"
-          ]
-        },
-        {
-          "label": "人潮密度",
-          "values": [
-            "高",
-            "中",
-            "中"
-          ]
-        },
-        {
-          "label": "午休回住宿方便",
-          "values": [
-            "高",
-            "中",
-            "中"
-          ]
-        },
-        {
-          "label": "適合「快閃半天」",
-          "values": [
-            "✅",
-            "⚠️",
-            "✅"
-          ]
-        },
-        {
-          "label": "適合「帶行李移動」",
-          "values": [
-            "⚠️（老城路況）",
-            "✅",
-            "✅"
-          ]
-        }
-      ]
-    },
     "scoringModel": {
       "weights": [
         {

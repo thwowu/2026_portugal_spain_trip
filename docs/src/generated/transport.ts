@@ -100,10 +100,6 @@ export const TRANSPORT_DATA: TransportSegment[] = [
           }
         ]
       }
-    ],
-    "planB": [
-      "火車滿位 → 看巴士到南站/機場",
-      "若到機場 T4 → 同步調整後續交通安排"
     ]
   },
   {
@@ -151,11 +147,11 @@ export const TRANSPORT_DATA: TransportSegment[] = [
       },
       {
         "mode": "bus",
-        "title": "轉乘方案（經 Faro，更彈性但比較累）",
-        "summary": "若直達班次不合/滿位：先到 Faro（火車/巴士）→ 再接國際巴士到 Seville。",
+        "title": "轉乘方案（經 法魯（Faro），更彈性但比較累）",
+        "summary": "若直達班次不合/滿位：先到 法魯（Faro）（火車/巴士）→ 再接國際巴士到 塞維爾（Seville）。",
         "steps": [
-          "Lagos → Faro（CP 火車或區域巴士，依你當天班次）",
-          "Faro → Seville（FlixBus 等國際巴士；依班次為準）"
+          "拉各斯（Lagos）→ 法魯（Faro）（CP 火車或區域巴士，依你當天班次）",
+          "法魯（Faro）→ 塞維爾（Seville）（FlixBus 等國際巴士；依班次為準）"
         ],
         "bookingLinks": [
           {
@@ -163,7 +159,7 @@ export const TRANSPORT_DATA: TransportSegment[] = [
             "href": "https://www.cp.pt/passageiros/en"
           },
           {
-            "label": "FlixBus（Faro ↔ Seville 路線入口）",
+            "label": "FlixBus（法魯 Faro ↔ 塞維爾 Seville 路線入口）",
             "href": "https://global.flixbus.com/"
           }
         ],
@@ -180,11 +176,6 @@ export const TRANSPORT_DATA: TransportSegment[] = [
           }
         ]
       }
-    ],
-    "planB": [
-      "直達巴士滿位/時間不合 → 改走「轉乘方案」（先到 Faro 再接國際巴士）",
-      "若當天誤點晚到 Seville → 晚上只做「入住＋吃」，隔天再補景點（避免硬衝）",
-      "若你非常想走“最快”且航班可行 → 才考慮 Faro → Seville 的飛機（但行李/安檢成本會放大）"
     ]
   },
   {
@@ -270,12 +261,6 @@ export const TRANSPORT_DATA: TransportSegment[] = [
           }
         ]
       }
-    ],
-    "planB": [
-      "火車轉乘看起來太緊/太麻煩 → 改直達巴士（FlixBus / Rede Expressos）",
-      "巴士滿位 → 往前/往後找鄰近班次；或改從另一個里斯本站點出發（Oriente ↔ Sete Rios）",
-      "晚到/誤點 → 抵達後先「入住＋吃飯」，把海邊行程挪到隔天早上",
-      "想更彈性/想中途停靠 → 改自駕/包車（成本高但最省心，車型要能放下行李）"
     ]
   },
   {
@@ -348,11 +333,6 @@ export const TRANSPORT_DATA: TransportSegment[] = [
           }
         ]
       }
-    ],
-    "planB": [
-      "火車票太貴 → 改 Alsa 巴士",
-      "若選早班巴士 → 注意寄放行李與 check-in",
-      "若你真的需要中途停靠/多人分攤 → 才考慮共乘/租車（旺季不一定好找）"
     ]
   }
 ]

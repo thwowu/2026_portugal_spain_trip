@@ -22,6 +22,16 @@
 | 比卡纜車 / 葛洛麗亞纜車 | Elevador da Bica / Glória | 交通/地標 |
 | 上城 | Bairro Alto | 街區 |
 | 索德雷碼頭 | Cais do Sodré | 交通/區域 |
+| 貝倫塔 | Torre de Belém / Belém Tower | 景點 |
+| 里貝拉市場 | Mercado da Ribeira / Time Out Market | 市場 |
+| 萬國公園 | Parque das Nações | 區域 |
+| 馬丁莫尼什 | Martim Moniz | 區域/廣場 |
+| 莫拉里亞 | Mouraria | 街區 |
+| 聖卡塔琳娜觀景台 | Miradouro de Santa Catarina | 觀景台 |
+| 蒙特聖母觀景台 | Miradouro da Senhora do Monte | 觀景台 |
+| 太陽門觀景台 | Miradouro das Portas do Sol | 觀景台 |
+| 聖盧西亞觀景台 | Miradouro de Santa Luzia | 觀景台 |
+| 聖佩德羅・德・阿爾坎塔拉觀景台 | Miradouro de São Pedro de Alcântara | 觀景台 |
 | LX Factory | LX Factory | 景點 |
 | 聖維森特教堂 | Igreja de São Vicente de Fora | 景點 |
 | 羅西奧車站 | Lisboa Rossio / Rossio Station | 車站（去辛特拉常用） |

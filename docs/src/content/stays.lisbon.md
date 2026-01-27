@@ -6,7 +6,7 @@ title: 里斯本（Lisbon）住宿
 
 # 里斯本（Lisbon）住宿
 
-🛏️ 先看 options 選區域｜🚇 再看 publicTransportHowToBuy｜💸 moneySavingTips｜⚠️ riskMatrix
+🛏️ 先看 options 選區域｜🚇 再看 publicTransportHowToBuy｜💸 moneySavingTips
 
 ## options
 - 盧澤羅斯套房（Luzeiros Suites；首選）
@@ -39,20 +39,6 @@ title: 里斯本（Lisbon）住宿
 - `VIVA Viagem / navegante ocasional` 有效期 1 年、可重複加值：不要用完就丟，之後搭到第 2–3 天就會回本（少買一次新卡就是省）。（Portal VIVA：[`VIVA Viagem`](https://www.portalviva.pt/pt/homepage/cart%C3%B5es/transportes/viva-viagem.aspx)）
 - 驗票時把卡/手機從皮夾拿出來，避免多張 *contactless* 卡一起感應造成失敗或扣錯。（Metro Lisboa：[`Viajar no Metro com cartão bancário contactless`](https://www.metrolisboa.pt/comprar/viajar-no-metro-com-cartao-bancario-contactless/)）
 - 行李日/坡多的區域：最省錢的底層策略是「住宿選平地＋離地鐵近」＋「該搭地鐵就搭」；如果你已經卡在上坡/行李很重/晚到，就把節奏放慢、走大路，或先回到最近的地鐵/公車主幹線再轉（避免走錯路與摔倒風險）。（Wikivoyage：[`Lisbon`](https://en.wikivoyage.org/wiki/Lisbon)；Wikitravel：[`Lisbon`](https://wikitravel.org/en/Lisbon)）
-
-## riskMatrix
-| 項目 | Luzeiros Suites | Lx Soho Boutique | Republica 83 | easyHotel Lisbon |
-| --- | --- | --- | --- | --- |
-| 住宿型態 | 正規飯店 | 正規飯店 | 公寓式 | 連鎖平價飯店 |
-| 電梯 | ✅ 穩定 | ✅ 穩定 | ⚠️ 老樓電梯 | ✅ 穩定 |
-| 櫃檯服務 | 24H | 24H | 無 | 24H |
-| 行李寄放 | 可 | 可 | 需外部方案 | 可 |
-| 交通便利 | 高 | 高 | 高 | 中 |
-| 爬坡風險 | 低 | 低 | 低 | 低 |
-| 房間空間 | 大 | 中 | 中 | 小 |
-| 評論穩定度 | 高 | 中高 | 中低 | 中 |
-| 第一晚風險 | 低 | 低 | 高 | 中 |
-| 成本 | 中 | 中高 | 低 | 低 |
 
 ## scoringModel
 ### weights

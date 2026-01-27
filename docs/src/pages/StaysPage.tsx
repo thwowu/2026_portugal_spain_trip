@@ -1,13 +1,11 @@
-import { useMemo, useState } from 'react'
+import { useMemo } from 'react'
 import { STAYS_DATA } from '../generated'
-import { CITIES, STAYS_CITY_ORDER, type CityId } from '../data/core'
+import { CITIES, STAYS_CITY_ORDER } from '../data/core'
 import { useHashScroll } from '../hooks/useHashScroll'
 import { useReveal } from '../hooks/useReveal'
 import { ILLUSTRATION } from '../illustrations'
 import { PageHero } from '../components/PageHero'
-import type { MarkdownTable } from '../data/stays'
 import { FormattedInline } from '../components/FormattedText'
-import { Modal } from '../components/Modal'
 import { ExpandingBox } from '../components/ExpandingBox'
 import { PixelatedBackground } from '../components/PixelatedBackground'
 
@@ -17,36 +15,8 @@ function statusPill(status: 'primary' | 'secondary' | 'backup' | undefined) {
   return <span className="chip">{label}</span>
 }
 
-function TableView({ table }: { table: MarkdownTable }) {
-  const cols = table.headers.length
-  return (
-    <div className="tableWrap">
-      <table className="matrixTable">
-        <thead>
-          <tr>
-            {table.headers.map((h) => (
-              <th key={h}>{h}</th>
-            ))}
-          </tr>
-        </thead>
-        <tbody>
-          {table.rows.map((r) => (
-            <tr key={r.label}>
-              <td className="matrixTableRowLabel">{r.label}</td>
-              {Array.from({ length: Math.max(0, cols - 1) }).map((_, idx) => (
-                <td key={idx}>{r.values[idx] ?? ''}</td>
-              ))}
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </div>
-  )
-}
-
 export function StaysPage() {
   useHashScroll()
-  const [riskCityId, setRiskCityId] = useState<CityId | null>(null)
 
   const orderedStays = useMemo(() => {
     const idx = new Map<string, number>(STAYS_CITY_ORDER.map((id, i) => [id, i]))
@@ -198,20 +168,6 @@ export function StaysPage() {
                         </ul>
                       </div>
                     </ExpandingBox>
-
-                    <div className="card" style={{ boxShadow: 'none' }}>
-                      <div className="cardInner">
-                        <div style={{ fontWeight: 900 }}>風險矩陣</div>
-                        <div className="muted" style={{ marginTop: 8 }}>
-                          需要時再打開看（手機比較不佔版面）。
-                        </div>
-                        <div style={{ marginTop: 10, display: 'flex', gap: 10, flexWrap: 'wrap' }}>
-                          <button className="btn" onClick={() => setRiskCityId(c.cityId as CityId)}>
-                            看風險矩陣
-                          </button>
-                        </div>
-                      </div>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -219,57 +175,7 @@ export function StaysPage() {
           )
         })}
       </div>
-
-      {riskCityId && (
-        <StayRiskMatrixModal
-          cityId={riskCityId}
-          onClose={() => setRiskCityId(null)}
-        />
-      )}
     </div>
-  )
-}
-
-function StayRiskMatrixModal({
-  cityId,
-  onClose,
-}: {
-  cityId: CityId
-  onClose: () => void
-}) {
-  const city = STAYS_DATA.find((c) => c.cityId === cityId)
-  if (!city) return null
-
-  return (
-    <Modal
-      open
-      ariaLabel="風險評估矩陣"
-      onClose={onClose}
-      overlayClassName="modalOverlay modalOverlayHigh"
-      cardClassName="card modalCard modalCardWide"
-    >
-      <div className="cardInner">
-        <div style={{ display: 'flex', justifyContent: 'space-between', gap: 12, alignItems: 'flex-start' }}>
-          <div>
-            <div className="muted" style={{ fontSize: 'var(--text-xs)' }}>
-              {CITIES[cityId].label}
-            </div>
-            <div style={{ fontWeight: 950, fontSize: 'var(--text-xl)', lineHeight: 1.15, marginTop: 6 }}>
-              風險評估矩陣（Risk matrix）
-            </div>
-          </div>
-          <button className="btn" onClick={onClose}>
-            關閉
-          </button>
-        </div>
-
-        <hr className="hr" />
-
-        <div className="muted">
-          <TableView table={city.riskMatrix} />
-        </div>
-      </div>
-    </Modal>
   )
 }
 

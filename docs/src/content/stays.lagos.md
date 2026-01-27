@@ -6,7 +6,7 @@ title: 拉各斯（Lagos）住宿
 
 # 拉各斯（Lagos）住宿
 
-🛏️ 先看 options 選區域｜🚇 再看 publicTransportHowToBuy｜💸 moneySavingTips｜⚠️ riskMatrix
+🛏️ 先看 options 選區域｜🚇 再看 publicTransportHowToBuy｜💸 moneySavingTips
 
 ## options
 - 拉各斯老城 / 碼頭區（Lagos Old Town / Marina；首選：最省腦）
@@ -36,18 +36,6 @@ title: 拉各斯（Lagos）住宿
 - 真的會一直搭市內公車：把票種簡化成兩步驟 —— 先上車買單程；確認你一天會搭多趟後再改買 `1 日` 或 `多日` 票（A ONDA 有 1/3/5/7 日票）。（A ONDA：[`Tarifários`](https://aonda.pt/onda-tarifas/)）
 - 若你打算用巴士跑阿爾加維多城：用 VAMUS 的 3 日/7 日 `Tourist Pass` 可能比單次買票省腦也省錢（以行程密度為準）。（VAMUS：[`Passe Turístico / Tourist Pass` PDF](http://vamus.pt/wp-content/uploads/2022/06/Flyer-Passe-Turistico-_08Abril2022-2.pdf)）
 - 行李多/晚上回住宿：底層策略是「住平地、離車站/terminal 近」（例如 Meia Praia / 火車站一帶）來減少搬運；真的卡住就把行程節奏放慢、沿大路走，或改成先回住宿放行李再出門；若你還是覺得不安全/太累，短程計程車通常很便宜，直接搭。（Wikivoyage：[`Lagos (Portugal)`](https://en.wikivoyage.org/wiki/Lagos_(Portugal))）
-
-## riskMatrix
-| 項目 | Lagos Old Town / Marina | Praia Dona Ana / Ponta da Piedade | Meia Praia / 火車站一帶 |
-| --- | --- | --- | --- |
-| 走路解決比例 | 高 | 中 | 低～中 |
-| 夜間噪音風險 | 中高（旺季） | 中 | 低～中 |
-| 去海灘/步道 | 中 | 高 | 高（Meia Praia） |
-| 去舊城餐廳密度 | 高 | 中 | 低～中 |
-| 搬行李友善度 | 中 | 中低（可能有坡/階） | 高（多為平地） |
-| 轉乘/跨城交通方便 | 高 | 中 | 中（火車方便、巴士看距離） |
-| 適合「不自駕」 | ✅ | ✅ | ✅ |
-| 適合「自駕」 | ⚠️ 停車麻煩 | ⚠️ 停車看地點 | ✅ 相對好找 |
 
 ## scoringModel
 ### weights

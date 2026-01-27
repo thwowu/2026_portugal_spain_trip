@@ -54,7 +54,7 @@ export function TransportPage() {
             title="交通比較"
             subtitle={
               <>
-                每段移動都有「火車 vs 巴士」比較、以及大建議（含備案與步驟）。
+                每段移動都有「火車 vs 巴士」比較、以及大建議（含步驟）。
               </>
             }
             image={{
@@ -156,20 +156,22 @@ export function TransportPage() {
 
                   <div style={{ height: 12 }} />
 
-                  <div className="card" style={{ boxShadow: 'none' }}>
-                    <div className="cardInner">
-                      <div style={{ fontWeight: 900 }}>Plan B（備案）</div>
-                      <div className="muted" style={{ marginTop: 6 }}>
-                        <ul style={{ margin: 0, paddingLeft: 18 }}>
-                          {seg.planB.map((b) => (
-                            <li key={b} style={{ marginTop: 6 }}>
-                              <FormattedInline text={b} />
-                            </li>
-                          ))}
-                        </ul>
+                  {seg.planB?.length ? (
+                    <div className="card" style={{ boxShadow: 'none' }}>
+                      <div className="cardInner">
+                        <div style={{ fontWeight: 900 }}>Plan B（備案）</div>
+                        <div className="muted" style={{ marginTop: 6 }}>
+                          <ul style={{ margin: 0, paddingLeft: 18 }}>
+                            {seg.planB.map((b) => (
+                              <li key={b} style={{ marginTop: 6 }}>
+                                <FormattedInline text={b} />
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
                       </div>
                     </div>
-                  </div>
+                  ) : null}
                 </div>
               </div>
             </RevealSection>

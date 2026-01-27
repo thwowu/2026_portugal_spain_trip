@@ -92,13 +92,11 @@ export function parseStaysCityMd({ sourcePath, raw }) {
   const optionsH2 = h2s.get('options')
   const ptH2 = h2s.get('publicTransportHowToBuy')
   const tipsH2 = h2s.get('moneySavingTips')
-  const riskMatrixH2 = h2s.get('riskMatrix')
   const scoringModelH2 = h2s.get('scoringModel')
 
   if (!optionsH2) throw mdError(sourcePath, h1.line, 'Missing section: ## options')
   if (!ptH2) throw mdError(sourcePath, h1.line, 'Missing section: ## publicTransportHowToBuy')
   if (!tipsH2) throw mdError(sourcePath, h1.line, 'Missing section: ## moneySavingTips')
-  if (!riskMatrixH2) throw mdError(sourcePath, h1.line, 'Missing section: ## riskMatrix')
   if (!scoringModelH2) throw mdError(sourcePath, h1.line, 'Missing section: ## scoringModel')
 
   /** @type {any[]} */
@@ -156,8 +154,6 @@ export function parseStaysCityMd({ sourcePath, raw }) {
   }
   if (!moneySavingTips.length) throw mdError(sourcePath, tipsH2.line, '## moneySavingTips must have at least 1 item')
 
-  const riskMatrix = parseMarkdownTable(riskMatrixH2, sourcePath, 'riskMatrix')
-
   // scoringModel expects fixed subsections:
   // ### weights
   // - Criterion | weight=0.3
@@ -173,6 +169,6 @@ export function parseStaysCityMd({ sourcePath, raw }) {
   const weights = parseWeights(weightsH3, sourcePath)
   const table = parseMarkdownTable(tableH3, sourcePath, 'scoringModel.table')
 
-  return { cityId, title, options, publicTransportHowToBuy, moneySavingTips, riskMatrix, scoringModel: { weights, table } }
+  return { cityId, title, options, publicTransportHowToBuy, moneySavingTips, scoringModel: { weights, table } }
 }
 

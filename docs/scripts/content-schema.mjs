@@ -83,8 +83,7 @@ export const TransportSegmentSchema = z.object({
     reminders: z.array(z.string().min(1)),
   }),
   options: z.array(TransportOptionSchema).min(1),
-  planB: z.array(z.string().min(1)).min(1),
-  planB: z.array(z.string().min(1)).min(1),
+  planB: z.array(z.string().min(1)).optional(),
 })
 
 export const TransportFileSchema = z.object({
@@ -128,7 +127,6 @@ export const CityStaySchema = z.object({
   options: z.array(StayOptionSchema).min(1),
   publicTransportHowToBuy: z.array(z.string().min(1)),
   moneySavingTips: z.array(z.string().min(1)),
-  riskMatrix: MarkdownTableSchema,
   scoringModel: StayScoringModelSchema,
 })
 
@@ -153,7 +151,9 @@ export const AttractionKindSchema = z.enum([
 export const AttractionsSectionSchema = z.object({
   kind: AttractionKindSchema,
   title: z.string().min(1),
-  items: z.array(z.string().min(1)),
+  // Paragraph-first authoring: store the raw markdown block for the section.
+  // (Can be empty if a section exists but is intentionally left blank.)
+  content: z.string(),
 })
 
 export const CityAttractionsSchema = z.object({
@@ -171,7 +171,7 @@ export const AttractionsFileSchema = z.object({
 export const ExtensionsSectionSchema = z.object({
   key: z.string().min(1),
   title: z.string().min(1),
-  items: z.array(z.string().min(1)),
+  content: z.string().min(1),
 })
 
 export const ExtensionTripSchema = z.object({

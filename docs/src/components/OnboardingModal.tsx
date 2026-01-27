@@ -34,7 +34,7 @@ export function OnboardingModal({ onClose }: { onClose: () => void }) {
           subtitle: '給爸媽一眼看懂：交通方便／不用爬坡／有電梯。',
           heroSrc: withBaseUrl('/illustrations/3d-hotel-building-isometric.png'),
           heroAlt: '示意插圖：住宿（3D）',
-          bullets: ['先把原因寫好就夠', '需要時再看風險矩陣'],
+          bullets: ['先把原因寫好就夠', '需要時再看風險/注意'],
         },
       ] as const,
     [],

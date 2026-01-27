@@ -55,7 +55,12 @@ export function ItineraryLeafletMap({
     const map = L.map(el, {
       zoomControl: true,
       attributionControl: true,
-      scrollWheelZoom: true,
+      // Scrolly mode: keep page scrolling predictable; map follows the bus.
+      scrollWheelZoom: false,
+      dragging: false,
+      doubleClickZoom: false,
+      boxZoom: false,
+      keyboard: false,
     })
     mapRef.current = map
 
@@ -157,7 +162,8 @@ export function ItineraryLeafletMap({
       else el.classList.remove('isActive')
     }
 
-    map.panTo([ll.lat, ll.lng], {
+    // Keep the bus centered (not just moving the marker).
+    map.setView([ll.lat, ll.lng], map.getZoom(), {
       animate: !prefersReducedMotion,
       duration: prefersReducedMotion ? 0 : 0.8,
     })

@@ -28,7 +28,7 @@ function tripPathD(routes: Route[]) {
 
 export function ItineraryBackground({ activeCityId }: { activeCityId: CityId }) {
   const motionEnabled = useMotionEnabled()
-  const { motion, prefersReducedMotion, uiMode } = useSettings()
+  const { motion, prefersReducedMotion } = useSettings()
   const pathRef = useRef<SVGPathElement | null>(null)
   const busRef = useRef<SVGGElement | null>(null)
   const trainRef = useRef<SVGGElement | null>(null)
@@ -102,16 +102,9 @@ export function ItineraryBackground({ activeCityId }: { activeCityId: CityId }) 
 
   if (!d) return null
 
-  const bgOpacity =
-    uiMode === 'senior'
-      ? motionEnabled
-        ? 0.30
-        : 0.28
-      : motionEnabled
-        ? 0.26
-        : 0.24
-
-  const markerOpacity = motionEnabled ? 0.78 : 0.74
+  // User request: make the map fully visible (no haze / no transparency).
+  const bgOpacity = 1
+  const markerOpacity = 1
 
   // Theme hooks (scoped by `.pageItinerary` wrapper on the page)
   const primary = 'var(--primary-color, #165b7a)'
@@ -138,7 +131,7 @@ export function ItineraryBackground({ activeCityId }: { activeCityId: CityId }) 
           height: '120%',
           left: '-10%',
           top: '-10%',
-          filter: 'saturate(0.92) contrast(0.95)',
+          filter: 'none',
         }}
       >
         {/* Background map + routes (keep subtle, decorative). */}
@@ -199,17 +192,6 @@ export function ItineraryBackground({ activeCityId }: { activeCityId: CityId }) 
         </g>
       </svg>
 
-      {/* Vignette to keep content readable */}
-      <div
-        className="overlay"
-        style={{
-          position: 'absolute',
-          inset: 0,
-          background:
-            'radial-gradient(1200px 700px at 20% 15%, rgba(255,255,255,0.00), rgba(255,255,255,0.35)), radial-gradient(1000px 620px at 80% 30%, rgba(255,255,255,0.00), rgba(255,255,255,0.28)), linear-gradient(to bottom, rgba(255,255,255,0.55), rgba(255,255,255,0.12) 40%, rgba(255,255,255,0.55))',
-          mixBlendMode: 'screen',
-        }}
-      />
     </div>
   )
 }

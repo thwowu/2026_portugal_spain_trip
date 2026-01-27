@@ -2,7 +2,6 @@ import {
   collectSections,
   findChildren,
   findFirst,
-  listBulletsAll,
   mdError,
   parseFrontmatter,
   parseLines,
@@ -51,8 +50,8 @@ export function parseAttractionsCityMd({ sourcePath, raw }) {
   for (const h2 of findChildren(h1, 2)) {
     const kind = h2.text.trim()
     if (!REQUIRED_KINDS.includes(kind)) continue
-    const items = listBulletsAll(h2.content).map((x) => x.text)
-    byKind.set(kind, { kind, title: DEFAULT_TITLES[kind] || kind, items })
+    const content = h2.content.map((r) => r.text).join('\n').trim()
+    byKind.set(kind, { kind, title: DEFAULT_TITLES[kind] || kind, content })
   }
 
   const missing = REQUIRED_KINDS.filter((k) => !byKind.has(k))
@@ -61,7 +60,15 @@ export function parseAttractionsCityMd({ sourcePath, raw }) {
   }
 
   const extensionsH2 = findChildren(h1, 2).find((h2) => h2.text.trim() === 'extensions')
-  const extensions = extensionsH2 ? listBulletsAll(extensionsH2.content).map((x) => x.text) : []
+  // Deprecated: attractions content should not embed bullet-based extensions; keep for backward compatibility
+  // in case older files still include "- ..." lines under "## extensions".
+  const extensions = extensionsH2
+    ? extensionsH2.content
+        .map((r) => r.text)
+        .filter((t) => t.trim().startsWith('- '))
+        .map((t) => t.trim().slice(2).trim())
+        .filter(Boolean)
+    : []
 
   return {
     cityId,

@@ -3,7 +3,7 @@ import type { CityId } from './core'
 export type ExtensionsSection = {
   key: string
   title: string
-  items: string[]
+  content: string
 }
 
 export type ExtensionTrip = {

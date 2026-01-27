@@ -24,7 +24,6 @@ export type CityStay = {
   options: StayOption[]
   publicTransportHowToBuy: string[]
   moneySavingTips: string[]
-  riskMatrix: MarkdownTable
   scoringModel: StayScoringModel
 }
 

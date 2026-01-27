@@ -6,7 +6,7 @@ title: 拉各斯（Lagos）→ 塞維爾（Seville）
 
 # 拉各斯（Lagos）→ 塞維爾（Seville）
 
-🧳 先看 tldr｜🚌/🚆 再看 options｜🅱️ 走 planB（誤點/班次取消時）
+🧳 先看 tldr｜🚌/🚆 再看 options
 
 ## tldr
 - recommended: bus
@@ -34,25 +34,20 @@ title: 拉各斯（Lagos）→ 塞維爾（Seville）
 - screenshots:
   - 巴士（示意） | /images/transport/lagos-seville-bus.png
 
-### bus | 轉乘方案（經 Faro，更彈性但比較累）
-- summary: 若直達班次不合/滿位：先到 Faro（火車/巴士）→ 再接國際巴士到 Seville。
+### bus | 轉乘方案（經 法魯（Faro），更彈性但比較累）
+- summary: 若直達班次不合/滿位：先到 法魯（Faro）（火車/巴士）→ 再接國際巴士到 塞維爾（Seville）。
 - steps:
-  - Lagos → Faro（CP 火車或區域巴士，依你當天班次）
-  - Faro → Seville（FlixBus 等國際巴士；依班次為準）
+  - 拉各斯（Lagos）→ 法魯（Faro）（CP 火車或區域巴士，依你當天班次）
+  - 法魯（Faro）→ 塞維爾（Seville）（FlixBus 等國際巴士；依班次為準）
 - bookingLinks:
   - CP（班次/購票） | https://www.cp.pt/passageiros/en
-  - FlixBus（Faro ↔ Seville 路線入口） | https://global.flixbus.com/
+  - FlixBus（法魯 Faro ↔ 塞維爾 Seville 路線入口） | https://global.flixbus.com/
 - luggageNotes:
   - 多段轉乘需要搬行李；轉乘緩衝抓寬
 - riskNotes:
   - 轉乘銜接風險較高；最後一段巴士別壓太晚
 - screenshots:
   - Alda/Alsa（示意） | /images/transport/lagos-seville-bus-alt.png
-
-## planB
-- 直達巴士滿位/時間不合 → 改走「轉乘方案」（先到 Faro 再接國際巴士）
-- 若當天誤點晚到 Seville → 晚上只做「入住＋吃」，隔天再補景點（避免硬衝）
-- 若你非常想走“最快”且航班可行 → 才考慮 Faro → Seville 的飛機（但行李/安檢成本會放大）
 
 ## legacy_notes
 以下保留舊版長文筆記（同檔案內附錄），方便回顧與比價：

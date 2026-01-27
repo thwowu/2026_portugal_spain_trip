@@ -6,10 +6,10 @@ title: 格拉納達（Granada）住宿
 
 # 格拉納達（Granada）住宿
 
-🛏️ 先看 options 選區域｜🚇 再看 publicTransportHowToBuy｜💸 moneySavingTips｜⚠️ riskMatrix
+🛏️ 先看 options 選區域｜🚇 再看 publicTransportHowToBuy｜💸 moneySavingTips
 
 ## options
-- Centro（市中心；大教堂/格蘭大道 Gran Vía 一帶，首選：省坡）
+- 市中心（Centro；大教堂/格蘭大道 Gran Vía 一帶，首選：省坡）
   - risk: 旺季價格浮動，熱門路段可能有噪音（餐廳/人流）
   - link: Google Maps | https://www.google.com/maps/search/?api=1&query=Granada%20Cathedral
 - 雷阿萊霍（Realejo；次選：靠近阿爾罕布拉山腳）
@@ -33,16 +33,6 @@ title: 格拉納達（Granada）住宿
 - 只搭 1–2 趟：先用單程票即可；如果你發現自己每天都要搭好幾趟再換 `Credibús`（它本質上就是為「常搭」設計的折扣票種）。（Movilidad Granada：[`Bus fares`](http://www.movilidadgranada.com/bus_tarifas.php?idioma=en)）
 - 善用「60 分鐘免費轉乘」：把行程拆成「上坡搭車、下坡步行」或「去程搭車、回程走路」，通常最省錢也最省力。（Movilidad Granada：[`Bus fares`](http://www.movilidadgranada.com/bus_tarifas.php?idioma=en)）
 - 坡段把錢花在省體力：上阿爾拜辛/阿爾罕布拉那種坡，公車票錢通常比膝蓋受傷與時間成本更便宜。（Wikivoyage：[`Granada`](https://en.wikivoyage.org/wiki/Granada_(Spain))）
-
-## riskMatrix
-| 項目 | Centro | Realejo | Albaicín |
-| --- | --- | --- | --- |
-| 爬坡風險 | 低 | 中 | 高 |
-| 拖行李友善度 | 高 | 中 | 低 |
-| 去餐廳/補給 | 高 | 高 | 中 |
-| 去 Alhambra 動線 | 中 | 高 | 中 |
-| 去 Albaicín 動線 | 中 | 中 | 高（但你已在那） |
-| 夜間安全/好走度 | 中高 | 中 | 中低（看巷弄） |
 
 ## scoringModel
 ### weights

@@ -20,7 +20,7 @@ export type TransportSegment = {
     reminders: string[]
   }
   options: TransportOption[]
-  planB: string[]
+  planB?: string[]
 }
 
 // Content data is generated from `src/content/transport.*.md`.
