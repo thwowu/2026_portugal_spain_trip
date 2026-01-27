@@ -1,0 +1,154 @@
+.timeline {
+  display: grid;
+  gap: 14px;
+}
+
+.phaseDays {
+  position: relative;
+  display: grid;
+  gap: 14px;
+  padding: 6px 0 10px;
+}
+
+/* Center axis line (desktop/tablet). */
+.phaseDays::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 7px;
+  border-radius: 999px;
+  background: color-mix(in oklab, var(--accent) 22%, var(--hairline));
+}
+
+.dayRow {
+  display: grid;
+  grid-template-columns: 1fr 46px 1fr;
+  align-items: start;
+  gap: 0;
+}
+
+.axis {
+  grid-column: 2;
+  position: relative;
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px; /* align marker near card top */
+}
+
+.marker {
+  width: 22px;
+  height: 22px;
+  border-radius: 999px;
+  background: color-mix(in oklab, var(--accent) 12%, var(--surface));
+  border: 3px solid color-mix(in oklab, var(--accent) 62%, white);
+  box-shadow: 0 10px 26px rgba(18, 17, 14, 0.14);
+}
+
+.dayCard {
+  width: min(520px, 100%);
+  box-shadow: none; /* keep itinerary flatter */
+  opacity: 0;
+  transition: opacity 220ms ease, transform 220ms ease;
+  transform: translateY(6px);
+}
+
+.left .dayCard {
+  grid-column: 1;
+  justify-self: end;
+  margin-right: 12px;
+  transform: translate3d(38px, 6px, 0);
+}
+
+.right .dayCard {
+  grid-column: 3;
+  justify-self: start;
+  margin-left: 12px;
+  transform: translate3d(-38px, 6px, 0);
+}
+
+.dayCard[data-in-view='true'] {
+  opacity: 1;
+  transform: none;
+}
+
+/* Tablet: slightly tighter cards. */
+@media (max-width: 900px) {
+  .dayCard {
+    width: min(420px, 100%);
+  }
+}
+
+/* Mobile: switch to left-axis timeline (no alternating). */
+@media (max-width: 600px) {
+  .phaseDays {
+    padding-left: 8px; /* breathing room for axis */
+  }
+
+  .phaseDays::before {
+    left: 14px;
+    transform: none;
+  }
+
+  .dayRow {
+    grid-template-columns: 34px 1fr;
+  }
+
+  .axis {
+    grid-column: 1;
+    padding-top: 20px;
+  }
+
+  .left .dayCard,
+  .right .dayCard {
+    grid-column: 2;
+    justify-self: stretch;
+    margin: 0;
+    transform: translate3d(0, 8px, 0);
+    width: 100%;
+  }
+
+  .dayCard[data-in-view='true'] {
+    transform: none;
+  }
+}
+
+/* Senior mode: prefer single-column (no left/right scanning), bigger spacing. */
+:root[data-ui='senior'] .phaseDays {
+  padding-left: 10px;
+  gap: 16px;
+}
+
+:root[data-ui='senior'] .phaseDays::before {
+  left: 16px;
+  transform: none;
+  width: 8px;
+  background: color-mix(in oklab, var(--accent) 26%, var(--hairline));
+}
+
+:root[data-ui='senior'] .dayRow {
+  grid-template-columns: 38px 1fr;
+}
+
+:root[data-ui='senior'] .axis {
+  grid-column: 1;
+  padding-top: 22px;
+}
+
+:root[data-ui='senior'] .marker {
+  width: 24px;
+  height: 24px;
+  border-width: 3px;
+}
+
+:root[data-ui='senior'] .left .dayCard,
+:root[data-ui='senior'] .right .dayCard {
+  grid-column: 2;
+  justify-self: stretch;
+  margin: 0;
+  width: 100%;
+  transform: translate3d(0, 8px, 0);
+}

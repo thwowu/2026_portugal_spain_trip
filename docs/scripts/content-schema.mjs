@@ -37,7 +37,8 @@ const ItineraryDetailsSchema = z
 
 export const ItineraryDaySchema = z.object({
   day: z.number().int().min(1),
-  dateLabel: z.string().min(1),
+  // Allow empty when itinerary headings omit the date segment.
+  dateLabel: z.string(),
   cityLabel: z.string().min(1),
   title: z.string().min(1),
   tags: z.array(ItineraryTagSchema),

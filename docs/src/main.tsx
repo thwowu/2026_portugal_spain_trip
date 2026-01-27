@@ -4,7 +4,13 @@ import './index.css'
 import App from './App.tsx'
 import { SettingsProvider } from './state/settings.tsx'
 import { PlanningProvider, defaultTransportWeights } from './state/planning.tsx'
+import { ProgressProvider } from './state/progress.tsx'
 import { CITIES, TRANSPORT_SEGMENTS, type CityId, type TransportSegmentId } from './data/core.ts'
+
+// Default to senior-friendly UI immediately (avoid first-paint flash).
+document.documentElement.dataset.ui = 'senior'
+document.documentElement.dataset.motion = 'low'
+document.documentElement.dataset.font = '1'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -40,7 +46,9 @@ createRoot(document.getElementById('root')!).render(
           transportWeights: defaultTransportWeights(),
         }}
       >
-        <App />
+        <ProgressProvider>
+          <App />
+        </ProgressProvider>
       </PlanningProvider>
     </SettingsProvider>
   </StrictMode>,

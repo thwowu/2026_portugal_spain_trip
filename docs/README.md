@@ -50,13 +50,9 @@ npm run dev
 - 最快驗證：`npm run content:check`
 - 或直接 `npm run dev` / `npm run build`（都會自動先產生/驗證內容）
 
-### B. 用 UI 改決策（給手機/家人更方便）
+### B. 用 UI 補充決策（可選）
 
-網站的 Dashboard 支援：
-- **Planning Export JSON**：把規劃決策匯出成 JSON，之後可再匯入（手機同步用）
-- **Content Patch JSON**：給 AI/維護者用來「確定性地」回寫 `src/content/*.md`
-
-細節請看：`docs/src/content/README.md` 的「Content Patch JSON」段落。
+網站各頁（交通/住宿等）可以直接填「一句話原因」與調整權重，方便跟家人對齊取捨；但行程內容仍建議以 `docs/src/content/*.md` 為準。
 
 ## 測試
 

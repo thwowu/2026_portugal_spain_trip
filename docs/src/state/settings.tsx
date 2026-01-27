@@ -4,13 +4,19 @@ import { loadJson, saveJson } from './storage'
 
 export type MotionSetting = 'standard' | 'low'
 export type UiMode = 'standard' | 'senior'
+export type FontScale = 0 | 1 | 2
 
 type SettingsState = {
   motion: MotionSetting
   uiMode: UiMode
+  fontScale: FontScale
+  showSeenHints: boolean
   prefersReducedMotion: boolean
   setMotion: (next: MotionSetting) => void
   setUiMode: (next: UiMode) => void
+  setFontScale: (next: FontScale) => void
+  setShowSeenHints: (next: boolean) => void
+  resetRecommended: () => void
 }
 
 const SettingsContext = createContext<SettingsState | null>(null)
@@ -20,11 +26,13 @@ const STORAGE_KEY = 'tripPlanner.settings.v1'
 type PersistedSettings = {
   motion: MotionSetting
   uiMode?: UiMode
+  fontScale?: FontScale
+  showSeenHints?: boolean
 }
 
 function defaultPersisted(): PersistedSettings {
   // Default for this project: senior-friendly (bigger, clearer, less motion).
-  return { motion: 'low', uiMode: 'senior' }
+  return { motion: 'low', uiMode: 'senior', fontScale: 1, showSeenHints: true }
 }
 
 export function SettingsProvider({ children }: { children: React.ReactNode }) {
@@ -34,16 +42,28 @@ export function SettingsProvider({ children }: { children: React.ReactNode }) {
   )
   const [uiMode, setUiMode] = useState<UiMode>(persisted.uiMode ?? 'senior')
   const [motion, setMotion] = useState<MotionSetting>(persisted.motion ?? 'low')
+  const [fontScale, setFontScale] = useState<FontScale>(persisted.fontScale ?? 1)
+  const [showSeenHints, setShowSeenHints] = useState<boolean>(persisted.showSeenHints ?? true)
   const [prefersReducedMotion, setPrefersReducedMotion] = useState(false)
 
   useEffect(() => {
-    saveJson<PersistedSettings>(STORAGE_KEY, { motion, uiMode })
-  }, [motion, uiMode])
+    saveJson<PersistedSettings>(STORAGE_KEY, { motion, uiMode, fontScale, showSeenHints })
+  }, [motion, uiMode, fontScale, showSeenHints])
 
   useEffect(() => {
     // Let CSS react to UI mode.
     document.documentElement.dataset.ui = uiMode
   }, [uiMode])
+
+  useEffect(() => {
+    // Let CSS react to motion setting.
+    document.documentElement.dataset.motion = motion
+  }, [motion])
+
+  useEffect(() => {
+    // Let CSS react to font scale (elder-first: 0=large, 1=larger, 2=largest).
+    document.documentElement.dataset.font = String(fontScale)
+  }, [fontScale])
 
   useEffect(() => {
     const mql = window.matchMedia?.('(prefers-reduced-motion: reduce)')
@@ -60,6 +80,8 @@ export function SettingsProvider({ children }: { children: React.ReactNode }) {
     () => ({
       motion,
       uiMode,
+      fontScale,
+      showSeenHints,
       prefersReducedMotion,
       setMotion,
       setUiMode: (next) => {
@@ -68,8 +90,16 @@ export function SettingsProvider({ children }: { children: React.ReactNode }) {
         setUiMode(next)
         if (next === 'senior') setMotion('low')
       },
+      setFontScale,
+      setShowSeenHints,
+      resetRecommended: () => {
+        setUiMode('senior')
+        setMotion('low')
+        setFontScale(1)
+        setShowSeenHints(true)
+      },
     }),
-    [motion, uiMode, prefersReducedMotion],
+    [motion, uiMode, fontScale, showSeenHints, prefersReducedMotion],
   )
 
   return <SettingsContext.Provider value={value}>{children}</SettingsContext.Provider>

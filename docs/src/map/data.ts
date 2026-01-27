@@ -2,7 +2,7 @@ import type { CityId, TransportSegmentId } from '../data/core'
 
 export type Point = { x: number; y: number }
 
-// Coordinates are in the pixel space of `public/map/map.png`.
+// Coordinates are in the pixel space of `public/map/map.png` (same dimensions as `public/map/map.jpg`).
 // They are starter values (good enough for first pass); we can fine-tune later.
 export const MAP_CITIES: Record<CityId, { label: string; pt: Point }> = {
   lisbon: { label: 'Lisbon', pt: { x: 120, y: 310 } },

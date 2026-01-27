@@ -1,5 +1,6 @@
-import { useEffect } from 'react'
-import { useMotionEnabled } from '../state/settings'
+import { useRef } from 'react'
+import { withBaseUrl } from '../utils/asset'
+import { Modal } from './Modal'
 
 export function Lightbox({
   open,
@@ -14,46 +15,21 @@ export function Lightbox({
   title?: string
   onClose: () => void
 }) {
-  const motionEnabled = useMotionEnabled()
-
-  useEffect(() => {
-    if (!open) return
-    const onKey = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') onClose()
-    }
-    window.addEventListener('keydown', onKey)
-    return () => window.removeEventListener('keydown', onKey)
-  }, [open, onClose])
-
-  if (!open) return null
+  const closeBtnRef = useRef<HTMLButtonElement | null>(null)
 
   return (
-    <div
-      role="dialog"
-      aria-modal="true"
-      aria-label={title ?? '圖片預覽'}
-      onClick={onClose}
-      style={{
-        position: 'fixed',
-        inset: 0,
-        background: 'rgba(0,0,0,0.62)',
-        display: 'grid',
-        placeItems: 'center',
-        padding: 18,
-        zIndex: 100,
-        opacity: 1,
-        transition: motionEnabled ? 'opacity 160ms ease' : undefined,
-      }}
+    <Modal
+      open={open}
+      ariaLabel={title ?? '圖片預覽'}
+      onClose={onClose}
+      initialFocusRef={closeBtnRef}
+      overlayClassName="modalOverlay modalOverlayHigh modalOverlayDark modalOverlayCenter"
+      cardClassName="card modalCard"
+      cardStyle={{ maxWidth: 'min(var(--layout-max), 100%)', overflow: 'hidden' }}
     >
       <div
-        onClick={(e) => e.stopPropagation()}
         style={{
-          width: 'min(980px, 100%)',
-          background: 'var(--surface)',
-          borderRadius: 18,
-          border: '1px solid rgba(255,255,255,0.12)',
-          overflow: 'hidden',
-          boxShadow: '0 28px 90px rgba(0,0,0,0.35)',
+          display: 'grid',
         }}
       >
         <div
@@ -67,24 +43,23 @@ export function Lightbox({
           }}
         >
           <div style={{ fontWeight: 850 }}>{title ?? '圖片'}</div>
-          <button className="btn" onClick={onClose}>
+          <button className="btn" ref={closeBtnRef} onClick={onClose}>
             關閉
           </button>
         </div>
         <div style={{ background: 'black' }}>
           <img
-            src={src}
+            src={withBaseUrl(src)}
             alt={alt}
             style={{
               width: '100%',
               height: 'auto',
               display: 'block',
-              transform: motionEnabled ? 'translateY(0)' : undefined,
             }}
           />
         </div>
       </div>
-    </div>
+    </Modal>
   )
 }
 

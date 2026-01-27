@@ -1,33 +1,53 @@
 ---
 schema: v1
 cityId: lisbon
-title: 里斯本住宿
+title: 里斯本（Lisbon）住宿
 ---
 
-# 里斯本住宿
+# 里斯本（Lisbon）住宿
+
+🛏️ 先看 options 選區域｜🚇 再看 publicTransportHowToBuy｜💸 moneySavingTips｜⚠️ riskMatrix
 
 ## options
-- Luzeiros Suites（首選） | status=primary
+- 盧澤羅斯套房（Luzeiros Suites；首選） | status=primary
   - why: 交通便利、完全不用爬坡（地鐵旁）
   - why: 房間空間/隔音/櫃檯穩定度高
   - why: 適合長途飛行後第一晚降低風險
   - risk: 價格不是最低
   - risk: 部分方案可能不可取消
   - link: Google Maps | https://maps.app.goo.gl/szKwdhc3Yp7RuU8e8
-- Lx Soho Boutique（次選） | status=secondary
+- LX 蘇活精品酒店（Lx Soho Boutique；次選） | status=secondary
   - why: 地鐵站旁不用爬坡
   - why: 裝潢較新、櫃檯穩定
   - risk: 價格可能波動
   - risk: 可能不可取消
   - link: Google Maps | https://maps.app.goo.gl/aPKctvDx6LYoy38c8
+- 共和大道 83 號（Republica 83；備案：公寓式） | status=backup
+  - why: 位置通常不差（市區移動方便）
+  - why: 若你想要「像住家」的空間/格局，公寓式會更自在
+  - risk: 可能沒有 24H 櫃檯（晚到/行李寄放風險）
+  - risk: 老樓電梯/隔音/熱水等變因較多，第一晚不確定性偏高
+  - link: Google Maps（搜尋） | https://www.google.com/maps/search/?api=1&query=Republica%2083%20Lisbon
+- 易捷飯店・里斯本（easyHotel Lisbon；備案：連鎖平價） | status=backup
+  - why: 預算緊或只求「乾淨可睡」時，連鎖通常比較可預期
+  - why: 常有 24H 櫃檯、可寄放行李（比公寓式省心）
+  - risk: 房間普遍偏小、隔音/舒適度取決於房型
+  - risk: 交通便利度/周邊體驗可能不如前兩個選項
+  - link: Google Maps（搜尋） | https://www.google.com/maps/search/?api=1&query=easyHotel%20Lisbon
 
 ## publicTransportHowToBuy
-- 地鐵/市區交通常見可用「感應信用卡」或購買交通卡（依實際站點機器為準）。
-- 機場到市區：可用地鐵或公車；若行李多，Uber/Bolt 有時更省事。
+- 先決定你是「用感應信用卡/手機」還是「買一張可重複加值的票卡」：
+  - 偶爾搭地鐵（單程）：里斯本地鐵可直接用 *contactless* 銀行卡/手機/手錶在驗票機感應進站（每次每卡限 1 人；進出站要用同一張卡/同一裝置；票價以官方公告為準）。（Metro Lisboa：[`Viajar no Metro com cartão bancário contactless`](https://www.metrolisboa.pt/comprar/viajar-no-metro-com-cartao-bancario-contactless/)）
+  - 會搭很多次（地鐵＋市區公車/電車）：買一張 `VIVA Viagem / navegante ocasional`（卡片約 €0.50、效期 1 年）後，再選擇載入 `CARRIS/METRO` 單程、`24h` 日票或 `Zapping`（類似儲值扣款）。（Portal VIVA：[`VIVA Viagem`](https://www.portalviva.pt/pt/homepage/cart%C3%B5es/transportes/viva-viagem.aspx)；Metro Lisboa：[`Comprar`](https://www.metrolisboa.pt/comprar/)）
+- 哪裡買/哪裡加值（最保險做法）：地鐵站自動售票機/窗口；也可用 Multibanco 或 Portal VIVA（線上通常需要讀卡器）。（Portal VIVA：[`Carregar cartões VIVA`](https://portalviva.pt/pt/homepage/onde-carregar.aspx)）
+- 公車/電車臨時單程：可在車上用驗票機用 `Bank Card / MB WAY` 付款；若直接跟司機買票通常只收現金（部分新電車不收現金）。（Carris：[`Occasional journeys`](https://www.carris.pt/en/buy/occasional-journeys/)）
+- 機場到市區：地鐵可直達多數區域；如果是「大行李/晚到/要走上坡/同行有人不適合爬坡或樓梯」，省腦做法通常是把住宿選在「地鐵站旁、出站到門口幾乎平路」，並用地鐵/公車把行李日的摩擦降到最低。（Wikivoyage：[`Lisbon`](https://en.wikivoyage.org/wiki/Lisbon)；Wikitravel：[`Lisbon`](https://wikitravel.org/en/Lisbon)）
 
 ## moneySavingTips
-- 若行李多：用 Uber/Bolt 省體力（有時比想像便宜）。
-- 市區短程可步行＋少量地鐵搭配，避免買一堆套票反而複雜。
+- 先用「走路＋少量單程」跑半天，確認你一天實際會搭幾趟，再決定要不要上 `24h`：`24h CARRIS/METRO` 只在你確定會密集搭乘時才划算。（Carris：[`Occasional journeys`](https://www.carris.pt/en/buy/occasional-journeys/)；Metro Lisboa：[`Comprar`](https://www.metrolisboa.pt/comprar/)）
+- `VIVA Viagem / navegante ocasional` 有效期 1 年、可重複加值：不要用完就丟，之後搭到第 2–3 天就會回本（少買一次新卡就是省）。（Portal VIVA：[`VIVA Viagem`](https://www.portalviva.pt/pt/homepage/cart%C3%B5es/transportes/viva-viagem.aspx)）
+- 驗票時把卡/手機從皮夾拿出來，避免多張 *contactless* 卡一起感應造成失敗或扣錯。（Metro Lisboa：[`Viajar no Metro com cartão bancário contactless`](https://www.metrolisboa.pt/comprar/viajar-no-metro-com-cartao-bancario-contactless/)）
+- 行李日/坡多的區域：最省錢的底層策略是「住宿選平地＋離地鐵近」＋「該搭地鐵就搭」；如果你已經卡在上坡/行李很重/晚到，就把節奏放慢、走大路，或先回到最近的地鐵/公車主幹線再轉（避免走錯路與摔倒風險）。（Wikivoyage：[`Lisbon`](https://en.wikivoyage.org/wiki/Lisbon)；Wikitravel：[`Lisbon`](https://wikitravel.org/en/Lisbon)）
 
 ## riskMatrix
 | 項目 | Luzeiros Suites | Lx Soho Boutique | Republica 83 | easyHotel Lisbon |
@@ -102,7 +122,7 @@ Google地圖：[Luzeiros Suites](https://maps.app.goo.gl/szKwdhc3Yp7RuU8e8)
 - 入住登記開始時間：14:00
 - 有電梯
 - 從一航廈可以直接搭[744公車](https://www.carris.pt/en/travel/carreiras/744/)到住宿（可以用信用卡[直接感應](https://ccenews.com/carris-introduces-contactless-card-payment-for-all-lisbon-public-transport/)付錢不用特別買票），放行李之後先去市區吃飯逛一下等兩點回來checkin休息一下
-  - 剛查了從機場坐uber或bolt到住宿，才7-11€，好便宜比去高鐵站還便宜。
+  - （備註）你已經能用 744 公車直達了，基本上不需要另外安排車。
 
 缺點：
 
@@ -151,7 +171,7 @@ Google地圖：[https://maps.app.goo.gl/aPKctvDx6LYoy38c8](https://maps.app.goo.
 - 我選的這個房型比一般房型的11-14m2大，18m2
 - 號稱有私人廚房（冰箱，微波爐，廚房用具，電熱水壺和烤箱）但評論區有人說道，其實是共用廚房，但如果沒有要煮東西的話，這個優點算是可有可無。但這是唯一一個號稱有完整廚房的。
 - 從一航廈可以直接搭[744公車](https://www.carris.pt/en/travel/carreiras/744/)到住宿（可以用信用卡[直接感應](https://ccenews.com/carris-introduces-contactless-card-payment-for-all-lisbon-public-transport/)付錢不用特別買票），放行李之後先去市區吃飯逛一下等入住密碼，之後再回來搬行李入住。
-  - 剛查了從機場坐uber或bolt到住宿，才7-11€，好便宜比去高鐵站還便宜。
+  - （備註）你已經能用 744 公車直達了，基本上不需要另外安排車。
 
 考慮缺點：
 
@@ -178,7 +198,7 @@ Google地圖：[https://maps.app.goo.gl/aPKctvDx6LYoy38c8](https://maps.app.goo.
 
 缺點：
 
-- 地點距離地鐵站雖然大體都是平地，但在兩個地鐵站中間，都要走750m (約15-20分鐘）建議去回都坐計程車或公車（旁邊有公車站）
+- 地點距離地鐵站雖然大體都是平地，但在兩個地鐵站中間，都要走 750m（約 15–20 分鐘）；若你不想搭計程車，就改用旁邊公車站銜接，或直接選更靠近地鐵站的住宿點；但如果是行李日/晚到，短程計程車通常很便宜，直接搭也很合理。
   - 但不確定扣完交通之後，省下的錢真的有沒有真的省下來，還是反而虧錢又累得半死還鐵腿。
 - 房間不大就一般省錢旅館的大小（11m）
 - 目前是在Google Maps裡面搜到的Trivago特價，不知道價格會不會改動，這個特價是預訂後不可取消．沒有免費預約。

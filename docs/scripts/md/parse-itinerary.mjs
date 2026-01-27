@@ -15,7 +15,7 @@ function parseDayHeading(text) {
   // Preferred:
   //   "day 1 | 3/31（一） | 里斯本 | 抵達日..."
   // Backward-compatible:
-  //   "day 1 | 里斯本 | 抵達日..."  (dateLabel will be set to a placeholder)
+  //   "day 1 | 里斯本 | 抵達日..."  (dateLabel will be empty)
   const m4 = /^day\s+(\d+)\s*\|\s*(.+?)\s*\|\s*(.+?)\s*\|\s*(.+)$/.exec(text)
   if (m4) {
     return {
@@ -29,7 +29,7 @@ function parseDayHeading(text) {
   if (m3) {
     return {
       day: Number(m3[1]),
-      dateLabel: '（待補日期）',
+      dateLabel: '',
       cityLabel: m3[2].trim(),
       title: m3[3].trim(),
     }
@@ -41,13 +41,21 @@ function parseDayMeta(contentRows) {
   // - tags: a, b
   // - summary:
   //   - morning: ...
+  // - details:
+  //   - morning: ...
+  //   - notes:
+  //     - ...
   const tags = []
   const summary = {}
+  const details = {}
   let inSummary = false
+  let inDetails = false
+  let inDetailsNotes = false
 
   for (const row of contentRows) {
     const top = /^-\s+([A-Za-z0-9_]+)\s*:\s*(.*)$/.exec(row.text)
     const sub = /^\s{2,}-\s+([A-Za-z0-9_]+)\s*:\s*(.*)$/.exec(row.text)
+    const note = /^\s{4,}-\s+(.*)$/.exec(row.text)
 
     if (top) {
       const key = top[1]
@@ -55,10 +63,20 @@ function parseDayMeta(contentRows) {
       if (key === 'tags') {
         tags.push(...value.split(',').map((x) => x.trim()).filter(Boolean))
         inSummary = false
+        inDetails = false
+        inDetailsNotes = false
       } else if (key === 'summary') {
         inSummary = true
+        inDetails = false
+        inDetailsNotes = false
+      } else if (key === 'details') {
+        inSummary = false
+        inDetails = true
+        inDetailsNotes = false
       } else {
         inSummary = false
+        inDetails = false
+        inDetailsNotes = false
       }
       continue
     }
@@ -68,9 +86,29 @@ function parseDayMeta(contentRows) {
       const v = sub[2].trim()
       if (v) summary[k] = v
     }
+
+    if (sub && inDetails) {
+      const k = sub[1]
+      const v = sub[2].trim()
+      if (k === 'notes') {
+        inDetailsNotes = true
+        if (!details.notes) details.notes = []
+        continue
+      }
+      inDetailsNotes = false
+      if (v) details[k] = v
+    }
+
+    if (note && inDetails && inDetailsNotes) {
+      const v = note[1].trim()
+      if (v) {
+        if (!details.notes) details.notes = []
+        details.notes.push(v)
+      }
+    }
   }
 
-  return { tags, summary }
+  return { tags, summary, details }
 }
 
 export function parseItineraryMd({ sourcePath, raw }) {
@@ -94,12 +132,12 @@ export function parseItineraryMd({ sourcePath, raw }) {
     for (const h3 of findChildren(h2, 3)) {
       const meta = parseDayHeading(h3.text.trim())
       if (!meta) throw mdError(sourcePath, h3.line, 'Invalid day heading. Expected: "### day N | date | city | title"')
-      const { tags, summary } = parseDayMeta(h3.content)
+      const { tags, summary, details } = parseDayMeta(h3.content)
       days.push({
         ...meta,
         tags,
         summary,
-        details: {},
+        details,
       })
     }
 

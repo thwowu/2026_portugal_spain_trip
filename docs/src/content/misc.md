@@ -10,9 +10,9 @@
 
 注意，不包含從葡萄牙到西班牙的跨境巴士，因此就是只有在塞維爾到格拉納達，格拉納達到馬德里這兩個跨自治區的巴士可以用。
 
-* **Lagos → Sevilla：❌ 不能用 Abono Único**  
-* **Sevilla → Granada：❌ 不能用 Abono Único**  
-* **Granada → Madrid：✔ 可以 （五個小時 vs. 火車3個半小時）**
+* **拉各斯（Lagos）→ 塞維爾（Sevilla）：❌ 不能用 Abono Único**  
+* **塞維爾（Sevilla）→ 格拉納達（Granada）：❌ 不能用 Abono Único**  
+* **格拉納達（Granada）→ 馬德里（Madrid）：✔ 可以 （五個小時 vs. 火車3個半小時）**
 
 一般成人：60 歐元 / 30 天
 

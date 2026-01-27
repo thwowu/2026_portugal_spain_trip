@@ -1,40 +1,107 @@
 import './App.css'
-import { BrowserRouter, NavLink, Route, Routes } from 'react-router-dom'
-import { MotionToggle } from './components/MotionToggle'
+import { BrowserRouter, NavLink, Navigate, Route, Routes, useLocation } from 'react-router-dom'
+import { Suspense, lazy, useEffect, useMemo, useRef, useState } from 'react'
 import { ScrollProgress } from './components/ScrollProgress'
-import { DashboardPage } from './pages/DashboardPage'
-import { ItineraryPage } from './pages/ItineraryPage'
-import { TransportPage } from './pages/TransportPage'
-import { StaysPage } from './pages/StaysPage'
-import { AttractionsPage } from './pages/AttractionsPage'
-import { NotFoundPage } from './pages/NotFoundPage'
+import { IconAttractions, IconItinerary, IconStays, IconTransport } from './components/NavIcons'
+import { OnboardingModal } from './components/OnboardingModal'
+import { SettingsModal } from './components/SettingsModal'
+import { loadJson, saveJson } from './state/storage'
 
-function App() {
+const ItineraryPage = lazy(() => import('./pages/ItineraryPage').then((m) => ({ default: m.ItineraryPage })))
+const TransportPage = lazy(() => import('./pages/TransportPage').then((m) => ({ default: m.TransportPage })))
+const StaysPage = lazy(() => import('./pages/StaysPage').then((m) => ({ default: m.StaysPage })))
+const AttractionsPage = lazy(() => import('./pages/AttractionsPage').then((m) => ({ default: m.AttractionsPage })))
+const NotFoundPage = lazy(() => import('./pages/NotFoundPage').then((m) => ({ default: m.NotFoundPage })))
+
+function AppRoutes() {
+  const location = useLocation()
   return (
-    <BrowserRouter basename={import.meta.env.BASE_URL}>
-      <div className="topBar">
-        <div className="topBarInner">
-          <div className="brand">
-            <div className="brandTitle">葡西之旅規劃</div>
-            <div className="brandSub">
-              Dashboard 先決策，其他分頁再深入
+    <div key={location.pathname} className="routeFrame">
+      <Suspense
+        fallback={
+          <div className="container">
+            <div className="card">
+              <div className="cardInner">
+                <div className="muted">載入中…</div>
+              </div>
             </div>
           </div>
-          <MotionToggle />
-        </div>
-        <ScrollProgress />
-      </div>
-
-      <div className="appShell">
+        }
+      >
         <Routes>
-          <Route path="/" element={<DashboardPage />} />
-          <Route path="/dashboard" element={<DashboardPage />} />
+          <Route path="/" element={<Navigate to="/itinerary" replace />} />
           <Route path="/itinerary" element={<ItineraryPage />} />
           <Route path="/transport" element={<TransportPage />} />
           <Route path="/stays" element={<StaysPage />} />
           <Route path="/attractions" element={<AttractionsPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
+      </Suspense>
+    </div>
+  )
+}
+
+function App() {
+  const topBarRef = useRef<HTMLDivElement | null>(null)
+  const bottomNavRef = useRef<HTMLElement | null>(null)
+
+  const onboarding = useMemo(() => loadJson<{ seen: boolean }>('tripPlanner.onboarding.v1', { seen: false }), [])
+  const [showOnboarding, setShowOnboarding] = useState(!onboarding.seen)
+  const [showSettings, setShowSettings] = useState(false)
+
+  const openHelp = () => setShowOnboarding(true)
+  const openSettings = () => setShowSettings(true)
+
+  useEffect(() => {
+    const root = document.documentElement
+    const setVars = () => {
+      if (topBarRef.current) root.style.setProperty('--topbar-h', `${topBarRef.current.offsetHeight}px`)
+      if (bottomNavRef.current) root.style.setProperty('--bottomnav-h', `${bottomNavRef.current.offsetHeight}px`)
+    }
+
+    setVars()
+
+    const ro = typeof ResizeObserver !== 'undefined' ? new ResizeObserver(setVars) : null
+    if (ro) {
+      if (topBarRef.current) ro.observe(topBarRef.current)
+      if (bottomNavRef.current) ro.observe(bottomNavRef.current)
+    }
+    window.addEventListener('resize', setVars)
+    return () => {
+      ro?.disconnect()
+      window.removeEventListener('resize', setVars)
+    }
+  }, [])
+
+  const closeOnboarding = () => {
+    saveJson('tripPlanner.onboarding.v1', { seen: true, seenAt: new Date().toISOString() })
+    setShowOnboarding(false)
+  }
+
+  return (
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
+      <div className="topBar" ref={topBarRef}>
+        <div className="topBarInner">
+          <div className="brand">
+            <div className="brandTitle">葡西之旅規劃</div>
+            <div className="brandSub">
+              用底部選單切換：行程 / 交通 / 住宿 / 景點
+            </div>
+          </div>
+          <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap', justifyContent: 'flex-end' }}>
+            <button className="btn topBarHelpBtn" onClick={openSettings} type="button">
+              設定
+            </button>
+            <button className="btn topBarHelpBtn" onClick={openHelp} type="button">
+              使用說明
+            </button>
+          </div>
+        </div>
+        <ScrollProgress />
+      </div>
+
+      <div className="appShell">
+        <AppRoutes />
 
         <footer className="siteFooter" aria-label="Impressum / Disclaimer">
           <div className="siteFooterInner">
@@ -46,23 +113,14 @@ function App() {
         </footer>
       </div>
 
-      <nav className="bottomNav" aria-label="主選單">
+      <nav className="bottomNav" aria-label="主選單" ref={bottomNavRef}>
         <div className="bottomNavInner">
-          <NavLink
-            to="/dashboard"
-            className={({ isActive }) => `navItem ${isActive ? 'navItemActive' : ''}`}
-          >
-            <span className="navIcon" aria-hidden="true">
-              ■
-            </span>
-            <span className="navLabel">看板</span>
-          </NavLink>
           <NavLink
             to="/itinerary"
             className={({ isActive }) => `navItem ${isActive ? 'navItemActive' : ''}`}
           >
             <span className="navIcon" aria-hidden="true">
-              ↯
+              <IconItinerary />
             </span>
             <span className="navLabel">行程</span>
           </NavLink>
@@ -71,7 +129,7 @@ function App() {
             className={({ isActive }) => `navItem ${isActive ? 'navItemActive' : ''}`}
           >
             <span className="navIcon" aria-hidden="true">
-              ⇄
+              <IconTransport />
             </span>
             <span className="navLabel">交通</span>
           </NavLink>
@@ -80,7 +138,7 @@ function App() {
             className={({ isActive }) => `navItem ${isActive ? 'navItemActive' : ''}`}
           >
             <span className="navIcon" aria-hidden="true">
-              ⌂
+              <IconStays />
             </span>
             <span className="navLabel">住宿</span>
           </NavLink>
@@ -89,12 +147,15 @@ function App() {
             className={({ isActive }) => `navItem ${isActive ? 'navItemActive' : ''}`}
           >
             <span className="navIcon" aria-hidden="true">
-              ★
+              <IconAttractions />
             </span>
             <span className="navLabel">景點</span>
           </NavLink>
         </div>
       </nav>
+
+      {showOnboarding && <OnboardingModal onClose={closeOnboarding} />}
+      <SettingsModal open={showSettings} onClose={() => setShowSettings(false)} />
     </BrowserRouter>
   )
 }

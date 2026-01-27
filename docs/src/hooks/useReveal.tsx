@@ -12,6 +12,11 @@ export function useReveal<T extends HTMLElement>() {
       el.classList.add('revealed')
       return
     }
+    if (typeof IntersectionObserver === 'undefined') {
+      // Fallback: don't keep content hidden on older browsers/environments.
+      el.classList.add('revealed')
+      return
+    }
     const io = new IntersectionObserver(
       (entries) => {
         for (const e of entries) {

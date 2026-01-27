@@ -11,7 +11,7 @@ export function NotFoundPage() {
             title="找不到這個頁面"
             subtitle={
               <>
-                回到 <Link to="/dashboard">規劃看板</Link>。
+                回到 <Link to="/itinerary">行程</Link>。
               </>
             }
             image={{

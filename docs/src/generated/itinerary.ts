@@ -7,11 +7,11 @@ import type { ItineraryPhase } from '../data/itinerary'
 export const ITINERARY_PHASES: ItineraryPhase[] = [
   {
     "id": "phase-lisbon",
-    "label": "里斯本 + Sintra（5 天）",
+    "label": "里斯本 + 辛特拉（Sintra）（5 天）",
     "days": [
       {
         "day": 1,
-        "dateLabel": "（待補日期）",
+        "dateLabel": "",
         "cityLabel": "里斯本",
         "title": "抵達日（時差回收）",
         "tags": [
@@ -22,58 +22,93 @@ export const ITINERARY_PHASES: ItineraryPhase[] = [
           "noon": "飯店附近午餐、補眠",
           "evening": "只為醒腦，不觀光"
         },
-        "details": {}
+        "details": {
+          "notes": [
+            "**今天目標**：安全抵達＋休息，把體力存起來",
+            "**時間錨點**：飯店 check-in／午睡 60–90 分／傍晚只走飯店附近",
+            "**省力走法**：今天不爬坡、不追景點；先補水、吃熱食、早睡",
+            "**Plan B（聖週/人潮）**：任何排隊/轉乘太累就直接撤退回飯店；全程每天預留 30–60 分鐘緩衝",
+            "**安全**：人潮處包包斜背放前、手機不放口袋；餐桌不要放手機錢包；晚間移動以大眾運輸為主，不為了抄近路鑽小巷；若你遇到「晚到/行李很重/要走上坡」就直接短程計程車（通常不貴，買安全與省力）"
+          ]
+        }
       },
       {
         "day": 2,
-        "dateLabel": "（待補日期）",
+        "dateLabel": "",
         "cityLabel": "里斯本",
-        "title": "Belém（第一個 WOW）",
+        "title": "貝倫（Belém；第一個 WOW）",
         "tags": [
           "wow",
           "ticket"
         ],
         "summary": {
           "morning": "熱羅尼莫斯修道院（建議早上）",
-          "noon": "Belém 午餐＋蛋塔、MAAT、河岸散步",
+          "noon": "貝倫（Belém）午餐＋蛋塔、MAAT、河岸散步",
           "evening": "輕收尾調整時差"
         },
-        "details": {}
+        "details": {
+          "notes": [
+            "**今天目標**：完成 1 個代表性大景點＋河岸輕鬆走",
+            "**時間錨點**：修道院一早到；午後回飯店或找能坐的咖啡廳休息",
+            "**省力走法**：排隊不硬站；優先選有椅子/室內點",
+            "**Plan B（聖週/排隊）**：排隊超過可接受範圍就改 MAAT 外觀＋河岸散步＋蛋塔（不硬追）",
+            "**安全**：人多處手機別拿在手上一路拍，包包放前面"
+          ]
+        }
       },
       {
         "day": 3,
-        "dateLabel": "（待補日期）",
+        "dateLabel": "",
         "cityLabel": "里斯本",
-        "title": "Cascais 海岸線＋燈塔（放鬆日）",
+        "title": "卡斯凱什（Cascais）海岸線＋燈塔（放鬆日）",
         "tags": [
           "easy"
         ],
         "summary": {
-          "morning": "火車到 Cascais，再去燈塔",
+          "morning": "火車到 卡斯凱什（Cascais），再去燈塔",
           "noon": "逛衝浪小鎮，回里斯本",
           "evening": "休息"
         },
-        "details": {}
+        "details": {
+          "notes": [
+            "**今天目標**：海邊放鬆＋平地散步，不把腿走爆",
+            "**時間錨點**：上午出發；午後回里斯本休息",
+            "**省力走法**：以平路/海邊為主，走累就坐下喝咖啡",
+            "**Plan B（風雨）**：風大/下雨就改里斯本室內（博物館/逛街/咖啡廳）",
+            "**安全**：車站/景點人潮照顧包包與手機"
+          ]
+        }
       },
       {
         "day": 4,
-        "dateLabel": "（待補日期）",
-        "cityLabel": "Sintra",
-        "title": "夢幻宮殿 Sintra（一日 WOW）",
+        "dateLabel": "",
+        "cityLabel": "辛特拉（Sintra）",
+        "title": "夢幻宮殿（一日 WOW）",
         "tags": [
           "wow",
           "ticket"
         ],
         "summary": {
-          "morning": "Rossio → Sintra 火車",
-          "noon": "雷加萊拉宮 / 佩納宮 / Monserrate（擇）",
+          "morning": "羅西奧（Rossio）→ 辛特拉（Sintra）火車",
+          "noon": "雷加萊拉宮 / 佩納宮 / 蒙塞拉特宮（Monserrate；擇）",
           "evening": "傍晚回里斯本"
         },
-        "details": {}
+        "details": {
+          "morning": "早出門（避開人潮）＋火車到 辛特拉（Sintra）",
+          "noon": "主景點擇一（走路多就少排點）",
+          "evening": "回里斯本早休息",
+          "notes": [
+            "**今天目標**：只打 1 個主景點（WOW），平安回里斯本",
+            "**時間錨點**：早出門；若有時段票＝以入場時間為全日錨點",
+            "**省力走法**：上坡/走路多就把景點縮到 1 個主菜；避免長時間排隊與站著等；若你今天真的需要補一段移動，短程計程車通常不貴，別硬撐",
+            "**Plan B（聖週/人潮）**：巴士滿/排隊太久→直接把行程縮到 1–2 個點（或回鎮上慢走）；錯過時段→立刻換備案（不硬追）",
+            "**安全**：熱門景點與車站人擠人，包包放前、手機收好"
+          ]
+        }
       },
       {
         "day": 5,
-        "dateLabel": "（待補日期）",
+        "dateLabel": "",
         "cityLabel": "里斯本",
         "title": "文化＋高處視角日",
         "tags": [
@@ -84,19 +119,27 @@ export const ITINERARY_PHASES: ItineraryPhase[] = [
           "noon": "眺望點（二選一）＋午休",
           "evening": "博物館/植物園/逛街擇一"
         },
-        "details": {}
+        "details": {
+          "notes": [
+            "**今天目標**：把里斯本用「走路少」的方式看懂",
+            "**時間錨點**：早上博物館；中午眺望點後就午休",
+            "**省力走法**：眺望點不硬爬坡（選 1 個、或改河岸坐著看光）；下午用室內/花園收尾；如果你們想把坡段省掉，短程計程車通常不貴（把體力留給景點本體）",
+            "**Plan B（下雨）**：下雨就改室內博物館/逛街，不走石板上坡路",
+            "**安全**：過馬路多留意（車不一定讓人）"
+          ]
+        }
       }
     ]
   },
   {
     "id": "phase-lagos",
-    "label": "阿爾加維 Lagos（3 天）",
+    "label": "阿爾加維・拉各斯（Lagos）（3 天）",
     "days": [
       {
         "day": 6,
-        "dateLabel": "（待補日期）",
-        "cityLabel": "Lagos",
-        "title": "里斯本 → Lagos（交通日）",
+        "dateLabel": "",
+        "cityLabel": "拉各斯（Lagos）",
+        "title": "里斯本 → 拉各斯（交通日）",
         "tags": [
           "travel_day"
         ],
@@ -105,13 +148,21 @@ export const ITINERARY_PHASES: ItineraryPhase[] = [
           "noon": "抵達後休息",
           "evening": "海灘散步＋日落"
         },
-        "details": {}
+        "details": {
+          "notes": [
+            "**今天目標**：順利抵達＋把住宿/補給搞定",
+            "**時間錨點**：交通時間抓鬆；抵達後先 check-in 再出門",
+            "**省力走法**：不塞景點，走累就回房間休息",
+            "**Plan B（聖週/班次）**：不要壓末班；遇到延誤就直接取消晚間行程",
+            "**安全**：拖行李時最容易分心，顧好包包與證件"
+          ]
+        }
       },
       {
         "day": 7,
-        "dateLabel": "（待補日期）",
-        "cityLabel": "Lagos",
-        "title": "Ponta da Piedade（WOW）",
+        "dateLabel": "",
+        "cityLabel": "拉各斯（Lagos）",
+        "title": "皮耶達德角（Ponta da Piedade；WOW）",
         "tags": [
           "wow",
           "easy"
@@ -121,22 +172,38 @@ export const ITINERARY_PHASES: ItineraryPhase[] = [
           "noon": "回飯店休息再出門",
           "evening": "海灘/老城擇"
         },
-        "details": {}
+        "details": {
+          "notes": [
+            "**今天目標**：看海蝕地形（上方觀景）就好，不拚體能",
+            "**時間錨點**：上午觀景；中午回飯店休息；傍晚再輕鬆散步",
+            "**省力走法**：只走「上方步道」；不下長階梯、不走看起來危險的小路",
+            "**Plan B（風大）**：風大就縮短停留，只在安全觀景點拍照後撤退",
+            "**安全**：崖邊別站太靠外，人多時避免被推擠"
+          ]
+        }
       },
       {
         "day": 8,
-        "dateLabel": "（待補日期）",
-        "cityLabel": "Lagos",
-        "title": "Benagil 藍洞（WOW）",
+        "dateLabel": "",
+        "cityLabel": "拉各斯（Lagos）",
+        "title": "貝納吉爾藍洞（Benagil；WOW）",
         "tags": [
           "wow"
         ],
         "summary": {
-          "morning": "Benagil 搭船",
-          "noon": "Carvoeiro/Marinha 擇",
-          "evening": "回 Lagos"
+          "morning": "貝納吉爾（Benagil）搭船",
+          "noon": "卡爾沃埃羅（Carvoeiro）/ 馬里尼亞海灘（Marinha）擇",
+          "evening": "回 拉各斯（Lagos）"
         },
-        "details": {}
+        "details": {
+          "notes": [
+            "**今天目標**：完成 1 次海上行程（成行就賺到）",
+            "**時間錨點**：上午優先（風浪通常較穩）；下午以休息/散步收尾",
+            "**省力走法**：選平面集合點出發的船；避免需要下大量階梯的碼頭版本",
+            "**Plan B（風浪取消）**：立刻改 Praia da Marinha 觀景點/沙灘（不用搭船也很美）",
+            "**安全**：海邊風大浪大別逞強，崖邊拍照注意腳下"
+          ]
+        }
       }
     ]
   },
@@ -146,9 +213,9 @@ export const ITINERARY_PHASES: ItineraryPhase[] = [
     "days": [
       {
         "day": 9,
-        "dateLabel": "（待補日期）",
+        "dateLabel": "",
         "cityLabel": "塞維爾",
-        "title": "Lagos → 塞維爾（交通日）",
+        "title": "拉各斯（Lagos）→ 塞維爾（交通日）",
         "tags": [
           "travel_day"
         ],
@@ -157,12 +224,20 @@ export const ITINERARY_PHASES: ItineraryPhase[] = [
           "noon": "下午抵達",
           "evening": "傍晚觀光"
         },
-        "details": {}
+        "details": {
+          "notes": [
+            "**今天目標**：順利到塞維爾入住＋把晚餐吃好",
+            "**時間錨點**：以抵達/入住為第一優先；傍晚行程可有可無",
+            "**省力走法**：晚上只安排「離飯店近」的散步/吃飯",
+            "**Plan B（聖週/封路）**：遇到遊行/封路→只看一小段就撤退回飯店；不硬穿越人潮",
+            "**安全**：人擠人時手機不要拿手上走路；包包放前"
+          ]
+        }
       },
       {
         "day": 10,
-        "dateLabel": "（待補日期）",
-        "cityLabel": "格拉納達",
+        "dateLabel": "",
+        "cityLabel": "塞維爾",
         "title": "塞維爾 → 格拉納達（交通日）",
         "tags": [
           "travel_day"
@@ -172,11 +247,19 @@ export const ITINERARY_PHASES: ItineraryPhase[] = [
           "noon": "西班牙廣場＋公園",
           "evening": "火車到格拉納達入住"
         },
-        "details": {}
+        "details": {
+          "notes": [
+            "**今天目標**：順利到格拉納達入住（觀光只是加分）",
+            "**時間錨點**：火車時間是全日錨點；提早到車站附近集合",
+            "**省力走法**：戶外點只排白天；晚上不追景點，留力給移動",
+            "**Plan B（聖週/封路）**：遇到封路/人潮→留在公園周邊或車站附近，不跨區奔波",
+            "**安全**：車站/人潮區顧好包包，別把手機放外套口袋"
+          ]
+        }
       },
       {
         "day": 11,
-        "dateLabel": "（待補日期）",
+        "dateLabel": "",
         "cityLabel": "格拉納達",
         "title": "阿爾罕布拉宮（WOW）",
         "tags": [
@@ -188,12 +271,20 @@ export const ITINERARY_PHASES: ItineraryPhase[] = [
           "noon": "宮內/周邊午餐",
           "evening": "休息"
         },
-        "details": {}
+        "details": {
+          "notes": [
+            "**今天目標**：把阿爾罕布拉宮完整走完（今天只做這件事）",
+            "**時間錨點**：入場時段＝全日錨點（其它都讓路）",
+            "**省力走法**：走路多、台階多；鞋要好走；中午務必坐下吃飯休息",
+            "**Plan B（聖週/人潮）**：排隊/人太多就減少加點，不硬塞其它景點",
+            "**安全**：注意腳下（坡度/石板），不要邊走邊看手機"
+          ]
+        }
       },
       {
         "day": 12,
-        "dateLabel": "（待補日期）",
-        "cityLabel": "馬德里",
+        "dateLabel": "",
+        "cityLabel": "格拉納達",
         "title": "格拉納達市區＋傍晚移動到馬德里",
         "tags": [
           "travel_day"
@@ -203,11 +294,19 @@ export const ITINERARY_PHASES: ItineraryPhase[] = [
           "noon": "午餐",
           "evening": "火車 → 馬德里"
         },
-        "details": {}
+        "details": {
+          "notes": [
+            "**今天目標**：白天輕逛＋準時上車到馬德里",
+            "**時間錨點**：火車時間是全日錨點；提早回飯店整理再去車站",
+            "**省力走法**：走累就提早回飯店休息（不要硬撐到傍晚）",
+            "**Plan B（體力不足）**：直接把白天改成咖啡廳/室內；留力給移動",
+            "**安全**：車站人多時包包放前、不要分心"
+          ]
+        }
       },
       {
         "day": 13,
-        "dateLabel": "（待補日期）",
+        "dateLabel": "",
         "cityLabel": "馬德里",
         "title": "文化之日",
         "tags": [
@@ -215,15 +314,23 @@ export const ITINERARY_PHASES: ItineraryPhase[] = [
           "ticket"
         ],
         "summary": {
-          "morning": "Reina Sofía",
+          "morning": "索菲亞王后國家藝術中心（Reina Sofía）",
           "noon": "阿托查熱帶花園/市集",
           "evening": "麗池公園/皇宮/文青區"
         },
-        "details": {}
+        "details": {
+          "notes": [
+            "**今天目標**：用博物館＋公園把馬德里“慢慢看”",
+            "**時間錨點**：博物館盡量早到；午後留一段坐著休息（公園/咖啡廳）",
+            "**省力走法**：博物館是最好走的行程（有椅子、可休息）",
+            "**Plan B（下雨）**：直接全改室內（博物館/市場），不硬走戶外",
+            "**安全**：Sol/Gran Vía/Atocha 等人潮區包包放前、餐桌不放手機"
+          ]
+        }
       },
       {
         "day": 14,
-        "dateLabel": "（待補日期）",
+        "dateLabel": "",
         "cityLabel": "馬德里",
         "title": "完全緩衝日（Toledo/Segovia 選項）",
         "tags": [
@@ -234,11 +341,19 @@ export const ITINERARY_PHASES: ItineraryPhase[] = [
           "noon": "城市散步",
           "evening": "回馬德里整理"
         },
-        "details": {}
+        "details": {
+          "notes": [
+            "**今天目標**：完全緩衝（今天是保險）",
+            "**時間錨點**：不設定必達時間；以“舒服”為最高優先",
+            "**省力走法**：如果要出城，就只做 1 個城市（不要兩個都想要）",
+            "**Plan B（累/班次少）**：直接留在市區散步＋咖啡廳＋早回飯店",
+            "**安全**：人多處照顧包包；不要把貴重物放外套口袋"
+          ]
+        }
       },
       {
         "day": 15,
-        "dateLabel": "（待補日期）",
+        "dateLabel": "",
         "cityLabel": "馬德里",
         "title": "回台",
         "tags": [
@@ -249,7 +364,15 @@ export const ITINERARY_PHASES: ItineraryPhase[] = [
           "noon": "長途飛行",
           "evening": "—"
         },
-        "details": {}
+        "details": {
+          "notes": [
+            "**今天目標**：提早到機場、不要趕（今天只求順）",
+            "**時間錨點**：出門時間寧可早，不壓線；把排隊與轉乘算進去",
+            "**省力走法**：能直達就直達（機場快線巴士/地鐵）；少換線少走路",
+            "**Plan B（聖週/人潮）**：遇到人潮或轉乘混亂就改直達方案，不硬省錢",
+            "**安全**：地鐵/車站是扒手高風險區，包包放前、手機收好"
+          ]
+        }
       }
     ]
   }

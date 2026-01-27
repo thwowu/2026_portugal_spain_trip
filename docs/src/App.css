@@ -2,6 +2,25 @@
   padding-bottom: 90px; /* space for bottom nav */
 }
 
+.routeFrame {
+  animation: routeIn 180ms ease-out both;
+}
+
+:root[data-motion='low'] .routeFrame {
+  animation: none;
+}
+
+@keyframes routeIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .inlineImageCard {
   width: min(620px, 100%);
   border: 1px solid var(--hairline);
@@ -23,10 +42,10 @@
 
 .inlineImageCaption {
   padding: 10px 12px 12px;
-  font-size: 12px;
+  font-size: var(--text-xs);
   line-height: 1.25;
   font-weight: 750;
-  color: var(--fg);
+  color: var(--text);
 }
 
 .galleryThumb {
@@ -53,8 +72,212 @@
   box-shadow: 0 0 0 3px color-mix(in oklab, var(--accent) 18%, transparent);
 }
 
+.galleryPanel {
+  position: fixed;
+  right: 14px;
+  bottom: 102px; /* keep clear of bottom nav */
+  width: min(560px, calc(100vw - 28px));
+  z-index: 70; /* above bottom nav (20), below modals (80+) */
+  overflow: hidden;
+  background: color-mix(in oklab, var(--surface) 78%, transparent);
+  border-color: color-mix(in oklab, var(--hairline) 80%, white);
+  box-shadow:
+    0 18px 60px rgba(18, 17, 14, 0.18),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.35);
+  -webkit-backdrop-filter: blur(18px) saturate(1.25);
+  backdrop-filter: blur(18px) saturate(1.25);
+}
+
+@media (max-width: 520px) {
+  .galleryPanel {
+    right: 10px;
+    bottom: 96px;
+    width: calc(100vw - 20px);
+  }
+}
+
+.galleryPanel:hover {
+  transform: none; /* avoid "lift" on fixed panel */
+}
+
+.galleryPanelHeader {
+  padding: 12px 12px 10px;
+  border-bottom: 1px solid color-mix(in oklab, var(--hairline) 85%, white);
+  background:
+    radial-gradient(520px 220px at 18% 0%, color-mix(in oklab, var(--accent) 14%, transparent), transparent 60%),
+    color-mix(in oklab, var(--surface) 72%, transparent);
+}
+
+.galleryPanelTitleRow {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.galleryPanelTitle {
+  font-weight: 900;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 0;
+}
+
+.galleryPanelCount {
+  font-size: var(--text-xs);
+  white-space: nowrap;
+}
+
+.galleryPanelActions {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.galleryIconBtn {
+  padding: 10px 12px;
+  min-width: 44px;
+  font-weight: 900;
+}
+
+.galleryCloseBtn {
+  padding: 10px 14px;
+  font-weight: 850;
+}
+
+.galleryPanelMedia {
+  position: relative;
+  background: radial-gradient(520px 260px at 50% 20%, rgba(255, 255, 255, 0.10), rgba(0, 0, 0, 0.92));
+}
+
+.galleryPanelBackdrop {
+  position: absolute;
+  inset: -24px;
+  width: calc(100% + 48px);
+  height: calc(100% + 48px);
+  object-fit: cover;
+  filter: blur(22px) saturate(1.25) contrast(1.05);
+  opacity: 0.33;
+  transform: scale(1.06);
+  pointer-events: none;
+}
+
+.galleryPanelMediaShade {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.22), transparent 32%),
+    linear-gradient(to top, rgba(0, 0, 0, 0.62), transparent 50%);
+  opacity: 0.9;
+}
+
+.galleryPanelMediaOverlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  padding: 12px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0));
+}
+
+.galleryPanelMediaOverlayInner {
+  display: grid;
+  gap: 6px;
+}
+
+.galleryPanelMediaOverlayTitle {
+  color: rgba(255, 255, 255, 0.92);
+  font-weight: 900;
+  letter-spacing: 0.01em;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.35);
+}
+
+.galleryPanelMediaOverlayMeta {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: var(--text-xs);
+}
+
+.galleryPanelMediaOverlayCaption {
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  opacity: 0.9;
+}
+
+.galleryPanelFooter {
+  padding: 12px;
+  border-top: 1px solid color-mix(in oklab, var(--hairline) 85%, white);
+  background: color-mix(in oklab, var(--surface) 70%, transparent);
+}
+
+.galleryPanelThumbs {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding-bottom: 6px;
+  -webkit-overflow-scrolling: touch;
+}
+
+.galleryPanelMeta {
+  margin-top: 8px;
+  display: grid;
+  gap: 6px;
+}
+
+.galleryPanelCaption {
+  font-size: var(--text-xs);
+}
+
+.galleryPanelHint {
+  font-size: var(--text-xs);
+  opacity: 0.9;
+}
+
+.galleryPanelCollapsed {
+  /* header-only state */
+  overflow: hidden;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  :root:not([data-motion='low']) .galleryPanel {
+    transition: box-shadow 180ms ease, border-color 180ms ease;
+  }
+  :root:not([data-motion='low']) .galleryPanel:hover {
+    box-shadow:
+      0 22px 76px rgba(18, 17, 14, 0.22),
+      inset 0 0 0 1px rgba(255, 255, 255, 0.42);
+    border-color: color-mix(in oklab, var(--accent) 18%, var(--hairline));
+  }
+  :root:not([data-motion='low']) .galleryPanelMediaOverlay {
+    transition: opacity 160ms ease, transform 160ms ease;
+    opacity: 0.92;
+    transform: translateY(0);
+  }
+  :root:not([data-motion='low']) .galleryPanel:hover .galleryPanelMediaOverlay {
+    opacity: 1;
+    transform: translateY(-1px);
+  }
+}
+
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  .galleryPanel {
+    background: var(--surface);
+  }
+}
+
 .siteFooter {
-  max-width: 980px;
+  max-width: var(--layout-max);
   margin: 22px auto 0;
   padding: 12px var(--pad-page) 18px;
   border-top: 1px solid var(--hairline);
@@ -69,13 +292,13 @@
 .siteFooterTitle {
   font-weight: 750;
   letter-spacing: 0.01em;
-  font-size: 12px;
+  font-size: var(--text-xs);
   text-transform: uppercase;
   opacity: 0.9;
 }
 
 .siteFooterText {
-  font-size: 12px;
+  font-size: var(--text-xs);
   line-height: 1.45;
 }
 
@@ -94,8 +317,23 @@
   justify-content: space-between;
   gap: 12px;
   padding: 12px var(--pad-page);
-  max-width: 980px;
+  max-width: var(--layout-max);
   margin: 0 auto;
+}
+
+.topBarHelpBtn {
+  /* Elder-first: keep touch target comfortable even in top bar */
+  min-height: 44px;
+  padding: 12px 14px;
+  border-radius: 14px;
+  font-weight: 850;
+  font-size: var(--text-sm);
+}
+
+:root[data-ui='senior'] .topBarHelpBtn {
+  min-height: 48px;
+  padding: 14px 16px;
+  font-size: var(--text-md);
 }
 
 .brand {
@@ -116,23 +354,42 @@
   line-height: 1.2;
 }
 
+/* Mobile top bar: avoid wrapping/overflow with senior typography */
+@media (max-width: 520px) {
+  .topBarInner {
+    align-items: flex-start;
+  }
+
+  /* Keep the top bar compact on phones (more content visible). */
+  .brandSub {
+    display: none;
+  }
+
+  :root[data-ui='senior'] .topBarHelpBtn {
+    /* Don't let the help button dominate the top bar on phones */
+    min-height: 44px;
+    padding: 12px 14px;
+    font-size: var(--text-sm);
+  }
+}
+
 .bottomNav {
   position: fixed;
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 20;
+  z-index: 200;
   border-top: 1px solid var(--hairline);
   background: color-mix(in oklab, var(--surface) 82%, var(--bg));
   backdrop-filter: blur(12px);
 }
 
 .bottomNavInner {
-  max-width: 980px;
+  max-width: var(--layout-max);
   margin: 0 auto;
   padding: 10px 12px 14px;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 10px;
 }
 
@@ -166,16 +423,32 @@
 .navIcon {
   width: 22px;
   height: 22px;
+  display: grid;
+  place-items: center;
+}
+
+.navIconSvg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: currentColor;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-size: contain;
+  mask-size: contain;
 }
 
 .navLabel {
-  font-size: 12px;
+  font-size: var(--text-xs);
   line-height: 1;
-  font-weight: 650;
+  font-weight: 800;
 }
 
 :root[data-ui='senior'] .navIcon {
-  display: none;
+  width: 24px;
+  height: 24px;
 }
 
 :root[data-ui='senior'] .bottomNavInner {
@@ -190,7 +463,86 @@
 }
 
 :root[data-ui='senior'] .navLabel {
-  font-size: 15px;
+  font-size: var(--text-sm);
   line-height: 1.1;
-  font-weight: 750;
+  font-weight: 900;
+}
+
+.navItemActive .navLabel {
+  font-weight: 900;
+}
+
+/* ExpandingBox (animated accordion / read-more) */
+.expBox {
+  overflow: hidden;
+}
+
+.expHeader {
+  width: 100%;
+  text-align: left;
+  background: transparent;
+  border: 0;
+  padding: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  font-weight: 900;
+  color: var(--text);
+}
+
+.expHeaderTitle {
+  min-width: 0;
+}
+
+.expHeaderRight {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--muted);
+  flex: 0 0 auto;
+}
+
+.expHeaderMeta {
+  font-size: var(--text-xs);
+  white-space: nowrap;
+}
+
+.expChevron {
+  display: inline-block;
+  transition: transform 160ms ease;
+}
+
+.expChevronOpen {
+  transform: rotate(180deg);
+}
+
+.expContentWrap {
+  padding: 0 var(--pad-card) var(--pad-card);
+  max-height: var(--exp-max, 0px);
+  overflow: hidden;
+  transition: max-height 180ms ease;
+}
+
+.expContentInner {
+  padding: 0;
+}
+
+.expToggle {
+  padding: 0 var(--pad-card) var(--pad-card);
+  display: flex;
+  justify-content: center;
+}
+
+.expToggleBtn {
+  width: 100%;
+  border-radius: 14px;
+  font-weight: 850;
+}
+
+.expToggleClosed {
+  /* subtle "more" affordance like the Vue demo */
+  border-top: 1px solid color-mix(in oklab, var(--hairline) 85%, white);
+  box-shadow: 0 -26px 36px color-mix(in oklab, var(--surface) 88%, transparent);
 }

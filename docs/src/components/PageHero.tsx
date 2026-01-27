@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react'
+import { withBaseUrl } from '../utils/asset'
 
 export type HeroImage = {
   /** Primary src (prefer local `/illustrations/...`) */
@@ -19,7 +20,7 @@ export function PageHero({
   image?: HeroImage
   rightSlot?: React.ReactNode
 }) {
-  const [imgSrc, setImgSrc] = useState(image?.src ?? '')
+  const [imgSrc, setImgSrc] = useState(withBaseUrl(image?.src ?? ''))
 
   const canShowImg = useMemo(() => !!image?.src, [image?.src])
 
@@ -35,13 +36,14 @@ export function PageHero({
         {canShowImg ? (
           <img
             className="pageHeroImg"
-            src={imgSrc}
+            src={withBaseUrl(imgSrc)}
             alt={image?.alt ?? '插圖'}
             loading="lazy"
             decoding="async"
             onError={() => {
               if (!image?.fallbackSrc) return
-              if (imgSrc !== image.fallbackSrc) setImgSrc(image.fallbackSrc)
+              const next = withBaseUrl(image.fallbackSrc)
+              if (imgSrc !== next) setImgSrc(next)
             }}
           />
         ) : null}

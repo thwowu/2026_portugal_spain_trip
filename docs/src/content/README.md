@@ -1,46 +1,42 @@
-# Content SSOT
+# 內容 SSOT（單一真實來源）
 
-This folder is the **single source of truth** for trip content.
+這個資料夾是旅遊內容的 **單一真實來源（SSOT）**。
 
-## What you should edit
+## 你應該改哪裡？
 
-- **SSOT (edit these Markdown files)**: `src/content/*.md`
-  - Attractions: `src/content/attractions.<cityId>.md` → `ATTRACTIONS_DATA`
-  - Stays: `src/content/stays.<cityId>.md` → `STAYS_DATA`
-  - Transport: `src/content/transport.<segmentId>.md` → `TRANSPORT_DATA`
-  - Itinerary: `src/content/itinerary.md` → `ITINERARY_PHASES`
+- **SSOT（只改這些 Markdown 檔）**：`src/content/*.md`
+  - 景點：`src/content/attractions.<cityId>.md` → `ATTRACTIONS_DATA`
+  - 住宿：`src/content/stays.<cityId>.md` → `STAYS_DATA`
+  - 交通：`src/content/transport.<segmentId>.md` → `TRANSPORT_DATA`
+  - 行程：`src/content/itinerary.md` → `ITINERARY_PHASES`
 
-Legacy long-form notes may be kept as `*.legacy.md` (these are ignored by the build).
+較舊/雜記型的長文可以放在 `*.legacy.md`（build 會忽略它們）。
 
-The app does **not** render Markdown directly at runtime. Instead, we generate TypeScript data under `src/generated/`.
+App **不會在 runtime 直接渲染整份 Markdown 文件**；而是先把內容轉成 `src/generated/` 下的 TypeScript 資料，前端再用資料去 render。
 
-## Workflow
+為了讓內容好寫、UI 好讀，部分欄位支援 **小範圍 Markdown 子集**：
 
-- **One-time split from master doc** (optional): `npm run content:split`
-  - Produces `src/content/*.md` for long-form notes
-- **Generate data for the app**: `npm run content:build`
-  - Reads `src/content/*.md`
-  - Writes `src/generated/*.ts`
-- **Run the app**: `npm run dev` (runs generation first via `predev`)
+- `**粗體**`
+- `` `行內 code` ``
+- `[文字](https://example.com)` 連結（以及直接寫 `https://...`）
+- 清單：`- item`、`1. item`
+- 勾選清單：`- [ ] item`、`- [x] item`
+- 引言：`> quoted text`
 
-## Validation & errors
+## 工作流程
 
-Generation validates parsed Markdown with schemas (zod). If something is wrong, the build step will fail and point to the file and line number.
+- **（可選）從主文件拆分**：`npm run content:split`
+  - 會產生/更新 `src/content/*.md` 的長文版本（用於整理初稿）
+- **產生給 App 用的資料**：`npm run content:build`
+  - 讀取 `src/content/*.md`
+  - 寫入 `src/generated/*.ts`
+- **啟動開發伺服器**：`npm run dev`（會先跑 `predev` 產生資料）
 
-## Content Patch JSON (for AI-assisted updates)
+## 驗證與錯誤訊息
 
-The Dashboard has two exports:
+產生過程會用 schema（zod）驗證內容；如果內容格式不符合，build 會失敗，並提示錯誤的檔案與行數。
 
-- **Planning Export JSON**: for syncing decisions on phones (import back into the website).
-- **Content Patch JSON**: for AI to update Markdown SSOT (`src/content/*.md`) deterministically.
-
-In the Dashboard:
-
-- Click **「匯出內容更新 JSON（給 AI）」**.
-- Send the `.json` file to the person/LLM who maintains the repo.
-- The JSON includes `targets[]` (domain/id → md file + anchors) and `payload.planning` (decisions/reasons).
-
-## Markdown templates (copy/paste)
+## Markdown 範本（直接複製貼上）
 
 ### Attractions (per city)
 
@@ -48,10 +44,10 @@ In the Dashboard:
 ---
 schema: v1
 cityId: lisbon
-title: 里斯本 Lisbon
+title: 里斯本（Lisbon）
 ---
 
-# 里斯本 Lisbon
+# 里斯本（Lisbon）
 
 ## must
 - ...
@@ -90,10 +86,10 @@ title: 里斯本 Lisbon
 ---
 schema: v1
 cityId: lisbon
-title: 里斯本住宿
+title: 里斯本（Lisbon）住宿
 ---
 
-# 里斯本住宿
+# 里斯本（Lisbon）住宿
 
 ## options
 - Hotel name | status=primary
@@ -134,10 +130,10 @@ title: 里斯本住宿
 ---
 schema: v1
 segmentId: lisbon-lagos
-title: 里斯本 → Lagos
+title: 里斯本（Lisbon）→ 拉各斯（Lagos）
 ---
 
-# 里斯本 → Lagos
+# 里斯本（Lisbon）→ 拉各斯（Lagos）
 
 ## tldr
 - recommended: bus
@@ -173,7 +169,7 @@ schema: v1
 
 # Itinerary
 
-## phase phase-lisbon | 里斯本 + Sintra（5 天）
+## phase phase-lisbon | 里斯本 + 辛特拉（Sintra）（5 天）
 
 ### day 1 | 里斯本 | 抵達日（時差回收）
 - tags: easy
@@ -185,10 +181,8 @@ schema: v1
 
 ## For family / non-engineers (optional)
 
-If you don't want to edit Markdown files:
+如果你不想直接改 Markdown 檔：
 
-- Open the website on your phone
-- Update decisions/notes in the UI (Dashboard)
-- Use the **Export JSON** button to download a `.json` file
-- Send that file to me on LINE (as a file attachment)
+- 可以直接在網站 UI 上補充/更新一些決策與備註
+- 但主要內容仍以 `src/content/*.md` 為準（建議回到 repo 內統一維護）
 

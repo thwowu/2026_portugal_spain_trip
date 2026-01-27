@@ -3,6 +3,7 @@ import { TransformComponent, TransformWrapper } from 'react-zoom-pan-pinch'
 import type { TransportSegmentId } from '../data/core'
 import { MAP_CITIES, MAP_ROUTES, pathD, type Point } from '../map/data'
 import { useMotionEnabled } from '../state/settings'
+import { withBaseUrl } from '../utils/asset'
 
 function bbox(pts: Point[]) {
   const xs = pts.map((p) => p.x)
@@ -28,7 +29,7 @@ export function TransportMapWidget({
   const imgRef = useRef<HTMLImageElement | null>(null)
   const frameRef = useRef<HTMLDivElement | null>(null)
   const pathRef = useRef<SVGPathElement | null>(null)
-  const markerRef = useRef<SVGCircleElement | null>(null)
+  const markerRef = useRef<SVGGElement | null>(null)
 
   useEffect(() => {
     const img = imgRef.current
@@ -50,26 +51,48 @@ export function TransportMapWidget({
   }, [route])
 
   useEffect(() => {
+    // Always show the marker (even in low-motion mode).
+    const marker = markerRef.current
+    if (!marker || !geo) return
+    marker.setAttribute('transform', `translate(${geo.a.x} ${geo.a.y})`)
+  }, [geo, segmentId])
+
+  useEffect(() => {
     if (!motionEnabled) return
     const path = pathRef.current
     const marker = markerRef.current
-    if (!path || !marker) return
+    const frame = frameRef.current
+    if (!path || !marker || !frame) return
 
-    let raf = 0
-    const durationMs = 10_000
     const len = path.getTotalLength()
-    const start = performance.now()
+    let raf = 0
 
-    const tick = () => {
-      const now = performance.now()
-      const t = ((now - start) % durationMs) / durationMs
+    const update = () => {
+      raf = 0
+      const rect = frame.getBoundingClientRect()
+      // Progress as the widget scrolls through the viewport:
+      // 0 when it's just below the viewport, 1 when it's just above.
+      const raw = (window.innerHeight - rect.top) / (window.innerHeight + rect.height)
+      const t = Math.min(1, Math.max(0, raw))
       const pt = path.getPointAtLength(t * len)
-      marker.setAttribute('cx', String(pt.x))
-      marker.setAttribute('cy', String(pt.y))
-      raf = requestAnimationFrame(tick)
+      marker.setAttribute('transform', `translate(${pt.x} ${pt.y})`)
     }
-    raf = requestAnimationFrame(tick)
-    return () => cancelAnimationFrame(raf)
+
+    const onScroll = () => {
+      if (raf) return
+      raf = requestAnimationFrame(update)
+    }
+
+    // Initialize once in case we land mid-page.
+    update()
+
+    window.addEventListener('scroll', onScroll, { passive: true })
+    window.addEventListener('resize', onScroll)
+    return () => {
+      cancelAnimationFrame(raf)
+      window.removeEventListener('scroll', onScroll)
+      window.removeEventListener('resize', onScroll)
+    }
   }, [motionEnabled, segmentId])
 
   if (!route || !geo) {
@@ -91,7 +114,7 @@ export function TransportMapWidget({
       <div className="cardInner">
         <div style={{ display: 'flex', alignItems: 'baseline', gap: 10, flexWrap: 'wrap' }}>
           <div style={{ fontWeight: 900 }}>地圖</div>
-          <div className="muted" style={{ fontSize: 13 }}>
+          <div className="muted" style={{ fontSize: 'var(--text-sm)' }}>
             單指拖曳、雙指縮放、雙擊放大；右下角有＋/－/重置
           </div>
         </div>
@@ -147,10 +170,12 @@ export function TransportMapWidget({
                     <div style={{ position: 'relative', width: mapW, height: mapH }}>
                       <img
                         ref={imgRef}
-                        src="/map/map.png"
+                        src={withBaseUrl('/map/map.jpg')}
                         alt="Iberian Peninsula map"
                         style={{ width: '100%', height: '100%', display: 'block' }}
                         draggable={false}
+                        loading="lazy"
+                        decoding="async"
                       />
                       <svg
                         viewBox={viewBox}
@@ -193,19 +218,33 @@ export function TransportMapWidget({
                           )
                         })}
 
-                        {/* moving marker placeholder: activated in map-motion todo */}
-                        {motionEnabled && (
-                          <circle
-                            ref={markerRef}
-                            cx={geo.a.x}
-                            cy={geo.a.y}
-                            r={7}
-                            fill="rgba(255,200,55,0.95)"
-                            stroke="rgba(0,0,0,0.35)"
-                            strokeWidth={2}
-                            opacity={0.95}
-                          />
-                        )}
+                        {/* bus marker (scroll-linked when motion is enabled) */}
+                        <g ref={markerRef} aria-hidden="true">
+                          {/* glow */}
+                          <circle cx={0} cy={0} r={12} fill="rgba(255,255,255,0.75)" />
+                          {/* bus (tiny SVG icon) */}
+                          <g transform="translate(-11 -9)">
+                            {/* body */}
+                            <rect
+                              x={0}
+                              y={3}
+                              width={22}
+                              height={12}
+                              rx={4}
+                              fill={motionEnabled ? 'rgba(22,91,122,0.96)' : 'rgba(22,91,122,0.55)'}
+                              stroke="rgba(0,0,0,0.35)"
+                              strokeWidth={1.5}
+                            />
+                            {/* windows */}
+                            <rect x={3} y={6} width={6} height={4} rx={1} fill="rgba(255,255,255,0.88)" />
+                            <rect x={10} y={6} width={6} height={4} rx={1} fill="rgba(255,255,255,0.88)" />
+                            {/* door */}
+                            <rect x={17} y={6} width={3} height={7} rx={1} fill="rgba(255,255,255,0.65)" />
+                            {/* wheels */}
+                            <circle cx={6} cy={16} r={2.2} fill="rgba(0,0,0,0.55)" />
+                            <circle cx={16} cy={16} r={2.2} fill="rgba(0,0,0,0.55)" />
+                          </g>
+                        </g>
                       </svg>
                     </div>
                   </TransformComponent>
