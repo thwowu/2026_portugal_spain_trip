@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex,nofollow,noarchive,nosnippet" />
+    <meta name="googlebot" content="noindex,nofollow,noarchive,nosnippet" />
+    <title>Redirecting...</title>
+    <script>
+      // GitHub Pages SPA fallback.
+      // Redirect /path -> /?p=/path so index.html can restore it.
+      (function () {
+        var l = window.location;
+        var base = l.pathname.replace(/\/[^/]*$/, '/'); // keep repo base
+        var target =
+          base +
+          '?p=' +
+          encodeURIComponent(l.pathname + l.search + l.hash) +
+          '&v=1';
+        window.location.replace(target);
+      })();
+    </script>
+  </head>
+  <body></body>
+</html>
+
