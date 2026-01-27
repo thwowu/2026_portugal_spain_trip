@@ -36,7 +36,7 @@ export function SettingsModal({
             <div>
               <div className="modalTitle">設定</div>
               <div className="muted modalSub">
-                字體預設以長輩友善為主；如果覺得太大/太小，可在這裡調整。
+                字體預設偏大、好閱讀；如果覺得太大/太小，可在這裡調整。
               </div>
             </div>
             <button className="btn modalCloseBtn" ref={closeBtnRef} onClick={onClose}>

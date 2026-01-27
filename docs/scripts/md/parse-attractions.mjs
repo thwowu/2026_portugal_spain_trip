@@ -23,7 +23,7 @@ const REQUIRED_KINDS = /** @type {const} */ ([
 
 const DEFAULT_TITLES = {
   must: '必去（Top picks）',
-  easy: '走路少 / 長輩友善（Easy）',
+  easy: '走路少 / 輕鬆（Easy）',
   rain: '下雨備案（Rain plan）',
   views: '風景視角點（Views）',
   routes: '半日/一日組合路線（Ready-made routes）',

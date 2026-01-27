@@ -1,6 +1,6 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { STAYS_DATA } from '../generated'
-import { CITIES, type CityId } from '../data/core'
+import { CITIES, STAYS_CITY_ORDER, type CityId } from '../data/core'
 import { usePlanning } from '../state/planning'
 import { useProgress } from '../state/progress'
 import { useSettings } from '../state/settings'
@@ -53,6 +53,11 @@ export function StaysPage() {
   useHashScroll()
   const [modal, setModal] = useState<{ cityId: CityId; kind: 'risk' | 'scoring' } | null>(null)
 
+  const orderedStays = useMemo(() => {
+    const idx = new Map<string, number>(STAYS_CITY_ORDER.map((id, i) => [id, i]))
+    return [...STAYS_DATA].sort((a, b) => (idx.get(a.cityId) ?? 999) - (idx.get(b.cityId) ?? 999))
+  }, [])
+
   return (
     <div className="container">
       <div className="card">
@@ -74,7 +79,7 @@ export function StaysPage() {
           <hr className="hr" />
 
           <div className="chipRow">
-            {STAYS_DATA.map((c) => (
+            {orderedStays.map((c) => (
               <button
                 key={c.cityId}
                 className="btn"
@@ -90,7 +95,7 @@ export function StaysPage() {
       <div style={{ height: 12 }} />
 
       <div style={{ display: 'grid', gap: 14 }}>
-        {STAYS_DATA.map((c) => {
+        {orderedStays.map((c) => {
           const decision = state.stayDecisions[c.cityId]
           return (
             <RevealSection key={c.cityId} id={`stay-${c.cityId}`} cityId={c.cityId as CityId} onSeen={progressActions.markStaySeen}>

@@ -7,6 +7,7 @@ import { FormattedText } from '../components/FormattedText'
 import { useProgress } from '../state/progress'
 import { useSettings } from '../state/settings'
 import { Modal } from '../components/Modal'
+import { ItineraryBackground } from '../components/ItineraryBackground'
 import styles from './ItineraryTimeline.module.css'
 
 function tagLabel(tag: ItineraryDay['tags'][number]) {
@@ -46,15 +47,19 @@ export function ItineraryPage() {
     [],
   )
 
-  const phaseToc = useMemo(
-    () =>
-      ITINERARY_PHASES.map((p) => ({
-        id: p.id,
-        label: p.label,
-        firstDay: p.days[0]?.day ?? 1,
-      })),
-    [],
-  )
+  // Floating quick-jump: build by *city* (not by phase) so cities like
+  // "塞維爾 / 格拉納達 / 馬德里" appear as separate entries.
+  const phaseToc = useMemo(() => {
+    const seen = new Set<string>()
+    const toc: { id: string; label: string; firstDay: number }[] = []
+    for (const d of allDays) {
+      const city = d.cityLabel.trim()
+      if (!city || seen.has(city)) continue
+      seen.add(city)
+      toc.push({ id: `day-${d.day}`, label: city, firstDay: d.day })
+    }
+    return toc
+  }, [allDays])
 
   useEffect(() => {
     if (typeof IntersectionObserver === 'undefined') {
@@ -109,85 +114,161 @@ export function ItineraryPage() {
   const expandAll = () => setOpenDays(Object.fromEntries(allDays.map((d) => [d.day, true])))
   const collapseAll = () => setOpenDays({})
 
+  const adjacentDays = useMemo(() => {
+    const idx = allDays.findIndex((d) => d.day === activeDay)
+    if (idx < 0) return { prev: null as ItineraryDay | null, next: null as ItineraryDay | null }
+    return {
+      prev: allDays[idx - 1] ?? null,
+      next: allDays[idx + 1] ?? null,
+    }
+  }, [allDays, activeDay])
+
   return (
-    <div className="container">
-      <div className="card">
-        <div className="cardInner">
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 120px', gap: 14 }}>
-            <div>
-              <div style={{ fontWeight: 950, fontSize: 'var(--text-2xl)', lineHeight: 1.1 }}>
-                Day 1–15 總行程
+    <>
+      <ItineraryBackground />
+      <div className="container" style={{ position: 'relative', zIndex: 1 }}>
+        <div className="card">
+          <div className="cardInner">
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 120px', gap: 14 }}>
+              <div>
+                <div style={{ fontWeight: 950, fontSize: 'var(--text-2xl)', lineHeight: 1.1 }}>
+                  Day 1–15 總行程
+                </div>
+                <div className="muted" style={{ marginTop: 10 }}>
+                  像「流程圖」一樣往下滑：先看每一天摘要，需要再展開。
+                </div>
+                <div className="chipRow" style={{ marginTop: 12 }}>
+                  <button className="btn btnPrimary" onClick={expandAll}>
+                    展開全部
+                  </button>
+                  <button className="btn" onClick={collapseAll}>
+                    收合全部
+                  </button>
+                </div>
               </div>
-              <div className="muted" style={{ marginTop: 10 }}>
-                像「流程圖」一樣往下滑：先看每一天摘要，需要再展開。
-              </div>
-              <div className="chipRow" style={{ marginTop: 12 }}>
-                <button className="btn btnPrimary" onClick={expandAll}>
-                  展開全部
-                </button>
-                <button className="btn" onClick={collapseAll}>
-                  收合全部
-                </button>
+              <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
+                <img
+                  src={ILLUSTRATION.cover3d.src}
+                  alt={ILLUSTRATION.cover3d.alt}
+                  style={{ width: 120, height: 120, objectFit: 'contain' }}
+                />
               </div>
             </div>
-            <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
-              <img
-                src={ILLUSTRATION.cover3d.src}
-                alt={ILLUSTRATION.cover3d.alt}
-                style={{ width: 120, height: 120, objectFit: 'contain' }}
-              />
-            </div>
+
+            <hr className="hr" />
           </div>
-
-          <hr className="hr" />
         </div>
+
+        <div style={{ height: 12 }} />
+
+        <Timeline phases={ITINERARY_PHASES} openDays={openDays} onToggleDay={toggleDay} setDayRef={(day, el) => {
+          if (el) dayRefs.current.set(day, el)
+        }} />
+
+        <AdjacentDayDock
+          motionEnabled={motionEnabled}
+          activeDay={activeDay}
+          prev={adjacentDays.prev}
+          next={adjacentDays.next}
+        />
+
+        {/* Floating quick-jump (hamburger) */}
+        <button
+          type="button"
+          className="btn btnPrimary"
+          onClick={() => setTocOpen(true)}
+          aria-haspopup="dialog"
+          aria-label="快速跳轉"
+          title="快速跳轉"
+          style={{
+            position: 'fixed',
+            right: 'calc(env(safe-area-inset-right, 0px) + 14px)',
+            bottom: 'calc(var(--bottomnav-h, 84px) + env(safe-area-inset-bottom, 0px) + 12px)',
+            width: 52,
+            height: 52,
+            borderRadius: 16,
+            display: 'grid',
+            placeItems: 'center',
+            zIndex: 30,
+            boxShadow: '0 18px 46px rgba(0,0,0,0.22)',
+            padding: 0,
+          }}
+        >
+          <span aria-hidden="true" style={{ display: 'grid', gap: 5 }}>
+            <span style={{ width: 20, height: 2, borderRadius: 99, background: 'white', display: 'block' }} />
+            <span style={{ width: 20, height: 2, borderRadius: 99, background: 'white', display: 'block' }} />
+            <span style={{ width: 20, height: 2, borderRadius: 99, background: 'white', display: 'block' }} />
+          </span>
+        </button>
+
+        {tocOpen && (
+          <QuickJumpModal
+            phaseToc={phaseToc}
+            onClose={() => setTocOpen(false)}
+            onPick={(id) => {
+              scrollToId(id, motionEnabled)
+              setTocOpen(false)
+            }}
+          />
+        )}
       </div>
+    </>
+  )
+}
 
-      <div style={{ height: 12 }} />
+function AdjacentDayDock({
+  motionEnabled,
+  activeDay,
+  prev,
+  next,
+}: {
+  motionEnabled: boolean
+  activeDay: number
+  prev: ItineraryDay | null
+  next: ItineraryDay | null
+}) {
+  const jump = (day: number) => scrollToId(`day-${day}`, motionEnabled)
+  const label = (d: ItineraryDay) => `Day ${d.day}｜${d.cityLabel}｜${d.title}`
 
-      <Timeline phases={ITINERARY_PHASES} openDays={openDays} onToggleDay={toggleDay} setDayRef={(day, el) => {
-        if (el) dayRefs.current.set(day, el)
-      }} />
+  // Avoid showing an empty dock in weird edge states.
+  if (!prev && !next) return null
 
-      {/* Floating quick-jump (hamburger) */}
+  return (
+    <div className={styles.adjacentDock} aria-label="前後一天">
       <button
         type="button"
-        className="btn btnPrimary"
-        onClick={() => setTocOpen(true)}
-        aria-haspopup="dialog"
-        aria-label="快速跳轉"
-        title="快速跳轉"
-        style={{
-          position: 'fixed',
-          right: 'calc(env(safe-area-inset-right, 0px) + 14px)',
-          bottom: 'calc(var(--bottomnav-h, 84px) + env(safe-area-inset-bottom, 0px) + 12px)',
-          width: 52,
-          height: 52,
-          borderRadius: 16,
-          display: 'grid',
-          placeItems: 'center',
-          zIndex: 30,
-          boxShadow: '0 18px 46px rgba(0,0,0,0.22)',
-          padding: 0,
-        }}
+        className={`card ${styles.adjacentCard} ${styles.adjacentCardTop} ${!prev ? styles.adjacentCardDisabled : ''}`}
+        onClick={() => prev && jump(prev.day)}
+        disabled={!prev}
+        aria-label={prev ? `上一天：${label(prev)}` : '沒有上一天'}
+        title={prev ? `上一天：${label(prev)}` : '沒有上一天'}
       >
-        <span aria-hidden="true" style={{ display: 'grid', gap: 5 }}>
-          <span style={{ width: 20, height: 2, borderRadius: 99, background: 'white', display: 'block' }} />
-          <span style={{ width: 20, height: 2, borderRadius: 99, background: 'white', display: 'block' }} />
-          <span style={{ width: 20, height: 2, borderRadius: 99, background: 'white', display: 'block' }} />
-        </span>
+        <div className="cardInner" style={{ padding: 12 }}>
+          <div className={styles.adjacentMeta}>上一天</div>
+          <div className={styles.adjacentTitle}>{prev ? `Day ${prev.day}` : '—'}</div>
+          <div className={styles.adjacentSub}>{prev ? `${prev.cityLabel}｜${prev.title}` : '已經是第一天'}</div>
+        </div>
       </button>
 
-      {tocOpen && (
-        <QuickJumpModal
-          phaseToc={phaseToc}
-          onClose={() => setTocOpen(false)}
-          onPick={(id) => {
-            scrollToId(id, motionEnabled)
-            setTocOpen(false)
-          }}
-        />
-      )}
+      <button
+        type="button"
+        className={`card ${styles.adjacentCard} ${styles.adjacentCardBottom} ${!next ? styles.adjacentCardDisabled : ''}`}
+        onClick={() => next && jump(next.day)}
+        disabled={!next}
+        aria-label={next ? `下一天：${label(next)}` : '沒有下一天'}
+        title={next ? `下一天：${label(next)}` : '沒有下一天'}
+      >
+        <div className="cardInner" style={{ padding: 12 }}>
+          <div className={styles.adjacentMeta}>下一天</div>
+          <div className={styles.adjacentTitle}>{next ? `Day ${next.day}` : '—'}</div>
+          <div className={styles.adjacentSub}>{next ? `${next.cityLabel}｜${next.title}` : '已經是最後一天'}</div>
+        </div>
+      </button>
+
+      {/* Keep a tiny center indicator for screen readers only. */}
+      <span aria-hidden="true" style={{ position: 'absolute', left: -9999, top: -9999 }}>
+        Day {activeDay}
+      </span>
     </div>
   )
 }
@@ -210,7 +291,7 @@ function QuickJumpModal({
           <div>
             <div style={{ fontWeight: 950, fontSize: 'var(--text-xl)', lineHeight: 1.15 }}>快速跳轉</div>
             <div className="muted" style={{ marginTop: 6 }}>
-              依城市（phase）跳到對應段落。
+              依城市跳到對應日（Day）。
             </div>
           </div>
           <button className="btn" onClick={onClose}>

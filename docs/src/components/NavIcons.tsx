@@ -1,7 +1,4 @@
-import calendarEventUrl from '../assets/tabler/calendar-event.svg?url'
-import trainUrl from '../assets/tabler/train.svg?url'
-import bedUrl from '../assets/tabler/bed.svg?url'
-import mapPinUrl from '../assets/tabler/map-pin.svg?url'
+import type { ReactNode } from 'react'
 
 type IconProps = {
   /** px */
@@ -9,36 +6,81 @@ type IconProps = {
   title?: string
 }
 
-function MaskIcon({ src, size = 22, title }: { src: string } & IconProps) {
+function SvgIcon({
+  size = 22,
+  title,
+  children,
+}: IconProps & {
+  children: ReactNode
+}) {
   return (
-    <span
-      className="navIconSvg"
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
       aria-hidden={title ? undefined : true}
       role={title ? 'img' : undefined}
       aria-label={title}
-      style={{
-        width: size,
-        height: size,
-        WebkitMaskImage: `url(${src})`,
-        maskImage: `url(${src})`,
-      }}
-    />
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      {title ? <title>{title}</title> : null}
+      {children}
+    </svg>
   )
 }
 
 export function IconItinerary(props: IconProps) {
-  return <MaskIcon {...props} src={calendarEventUrl} />
+  return (
+    <SvgIcon {...props}>
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M4 5m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z" />
+      <path d="M16 3l0 4" />
+      <path d="M8 3l0 4" />
+      <path d="M4 11l16 0" />
+      <path d="M8 15h2v2h-2z" />
+    </SvgIcon>
+  )
 }
 
 export function IconTransport(props: IconProps) {
-  return <MaskIcon {...props} src={trainUrl} />
+  return (
+    <SvgIcon {...props}>
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M21 13c0 -3.87 -3.37 -7 -10 -7h-8" />
+      <path d="M3 15h16a2 2 0 0 0 2 -2" />
+      <path d="M3 6v5h17.5" />
+      <path d="M3 11v4" />
+      <path d="M8 11v-5" />
+      <path d="M13 11v-4.5" />
+      <path d="M3 19h18" />
+    </SvgIcon>
+  )
 }
 
 export function IconStays(props: IconProps) {
-  return <MaskIcon {...props} src={bedUrl} />
+  return (
+    <SvgIcon {...props}>
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M7 9m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+      <path d="M22 17v-3h-20" />
+      <path d="M2 8v9" />
+      <path d="M12 14h10v-2a3 3 0 0 0 -3 -3h-7v5z" />
+    </SvgIcon>
+  )
 }
 
 export function IconAttractions(props: IconProps) {
-  return <MaskIcon {...props} src={mapPinUrl} />
+  return (
+    <SvgIcon {...props}>
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+      <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
+    </SvgIcon>
+  )
 }
 

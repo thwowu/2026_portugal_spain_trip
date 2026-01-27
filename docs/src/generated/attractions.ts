@@ -58,7 +58,7 @@ export const ATTRACTIONS_DATA: CityAttractions[] = [
       },
       {
         "kind": "easy",
-        "title": "走路少 / 長輩友善（Easy）",
+        "title": "走路少 / 輕鬆（Easy）",
         "items": [
           "- 阿爾罕布拉宮上山：可搭公車上去，減少爬坡",
           "- 阿爾拜辛（Albaicín）石階多：如果不想走太多，就只去一個眺望點拍照",
@@ -241,7 +241,7 @@ export const ATTRACTIONS_DATA: CityAttractions[] = [
       },
       {
         "kind": "easy",
-        "title": "走路少 / 長輩友善（Easy）",
+        "title": "走路少 / 輕鬆（Easy）",
         "items": [
           "- 只走上方步道，不下階梯",
           "- 舊城區散步＋咖啡（平路為主）",
@@ -457,7 +457,7 @@ export const ATTRACTIONS_DATA: CityAttractions[] = [
       },
       {
         "kind": "easy",
-        "title": "走路少 / 長輩友善（Easy）",
+        "title": "走路少 / 輕鬆（Easy）",
         "items": [
           "- 抵達日（Day 1）：飯店附近散步＋河岸走一小段就好（不要硬排景點）",
           "- 市區平路散步（最友善、可隨時撤退）",
@@ -666,7 +666,7 @@ export const ATTRACTIONS_DATA: CityAttractions[] = [
       },
       {
         "kind": "easy",
-        "title": "走路少 / 長輩友善（Easy）",
+        "title": "走路少 / 輕鬆（Easy）",
         "items": [
           "- 公園/皇宮以外觀為主",
           "- 市中心散步：格蘭大道（Gran Vía）→ 太陽門（Sol）→ 主廣場（Plaza Mayor；幾乎平路）",
@@ -846,7 +846,7 @@ export const ATTRACTIONS_DATA: CityAttractions[] = [
       },
       {
         "kind": "easy",
-        "title": "走路少 / 長輩友善（Easy）",
+        "title": "走路少 / 輕鬆（Easy）",
         "items": [
           "- 景點集中，可半天完成",
           "- 如果只是中轉半天：西班牙廣場 + 市中心散步就很夠",

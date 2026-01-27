@@ -9,6 +9,16 @@ export const CITIES: Record<CityId, { label: string }> = {
   madrid: { label: '馬德里 Madrid' },
 }
 
+// Order cities in the same sequence as the itinerary.
+// Note: Sintra is a day trip (no separate stays page), so it's intentionally omitted.
+export const STAYS_CITY_ORDER: Array<Exclude<CityId, 'sintra'>> = [
+  'lisbon',
+  'lagos',
+  'seville',
+  'granada',
+  'madrid',
+]
+
 export type TransportSegmentId =
   | 'lisbon-lagos'
   | 'lagos-seville'

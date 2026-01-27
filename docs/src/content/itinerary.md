@@ -125,7 +125,7 @@ schema: v1
     - **Plan B（風浪取消）**：立刻改 Praia da Marinha 觀景點/沙灘（不用搭船也很美）
     - **安全**：海邊風大浪大別逞強，崖邊拍照注意腳下
 
-## phase phase-seville-granada-madrid | 塞維爾 → 格拉納達 → 馬德里
+## phase phase-seville-granada | 塞維爾 + 格拉納達
 
 ### day 9 | 塞維爾 | 拉各斯（Lagos）→ 塞維爾（交通日）
 - tags: travel_day
@@ -182,6 +182,8 @@ schema: v1
     - **省力走法**：走累就提早回飯店休息（不要硬撐到傍晚）
     - **Plan B（體力不足）**：直接把白天改成咖啡廳/室內；留力給移動
     - **安全**：車站人多時包包放前、不要分心
+
+## phase phase-madrid | 馬德里（回台緩衝）
 
 ### day 13 | 馬德里 | 文化之日
 - tags: rain_ok, ticket

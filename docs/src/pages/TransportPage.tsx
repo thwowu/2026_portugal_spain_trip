@@ -1,4 +1,4 @@
-import { Suspense, lazy, useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { type TransportRatings } from '../data/transport'
 import { TRANSPORT_DATA } from '../generated'
 import { TRANSPORT_SEGMENTS, type TransportSegmentId } from '../data/core'
@@ -13,10 +13,6 @@ import { PageHero } from '../components/PageHero'
 import { withBaseUrl } from '../utils/asset'
 import { FormattedInline } from '../components/FormattedText'
 import { ExpandingBox } from '../components/ExpandingBox'
-
-const LazyTransportMapWidget = lazy(() =>
-  import('../components/TransportMapWidget').then((m) => ({ default: m.TransportMapWidget })),
-)
 
 function score(r: TransportRatings, w: Record<string, number>) {
   // ratings are 1..5, normalize to 0..1 and weight
@@ -50,22 +46,6 @@ function Accordion({
   )
 }
 
-function MapLazyMount({ segmentId }: { segmentId: TransportSegmentId }) {
-  return (
-    <Suspense
-      fallback={
-        <div className="card" style={{ boxShadow: 'none', borderStyle: 'dashed' }}>
-          <div className="cardInner" style={{ minHeight: 240, display: 'grid', alignContent: 'center' }}>
-            <div className="muted">地圖載入中…</div>
-          </div>
-        </div>
-      }
-    >
-      <LazyTransportMapWidget segmentId={segmentId} />
-    </Suspense>
-  )
-}
-
 export function TransportPage() {
   const { state, actions } = usePlanning()
   const { state: progress, actions: progressActions } = useProgress()
@@ -94,6 +74,16 @@ export function TransportPage() {
     [state.transportWeights],
   )
 
+  const transportById = useMemo(() => {
+    return new Map(TRANSPORT_DATA.map((s) => [s.id, s] as const))
+  }, [])
+
+  const orderedSegments = useMemo(() => {
+    // Ensure rendering order follows the trip flow (SSOT: TRANSPORT_SEGMENTS),
+    // not the auto-generated file order of TRANSPORT_DATA.
+    return TRANSPORT_SEGMENTS.map((s) => transportById.get(s.id)).filter(Boolean) as typeof TRANSPORT_DATA
+  }, [transportById])
+
   return (
     <div className="container">
       <div className="card">
@@ -106,9 +96,9 @@ export function TransportPage() {
               </>
             }
             image={{
-              src: ILLUSTRATION.heroTransport.src,
-              fallbackSrc: ILLUSTRATION.map.src,
-              alt: ILLUSTRATION.heroTransport.alt,
+              src: ILLUSTRATION.safety.src,
+              fallbackSrc: ILLUSTRATION.elderly.src,
+              alt: ILLUSTRATION.safety.alt,
             }}
           />
 
@@ -171,7 +161,7 @@ export function TransportPage() {
       <div style={{ height: 12 }} />
 
       <div style={{ display: 'grid', gap: 14 }}>
-        {TRANSPORT_DATA.map((seg) => {
+        {orderedSegments.map((seg) => {
           const decision = state.transportDecisions[seg.id]
           const optionScores = seg.options.map((o) => ({
             mode: o.mode,
@@ -263,10 +253,6 @@ export function TransportPage() {
 
                   <div style={{ height: 12 }} />
 
-                  <MapLazyMount segmentId={seg.id} />
-
-                  <div style={{ height: 12 }} />
-
                   {trainOptions.length > 0 ? (
                     trainOptions.map((o, idx) => (
                       <Accordion
@@ -303,58 +289,17 @@ export function TransportPage() {
 
                   <div style={{ height: 12 }} />
 
-                  {/* Comparison matrix */}
                   <div className="card" style={{ boxShadow: 'none' }}>
                     <div className="cardInner">
-                      <div style={{ fontWeight: 900 }}>比較與綜合分析</div>
+                      <div style={{ fontWeight: 900 }}>Plan B（備案）</div>
                       <div className="muted" style={{ marginTop: 6 }}>
-                        分數 1–5（越高越好），右側是依你權重換算的加權分數。
-                      </div>
-                      <hr className="hr" />
-
-                      <div style={{ display: 'grid', gap: 10 }}>
-                        {seg.options.map((o) => {
-                          const s = score(o.ratings, weights)
-                          return (
-                            <div key={o.mode} className="card" style={{ boxShadow: 'none', borderStyle: 'dashed' }}>
-                              <div className="cardInner">
-                                <div style={{ display: 'flex', alignItems: 'center', gap: 10, flexWrap: 'wrap' }}>
-                                  <div style={{ fontWeight: 900 }}>
-                                    {o.mode === 'train' ? '火車' : '巴士'}
-                                  </div>
-                                  <div className="chip">加權：{fmtPct(s)} 分</div>
-                                </div>
-                                <div
-                                  style={{
-                                    marginTop: 10,
-                                    display: 'grid',
-                                    gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))',
-                                    gap: 10,
-                                  }}
-                                >
-                                  {Object.entries(o.ratings).map(([k, v]) => (
-                                    <div key={k} className="chip">
-                                      {k}: {v}
-                                    </div>
-                                  ))}
-                                </div>
-                              </div>
-                            </div>
-                          )
-                        })}
-                      </div>
-
-                      <div style={{ marginTop: 12 }}>
-                        <div style={{ fontWeight: 900 }}>Plan B（備案）</div>
-                        <div className="muted" style={{ marginTop: 6 }}>
-                          <ul style={{ margin: 0, paddingLeft: 18 }}>
-                            {seg.planB.map((b) => (
-                              <li key={b} style={{ marginTop: 6 }}>
-                                <FormattedInline text={b} />
-                              </li>
-                            ))}
-                          </ul>
-                        </div>
+                        <ul style={{ margin: 0, paddingLeft: 18 }}>
+                          {seg.planB.map((b) => (
+                            <li key={b} style={{ marginTop: 6 }}>
+                              <FormattedInline text={b} />
+                            </li>
+                          ))}
+                        </ul>
                       </div>
                     </div>
                   </div>

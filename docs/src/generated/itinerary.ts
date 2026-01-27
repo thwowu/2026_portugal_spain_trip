@@ -208,8 +208,8 @@ export const ITINERARY_PHASES: ItineraryPhase[] = [
     ]
   },
   {
-    "id": "phase-seville-granada-madrid",
-    "label": "塞維爾 → 格拉納達 → 馬德里",
+    "id": "phase-seville-granada",
+    "label": "塞維爾 + 格拉納達",
     "days": [
       {
         "day": 9,
@@ -303,7 +303,13 @@ export const ITINERARY_PHASES: ItineraryPhase[] = [
             "**安全**：車站人多時包包放前、不要分心"
           ]
         }
-      },
+      }
+    ]
+  },
+  {
+    "id": "phase-madrid",
+    "label": "馬德里（回台緩衝）",
+    "days": [
       {
         "day": 13,
         "dateLabel": "",

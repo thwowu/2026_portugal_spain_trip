@@ -1,7 +1,7 @@
 import { useId, useLayoutEffect, useMemo, useRef, useState } from 'react'
 
 type Props = {
-  title: string
+  title: React.ReactNode
   meta?: React.ReactNode
   children: React.ReactNode
 
@@ -47,6 +47,8 @@ export function ExpandingBox({
   const [open, setOpen] = useState(defaultOpen)
   const [measured, setMeasured] = useState(0)
 
+  const hasPeek = collapsedHeight > 0
+
   const maxHeight = useMemo(() => {
     if (open) return Math.max(measured, collapsedHeight)
     return collapsedHeight
@@ -75,10 +77,21 @@ export function ExpandingBox({
     }
   }, [])
 
-  const showFooterToggle = footerToggle === true || (footerToggle === 'auto' && collapsedHeight > 0)
+  // Only show "read more" when there's actually something to expand.
+  const needsPeekToggle = hasPeek && measured > collapsedHeight + 8
+  const showFooterToggle =
+    footerToggle === true || (footerToggle === 'auto' && collapsedHeight > 0 && needsPeekToggle)
+
+  const fadeBg = typeof style?.background === 'string' ? style.background : undefined
+  const mergedStyle = (fadeBg
+    ? ({ ...style, '--exp-fade-bg': fadeBg } as React.CSSProperties)
+    : style) as React.CSSProperties | undefined
 
   return (
-    <section className={cx('card', 'expBox', className)} style={style}>
+    <section
+      className={cx('card', 'expBox', open && 'expOpen', !open && 'expClosed', hasPeek && 'expPeek', className)}
+      style={mergedStyle}
+    >
       <button
         type="button"
         className="expHeader"
@@ -98,7 +111,7 @@ export function ExpandingBox({
       <div
         id={contentId}
         className={cx('expContentWrap', !open && 'expContentWrapClosed')}
-        style={{ '--exp-max': `${maxHeight}px` } as React.CSSProperties}
+        style={{ '--exp-max': `${maxHeight}px`, '--exp-collapsed': `${collapsedHeight}px` } as React.CSSProperties}
       >
         <div ref={contentRef} className="expContentInner">
           {children}

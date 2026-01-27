@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import { ATTRACTIONS_DATA, EXTENSIONS_DATA } from '../generated'
 import { CITIES } from '../data/core'
 import type { CityId } from '../data/core'
@@ -20,6 +20,52 @@ const IMAGE_EXT_RE = /\.(png|jpe?g|webp|gif|svg)(\?.*)?$/i
 const MD_LINK_RE = /^\[([^\]]*)\]\((https?:\/\/[^)\s]+)\)$/
 
 const TOKEN_RE = /(\[([^\]]+)\]\((https?:\/\/[^)\s]+)\))|(`([^`]+)`)|(https?:\/\/[^\s)]+)/g
+
+type IndentedNode = {
+  id: string
+  text: string
+  level: number
+  children: IndentedNode[]
+}
+
+function stripListMarker(s: string) {
+  const t = s.trimStart()
+  if (t.startsWith('- ')) return t.slice(2)
+  if (t.startsWith('* ')) return t.slice(2)
+  // Ordered list: "1. "
+  const m = /^\d+\.\s+/.exec(t)
+  if (m) return t.slice(m[0].length)
+  return t
+}
+
+function parseIndentedList(items: string[]): IndentedNode[] {
+  const root: IndentedNode = { id: 'root', text: '', level: -1, children: [] }
+  const stack: IndentedNode[] = [root]
+
+  const pushNode = (n: IndentedNode) => {
+    stack[stack.length - 1]?.children.push(n)
+    stack.push(n)
+  }
+
+  for (let i = 0; i < items.length; i++) {
+    const raw = items[i] ?? ''
+    if (!raw.trim()) continue
+
+    const indent = (raw.match(/^\s*/)?.[0]?.length ?? 0)
+    // Markdown convention in this repo uses 2-space indents for nesting.
+    const desiredLevel = Math.floor(indent / 2)
+    const level = Math.max(0, Math.min(desiredLevel, (stack[stack.length - 1]?.level ?? -1) + 1))
+
+    // Find correct parent for this level.
+    while (stack.length > 1 && (stack[stack.length - 1]?.level ?? 0) >= level) stack.pop()
+
+    const text = stripListMarker(raw).trim()
+    const node: IndentedNode = { id: `${i}-${level}-${text.slice(0, 18)}`, text, level, children: [] }
+    pushNode(node)
+  }
+
+  return root.children
+}
 
 function splitTrailingUrlPunct(url: string) {
   // Common trailing punctuations in our zh-TW content + markdown-ish contexts
@@ -105,6 +151,35 @@ function renderInlineText(text: string) {
   if (!hasToken) return null
   if (last < text.length) parts.push(text.slice(last))
   return parts
+}
+
+const KNOWN_KV_KEYS = new Set([
+  '重點',
+  '為什麼去',
+  '歷史',
+  '建議停留',
+  '小提醒',
+  '提醒',
+  '策略',
+  '備案',
+  '交通',
+  '票務',
+  'refs',
+  'Wikivoyage',
+  'Wikitravel',
+  '官方',
+])
+
+function parseKeyValueLine(raw: string): { key: string; value: string } | null {
+  const m = /^([^：:]{2,24})[：:]\s*(.+)$/.exec(raw.trim())
+  if (!m) return null
+  const keyRaw = (m[1] ?? '').trim()
+  const value = (m[2] ?? '').trim()
+  if (!keyRaw || !value) return null
+
+  const keyNormalized = keyRaw.replace(/（.*?）/g, '').trim()
+  if (!KNOWN_KV_KEYS.has(keyNormalized)) return null
+  return { key: keyRaw, value }
 }
 
 function RichItem({
@@ -215,19 +290,69 @@ function RichItem({
     )
   }
 
+  const kv = parseKeyValueLine(raw)
+  if (kv) {
+    const linked = renderInlineText(kv.value)
+    return (
+      <div className="attrKV" style={{ whiteSpace: 'pre-wrap' }}>
+        <span className="attrKVKey">{kv.key}</span>
+        <span className="attrKVValue">{linked ?? kv.value}</span>
+      </div>
+    )
+  }
+
   const linked = renderInlineText(text)
   if (linked) return <div style={{ whiteSpace: 'pre-wrap' }}>{linked}</div>
 
   return <div style={{ whiteSpace: 'pre-wrap' }}>{text}</div>
 }
 
+function IndentedList({
+  items,
+  onOpenImage,
+  onOpenGallery,
+  depth = 0,
+}: {
+  items: string[]
+  onOpenImage?: (src: string, title: string) => void
+  onOpenGallery?: (images: GalleryImage[], title: string) => void
+  depth?: number
+}) {
+  const nodes = useMemo(() => parseIndentedList(items), [items])
+
+  const renderNodes = (ns: IndentedNode[], d: number) => {
+    if (ns.length === 0) return null
+    return (
+      <ul className={`attrList attrListDepth${Math.min(d, 3)}`}>
+        {ns.map((n) => {
+          const isSupplementLabel = n.text === '補充'
+          return (
+            <li key={n.id} className={isSupplementLabel ? 'attrSupplement' : undefined}>
+              {isSupplementLabel ? (
+                <div className="attrSupplementLabel">補充</div>
+              ) : (
+                <RichItem text={n.text} onOpenImage={onOpenImage} onOpenGallery={onOpenGallery} />
+              )}
+              {n.children.length > 0 ? renderNodes(n.children, d + 1) : null}
+            </li>
+          )
+        })}
+      </ul>
+    )
+  }
+
+  return renderNodes(nodes, depth)
+}
+
 function Section({
+  kind,
   title,
   items,
   onOpenImage,
   onOpenGallery,
   defaultOpen,
 }: {
+  kind?: string
   title: string
   items: string[]
   onOpenImage?: (src: string, title: string) => void
@@ -235,9 +360,17 @@ function Section({
   defaultOpen?: boolean
 }) {
   const hasItems = items.length > 0
+  const cls = ['attrSection', kind ? `attrSection_${kind}` : ''].filter(Boolean).join(' ')
+  const titleNode = (
+    <span className="attrSectionTitleRow">
+      {kind === 'rain' ? <span className="attrSectionBadge attrSectionBadgeRain">雨備</span> : null}
+      <span className="attrSectionTitleText">{title}</span>
+    </span>
+  )
   return (
     <ExpandingBox
-      title={title}
+      className={cls}
+      title={titleNode}
       meta={<span style={{ fontSize: 'var(--text-xs)' }}>{hasItems ? `${items.length}` : '—'}</span>}
       defaultOpen={defaultOpen ?? hasItems}
       collapsedHeight={0}
@@ -248,11 +381,7 @@ function Section({
         {!hasItems ? (
           <div>（此章節目前尚無項目）</div>
         ) : (
-          items.map((x, i) => (
-            <div key={`${i}-${x}`} style={{ marginTop: i === 0 ? 0 : 8 }}>
-              <RichItem text={x} onOpenImage={onOpenImage} onOpenGallery={onOpenGallery} />
-            </div>
-          ))
+          <IndentedList items={items} onOpenImage={onOpenImage} onOpenGallery={onOpenGallery} />
         )}
       </div>
     </ExpandingBox>
@@ -267,6 +396,9 @@ export function AttractionsPage() {
   const [active, setActive] = useState<{ cityId: string; tripId: string } | null>(null)
   const [lightbox, setLightbox] = useState<{ src: string; title: string } | null>(null)
   const [gallery, setGallery] = useState<{ title: string; images: GalleryImage[]; index: number } | null>(null)
+  const [activeCityId, setActiveCityId] = useState<CityId | null>((ATTRACTIONS_DATA[0]?.cityId as CityId) ?? null)
+  const [showCityPicker, setShowCityPicker] = useState(false)
+  const cityPickerCloseRef = useRef<HTMLButtonElement | null>(null)
 
   const extensionsByCity = useMemo(() => {
     const m = new Map<string, (typeof EXTENSIONS_DATA)[number]>()
@@ -274,8 +406,65 @@ export function AttractionsPage() {
     return m
   }, [])
 
+  const scrollToCity = (cityId: string) => {
+    const el = document.getElementById(`attr-${cityId}`)
+    el?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  }
+
+  const cityOrder = useMemo(() => ATTRACTIONS_DATA.map((c) => c.cityId), [])
+  const activeCityIdx = useMemo(() => {
+    if (!activeCityId) return 0
+    const idx = cityOrder.indexOf(activeCityId)
+    return idx >= 0 ? idx : 0
+  }, [activeCityId, cityOrder])
+
+  const prevCityId = activeCityIdx > 0 ? cityOrder[activeCityIdx - 1] : null
+  const nextCityId = activeCityIdx < cityOrder.length - 1 ? cityOrder[activeCityIdx + 1] : null
+
+  useEffect(() => {
+    // Track which city section is currently "in view" (for highlighting / quick nav).
+    const els = Array.from(
+      document.querySelectorAll<HTMLElement>('section.attrCitySection[data-city-id]'),
+    ).filter((el) => el.id?.startsWith('attr-'))
+    if (els.length === 0) return
+
+    const ratios = new Map<string, number>()
+    const pick = () => {
+      let bestId: string | null = null
+      let bestRatio = 0
+      for (const [id, r] of ratios.entries()) {
+        if (r > bestRatio) {
+          bestRatio = r
+          bestId = id
+        }
+      }
+      if (bestId) setActiveCityId(bestId as CityId)
+    }
+
+    const io = new IntersectionObserver(
+      (entries) => {
+        for (const e of entries) {
+          const id = (e.target as HTMLElement).dataset.cityId
+          if (!id) continue
+          // Keep a soft signal of visibility; we only pick from intersecting-ish sections.
+          ratios.set(id, e.isIntersecting ? e.intersectionRatio : 0)
+        }
+        pick()
+      },
+      {
+        root: null,
+        // Bias toward whichever city is around the middle of the viewport.
+        rootMargin: '-35% 0px -55% 0px',
+        threshold: [0, 0.08, 0.16, 0.24, 0.32, 0.4, 0.5],
+      },
+    )
+
+    for (const el of els) io.observe(el)
+    return () => io.disconnect()
+  }, [])
+
   return (
-    <div className="container">
+    <div className="container pageAttractions">
       <div className="card">
         <div className="cardInner">
           <PageHero
@@ -293,22 +482,38 @@ export function AttractionsPage() {
           />
 
           <hr className="hr" />
-
-          <div className="chipRow">
-            {ATTRACTIONS_DATA.map((c) => (
-              <button
-                key={c.cityId}
-                className="btn"
-                onClick={() => document.getElementById(`attr-${c.cityId}`)?.scrollIntoView({ behavior: 'smooth' })}
-              >
-                {CITIES[c.cityId].label}
-              </button>
-            ))}
-          </div>
         </div>
       </div>
 
       <div style={{ height: 12 }} />
+
+      <div className="attrStickyNav" aria-label="城市快速跳轉（景點）">
+        <div className="card attrStickyNavCard">
+          <div className="cardInner attrStickyNavInner">
+            <div className="attrStickyNow">
+              目前：{activeCityId ? CITIES[activeCityId]?.label : '—'}
+            </div>
+            <div className="chipRow" style={{ flex: 1 }}>
+              {ATTRACTIONS_DATA.map((c) => {
+                const isActive = activeCityId === (c.cityId as CityId)
+                return (
+                  <button
+                    key={c.cityId}
+                    className={`btn ${isActive ? 'btnPrimary' : ''}`}
+                    onClick={() => scrollToCity(c.cityId)}
+                    aria-current={isActive ? 'true' : undefined}
+                    type="button"
+                  >
+                    {CITIES[c.cityId].label}
+                  </button>
+                )
+              })}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style={{ height: 10 }} />
 
       <div style={{ display: 'grid', gap: 14 }}>
         {ATTRACTIONS_DATA.map((c) => (
@@ -336,6 +541,7 @@ export function AttractionsPage() {
                   {c.sections.map((s) => (
                     <Section
                       key={s.kind}
+                      kind={s.kind}
                       title={s.title}
                       items={s.items}
                       onOpenImage={(src, title) => setLightbox({ src, title })}
@@ -392,6 +598,94 @@ export function AttractionsPage() {
           </RevealSection>
         ))}
       </div>
+
+      <div className="attrFloatNav" aria-label="景點快速移動">
+        <div className="attrFloatNavPanel">
+          <div className="attrFloatNavInner">
+            <button
+              type="button"
+              className="btn attrFloatBtn"
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+              aria-label="回到頁面頂部"
+              title="回頂"
+            >
+              回頂
+            </button>
+            <button
+              type="button"
+              className="btn attrFloatBtn"
+              onClick={() => prevCityId && scrollToCity(prevCityId)}
+              disabled={!prevCityId}
+              aria-label="跳到上一個城市"
+              title="上一城"
+            >
+              上一城
+            </button>
+            <button
+              type="button"
+              className="btn attrFloatBtn btnPrimary"
+              onClick={() => setShowCityPicker(true)}
+              aria-label="開啟城市目錄"
+              title="城市"
+            >
+              城市
+            </button>
+            <button
+              type="button"
+              className="btn attrFloatBtn"
+              onClick={() => nextCityId && scrollToCity(nextCityId)}
+              disabled={!nextCityId}
+              aria-label="跳到下一個城市"
+              title="下一城"
+            >
+              下一城
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <Modal
+        open={showCityPicker}
+        ariaLabel="選擇城市（景點）"
+        onClose={() => setShowCityPicker(false)}
+        overlayClassName="modalOverlay modalOverlayCenter"
+        cardClassName="card modalCard"
+        initialFocusRef={cityPickerCloseRef}
+        cardStyle={{ maxWidth: 'min(560px, 100%)' }}
+      >
+        <div className="cardInner">
+          <div className="modalHeader">
+            <div>
+              <div className="modalTitle">快速跳到城市</div>
+              <div className="muted modalSub">點選城市後會自動滑動到對應段落。</div>
+            </div>
+            <button ref={cityPickerCloseRef} className="btn modalCloseBtn" onClick={() => setShowCityPicker(false)}>
+              關閉
+            </button>
+          </div>
+
+          <hr className="hr" />
+
+          <div className="chipRow">
+            {ATTRACTIONS_DATA.map((c) => {
+              const isActive = activeCityId === (c.cityId as CityId)
+              return (
+                <button
+                  key={c.cityId}
+                  className={`btn ${isActive ? 'btnPrimary' : ''}`}
+                  onClick={() => {
+                    scrollToCity(c.cityId)
+                    setShowCityPicker(false)
+                  }}
+                  type="button"
+                >
+                  {CITIES[c.cityId].label}
+                </button>
+              )
+            })}
+          </div>
+        </div>
+      </Modal>
 
       {active && (
         <ExtensionModal
@@ -519,7 +813,7 @@ function RevealSection({
     return () => io.disconnect()
   }, [onSeen, cityId, ref])
   return (
-    <section id={id} className="reveal" ref={ref}>
+    <section id={id} data-city-id={cityId} className="reveal attrCitySection" ref={ref}>
       {children}
     </section>
   )
