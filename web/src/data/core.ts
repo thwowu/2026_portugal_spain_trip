@@ -1,0 +1,31 @@
+export type CityId = 'lisbon' | 'lagos' | 'seville' | 'granada' | 'madrid' | 'sintra'
+
+export const CITIES: Record<CityId, { label: string }> = {
+  lisbon: { label: '里斯本 Lisbon' },
+  sintra: { label: '辛特拉 Sintra' },
+  lagos: { label: '拉狗 Lagos' },
+  seville: { label: '塞維爾 Seville' },
+  granada: { label: '格拉納達 Granada' },
+  madrid: { label: '馬德里 Madrid' },
+}
+
+export type TransportSegmentId =
+  | 'lisbon-lagos'
+  | 'lagos-seville'
+  | 'seville-granada'
+  | 'granada-madrid'
+
+export type TransportMode = 'train' | 'bus'
+
+export const TRANSPORT_SEGMENTS: Array<{
+  id: TransportSegmentId
+  from: CityId
+  to: CityId
+  label: string
+}> = [
+  { id: 'lisbon-lagos', from: 'lisbon', to: 'lagos', label: '里斯本 → Lagos' },
+  { id: 'lagos-seville', from: 'lagos', to: 'seville', label: 'Lagos → 塞維爾' },
+  { id: 'seville-granada', from: 'seville', to: 'granada', label: '塞維爾 → 格拉納達' },
+  { id: 'granada-madrid', from: 'granada', to: 'madrid', label: '格拉納達 → 馬德里' },
+]
+

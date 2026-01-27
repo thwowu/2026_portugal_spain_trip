@@ -1,0 +1,196 @@
+.appShell {
+  padding-bottom: 90px; /* space for bottom nav */
+}
+
+.inlineImageCard {
+  width: min(620px, 100%);
+  border: 1px solid var(--hairline);
+  border-radius: 16px;
+  overflow: hidden;
+  padding: 0;
+  background: var(--surface);
+  text-align: left;
+  cursor: pointer;
+}
+
+.inlineImageCard img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+  background: color-mix(in oklab, var(--surface) 70%, black);
+}
+
+.inlineImageCaption {
+  padding: 10px 12px 12px;
+  font-size: 12px;
+  line-height: 1.25;
+  font-weight: 750;
+  color: var(--fg);
+}
+
+.galleryThumb {
+  flex: 0 0 auto;
+  width: 88px;
+  height: 58px;
+  border-radius: 12px;
+  border: 1px solid var(--hairline);
+  overflow: hidden;
+  padding: 0;
+  background: var(--surface);
+  cursor: pointer;
+}
+
+.galleryThumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.galleryThumbActive {
+  border-color: color-mix(in oklab, var(--accent) 35%, var(--hairline));
+  box-shadow: 0 0 0 3px color-mix(in oklab, var(--accent) 18%, transparent);
+}
+
+.siteFooter {
+  max-width: 980px;
+  margin: 22px auto 0;
+  padding: 12px var(--pad-page) 18px;
+  border-top: 1px solid var(--hairline);
+  color: var(--muted);
+}
+
+.siteFooterInner {
+  display: grid;
+  gap: 6px;
+}
+
+.siteFooterTitle {
+  font-weight: 750;
+  letter-spacing: 0.01em;
+  font-size: 12px;
+  text-transform: uppercase;
+  opacity: 0.9;
+}
+
+.siteFooterText {
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+.topBar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: color-mix(in oklab, var(--bg) 84%, white);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--hairline);
+}
+
+.topBarInner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px var(--pad-page);
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.brandTitle {
+  font-weight: 700;
+  font-size: var(--text-lg);
+  line-height: 1.15;
+}
+
+.brandSub {
+  font-size: var(--text-sm);
+  color: var(--muted);
+  line-height: 1.2;
+}
+
+.bottomNav {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 20;
+  border-top: 1px solid var(--hairline);
+  background: color-mix(in oklab, var(--surface) 82%, var(--bg));
+  backdrop-filter: blur(12px);
+}
+
+.bottomNavInner {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 10px 12px 14px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+}
+
+.navItem {
+  border: 1px solid transparent;
+  border-radius: 14px;
+  padding: 10px 10px;
+  min-height: 52px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  color: var(--muted);
+  text-decoration: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 120ms ease, background 120ms ease, color 120ms ease;
+}
+
+.navItem:active {
+  transform: scale(0.98);
+}
+
+.navItemActive {
+  color: var(--accent-2);
+  background: color-mix(in oklab, var(--accent) 12%, var(--surface));
+  border-color: color-mix(in oklab, var(--accent) 24%, var(--hairline));
+}
+
+.navIcon {
+  width: 22px;
+  height: 22px;
+}
+
+.navLabel {
+  font-size: 12px;
+  line-height: 1;
+  font-weight: 650;
+}
+
+:root[data-ui='senior'] .navIcon {
+  display: none;
+}
+
+:root[data-ui='senior'] .bottomNavInner {
+  padding: 12px 14px 16px;
+  gap: 12px;
+}
+
+:root[data-ui='senior'] .navItem {
+  min-height: 64px;
+  padding: 12px 10px;
+  gap: 6px;
+}
+
+:root[data-ui='senior'] .navLabel {
+  font-size: 15px;
+  line-height: 1.1;
+  font-weight: 750;
+}
