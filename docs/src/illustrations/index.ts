@@ -16,7 +16,7 @@ export type IllustrationKey =
  * - Only `cover3d` is 3D and should be used ONLY on the itinerary cover.
  * - Everything else is flat and can be used across pages.
  *
- * Assets are served from `web/public/illustrations/*`.
+ * Assets are served from `docs/public/illustrations/*`.
  */
 export const ILLUSTRATION: Record<IllustrationKey, { src: string; alt: string; style: '3d' | 'flat' }> =
   {
@@ -52,7 +52,7 @@ export const ILLUSTRATION: Record<IllustrationKey, { src: string; alt: string; s
     },
 
     // 3D hero illustrations (prefer these for page headers).
-    // If you haven't copied the files into `web/public/illustrations/` yet,
+    // If you haven't copied the files into `docs/public/illustrations/` yet,
     // components should fall back to existing flat icons.
     heroDashboard: {
       src: '/illustrations/3d-airplane-globe-location.png',

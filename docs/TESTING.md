@@ -4,7 +4,7 @@ This project supports both **manual testing** and **automated smoke tests**.
 
 ## Quick commands (smoke)
 
-From `web/`:
+From `docs/`:
 
 - `npm run content:check`
 - `npm run lint`
@@ -14,7 +14,7 @@ From `web/`:
 
 ### When to run what
 
-- **After editing any `web/src/content/*.md`**: `npm run content:check` (or `npm run build`, since `prebuild` regenerates content).
+- **After editing any `docs/src/content/*.md`**: `npm run content:check` (or `npm run build`, since `prebuild` regenerates content).
 - **Before sharing/deploying**: `npm run test:smoke`.
 - **Before major changes/releases**: `npm run test:e2e` (covers routing + persistence + import/export).
 
@@ -22,21 +22,21 @@ From `web/`:
 
 ### One-time setup
 
-From `web/`:
+From `docs/`:
 
 - `npm install`
 - `npx playwright install`
 
 ### Run
 
-From `web/`:
+From `docs/`:
 
 - `npm run test:e2e` (build + preview + headless tests)
 - `npm run test:e2e:headed` (headed mode)
 - `npm run test:e2e:ui` (Playwright UI runner)
 
 Notes:
-- The tests start `vite preview` on `127.0.0.1:4173` via `web/playwright.config.ts`.
+- The tests start `vite preview` on `127.0.0.1:4173` via `docs/playwright.config.ts`.
 - The smoke suite covers:
   - Routing + bottom nav
   - 404 page
@@ -48,19 +48,19 @@ Notes:
 
 ### A. Routing & navigation (incl. GitHub Pages behavior)
 
-- **Bottom nav** (`web/src/App.tsx`)
+- **Bottom nav** (`docs/src/App.tsx`)
   - Tap/click: 看板 / 行程 / 交通 / 住宿 / 景點 → correct page content is visible.
 - **GitHub Pages SPA fallback**
   - On Pages, open a deep link like `/itinerary`, refresh, and confirm it stays on the same page.
-  - Mechanism: `web/public/404.html` redirects to `/?p=...`, and `web/index.html` restores the route.
+  - Mechanism: `docs/public/404.html` redirects to `/?p=...`, and `docs/index.html` restores the route.
 - **404**
   - Visit unknown path → `找不到這個頁面`, link back to `規劃看板` works.
 
 ### B. State persistence (localStorage) & import/export
 
 - **Keys**
-  - Settings: `tripPlanner.settings.v1` (`web/src/state/settings.tsx`)
-  - Planning: `tripPlanner.planning.v1` (`web/src/state/planning.tsx`)
+- Settings: `tripPlanner.settings.v1` (`docs/src/state/settings.tsx`)
+- Planning: `tripPlanner.planning.v1` (`docs/src/state/planning.tsx`)
 - **Persistence**
   - Change transport decision + reason; add checklist item; add changelog; adjust weights → reload page → state remains.
 - **Export/Import**
@@ -68,13 +68,13 @@ Notes:
   - Import the exported JSON restores state and shows success message.
   - Import invalid JSON shows error and does not break existing state.
 - **Reset**
-  - Clear the 2 keys in localStorage → reload → returns to initial state (`web/src/main.tsx`).
+  - Clear the 2 keys in localStorage → reload → returns to initial state (`docs/src/main.tsx`).
 
 ### C. Content correctness (md → generated)
 
 - `npm run content:check` passes.
-- If itinerary day numbers are not contiguous, `content:check` fails (see `web/scripts/build-content.mjs` `validateItinerary()`).
-- App pages render without runtime errors using `web/src/generated/*`.
+- If itinerary day numbers are not contiguous, `content:check` fails (see `docs/scripts/build-content.mjs` `validateItinerary()`).
+- App pages render without runtime errors using `docs/src/generated/*`.
 
 ### D. Mobile UX
 

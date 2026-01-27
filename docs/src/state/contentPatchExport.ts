@@ -8,7 +8,7 @@ export const CONTENT_PATCH_EXPORT_VERSION = 1 as const
 export type ContentPatchTarget = {
   domain: 'attractions' | 'stays' | 'transport' | 'itinerary'
   id: string
-  file: string // repo-relative (web/src/...)
+  file: string // repo-relative (docs/src/...)
   anchors: string[] // stable-ish anchors for humans/LLM
 }
 

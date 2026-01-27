@@ -11,7 +11,11 @@
       // Redirect /path -> /?p=/path so index.html can restore it.
       (function () {
         var l = window.location;
-        var base = l.pathname.replace(/\/[^/]*$/, '/'); // keep repo base
+        // For project sites, keep only the first path segment as the base:
+        //   /<repo>/anything/... -> "/<repo>/"
+        // For user sites, this still works for deep routes on the root domain.
+        var segs = l.pathname.split('/').filter(Boolean);
+        var base = segs.length ? '/' + segs[0] + '/' : '/';
         var target =
           base +
           '?p=' +

@@ -11,7 +11,7 @@ import { NotFoundPage } from './pages/NotFoundPage'
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <div className="topBar">
         <div className="topBarInner">
           <div className="brand">

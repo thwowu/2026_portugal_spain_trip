@@ -5,9 +5,22 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   base: (() => {
-    // GitHub Pages (project pages): https://<user>.github.io/<repo>/
-    // In Actions, GITHUB_REPOSITORY is like "owner/repo"
+    /**
+     * GitHub Pages base path:
+     * - User site:    https://<owner>.github.io/                -> "/"
+     * - Project site: https://<owner>.github.io/<repo>/         -> "/<repo>/"
+     *
+     * In GitHub Actions:
+     * - GITHUB_REPOSITORY is "owner/repo"
+     * - GITHUB_REPOSITORY_OWNER is "owner"
+     */
+    const owner = process.env.GITHUB_REPOSITORY_OWNER
     const repo = process.env.GITHUB_REPOSITORY?.split('/')[1]
+
+    if (owner && repo && repo.toLowerCase() === `${owner.toLowerCase()}.github.io`) {
+      return '/'
+    }
+
     return repo ? `/${repo}/` : '/'
   })(),
 })
