@@ -33,6 +33,35 @@ const DEFAULT_TITLES = {
   safety: '安全提醒（Safety）',
 }
 
+/**
+ * Serialize a section node's markdown block.
+ *
+ * Our mini parser (`collectSections`) stores "content" lines only up to the next
+ * heading of same/higher depth, and nests headings as children. For attractions,
+ * most real content lives under H3/H4 under each H2 kind (e.g. "## must" then
+ * "### Alhambra..."), so we must include descendants, not just `h2.content`.
+ *
+ * @param {{depth:number, text:string, content:{text:string}[], children:any[]}} node
+ */
+function serializeSectionBody(node) {
+  /** @type {string[]} */
+  const out = []
+
+  for (const row of node.content) out.push(row.text)
+
+  const walk = (n) => {
+    for (const c of n.children || []) {
+      out.push(`${'#'.repeat(c.depth)} ${c.text}`)
+      for (const row of c.content || []) out.push(row.text)
+      walk(c)
+    }
+  }
+  walk(node)
+
+  // Keep authoring-friendly whitespace, but avoid trailing spaces/newlines noise in TS.
+  return out.join('\n').trim()
+}
+
 export function parseAttractionsCityMd({ sourcePath, raw }) {
   const { frontmatter, body, bodyLineOffset } = parseFrontmatter(raw, sourcePath)
   const lines = parseLines(body, bodyLineOffset)
@@ -50,7 +79,7 @@ export function parseAttractionsCityMd({ sourcePath, raw }) {
   for (const h2 of findChildren(h1, 2)) {
     const kind = h2.text.trim()
     if (!REQUIRED_KINDS.includes(kind)) continue
-    const content = h2.content.map((r) => r.text).join('\n').trim()
+    const content = serializeSectionBody(h2)
     byKind.set(kind, { kind, title: DEFAULT_TITLES[kind] || kind, content })
   }
 

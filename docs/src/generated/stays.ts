@@ -463,10 +463,12 @@ export const STAYS_DATA: CityStay[] = [
       }
     ],
     "publicTransportHowToBuy": [
+      "市區移動概念：馬德里很適合步行，市中心景點密度高，很多路線都可以靠走路串起來；需要加速時再用地鐵補。若你們會搭多次，`Tarjeta Multi`（多功能卡）再加值通常最省事，常見的 10 次票也比較划算，而且可以多人共用（同一張卡輪流刷）。Tourist card 通常要到「每天狂搭」才可能更值得。地鐵進出機場站常見會有額外附加費，細節以現場公告為準。",
       "第一步先搞定「卡」：多數地鐵票/多次票/旅遊票都要載入在 `Tarjeta Multi`（感應式、非記名）或 `Tarjeta de Transporte Público` 上；可在地鐵站售票機/窗口購買。（CRTM：[`What tickets can you charge?`](https://crtm.es/billetes-y-tarifas/tarjeta-multi/titulos-que-puedes-cargar.aspx?lang=en)；Aena：[`Cómo llegar en metro`](https://www.aena.es/es/adolfo-suarez-madrid-barajas/como-llegar/metro.html)）",
       "票種怎麼選（簡化版，先求省腦）：",
       "公車單程票的小提醒：`Tarjeta Multi` **不支援**「市區/郊區公車單程票」載入；這種單程通常是上車當下購買。（CRTM：[`What tickets can you charge?`](https://crtm.es/billetes-y-tarifas/tarjeta-multi/titulos-que-puedes-cargar.aspx?lang=en)）",
       "機場地鐵附加費（Line 8）：進出 T1-T2-T3 / T4 站，若你使用的是 Metro Zona A 等票種，需另外加購 `suplemento del aeropuerto €3`（售票機會引導你一起載入）。（Aena：[`Cómo llegar en metro`](https://www.aena.es/es/adolfo-suarez-madrid-barajas/como-llegar/metro.html)）",
+      "機場往返（省腦版）：如果你們想少換線、拖行李也輕鬆，Airport Express Bus 是最省腦的方案之一（24 小時運行、單程常見 €5，以路線/站點公告為準）。計程車則常見機場 ↔ 市中心固定費率（以官方公告為準）；若你用叫車平台，規則與價格可能不同，出發前先看清楚。",
       "實務建議：用 Google Maps / Citymapper 看路線，市區以地鐵為主、補公車；夜間移動先看夜巴/地鐵營運時間，把行程排在「好撤退」的區域，避免為了抄近路鑽小巷；若你真的遇到「晚到/轉乘太繞/行李日」，短程計程車通常不貴，直接搭。（Wikivoyage：[`Madrid`](https://en.wikivoyage.org/wiki/Madrid)；Wikitravel：[`Madrid`](https://wikitravel.org/en/Madrid)）"
     ],
     "moneySavingTips": [
