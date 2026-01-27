@@ -5,14 +5,12 @@ import { loadJson, saveJson } from './storage'
 
 export type ProgressState = {
   transportSeen: Partial<Record<TransportSegmentId, boolean>>
-  staysSeen: Partial<Record<CityId, boolean>>
   attractionsSeen: Partial<Record<CityId, boolean>>
   itinerarySeenDays: Partial<Record<number, boolean>>
 }
 
 type ProgressActions = {
   markTransportSeen: (id: TransportSegmentId) => void
-  markStaySeen: (cityId: CityId) => void
   markAttractionsSeen: (cityId: CityId) => void
   markItineraryDaySeen: (day: number) => void
   clearAllSeen: () => void
@@ -24,7 +22,7 @@ const ProgressContext = createContext<ProgressContextValue | null>(null)
 const STORAGE_KEY = 'tripPlanner.progress.v1'
 
 function defaultState(): ProgressState {
-  return { transportSeen: {}, staysSeen: {}, attractionsSeen: {}, itinerarySeenDays: {} }
+  return { transportSeen: {}, attractionsSeen: {}, itinerarySeenDays: {} }
 }
 
 export function ProgressProvider({ children }: { children: React.ReactNode }) {
@@ -39,8 +37,6 @@ export function ProgressProvider({ children }: { children: React.ReactNode }) {
     () => ({
       markTransportSeen: (id) =>
         setState((s) => (s.transportSeen[id] ? s : { ...s, transportSeen: { ...s.transportSeen, [id]: true } })),
-      markStaySeen: (cityId) =>
-        setState((s) => (s.staysSeen[cityId] ? s : { ...s, staysSeen: { ...s.staysSeen, [cityId]: true } })),
       markAttractionsSeen: (cityId) =>
         setState((s) =>
           s.attractionsSeen[cityId] ? s : { ...s, attractionsSeen: { ...s.attractionsSeen, [cityId]: true } },

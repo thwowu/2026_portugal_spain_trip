@@ -1,37 +1,11 @@
 import { expect, test } from '@playwright/test'
 
 test.describe('landing page logic', () => {
-  test('onboarding shows once, can be reopened, persists across reload', async ({ page }) => {
-    await page.goto('/itinerary')
-    // Ensure a clean first-run state, but don't keep clearing on reloads.
-    await page.evaluate(() => {
-      localStorage.clear()
-      location.reload()
-    })
-
-    await page.waitForLoadState('networkidle')
-
-    // First visit should show onboarding
-    await expect(page.getByText('第一次使用：給爸媽的 30 秒導覽')).toBeVisible()
-
-    await page.getByRole('button', { name: '關閉' }).click()
-    await expect(page.getByText('第一次使用：給爸媽的 30 秒導覽')).toBeHidden()
-
-    // Reload should not show onboarding again
-    await page.reload()
-    await expect(page.getByText('第一次使用：給爸媽的 30 秒導覽')).toBeHidden()
-
-    // But help button should reopen it
-    await page.getByRole('button', { name: '使用說明' }).click()
-    await expect(page.getByText('第一次使用：給爸媽的 30 秒導覽')).toBeVisible()
-  })
-
   test('settings changes update dataset + persist, reset recommended restores defaults', async ({ page }) => {
     await page.goto('/itinerary')
     // Ensure a clean state once (don't clear again on reloads).
     await page.evaluate(() => {
       localStorage.clear()
-      localStorage.setItem('tripPlanner.onboarding.v1', JSON.stringify({ seen: true }))
       location.reload()
     })
     await page.waitForLoadState('networkidle')

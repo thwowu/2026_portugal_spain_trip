@@ -47,7 +47,6 @@ def main() -> None:
         page = browser.new_page()
 
         # Make results stable across runs.
-        page.add_init_script("localStorage.setItem('tripPlanner.onboarding.v1', JSON.stringify({seen:true}))")
 
         for name, url in targets:
             t0 = time.perf_counter()

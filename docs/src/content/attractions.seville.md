@@ -17,9 +17,11 @@ title: 塞維爾（Seville）
     - 為什麼去：一到現場就知道為何它是 Sevilla 的「代表照」——尺度、磁磚細節與水道把氛圍直接拉滿；歷史：廣場與公園區域與 20 世紀初的大型展覽/都市計畫密切相關，成為城市最具象徵性的公共空間之一。
   - 建議停留：1–2 小時（含拍照＋公園散步）
 - （半天快閃加一段就很完整）黃金塔（Torre del Oro）＋河岸步道（平路好走）：如果你只想加一個「河邊地標」，它是最省腦的。（Wikivoyage：`https://en.wikivoyage.org/wiki/Seville`）{{gallery:Torre del Oro|https://commons.wikimedia.org/wiki/Special:FilePath/Sevilla_Spain_Torre-del-Oro-01.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Sevilla_-_Torre_del_Oro_and_river_Guadalquivir_at_night.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Torre_del_Oro%2C_Sevilla%2C_Espa%C3%B1a%2C_2015-12-06%2C_DD_71.JPG?width=1800}}
-  - 補充：為什麼去：河岸散步的「地標錨點」，白天好拍、晚上夜景也很穩，走一段就能感受到 Sevilla 的河城氣質；歷史：河防與航運相關的歷史建築，見證 Sevilla 與 Guadalquivir 河之間的城市與貿易關係。
+  - 補充
+    - 為什麼去：河岸散步的「地標錨點」，白天好拍、晚上夜景也很穩，走一段就能感受到 Sevilla 的河城氣質；歷史：河防與航運相關的歷史建築，見證 Sevilla 與 Guadalquivir 河之間的城市與貿易關係。
 - （晚上的收尾點很穩）塞維爾蘑菇（Setas de Sevilla / Metropol Parasol）：白天看木構建築就很有感，傍晚再上去看夕陽（把它當成「視野＋城市中樞」）。（Wikivoyage：`https://en.wikivoyage.org/wiki/Seville`）{{gallery:Setas / Metropol Parasol|https://commons.wikimedia.org/wiki/Special:FilePath/Metropol_Parasol_Plaza_de_la_Encarnaci%C3%B3n_1.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Parasol_Metropol_Sevilla.JPG?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Metropol_Parasol_de_la_Encarnaci%C3%B3n_-_Sevilla.jpg?width=1800}}
-  - 補充：為什麼去：用一個點同時收「現代 Sevilla」與市景夕陽；動線好撤退，當作晚上的收尾點非常穩；歷史：雖是現代建築，但所在位置與城市公共空間更新相關，象徵 Sevilla 近年的城市再生與當代地標化。
+  - 補充
+    - 為什麼去：用一個點同時收「現代 Sevilla」與市景夕陽；動線好撤退，當作晚上的收尾點非常穩；歷史：雖是現代建築，但所在位置與城市公共空間更新相關，象徵 Sevilla 近年的城市再生與當代地標化。
 - （有票/有完整一天才升級）Real Alcázar（塞維爾王宮）{{gallery:Real Alcázar|https://source.unsplash.com/lsb1qSQUHm4/1800x1200|https://source.unsplash.com/BNYEBEu9G4s/1800x1200|https://commons.wikimedia.org/wiki/Special:FilePath/Sevilla_Alcazar_03.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Sevilla._Alcazar,_Patio_de_las_Doncellas.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Sevilla-Reales_Alcazares-Patio_de_las_Doncellas_3-20110915.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Real_Alc%C3%A1zar,_Cuarto_del_Almirante.jpg?width=1800|https://source.unsplash.com/lsb1qSQUHm4/1800x1200}}
   - 重點：宮殿紋樣＋庭園水景（雨天也能逛）
     - 為什麼去：如果你喜歡 Granada 的 Alhambra，這裡是同一條審美脈絡的「另一個高峰」；而且庭園真的很好走、很好拍；歷史：從摩爾王朝時期的宮殿／要塞發展而來，後續在基督教統治下持續擴建與使用，是多世紀層累積的王宮群。
@@ -28,15 +30,20 @@ title: 塞維爾（Seville）
   - 想要視野：上 Giralda（但需要走/坡道）
     - 為什麼去：把「塞維爾的宗教與城市高度」一次補滿；上 Giralda 的視角能快速建立老城的地理感；歷史：大教堂與 Giralda 反映從伊斯蘭到基督教的城市轉折（塔身與舊清真寺傳統相連），是 Sevilla 最核心的歷史地標群。
 - （有票/有完整一天才升級）聖十字街區（Barrio Santa Cruz；老城核心散步）：把它當作「連接 Alcázar ↔ 大教堂 ↔ 河岸」的散步網格，迷路也好玩。（Wikivoyage：`https://en.wikivoyage.org/wiki/Seville`；Wikitravel：`https://wikitravel.org/en/Seville`）{{gallery:Barrio Santa Cruz|https://commons.wikimedia.org/wiki/Special:FilePath/Barrio_Santa_Cruz_(Sevilla).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Sevilla_Barrio_Santa_Cruz_(25573995).jpeg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Barrio_de_Santa_Cruz%2C_Sevilla._Portal.jpg?width=1800}}
-  - 補充：為什麼去：不用排隊、不用買票就能把 Sevilla 的「巷弄密度與光影」吃到飽；也是最省腦的連接動線；歷史：老城的傳統街區紋理，保留大量中世紀巷弄尺度與生活肌理，是城市歷史核心的步行舞台。
+  - 補充
+    - 為什麼去：不用排隊、不用買票就能把 Sevilla 的「巷弄密度與光影」吃到飽；也是最省腦的連接動線；歷史：老城的傳統街區紋理，保留大量中世紀巷弄尺度與生活肌理，是城市歷史核心的步行舞台。
 - （同一個街區的免費室內短停）印地亞斯總檔案館（Archivo General de Indias）：就在大教堂旁邊，免費/低成本且很適合「熱或雨」的短停。（Wikivoyage：`https://en.wikivoyage.org/wiki/Seville`）{{gallery:Archivo General de Indias|https://commons.wikimedia.org/wiki/Special:FilePath/Sevilla_-_Archivo_General_de_Indias_1.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Sevilla_-_Archivo_General_de_Indias_2.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Archivo_de_Indias_002.jpg?width=1800}}
-  - 補充：為什麼去：在同一個街區就能把「西班牙帝國的全球史」補上一塊；而且免費、室內、很好用；歷史：集中保存與西班牙海外殖民／航海帝國相關的檔案資料，是 Sevilla 作為帝國行政中心記憶的重要容器。
+  - 補充
+    - 為什麼去：在同一個街區就能把「西班牙帝國的全球史」補上一塊；而且免費、室內、很好用；歷史：集中保存與西班牙海外殖民／航海帝國相關的檔案資料，是 Sevilla 作為帝國行政中心記憶的重要容器。
 - （想要更在地就過橋）特里亞納（Triana；在地感加分）：過橋去 Triana 吃 tapas 或逛市場，比一直待在最觀光的老城更舒服。（Wikivoyage：`https://en.wikivoyage.org/wiki/Seville`）{{gallery:Triana|https://commons.wikimedia.org/wiki/Special:FilePath/Triana_(Sevilla)_-_Aerial_photograph.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Puente_de_Triana%2C_Sevilla%2C_Espa%C3%B1a%2C_2015-12-06%2C_DD_67.JPG?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Torre-Triana%2C_Sevilla.jpg?width=1800}}
-  - 補充：為什麼去：想要「更生活、更在地」就過橋；吃 tapas、逛市場或沿河走一段，體驗會比一直擠老城舒服很多；歷史：河對岸的重要街區，長期以工藝與日常生活氛圍著稱，形成與觀光核心不同的 Sevilla 另一面。
+  - 補充
+    - 為什麼去：想要「更生活、更在地」就過橋；吃 tapas、逛市場或沿河走一段，體驗會比一直擠老城舒服很多；歷史：河對岸的重要街區，長期以工藝與日常生活氛圍著稱，形成與觀光核心不同的 Sevilla 另一面。
 - （室內細節回報很高）彼拉多之家（Casa de Pilatos）：庭院/磁磚/細節很值得，雨天也好用。（Wikivoyage：`https://en.wikivoyage.org/wiki/Seville`）{{gallery:Casa de Pilatos|https://commons.wikimedia.org/wiki/Special:FilePath/Sevilla_-_Casa_de_Pilatos_-_2.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Sevilla_-_Casa_de_Pilatos_-_3.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Sal%C3%B3n_del_Pretorio%2C_Casa_de_Pilatos_(Sevilla).jpg?width=1800}}
-  - 補充：為什麼去：室內＋庭院型景點裡「細節回報」很高，磁磚與裝飾紋理拍起來超漂亮，雨天也不會崩盤；歷史：屬於貴族宅邸類的歷史建築，融合不同時期的建築與裝飾語彙，呈現 Sevilla 上層文化的生活樣貌。
+  - 補充
+    - 為什麼去：室內＋庭院型景點裡「細節回報」很高，磁磚與裝飾紋理拍起來超漂亮，雨天也不會崩盤；歷史：屬於貴族宅邸類的歷史建築，融合不同時期的建築與裝飾語彙，呈現 Sevilla 上層文化的生活樣貌。
 - （補給/在地市場感）特里亞納市場（Mercado de Triana）：想吃小吃/買水果補給或感受在地日常時，很適合插進行程空檔。（Wikitravel：`https://wikitravel.org/en/Seville`）{{gallery:Mercado de Triana|https://commons.wikimedia.org/wiki/Special:FilePath/Mercado_de_Triana_(Sevilla).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Mercado_de_Triana_01.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Mercado_triana_2016002.jpg?width=1800}}
-  - 補充：為什麼去：比觀光美食市集更像「真正在買菜的市場」，很適合補給或吃幾樣小點就走；歷史：市場承接 Triana 的社區日常機能，代表河對岸街區的生活脈動與飲食文化。
+  - 補充
+    - 為什麼去：比觀光美食市集更像「真正在買菜的市場」，很適合補給或吃幾樣小點就走；歷史：市場承接 Triana 的社區日常機能，代表河對岸街區的生活脈動與飲食文化。
 
 ## easy
 - 景點集中，可半天完成

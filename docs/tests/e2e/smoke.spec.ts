@@ -1,13 +1,6 @@
 import { expect, test } from '@playwright/test'
 
 test.describe('trip planner smoke', () => {
-  test.beforeEach(async ({ page }) => {
-    // Avoid onboarding overlay blocking navigation assertions.
-    await page.addInitScript(() => {
-      localStorage.setItem('tripPlanner.onboarding.v1', JSON.stringify({ seen: true }))
-    })
-  })
-
   test('GitHub Pages fallback style route restore (?p=...)', async ({ page }) => {
     await page.goto('/?p=%2Fitinerary&v=1')
     await expect(page.getByText('Day 1–15 總行程')).toBeVisible()

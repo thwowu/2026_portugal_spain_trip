@@ -10,6 +10,8 @@ import { Modal } from '../components/Modal'
 import { ItineraryBackground } from '../components/ItineraryBackground'
 import { ItineraryScrolly } from '../components/ItineraryScrolly'
 import styles from './ItineraryTimeline.module.css'
+import { cityIdFromLabel } from '../utils/cityIdFromLabel'
+import type { CityId } from '../data/core'
 
 function tagLabel(tag: ItineraryDay['tags'][number]) {
   switch (tag) {
@@ -148,9 +150,14 @@ export function ItineraryPage() {
     }
   }, [allDays, activeDay])
 
+  const activeCityId = useMemo<CityId>(() => {
+    const d = allDays.find((x) => x.day === activeDay)
+    return d ? cityIdFromLabel(d.cityLabel) : 'lisbon'
+  }, [activeDay, allDays])
+
   return (
     <div className="pageItinerary">
-      {viewMode === 'timeline' ? <ItineraryBackground /> : null}
+      {viewMode === 'timeline' ? <ItineraryBackground activeCityId={activeCityId} /> : null}
 
       <div className="container" style={{ position: 'relative', zIndex: 1 }}>
         <div className="card">

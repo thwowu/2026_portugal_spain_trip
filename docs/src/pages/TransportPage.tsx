@@ -1,7 +1,6 @@
 import { useEffect, useMemo, useState } from 'react'
 import { TRANSPORT_DATA } from '../generated'
 import { TRANSPORT_SEGMENTS, type TransportSegmentId } from '../data/core'
-import { usePlanning } from '../state/planning'
 import { useProgress } from '../state/progress'
 import { Lightbox } from '../components/Lightbox'
 import { useHashScroll } from '../hooks/useHashScroll'
@@ -33,7 +32,6 @@ function Accordion({
 }
 
 export function TransportPage() {
-  const { state, actions } = usePlanning()
   const { actions: progressActions } = useProgress()
   const [lightbox, setLightbox] = useState<{ src: string; title: string } | null>(null)
   useHashScroll()
@@ -86,7 +84,6 @@ export function TransportPage() {
 
       <div style={{ display: 'grid', gap: 14 }}>
         {orderedSegments.map((seg) => {
-          const decision = state.transportDecisions[seg.id]
           const trainOptions = seg.options.filter((o) => o.mode === 'train')
           const busOptions = seg.options.filter((o) => o.mode === 'bus')
 
@@ -100,22 +97,6 @@ export function TransportPage() {
                     </div>
                   </div>
 
-                  <div style={{ marginTop: 10 }} className="muted">
-                    <div style={{ fontSize: 'var(--text-sm)', marginBottom: 6 }}>一句話原因（給父母看的）</div>
-                    <input
-                      value={decision?.reason ?? ''}
-                      onChange={(e) => actions.setTransportDecision(seg.id, { reason: e.target.value })}
-                      placeholder="例：轉乘少、行李比較好處理"
-                      style={{
-                        width: '100%',
-                        borderRadius: 12,
-                        border: '1px solid var(--hairline)',
-                        padding: '12px 12px',
-                        fontSize: 'var(--text-md)',
-                      }}
-                    />
-                  </div>
-
                   <hr className="hr" />
 
                   {/* TL;DR */}
@@ -127,7 +108,6 @@ export function TransportPage() {
                           推薦：{seg.tldr.recommended === 'train' ? '火車' : '巴士'}
                         </div>
                       </div>
-                      <div style={{ marginTop: 8 }}>{seg.tldr.because}</div>
                       <div className="muted" style={{ marginTop: 10 }}>
                         <ul style={{ margin: 0, paddingLeft: 18 }}>
                           {seg.tldr.reminders.map((r) => (

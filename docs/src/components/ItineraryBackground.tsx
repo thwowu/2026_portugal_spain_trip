@@ -2,6 +2,7 @@ import { useEffect, useMemo, useRef } from 'react'
 import { MAP_CITIES, MAP_ROUTES, type Point } from '../map/data'
 import { useMotionEnabled, useSettings } from '../state/settings'
 import { withBaseUrl } from '../utils/asset'
+import type { CityId } from '../data/core'
 
 type Route = (typeof MAP_ROUTES)[number]
 
@@ -25,12 +26,15 @@ function tripPathD(routes: Route[]) {
   return d
 }
 
-export function ItineraryBackground() {
+export function ItineraryBackground({ activeCityId }: { activeCityId: CityId }) {
   const motionEnabled = useMotionEnabled()
   const { motion, prefersReducedMotion, uiMode } = useSettings()
   const pathRef = useRef<SVGPathElement | null>(null)
   const busRef = useRef<SVGGElement | null>(null)
   const trainRef = useRef<SVGGElement | null>(null)
+  const rafRef = useRef<number>(0)
+  const lastBusPtRef = useRef<Point | null>(null)
+  const lastTrainPtRef = useRef<Point | null>(null)
 
   const tripRoutes = useMemo<Route[]>(() => {
     const ids = ['lisbon-lagos', 'lagos-seville', 'seville-granada', 'granada-madrid'] as const
@@ -40,54 +44,72 @@ export function ItineraryBackground() {
   const d = useMemo(() => tripPathD(tripRoutes), [tripRoutes])
 
   useEffect(() => {
-    const path = pathRef.current
     const bus = busRef.current
     const train = trainRef.current
-    if (!path || !bus || !train) return
+    if (!bus || !train) return
 
-    const len = path.getTotalLength()
-    let raf = 0
-    let start = 0
-
-    const place = (el: SVGGElement, t: number) => {
-      const pt = path.getPointAtLength(Math.min(len, Math.max(0, t)) * len)
+    const placeAt = (el: SVGGElement, pt: Point) => {
       el.setAttribute('transform', `translate(${pt.x} ${pt.y})`)
     }
 
-    // Always show both markers (even in low-motion mode).
-    place(bus, 0.05)
-    place(train, 0.62)
+    const routeOrder: Array<Exclude<CityId, 'sintra'>> = ['lisbon', 'lagos', 'seville', 'granada', 'madrid']
 
-    // Respect OS-level reduced motion: keep markers static.
-    if (prefersReducedMotion) return
-
-    // Keep animation in senior/low-motion mode too, but make it much slower.
-    // (Still respects OS reduced motion.)
-    const loopMs = motionEnabled ? 26000 : 95000
-
-    const tick = (now: number) => {
-      if (!start) start = now
-      const t = ((now - start) % loopMs) / loopMs
-      // Bus slightly leads, train slightly lags.
-      place(bus, t)
-      place(train, (t + 0.42) % 1)
-      raf = requestAnimationFrame(tick)
+    const nextTravelCity = (cityId: CityId): Exclude<CityId, 'sintra'> => {
+      const cur: Exclude<CityId, 'sintra'> = cityId === 'sintra' ? 'lisbon' : cityId
+      const idx = routeOrder.indexOf(cur)
+      if (idx < 0) return 'lisbon'
+      return routeOrder[Math.min(routeOrder.length - 1, idx + 1)] ?? 'madrid'
     }
 
-    raf = requestAnimationFrame(tick)
-    return () => cancelAnimationFrame(raf)
-  }, [motionEnabled, motion, prefersReducedMotion])
+    const busTarget = MAP_CITIES[activeCityId].pt
+    const trainTarget = MAP_CITIES[nextTravelCity(activeCityId)].pt
+
+    const busFrom = lastBusPtRef.current ?? busTarget
+    const trainFrom = lastTrainPtRef.current ?? trainTarget
+
+    lastBusPtRef.current = busTarget
+    lastTrainPtRef.current = trainTarget
+
+    if (rafRef.current) cancelAnimationFrame(rafRef.current)
+
+    const durationMs = prefersReducedMotion ? 0 : motionEnabled ? 520 : 900
+    if (durationMs <= 0) {
+      placeAt(bus, busTarget)
+      placeAt(train, trainTarget)
+      return
+    }
+
+    const ease = (t: number) => 1 - Math.pow(1 - t, 3)
+    const start = performance.now()
+
+    const tick = (now: number) => {
+      const raw = (now - start) / durationMs
+      const t = raw >= 1 ? 1 : raw <= 0 ? 0 : raw
+      const k = ease(t)
+      placeAt(bus, { x: busFrom.x + (busTarget.x - busFrom.x) * k, y: busFrom.y + (busTarget.y - busFrom.y) * k })
+      placeAt(
+        train,
+        { x: trainFrom.x + (trainTarget.x - trainFrom.x) * k, y: trainFrom.y + (trainTarget.y - trainFrom.y) * k },
+      )
+      if (t < 1) rafRef.current = requestAnimationFrame(tick)
+    }
+
+    rafRef.current = requestAnimationFrame(tick)
+    return () => {
+      if (rafRef.current) cancelAnimationFrame(rafRef.current)
+    }
+  }, [activeCityId, motionEnabled, motion, prefersReducedMotion])
 
   if (!d) return null
 
   const bgOpacity =
     uiMode === 'senior'
       ? motionEnabled
-        ? 0.18
-        : 0.17
+        ? 0.30
+        : 0.28
       : motionEnabled
-        ? 0.16
-        : 0.14
+        ? 0.26
+        : 0.24
 
   const markerOpacity = motionEnabled ? 0.78 : 0.74
 
@@ -128,7 +150,7 @@ export function ItineraryBackground() {
           <path ref={pathRef} d={d} fill="none" stroke={primary} strokeWidth={4} strokeLinecap="round" opacity={0.7} />
 
           {/* City points */}
-          {(['lisbon', 'lagos', 'seville', 'granada', 'madrid'] as const).map((cid) => {
+          {(['lisbon', 'sintra', 'lagos', 'seville', 'granada', 'madrid'] as const).map((cid) => {
             const c = MAP_CITIES[cid]
             return (
               <g key={cid}>

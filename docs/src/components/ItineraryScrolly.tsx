@@ -1,18 +1,9 @@
-import { useEffect, useMemo, useRef, useState } from 'react'
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import type { ItineraryDay } from '../data/itinerary'
 import { ITINERARY_PHASES } from '../generated'
 import { ItineraryLeafletMap } from './ItineraryLeafletMap'
 import { useMotionEnabled } from '../state/settings'
-
-function cityIdFromLabel(cityLabel: string): 'lisbon' | 'sintra' | 'lagos' | 'seville' | 'granada' | 'madrid' {
-  const s = (cityLabel ?? '').trim()
-  if (s.includes('辛特拉') || s.toLowerCase().includes('sintra')) return 'sintra'
-  if (s.includes('拉各斯') || s.toLowerCase().includes('lagos')) return 'lagos'
-  if (s.includes('塞維爾') || s.toLowerCase().includes('seville')) return 'seville'
-  if (s.includes('格拉納達') || s.toLowerCase().includes('granada')) return 'granada'
-  if (s.includes('馬德里') || s.toLowerCase().includes('madrid')) return 'madrid'
-  return 'lisbon'
-}
+import { cityIdFromLabel } from '../utils/cityIdFromLabel'
 
 function dayCardText(d: ItineraryDay) {
   const parts: string[] = []
@@ -44,7 +35,7 @@ export function ItineraryScrolly() {
   const [hoveredStep, setHoveredStep] = useState<number | null>(null)
   const stepRefs = useRef<Map<number, HTMLElement>>(new Map())
 
-  const jumpToIndex = (idx: number) => {
+  const jumpToIndex = useCallback((idx: number) => {
     const el = stepRefs.current.get(idx)
     if (!el) return
     setActiveStep(idx)
@@ -53,7 +44,7 @@ export function ItineraryScrolly() {
       block: 'center',
     })
     el.focus()
-  }
+  }, [motionEnabled, prefersReducedMotion])
 
   useEffect(() => {
     if (typeof IntersectionObserver === 'undefined') return
@@ -107,7 +98,7 @@ export function ItineraryScrolly() {
 
     window.addEventListener('keydown', onKeyDown)
     return () => window.removeEventListener('keydown', onKeyDown)
-  }, [activeStep, days, motionEnabled, prefersReducedMotion])
+  }, [activeStep, days, jumpToIndex])
 
   return (
     <div id="scroll">

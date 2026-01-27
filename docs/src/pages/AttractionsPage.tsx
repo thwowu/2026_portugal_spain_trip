@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from 'react'
 import { ATTRACTIONS_DATA, EXTENSIONS_DATA } from '../generated'
-import { CITIES } from '../data/core'
+import { CITIES, STAYS_CITY_ORDER } from '../data/core'
 import type { CityId } from '../data/core'
 import { useProgress } from '../state/progress'
 import { useSettings } from '../state/settings'
@@ -40,6 +40,15 @@ const SECTION_TAB_LABEL: Record<string, string> = {
   photo: '拍照',
   safety: '安全',
 }
+
+// Keep Attractions city order aligned with the itinerary (same as stays).
+// Note: we intentionally omit Sintra here (day trip; no attractions.<sintra>.md).
+const DEFAULT_ATTRACTIONS_CITY_ID: CityId | null = (() => {
+  for (const id of STAYS_CITY_ORDER) {
+    if (ATTRACTIONS_DATA.some((c) => c.cityId === id)) return id
+  }
+  return (ATTRACTIONS_DATA[0]?.cityId as CityId) ?? null
+})()
 
 function stripListMarker(s: string) {
   const t = s.trimStart()
@@ -195,6 +204,20 @@ function parseKeyValueLine(raw: string): { key: string; value: string } | null {
   return { key: keyRaw, value }
 }
 
+function stripSupplementLabels(nodes: IndentedNode[]): IndentedNode[] {
+  const out: IndentedNode[] = []
+  for (const n of nodes) {
+    const children = stripSupplementLabels(n.children)
+    // Content authoring uses "- 補充" as a structural marker; we keep the content but hide the marker in UI.
+    if (n.text === '補充') {
+      out.push(...children)
+      continue
+    }
+    out.push({ ...n, children })
+  }
+  return out
+}
+
 function RichItem({
   text,
   onOpenImage,
@@ -306,9 +329,12 @@ function RichItem({
   const kv = parseKeyValueLine(raw)
   if (kv) {
     const linked = renderInlineText(kv.value)
+    const keyNormalized = kv.key.replace(/（.*?）/g, '').trim()
+    // Hide "why go" label in UI (content stays).
+    const hideKey = keyNormalized === '為什麼去' || keyNormalized === '為什麼要去'
     return (
-      <div className="attrKV" style={{ whiteSpace: 'pre-wrap' }}>
-        <span className="attrKVKey">{kv.key}</span>
+      <div className={`attrKV ${hideKey ? 'attrKVNoKey' : ''}`.trim()} style={{ whiteSpace: 'pre-wrap' }}>
+        {hideKey ? null : <span className="attrKVKey">{kv.key}</span>}
         <span className="attrKVValue">{linked ?? kv.value}</span>
       </div>
     )
@@ -331,21 +357,16 @@ function IndentedList({
   onOpenGallery?: (images: GalleryImage[], title: string) => void
   depth?: number
 }) {
-  const nodes = useMemo(() => parseIndentedList(items), [items])
+  const nodes = useMemo(() => stripSupplementLabels(parseIndentedList(items)), [items])
 
   const renderNodes = (ns: IndentedNode[], d: number) => {
     if (ns.length === 0) return null
     return (
       <ul className={`attrList attrListDepth${Math.min(d, 3)}`}>
         {ns.map((n) => {
-          const isSupplementLabel = n.text === '補充'
           return (
-            <li key={n.id} className={isSupplementLabel ? 'attrSupplement' : undefined}>
-              {isSupplementLabel ? (
-                <div className="attrSupplementLabel">補充</div>
-              ) : (
-                <RichItem text={n.text} onOpenImage={onOpenImage} onOpenGallery={onOpenGallery} />
-              )}
+            <li key={n.id}>
+              <RichItem text={n.text} onOpenImage={onOpenImage} onOpenGallery={onOpenGallery} />
               {n.children.length > 0 ? renderNodes(n.children, d + 1) : null}
             </li>
           )
@@ -431,7 +452,7 @@ export function AttractionsPage() {
   const [active, setActive] = useState<{ cityId: string; tripId: string } | null>(null)
   const [lightbox, setLightbox] = useState<{ src: string; title: string } | null>(null)
   const [gallery, setGallery] = useState<{ title: string; images: GalleryImage[]; index: number } | null>(null)
-  const [activeCityId, setActiveCityId] = useState<CityId | null>((ATTRACTIONS_DATA[0]?.cityId as CityId) ?? null)
+  const [activeCityId, setActiveCityId] = useState<CityId | null>(DEFAULT_ATTRACTIONS_CITY_ID)
   const [activeTabByCity, setActiveTabByCity] = useState<Record<string, string>>({})
   const [cityProgress, setCityProgress] = useState(0)
 
@@ -441,7 +462,31 @@ export function AttractionsPage() {
     return m
   }, [])
 
-  const cityOrder = useMemo(() => ATTRACTIONS_DATA.map((c) => c.cityId), [])
+  const orderedAttractions = useMemo(() => {
+    const byId = new Map<CityId, (typeof ATTRACTIONS_DATA)[number]>()
+    for (const c of ATTRACTIONS_DATA) byId.set(c.cityId as CityId, c)
+
+    const ordered: (typeof ATTRACTIONS_DATA) = []
+    // 1) Primary order: same as itinerary/stays
+    for (const id of STAYS_CITY_ORDER) {
+      const c = byId.get(id)
+      if (c) {
+        ordered.push(c)
+        byId.delete(id)
+      }
+    }
+    // 2) Append any remaining cities in the original file order (future-proofing)
+    for (const c of ATTRACTIONS_DATA) {
+      const id = c.cityId as CityId
+      if (!byId.has(id)) continue
+      ordered.push(c)
+      byId.delete(id)
+    }
+
+    return ordered
+  }, [])
+
+  const cityOrder = useMemo(() => orderedAttractions.map((c) => c.cityId), [orderedAttractions])
   const activeCityIdx = useMemo(() => {
     if (!activeCityId) return 0
     const idx = cityOrder.indexOf(activeCityId)
@@ -570,7 +615,7 @@ export function AttractionsPage() {
       <div style={{ height: 10 }} />
 
       <div style={{ display: 'grid', gap: 14 }}>
-        {ATTRACTIONS_DATA.map((c) => {
+        {orderedAttractions.map((c) => {
           const cityKey = c.cityId
           const defaultKind = c.sections[0]?.kind
           const activeKind = activeTabByCity[cityKey] ?? defaultKind

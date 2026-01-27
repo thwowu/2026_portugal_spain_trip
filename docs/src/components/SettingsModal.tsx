@@ -1,4 +1,4 @@
-import { useMemo, useRef } from 'react'
+import { useRef } from 'react'
 import { useSettings, type FontScale } from '../state/settings'
 import { useProgress } from '../state/progress'
 import { Modal } from './Modal'
@@ -21,7 +21,7 @@ export function SettingsModal({
   const { actions: progressActions } = useProgress()
   const closeBtnRef = useRef<HTMLButtonElement | null>(null)
 
-  const title = useMemo(() => '設定', [])
+  const title = '設定'
 
   return (
     <Modal

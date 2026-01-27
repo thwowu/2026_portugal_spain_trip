@@ -15,7 +15,8 @@ title: 馬德里（Madrid）
   - 太陽門廣場 / 主廣場（Puerta del Sol / Plaza Mayor；打卡＋走過路過）{{gallery:Sol / Plaza Mayor|https://commons.wikimedia.org/wiki/Special:FilePath/Puerta_del_Sol_(Madrid)_04.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Madrid-_Puerta_del_Sol.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Madrid_Bear_at_Puerta_del_Sol.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Plaza_Mayor_de_Madrid_06.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/The_plaza_mayor_in_madrid.jpg?width=1800|https://source.unsplash.com/NqHJ-ogQRZQ/1800x1200}}
     - 為什麼去：作為「城市的客廳」很好理解馬德里的節奏；不必久留，但走過就能把地理感建立起來；歷史：Sol 是傳統市中心節點，Plaza Mayor 則代表哈布斯堡時期的城市尺度與公共生活舞台。
   - （點心站）聖米格爾市場（Mercado de San Miguel）：當作「吃 2–3 樣就撤退」的點心站（人多時顧好手機/錢包；別在這裡吃到飽）。（Wikivoyage：`https://en.wikivoyage.org/wiki/Madrid`）{{gallery:Mercado de San Miguel|https://commons.wikimedia.org/wiki/Special:FilePath/Madrid_-_Mercado_de_San_Miguel_2016.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Mercado_de_San_Miguel_(Madrid)_01.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Mercado_de_San_Miguel_(Madrid)_06.jpg?width=1800}}
-    - 補充：為什麼去：用最省腦的方式「快速吃到西班牙」；不求坐下吃滿一餐，反而更好控制時間與預算；歷史：屬於馬德里市場文化的一部分，後來以更偏觀光的美食市集形式復興，變成城市飲食打卡點。
+    - 補充
+      - 為什麼去：用最省腦的方式「快速吃到西班牙」；不求坐下吃滿一餐，反而更好控制時間與預算；歷史：屬於馬德里市場文化的一部分，後來以更偏觀光的美食市集形式復興，變成城市飲食打卡點。
 - Day 13 文化之日（你行程的主菜；推薦順序）
   - 索菲亞王后國家藝術中心（Reina Sofía；Guernica《格爾尼卡》；建議早到/開門就到）{{gallery:Reina Sofía|https://commons.wikimedia.org/wiki/Special:FilePath/Museo_Nacional_Centro_de_Arte_Reina_Sofia_-_MNCARS_(5185170497).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/MNCARS_ampliaci%C3%B3n_01.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Museo_Reina_Sof%C3%ADa.jpg?width=1800}}
     - 為什麼去：如果你只選一個「近代/現代」大館，這裡最有代表性；Guernica 本人是那種看過就會記一輩子的作品；歷史：作為國家級現代藝術館，收藏聚焦 20 世紀西班牙藝術與歷史創傷，Guernica 也成為西班牙內戰與反戰記憶的象徵。
@@ -27,17 +28,23 @@ title: 馬德里（Madrid）
   - 不一定要進去；外觀＋廣場＋夕陽就很有感{{gallery:Royal Palace|https://commons.wikimedia.org/wiki/Special:FilePath/Palacio_Real_de_Madrid_-_21.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/El_Palacio_Real_de_Madrid.JPG?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Palacio_Real.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Palacio_Real_de_Madrid_-_Interior_04.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Palacio_Real_de_Madrid_-_21.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/El_Palacio_Real_de_Madrid.JPG?width=1800}}
     - 為什麼去：用最低體力成本補滿「王室感」；外觀與廣場尺度就很震撼，夕陽光線會直接把質感拉滿；歷史：西班牙王室的重要象徵建築，位處核心政治／王權區域，承接王朝更迭下的宮廷與儀式場景。
 - （加分）普拉多博物館 / 提森-博內米薩博物館（Prado / Thyssen）：想補古典藝術再挑一館就好（不要三館全包）{{gallery:Prado / Thyssen|https://commons.wikimedia.org/wiki/Special:FilePath/Puerta_de_Goya_del_Museo_del_Prado.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Interior_del_Museo_del_Prado.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/0_V%C3%A9nus_et_Cupidon_-_P.P._Rubens_-_Mus%C3%A9e_Thyssen-Bornemisza_(2).JPG?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Retrato_de_una_mujer_joven_llamada_%22la_Bella%22,_por_Palma_el_Viejo.jpg?width=1800}}
-  - 補充：為什麼去：想看「歐洲繪畫教科書」選 Prado；想要更好逛、更完整跨時代脈絡選 Thyssen——二選一就能很有感；歷史：兩館都與王室／私人收藏的累積有關，最後形成國家級與頂級私藏並存的「藝術三角」核心。
+  - 補充
+    - 為什麼去：想看「歐洲繪畫教科書」選 Prado；想要更好逛、更完整跨時代脈絡選 Thyssen——二選一就能很有感；歷史：兩館都與王室／私人收藏的累積有關，最後形成國家級與頂級私藏並存的「藝術三角」核心。
 - （街區散步三選一）La Latina / Malasaña / Lavapiés：想把馬德里從「景點」切換成「生活」就靠街區散步（傍晚很有感）。（Wikivoyage：`https://en.wikivoyage.org/wiki/Madrid`）{{gallery:La Latina / Malasaña|https://commons.wikimedia.org/wiki/Special:FilePath/La_Latina_-_Madrid.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Madrid_-_Barrio_de_Malasa%C3%B1a_32.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Calle_de_Manuela_Malasa%C3%B1a_(Madrid).jpg?width=1800}}
-  - 補充：為什麼去：比起大景點，這裡更像「城市真正在呼吸的地方」；逛雜貨小店、咖啡館與街角酒吧會更有在地感；歷史：老城延伸出的街區生活帶，長期呈現多元移民與城市文化交會，形成馬德里最有層次的日常區域之一。
+  - 補充
+    - 為什麼去：比起大景點，這裡更像「城市真正在呼吸的地方」；逛雜貨小店、咖啡館與街角酒吧會更有在地感；歷史：老城延伸出的街區生活帶，長期呈現多元移民與城市文化交會，形成馬德里最有層次的日常區域之一。
 - （喜歡公園就加）卡薩德坎波公園（Casa de Campo）：比 Retiro 更大更野，當作「長走路日」的替代選項。（Wikivoyage：`https://en.wikivoyage.org/wiki/Madrid`）{{gallery:Casa de Campo|https://commons.wikimedia.org/wiki/Special:FilePath/Casa_de_Campo_de_Madrid%2C_atardecer_en_noviembre_de_2022_01.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Casa_de_Campo_de_Madrid%2C_atardecer_en_noviembre_de_2022_02.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Casa_de_Campo_de_Madrid%2C_atardecer_en_noviembre_de_2022_03.jpg?width=1800}}
-  - 補充：為什麼去：如果你想要的是「更開闊、更自然」而不是整理過的城市公園，這裡的回報會更像在戶外健行；歷史：傳統上與王室狩獵／休閒空間相關，後來轉為大尺度公共綠地，是馬德里最大的戶外腹地之一。
+  - 補充
+    - 為什麼去：如果你想要的是「更開闊、更自然」而不是整理過的城市公園，這裡的回報會更像在戶外健行；歷史：傳統上與王室狩獵／休閒空間相關，後來轉為大尺度公共綠地，是馬德里最大的戶外腹地之一。
 - （補一個「最新的大館」）王室收藏館（Royal Collections Gallery）：如果你對王室收藏/美術史有興趣，可和 Royal Palace 做成同一個半天。（Wikivoyage：`https://en.wikivoyage.org/wiki/Madrid`）{{gallery:Royal Collections Gallery|https://commons.wikimedia.org/wiki/Special:FilePath/Galeria_de_las_Colecciones_Reales_-_Madrid_01.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Galeria_de_las_Colecciones_Reales_-_Madrid_02.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Fachada_Galer%C3%ADa_Colecciones_Reales_Cuesta_de_la_Vega.jpg?width=1800}}
-  - 補充：為什麼去：把「王室」從外觀景點變成可理解的收藏與脈絡；很適合跟 Royal Palace 做成同一段半天文化行程；歷史：集中展示西班牙王室長期累積的藝術與器物收藏，讓王權與文化的關係更立體可見。
+  - 補充
+    - 為什麼去：把「王室」從外觀景點變成可理解的收藏與脈絡；很適合跟 Royal Palace 做成同一段半天文化行程；歷史：集中展示西班牙王室長期累積的藝術與器物收藏，讓王權與文化的關係更立體可見。
 - （足球迷必加）伯納烏球場（Santiago Bernabéu；球場導覽）：如果你這趟想要 1 個「很馬德里」但不是博物館的點，就選它。（Wikitravel：`https://wikitravel.org/wiki/en/index.php?title=Madrid&mobileaction=toggle_view_desktop`）{{gallery:Santiago Bernabéu|https://commons.wikimedia.org/wiki/Special:FilePath/Estadio_Santiago_Bernab%C3%A9u_-_01.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Santiagobernabeupanoramav45.JPG?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Santiago_Bernab%C3%A9u_Stadium_in_2017_before_the_2023_reconstruction.jpg?width=1800}}
-  - 補充：為什麼去：如果你想要一個「不靠博物館也很馬德里」的體驗，這裡最直球；導覽能把足球文化濃度一次補滿；歷史：作為皇家馬德里的主場之一，球場本身已成為城市文化符號，與現代馬德里的大眾娛樂史緊密相連。
+  - 補充
+    - 為什麼去：如果你想要一個「不靠博物館也很馬德里」的體驗，這裡最直球；導覽能把足球文化濃度一次補滿；歷史：作為皇家馬德里的主場之一，球場本身已成為城市文化符號，與現代馬德里的大眾娛樂史緊密相連。
 - El Rastro（跳蚤市場，週日為主）：想找「很生活的熱鬧」就去，但人多時更要顧好手機/錢包。（Wikivoyage：`https://en.wikivoyage.org/wiki/Madrid`）{{gallery:El Rastro|https://commons.wikimedia.org/wiki/Special:FilePath/El_Rastro_de_Madrid_50.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Rastro_-_Ribera_de_Curtidores_-_Madrid_01.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/El_Rastro_de_Madrid_53.jpg?width=1800}}
-  - 補充：為什麼去：比買到什麼更重要的是「感受週日的城市能量」；逛一段就撤退也很足夠；歷史：歷史悠久的市集傳統，逐漸演變成每週固定的跳蚤市場文化，成為馬德里最具生活感的週末場景之一。
+  - 補充
+    - 為什麼去：比買到什麼更重要的是「感受週日的城市能量」；逛一段就撤退也很足夠；歷史：歷史悠久的市集傳統，逐漸演變成每週固定的跳蚤市場文化，成為馬德里最具生活感的週末場景之一。
 
 ## easy
 - 公園/皇宮以外觀為主

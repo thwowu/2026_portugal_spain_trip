@@ -5,11 +5,7 @@ import { useMotionEnabled } from '../state/settings'
 import { withBaseUrl } from '../utils/asset'
 import { Modal } from './Modal'
 
-export function OnboardingModal({
-  onClose,
-}: {
-  onClose: () => void
-}) {
+export function OnboardingModal({ onClose }: { onClose: () => void }) {
   const allowMotion = useMotionEnabled()
   const primaryBtnRef = useRef<HTMLButtonElement | null>(null)
 
@@ -30,7 +26,7 @@ export function OnboardingModal({
           subtitle: '火車 vs 巴士：先看「大建議」，需要再看完整。',
           heroSrc: withBaseUrl('/illustrations/3d-train-on-landscape.png'),
           heroAlt: '示意插圖：交通（3D）',
-          bullets: ['先寫一句話原因（給爸媽看）', '需要細節再點「看完整說明」'],
+          bullets: ['先寫一句話原因（給爸媽看）', '需要細節再展開下面卡片'],
         },
         {
           icon: <IconStays />,
@@ -45,6 +41,7 @@ export function OnboardingModal({
   )
 
   const [step, setStep] = useState(0)
+  const [interacted, setInteracted] = useState(false)
   const total = cards.length
   const current = cards[Math.max(0, Math.min(total - 1, step))] ?? cards[0]
   const isFirst = step <= 0
@@ -60,13 +57,15 @@ export function OnboardingModal({
   }, [cards])
 
   useEffect(() => {
-    // Auto-advance every 3 seconds (stop on last slide so users can read CTA).
+    // Auto-advance briefly for first-time users, but stop as soon as they interact.
     if (isLast) return
+    if (interacted) return
+    if (!allowMotion) return
     const t = window.setTimeout(() => {
       setStep((s) => Math.min(total - 1, s + 1))
-    }, 3000)
+    }, 6000)
     return () => window.clearTimeout(t)
-  }, [step, total, isLast])
+  }, [step, total, isLast, interacted, allowMotion])
 
   return (
     <Modal
@@ -78,122 +77,134 @@ export function OnboardingModal({
       cardClassName={`card modalCard onbCard ${allowMotion ? 'onbMotion' : 'onbNoMotion'}`}
     >
       <div className="cardInner">
-          <div className="modalHeader">
-            <div>
-              <div className="modalTitle">第一次使用：給爸媽的 30 秒導覽</div>
-              <div className="muted modalSub">
-                之後也可以從右上角「使用說明」再打開。
-              </div>
-            </div>
-            <button className="btn modalCloseBtn" onClick={onClose}>
-              關閉
-            </button>
+        <div className="modalHeader">
+          <div>
+            <div className="modalTitle">第一次使用：給爸媽的 30 秒導覽</div>
+            <div className="muted modalSub">之後也可以從右上角「使用說明」再打開，或到「設定」裡重播。</div>
+          </div>
+          <button className="btn modalCloseBtn" onClick={onClose}>
+            關閉
+          </button>
+        </div>
+
+        <hr className="hr" />
+
+        <div key={String(step)} className={`onbStep onbSlide ${allowMotion ? 'onbMotion' : 'onbNoMotion'}`}>
+          <div className="muted" style={{ marginTop: 2 }}>
+            第 {step + 1}/{total} 頁：先看<strong>行程</strong>就好；其他頁面需要時再看。
           </div>
 
-          <hr className="hr" />
-
-          {/* Slideshow onboarding: one card per step */}
-          <div key={current.title} className={`onbStep onbSlide ${allowMotion ? 'onbMotion' : 'onbNoMotion'}`}>
-            <div className="muted" style={{ marginTop: 2 }}>
-              第 {step + 1}/{total} 頁：先看<strong>行程</strong>就好；其他頁面需要時再看。
-            </div>
-
-            <div style={{ marginTop: 12 }}>
-              <div className="card modalSectionCard">
-                <div className="cardInner">
-                  <div style={{ display: 'flex', gap: 10, alignItems: 'baseline', flexWrap: 'wrap' }}>
-                    <span className="chip" aria-hidden="true">
-                      {step + 1}
+          <div style={{ marginTop: 12 }}>
+            <div className="card modalSectionCard">
+              <div className="cardInner">
+                <div style={{ display: 'flex', gap: 10, alignItems: 'baseline', flexWrap: 'wrap' }}>
+                  <span className="chip" aria-hidden="true">
+                    {step + 1}
+                  </span>
+                  <div style={{ display: 'inline-flex', gap: 10, alignItems: 'center', flexWrap: 'wrap', minWidth: 0 }}>
+                    <span aria-hidden="true" style={{ display: 'grid', placeItems: 'center' }}>
+                      {current.icon}
                     </span>
-                    <div style={{ display: 'inline-flex', gap: 10, alignItems: 'center', flexWrap: 'wrap', minWidth: 0 }}>
-                      <span aria-hidden="true" style={{ display: 'grid', placeItems: 'center' }}>
-                        {current.icon}
-                      </span>
-                      <div style={{ fontWeight: 950, fontSize: 'var(--text-lg)', minWidth: 0 }}>{current.title}</div>
-                    </div>
+                    <div style={{ fontWeight: 950, fontSize: 'var(--text-lg)', minWidth: 0 }}>{current.title}</div>
                   </div>
+                </div>
 
-                  <div className="muted" style={{ marginTop: 8 }}>
-                    {current.subtitle}
-                  </div>
+                <div className="muted" style={{ marginTop: 8 }}>
+                  {current.subtitle}
+                </div>
 
-                  <div className="onbHero">
-                    <img
-                      className={`onbHeroImg ${allowMotion ? 'onbMotion' : 'onbNoMotion'}`}
-                      src={current.heroSrc}
-                      alt={current.heroAlt}
-                      loading="lazy"
-                      decoding="async"
-                    />
-                  </div>
+                <div className="onbHero">
+                  <img
+                    className={`onbHeroImg ${allowMotion ? 'onbMotion' : 'onbNoMotion'}`}
+                    src={current.heroSrc}
+                    alt={current.heroAlt}
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
 
-                  <div className="prose" style={{ marginTop: 10 }}>
-                    <ul>
-                      {current.bullets.map((b, i) => (
-                        <li
-                          key={b}
-                          className={`onbBullet ${allowMotion ? 'onbMotion' : 'onbNoMotion'}`}
-                          style={{ ['--d' as const]: `${i * 25}ms` } as React.CSSProperties}
-                        >
-                          {b}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
+                <div className="prose" style={{ marginTop: 10 }}>
+                  <ul>
+                    {current.bullets.map((b, i) => (
+                      <li
+                        key={b}
+                        className={`onbBullet ${allowMotion ? 'onbMotion' : 'onbNoMotion'}`}
+                        style={{ ['--d' as const]: `${i * 25}ms` } as React.CSSProperties}
+                      >
+                        {b}
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               </div>
             </div>
-
-            <div className="muted" style={{ marginTop: 12 }}>
-              「景點」可以晚點再看（有空再慢慢補連結）。
-            </div>
-
-            <div className="onbDots" aria-label="導覽進度">
-              {cards.map((c, i) => (
-                <button
-                  key={c.title}
-                  type="button"
-                  className={`onbDot ${i === step ? 'onbDotActive' : ''}`}
-                  aria-label={`第 ${i + 1} 頁`}
-                  aria-current={i === step ? 'true' : undefined}
-                  onClick={() => setStep(i)}
-                />
-              ))}
-            </div>
           </div>
 
-          <div className="modalActions">
-            <button className="btn" type="button" onClick={() => setStep((s) => Math.max(0, s - 1))} disabled={isFirst}>
-              上一頁
-            </button>
+          <div className="muted" style={{ marginTop: 12 }}>
+            「景點」可以晚點再看（有空再慢慢補連結）。
+          </div>
 
-            {!isLast ? (
+          <div className="onbDots" aria-label="導覽進度">
+            {cards.map((c, i) => (
               <button
-                className="btn btnPrimary"
-                ref={primaryBtnRef}
+                key={c.title}
                 type="button"
-                onClick={() => setStep((s) => Math.min(total - 1, s + 1))}
-              >
-                下一頁
-              </button>
-            ) : (
-              <button className="btn btnPrimary" ref={primaryBtnRef} onClick={onClose}>
-                開始使用
-              </button>
-            )}
-
-            <NavLink to="/itinerary" className="btn" onClick={onClose}>
-              先看行程
-            </NavLink>
-
-            <button className="btn" type="button" onClick={onClose}>
-              跳過
-            </button>
-
-            <div className="muted" style={{ fontSize: 'var(--text-sm)' }}>（按 Esc 也可關閉）</div>
+                className={`onbDot ${i === step ? 'onbDotActive' : ''}`}
+                aria-label={`第 ${i + 1} 頁`}
+                aria-current={i === step ? 'true' : undefined}
+                onClick={() => {
+                  setInteracted(true)
+                  setStep(i)
+                }}
+              />
+            ))}
           </div>
+        </div>
+
+        <div className="modalActions">
+          <button
+            className="btn"
+            type="button"
+            onClick={() => {
+              setInteracted(true)
+              setStep((s) => Math.max(0, s - 1))
+            }}
+            disabled={isFirst}
+          >
+            上一頁
+          </button>
+
+          {!isLast ? (
+            <button
+              className="btn btnPrimary"
+              ref={primaryBtnRef}
+              type="button"
+              onClick={() => {
+                setInteracted(true)
+                setStep((s) => Math.min(total - 1, s + 1))
+              }}
+            >
+              下一頁
+            </button>
+          ) : (
+            <button className="btn btnPrimary" ref={primaryBtnRef} onClick={onClose}>
+              開始使用
+            </button>
+          )}
+
+          <NavLink to="/itinerary" className="btn" onClick={onClose}>
+            先看行程
+          </NavLink>
+
+          <button className="btn" type="button" onClick={onClose}>
+            跳過
+          </button>
+
+          <div className="muted" style={{ fontSize: 'var(--text-sm)' }}>
+            （按 Esc 也可關閉）
+          </div>
+        </div>
       </div>
     </Modal>
   )
 }
-

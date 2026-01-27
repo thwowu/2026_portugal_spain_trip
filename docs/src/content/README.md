@@ -137,7 +137,6 @@ title: 里斯本（Lisbon）→ 拉各斯（Lagos）
 
 ## tldr
 - recommended: bus
-- because: ...
 - reminders:
   - ...
 
@@ -155,9 +154,6 @@ title: 里斯本（Lisbon）→ 拉各斯（Lagos）
 - ratings: simplicity=5 luggage=5 risk=4 comfort=3 cost=4 flexibility=4
 - screenshots:
   - Label | /images/transport/example.png
-
-## planB
-- ...
 ```
 
 ### Itinerary

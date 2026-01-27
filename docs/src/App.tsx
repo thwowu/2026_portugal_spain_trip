@@ -1,11 +1,9 @@
 import './App.css'
 import { BrowserRouter, NavLink, Navigate, Route, Routes, useLocation } from 'react-router-dom'
-import { Suspense, lazy, useEffect, useMemo, useRef, useState } from 'react'
+import { Suspense, lazy, useEffect, useRef, useState } from 'react'
 import { ScrollProgress } from './components/ScrollProgress'
 import { IconAttractions, IconItinerary, IconStays, IconTransport } from './components/NavIcons'
-import { OnboardingModal } from './components/OnboardingModal'
 import { SettingsModal } from './components/SettingsModal'
-import { loadJson, saveJson } from './state/storage'
 
 const ItineraryPage = lazy(() => import('./pages/ItineraryPage').then((m) => ({ default: m.ItineraryPage })))
 const TransportPage = lazy(() => import('./pages/TransportPage').then((m) => ({ default: m.TransportPage })))
@@ -45,11 +43,8 @@ function App() {
   const topBarRef = useRef<HTMLDivElement | null>(null)
   const bottomNavRef = useRef<HTMLElement | null>(null)
 
-  const onboarding = useMemo(() => loadJson<{ seen: boolean }>('tripPlanner.onboarding.v1', { seen: false }), [])
-  const [showOnboarding, setShowOnboarding] = useState(!onboarding.seen)
   const [showSettings, setShowSettings] = useState(false)
 
-  const openHelp = () => setShowOnboarding(true)
   const openSettings = () => setShowSettings(true)
 
   useEffect(() => {
@@ -73,11 +68,6 @@ function App() {
     }
   }, [])
 
-  const closeOnboarding = () => {
-    saveJson('tripPlanner.onboarding.v1', { seen: true, seenAt: new Date().toISOString() })
-    setShowOnboarding(false)
-  }
-
   return (
     <BrowserRouter basename={import.meta.env.BASE_URL}>
       <div className="topBar" ref={topBarRef}>
@@ -91,9 +81,6 @@ function App() {
           <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap', justifyContent: 'flex-end' }}>
             <button className="btn topBarHelpBtn" onClick={openSettings} type="button">
               設定
-            </button>
-            <button className="btn topBarHelpBtn" onClick={openHelp} type="button">
-              使用說明
             </button>
           </div>
         </div>
@@ -154,7 +141,6 @@ function App() {
         </div>
       </nav>
 
-      {showOnboarding && <OnboardingModal onClose={closeOnboarding} />}
       <SettingsModal open={showSettings} onClose={() => setShowSettings(false)} />
     </BrowserRouter>
   )

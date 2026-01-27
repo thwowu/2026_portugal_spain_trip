@@ -91,7 +91,6 @@ export function createContentPatchExportV1(planning: PlanningState): ContentPatc
         '## options',
         '### train | ...',
         '### bus | ...',
-        '## planB',
       ],
     })
   }

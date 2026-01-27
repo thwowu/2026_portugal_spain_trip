@@ -36,9 +36,8 @@ const PAGES: Array<{ id: string; path: string }> = [
 test.describe('design review screenshots', () => {
   for (const mode of MODES) {
     test(`${mode.label}`, async ({ page }, testInfo) => {
-      // Make the run deterministic (no onboarding overlay, fixed settings).
+      // Make the run deterministic (fixed settings).
       await page.addInitScript((settings) => {
-        localStorage.setItem('tripPlanner.onboarding.v1', JSON.stringify({ seen: true }))
         localStorage.setItem('tripPlanner.settings.v1', JSON.stringify(settings))
       }, mode.settings)
 

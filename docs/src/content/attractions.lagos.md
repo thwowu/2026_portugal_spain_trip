@@ -31,15 +31,20 @@ title: 拉各斯（Lagos，阿爾加維 Algarve）
   - 馬里尼亞海灘（Praia da Marinha）：阿爾加維代表級海岸景觀（觀景點很漂亮）{{gallery:Praia da Marinha|https://commons.wikimedia.org/wiki/Special:FilePath/Praia_da_Marinha_-_Lagoa2.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Praia_da_Marinha_(35518737040).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Praia_da_Marinha_portugal_189_(22350177388).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Praia_da_Marinha_-_Lagoa2.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Praia_da_Marinha_(35518737040).jpg?width=1800}}
     - 為什麼去：就算不下沙灘，觀景點的「岩壁＋海拱」構圖也非常值，是阿爾加維的代表級海岸風景；歷史：同樣由長期海蝕與岩岸地形塑造而成，因景觀辨識度高而成為葡萄牙最常被提及的海岸名片之一。
 - （歷史向加分）舊奴隸市場（Antigo Mercado de Escravos；小型展館）：很小但有記憶點，適合塞在舊城散步途中。（Wikivoyage：`https://en.wikivoyage.org/wiki/Lagos_(Portugal)`）{{gallery:Antigo Mercado de Escravos|https://commons.wikimedia.org/wiki/Special:FilePath/Mercado_de_Escravos_-_Lagos_-_15.10.2019.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/First_slave_market_in_Europe_-_Lagos%2C_Portugal.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Old_slave_market%2C_Lagos%2C_14_April_2016.JPG?width=1800}}
-  - 補充：為什麼去：空間不大但能把旅程從「漂亮海岸」補到「歷史陰影與反思」的一面，記憶點很強；歷史：與葡萄牙早期奴隸貿易歷史相關的場址記憶點之一，提醒 Lagos 在大航海時代的港口角色不只有浪漫敘事。
+  - 補充
+    - 為什麼去：空間不大但能把旅程從「漂亮海岸」補到「歷史陰影與反思」的一面，記憶點很強；歷史：與葡萄牙早期奴隸貿易歷史相關的場址記憶點之一，提醒 Lagos 在大航海時代的港口角色不只有浪漫敘事。
 - （風浪OK才加）皮耶達德角（Ponta da Piedade）船/皮划艇/小船：如果你想「進到洞穴與拱門裡面」而不是只看上方步道，選這個；遇風浪就改走陸上。（Wikivoyage：`https://en.wikivoyage.org/wiki/Lagos_(Portugal)`）
-  - 補充：為什麼去：把「看」變成「進入」——從水面貼近拱門與洞穴，地形的震撼會放大好幾倍（海況允許時）；歷史：以自然地貌觀光為主的現代體驗項目，但本質是利用阿爾加維海蝕地形的可達性，把景觀看法從懸崖視角改成水面視角。
+  - 補充
+    - 為什麼去：把「看」變成「進入」——從水面貼近拱門與洞穴，地形的震撼會放大好幾倍（海況允許時）；歷史：以自然地貌觀光為主的現代體驗項目，但本質是利用阿爾加維海蝕地形的可達性，把景觀看法從懸崖視角改成水面視角。
 - （海灘再加一個更好走）波爾圖德莫斯海灘（Praia do Porto de Mós）：沙灘大、動線舒服，當作「不想爬太多樓梯」的替代海灘。（Wikivoyage：`https://en.wikivoyage.org/wiki/Lagos_(Portugal)`）{{gallery:Praia do Porto de Mós|https://commons.wikimedia.org/wiki/Special:FilePath/Praia_do_Porto_de_M%C3%B3s.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Praia_de_Porto_de_M%C3%B3s_-_Portugal_(14216685014).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Porto_de_M%C3%B3s%2C_Algarve_(8344398911).jpg?width=1800}}
-  - 補充：為什麼去：你想要的是「舒服好走」而不是挑戰階梯時，這裡最合適；沙灘寬、撤退也簡單；歷史：屬於 Lagos 近海的主要海灘之一，因地形更友善、可承載度高而成為旅人常用的穩定選項。
+  - 補充
+    - 為什麼去：你想要的是「舒服好走」而不是挑戰階梯時，這裡最合適；沙灘寬、撤退也簡單；歷史：屬於 Lagos 近海的主要海灘之一，因地形更友善、可承載度高而成為旅人常用的穩定選項。
 - （再加一個“拍照但不爆累”）卡米洛海灘（Praia do Camilo）上方觀景台：不一定下長樓梯，站在上面就能拍到夢幻海色。（Wikitravel：`https://wikitravel.org/en/Lagos_(Portugal)`）
-  - 補充：為什麼去：把「夢幻海色」用最低體力成本收下來；很適合當作走路日的加點或膝蓋不想硬下樓梯的替代；歷史：屬於熱門海灘周邊的觀景點系統之一，因容易取得經典視角而被旅遊資訊反覆推薦。
+  - 補充
+    - 為什麼去：把「夢幻海色」用最低體力成本收下來；很適合當作走路日的加點或膝蓋不想硬下樓梯的替代；歷史：屬於熱門海灘周邊的觀景點系統之一，因容易取得經典視角而被旅遊資訊反覆推薦。
 - （步道控必收）唐娜安娜海灘 / 卡米洛海灘 ↔ 皮耶達德角（Dona Ana / Camilo ↔ Ponta da Piedade）懸崖上方串連：同一段路能把岩壁與海色一次收齊（走累就撤退）。（Wikivoyage：`https://en.wikivoyage.org/wiki/Lagos_(Portugal)`）
-  - 補充：為什麼去：同一段懸崖線就能串起多個「最精華的視角」，而且可隨時折返撤退，非常適合非自駕或想控體力的人；歷史：並非單一古蹟，而是利用海岸地形形成的步行連結路線；把 Lagos 的海蝕岩岸景觀用最直覺的方式串成一條線。
+  - 補充
+    - 為什麼去：同一段懸崖線就能串起多個「最精華的視角」，而且可隨時折返撤退，非常適合非自駕或想控體力的人；歷史：並非單一古蹟，而是利用海岸地形形成的步行連結路線；把 Lagos 的海蝕岩岸景觀用最直覺的方式串成一條線。
 
 ## easy
 - 只走上方步道，不下階梯

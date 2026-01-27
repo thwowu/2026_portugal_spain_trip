@@ -1,9 +1,6 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useMemo, useState } from 'react'
 import { STAYS_DATA } from '../generated'
 import { CITIES, STAYS_CITY_ORDER, type CityId } from '../data/core'
-import { usePlanning } from '../state/planning'
-import { useProgress } from '../state/progress'
-import { useSettings } from '../state/settings'
 import { useHashScroll } from '../hooks/useHashScroll'
 import { useReveal } from '../hooks/useReveal'
 import { ILLUSTRATION } from '../illustrations'
@@ -48,9 +45,6 @@ function TableView({ table }: { table: MarkdownTable }) {
 }
 
 export function StaysPage() {
-  const { state, actions } = usePlanning()
-  const { state: progress, actions: progressActions } = useProgress()
-  const { showSeenHints } = useSettings()
   useHashScroll()
   const [riskCityId, setRiskCityId] = useState<CityId | null>(null)
 
@@ -103,32 +97,14 @@ export function StaysPage() {
 
       <div style={{ display: 'grid', gap: 14 }}>
         {orderedStays.map((c) => {
-          const decision = state.stayDecisions[c.cityId]
           return (
-            <RevealSection key={c.cityId} id={`stay-${c.cityId}`} cityId={c.cityId as CityId} onSeen={progressActions.markStaySeen}>
+            <RevealSection key={c.cityId} id={`stay-${c.cityId}`}>
               <div className="card">
                 <div className="cardInner">
                   <div style={{ display: 'flex', gap: 10, alignItems: 'baseline', flexWrap: 'wrap' }}>
                     <div style={{ fontWeight: 950, fontSize: 'var(--text-xl)', lineHeight: 1.15 }}>
                       {c.title}
                     </div>
-                    {showSeenHints && progress.staysSeen[c.cityId as CityId] ? <div className="chip">已看過</div> : null}
-                  </div>
-
-                  <div className="muted" style={{ marginTop: 8 }}>
-                  <div style={{ fontSize: 'var(--text-sm)', marginBottom: 6 }}>一句話原因（給父母看的）</div>
-                  <input
-                    value={decision?.reason ?? ''}
-                    onChange={(e) => actions.setStayDecision(c.cityId as CityId, { reason: e.target.value })}
-                    placeholder="例：交通方便、不用爬坡、有電梯"
-                    style={{
-                      width: '100%',
-                      borderRadius: 12,
-                      border: '1px solid var(--hairline)',
-                      padding: '12px 12px',
-                      fontSize: 'var(--text-md)',
-                    }}
-                  />
                   </div>
 
                   <hr className="hr" />
@@ -299,32 +275,12 @@ function StayRiskMatrixModal({
 
 function RevealSection({
   id,
-  cityId,
-  onSeen,
   children,
 }: {
   id: string
-  cityId: CityId
-  onSeen: (cityId: CityId) => void
   children: React.ReactNode
 }) {
   const ref = useReveal<HTMLElement>()
-  useEffect(() => {
-    const el = ref.current
-    if (!el) return
-    const io = new IntersectionObserver(
-      (entries) => {
-        for (const e of entries) {
-          if (!e.isIntersecting) continue
-          onSeen(cityId)
-          io.unobserve(e.target)
-        }
-      },
-      { root: null, rootMargin: '0px 0px -30% 0px', threshold: 0.25 },
-    )
-    io.observe(el)
-    return () => io.disconnect()
-  }, [onSeen, cityId, ref])
   return (
     <section id={id} className="reveal" ref={ref}>
       {children}

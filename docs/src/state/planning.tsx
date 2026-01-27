@@ -1,23 +1,9 @@
 /* eslint-disable react-refresh/only-export-components */
 import { createContext, useContext, useEffect, useMemo, useState } from 'react'
-import type { CityId, TransportMode, TransportSegmentId } from '../data/core'
+import type { CityId } from '../data/core'
 import { loadJson, saveJson } from './storage'
 
 export type DecisionStatus = 'candidate' | 'decided' | 'rejected'
-
-export type TransportDecision = {
-  segmentId: TransportSegmentId
-  status: DecisionStatus
-  chosenMode?: TransportMode
-  reason: string
-}
-
-export type StayDecision = {
-  cityId: CityId
-  status: DecisionStatus
-  chosenName?: string
-  reason: string
-}
 
 export type AttractionDecision = {
   cityId: CityId
@@ -43,16 +29,12 @@ export type ChangelogEntry = {
 }
 
 export type PlanningState = {
-  transportDecisions: Record<TransportSegmentId, TransportDecision>
-  stayDecisions: Record<CityId, StayDecision>
   attractionDecisions: Record<CityId, AttractionDecision>
   checklist: ChecklistItem[]
   changelog: ChangelogEntry[]
 }
 
 export type PlanningActions = {
-  setTransportDecision: (segmentId: TransportSegmentId, patch: Partial<TransportDecision>) => void
-  setStayDecision: (cityId: CityId, patch: Partial<StayDecision>) => void
   setAttractions: (cityId: CityId, patch: Partial<AttractionDecision>) => void
   addChecklistItem: (text: string, category: ChecklistCategory) => void
   toggleChecklistItem: (id: string) => void
@@ -94,24 +76,6 @@ export function PlanningProvider({
 
   const actions = useMemo<PlanningActions>(
     () => ({
-      setTransportDecision: (segmentId, patch) => {
-        setState((s) => ({
-          ...s,
-          transportDecisions: {
-            ...s.transportDecisions,
-            [segmentId]: { ...s.transportDecisions[segmentId], ...patch },
-          },
-        }))
-      },
-      setStayDecision: (cityId, patch) => {
-        setState((s) => ({
-          ...s,
-          stayDecisions: {
-            ...s.stayDecisions,
-            [cityId]: { ...s.stayDecisions[cityId], ...patch },
-          },
-        }))
-      },
       setAttractions: (cityId, patch) => {
         setState((s) => ({
           ...s,

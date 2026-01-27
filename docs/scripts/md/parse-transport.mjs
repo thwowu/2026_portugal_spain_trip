@@ -72,7 +72,8 @@ export function parseTransportSegmentMd({ sourcePath, raw }) {
   const h2s = new Map(findChildren(h1, 2).map((n) => [n.text.trim(), n]))
   const tldrH2 = h2s.get('tldr')
   const optionsH2 = h2s.get('options')
-  const planBH2 = h2s.get('planB')
+  // NOTE: heading uses capital B in our content ("## planB")
+  const planBH2 = h2s.get('planB') || h2s.get('planb')
 
   if (!tldrH2) throw mdError(sourcePath, h1.line, 'Missing section: ## tldr')
   if (!optionsH2) throw mdError(sourcePath, h1.line, 'Missing section: ## options')
@@ -132,8 +133,8 @@ export function parseTransportSegmentMd({ sourcePath, raw }) {
 
   if (!options.length) throw mdError(sourcePath, optionsH2.line, '## options must include at least 1 ### option')
 
-  const planB = listTopLevelBullets(planBH2.content).map((x) => x.text)
-  if (!planB.length) throw mdError(sourcePath, planBH2.line, '## planB must include at least 1 item')
+  const planB = listTopLevelBullets(planBH2.content).map((r) => r.text)
+  if (!planB.length) throw mdError(sourcePath, planBH2.line, '## planB must include at least 1 bullet')
 
   return {
     id,

@@ -36,31 +36,44 @@ title: 里斯本（Lisbon）
     - 為什麼去：里斯本的魅力很大一部分就是「高低差＋屋頂海」，挑 1–2 個眺望點坐下來看光線變化就會很滿足；歷史：眺望點分布在老城山丘，對應里斯本沿山勢發展的城市結構，也成為旅人理解城市地形的最佳方式。
   -（選配）如果 Day 2 沒去 MAAT／或你想再補一次「現代建築＋展」：把 MAAT 放這天（外觀就很值得；是否進館看展看你當期展覽）。
 - 阿爾法瑪（Alfama）：傍晚老城迷路散步（配 1 個眺望點就很夠；石階/上坡多；真的卡在上坡段就短程計程車，通常很便宜，直接搭）{{gallery:Alfama|https://commons.wikimedia.org/wiki/Special:FilePath/Lisboa-Alfama-Rua_S%C3%A3o_Miguel-20140917.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Rua_Norberto_de_Ara%C3%BAjo_%22Cerca_Velha%22_Portas_do_Sol_Alfama_Lisbon_(3799765385).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Lisbon,_view_from_Elevador_de_Santa_Justa_to_Alfama.JPG?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Lisboa_-_Azulejo_com_mapa_do_Bairro_de_Alfama.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Lisboa-Alfama-Rua_S%C3%A3o_Miguel-20140917.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Rua_Norberto_de_Ara%C3%BAjo_%22Cerca_Velha%22_Portas_do_Sol_Alfama_Lisbon_(3799765385).jpg?width=1800}}
-  - 補充：為什麼去：小巷、階梯、晾衣繩與轉角視野，把里斯本最經典的「老城質感」濃縮在這裡；傍晚走最舒服也最好拍；歷史：里斯本最古老、最具傳統紋理的街區之一，保留強烈的中世紀山城地形與生活肌理。
+  - 補充
+    - 為什麼去：小巷、階梯、晾衣繩與轉角視野，把里斯本最經典的「老城質感」濃縮在這裡；傍晚走最舒服也最好拍；歷史：里斯本最古老、最具傳統紋理的街區之一，保留強烈的中世紀山城地形與生活肌理。
 -（選配）如果你想要「一個夜晚很里斯本」：Fado（現場小場次/訂位）{{gallery:Fado|https://commons.wikimedia.org/wiki/Special:FilePath/Lisbon._Fado_at_A_Baiuca._(41223895034).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Museu_do_Fado_-_Lisboa_-_Portugal_(51532759851).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Museu_do_Fado_-_Lisboa_-_Portugal_(52853515828).jpg?width=1800}}
-  - 補充：為什麼去：把「里斯本的情緒」用一晚聽進身體裡；小場次比大秀更容易感受到那種近距離的張力；歷史：Fado 是葡萄牙最具代表性的城市音樂傳統之一，與港口城市的生活、遷徙與鄉愁情感緊密相連。
+  - 補充
+    - 為什麼去：把「里斯本的情緒」用一晚聽進身體裡；小場次比大秀更容易感受到那種近距離的張力；歷史：Fado 是葡萄牙最具代表性的城市音樂傳統之一，與港口城市的生活、遷徙與鄉愁情感緊密相連。
 -（加一個「城市本體」主菜）Castelo de São Jorge（聖喬治城堡）：想要「里斯本的高度與視野」就選它（上坡/走路多；真的卡在上坡段就短程計程車，通常很便宜，直接搭），白天去比較好拍也比較不擠。（Wikivoyage：`https://en.wikivoyage.org/wiki/Lisbon`；Wikitravel：`https://wikitravel.org/en/Lisbon`）{{gallery:Castelo de São Jorge|https://commons.wikimedia.org/wiki/Special:FilePath/Castelo_de_S%C3%A3o_Jorge%2C_Lisboa_183.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Castelo_de_S%C3%A3o_Jorge%2C_Lisboa_50.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/CASTLE_OF_ST._GEORGE_Lisbon_Portugal_(24576418571).jpg?width=1800}}
-  - 補充：為什麼去：一張門票同時買到「城堡感＋超廣角市景」；如果你只想挑一個最有高度回報的點，它很穩；歷史：位於城市制高點的要塞系統核心之一，長期是里斯本防禦與權力象徵的位置。
+  - 補充
+    - 為什麼去：一張門票同時買到「城堡感＋超廣角市景」；如果你只想挑一個最有高度回報的點，它很穩；歷史：位於城市制高點的要塞系統核心之一，長期是里斯本防禦與權力象徵的位置。
 -（加一個「歷史廢墟感」）Convento do Carmo（卡爾莫修道院遺跡）：半小時～1 小時收穫很大，適合塞在 Chiado / Rossio 附近動線。（Wikivoyage：`https://en.wikivoyage.org/wiki/Lisbon`）{{gallery:Convento do Carmo|https://commons.wikimedia.org/wiki/Special:FilePath/Convento_do_Carmo_ruins_in_Lisbon.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Ru%C3%ADnas_do_Carmo_Lisboa.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Convento_do_Carmo_de_Lisboa_12.JPG?width=1800}}
-  - 補充：為什麼去：不用花很多時間，就能用「沒有屋頂的教堂」收穫強烈的視覺與情緒記憶，是很高 CP 的歷史切片；歷史：在里斯本大地震中嚴重受損而保留為遺跡，成為城市記憶與災難史最具象徵性的場景之一。
+  - 補充
+    - 為什麼去：不用花很多時間，就能用「沒有屋頂的教堂」收穫強烈的視覺與情緒記憶，是很高 CP 的歷史切片；歷史：在里斯本大地震中嚴重受損而保留為遺跡，成為城市記憶與災難史最具象徵性的場景之一。
 -（加一個「海邊現代感」）Parque das Nações：如果你想要「平路好走＋現代城市感」，很適合排在雨後或腿酸的一天。（Wikivoyage：`https://en.wikivoyage.org/wiki/Lisbon`）{{gallery:Parque das Nações|https://commons.wikimedia.org/wiki/Special:FilePath/Panoramic_view%2C_Parque_das_Na%C3%A7%C3%B5es%2C_Lisbon%2C_Portugal_julesvernex2-3.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Panoramic_view%2C_Parque_das_Na%C3%A7%C3%B5es%2C_Lisbon%2C_Portugal_julesvernex2-2.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Rooftop_detail_of_FIL_building%2C_Parque_das_Na%C3%A7%C3%B5es%2C_Lisbon%2C_Portugal_julesvernex2.jpg?width=1800}}
-  - 補充：為什麼去：想要「幾乎全平地」又能看到另一種里斯本（更現代、更開闊），這裡是最省體力的選擇之一；歷史：屬於近代的大型城市更新區域，代表里斯本在 20 世紀末以後的河岸再開發與現代化面貌。
+  - 補充
+    - 為什麼去：想要「幾乎全平地」又能看到另一種里斯本（更現代、更開闊），這裡是最省體力的選擇之一；歷史：屬於近代的大型城市更新區域，代表里斯本在 20 世紀末以後的河岸再開發與現代化面貌。
 -（加一個「文青工業風」）LX Factory：吃飯/咖啡/買小物一次滿足，當作「行程空檔填充」很好用。（Wikivoyage：`https://en.wikivoyage.org/wiki/Lisbon`）{{gallery:LX Factory|https://commons.wikimedia.org/wiki/Special:FilePath/Lisboa_LX_Factory_1.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Lisboa_LX_Factory_2.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Lisboa_LX_Factory_4.jpg?width=1800}}
-  - 補充：為什麼去：吃飯、咖啡、書店與小店密集，時間碎也很好逛；想要「不太觀光」的休息段很合適；歷史：由工業／倉庫空間轉化而來的創意聚落類場域，呈現里斯本近年的文化與產業轉型風景。
+  - 補充
+    - 為什麼去：吃飯、咖啡、書店與小店密集，時間碎也很好逛；想要「不太觀光」的休息段很合適；歷史：由工業／倉庫空間轉化而來的創意聚落類場域，呈現里斯本近年的文化與產業轉型風景。
 -（想補 azulejo 替代）Igreja de São Vicente de Fora（修道院/教堂）：看磁磚回報很高，可當作「Azulejo 博物館整修」的替代主題點。（Wikivoyage：`https://en.wikivoyage.org/wiki/Lisbon`）{{gallery:Igreja de São Vicente de Fora|https://commons.wikimedia.org/wiki/Special:FilePath/Igreja_de_S%C3%A3o_Vicente_de_Fora_%E2%80%A2_Monastery_of_S%C3%A3o_Vicente_de_Fora_(50662503502).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/View_of_Igreja_e_Mosteiro_de_S%C3%A3o_Vicente_de_Fora_from_Miradouro_das_Portas_do_Sol.JPG?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Igreja_de_S%C3%A3o_Vicente_de_Fora_-_7.jpg?width=1800}}
-  - 補充：為什麼去：想看 azulejo（磁磚）又不想把自己跑到很遠，這裡的回報很直接；也能順便把老城宗教建築補一筆；歷史：修道院／教堂系統的一部分，承接里斯本宗教與王權記憶，並以磁磚裝飾呈現葡萄牙的視覺傳統。
+  - 補充
+    - 為什麼去：想看 azulejo（磁磚）又不想把自己跑到很遠，這裡的回報很直接；也能順便把老城宗教建築補一筆；歷史：修道院／教堂系統的一部分，承接里斯本宗教與王權記憶，並以磁磚裝飾呈現葡萄牙的視覺傳統。
 - 商業廣場（Praça do Comércio）+ 河岸廣場：把它當「里斯本的客廳」——白天拍建築、傍晚看金色光。（Wikivoyage：`https://en.wikivoyage.org/wiki/Lisbon`）{{gallery:Praça do Comércio|https://commons.wikimedia.org/wiki/Special:FilePath/Arco_Triunfal_da_Rua_Augusta%2C_Plaza_del_Comercio%2C_Lisboa%2C_Portugal%2C_2012-05-12%2C_DD_02.JPG?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Lisbon_Pra%C3%A7a_do_Com%C3%A9rcio_BW_2018-10-08_17-42-58.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Lisbon_Pra%C3%A7a_do_Com%C3%A9rcio_BW_2018-10-08_17-45-56.jpg?width=1800}}
-  - 補充：為什麼去：這裡的尺度非常「首都」，站在河邊看整片立面就能把里斯本的氣場感建立起來；歷史：大地震後重建的城市門面級廣場之一，象徵里斯本重建與面向河口／貿易世界的姿態。
+  - 補充
+    - 為什麼去：這裡的尺度非常「首都」，站在河邊看整片立面就能把里斯本的氣場感建立起來；歷史：大地震後重建的城市門面級廣場之一，象徵里斯本重建與面向河口／貿易世界的姿態。
 - 下城/希亞多（Baixa/Chiado）經典街區：挑 1–2 條好走的街逛就好（不要把整段當成“必須逛完”）。（Wikitravel：`https://wikitravel.org/en/Lisbon`）{{gallery:Baixa / Rossio / Chiado|https://commons.wikimedia.org/wiki/Special:FilePath/Pra%C3%A7a_Dom_Pedro_IV%2C_Lisboa_01.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Armaz%C3%A9ns_do_Chiado_at_dusk_and_with_Christmas_decorations%2C_Lisbon%2C_Portugal_julesvernex2.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/View_of_Baixa_from_Chiado._Lisbon%2C_Portugal.jpg?width=1800}}
-  - 補充：為什麼去：最好走、最好撤退，也最適合「咖啡＋甜點＋逛街」的低腦力日；即使不排景點也能很有城市感；歷史：屬於重建後的核心市區格局，呈現里斯本的幾何街廓與現代商業生活，是理解城市結構的入門區。
+  - 補充
+    - 為什麼去：最好走、最好撤退，也最適合「咖啡＋甜點＋逛街」的低腦力日；即使不排景點也能很有城市感；歷史：屬於重建後的核心市區格局，呈現里斯本的幾何街廓與現代商業生活，是理解城市結構的入門區。
 - 比卡纜車 / 葛洛麗亞纜車（Elevador da Bica / Glória；纜車坡道感、坡很陡）：不一定要搭，拍照＋走一小段就有感。（Wikivoyage：`https://en.wikivoyage.org/wiki/Lisbon`）{{gallery:Elevador da Bica / Glória|https://commons.wikimedia.org/wiki/Special:FilePath/Elevador_da_Bica_-_Lisboa_-_Portugal_(52519254036).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Lisboa_-_Elevador_da_Bica_(53861208616).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Elevador_da_Bica_-_Lisboa_(50391625516).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Lisboa_-_Elevador_da_Gl%C3%B3ria.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Gl%C3%B3ria_Funicular_%E2%80%A2_Elevador_da_Gl%C3%B3ria%2C_Cal%C3%A7ada_da_Gl%C3%B3ria_%E2%80%A2_Lisbon.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Elevador_da_Gl%C3%B3ria%2C_Lisboa_(20240212182426).jpg?width=1800}}
-  - 補充：為什麼去：把里斯本最招牌的「陡坡＋電車」拍進相機；就算不搭也能用最少時間收穫最有名的坡道畫面；歷史：纜車系統是城市應對高低差的交通解法之一，也因此成為里斯本公共交通與街景文化的標誌。
+  - 補充
+    - 為什麼去：把里斯本最招牌的「陡坡＋電車」拍進相機；就算不搭也能用最少時間收穫最有名的坡道畫面；歷史：纜車系統是城市應對高低差的交通解法之一，也因此成為里斯本公共交通與街景文化的標誌。
 - Martim Moniz / Mouraria（多元街區）：想吃平價小吃或找不同氛圍時很好用（晚上走主要路線）。（Wikivoyage：`https://en.wikivoyage.org/wiki/Lisbon`）{{gallery:Martim Moniz / Mouraria|https://commons.wikimedia.org/wiki/Special:FilePath/Largo_Martim_Moniz%2C_Lisboa_03.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Mouraria%2C_Lisboa_-_panoramio.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Below_Castelo_de_S._Jorge_-_Mouraria_in_the_night_-_Lisboa_(50193322887).jpg?width=1800}}
-  - 補充：為什麼去：想吃更平價、更多元的在地餐點或補給時很好用；也能看到「不那麼明信片」的真實里斯本；歷史：老城邊緣的多元街區之一，長期呈現移民與城市生活交織的面貌，也與里斯本的庶民文化脈絡相連。
+  - 補充
+    - 為什麼去：想吃更平價、更多元的在地餐點或補給時很好用；也能看到「不那麼明信片」的真實里斯本；歷史：老城邊緣的多元街區之一，長期呈現移民與城市生活交織的面貌，也與里斯本的庶民文化脈絡相連。
 - Miradouro de Santa Catarina（河景＋放空）：你需要的不是“更多景點”，是“坐下來 20 分鐘”。（Wikivoyage：`https://en.wikivoyage.org/wiki/Lisbon`）{{gallery:Miradouro de Santa Catarina|https://commons.wikimedia.org/wiki/Special:FilePath/Lisboa_-_Miradouro_de_Santa_Catarina_(53897765512).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Miradouro_de_Santa_Catarina_-_Lisboa_-_Portugal_(51793131734).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Miradouro_de_Santa_Catarina_-_Lisboa_-_Portugal_(49396454011).jpg?width=1800}}
-  - 補充：為什麼去：坐著看 Tagus 河與光線變化就很值，是最適合安排在「你真的需要休息」那天的眺望點；歷史：屬於老城丘陵上的眺望點系統之一，延續「用高處看河」的里斯本城市觀看方式。
+  - 補充
+    - 為什麼去：坐著看 Tagus 河與光線變化就很值，是最適合安排在「你真的需要休息」那天的眺望點；歷史：屬於老城丘陵上的眺望點系統之一，延續「用高處看河」的里斯本城市觀看方式。
 - 市場題材備選：Mercado da Ribeira / 其他市場類景點（雨天也能成行程主菜）。（Wikitravel：`https://wikitravel.org/en/Lisbon`）{{gallery:Mercado da Ribeira|https://commons.wikimedia.org/wiki/Special:FilePath/Mercado_da_Ribeira%2C_Lisbon_02.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Mercado_da_Ribeira%2C_Lisbon_01.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Mercado_da_Ribeira%2C_Time_Out_Market%2C_Lisbon.jpg?width=1800}}
-  - 補充：為什麼去：雨天不用硬撐戶外，直接用市場「吃＋逛＋休息」把行程救回來；也很適合當作動線中的補給站；歷史：市場文化本來就是里斯本日常的一部分，近年也出現更偏觀光／美食集中的形式，成為旅人常用的室內備案。
+  - 補充
+    - 為什麼去：雨天不用硬撐戶外，直接用市場「吃＋逛＋休息」把行程救回來；也很適合當作動線中的補給站；歷史：市場文化本來就是里斯本日常的一部分，近年也出現更偏觀光／美食集中的形式，成為旅人常用的室內備案。
 
 ## easy
 - 抵達日（Day 1）：飯店附近散步＋河岸走一小段就好（不要硬排景點）

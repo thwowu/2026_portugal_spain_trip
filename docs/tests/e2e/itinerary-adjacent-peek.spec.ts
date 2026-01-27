@@ -1,13 +1,6 @@
 import { expect, test } from '@playwright/test'
 
 test.describe('itinerary adjacent day peek', () => {
-  test.beforeEach(async ({ page }) => {
-    // Avoid onboarding overlay blocking interactions/assertions.
-    await page.addInitScript(() => {
-      localStorage.setItem('tripPlanner.onboarding.v1', JSON.stringify({ seen: true }))
-    })
-  })
-
   test('Day 2 shows Day 1 (top) and Day 3 (bottom) preview cards', async ({ page }) => {
     await page.goto('/itinerary')
     await page.waitForLoadState('networkidle')

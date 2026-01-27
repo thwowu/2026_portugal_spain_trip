@@ -83,7 +83,8 @@ export const TransportSegmentSchema = z.object({
     reminders: z.array(z.string().min(1)),
   }),
   options: z.array(TransportOptionSchema).min(1),
-  planB: z.array(z.string().min(1)),
+  planB: z.array(z.string().min(1)).min(1),
+  planB: z.array(z.string().min(1)).min(1),
 })
 
 export const TransportFileSchema = z.object({
