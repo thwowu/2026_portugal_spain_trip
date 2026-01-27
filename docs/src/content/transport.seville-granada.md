@@ -30,7 +30,6 @@ title: 塞維爾（Seville）→ 格拉納達（Granada）
 - riskNotes:
   - 票價可能較高
   - 熱門時段需提前買
-- ratings: simplicity=4 luggage=4 risk=4 comfort=4 cost=2 flexibility=3
 - screenshots:
   - 火車（示意） | /images/transport/seville-granada-train.png
 
@@ -46,7 +45,6 @@ title: 塞維爾（Seville）→ 格拉納達（Granada）
 - riskNotes:
   - 誤點風險
   - 旺季可能滿位
-- ratings: simplicity=4 luggage=4 risk=3 comfort=3 cost=4 flexibility=4
 - screenshots:
   - 巴士（示意） | /images/transport/seville-granada-bus.png
 

@@ -194,6 +194,11 @@
     transform: none;
   }
 
+  /* Mobile: remove "previous/next day" quick jump dock (requested). */
+  .adjacentDock {
+    display: none;
+  }
+
   .adjacentCardTop,
   .adjacentCardBottom {
     width: 100%;

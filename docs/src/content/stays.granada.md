@@ -9,18 +9,13 @@ title: 格拉納達（Granada）住宿
 🛏️ 先看 options 選區域｜🚇 再看 publicTransportHowToBuy｜💸 moneySavingTips｜⚠️ riskMatrix
 
 ## options
-- Centro（市中心；大教堂/格蘭大道 Gran Vía 一帶，首選：省坡） | status=primary
-  - why: 最能避免坡：市中心多數動線平，去車站/吃飯/補給也方便
-  - why: 上阿爾罕布拉/阿爾拜辛可以「只把坡留給必要段」：該搭車就搭車
+- Centro（市中心；大教堂/格蘭大道 Gran Vía 一帶，首選：省坡）
   - risk: 旺季價格浮動，熱門路段可能有噪音（餐廳/人流）
   - link: Google Maps | https://www.google.com/maps/search/?api=1&query=Granada%20Cathedral
-- 雷阿萊霍（Realejo；次選：靠近阿爾罕布拉山腳） | status=secondary
-  - why: 介於市中心與阿爾罕布拉之間，想早進園區更順
-  - why: 氛圍較在地，小酒館多
+- 雷阿萊霍（Realejo；次選：靠近阿爾罕布拉山腳）
   - risk: 部分街區仍有坡與石板路，拖行李要評估
   - link: Google Maps | https://www.google.com/maps/search/?api=1&query=Realejo%20Granada
-- 阿爾拜辛（Albaicín；備選：景觀/氛圍最強但最累） | status=secondary
-  - why: 「住在明信片裡」的體驗最強，走出門就是老城巷弄與視角點
+- 阿爾拜辛（Albaicín；備選：景觀/氛圍最強但最累）
   - risk: 坡/階梯/石板路密集，帶行李與夜間行走成本高（也更吃體力）
   - risk: 車輛接送不一定能到門口（巷弄狹窄）
   - link: Google Maps | https://www.google.com/maps/search/?api=1&query=Albaicin%20Granada

@@ -29,7 +29,6 @@ title: 格拉納達（Granada）→ 馬德里（Madrid）
   - 行李放置區確認
 - riskNotes:
   - 票價浮動，提前買較穩
-- ratings: simplicity=5 luggage=4 risk=4 comfort=4 cost=2 flexibility=3
 - screenshots:
   - 火車（示意） | /images/transport/granada-madrid-train.png
 
@@ -45,7 +44,6 @@ title: 格拉納達（Granada）→ 馬德里（Madrid）
 - riskNotes:
   - 長途誤點風險
   - 到站點不同會影響後續轉乘
-- ratings: simplicity=4 luggage=4 risk=3 comfort=3 cost=4 flexibility=4
 - screenshots:
   - 巴士（示意） | /images/transport/granada-madrid-bus.png
 
@@ -59,7 +57,6 @@ title: 格拉納達（Granada）→ 馬德里（Madrid）
   - 行李上下車搬運；到站後若太早要先找寄放行李點
 - riskNotes:
   - 睡眠品質不穩；若你隔天要排大景點（普拉多/皇宮）會很硬
-- ratings: simplicity=4 luggage=4 risk=3 comfort=2 cost=4 flexibility=3
 - screenshots:
   - （無） | /images/transport/blank.png
 

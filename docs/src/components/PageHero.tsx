@@ -23,6 +23,7 @@ export function PageHero({
   const [imgSrc, setImgSrc] = useState(withBaseUrl(image?.src ?? ''))
 
   const canShowImg = useMemo(() => !!image?.src, [image?.src])
+  const canShowRight = useMemo(() => Boolean(rightSlot) || canShowImg, [rightSlot, canShowImg])
 
   return (
     <div className="pageHero">
@@ -31,23 +32,25 @@ export function PageHero({
         {subtitle ? <div className="pageHeroSubtitle muted">{subtitle}</div> : null}
       </div>
 
-      <div className="pageHeroRight">
-        {rightSlot}
-        {canShowImg ? (
-          <img
-            className="pageHeroImg"
-            src={withBaseUrl(imgSrc)}
-            alt={image?.alt ?? '插圖'}
-            loading="lazy"
-            decoding="async"
-            onError={() => {
-              if (!image?.fallbackSrc) return
-              const next = withBaseUrl(image.fallbackSrc)
-              if (imgSrc !== next) setImgSrc(next)
-            }}
-          />
-        ) : null}
-      </div>
+      {canShowRight ? (
+        <div className="pageHeroRight">
+          {rightSlot}
+          {canShowImg ? (
+            <img
+              className="pageHeroImg"
+              src={withBaseUrl(imgSrc)}
+              alt={image?.alt ?? '插圖'}
+              loading="lazy"
+              decoding="async"
+              onError={() => {
+                if (!image?.fallbackSrc) return
+                const next = withBaseUrl(image.fallbackSrc)
+                if (imgSrc !== next) setImgSrc(next)
+              }}
+            />
+          ) : null}
+        </div>
+      ) : null}
     </div>
   )
 }

@@ -20,8 +20,7 @@ title: 拉各斯（Lagos）延伸行程（詳情）
 - 亮點：西岸強風＋懸崖視野、燈塔終點感
 
 ### why
-- 這是「不靠海象也能很震撼」的一天：阿爾加維西岸的懸崖比你想像更像世界盡頭（風大到會讓你重新尊重大西洋）
-- 歷史小抄：Sagres 一帶常被連結到葡萄牙大航海時代的想像（航海、海圖、探險的起點感）；你站在 Cabo de São Vicente 的懸崖邊，會很直覺理解為什麼人們會把它當作「終點」或「出發」
+- 這是「不靠海象也能很震撼」的一天：阿爾加維西岸的懸崖比你想像更像世界盡頭（風大到會讓你重新尊重大西洋），而 Sagres 一帶之所以常被連結到葡萄牙大航海時代的想像（航海、海圖、探險的起點感），是因為你站在 Cabo de São Vicente 懸崖邊會很直覺理解為什麼人們把它當作「終點」或「出發」。
 
 ### images
 - {{gallery:Sagres + Cabo de São Vicente|https://commons.wikimedia.org/wiki/Special:FilePath/Sagres_-_Farol_de_Cabo_de_S%C3%A3o_Vicente.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Cape_St._Vincent_Lighthouse.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Farol_Cabo_S%C3%A3o_Vicente_Sagres.jpg?width=1800|https://images.pexels.com/photos/24377407/pexels-photo-24377407.jpeg?auto=compress&cs=tinysrgb&w=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Sagres_-_Farol_de_Cabo_de_S%C3%A3o_Vicente.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Cape_St._Vincent_Lighthouse.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Farol_Cabo_S%C3%A3o_Vicente_Sagres.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Cape_St._Vincent_Lighthouse.jpg?width=1800}}
@@ -59,8 +58,7 @@ title: 拉各斯（Lagos）延伸行程（詳情）
 - 亮點：Silves 摩爾古城、Monchique 山區視野（看天氣）
 
 ### why
-- Silves 給你的是「阿爾加維其實不只海岸」：紅色城堡與老城氛圍很有對比感
-- 歷史小抄：Silves 與摩爾（Moorish）時期的阿爾加維故事綁得很緊；而 Monchique 則是把視角拉到山上，用地形把整個區域的尺度打開（但視野吃天氣）
+- Silves 給你的是「阿爾加維其實不只海岸」：紅色城堡與老城氛圍對比感很強，而它之所以有這種氣質，是因為 Silves 與摩爾（Moorish）時期的阿爾加維故事綁得很緊；Monchique 則是把視角拉到山上，用地形把整個區域尺度打開（但視野很吃天氣）。
 
 ### images
 - {{gallery:Silves + Monchique|https://commons.wikimedia.org/wiki/Special:FilePath/Silves_castle_-_ancient_capital_of_Algarve_-_The_Algarve,_Portugal_(1388844198).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Silves_castle_-_ancient_capital_of_Algarve_-_The_Algarve,_Portugal_(1387949771).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Alto_da_F%C3%B3ia_-_Serra_de_Monchique_-_Portugal_(80153838).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Foia_-_Highest_Mountain_in_Algarve_-_The_Algarve,_Portugal_(1388599832).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Monchique.JPG?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Silves_castle_-_ancient_capital_of_Algarve_-_The_Algarve,_Portugal_(1388844198).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Silves_castle_-_ancient_capital_of_Algarve_-_The_Algarve,_Portugal_(1387949771).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Alto_da_F%C3%B3ia_-_Serra_de_Monchique_-_Portugal_(80153838).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Monchique.JPG?width=1800}}
@@ -97,8 +95,7 @@ title: 拉各斯（Lagos）延伸行程（詳情）
 - 亮點：舊城＋海邊散步（節奏輕鬆）
 
 ### why
-- Faro 是「阿爾加維的城市版」：你如果在 Lagos 已經看了很多海岸線，換成舊城/街區節奏會很舒服
-- 歷史小抄：Faro 作為區域行政與交通中心，讓它更像「生活的基地」而不是景點集合；因此它很適合補給與慢走
+- Faro 是「阿爾加維的城市版」：你如果在 Lagos 已經看了很多海岸線，換成舊城/街區節奏會很舒服，而它之所以更像「生活的基地」而不是景點集合，是因為 Faro 本來就是區域行政與交通中心（因此很適合補給與慢走）。
 
 ### images
 - {{gallery:Faro|https://commons.wikimedia.org/wiki/Special:FilePath/Faro_Old_Town.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Old_Town_-_Faro,_Portugal_(46471079874).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Faro_Largo_da_S%C3%A9_R01.jpg?width=1800}}
@@ -130,8 +127,7 @@ title: 拉各斯（Lagos）延伸行程（詳情）
 - 亮點：小城散步＋河岸氛圍（不追大景，追舒服）
 
 ### why
-- Tavira 的優點是「舒服」：你不是為了看驚天動地的景，而是為了走在河岸與小城裡，把旅行的節奏放慢
-- 歷史小抄：東阿爾加維的城市更像「生活的老城」，不那麼觀光化；如果你想看阿爾加維的另一面，Tavira 很適合
+- Tavira 的優點是「舒服」：你不是為了看驚天動地的景，而是為了走在河岸與小城裡把旅行節奏放慢，而它特別適合看阿爾加維的另一面，因為東阿爾加維的城市更像「生活的老城」且不那麼觀光化。
 
 ### images
 - {{gallery:Tavira|https://commons.wikimedia.org/wiki/Special:FilePath/Tavira_Portugal.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Tavira_(Portugal)_(12219403924).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Marina_de_Tavira_-_Portugal_(9400661120).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Praia_da_Ilha_de_Tavira_-_Portugal_(20072462770).jpg?width=1800}}
@@ -162,8 +158,7 @@ title: 拉各斯（Lagos）延伸行程（詳情）
 - 亮點：木棧道幾乎全平地，走起來很舒服
 
 ### why
-- 這是「復健型半日」：你不需要壓榨膝蓋去走崖岸小徑，也能得到海邊空氣與舒服的步行
-- 歷史小抄：這裡的價值不在歷史建築，而在地形（潟湖/濕地）與步道設計——把自然做成「任何體力都能享受」的版本
+- 這是「復健型半日」：你不需要壓榨膝蓋去走崖岸小徑，也能得到海邊空氣與舒服的步行，而它的價值不在歷史建築而在地形（潟湖/濕地）與步道設計——把自然做成「任何體力都能享受」的版本。
 
 ### images
 - {{gallery:Alvor|https://commons.wikimedia.org/wiki/Special:FilePath/Passadi%C3%A7os_de_Alvor_-_Portugal_(49381851036).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Rua_25_de_Abril,_Alvor,_18_September_2015_(3).JPG?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Castelo_de_Alvor.JPG?width=1800}}
@@ -194,8 +189,7 @@ title: 拉各斯（Lagos）延伸行程（詳情）
 - 亮點：Algar Seco（天然窗/岩洞）＋ Marinha 觀景點
 
 ### why
-- 這是「阿爾加維岩岸代表作」的陸上版本：就算海象不適合出海，你也能用步道/觀景點看到最經典的岩岸形狀
-- 歷史小抄：這些岩岸不是古蹟，但它是海蝕地形的成果；你看的其實是「時間」把海岸雕刻成今天的樣子
+- 這是「阿爾加維岩岸代表作」的陸上版本：就算海象不適合出海，你也能用步道/觀景點看到最經典的岩岸形狀，而雖然這些岩岸不是古蹟，它們其實是海蝕地形的成果——你看的就是「時間」把海岸雕刻成今天的樣子。
 
 ### images
 - {{gallery:Carvoeiro + Marinha|https://commons.wikimedia.org/wiki/Special:FilePath/Algar_Seco_rocks,_Carvoeiro,_Portugal_julesvernex2-4.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Praia_da_Marinha_-_Lagoa2.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Praia_da_Marinha_(35518737040).jpg?width=1800}}

@@ -12,6 +12,7 @@ import type { MarkdownTable } from '../data/stays'
 import { FormattedInline } from '../components/FormattedText'
 import { Modal } from '../components/Modal'
 import { ExpandingBox } from '../components/ExpandingBox'
+import { PixelatedBackground } from '../components/PixelatedBackground'
 
 function statusPill(status: 'primary' | 'secondary' | 'backup' | undefined) {
   if (!status) return null
@@ -51,7 +52,7 @@ export function StaysPage() {
   const { state: progress, actions: progressActions } = useProgress()
   const { showSeenHints } = useSettings()
   useHashScroll()
-  const [modal, setModal] = useState<{ cityId: CityId; kind: 'risk' | 'scoring' } | null>(null)
+  const [riskCityId, setRiskCityId] = useState<CityId | null>(null)
 
   const orderedStays = useMemo(() => {
     const idx = new Map<string, number>(STAYS_CITY_ORDER.map((id, i) => [id, i]))
@@ -62,19 +63,25 @@ export function StaysPage() {
     <div className="container">
       <div className="card">
         <div className="cardInner">
-          <PageHero
-            title="住宿"
-            subtitle={
-              <>
-                每城市固定模板：住宿推薦＋入住提醒＋附近交通節點＋「大眾交通怎麼買」＋省錢密技。
-              </>
-            }
-            image={{
-              src: ILLUSTRATION.heroStays.src,
-              fallbackSrc: ILLUSTRATION.suitcase.src,
-              alt: ILLUSTRATION.heroStays.alt,
-            }}
-          />
+          <div className="staysHero">
+            <PixelatedBackground
+              className="staysHeroBg"
+              src={ILLUSTRATION.heroStays.src}
+              fallbackSrc={ILLUSTRATION.suitcase.src}
+              pixelSize={16}
+            />
+            <div className="staysHeroShade" aria-hidden="true" />
+            <div className="staysHeroContent">
+              <PageHero
+                title="住宿"
+                subtitle={
+                  <>
+                    每城市固定模板：住宿推薦＋入住提醒＋附近交通節點＋「大眾交通怎麼買」＋省錢密技。
+                  </>
+                }
+              />
+            </div>
+          </div>
 
           <hr className="hr" />
 
@@ -104,10 +111,6 @@ export function StaysPage() {
                   <div style={{ display: 'flex', gap: 10, alignItems: 'baseline', flexWrap: 'wrap' }}>
                     <div style={{ fontWeight: 950, fontSize: 'var(--text-xl)', lineHeight: 1.15 }}>
                       {c.title}
-                    </div>
-                    <div className="chip">
-                    狀態：
-                    {decision?.status === 'decided' ? '已決定' : decision?.status === 'rejected' ? '放棄' : '候選'}
                     </div>
                     {showSeenHints && progress.staysSeen[c.cityId as CityId] ? <div className="chip">已看過</div> : null}
                   </div>
@@ -186,10 +189,9 @@ export function StaysPage() {
 
                     <ExpandingBox
                       title="當地大眾運輸怎麼買/怎麼用"
-                      defaultOpen={false}
-                      collapsedHeight={160}
-                      moreLabel="看完整說明…"
-                      lessLabel="收起說明…"
+                      variant="modal"
+                      viewLabel="看完整說明"
+                      modalAriaLabel="當地大眾運輸怎麼買/怎麼用"
                       style={{ boxShadow: 'none', background: 'var(--surface-2)' }}
                     >
                       <div className="muted" style={{ marginTop: 8 }}>
@@ -205,10 +207,9 @@ export function StaysPage() {
 
                     <ExpandingBox
                       title="省錢密技"
-                      defaultOpen={false}
-                      collapsedHeight={160}
-                      moreLabel="看完整清單…"
-                      lessLabel="收起清單…"
+                      variant="modal"
+                      viewLabel="看完整清單"
+                      modalAriaLabel="省錢密技"
                       style={{ boxShadow: 'none', background: 'var(--surface-2)' }}
                     >
                       <div className="muted" style={{ marginTop: 8 }}>
@@ -224,42 +225,13 @@ export function StaysPage() {
 
                     <div className="card" style={{ boxShadow: 'none' }}>
                       <div className="cardInner">
-                        <div style={{ fontWeight: 900 }}>風險矩陣 / 量化比較</div>
+                        <div style={{ fontWeight: 900 }}>風險矩陣</div>
                         <div className="muted" style={{ marginTop: 8 }}>
                           需要時再打開看（手機比較不佔版面）。
                         </div>
                         <div style={{ marginTop: 10, display: 'flex', gap: 10, flexWrap: 'wrap' }}>
-                          <button className="btn" onClick={() => setModal({ cityId: c.cityId as CityId, kind: 'risk' })}>
+                          <button className="btn" onClick={() => setRiskCityId(c.cityId as CityId)}>
                             看風險矩陣
-                          </button>
-                          <button className="btn" onClick={() => setModal({ cityId: c.cityId as CityId, kind: 'scoring' })}>
-                            看量化評分
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div className="card" style={{ boxShadow: 'none' }}>
-                      <div className="cardInner">
-                        <div style={{ fontWeight: 900 }}>快速標記狀態</div>
-                        <div style={{ marginTop: 10, display: 'flex', gap: 10, flexWrap: 'wrap' }}>
-                          <button
-                            className="btn btnPrimary"
-                            onClick={() => actions.setStayDecision(c.cityId as CityId, { status: 'decided' })}
-                          >
-                            標記已決定
-                          </button>
-                          <button
-                            className="btn"
-                            onClick={() => actions.setStayDecision(c.cityId as CityId, { status: 'candidate' })}
-                          >
-                            標記候選
-                          </button>
-                          <button
-                            className="btn btnDanger"
-                            onClick={() => actions.setStayDecision(c.cityId as CityId, { status: 'rejected' })}
-                          >
-                            標記放棄
                           </button>
                         </div>
                       </div>
@@ -272,24 +244,21 @@ export function StaysPage() {
         })}
       </div>
 
-      {modal && (
-        <StayMatrixModal
-          cityId={modal.cityId}
-          kind={modal.kind}
-          onClose={() => setModal(null)}
+      {riskCityId && (
+        <StayRiskMatrixModal
+          cityId={riskCityId}
+          onClose={() => setRiskCityId(null)}
         />
       )}
     </div>
   )
 }
 
-function StayMatrixModal({
+function StayRiskMatrixModal({
   cityId,
-  kind,
   onClose,
 }: {
   cityId: CityId
-  kind: 'risk' | 'scoring'
   onClose: () => void
 }) {
   const city = STAYS_DATA.find((c) => c.cityId === cityId)
@@ -298,7 +267,7 @@ function StayMatrixModal({
   return (
     <Modal
       open
-      ariaLabel={kind === 'risk' ? '風險評估矩陣' : '量化評分模型'}
+      ariaLabel="風險評估矩陣"
       onClose={onClose}
       overlayClassName="modalOverlay modalOverlayHigh"
       cardClassName="card modalCard modalCardWide"
@@ -310,7 +279,7 @@ function StayMatrixModal({
               {CITIES[cityId].label}
             </div>
             <div style={{ fontWeight: 950, fontSize: 'var(--text-xl)', lineHeight: 1.15, marginTop: 6 }}>
-              {kind === 'risk' ? '風險評估矩陣（Risk matrix）' : '量化評分模型（權重＋分數表）'}
+              風險評估矩陣（Risk matrix）
             </div>
           </div>
           <button className="btn" onClick={onClose}>
@@ -320,29 +289,9 @@ function StayMatrixModal({
 
         <hr className="hr" />
 
-        {kind === 'risk' ? (
-          <div className="muted">
-            <TableView table={city.riskMatrix} />
-          </div>
-        ) : (
-          <div style={{ display: 'grid', gap: 12 }}>
-            <div className="card" style={{ boxShadow: 'none', background: 'var(--surface-2)' }}>
-              <div className="cardInner">
-                <div style={{ fontWeight: 850, marginBottom: 6 }}>權重</div>
-                <div className="muted">
-                  {city.scoringModel.weights.map((w) => (
-                    <div key={w.criterion}>
-                      - {w.criterion}（weight={w.weight}）
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-            <div className="muted">
-              <TableView table={city.scoringModel.table} />
-            </div>
-          </div>
-        )}
+        <div className="muted">
+          <TableView table={city.riskMatrix} />
+        </div>
       </div>
     </Modal>
   )

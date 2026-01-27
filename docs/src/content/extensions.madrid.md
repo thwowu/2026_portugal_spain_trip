@@ -20,8 +20,7 @@ title: 馬德里（Madrid）延伸行程（詳情）
 - 亮點：古城 + 河谷觀景台（Mirador del Valle）
 
 ### why
-- 你想要「一日就很有故事」的地方，Toledo 是首選：整座城像把西班牙歷史濃縮成一個山城（走進去就有感）
-- 歷史小抄：Toledo 長期被稱作「三文化之城」（基督教、伊斯蘭、猶太傳統的交疊），這也是它逛起來特別有層次的原因
+- 你想要「一日就很有故事」的地方，Toledo 幾乎是首選：整座城像把西班牙歷史濃縮成一個山城（走進去就有感），而它逛起來特別有層次的原因也很明確——長期被稱作「三文化之城」，基督教、伊斯蘭、猶太傳統在同一座城裡交疊。
 
 ### images
 - {{gallery:Toledo|https://commons.wikimedia.org/wiki/Special:FilePath/Mirador_del_Valle_-_Toledo.jpeg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Alcazar_Toledo_Mirador_Valle.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Alc%C3%A1zar_de_Toledo_-_01.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Toledo._Vista_del_Alc%C3%A1zar_desde_el_puente_de_San_Mart%C3%ADn,_Robert_P._Napper.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Mirador_del_Valle_-_Toledo.jpeg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Alcazar_Toledo_Mirador_Valle.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Alc%C3%A1zar_de_Toledo_-_01.jpg?width=1800}}
@@ -52,8 +51,7 @@ title: 馬德里（Madrid）延伸行程（詳情）
 - 亮點：羅馬水道橋（全程平地感較強）
 
 ### why
-- Segovia 的爽感很直接：水道橋就是「站在那裡你會忍不住說靠」的等級，而且不需要做功課就能被震撼到
-- 歷史小抄：水道橋是羅馬工程的代表作之一；你看到的不只是古蹟，而是「城市如何被水養出來」的基礎設施史
+- Segovia 的爽感很直接：水道橋就是「站在那裡你會忍不住說靠」的等級、不需要做功課也會被震撼到，而它之所以厲害是因為這不只是古蹟而是羅馬工程代表作之一——你看到的是「城市如何被水養出來」的基礎設施史。
 
 ### images
 - {{gallery:Segovia（Aqueduct）|https://commons.wikimedia.org/wiki/Special:FilePath/AcueductoSegovia04.JPG?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Aqueduct_Segovia_Spain.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/El_acueducto_romano_de_Segovia.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Segovia_Aqueduct.JPG?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/AcueductoSegovia04.JPG?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Aqueduct_Segovia_Spain.jpg?width=1800}}
@@ -82,8 +80,7 @@ title: 馬德里（Madrid）延伸行程（詳情）
 - 適合：多住兩天、或雨天把戶外改成「皇室建築/花園」
 
 ### why
-- 這兩個點是「馬德里王室題材」的延伸：如果你喜歡宮殿/修道院/花園，這兩天會讓你的馬德里故事更完整
-- 歷史小抄：El Escorial 的氣質偏「權力 + 宗教 + 帝國」；Aranjuez 則更像「王室的戶外與季節」（花園/度假感）
+- 這兩個點是「馬德里王室題材」的延伸：如果你喜歡宮殿/修道院/花園，這兩天會把故事補完整——El Escorial 的氣質偏「權力 + 宗教 + 帝國」，Aranjuez 則更像「王室的戶外與季節」（花園/度假感）。
 
 ### images
 - {{gallery:El Escorial + Aranjuez|https://commons.wikimedia.org/wiki/Special:FilePath/Real_Monasterio_de_San_Lorenzo_de_El_Escorial_(35948313624).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Monasterio_de_El_Escorial_en_Madrid.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/El_Escorial._Plaza_del_Monasterio_LCCN2017660392.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Royal_Palace_in_Aranjuez_Spain.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Lago_Palacio_Real_de_Aranjuez.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Real_Monasterio_de_San_Lorenzo_de_El_Escorial_(35948313624).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Royal_Palace_in_Aranjuez_Spain.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Lago_Palacio_Real_de_Aranjuez.jpg?width=1800}}
@@ -114,8 +111,7 @@ title: 馬德里（Madrid）延伸行程（詳情）
 - 亮點：城牆散步＋老城氛圍（看天氣與體力）
 
 ### why
-- 你如果想看「城牆到底能多完整」，Ávila 就是答案：它很像把中世紀防禦城市直接封存到今天
-- 歷史小抄：城牆不是裝飾，是城市生存策略；走在城牆上會讓你更直覺理解「邊境、保護、權力」這些詞的現實感
+- 你如果想看「城牆到底能多完整」，Ávila 就是答案：它像把中世紀防禦城市直接封存到今天，而走在城牆上會更直覺理解這不是裝飾而是城市生存策略——「邊境、保護、權力」這些詞在這裡會變成很現實的感覺。
 
 ### images
 - {{gallery:Ávila|https://commons.wikimedia.org/wiki/Special:FilePath/%C3%81vila_Walls.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Muralla_de_%C3%81vila_(27387815196).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Avila_-_Murallas,_Paseo_de_la_Ronda_Vieja_06.JPG?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Murallas_de_%C3%81vila.jpg?width=1800}}
@@ -147,8 +143,7 @@ title: 馬德里（Madrid）延伸行程（詳情）
 - 亮點：老城散步＋大學城氛圍（節奏很輕鬆）
 
 ### why
-- 這是「馬德里的輕鬆加碼」：不用做太多功課，搭近郊火車就能換到不同城市氛圍
-- 歷史小抄：Alcalá 的大學城背景與文學氣質是主菜；它更像文化散步，而不是景點衝刺
+- 這是「馬德里的輕鬆加碼」：不用做太多功課、搭近郊火車就能換到不同城市氛圍，而它的主菜其實是大學城背景與文學氣質——更像文化散步，不像景點衝刺。
 
 ### images
 - {{gallery:Alcalá de Henares|https://commons.wikimedia.org/wiki/Special:FilePath/Universidad_de_Alcal%C3%A1_-_fachada.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Universidad_de_Alcal%C3%A1_(RPS_04-09-2011)_Facultad_de_Medicina,_entrada_principal.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Alcal%C3%A1_de_Henares_(Madrid)-School_of_Architecture_2.jpg?width=1800}}
@@ -180,8 +175,7 @@ title: 馬德里（Madrid）延伸行程（詳情）
 - 亮點：懸崖屋＋景觀視角（但走路比 Toledo/Segovia 更吃力）
 
 ### why
-- 你如果想要「馬德里附近最不一樣的地形」，Cuenca 很值得：懸崖屋的視覺衝擊非常強
-- 歷史小抄：這座城的核心不是單一建築，而是「人把城市蓋在地形邊界上」這件事；你看的是地形如何決定生活
+- 你如果想要「馬德里附近最不一樣的地形」，Cuenca 很值得：懸崖屋的視覺衝擊非常強，而這座城的核心也不是單一建築而是「人把城市蓋在地形邊界上」這件事——你看的是地形如何決定生活。
 
 ### images
 - {{gallery:Cuenca|https://commons.wikimedia.org/wiki/Special:FilePath/Cuenca_Casas_Colgadas.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Casas_Colgadas_de_Cuenca.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Cuenca,_Spain_-_Hanging_houses_(Casas_Colgadas).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Hanging_houses_in_Cuenca_Spain.jpg?width=1800}}

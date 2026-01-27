@@ -1,10 +1,8 @@
 import { useEffect, useMemo, useState } from 'react'
-import { type TransportRatings } from '../data/transport'
 import { TRANSPORT_DATA } from '../generated'
 import { TRANSPORT_SEGMENTS, type TransportSegmentId } from '../data/core'
 import { usePlanning } from '../state/planning'
 import { useProgress } from '../state/progress'
-import { useSettings } from '../state/settings'
 import { Lightbox } from '../components/Lightbox'
 import { useHashScroll } from '../hooks/useHashScroll'
 import { useReveal } from '../hooks/useReveal'
@@ -14,33 +12,21 @@ import { withBaseUrl } from '../utils/asset'
 import { FormattedInline } from '../components/FormattedText'
 import { ExpandingBox } from '../components/ExpandingBox'
 
-function score(r: TransportRatings, w: Record<string, number>) {
-  // ratings are 1..5, normalize to 0..1 and weight
-  const keys = Object.keys(r) as Array<keyof TransportRatings>
-  const totalW = keys.reduce((a, k) => a + (w[k as string] ?? 0), 0) || 1
-  const s = keys.reduce((acc, k) => {
-    const wk = w[k as string] ?? 0
-    const rk = Math.min(5, Math.max(1, r[k]))
-    return acc + wk * ((rk - 1) / 4)
-  }, 0)
-  return s / totalW
-}
-
-function fmtPct(x: number) {
-  return `${Math.round(x * 100)}`
-}
-
 function Accordion({
   title,
   children,
-  defaultOpen,
 }: {
   title: string
   children: React.ReactNode
-  defaultOpen?: boolean
 }) {
   return (
-    <ExpandingBox title={title} defaultOpen={defaultOpen} collapsedHeight={0} footerToggle={false} style={{ boxShadow: 'none' }}>
+    <ExpandingBox
+      title={title}
+      variant="modal"
+      viewLabel="看完整說明"
+      modalAriaLabel={title}
+      style={{ boxShadow: 'none' }}
+    >
       {children}
     </ExpandingBox>
   )
@@ -48,31 +34,9 @@ function Accordion({
 
 export function TransportPage() {
   const { state, actions } = usePlanning()
-  const { state: progress, actions: progressActions } = useProgress()
-  const { showSeenHints } = useSettings()
+  const { actions: progressActions } = useProgress()
   const [lightbox, setLightbox] = useState<{ src: string; title: string } | null>(null)
   useHashScroll()
-
-  const WEIGHT_LABEL: Record<string, string> = {
-    simplicity: '簡便性',
-    luggage: '大行李友善',
-    risk: '風險性',
-    comfort: '舒適度',
-    cost: '成本',
-    flexibility: '彈性',
-  }
-
-  const weights = useMemo(
-    () => ({
-      simplicity: state.transportWeights.simplicity,
-      luggage: state.transportWeights.luggage,
-      risk: state.transportWeights.risk,
-      comfort: state.transportWeights.comfort,
-      cost: state.transportWeights.cost,
-      flexibility: state.transportWeights.flexibility,
-    }),
-    [state.transportWeights],
-  )
 
   const transportById = useMemo(() => {
     return new Map(TRANSPORT_DATA.map((s) => [s.id, s] as const))
@@ -92,7 +56,7 @@ export function TransportPage() {
             title="交通比較"
             subtitle={
               <>
-                每段移動都有「火車 vs 巴士」比較、加權評分、以及大建議；本頁上方可調整權重。
+                每段移動都有「火車 vs 巴士」比較、以及大建議（含備案與步驟）。
               </>
             }
             image={{
@@ -115,46 +79,6 @@ export function TransportPage() {
               </button>
             ))}
           </div>
-
-          <div style={{ height: 12 }} />
-
-          <ExpandingBox
-            title="權重設定（加權評分用）"
-            defaultOpen={false}
-            collapsedHeight={0}
-            footerToggle={false}
-            style={{ boxShadow: 'none', borderStyle: 'dashed' }}
-          >
-            {(Object.keys(weights) as Array<keyof typeof weights>).map((k) => (
-              <div
-                key={k}
-                style={{
-                  display: 'grid',
-                  gridTemplateColumns: '1fr auto',
-                  gap: 12,
-                  alignItems: 'center',
-                  marginBottom: 10,
-                }}
-              >
-                <div style={{ fontWeight: 700 }}>{WEIGHT_LABEL[k as string] ?? String(k)}</div>
-                <div className="muted" style={{ fontSize: 'var(--text-sm)', textAlign: 'right' }}>
-                  {Math.round(state.transportWeights[k] * 100)}
-                </div>
-                <input
-                  type="range"
-                  min={0}
-                  max={0.5}
-                  step={0.01}
-                  value={state.transportWeights[k]}
-                  onChange={(e) => actions.setTransportWeights({ [k]: Number(e.target.value) })}
-                  style={{ gridColumn: '1 / -1' }}
-                />
-              </div>
-            ))}
-            <div className="muted" style={{ fontSize: 'var(--text-sm)' }}>
-              提醒：目前不會自動把總和校正成 100%。
-            </div>
-          </ExpandingBox>
         </div>
       </div>
 
@@ -163,11 +87,6 @@ export function TransportPage() {
       <div style={{ display: 'grid', gap: 14 }}>
         {orderedSegments.map((seg) => {
           const decision = state.transportDecisions[seg.id]
-          const optionScores = seg.options.map((o) => ({
-            mode: o.mode,
-            score: score(o.ratings, weights),
-          }))
-          const best = optionScores.sort((a, b) => b.score - a.score)[0]
           const trainOptions = seg.options.filter((o) => o.mode === 'train')
           const busOptions = seg.options.filter((o) => o.mode === 'bus')
 
@@ -179,10 +98,6 @@ export function TransportPage() {
                     <div style={{ fontWeight: 950, fontSize: 'var(--text-xl)', lineHeight: 1.15 }}>
                       {seg.label}
                     </div>
-                    <div className="chip">
-                      目前狀態：{decision?.status ? (decision.status === 'candidate' ? '候選' : decision.status === 'decided' ? '已決定' : '放棄') : '—'}
-                    </div>
-                    {showSeenHints && progress.transportSeen[seg.id] && <div className="chip">已看過</div>}
                   </div>
 
                   <div style={{ marginTop: 10 }} className="muted">
@@ -211,9 +126,6 @@ export function TransportPage() {
                         <div className="chip">
                           推薦：{seg.tldr.recommended === 'train' ? '火車' : '巴士'}
                         </div>
-                        <div className="chip">
-                          依你目前權重最佳：{best.mode === 'train' ? '火車' : '巴士'}（{fmtPct(best.score)} 分）
-                        </div>
                       </div>
                       <div style={{ marginTop: 8 }}>{seg.tldr.because}</div>
                       <div className="muted" style={{ marginTop: 10 }}>
@@ -225,29 +137,6 @@ export function TransportPage() {
                           ))}
                         </ul>
                       </div>
-                      <div style={{ marginTop: 12, display: 'flex', gap: 10, flexWrap: 'wrap' }}>
-                        <button
-                          className="btn btnPrimary"
-                          onClick={() =>
-                            actions.setTransportDecision(seg.id, {
-                              status: 'decided',
-                              chosenMode: seg.tldr.recommended,
-                            })
-                          }
-                        >
-                          直接採用建議
-                        </button>
-                        <button
-                          className="btn"
-                          onClick={() =>
-                            actions.setTransportDecision(seg.id, {
-                              status: 'candidate',
-                            })
-                          }
-                        >
-                          先保留候選
-                        </button>
-                      </div>
                     </div>
                   </div>
 
@@ -258,9 +147,8 @@ export function TransportPage() {
                       <Accordion
                         key={`${seg.id}-train-${idx}-${o.title}`}
                         title={trainOptions.length === 1 ? '火車方案（Train）' : `火車方案（Train）${idx + 1}`}
-                        defaultOpen={seg.tldr.recommended === 'train' && idx === 0}
                       >
-                        {renderOption(o, weights, (src, title) => setLightbox({ src, title }))}
+                        {renderOption(o, (src, title) => setLightbox({ src, title }))}
                       </Accordion>
                     ))
                   ) : (
@@ -276,9 +164,8 @@ export function TransportPage() {
                       <Accordion
                         key={`${seg.id}-bus-${idx}-${o.title}`}
                         title={busOptions.length === 1 ? '巴士方案（Bus）' : `巴士方案（Bus）${idx + 1}`}
-                        defaultOpen={seg.tldr.recommended === 'bus' && idx === 0}
                       >
-                        {renderOption(o, weights, (src, title) => setLightbox({ src, title }))}
+                        {renderOption(o, (src, title) => setLightbox({ src, title }))}
                       </Accordion>
                     ))
                   ) : (
@@ -358,16 +245,13 @@ function RevealSection({
 
 function renderOption(
   o: (typeof TRANSPORT_DATA)[number]['options'][number],
-  weights: Record<string, number>,
   onOpenImage: (src: string, title: string) => void,
 ) {
-  const s = score(o.ratings, weights)
   const toJpg = (src: string) => (src.endsWith('.png') ? src.replace(/\.png$/i, '.jpg') : src)
   return (
     <div style={{ display: 'grid', gap: 10 }}>
       <div style={{ display: 'flex', gap: 10, alignItems: 'baseline', flexWrap: 'wrap' }}>
         <div style={{ fontWeight: 900 }}>{o.title}</div>
-        <div className="chip">加權：{fmtPct(s)} 分</div>
       </div>
       <div className="muted">{o.summary}</div>
 

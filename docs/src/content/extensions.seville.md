@@ -20,9 +20,7 @@ title: 塞維爾（Seville）延伸行程（詳情）
 - 亮點：Mezquita-Catedral（清真寺主教座堂）本體超震撼、老城集中好走、拍照回報高
 
 ### why
-- 你會在同一個空間裡同時看到「清真寺的柱林」與「天主教堂的中殿」這種歷史疊加感，這是很多城市做不到的震撼
-- Córdoba 老城的密度很高：一日遊不用拉很遠、也不用一直換交通工具，走路就能收滿
-- 歷史小抄：Córdoba 在伊斯蘭統治時期曾是歐洲最重要的城市之一；Mezquita 後來在基督教收復後被改造並「嵌入」主教座堂，因此你看到的是政權更迭留下的拼貼
+- Córdoba 的爽點是「密度高、回報大」：一日不用拉很遠也不用一直換交通工具，就能在 Mezquita-Catedral 這種把清真寺柱林與天主教中殿疊在同一空間的奇觀裡，直接感受政權更迭留下的拼貼（伊斯蘭統治時期曾是歐洲最重要城市之一 → 基督教收復後改造並「嵌入」主教座堂），走路就能收滿老城。
 
 ### images
 - {{gallery:Córdoba|https://commons.wikimedia.org/wiki/Special:FilePath/Mezquita-Catedral_de_C%C3%B3rdoba.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Cathedral%E2%80%93Mosque_of_C%C3%B3rdoba_(6933169868).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/C%C3%B3rdoba_roman_bridge.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Patio_de_C%C3%B3rdoba.jpg?width=1800}}
@@ -64,9 +62,7 @@ title: 塞維爾（Seville）延伸行程（詳情）
 - 亮點：老城散步（不趕行程也很有感）+ La Caleta 海邊日落（拍照/放空都行）
 
 ### why
-- 這是一個「完全不同題材」：不是宮殿、不是教堂，而是海風、港口、慢步調；用它把旅行節奏拉回來超有效
-- 老城幾乎被海包住，你不用刻意找景點，光是走就會有畫面
-- 歷史小抄：Cádiz 被認為是西歐最古老、持續有人居住的城市之一，腓尼基人很早就把它當作海上貿易據點；後來羅馬與近代海權也都讓這裡一直與「海」綁在一起
+- Cádiz 是把題材從宮殿教堂一鍵切到「海風與慢步調」的回血日：老城幾乎被海包住、你不用刻意找景點光是走就會有畫面（配 La Caleta 日落很有效），而它之所以這麼“海”，是因為自腓尼基人以來就被當作海上貿易據點，後續羅馬與近代海權也讓城市長期與港口綁在一起。
 
 ### images
 - {{gallery:Cádiz|https://commons.wikimedia.org/wiki/Special:FilePath/Playa_de_la_Caleta,_C%C3%A1diz,_Espa%C3%B1a,_2015-12-08,_DD_53.JPG?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Cadiz_playa_caleta.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Cadiz._Puesta_de_sol_en_Mayo.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Exterior_Catedral_de_C%C3%A1diz_1.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Kathedrale_in_C%C3%A1diz.jpg?width=1800}}
@@ -102,9 +98,7 @@ title: 塞維爾（Seville）延伸行程（詳情）
 - 亮點：圓形劇場 + 馬賽克遺址，畫面感很強，而且幾乎不用排隊
 
 ### why
-- 你在 Sevilla 看的是「近代王權與宗教城市」，Itálica 給你的是「更早、更底層的羅馬日常」：馬賽克、街廓、劇場，會讓你的安達魯西亞故事突然多了一段時間尺度
-- 半日就能收，而且不太吃腦、不太需要搶票：非常適合當緩衝日
-- 歷史小抄：Itálica 是羅馬時期的重要城市之一，也常被提到與幾位羅馬皇帝（如 Trajan、Hadrian）的淵源；你走在遺址裡，其實是在看帝國如何把城市生活「複製」到伊比利半島
+- Itálica 用半日就能把 Sevilla 的「近代王權/宗教城市」往前拉到「羅馬日常」的時間尺度：圓形劇場、馬賽克、街廓畫面感很強又不太需要搶票，順便讓你理解羅馬帝國如何把城市生活「複製」到伊比利半島（它也常被提到與 Trajan、Hadrian 等皇帝的淵源），非常適合當緩衝日。
 
 ### images
 - {{gallery:Itálica|https://commons.wikimedia.org/wiki/Special:FilePath/Italica_Amphitheatre_Seville.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Anfiteatro_de_It%C3%A1lica_(Santiponce,_Sevilla).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Italica_-_Mosaico.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Italica_-_Mosaics.jpg?width=1800}}
@@ -143,9 +137,7 @@ title: 塞維爾（Seville）延伸行程（詳情）
 - 亮點：Puente Nuevo 橫跨深谷的那一瞬間，會讓你覺得「有來值得」
 
 ### why
-- 你在 Sevilla 看到的是「平面的城市美」，Ronda 給你的是「垂直的地形震撼」：房子、橋、峽谷直接疊在一起
-- 它很適合當作「安達魯西亞白村/山城」的代表作：不用跑很多白村，一個點就能收滿氛圍
-- 歷史小抄：Ronda 的核心魅力來自地形（峽谷把城市切成兩半），而「橋」就是人類對地形的回答；Puente Nuevo 讓兩側城市重新接回來，也變成今天大家記得 Ronda 的原因
+- Ronda 的核心是垂直地形震撼：房子、橋、峽谷直接疊在一起，當作安達魯西亞白村/山城代表作一個點就能收滿氛圍，而它的故事其實是「地形把城切成兩半 → 人用橋回答地形」，Puente Nuevo 重新把城市接回來也因此成為大家記得 Ronda 的原因。
 
 ### images
 - {{gallery:Ronda|https://commons.wikimedia.org/wiki/Special:FilePath/Puente_Nuevo,_Ronda,_Andaluc%C3%ADa,_Spain.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Ronda_Puente_Nuevo.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Ronda_02.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Puente_Nuevo,_Ronda,_Andaluc%C3%ADa,_Spain.jpg?width=1800}}
@@ -179,9 +171,7 @@ title: 塞維爾（Seville）延伸行程（詳情）
 - 亮點：Sherry bodegas（導覽/品飲）+ 皇家馬術學校表演（選一個就很夠，兩個都做也成立）
 
 ### why
-- Jerez 是「安達魯西亞的生活文化」：你不是在看建築，而是在看一個城市如何把特產（雪莉酒）與技藝（馬術）變成日常與儀式感
-- 如果旅程中已經看了很多古蹟，Jerez 會讓你換腦，回 Sevilla 也不會覺得「又看了一個差不多的地方」
-- 歷史小抄：Jerez 與 Sherry 幾乎是同義詞（產區/貿易把它推成國際知名）；而安達魯西亞馬術傳統也在此被制度化（學校、表演、訓練）
+- Jerez 比起再看第 N 座教堂，更像把一天換成「酒、馬、flamenco 氛圍」的生活文化課：雪莉酒酒莊與馬術技藝把城市的日常做成儀式感，尤其當你已經看了很多古蹟時很能換腦，而它之所以成為 Jerez 的名片，正是 Sherry 的產區/貿易把它推上國際、加上安達魯西亞馬術傳統在此被制度化（學校、表演、訓練）。
 
 ### images
 - {{gallery:Jerez|https://commons.wikimedia.org/wiki/Special:FilePath/Jerez_de_la_Frontera_-_Alc%C3%A1zar.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Jerez_de_la_Frontera_-_Catedral.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Jardines_Alcazar_de_Jerez_de_la_Frontera.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Mezquita,_Alc%C3%A1zar,_Jerez_de_la_Frontera,_Espa%C3%B1a,_2015-12-07,_DD_57.JPG?width=1800}}
@@ -218,9 +208,7 @@ title: 塞維爾（Seville）延伸行程（詳情）
 - 亮點：城門、城牆、巷弄與高點視野；半日就很有感
 
 ### why
-- Carmona 很像「把安達魯西亞小鎮精華濃縮」：你不用拉很遠，就能看到白牆巷弄 + 古城防禦感 + 高處視野
-- 它特別適合當「行程緩衝」：不用搶票、也不用早起到崩潰，卻能換到完全不同的氛圍
-- 歷史小抄：它位在高處、天然適合防禦，所以不同時期的政權都想掌握；你走過的城門/城牆就是地形變成權力的痕跡
+- Carmona 像把安達魯西亞小鎮精華濃縮成「白牆巷弄＋防禦古城感＋高處視野」：不用跑遠、不用搶票也不用早起到崩潰就能換到完全不同的氛圍，很適合當行程緩衝，而它長期被各時期政權爭著掌握的原因也很直覺——地勢高、天然好守，你看到的城門/城牆就是地形變成權力的痕跡。
 
 ### images
 - {{gallery:Carmona|https://commons.wikimedia.org/wiki/Special:FilePath/Carmona_-_Puerta_de_Sevilla.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Alc%C3%A1zar_Puerta_Sevilla_Carmona.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Carmona_-_Spain.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Carmona_-_Andalousie_mai_2018_103_(40427868293).jpg?width=1800}}
@@ -252,9 +240,7 @@ title: 塞維爾（Seville）延伸行程（詳情）
 - 亮點：Gruta de las Maravillas（洞穴）+ 山城氛圍（跟 Sevilla 完全不同）
 
 ### why
-- 這是「題材跳躍」的一天：從安達魯西亞大城的石板路，換到山裡的洞穴與火腿產地，會讓旅程的記憶點突然變很立體
-- 如果你覺得自己一直在看建築，Aracena 是最有效的換腦（而且很在地）
-- 歷史小抄：這一帶（Sierra de Aracena）以山地環境與傳統畜牧/火腿文化聞名；洞穴則是天然地景，讓你用「地球的時間」換掉「城市的時間」
+- Aracena 是題材跳躍最有效的一天：從安達魯西亞大城的石板路切到山裡洞穴與火腿產地，記憶點會突然變立體（而且很在地），背後原因也很“地理”——Sierra de Aracena 的山地環境孕育傳統畜牧/火腿文化，洞穴則用「地球的時間」把你從城市的時間感拉開。
 
 ### images
 - {{gallery:Aracena|https://commons.wikimedia.org/wiki/Special:FilePath/Aracena_-_Castillo.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Desde_Castillo_Aracena.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Plaza_de_toros_de_Aracena.jpg?width=1800}}

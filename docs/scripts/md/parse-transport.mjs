@@ -5,7 +5,6 @@ import {
   listTopLevelBullets,
   mdError,
   parseFrontmatter,
-  parseInlineKvPairs,
   parseLines,
 } from './md.mjs'
 
@@ -103,17 +102,6 @@ export function parseTransportSegmentMd({ sourcePath, raw }) {
     const riskNotes = lists.get('riskNotes') || []
     const screenshotsRaw = lists.get('screenshots') || []
 
-    const ratingsLine = scalars.get('ratings') || ''
-    const kv = parseInlineKvPairs(ratingsLine)
-    const ratings = {
-      simplicity: Number(kv.simplicity),
-      luggage: Number(kv.luggage),
-      risk: Number(kv.risk),
-      comfort: Number(kv.comfort),
-      cost: Number(kv.cost),
-      flexibility: Number(kv.flexibility),
-    }
-
     const bookingLinks = bookingLinksRaw
       .map((s) => {
         const ps = splitPipeParts(s)
@@ -138,7 +126,6 @@ export function parseTransportSegmentMd({ sourcePath, raw }) {
       bookingLinks,
       luggageNotes,
       riskNotes,
-      ratings,
       screenshots,
     })
   }

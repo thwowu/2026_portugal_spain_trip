@@ -1,15 +1,5 @@
 import type { TransportMode, TransportSegmentId } from './core'
 
-export type RatingKey =
-  | 'simplicity'
-  | 'luggage'
-  | 'risk'
-  | 'comfort'
-  | 'cost'
-  | 'flexibility'
-
-export type TransportRatings = Record<RatingKey, number> // 1..5
-
 export type TransportOption = {
   mode: TransportMode
   title: string
@@ -18,7 +8,6 @@ export type TransportOption = {
   bookingLinks: Array<{ label: string; href: string }>
   luggageNotes: string[]
   riskNotes: string[]
-  ratings: TransportRatings
   screenshots: Array<{ label: string; src: string }>
 }
 

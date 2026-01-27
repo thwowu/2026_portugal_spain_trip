@@ -11,10 +11,7 @@ export const STAYS_DATA: CityStay[] = [
     "options": [
       {
         "name": "Centro（市中心；大教堂/格蘭大道 Gran Vía 一帶，首選：省坡）",
-        "why": [
-          "最能避免坡：市中心多數動線平，去車站/吃飯/補給也方便",
-          "上阿爾罕布拉/阿爾拜辛可以「只把坡留給必要段」：該搭車就搭車"
-        ],
+        "why": [],
         "risks": [
           "旺季價格浮動，熱門路段可能有噪音（餐廳/人流）"
         ],
@@ -23,15 +20,11 @@ export const STAYS_DATA: CityStay[] = [
             "label": "Google Maps",
             "href": "https://www.google.com/maps/search/?api=1&query=Granada%20Cathedral"
           }
-        ],
-        "statusHint": "primary"
+        ]
       },
       {
         "name": "雷阿萊霍（Realejo；次選：靠近阿爾罕布拉山腳）",
-        "why": [
-          "介於市中心與阿爾罕布拉之間，想早進園區更順",
-          "氛圍較在地，小酒館多"
-        ],
+        "why": [],
         "risks": [
           "部分街區仍有坡與石板路，拖行李要評估"
         ],
@@ -40,14 +33,11 @@ export const STAYS_DATA: CityStay[] = [
             "label": "Google Maps",
             "href": "https://www.google.com/maps/search/?api=1&query=Realejo%20Granada"
           }
-        ],
-        "statusHint": "secondary"
+        ]
       },
       {
         "name": "阿爾拜辛（Albaicín；備選：景觀/氛圍最強但最累）",
-        "why": [
-          "「住在明信片裡」的體驗最強，走出門就是老城巷弄與視角點"
-        ],
+        "why": [],
         "risks": [
           "坡/階梯/石板路密集，帶行李與夜間行走成本高（也更吃體力）",
           "車輛接送不一定能到門口（巷弄狹窄）"
@@ -57,8 +47,7 @@ export const STAYS_DATA: CityStay[] = [
             "label": "Google Maps",
             "href": "https://www.google.com/maps/search/?api=1&query=Albaicin%20Granada"
           }
-        ],
-        "statusHint": "secondary"
+        ]
       }
     ],
     "publicTransportHowToBuy": [
@@ -208,10 +197,7 @@ export const STAYS_DATA: CityStay[] = [
     "options": [
       {
         "name": "拉各斯老城 / 碼頭區（Lagos Old Town / Marina；首選：最省腦）",
-        "why": [
-          "不自駕最穩：餐廳/碼頭/多數景點都能步行解決，晚上回住宿也不太需要交通",
-          "巴士/市內交通的節點通常也在附近（去別城/去景點轉乘最省事）"
-        ],
+        "why": [],
         "risks": [
           "旺季夜間較吵（餐酒吧/人潮）",
           "若自駕停車較麻煩（需找停車場/路邊位）"
@@ -221,15 +207,11 @@ export const STAYS_DATA: CityStay[] = [
             "label": "Google Maps",
             "href": "https://www.google.com/maps/search/?api=1&query=Lagos%20Old%20Town%20Portugal"
           }
-        ],
-        "statusHint": "primary"
+        ]
       },
       {
         "name": "唐娜安娜海灘 / 皮耶達德角方向（Praia Dona Ana / Ponta da Piedade；海景派）",
-        "why": [
-          "走路到海灘/懸崖步道很近，想拍照/看日落最方便",
-          "適合 Day 7 那種「海岸線重點日」不用來回跑"
-        ],
+        "why": [],
         "risks": [
           "往舊城/碼頭多半要走一段（且部分路段有坡）",
           "靠海風大潮濕，曬衣/體感可能比較不友善（看房型與天氣）"
@@ -239,15 +221,11 @@ export const STAYS_DATA: CityStay[] = [
             "label": "Google Maps",
             "href": "https://www.google.com/maps/search/?api=1&query=Praia%20Dona%20Ana%20Lagos"
           }
-        ],
-        "statusHint": "secondary"
+        ]
       },
       {
         "name": "梅亞海灘 / 拉各斯火車站一帶（Meia Praia / Lagos 火車站；平地＋大沙灘）",
-        "why": [
-          "平地好走、沙灘大，適合「想放鬆＋不想爬坡」",
-          "若你會搭火車移動（往 Portimão / Faro / Tunes），在車站附近會更省搬行李"
-        ],
+        "why": [],
         "risks": [
           "去舊城吃飯/逛街通常要走更遠或短程交通（來回時間成本較高）",
           "晚上若想逛熱鬧區，回程要留意路況/時間"
@@ -257,8 +235,7 @@ export const STAYS_DATA: CityStay[] = [
             "label": "Google Maps",
             "href": "https://www.google.com/maps/search/?api=1&query=Meia%20Praia%20Lagos"
           }
-        ],
-        "statusHint": "secondary"
+        ]
       }
     ],
     "publicTransportHowToBuy": [
@@ -424,11 +401,7 @@ export const STAYS_DATA: CityStay[] = [
     "options": [
       {
         "name": "盧澤羅斯套房（Luzeiros Suites；首選）",
-        "why": [
-          "交通便利、完全不用爬坡（地鐵旁）",
-          "房間空間/隔音/櫃檯穩定度高",
-          "適合長途飛行後第一晚降低風險"
-        ],
+        "why": [],
         "risks": [
           "價格不是最低",
           "部分方案可能不可取消"
@@ -438,15 +411,11 @@ export const STAYS_DATA: CityStay[] = [
             "label": "Google Maps",
             "href": "https://maps.app.goo.gl/szKwdhc3Yp7RuU8e8"
           }
-        ],
-        "statusHint": "primary"
+        ]
       },
       {
         "name": "LX 蘇活精品酒店（Lx Soho Boutique；次選）",
-        "why": [
-          "地鐵站旁不用爬坡",
-          "裝潢較新、櫃檯穩定"
-        ],
+        "why": [],
         "risks": [
           "價格可能波動",
           "可能不可取消"
@@ -456,15 +425,11 @@ export const STAYS_DATA: CityStay[] = [
             "label": "Google Maps",
             "href": "https://maps.app.goo.gl/aPKctvDx6LYoy38c8"
           }
-        ],
-        "statusHint": "secondary"
+        ]
       },
       {
         "name": "共和大道 83 號（Republica 83；備案：公寓式）",
-        "why": [
-          "位置通常不差（市區移動方便）",
-          "若你想要「像住家」的空間/格局，公寓式會更自在"
-        ],
+        "why": [],
         "risks": [
           "可能沒有 24H 櫃檯（晚到/行李寄放風險）",
           "老樓電梯/隔音/熱水等變因較多，第一晚不確定性偏高"
@@ -474,15 +439,11 @@ export const STAYS_DATA: CityStay[] = [
             "label": "Google Maps（搜尋）",
             "href": "https://www.google.com/maps/search/?api=1&query=Republica%2083%20Lisbon"
           }
-        ],
-        "statusHint": "backup"
+        ]
       },
       {
         "name": "易捷飯店・里斯本（easyHotel Lisbon；備案：連鎖平價）",
-        "why": [
-          "預算緊或只求「乾淨可睡」時，連鎖通常比較可預期",
-          "常有 24H 櫃檯、可寄放行李（比公寓式省心）"
-        ],
+        "why": [],
         "risks": [
           "房間普遍偏小、隔音/舒適度取決於房型",
           "交通便利度/周邊體驗可能不如前兩個選項"
@@ -492,8 +453,7 @@ export const STAYS_DATA: CityStay[] = [
             "label": "Google Maps（搜尋）",
             "href": "https://www.google.com/maps/search/?api=1&query=easyHotel%20Lisbon"
           }
-        ],
-        "statusHint": "backup"
+        ]
       }
     ],
     "publicTransportHowToBuy": [
@@ -697,10 +657,7 @@ export const STAYS_DATA: CityStay[] = [
     "options": [
       {
         "name": "Centro（市中心；太陽門 Puerta del Sol / 格蘭大道 Gran Vía / 主廣場 Plaza Mayor 一帶，首選：步行動線最直覺）",
-        "why": [
-          "觀光動線最直覺：多數景點＋吃飯都能步行串起來，少轉乘就少踩雷",
-          "晚到的 Day 12 也最適合「下樓就有東西吃」"
-        ],
+        "why": [],
         "risks": [
           "人潮密度高、噪音風險較高；價格也較浮動"
         ],
@@ -709,15 +666,11 @@ export const STAYS_DATA: CityStay[] = [
             "label": "Google Maps",
             "href": "https://www.google.com/maps/search/?api=1&query=Puerta%20del%20Sol%20Madrid"
           }
-        ],
-        "statusHint": "primary"
+        ]
       },
       {
         "name": "Retiro / Paseo del Arte / Atocha（麗池公園 Parque del Retiro / 藝術大道 Paseo del Arte / 阿托查 Atocha；次選：博物館/公園動線方便）",
-        "why": [
-          "Reina Sofía / Retiro / Atocha 一帶動線順，適合你這趟 Day 13 的主菜",
-          "相對沒那麼吵，且交通（地鐵/火車）通常方便"
-        ],
+        "why": [],
         "risks": [
           "去 Centro 夜生活/逛街多半要搭一段地鐵或走 20–40 分鐘"
         ],
@@ -726,15 +679,11 @@ export const STAYS_DATA: CityStay[] = [
             "label": "Google Maps",
             "href": "https://www.google.com/maps/search/?api=1&query=Parque%20del%20Retiro%20Madrid"
           }
-        ],
-        "statusHint": "secondary"
+        ]
       },
       {
         "name": "Salamanca / Chueca（薩拉曼卡 Salamanca / 丘埃卡 Chueca；備選：乾淨好走＋咖啡店多）",
-        "why": [
-          "街區整齊、步行體驗佳，適合「緩衝日」慢慢逛",
-          "若你比較在意住宿品質/安靜度，這類區域通常更穩"
-        ],
+        "why": [],
         "risks": [
           "距離主要觀光點看你選的位置（可能需要更頻繁搭車）"
         ],
@@ -743,8 +692,7 @@ export const STAYS_DATA: CityStay[] = [
             "label": "Google Maps",
             "href": "https://www.google.com/maps/search/?api=1&query=Salamanca%20Madrid"
           }
-        ],
-        "statusHint": "secondary"
+        ]
       }
     ],
     "publicTransportHowToBuy": [
@@ -902,10 +850,7 @@ export const STAYS_DATA: CityStay[] = [
     "options": [
       {
         "name": "Centro / Santa Cruz（市中心 / 聖十字街區 Barrio Santa Cruz；首選：景點密度高、步行最好用）",
-        "why": [
-          "大教堂/Alcázar/老城散步幾乎都能步行完成，省掉「買票＋等車」的摩擦",
-          "中途回住宿休息最方便（塞維爾白天熱的時候這點超重要）"
-        ],
+        "why": [],
         "risks": [
           "旺季（含 Semana Santa）人潮大、價格浮動，晚上也可能較吵",
           "尖峰時段車輛可能進不來或需要繞行（封路/單行道）"
@@ -915,15 +860,11 @@ export const STAYS_DATA: CityStay[] = [
             "label": "Google Maps",
             "href": "https://www.google.com/maps/search/?api=1&query=Santa%20Cruz%20Seville"
           }
-        ],
-        "statusHint": "primary"
+        ]
       },
       {
         "name": "聖胡斯塔車站 / 涅維翁區（Santa Justa / Nervión；次選：轉乘方便、搬行李省力）",
-        "why": [
-          "靠近火車站或地鐵/幹道，帶行李移動更省力，去別城轉乘也更順",
-          "住宿選擇多、通常比老城安靜一些"
-        ],
+        "why": [],
         "risks": [
           "去老城主要靠步行 20–35 分鐘或搭車（每天來回會累）"
         ],
@@ -932,15 +873,11 @@ export const STAYS_DATA: CityStay[] = [
             "label": "Google Maps",
             "href": "https://www.google.com/maps/search/?api=1&query=Sevilla%20Santa%20Justa%20Station"
           }
-        ],
-        "statusHint": "secondary"
+        ]
       },
       {
         "name": "特里亞納（Triana；備選：在地感＋河岸）",
-        "why": [
-          "河岸散步、tapas 氛圍強，晚上回家路線也簡單",
-          "若你想避開最觀光的老城住感，Triana 通常更「生活」"
-        ],
+        "why": [],
         "risks": [
           "到主要景點多半要過橋＋走路或搭車（動線會多一道）"
         ],
@@ -949,8 +886,7 @@ export const STAYS_DATA: CityStay[] = [
             "label": "Google Maps",
             "href": "https://www.google.com/maps/search/?api=1&query=Triana%20Seville"
           }
-        ],
-        "statusHint": "secondary"
+        ]
       }
     ],
     "publicTransportHowToBuy": [

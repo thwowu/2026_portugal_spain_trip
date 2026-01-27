@@ -8,6 +8,7 @@ import { useProgress } from '../state/progress'
 import { useSettings } from '../state/settings'
 import { Modal } from '../components/Modal'
 import { ItineraryBackground } from '../components/ItineraryBackground'
+import { ItineraryScrolly } from '../components/ItineraryScrolly'
 import styles from './ItineraryTimeline.module.css'
 
 function tagLabel(tag: ItineraryDay['tags'][number]) {
@@ -39,6 +40,7 @@ export function ItineraryPage() {
   const [openDays, setOpenDays] = useState<Record<number, boolean>>({})
   const [activeDay, setActiveDay] = useState<number>(1)
   const [tocOpen, setTocOpen] = useState(false)
+  const [viewMode, setViewMode] = useState<'timeline' | 'scrolly'>('timeline')
   const dayRefs = useRef<Map<number, HTMLElement>>(new Map())
   const lastActiveRef = useRef<number>(1)
 
@@ -70,13 +72,22 @@ export function ItineraryPage() {
       return
     }
 
-    const observer = new IntersectionObserver(
+    // Separate concerns:
+    // - revealObserver: mark cards as "in-view" earlier, so adjacent cards are
+    //   effectively preloaded (opacity/transform transition happens sooner).
+    // - activeObserver: keep a tighter "active region" for updating activeDay.
+    const revealObserver = new IntersectionObserver(
       (entries) => {
-        // Toggle "in-view" for entry animations (CSS handles reduced-motion).
         for (const e of entries) {
           ;(e.target as HTMLElement).dataset.inView = e.isIntersecting ? 'true' : 'false'
         }
+      },
+      // Positive margins = treat elements near viewport as intersecting earlier.
+      { root: null, rootMargin: '35% 0px 35% 0px', threshold: 0.01 },
+    )
 
+    const activeObserver = new IntersectionObserver(
+      (entries) => {
         const visible = entries
           .filter((e) => e.isIntersecting)
           .sort((a, b) => (a.boundingClientRect.top ?? 0) - (b.boundingClientRect.top ?? 0))
@@ -88,8 +99,14 @@ export function ItineraryPage() {
       { root: null, rootMargin: '-40% 0px -55% 0px', threshold: [0, 0.1] },
     )
 
-    dayRefs.current.forEach((el) => observer.observe(el))
-    return () => observer.disconnect()
+    dayRefs.current.forEach((el) => {
+      revealObserver.observe(el)
+      activeObserver.observe(el)
+    })
+    return () => {
+      revealObserver.disconnect()
+      activeObserver.disconnect()
+    }
   }, [])
 
   useEffect(() => {
@@ -100,6 +117,14 @@ export function ItineraryPage() {
     }
     const el = document.getElementById(`day-${activeDay}`)
     el?.classList.add('activeDay')
+
+    // Preload/reveal adjacent cards a bit earlier so scrolling/jumping feels instant.
+    // We only need the opacity/transform transition; content is already in-memory.
+    for (const d of [activeDay - 1, activeDay, activeDay + 1]) {
+      const node = document.getElementById(`day-${d}`)
+      if (node) node.dataset.inView = 'true'
+    }
+
     lastActiveRef.current = activeDay
   }, [activeDay])
 
@@ -124,8 +149,9 @@ export function ItineraryPage() {
   }, [allDays, activeDay])
 
   return (
-    <>
-      <ItineraryBackground />
+    <div className="pageItinerary">
+      {viewMode === 'timeline' ? <ItineraryBackground /> : null}
+
       <div className="container" style={{ position: 'relative', zIndex: 1 }}>
         <div className="card">
           <div className="cardInner">
@@ -138,6 +164,20 @@ export function ItineraryPage() {
                   像「流程圖」一樣往下滑：先看每一天摘要，需要再展開。
                 </div>
                 <div className="chipRow" style={{ marginTop: 12 }}>
+                  <button
+                    className={`btn ${viewMode === 'timeline' ? 'btnPrimary' : ''}`}
+                    onClick={() => setViewMode('timeline')}
+                    type="button"
+                  >
+                    時間軸
+                  </button>
+                  <button
+                    className={`btn ${viewMode === 'scrolly' ? 'btnPrimary' : ''}`}
+                    onClick={() => setViewMode('scrolly')}
+                    type="button"
+                  >
+                    地圖跟著走
+                  </button>
                   <button className="btn btnPrimary" onClick={expandAll}>
                     展開全部
                   </button>
@@ -161,45 +201,59 @@ export function ItineraryPage() {
 
         <div style={{ height: 12 }} />
 
-        <Timeline phases={ITINERARY_PHASES} openDays={openDays} onToggleDay={toggleDay} setDayRef={(day, el) => {
-          if (el) dayRefs.current.set(day, el)
-        }} />
+        {viewMode === 'timeline' ? (
+          <>
+            <Timeline
+              phases={ITINERARY_PHASES}
+              openDays={openDays}
+              onToggleDay={toggleDay}
+              setDayRef={(day, el) => {
+                if (el) dayRefs.current.set(day, el)
+              }}
+            />
 
-        <AdjacentDayDock
-          motionEnabled={motionEnabled}
-          activeDay={activeDay}
-          prev={adjacentDays.prev}
-          next={adjacentDays.next}
-        />
+            <AdjacentDayDock
+              motionEnabled={motionEnabled}
+              activeDay={activeDay}
+              prev={adjacentDays.prev}
+              next={adjacentDays.next}
+            />
+          </>
+        ) : (
+          // Scrollytelling layout owns the scroll container + fixed map.
+          <ItineraryScrolly />
+        )}
 
         {/* Floating quick-jump (hamburger) */}
-        <button
-          type="button"
-          className="btn btnPrimary"
-          onClick={() => setTocOpen(true)}
-          aria-haspopup="dialog"
-          aria-label="快速跳轉"
-          title="快速跳轉"
-          style={{
-            position: 'fixed',
-            right: 'calc(env(safe-area-inset-right, 0px) + 14px)',
-            bottom: 'calc(var(--bottomnav-h, 84px) + env(safe-area-inset-bottom, 0px) + 12px)',
-            width: 52,
-            height: 52,
-            borderRadius: 16,
-            display: 'grid',
-            placeItems: 'center',
-            zIndex: 30,
-            boxShadow: '0 18px 46px rgba(0,0,0,0.22)',
-            padding: 0,
-          }}
-        >
-          <span aria-hidden="true" style={{ display: 'grid', gap: 5 }}>
-            <span style={{ width: 20, height: 2, borderRadius: 99, background: 'white', display: 'block' }} />
-            <span style={{ width: 20, height: 2, borderRadius: 99, background: 'white', display: 'block' }} />
-            <span style={{ width: 20, height: 2, borderRadius: 99, background: 'white', display: 'block' }} />
-          </span>
-        </button>
+        {viewMode === 'timeline' ? (
+          <button
+            type="button"
+            className="btn btnPrimary"
+            onClick={() => setTocOpen(true)}
+            aria-haspopup="dialog"
+            aria-label="快速跳轉"
+            title="快速跳轉"
+            style={{
+              position: 'fixed',
+              right: 'calc(env(safe-area-inset-right, 0px) + 14px)',
+              bottom: 'calc(var(--bottomnav-h, 84px) + env(safe-area-inset-bottom, 0px) + 12px)',
+              width: 52,
+              height: 52,
+              borderRadius: 16,
+              display: 'grid',
+              placeItems: 'center',
+              zIndex: 30,
+              boxShadow: '0 18px 46px rgba(0,0,0,0.22)',
+              padding: 0,
+            }}
+          >
+            <span aria-hidden="true" style={{ display: 'grid', gap: 5 }}>
+              <span style={{ width: 20, height: 2, borderRadius: 99, background: 'white', display: 'block' }} />
+              <span style={{ width: 20, height: 2, borderRadius: 99, background: 'white', display: 'block' }} />
+              <span style={{ width: 20, height: 2, borderRadius: 99, background: 'white', display: 'block' }} />
+            </span>
+          </button>
+        ) : null}
 
         {tocOpen && (
           <QuickJumpModal
@@ -212,7 +266,7 @@ export function ItineraryPage() {
           />
         )}
       </div>
-    </>
+    </div>
   )
 }
 

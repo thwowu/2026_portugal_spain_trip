@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.tsx'
 import { SettingsProvider } from './state/settings.tsx'
-import { PlanningProvider, defaultTransportWeights } from './state/planning.tsx'
+import { PlanningProvider } from './state/planning.tsx'
 import { ProgressProvider } from './state/progress.tsx'
 import { CITIES, TRANSPORT_SEGMENTS, type CityId, type TransportSegmentId } from './data/core.ts'
 
@@ -43,7 +43,6 @@ createRoot(document.getElementById('root')!).render(
           ),
           checklist: [],
           changelog: [],
-          transportWeights: defaultTransportWeights(),
         }}
       >
         <ProgressProvider>

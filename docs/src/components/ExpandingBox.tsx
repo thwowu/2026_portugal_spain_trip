@@ -1,9 +1,16 @@
 import { useId, useLayoutEffect, useMemo, useRef, useState } from 'react'
+import { Modal } from './Modal'
 
 type Props = {
   title: React.ReactNode
   meta?: React.ReactNode
   children: React.ReactNode
+
+  /**
+   * - 'accordion' (default): header toggles inline expand/collapse
+   * - 'modal': show only header + "view full" button; content rendered in a Modal
+   */
+  variant?: 'accordion' | 'modal'
 
   /** px. Use 0 for true accordion; use >0 for "peek" read-more. */
   collapsedHeight?: number
@@ -11,6 +18,12 @@ type Props = {
 
   moreLabel?: string
   lessLabel?: string
+
+  /** For `variant="modal"`. */
+  viewLabel?: string
+  viewDisabled?: boolean
+  /** For `variant="modal"`. Prefer passing a plain string for accessibility. */
+  modalAriaLabel?: string
 
   /**
    * Show the bottom "展開/收起" button.
@@ -34,10 +47,14 @@ export function ExpandingBox({
   title,
   meta,
   children,
+  variant = 'accordion',
   collapsedHeight = 0,
   defaultOpen = false,
   moreLabel = '展開…',
   lessLabel = '收起…',
+  viewLabel = '看完整說明',
+  viewDisabled = false,
+  modalAriaLabel,
   footerToggle = 'auto',
   className,
   style,
@@ -45,6 +62,7 @@ export function ExpandingBox({
   const contentId = useId()
   const contentRef = useRef<HTMLDivElement | null>(null)
   const [open, setOpen] = useState(defaultOpen)
+  const [modalOpen, setModalOpen] = useState(false)
   const [measured, setMeasured] = useState(0)
 
   const hasPeek = collapsedHeight > 0
@@ -86,6 +104,59 @@ export function ExpandingBox({
   const mergedStyle = (fadeBg
     ? ({ ...style, '--exp-fade-bg': fadeBg } as React.CSSProperties)
     : style) as React.CSSProperties | undefined
+
+  if (variant === 'modal') {
+    const aria = modalAriaLabel ?? (typeof title === 'string' ? title : '完整說明')
+    return (
+      <>
+        <section className={cx('card', 'expBox', 'expBoxModal', className)} style={mergedStyle}>
+          <div className="expHeader expHeaderRow" role="group" aria-label={aria}>
+            <span className="expHeaderTitle">{title}</span>
+            <span className="expHeaderRight">
+              {meta ? <span className="expHeaderMeta">{meta}</span> : null}
+              <button
+                type="button"
+                className="btn btnPrimary"
+                onClick={() => setModalOpen(true)}
+                disabled={viewDisabled}
+              >
+                {viewLabel}
+              </button>
+            </span>
+          </div>
+        </section>
+
+        <Modal
+          open={modalOpen}
+          ariaLabel={aria}
+          onClose={() => setModalOpen(false)}
+          overlayClassName="modalOverlay modalOverlayHigh"
+          cardClassName="card modalCard"
+          cardStyle={{ maxWidth: 'min(860px, 100%)' }}
+        >
+          <div className="cardInner">
+            <div style={{ display: 'flex', justifyContent: 'space-between', gap: 12, alignItems: 'flex-start' }}>
+              <div style={{ minWidth: 0 }}>
+                <div style={{ fontWeight: 950, fontSize: 'var(--text-xl)', lineHeight: 1.15 }}>{title}</div>
+                {meta ? (
+                  <div className="muted" style={{ fontSize: 'var(--text-xs)', marginTop: 6 }}>
+                    {meta}
+                  </div>
+                ) : null}
+              </div>
+              <button className="btn" onClick={() => setModalOpen(false)}>
+                關閉
+              </button>
+            </div>
+
+            <hr className="hr" />
+
+            {children}
+          </div>
+        </Modal>
+      </>
+    )
+  }
 
   return (
     <section

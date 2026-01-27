@@ -9,19 +9,13 @@ title: 馬德里（Madrid）住宿
 🛏️ 先看 options 選區域｜🚇 再看 publicTransportHowToBuy｜💸 moneySavingTips｜⚠️ riskMatrix
 
 ## options
-- Centro（市中心；太陽門 Puerta del Sol / 格蘭大道 Gran Vía / 主廣場 Plaza Mayor 一帶，首選：步行動線最直覺） | status=primary
-  - why: 觀光動線最直覺：多數景點＋吃飯都能步行串起來，少轉乘就少踩雷
-  - why: 晚到的 Day 12 也最適合「下樓就有東西吃」
+- Centro（市中心；太陽門 Puerta del Sol / 格蘭大道 Gran Vía / 主廣場 Plaza Mayor 一帶，首選：步行動線最直覺）
   - risk: 人潮密度高、噪音風險較高；價格也較浮動
   - link: Google Maps | https://www.google.com/maps/search/?api=1&query=Puerta%20del%20Sol%20Madrid
-- Retiro / Paseo del Arte / Atocha（麗池公園 Parque del Retiro / 藝術大道 Paseo del Arte / 阿托查 Atocha；次選：博物館/公園動線方便） | status=secondary
-  - why: Reina Sofía / Retiro / Atocha 一帶動線順，適合你這趟 Day 13 的主菜
-  - why: 相對沒那麼吵，且交通（地鐵/火車）通常方便
+- Retiro / Paseo del Arte / Atocha（麗池公園 Parque del Retiro / 藝術大道 Paseo del Arte / 阿托查 Atocha；次選：博物館/公園動線方便）
   - risk: 去 Centro 夜生活/逛街多半要搭一段地鐵或走 20–40 分鐘
   - link: Google Maps | https://www.google.com/maps/search/?api=1&query=Parque%20del%20Retiro%20Madrid
-- Salamanca / Chueca（薩拉曼卡 Salamanca / 丘埃卡 Chueca；備選：乾淨好走＋咖啡店多） | status=secondary
-  - why: 街區整齊、步行體驗佳，適合「緩衝日」慢慢逛
-  - why: 若你比較在意住宿品質/安靜度，這類區域通常更穩
+- Salamanca / Chueca（薩拉曼卡 Salamanca / 丘埃卡 Chueca；備選：乾淨好走＋咖啡店多）
   - risk: 距離主要觀光點看你選的位置（可能需要更頻繁搭車）
   - link: Google Maps | https://www.google.com/maps/search/?api=1&query=Salamanca%20Madrid
 

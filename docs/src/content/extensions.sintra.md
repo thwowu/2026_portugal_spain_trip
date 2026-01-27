@@ -19,8 +19,7 @@ title: 辛特拉（Sintra）延伸行程（詳情）
 - 做法：把最難的 佩納宮（Pena；分時段）獨立一天，另一天下 雷加萊拉宮（Regaleira）+ 鎮上慢走
 
 ### why
-- Sintra 最容易翻車的不是「景點不好看」，而是「擠 + 排隊 + 上下山交通」把你體力吃光；拆兩天會把整個體驗從趕路變成享受
-- 歷史小抄：Sintra 的核心是「王室/浪漫主義的想像」加上山城地形；你越不趕，越能感受到它的魔幻（而不是只記得排隊）
+- Sintra 最容易翻車的不是景點不好看，而是「擠 + 排隊 + 上下山交通」把你體力吃光，所以拆兩天會把體驗從趕路變成享受；而你越不趕越能感受到它的魔幻，因為 Sintra 的核心其實是「王室/浪漫主義的想像」疊在山城地形上（不然最後你只會記得排隊）。
 
 ### images
 - {{gallery:Sintra（2 days）|https://commons.wikimedia.org/wiki/Special:FilePath/Pena_National_Palace_-_Sintra_-_Pal%C3%A1cio_Nacional_da_Pena_(15842491914)_(cropped).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Sintra_Portugal_Pal%C3%A1cio_da_Pena-01.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/The_gardens_of_the_Quinta_da_Regaleira_-_Initiation_Well_(34322957286).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Initiation_Well,_Quinta_da_Regaleira,_Light_at_the_End_of_the_Tunnel_(50657854571).jpg?width=1800|https://images.pexels.com/photos/1601495/pexels-photo-1601495.jpeg?auto=compress&cs=tinysrgb&w=1800|https://images.pexels.com/photos/4514109/pexels-photo-4514109.jpeg?auto=compress&cs=tinysrgb&w=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Farol_Cabo_da_Roca.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Cabo_da_Roca_-_Cape_Roca.JPG?width=1800|https://source.unsplash.com/ar9jizD0V88/1800x1200|https://source.unsplash.com/ML7tR9erUps/1800x1200|https://source.unsplash.com/ar9jizD0V88/1800x1200|https://source.unsplash.com/ML7tR9erUps/1800x1200}}
@@ -55,8 +54,7 @@ title: 辛特拉（Sintra）延伸行程（詳情）
 - 核心邏輯：用公車做“主要幹線”，靠「早班/避尖峰/縮減點數」把排隊時間降到最低
 
 ### why
-- Sintra 不是走路問題，是「排隊問題」：你用「早起 + 少一個點」補掉最痛苦的一段，等於用最省錢的方式換回 1–2 小時
-- 歷史小抄：這不是歷史行程，但它能救你的歷史行程——因為你把時間從排隊挪回景點本體
+- Sintra 不是走路問題而是「排隊問題」：你用「早起 + 少一個點」補掉最痛苦的一段，就等於用最省錢的方式換回 1–2 小時，而雖然這不是歷史行程，卻能救你的歷史行程——因為你把時間從排隊挪回景點本體。
 
 ### images
 - {{gallery:434/435 + 補段|https://commons.wikimedia.org/wiki/Special:FilePath/539_ScottUrb_-_Flickr_-_antoniovera1.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/535_ScottUrb_-_Flickr_-_antoniovera1.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Pena_National_Palace_-_Sintra_-_Pal%C3%A1cio_Nacional_da_Pena_(15842491914)_(cropped).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Initiation_Well,_Quinta_da_Regaleira,_Light_at_the_End_of_the_Tunnel_(50657854571).jpg?width=1800}}
@@ -89,8 +87,7 @@ title: 辛特拉（Sintra）延伸行程（詳情）
 - 亮點：花園很舒服、節奏慢、拍照也好看
 
 ### why
-- Monserrate 是「把 Sintra 的精緻留住、把人潮拿掉」：你會有那種終於能好好逛的鬆一口氣
-- 歷史小抄：它的浪漫主義風格與花園設計，就是 Sintra 那種「把自然當舞台」的美學延伸
+- Monserrate 是「把 Sintra 的精緻留住、把人潮拿掉」：你會有那種終於能好好逛的鬆一口氣，而它的浪漫主義風格與花園設計其實正是 Sintra 那種「把自然當舞台」的美學延伸。
 
 ### images
 - {{gallery:Monserrate|https://commons.wikimedia.org/wiki/Special:FilePath/Monserrate_Palace_-_Sintra,_Portugal_(8451615855).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Pal%C3%A1cio_Monserrate_(1).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Garden_of_Mexico_in_the_gardens_of_Pal%C3%A1cio_de_Monserrate,_Sintra,_Portugal_04.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Monserrate_Palace_-_Sintra,_Portugal_(8451615855).jpg?width=1800}}
@@ -121,8 +118,7 @@ title: 辛特拉（Sintra）延伸行程（詳情）
 - 亮點：洞穴/花崗岩＋修道院的極簡生活痕跡（很換腦）
 
 ### why
-- 如果你覺得自己在 Sintra 一直看「浪漫主義的華麗」，Capuchos 會用極簡把你拉回地面：這是很有效的換腦
-- 歷史小抄：修道院的核心是「苦修」與貼近自然，你看到的不是豪華建築，而是生活方式
+- 如果你覺得自己在 Sintra 一直看浪漫主義的華麗，Capuchos 會用極簡把你拉回地面、非常有效換腦，而因為修道院的核心是「苦修」與貼近自然，你看到的不是豪華建築而是一種生活方式。
 
 ### images
 - {{gallery:Capuchos|https://commons.wikimedia.org/wiki/Special:FilePath/Convento_dos_Capuchos_-_Sintra_(1).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Convento_dos_capuchos_(Sintra)_-_Vista_exterior.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Convento_dos_capuchos_(Sintra)_-_Claustro.jpg?width=1800}}
@@ -152,8 +148,7 @@ title: 辛特拉（Sintra）延伸行程（詳情）
 - 亮點：風很大但視野很猛；Azenhas 是峭壁白屋海景
 
 ### why
-- 這是「把 Sintra 的山城故事接到大西洋」：風很大，但那個視野會讓你覺得自己真的到了邊界
-- 歷史小抄：Cabo da Roca 的名片是「最西端」這個象徵（以及燈塔/海岸線）；Azenhas 則是白屋與峭壁把畫面直接做滿
+- 這是「把 Sintra 的山城故事接到大西洋」：風很大，但那個視野會讓你覺得自己真的到了邊界，而 Cabo da Roca 的名片本來就是「最西端」這個象徵（燈塔/海岸線一起成套），Azenhas 則用白屋與峭壁把畫面直接做滿。
 
 ### images
 - {{gallery:Cabo da Roca + Azenhas|https://commons.wikimedia.org/wiki/Special:FilePath/Farol_Cabo_da_Roca.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Cabo_da_Roca_-_Cape_Roca.JPG?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Azenhas_do_Mar_-_Portugal_(8465855175).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Farol_Cabo_da_Roca.jpg?width=1800}}
@@ -183,8 +178,7 @@ title: 辛特拉（Sintra）延伸行程（詳情）
 - 亮點：一天跑山（Sintra），一天跑海（Cascais）
 
 ### why
-- 這個拆法的目的只有一個：讓你「每一天都舒服」。Sintra 本來就容易累，硬塞海岸線只會讓兩邊都不好玩
-- 歷史小抄：把 Sintra 的王室山城感，接到 Cascais 的海岸生活感，兩天會剛好把里斯本周邊的兩種風景性格收完整
+- 這個拆法的目的只有一個：讓你每一天都舒服——Sintra 本來就容易累，硬塞海岸線只會讓兩邊都不好玩，而把 Sintra 的王室山城感接到 Cascais 的海岸生活感，兩天剛好能把里斯本周邊兩種風景性格收完整。
 
 ### images
 - {{gallery:Sintra + Cascais|https://commons.wikimedia.org/wiki/Special:FilePath/Pena_National_Palace_-_Sintra_-_Pal%C3%A1cio_Nacional_da_Pena_(15842491914)_(cropped).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Initiation_Well,_Quinta_da_Regaleira,_Light_at_the_End_of_the_Tunnel_(50657854571).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Ba%C3%ADa_de_Cascais.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Boca_do_Inferno_-_Cascais_-_Portugal_(269119308).jpg?width=1800}}

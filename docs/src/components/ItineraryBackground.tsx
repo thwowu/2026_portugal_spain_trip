@@ -91,6 +91,10 @@ export function ItineraryBackground() {
 
   const markerOpacity = motionEnabled ? 0.78 : 0.74
 
+  // Theme hooks (scoped by `.pageItinerary` wrapper on the page)
+  const primary = 'var(--primary-color, #165b7a)'
+  const border = 'var(--border-color, rgba(255,255,255,0.72))'
+
   return (
     <div
       aria-hidden="true"
@@ -120,8 +124,8 @@ export function ItineraryBackground() {
           <image href={withBaseUrl('/map/map.jpg')} x={0} y={0} width={1024} height={768} />
 
           {/* Path */}
-          <path d={d} fill="none" stroke="rgba(255,255,255,0.72)" strokeWidth={10} strokeLinecap="round" opacity={0.55} />
-          <path ref={pathRef} d={d} fill="none" stroke="rgba(22,91,122,0.85)" strokeWidth={4} strokeLinecap="round" opacity={0.7} />
+          <path d={d} fill="none" stroke={border} strokeWidth={10} strokeLinecap="round" opacity={0.55} />
+          <path ref={pathRef} d={d} fill="none" stroke={primary} strokeWidth={4} strokeLinecap="round" opacity={0.7} />
 
           {/* City points */}
           {(['lisbon', 'lagos', 'seville', 'granada', 'madrid'] as const).map((cid) => {
@@ -129,7 +133,7 @@ export function ItineraryBackground() {
             return (
               <g key={cid}>
                 <circle cx={c.pt.x} cy={c.pt.y} r={10} fill="white" opacity={0.55} />
-                <circle cx={c.pt.x} cy={c.pt.y} r={5.5} fill="rgba(22,91,122,0.7)" />
+                <circle cx={c.pt.x} cy={c.pt.y} r={5.5} fill={primary} opacity={0.7} />
               </g>
             )
           })}
@@ -139,9 +143,9 @@ export function ItineraryBackground() {
         <g opacity={markerOpacity}>
           {/* Bus marker */}
           <g ref={busRef}>
-            <circle cx={0} cy={0} r={14} fill="rgba(255,255,255,0.65)" />
+            <circle cx={0} cy={0} r={14} fill="rgba(255,255,255,0.70)" stroke={border} strokeWidth={1} />
             <g transform="translate(-12 -9)">
-              <rect x={0} y={3} width={24} height={12} rx={4} fill="rgba(22,91,122,0.92)" stroke="rgba(0,0,0,0.28)" strokeWidth={1.4} />
+              <rect x={0} y={3} width={24} height={12} rx={4} fill={primary} stroke="rgba(0,0,0,0.28)" strokeWidth={1.4} />
               <rect x={3} y={6} width={7} height={4} rx={1} fill="rgba(255,255,255,0.82)" />
               <rect x={11} y={6} width={7} height={4} rx={1} fill="rgba(255,255,255,0.82)" />
               <rect x={19} y={6} width={3} height={7} rx={1} fill="rgba(255,255,255,0.58)" />
@@ -152,9 +156,18 @@ export function ItineraryBackground() {
 
           {/* Train marker (a tiny "car" for visual cue). */}
           <g ref={trainRef}>
-            <circle cx={0} cy={0} r={14} fill="rgba(255,255,255,0.65)" />
+            <circle cx={0} cy={0} r={14} fill="rgba(255,255,255,0.70)" stroke={border} strokeWidth={1} />
             <g transform="translate(-12 -9)">
-              <rect x={0} y={3} width={24} height={12} rx={4} fill="rgba(160,72,0,0.88)" stroke="rgba(0,0,0,0.28)" strokeWidth={1.4} />
+              <rect
+                x={0}
+                y={3}
+                width={24}
+                height={12}
+                rx={4}
+                fill="color-mix(in oklab, var(--primary-color, #a05d34) 86%, black)"
+                stroke="rgba(0,0,0,0.28)"
+                strokeWidth={1.4}
+              />
               <rect x={3} y={6} width={13} height={4} rx={1} fill="rgba(255,255,255,0.82)" />
               <rect x={17} y={6} width={4} height={7} rx={1} fill="rgba(255,255,255,0.58)" />
               <circle cx={7} cy={16} r={2.3} fill="rgba(0,0,0,0.5)" />
@@ -166,6 +179,7 @@ export function ItineraryBackground() {
 
       {/* Vignette to keep content readable */}
       <div
+        className="overlay"
         style={{
           position: 'absolute',
           inset: 0,

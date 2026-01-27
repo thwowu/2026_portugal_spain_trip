@@ -20,8 +20,7 @@ title: 里斯本（Lisbon）延伸行程（詳情）
 - 亮點：奧比杜斯（Óbidos）走城牆＋白牆巷弄、納扎雷（Nazaré）看懸崖視角（浪況看運氣）
 
 ### why
-- 這是一個「一文一武」的日子：上午在 Óbidos 收中世紀城牆小鎮的童話感，下午去 Nazaré 用海風與懸崖把腦袋清空
-- 歷史小抄：Óbidos 很像濃縮版的防禦城鎮（城牆/城門把「中世紀」直接攤在你面前）；Nazaré 則從漁村一路變成海岸觀景與巨浪傳說的代表地（看浪況運氣）
+- 這是一個「一文一武」的日子：上午在 Óbidos 收中世紀城牆小鎮的童話感，下午去 Nazaré 用海風與懸崖把腦袋清空，而它們各自的底色也很清楚——Óbidos 像濃縮版防禦城鎮（城牆/城門把「中世紀」直接攤在你面前），Nazaré 則從漁村一路變成海岸觀景與巨浪傳說的代表地（看浪況運氣）。
 
 ### images
 - {{gallery:Óbidos + Nazaré|https://commons.wikimedia.org/wiki/Special:FilePath/The_%C3%93bidos%27_Castle_(4017081137).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Castillo_de_%C3%93bidos,_%C3%93bidos,_Portugal,_2021-09-09,_DD_24.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Train_station_seen_from_the_top_of_%C3%93bidos_Castle_(50119216497).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Sitio_cliff_at_Nazare_Portugal.JPG?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/O_Sitio,_Nazar%C3%A9_(30424018745).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Nazare_North_at_sunset_2021_-4_(wide_with_beach).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Praia_do_Norte,Nazar%C3%A9_-19_(50655732248).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Farol_da_Nazare.jpg?width=1800|https://images.pexels.com/photos/10706604/pexels-photo-10706604.jpeg?auto=compress&cs=tinysrgb&w=1800|https://images.pexels.com/photos/24377407/pexels-photo-24377407.jpeg?auto=compress&cs=tinysrgb&w=1800|https://commons.wikimedia.org/wiki/Special:FilePath/The_%C3%93bidos%27_Castle_(4017081137).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Sitio_cliff_at_Nazare_Portugal.JPG?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Castillo_de_%C3%93bidos,_%C3%93bidos,_Portugal,_2021-09-09,_DD_24.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Nazare_North_at_sunset_2021_-4_(wide_with_beach).jpg?width=1800}}
@@ -71,8 +70,7 @@ title: 里斯本（Lisbon）延伸行程（詳情）
 - 亮點：老城步行、羅馬遺跡、教堂/廣場
 
 ### why
-- 你如果想看「更乾燥、更內陸、更古」的葡萄牙，Évora 是最省腦的一日：老城密度高、用走路就能完成
-- 歷史小抄：Évora 的羅馬神殿與中世紀街廓，讓你在一個下午看到不同時代的層疊（這就是它的 UNESCO 感）
+- 你如果想看「更乾燥、更內陸、更古」的葡萄牙，Évora 是最省腦的一日：老城密度高、用走路就能完成，而且羅馬神殿與中世紀街廓會讓你在一個下午看到不同時代的層疊——這就是它的 UNESCO 感。
 
 ### images
 - {{gallery:Évora|https://commons.wikimedia.org/wiki/Special:FilePath/Templo-diana-evora-portugal.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Templo_Romano_de_Diana_-_%C3%89vora_-_Portugal_(296376498).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Ancient_Roman_Temple,_%C3%89vora_-_Apr_2011.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Templo-diana-evora-portugal.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Templo_Romano_de_Diana_-_%C3%89vora_-_Portugal_(296376498).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Ancient_Roman_Temple,_%C3%89vora_-_Apr_2011.jpg?width=1800}}
@@ -108,8 +106,7 @@ title: 里斯本（Lisbon）延伸行程（詳情）
 - 亮點：海岸線散步＋小鎮氛圍
 
 ### why
-- 這是「里斯本的喘息日」：不用搶票、不用拉很遠，光靠海岸線散步就能把體力回滿
-- 歷史小抄：Cascais 從漁村/海邊小鎮逐漸變成度假與海岸生活的代表（所以氛圍跟里斯本很不一樣）
+- 這是「里斯本的喘息日」：不用搶票、不用拉很遠，光靠海岸線散步就能把體力回滿，而 Cascais 之所以氛圍跟里斯本很不一樣，是因為它從漁村/海邊小鎮逐漸變成度假與海岸生活的代表。
 
 ### images
 - {{gallery:Cascais|https://commons.wikimedia.org/wiki/Special:FilePath/Ba%C3%ADa_de_Cascais.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Boca_do_Inferno_-_Cascais_-_Portugal_(269119308).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Bocadoinferno.jpg?width=1800|https://images.pexels.com/photos/24377407/pexels-photo-24377407.jpeg?auto=compress&cs=tinysrgb&w=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Ba%C3%ADa_de_Cascais.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Boca_do_Inferno_-_Cascais_-_Portugal_(269119308).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Bocadoinferno.jpg?width=1800}}
@@ -134,8 +131,7 @@ title: 里斯本（Lisbon）延伸行程（詳情）
 - 亮點：Setúbal 小城補給＋Arrábida 自然風景（看天氣）
 
 ### why
-- 你如果想要「不是觀光明信片、而是比較在地的海岸線」，Setúbal/Arrábida 是很好的換腦：海、山、港口小城一次收
-- 歷史小抄：這裡的主角是地形（自然公園/海灣），你是在用一天把里斯本周邊的風景尺度拉大
+- 你如果想要「不是觀光明信片、而是比較在地的海岸線」，Setúbal/Arrábida 是很好的換腦：海、山、港口小城一次收，而這裡的主角其實是地形（自然公園/海灣）——你是在用一天把里斯本周邊的風景尺度拉大。
 
 ### images
 - {{gallery:Setúbal + Arrábida|https://commons.wikimedia.org/wiki/Special:FilePath/Set%C3%BAbal_-_Portugal_(103700406).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Portinho_da_Arr%C3%A1bida.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Arr%C3%A1bida_Nature_Park.jpg?width=1800}}
@@ -167,8 +163,7 @@ title: 里斯本（Lisbon）延伸行程（詳情）
 - 亮點：古城氛圍＋主要景點（看你想走多深）
 
 ### why
-- 這是一個「故事很完整」的一日：你不是只看漂亮建築，而是用一個地點把騎士團、修道院、城市發展串起來
-- 歷史小抄：Tomar 最核心的題材是聖殿騎士（Templars）與 Convento de Cristo（基督修道院）這條線，理解背景後逛起來會很有感
+- 這是一個「故事很完整」的一日：你不是只看漂亮建築，而是用一個地點把騎士團、修道院、城市發展串起來，而 Tomar 最核心的題材就是聖殿騎士（Templars）與 Convento de Cristo（基督修道院）這條線——理解背景後逛起來會很有感。
 
 ### images
 - {{gallery:Tomar|https://commons.wikimedia.org/wiki/Special:FilePath/Convento_de_Cristo_-_Tomar.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Convento_de_Cristo,_Tomar_(8089845586).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Interior_do_Convento_de_Cristo_(Tomar,_Portugal).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Convento_de_Cristo_-_Church_Portal_-_Gate_Arch.jpg?width=1800}}
@@ -200,8 +195,7 @@ title: 里斯本（Lisbon）延伸行程（詳情）
 - 亮點：舊城散步＋大學城氛圍（依你體力決定走多少）
 
 ### why
-- 如果你喜歡「城市裡有年紀」的感覺（斜坡、石板路、河岸、學生氣），Coimbra 是很舒服的一日：不用塞行程，走就會有味道
-- 歷史小抄：Coimbra 的名片是大學城；你看到的不是單一景點，而是一整座城市被「學術傳統」形塑出來的氛圍
+- 如果你喜歡「城市裡有年紀」的感覺（斜坡、石板路、河岸、學生氣），Coimbra 是很舒服的一日：不用塞行程、走就會有味道，而它的名片其實是大學城——你看到的不是單一景點，而是一整座城市被「學術傳統」形塑出的氛圍。
 
 ### images
 - {{gallery:Coimbra|https://commons.wikimedia.org/wiki/Special:FilePath/Coimbra_-_Portugal.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Coimbra_University.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Porta_F%C3%A9rrea,_Coimbra.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Rio_mondego_coimbra_2.JPG?width=1800}}

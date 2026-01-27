@@ -63,15 +63,6 @@ const RatingSchema = z
   .min(1)
   .max(5)
 
-export const TransportRatingsSchema = z.object({
-  simplicity: RatingSchema,
-  luggage: RatingSchema,
-  risk: RatingSchema,
-  comfort: RatingSchema,
-  cost: RatingSchema,
-  flexibility: RatingSchema,
-})
-
 export const TransportOptionSchema = z.object({
   mode: TransportModeSchema,
   title: z.string().min(1),
@@ -80,7 +71,6 @@ export const TransportOptionSchema = z.object({
   bookingLinks: z.array(z.object({ label: z.string().min(1), href: z.string().url() })),
   luggageNotes: z.array(z.string().min(1)),
   riskNotes: z.array(z.string().min(1)),
-  ratings: TransportRatingsSchema,
   screenshots: z.array(z.object({ label: z.string().min(1), src: z.string().min(1) })),
 })
 

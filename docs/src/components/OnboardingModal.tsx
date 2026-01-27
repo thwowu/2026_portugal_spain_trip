@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import { IconItinerary, IconStays, IconTransport } from './NavIcons'
 import { useMotionEnabled } from '../state/settings'
@@ -26,11 +26,11 @@ export function OnboardingModal({
         },
         {
           icon: <IconTransport />,
-          title: '交通（看大建議就夠）',
-          subtitle: '火車 vs 巴士比較：先看「大建議」。',
+          title: '交通（先看大建議）',
+          subtitle: '火車 vs 巴士：先看「大建議」，需要再看完整。',
           heroSrc: withBaseUrl('/illustrations/3d-train-on-landscape.png'),
           heroAlt: '示意插圖：交通（3D）',
-          bullets: ['合理就按「直接採用建議」', '不確定就先跳過，晚點再回來'],
+          bullets: ['先寫一句話原因（給爸媽看）', '需要細節再點「看完整說明」'],
         },
         {
           icon: <IconStays />,
@@ -38,11 +38,17 @@ export function OnboardingModal({
           subtitle: '給爸媽一眼看懂：交通方便／不用爬坡／有電梯。',
           heroSrc: withBaseUrl('/illustrations/3d-hotel-building-isometric.png'),
           heroAlt: '示意插圖：住宿（3D）',
-          bullets: ['先標「候選」就好', '需要時再看風險矩陣/量化評分'],
+          bullets: ['先把原因寫好就夠', '需要時再看風險矩陣'],
         },
       ] as const,
     [],
   )
+
+  const [step, setStep] = useState(0)
+  const total = cards.length
+  const current = cards[Math.max(0, Math.min(total - 1, step))] ?? cards[0]
+  const isFirst = step <= 0
+  const isLast = step >= total - 1
 
   useEffect(() => {
     // Preload hero images.
@@ -53,11 +59,21 @@ export function OnboardingModal({
     }
   }, [cards])
 
+  useEffect(() => {
+    // Auto-advance every 3 seconds (stop on last slide so users can read CTA).
+    if (isLast) return
+    const t = window.setTimeout(() => {
+      setStep((s) => Math.min(total - 1, s + 1))
+    }, 3000)
+    return () => window.clearTimeout(t)
+  }, [step, total, isLast])
+
   return (
     <Modal
       open
       ariaLabel="第一次使用說明"
       onClose={onClose}
+      initialFocusRef={primaryBtnRef}
       overlayClassName={`modalOverlay onbOverlay ${allowMotion ? 'onbMotion' : 'onbNoMotion'}`}
       cardClassName={`card modalCard onbCard ${allowMotion ? 'onbMotion' : 'onbNoMotion'}`}
     >
@@ -76,68 +92,95 @@ export function OnboardingModal({
 
           <hr className="hr" />
 
-          {/* Single-page onboarding: 3 big cards */}
-          <div className={`onbStep ${allowMotion ? 'onbMotion' : 'onbNoMotion'}`}>
+          {/* Slideshow onboarding: one card per step */}
+          <div key={current.title} className={`onbStep onbSlide ${allowMotion ? 'onbMotion' : 'onbNoMotion'}`}>
             <div className="muted" style={{ marginTop: 2 }}>
-              先看<strong>行程</strong>就好；其他頁面需要時再看。
+              第 {step + 1}/{total} 頁：先看<strong>行程</strong>就好；其他頁面需要時再看。
             </div>
 
-            <div style={{ marginTop: 12, display: 'grid', gap: 12 }}>
-              {cards.map((c, idx) => (
-                <div key={c.title} className="card modalSectionCard">
-                  <div className="cardInner">
-                    <div style={{ display: 'flex', gap: 10, alignItems: 'baseline', flexWrap: 'wrap' }}>
-                      <span className="chip" aria-hidden="true">
-                        {idx + 1}
+            <div style={{ marginTop: 12 }}>
+              <div className="card modalSectionCard">
+                <div className="cardInner">
+                  <div style={{ display: 'flex', gap: 10, alignItems: 'baseline', flexWrap: 'wrap' }}>
+                    <span className="chip" aria-hidden="true">
+                      {step + 1}
+                    </span>
+                    <div style={{ display: 'inline-flex', gap: 10, alignItems: 'center', flexWrap: 'wrap', minWidth: 0 }}>
+                      <span aria-hidden="true" style={{ display: 'grid', placeItems: 'center' }}>
+                        {current.icon}
                       </span>
-                      <div style={{ fontWeight: 950, fontSize: 'var(--text-lg)' }}>{c.title}</div>
-                    </div>
-
-                    <div className="muted" style={{ marginTop: 8 }}>
-                      {c.subtitle}
-                    </div>
-
-                    <div className="onbHero">
-                      <img
-                        className={`onbHeroImg ${allowMotion ? 'onbMotion' : 'onbNoMotion'}`}
-                        src={c.heroSrc}
-                        alt={c.heroAlt}
-                        loading="lazy"
-                        decoding="async"
-                      />
-                    </div>
-
-                    <div className="prose" style={{ marginTop: 10 }}>
-                      <ul>
-                        {c.bullets.map((b, i) => (
-                          <li
-                            key={b}
-                            className={`onbBullet ${allowMotion ? 'onbMotion' : 'onbNoMotion'}`}
-                            style={{ ['--d' as const]: `${i * 25}ms` } as React.CSSProperties}
-                          >
-                            {b}
-                          </li>
-                        ))}
-                      </ul>
+                      <div style={{ fontWeight: 950, fontSize: 'var(--text-lg)', minWidth: 0 }}>{current.title}</div>
                     </div>
                   </div>
+
+                  <div className="muted" style={{ marginTop: 8 }}>
+                    {current.subtitle}
+                  </div>
+
+                  <div className="onbHero">
+                    <img
+                      className={`onbHeroImg ${allowMotion ? 'onbMotion' : 'onbNoMotion'}`}
+                      src={current.heroSrc}
+                      alt={current.heroAlt}
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+
+                  <div className="prose" style={{ marginTop: 10 }}>
+                    <ul>
+                      {current.bullets.map((b, i) => (
+                        <li
+                          key={b}
+                          className={`onbBullet ${allowMotion ? 'onbMotion' : 'onbNoMotion'}`}
+                          style={{ ['--d' as const]: `${i * 25}ms` } as React.CSSProperties}
+                        >
+                          {b}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
                 </div>
-              ))}
+              </div>
             </div>
 
             <div className="muted" style={{ marginTop: 12 }}>
               「景點」可以晚點再看（有空再慢慢補連結）。
             </div>
+
+            <div className="onbDots" aria-label="導覽進度">
+              {cards.map((c, i) => (
+                <button
+                  key={c.title}
+                  type="button"
+                  className={`onbDot ${i === step ? 'onbDotActive' : ''}`}
+                  aria-label={`第 ${i + 1} 頁`}
+                  aria-current={i === step ? 'true' : undefined}
+                  onClick={() => setStep(i)}
+                />
+              ))}
+            </div>
           </div>
 
           <div className="modalActions">
-            <button
-              className="btn btnPrimary"
-              ref={primaryBtnRef}
-              onClick={onClose}
-            >
-              開始使用
+            <button className="btn" type="button" onClick={() => setStep((s) => Math.max(0, s - 1))} disabled={isFirst}>
+              上一頁
             </button>
+
+            {!isLast ? (
+              <button
+                className="btn btnPrimary"
+                ref={primaryBtnRef}
+                type="button"
+                onClick={() => setStep((s) => Math.min(total - 1, s + 1))}
+              >
+                下一頁
+              </button>
+            ) : (
+              <button className="btn btnPrimary" ref={primaryBtnRef} onClick={onClose}>
+                開始使用
+              </button>
+            )}
 
             <NavLink to="/itinerary" className="btn" onClick={onClose}>
               先看行程

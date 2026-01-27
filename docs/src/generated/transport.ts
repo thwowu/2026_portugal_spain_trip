@@ -39,14 +39,6 @@ export const TRANSPORT_DATA: TransportSegment[] = [
         "riskNotes": [
           "票價浮動，提前買較穩"
         ],
-        "ratings": {
-          "simplicity": 5,
-          "luggage": 4,
-          "risk": 4,
-          "comfort": 4,
-          "cost": 2,
-          "flexibility": 3
-        },
         "screenshots": [
           {
             "label": "火車（示意）",
@@ -75,14 +67,6 @@ export const TRANSPORT_DATA: TransportSegment[] = [
           "長途誤點風險",
           "到站點不同會影響後續轉乘"
         ],
-        "ratings": {
-          "simplicity": 4,
-          "luggage": 4,
-          "risk": 3,
-          "comfort": 3,
-          "cost": 4,
-          "flexibility": 4
-        },
         "screenshots": [
           {
             "label": "巴士（示意）",
@@ -109,14 +93,6 @@ export const TRANSPORT_DATA: TransportSegment[] = [
         "riskNotes": [
           "睡眠品質不穩；若你隔天要排大景點（普拉多/皇宮）會很硬"
         ],
-        "ratings": {
-          "simplicity": 4,
-          "luggage": 4,
-          "risk": 3,
-          "comfort": 2,
-          "cost": 4,
-          "flexibility": 3
-        },
         "screenshots": [
           {
             "label": "（無）",
@@ -166,14 +142,6 @@ export const TRANSPORT_DATA: TransportSegment[] = [
           "誤點風險（塞車/跨境檢查/停靠站）",
           "班次少：錯過通常就要改隔天或改走「轉乘方案」"
         ],
-        "ratings": {
-          "simplicity": 5,
-          "luggage": 5,
-          "risk": 4,
-          "comfort": 3,
-          "cost": 4,
-          "flexibility": 3
-        },
         "screenshots": [
           {
             "label": "巴士（示意）",
@@ -205,14 +173,6 @@ export const TRANSPORT_DATA: TransportSegment[] = [
         "riskNotes": [
           "轉乘銜接風險較高；最後一段巴士別壓太晚"
         ],
-        "ratings": {
-          "simplicity": 2,
-          "luggage": 2,
-          "risk": 2,
-          "comfort": 3,
-          "cost": 2,
-          "flexibility": 2
-        },
         "screenshots": [
           {
             "label": "Alda/Alsa（示意）",
@@ -268,14 +228,6 @@ export const TRANSPORT_DATA: TransportSegment[] = [
           "轉乘時間太緊會增加錯過風險",
           "班表/票價會隨日期變動（以 CP 當下顯示為準）"
         ],
-        "ratings": {
-          "simplicity": 3,
-          "luggage": 3,
-          "risk": 3,
-          "comfort": 4,
-          "cost": 3,
-          "flexibility": 3
-        },
         "screenshots": [
           {
             "label": "火車班次（示意）",
@@ -311,14 +263,6 @@ export const TRANSPORT_DATA: TransportSegment[] = [
           "主要風險是塞車/誤點（出發前用官方 tracker 看車況）",
           "出發站點（Oriente/Sete Rios）要先確認，避免跑錯站"
         ],
-        "ratings": {
-          "simplicity": 5,
-          "luggage": 5,
-          "risk": 4,
-          "comfort": 3,
-          "cost": 4,
-          "flexibility": 4
-        },
         "screenshots": [
           {
             "label": "巴士班次/票價（示意）",
@@ -369,14 +313,6 @@ export const TRANSPORT_DATA: TransportSegment[] = [
           "票價可能較高",
           "熱門時段需提前買"
         ],
-        "ratings": {
-          "simplicity": 4,
-          "luggage": 4,
-          "risk": 4,
-          "comfort": 4,
-          "cost": 2,
-          "flexibility": 3
-        },
         "screenshots": [
           {
             "label": "火車（示意）",
@@ -405,14 +341,6 @@ export const TRANSPORT_DATA: TransportSegment[] = [
           "誤點風險",
           "旺季可能滿位"
         ],
-        "ratings": {
-          "simplicity": 4,
-          "luggage": 4,
-          "risk": 3,
-          "comfort": 3,
-          "cost": 4,
-          "flexibility": 4
-        },
         "screenshots": [
           {
             "label": "巴士（示意）",

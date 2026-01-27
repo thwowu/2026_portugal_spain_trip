@@ -9,20 +9,14 @@ title: 塞維爾（Seville）住宿
 🛏️ 先看 options 選區域｜🚇 再看 publicTransportHowToBuy｜💸 moneySavingTips｜⚠️ riskMatrix
 
 ## options
-- Centro / Santa Cruz（市中心 / 聖十字街區 Barrio Santa Cruz；首選：景點密度高、步行最好用） | status=primary
-  - why: 大教堂/Alcázar/老城散步幾乎都能步行完成，省掉「買票＋等車」的摩擦
-  - why: 中途回住宿休息最方便（塞維爾白天熱的時候這點超重要）
+- Centro / Santa Cruz（市中心 / 聖十字街區 Barrio Santa Cruz；首選：景點密度高、步行最好用）
   - risk: 旺季（含 Semana Santa）人潮大、價格浮動，晚上也可能較吵
   - risk: 尖峰時段車輛可能進不來或需要繞行（封路/單行道）
   - link: Google Maps | https://www.google.com/maps/search/?api=1&query=Santa%20Cruz%20Seville
-- 聖胡斯塔車站 / 涅維翁區（Santa Justa / Nervión；次選：轉乘方便、搬行李省力） | status=secondary
-  - why: 靠近火車站或地鐵/幹道，帶行李移動更省力，去別城轉乘也更順
-  - why: 住宿選擇多、通常比老城安靜一些
+- 聖胡斯塔車站 / 涅維翁區（Santa Justa / Nervión；次選：轉乘方便、搬行李省力）
   - risk: 去老城主要靠步行 20–35 分鐘或搭車（每天來回會累）
   - link: Google Maps | https://www.google.com/maps/search/?api=1&query=Sevilla%20Santa%20Justa%20Station
-- 特里亞納（Triana；備選：在地感＋河岸） | status=secondary
-  - why: 河岸散步、tapas 氛圍強，晚上回家路線也簡單
-  - why: 若你想避開最觀光的老城住感，Triana 通常更「生活」
+- 特里亞納（Triana；備選：在地感＋河岸）
   - risk: 到主要景點多半要過橋＋走路或搭車（動線會多一道）
   - link: Google Maps | https://www.google.com/maps/search/?api=1&query=Triana%20Seville
 

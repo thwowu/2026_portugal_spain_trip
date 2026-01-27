@@ -20,8 +20,7 @@ title: 格拉納達（Granada）延伸行程（詳情）
 - 亮點：白色山村＋內華達山山麓風景
 
 ### why
-- 這是 Granada 周邊最典型的「白村 + 山景」題材：你不是去看單一景點，而是去看整片山麓的生活風景
-- 歷史小抄：Alpujarras 一帶與摩爾與山區聚落文化的故事綁得很深；白牆村落與梯田式地形，就是「人在山裡怎麼生活」的答案
+- 這是 Granada 周邊最典型的「白村 + 山景」題材：你不是去看單一景點，而是去看整片山麓的生活風景，而它之所以有這種氛圍，是因為 Alpujarras 一帶與摩爾與山區聚落文化的故事綁得很深，白牆村落與梯田式地形本身就是「人在山裡怎麼生活」的答案。
 
 ### images
 - {{gallery:Las Alpujarras（白村山景）|https://commons.wikimedia.org/wiki/Special:FilePath/Calle_en_Pampaneira._La_Alpujarra,_Granada..JPG?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Calle_Ver%C3%B3nica,_Pampaneira.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Alpujarras-Location1.PNG?width=1800}}
@@ -54,8 +53,7 @@ title: 格拉納達（Granada）延伸行程（詳情）
 - 亮點：洞穴住居/地景感（半天到一天）
 
 ### why
-- 如果你在 Granada 已經看了一堆石頭建築，Guadix 會用「洞穴城市」直接換腦：題材完全不同，而且很有記憶點
-- 歷史小抄：洞穴住居不是噱頭，而是對氣候與地形的適應——你看到的是「人用地景當房子」的生活方式
+- 如果你在 Granada 已經看了一堆石頭建築，Guadix 會用「洞穴城市」直接換腦、題材完全不同又很有記憶點，而洞穴住居也不是噱頭而是對氣候與地形的適應——你看到的是「人用地景當房子」的生活方式。
 
 ### images
 - {{gallery:Guadix（洞穴住居）|https://commons.wikimedia.org/wiki/Special:FilePath/IAPH_Casas_cueva_Purullena.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Guadix_chimneys.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Cathedral_-_Guadix_-_Spain_-_20110808.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Teatro_romano_de_Guadix_(Julia_Gemella_Acci).jpg?width=1800}}
@@ -82,8 +80,7 @@ title: 格拉納達（Granada）延伸行程（詳情）
 - 這不是行程，是避免踩雷：Nasrid Palaces 分時段，遲到通常就進不去
 
 ### why
-- 你可以不排延伸，但你不能忽略票務：Alhambra 是整趟行程裡「最容易因為票務錯誤而翻車」的點
-- 歷史小抄：Nasrid Palaces 是 Alhambra 的核心（也是最嚴格控流的部分），把它當作「全日時間錨點」安排，才不會讓整天節奏崩掉
+- 你可以不排延伸，但你不能忽略票務：Alhambra 是整趟行程裡最容易因為票務錯誤而翻車的點，而關鍵在 Nasrid Palaces——它是 Alhambra 的核心也是最嚴格控流的部分，所以必須把分時段入場當作「全日時間錨點」安排，整天節奏才不會崩掉。
 
 ### images
 - {{gallery:Alhambra（備忘）|https://commons.wikimedia.org/wiki/Special:FilePath/Alhambra_-_Granada.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Architectural_details_in_Alhambra,_Granada_(6930669668).jpg?width=1800|https://source.unsplash.com/gM1lnTTdWuE/1800x1200|https://source.unsplash.com/ryzLAmYJq1c/1800x1200}}
@@ -106,8 +103,7 @@ title: 格拉納達（Granada）延伸行程（詳情）
 - 亮點：山景＋換腦（比一直走石板路更“開闊”）
 
 ### why
-- 你在 Granada 的視角多半被城市包住；上 Sierra Nevada 會把視角拉到「一整條山脈」——這是最有效的換腦
-- 歷史小抄：內華達山是安達魯西亞重要的地理背景板（也影響氣候與生活），理解這條山脈的存在，會讓你更懂 Granada 的「山城感」
+- 你在 Granada 的視角多半被城市包住；上 Sierra Nevada 會把視角拉到「一整條山脈」，是最有效的換腦，而內華達山作為安達魯西亞的重要地理背景板也會影響氣候與生活，所以你一旦理解這條山脈的存在，就會更懂 Granada 的「山城感」。
 
 ### images
 - {{gallery:Sierra Nevada|https://commons.wikimedia.org/wiki/Special:FilePath/Sierra_Nevada_from_Granada.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/View_of_the_Alhambra_and_Sierra_Nevada_-_Granada_-_Spain.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Granada_Alcazaba_Sierra_Nevada_verkl.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Granada,_Mirador_Ojo_de_Granada,_Sierra_Nevada.jpg?width=1800}}
@@ -137,8 +133,7 @@ title: 格拉納達（Granada）延伸行程（詳情）
 - 亮點：海岸氛圍＋白村散步（拍照回報高）
 
 ### why
-- 這是一個「題材對比」：上午海岸（Nerja）下午白村（Frigiliana），一天內把安達魯西亞的兩種明信片收進來
-- 歷史小抄：白村之所以迷人，很多時候是地形與氣候逼出來的建築語言（白牆、巷弄、坡度），你走在裡面其實是在走「生活的解法」
+- 這是一個「題材對比」：上午海岸（Nerja）下午白村（Frigiliana），一天內把安達魯西亞兩種明信片收進來，而白村之所以迷人，很多時候是地形與氣候逼出的建築語言（白牆、巷弄、坡度）——你走在裡面其實是在走「生活的解法」。
 
 ### images
 - {{gallery:Nerja + Frigiliana|https://commons.wikimedia.org/wiki/Special:FilePath/Nerja_Balcon_de_Europa.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/View_from_Balc%C3%B3n_de_Europa_in_Nerja_2014.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Frigiliana.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Blick_auf_Frigiliana,_Andalusien,_Spanien.jpg?width=1800}}
@@ -168,8 +163,7 @@ title: 格拉納達（Granada）延伸行程（詳情）
 - 亮點：城市海岸感（節奏可做得很輕鬆）
 
 ### why
-- 這是「把自己放回城市節奏」的一天：在 Granada 走了很多坡/巷弄後，Málaga 更適合逛街、吃飯、看海、早點回去休息
-- 歷史小抄：Málaga 是安達魯西亞的重要港城，港口與城市生活緊密連結；你來這裡看的其實是「海邊大城市」的日常
+- 這是「把自己放回城市節奏」的一天：在 Granada 走了很多坡/巷弄後，Málaga 更適合逛街、吃飯、看海、早點回去休息，而它之所以有那種海邊大城市的日常感，是因為 Málaga 本來就是安達魯西亞重要港城，港口與城市生活緊密連結。
 
 ### images
 - {{gallery:Málaga|https://commons.wikimedia.org/wiki/Special:FilePath/Malaga_port.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/ES-Malaga-Hafen.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Puerto_de_Malaga_4.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Palmeral_de_las_Sorpresas_(M%C3%A1laga)_01.jpg?width=1800}}

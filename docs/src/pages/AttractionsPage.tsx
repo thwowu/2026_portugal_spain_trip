@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { ATTRACTIONS_DATA, EXTENSIONS_DATA } from '../generated'
 import { CITIES } from '../data/core'
 import type { CityId } from '../data/core'
@@ -26,6 +26,19 @@ type IndentedNode = {
   text: string
   level: number
   children: IndentedNode[]
+}
+
+const SECTION_TAB_LABEL: Record<string, string> = {
+  must: '必去',
+  easy: '輕鬆',
+  rain: '雨備',
+  views: '視角',
+  routes: '路線',
+  skip: '跳過',
+  practical: '實用',
+  food: '吃',
+  photo: '拍照',
+  safety: '安全',
 }
 
 function stripListMarker(s: string) {
@@ -350,14 +363,14 @@ function Section({
   items,
   onOpenImage,
   onOpenGallery,
-  defaultOpen,
+  ui = 'modal',
 }: {
   kind?: string
   title: string
   items: string[]
   onOpenImage?: (src: string, title: string) => void
   onOpenGallery?: (images: GalleryImage[], title: string) => void
-  defaultOpen?: boolean
+  ui?: 'modal' | 'static'
 }) {
   const hasItems = items.length > 0
   const cls = ['attrSection', kind ? `attrSection_${kind}` : ''].filter(Boolean).join(' ')
@@ -367,23 +380,45 @@ function Section({
       <span className="attrSectionTitleText">{title}</span>
     </span>
   )
+
+  const content = (
+    <div className="muted" style={{ marginTop: 6 }}>
+      {!hasItems ? (
+        <div>（此章節目前尚無項目）</div>
+      ) : (
+        <IndentedList items={items} onOpenImage={onOpenImage} onOpenGallery={onOpenGallery} />
+      )}
+    </div>
+  )
+
+  if (ui === 'static') {
+    return (
+      <section className={['card', cls, 'expStatic'].filter(Boolean).join(' ')} style={{ boxShadow: 'none' }}>
+        <div className="expHeader expHeaderRow">
+          <span className="expHeaderTitle">{titleNode}</span>
+          <span className="expHeaderRight">
+            <span className="expHeaderMeta" style={{ fontSize: 'var(--text-xs)' }}>
+              {hasItems ? `${items.length}` : '—'}
+            </span>
+          </span>
+        </div>
+        <div className="expStaticBody">{content}</div>
+      </section>
+    )
+  }
+
   return (
     <ExpandingBox
       className={cls}
       title={titleNode}
       meta={<span style={{ fontSize: 'var(--text-xs)' }}>{hasItems ? `${items.length}` : '—'}</span>}
-      defaultOpen={defaultOpen ?? hasItems}
-      collapsedHeight={0}
-      footerToggle={false}
+      variant="modal"
+      viewLabel="看完整說明"
+      viewDisabled={!hasItems}
+      modalAriaLabel={title}
       style={{ boxShadow: 'none' }}
     >
-      <div className="muted" style={{ marginTop: 6 }}>
-        {!hasItems ? (
-          <div>（此章節目前尚無項目）</div>
-        ) : (
-          <IndentedList items={items} onOpenImage={onOpenImage} onOpenGallery={onOpenGallery} />
-        )}
-      </div>
+      {content}
     </ExpandingBox>
   )
 }
@@ -397,8 +432,8 @@ export function AttractionsPage() {
   const [lightbox, setLightbox] = useState<{ src: string; title: string } | null>(null)
   const [gallery, setGallery] = useState<{ title: string; images: GalleryImage[]; index: number } | null>(null)
   const [activeCityId, setActiveCityId] = useState<CityId | null>((ATTRACTIONS_DATA[0]?.cityId as CityId) ?? null)
-  const [showCityPicker, setShowCityPicker] = useState(false)
-  const cityPickerCloseRef = useRef<HTMLButtonElement | null>(null)
+  const [activeTabByCity, setActiveTabByCity] = useState<Record<string, string>>({})
+  const [cityProgress, setCityProgress] = useState(0)
 
   const extensionsByCity = useMemo(() => {
     const m = new Map<string, (typeof EXTENSIONS_DATA)[number]>()
@@ -406,20 +441,12 @@ export function AttractionsPage() {
     return m
   }, [])
 
-  const scrollToCity = (cityId: string) => {
-    const el = document.getElementById(`attr-${cityId}`)
-    el?.scrollIntoView({ behavior: 'smooth', block: 'start' })
-  }
-
   const cityOrder = useMemo(() => ATTRACTIONS_DATA.map((c) => c.cityId), [])
   const activeCityIdx = useMemo(() => {
     if (!activeCityId) return 0
     const idx = cityOrder.indexOf(activeCityId)
     return idx >= 0 ? idx : 0
   }, [activeCityId, cityOrder])
-
-  const prevCityId = activeCityIdx > 0 ? cityOrder[activeCityIdx - 1] : null
-  const nextCityId = activeCityIdx < cityOrder.length - 1 ? cityOrder[activeCityIdx + 1] : null
 
   useEffect(() => {
     // Track which city section is currently "in view" (for highlighting / quick nav).
@@ -463,6 +490,44 @@ export function AttractionsPage() {
     return () => io.disconnect()
   }, [])
 
+  useEffect(() => {
+    let raf = 0
+    const onScroll = () => {
+      cancelAnimationFrame(raf)
+      raf = requestAnimationFrame(() => {
+        const total = Math.max(1, cityOrder.length)
+        if (!activeCityId) {
+          setCityProgress(0)
+          return
+        }
+
+        const idx = Math.max(0, cityOrder.indexOf(activeCityId))
+        const section = document.querySelector<HTMLElement>(`section.attrCitySection[data-city-id="${activeCityId}"]`)
+
+        let within = 0
+        if (section) {
+          const rect = section.getBoundingClientRect()
+          const anchor = window.innerHeight * 0.45
+          const denom = rect.height || 1
+          within = Math.min(1, Math.max(0, (anchor - rect.top) / denom))
+        }
+
+        // Continuous progress through cities (including within-city scroll).
+        const p = Math.min(1, Math.max(0, (idx + within) / total))
+        setCityProgress(p)
+      })
+    }
+
+    onScroll()
+    window.addEventListener('scroll', onScroll, { passive: true })
+    window.addEventListener('resize', onScroll)
+    return () => {
+      cancelAnimationFrame(raf)
+      window.removeEventListener('scroll', onScroll)
+      window.removeEventListener('resize', onScroll)
+    }
+  }, [activeCityId, cityOrder])
+
   return (
     <div className="container pageAttractions">
       <div className="card">
@@ -487,27 +552,16 @@ export function AttractionsPage() {
 
       <div style={{ height: 12 }} />
 
-      <div className="attrStickyNav" aria-label="城市快速跳轉（景點）">
-        <div className="card attrStickyNavCard">
-          <div className="cardInner attrStickyNavInner">
-            <div className="attrStickyNow">
-              目前：{activeCityId ? CITIES[activeCityId]?.label : '—'}
+      <div className="attrSectionProgress" aria-label="章節進度（景點）">
+        <div className="card attrSectionProgressCard">
+          <div className="cardInner attrSectionProgressInner">
+            <div className="attrSectionProgressLabel">
+              <span className="attrSectionProgressHint">這段是</span>
+              <span className="attrSectionProgressCity">{activeCityId ? CITIES[activeCityId]?.label : '—'}</span>
+              <span className="attrSectionProgressMeta">{activeCityId ? `${activeCityIdx + 1}/${cityOrder.length}` : '—'}</span>
             </div>
-            <div className="chipRow" style={{ flex: 1 }}>
-              {ATTRACTIONS_DATA.map((c) => {
-                const isActive = activeCityId === (c.cityId as CityId)
-                return (
-                  <button
-                    key={c.cityId}
-                    className={`btn ${isActive ? 'btnPrimary' : ''}`}
-                    onClick={() => scrollToCity(c.cityId)}
-                    aria-current={isActive ? 'true' : undefined}
-                    type="button"
-                  >
-                    {CITIES[c.cityId].label}
-                  </button>
-                )
-              })}
+            <div className="attrSectionProgressBar" aria-hidden="true">
+              <div className="attrSectionProgressBarFill" style={{ width: `${Math.round(cityProgress * 100)}%` }} />
             </div>
           </div>
         </div>
@@ -516,39 +570,71 @@ export function AttractionsPage() {
       <div style={{ height: 10 }} />
 
       <div style={{ display: 'grid', gap: 14 }}>
-        {ATTRACTIONS_DATA.map((c) => (
-          <RevealSection
-            key={c.cityId}
-            id={`attr-${c.cityId}`}
-            cityId={c.cityId as CityId}
-            onSeen={progressActions.markAttractionsSeen}
-          >
-            <div className="card">
-              <div className="cardInner">
-                <div style={{ display: 'flex', gap: 10, alignItems: 'baseline', flexWrap: 'wrap' }}>
-                  <div style={{ fontWeight: 950, fontSize: 'var(--text-xl)', lineHeight: 1.15 }}>
-                    {c.title}
+        {ATTRACTIONS_DATA.map((c) => {
+          const cityKey = c.cityId
+          const defaultKind = c.sections[0]?.kind
+          const activeKind = activeTabByCity[cityKey] ?? defaultKind
+          const activeSection = c.sections.find((s) => s.kind === activeKind) ?? c.sections[0]
+
+          return (
+            <RevealSection
+              key={c.cityId}
+              id={`attr-${c.cityId}`}
+              cityId={c.cityId as CityId}
+              onSeen={progressActions.markAttractionsSeen}
+            >
+              <div className="card attrCityCard">
+                <div className="attrCityCardHeader">
+                  <div
+                    className="attrCityCardCover"
+                    aria-hidden="true"
+                    style={{ backgroundImage: `url(${ILLUSTRATION.heroAttractions.src})` }}
+                  />
+                  <div className="attrCityCardHeaderInner">
+                    <div className="attrCityAvatar" aria-hidden="true">
+                      {CITIES[c.cityId as CityId]?.label?.slice(0, 1) ?? '城'}
+                    </div>
+                    <div className="attrCityHeaderText">
+                      <div className="attrCityNameRow">
+                        <div className="attrCityName">{c.title}</div>
+                        {showSeenHints && progress.attractionsSeen[c.cityId as CityId] ? <div className="chip">已看過</div> : null}
+                      </div>
+                      <div className="attrCitySub">用章節切換快速掃重點（不做每段卡片）。</div>
+                    </div>
                   </div>
-                  {showSeenHints && progress.attractionsSeen[c.cityId as CityId] ? <div className="chip">已看過</div> : null}
-                </div>
-                <div className="muted" style={{ marginTop: 8 }}>
-                  這頁把同一城市的重點集中在一起，方便快速掃過、做取捨；有空再逐步補上連結與細節。
                 </div>
 
-                <hr className="hr" />
+                <div className="attrCityCardMain">
+                  {!activeSection ? null : (
+                    <>
+                      <div className="attrTabs" role="tablist" aria-label={`${c.title} 章節`}>
+                        {c.sections.map((s) => {
+                          const isActive = s.kind === activeSection.kind
+                          return (
+                            <button
+                              key={s.kind}
+                              type="button"
+                              role="tab"
+                              aria-selected={isActive}
+                              className={`attrTabBtn ${isActive ? 'attrTabBtnActive' : ''}`}
+                              onClick={() => setActiveTabByCity((prev) => ({ ...prev, [cityKey]: s.kind }))}
+                            >
+                              {SECTION_TAB_LABEL[s.kind] ?? s.title}
+                            </button>
+                          )
+                        })}
+                      </div>
 
-                <div style={{ display: 'grid', gap: 10 }}>
-                  {c.sections.map((s) => (
-                    <Section
-                      key={s.kind}
-                      kind={s.kind}
-                      title={s.title}
-                      items={s.items}
-                      onOpenImage={(src, title) => setLightbox({ src, title })}
-                      onOpenGallery={(images, title) => setGallery({ images, title, index: 0 })}
-                    />
-                  ))}
-                </div>
+                      <div className="attrTabPanel" role="tabpanel">
+                        <div className="attrTabTitle">{activeSection.title}</div>
+                        <IndentedList
+                          items={activeSection.items}
+                          onOpenImage={(src, title) => setLightbox({ src, title })}
+                          onOpenGallery={(images, title) => setGallery({ images, title, index: 0 })}
+                        />
+                      </div>
+                    </>
+                  )}
 
                 {extensionsByCity.has(c.cityId) && (
                   <>
@@ -593,99 +679,12 @@ export function AttractionsPage() {
                     )}
                   </>
                 )}
+                </div>
               </div>
-            </div>
-          </RevealSection>
-        ))}
+            </RevealSection>
+          )
+        })}
       </div>
-
-      <div className="attrFloatNav" aria-label="景點快速移動">
-        <div className="attrFloatNavPanel">
-          <div className="attrFloatNavInner">
-            <button
-              type="button"
-              className="btn attrFloatBtn"
-              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-              aria-label="回到頁面頂部"
-              title="回頂"
-            >
-              回頂
-            </button>
-            <button
-              type="button"
-              className="btn attrFloatBtn"
-              onClick={() => prevCityId && scrollToCity(prevCityId)}
-              disabled={!prevCityId}
-              aria-label="跳到上一個城市"
-              title="上一城"
-            >
-              上一城
-            </button>
-            <button
-              type="button"
-              className="btn attrFloatBtn btnPrimary"
-              onClick={() => setShowCityPicker(true)}
-              aria-label="開啟城市目錄"
-              title="城市"
-            >
-              城市
-            </button>
-            <button
-              type="button"
-              className="btn attrFloatBtn"
-              onClick={() => nextCityId && scrollToCity(nextCityId)}
-              disabled={!nextCityId}
-              aria-label="跳到下一個城市"
-              title="下一城"
-            >
-              下一城
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <Modal
-        open={showCityPicker}
-        ariaLabel="選擇城市（景點）"
-        onClose={() => setShowCityPicker(false)}
-        overlayClassName="modalOverlay modalOverlayCenter"
-        cardClassName="card modalCard"
-        initialFocusRef={cityPickerCloseRef}
-        cardStyle={{ maxWidth: 'min(560px, 100%)' }}
-      >
-        <div className="cardInner">
-          <div className="modalHeader">
-            <div>
-              <div className="modalTitle">快速跳到城市</div>
-              <div className="muted modalSub">點選城市後會自動滑動到對應段落。</div>
-            </div>
-            <button ref={cityPickerCloseRef} className="btn modalCloseBtn" onClick={() => setShowCityPicker(false)}>
-              關閉
-            </button>
-          </div>
-
-          <hr className="hr" />
-
-          <div className="chipRow">
-            {ATTRACTIONS_DATA.map((c) => {
-              const isActive = activeCityId === (c.cityId as CityId)
-              return (
-                <button
-                  key={c.cityId}
-                  className={`btn ${isActive ? 'btnPrimary' : ''}`}
-                  onClick={() => {
-                    scrollToCity(c.cityId)
-                    setShowCityPicker(false)
-                  }}
-                  type="button"
-                >
-                  {CITIES[c.cityId].label}
-                </button>
-              )
-            })}
-          </div>
-        </div>
-      </Modal>
 
       {active && (
         <ExtensionModal
@@ -735,12 +734,6 @@ function ExtensionModal({
   const trip = data?.trips.find((t) => t.id === tripId)
   if (!trip) return null
 
-  // Extensions are read by the whole family:
-  // - Keep "summary / how / route / time" open (actionable).
-  // - Collapse "why / cost / sources" by default (story/details).
-  const defaultOpenForExtensionsSection = (key: string) =>
-    ['summary', 'images', 'how', 'route', 'time', 'when', 'backup'].includes(key)
-
   return (
     <Modal
       open
@@ -773,7 +766,7 @@ function ExtensionModal({
               key={s.key}
               title={s.title}
               items={s.items}
-              defaultOpen={defaultOpenForExtensionsSection(s.key)}
+              ui="static"
               onOpenImage={onOpenImage}
               onOpenGallery={onOpenGallery}
             />

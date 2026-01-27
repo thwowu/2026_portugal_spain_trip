@@ -31,7 +31,6 @@ title: 拉各斯（Lagos）→ 塞維爾（Seville）
 - riskNotes:
   - 誤點風險（塞車/跨境檢查/停靠站）
   - 班次少：錯過通常就要改隔天或改走「轉乘方案」
-- ratings: simplicity=5 luggage=5 risk=4 comfort=3 cost=4 flexibility=3
 - screenshots:
   - 巴士（示意） | /images/transport/lagos-seville-bus.png
 
@@ -47,7 +46,6 @@ title: 拉各斯（Lagos）→ 塞維爾（Seville）
   - 多段轉乘需要搬行李；轉乘緩衝抓寬
 - riskNotes:
   - 轉乘銜接風險較高；最後一段巴士別壓太晚
-- ratings: simplicity=2 luggage=2 risk=2 comfort=3 cost=2 flexibility=2
 - screenshots:
   - Alda/Alsa（示意） | /images/transport/lagos-seville-bus-alt.png
 

@@ -24,6 +24,8 @@ export function TransportMapWidget({
   height?: number
 }) {
   const motionEnabled = useMotionEnabled()
+  const primary = 'var(--primary-color, #165b7a)'
+  const border = 'var(--border-color, rgba(255,255,255,0.95))'
   const route = useMemo(() => MAP_ROUTES.find((r) => r.id === segmentId), [segmentId])
   const [imgSize, setImgSize] = useState<{ w: number; h: number } | null>(null)
   const imgRef = useRef<HTMLImageElement | null>(null)
@@ -191,7 +193,7 @@ export function TransportMapWidget({
                         <path
                           d={geo.d}
                           fill="none"
-                          stroke="rgba(255,255,255,0.95)"
+                          stroke={border}
                           strokeWidth={6}
                           strokeLinecap="round"
                           strokeLinejoin="round"
@@ -201,7 +203,7 @@ export function TransportMapWidget({
                           ref={pathRef}
                           d={geo.d}
                           fill="none"
-                          stroke="rgba(22,91,122,0.95)"
+                          stroke={primary}
                           strokeWidth={3}
                           strokeLinecap="round"
                           strokeLinejoin="round"
@@ -213,7 +215,7 @@ export function TransportMapWidget({
                           return (
                             <g key={cid}>
                               <circle cx={c.pt.x} cy={c.pt.y} r={10} fill="white" opacity={0.85} />
-                              <circle cx={c.pt.x} cy={c.pt.y} r={6} fill="rgba(22,91,122,0.95)" />
+                              <circle cx={c.pt.x} cy={c.pt.y} r={6} fill={primary} opacity={0.95} />
                             </g>
                           )
                         })}
@@ -231,7 +233,7 @@ export function TransportMapWidget({
                               width={22}
                               height={12}
                               rx={4}
-                              fill={motionEnabled ? 'rgba(22,91,122,0.96)' : 'rgba(22,91,122,0.55)'}
+                              fill={motionEnabled ? primary : 'color-mix(in oklab, var(--primary-color, #165b7a) 55%, white)'}
                               stroke="rgba(0,0,0,0.35)"
                               strokeWidth={1.5}
                             />

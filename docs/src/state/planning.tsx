@@ -42,22 +42,12 @@ export type ChangelogEntry = {
   text: string
 }
 
-export type TransportWeights = {
-  simplicity: number
-  luggage: number
-  risk: number
-  comfort: number
-  cost: number
-  flexibility: number
-}
-
 export type PlanningState = {
   transportDecisions: Record<TransportSegmentId, TransportDecision>
   stayDecisions: Record<CityId, StayDecision>
   attractionDecisions: Record<CityId, AttractionDecision>
   checklist: ChecklistItem[]
   changelog: ChangelogEntry[]
-  transportWeights: TransportWeights
 }
 
 export type PlanningActions = {
@@ -69,7 +59,6 @@ export type PlanningActions = {
   deleteChecklistItem: (id: string) => void
   addChangelog: (text: string) => void
   deleteChangelog: (id: string) => void
-  setTransportWeights: (patch: Partial<TransportWeights>) => void
   replaceState: (next: PlanningState) => void
 }
 
@@ -81,17 +70,6 @@ type PlanningContextValue = {
 const PlanningContext = createContext<PlanningContextValue | null>(null)
 
 const STORAGE_KEY = 'tripPlanner.planning.v1'
-
-export function defaultTransportWeights(): TransportWeights {
-  return {
-    simplicity: 0.25,
-    luggage: 0.2,
-    risk: 0.2,
-    comfort: 0.15,
-    cost: 0.1,
-    flexibility: 0.1,
-  }
-}
 
 function id() {
   return Math.random().toString(36).slice(2, 10)
@@ -174,9 +152,6 @@ export function PlanningProvider({
       },
       deleteChangelog: (entryId) => {
         setState((s) => ({ ...s, changelog: s.changelog.filter((e) => e.id !== entryId) }))
-      },
-      setTransportWeights: (patch) => {
-        setState((s) => ({ ...s, transportWeights: { ...s.transportWeights, ...patch } }))
       },
       replaceState: (next) => {
         setState(next)

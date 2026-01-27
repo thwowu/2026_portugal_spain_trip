@@ -9,28 +9,19 @@ title: 里斯本（Lisbon）住宿
 🛏️ 先看 options 選區域｜🚇 再看 publicTransportHowToBuy｜💸 moneySavingTips｜⚠️ riskMatrix
 
 ## options
-- 盧澤羅斯套房（Luzeiros Suites；首選） | status=primary
-  - why: 交通便利、完全不用爬坡（地鐵旁）
-  - why: 房間空間/隔音/櫃檯穩定度高
-  - why: 適合長途飛行後第一晚降低風險
+- 盧澤羅斯套房（Luzeiros Suites；首選）
   - risk: 價格不是最低
   - risk: 部分方案可能不可取消
   - link: Google Maps | https://maps.app.goo.gl/szKwdhc3Yp7RuU8e8
-- LX 蘇活精品酒店（Lx Soho Boutique；次選） | status=secondary
-  - why: 地鐵站旁不用爬坡
-  - why: 裝潢較新、櫃檯穩定
+- LX 蘇活精品酒店（Lx Soho Boutique；次選）
   - risk: 價格可能波動
   - risk: 可能不可取消
   - link: Google Maps | https://maps.app.goo.gl/aPKctvDx6LYoy38c8
-- 共和大道 83 號（Republica 83；備案：公寓式） | status=backup
-  - why: 位置通常不差（市區移動方便）
-  - why: 若你想要「像住家」的空間/格局，公寓式會更自在
+- 共和大道 83 號（Republica 83；備案：公寓式）
   - risk: 可能沒有 24H 櫃檯（晚到/行李寄放風險）
   - risk: 老樓電梯/隔音/熱水等變因較多，第一晚不確定性偏高
   - link: Google Maps（搜尋） | https://www.google.com/maps/search/?api=1&query=Republica%2083%20Lisbon
-- 易捷飯店・里斯本（easyHotel Lisbon；備案：連鎖平價） | status=backup
-  - why: 預算緊或只求「乾淨可睡」時，連鎖通常比較可預期
-  - why: 常有 24H 櫃檯、可寄放行李（比公寓式省心）
+- 易捷飯店・里斯本（easyHotel Lisbon；備案：連鎖平價）
   - risk: 房間普遍偏小、隔音/舒適度取決於房型
   - risk: 交通便利度/周邊體驗可能不如前兩個選項
   - link: Google Maps（搜尋） | https://www.google.com/maps/search/?api=1&query=easyHotel%20Lisbon

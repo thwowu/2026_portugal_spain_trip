@@ -544,8 +544,18 @@
   color: var(--text);
 }
 
+.expHeaderRow {
+  cursor: default;
+}
+
 .expHeaderTitle {
   min-width: 0;
+}
+
+.expBoxModal .expHeaderTitle {
+  font-size: var(--text-lg);
+  line-height: 1.15;
+  letter-spacing: 0.01em;
 }
 
 .expHeaderRight {
@@ -580,6 +590,10 @@
 
 .expContentInner {
   padding: 0;
+}
+
+.expStaticBody {
+  padding: 0 var(--pad-card) var(--pad-card);
 }
 
 /* Read-more peek: fade the bottom edge when closed (Vue-style affordance). */

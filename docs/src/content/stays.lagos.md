@@ -9,21 +9,15 @@ title: 拉各斯（Lagos）住宿
 🛏️ 先看 options 選區域｜🚇 再看 publicTransportHowToBuy｜💸 moneySavingTips｜⚠️ riskMatrix
 
 ## options
-- 拉各斯老城 / 碼頭區（Lagos Old Town / Marina；首選：最省腦） | status=primary
-  - why: 不自駕最穩：餐廳/碼頭/多數景點都能步行解決，晚上回住宿也不太需要交通
-  - why: 巴士/市內交通的節點通常也在附近（去別城/去景點轉乘最省事）
+- 拉各斯老城 / 碼頭區（Lagos Old Town / Marina；首選：最省腦）
   - risk: 旺季夜間較吵（餐酒吧/人潮）
   - risk: 若自駕停車較麻煩（需找停車場/路邊位）
   - link: Google Maps | https://www.google.com/maps/search/?api=1&query=Lagos%20Old%20Town%20Portugal
-- 唐娜安娜海灘 / 皮耶達德角方向（Praia Dona Ana / Ponta da Piedade；海景派） | status=secondary
-  - why: 走路到海灘/懸崖步道很近，想拍照/看日落最方便
-  - why: 適合 Day 7 那種「海岸線重點日」不用來回跑
+- 唐娜安娜海灘 / 皮耶達德角方向（Praia Dona Ana / Ponta da Piedade；海景派）
   - risk: 往舊城/碼頭多半要走一段（且部分路段有坡）
   - risk: 靠海風大潮濕，曬衣/體感可能比較不友善（看房型與天氣）
   - link: Google Maps | https://www.google.com/maps/search/?api=1&query=Praia%20Dona%20Ana%20Lagos
-- 梅亞海灘 / 拉各斯火車站一帶（Meia Praia / Lagos 火車站；平地＋大沙灘） | status=secondary
-  - why: 平地好走、沙灘大，適合「想放鬆＋不想爬坡」
-  - why: 若你會搭火車移動（往 Portimão / Faro / Tunes），在車站附近會更省搬行李
+- 梅亞海灘 / 拉各斯火車站一帶（Meia Praia / Lagos 火車站；平地＋大沙灘）
   - risk: 去舊城吃飯/逛街通常要走更遠或短程交通（來回時間成本較高）
   - risk: 晚上若想逛熱鬧區，回程要留意路況/時間
   - link: Google Maps | https://www.google.com/maps/search/?api=1&query=Meia%20Praia%20Lagos

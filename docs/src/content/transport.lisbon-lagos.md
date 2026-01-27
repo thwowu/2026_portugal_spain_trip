@@ -33,7 +33,6 @@ title: 里斯本（Lisbon）→ 拉各斯（Lagos）
 - riskNotes:
   - 轉乘時間太緊會增加錯過風險
   - 班表/票價會隨日期變動（以 CP 當下顯示為準）
-- ratings: simplicity=3 luggage=3 risk=3 comfort=4 cost=3 flexibility=3
 - screenshots:
   - 火車班次（示意） | /images/transport/lisbon-lagos-train.png
 
@@ -53,7 +52,6 @@ title: 里斯本（Lisbon）→ 拉各斯（Lagos）
 - riskNotes:
   - 主要風險是塞車/誤點（出發前用官方 tracker 看車況）
   - 出發站點（Oriente/Sete Rios）要先確認，避免跑錯站
-- ratings: simplicity=5 luggage=5 risk=4 comfort=3 cost=4 flexibility=4
 - screenshots:
   - 巴士班次/票價（示意） | /images/transport/lisbon-lagos-bus.png
 
