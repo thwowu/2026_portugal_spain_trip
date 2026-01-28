@@ -66,18 +66,40 @@ function parseBlocks(content: string): Block[] {
   for (const lines of blocks) {
     const trimmed = lines.map((l) => l.trim())
 
-    // Headings: single-line ### / #### only (keeps authoring simple + predictable)
-    if (trimmed.length === 1) {
-      const one = trimmed[0] ?? ''
+    // Headings: allow ### / #### as the FIRST line of a block.
+    // This avoids leaking raw "###" in authored content where headings are immediately
+    // followed by a gallery token or text without a blank line.
+    {
+      const first = trimmed[0] ?? ''
       // Allow headings with or without a space after hashes, e.g. "###（中文...）".
-      const h4 = /^####\s*(.+)$/.exec(one)
+      const h4 = /^####\s*(.+)$/.exec(first)
       if (h4) {
         out.push({ kind: 'h', level: 4, text: (h4[1] ?? '').trim() })
+        const rest = lines.slice(1).join('\n').trim()
+        if (rest) {
+          const galleries: Array<{ title: string; images: GalleryImage[] }> = []
+          for (const m of rest.matchAll(GALLERY_TOKEN_RE)) {
+            const { title, images } = extractGalleryImages(m as RegExpExecArray)
+            if (images.length > 0) galleries.push({ title, images })
+          }
+          const cleaned = rest.replace(GALLERY_TOKEN_RE, '').trim()
+          out.push({ kind: 'p', text: cleaned, galleries })
+        }
         continue
       }
-      const h3 = /^###\s*(.+)$/.exec(one)
+      const h3 = /^###\s*(.+)$/.exec(first)
       if (h3) {
         out.push({ kind: 'h', level: 3, text: (h3[1] ?? '').trim() })
+        const rest = lines.slice(1).join('\n').trim()
+        if (rest) {
+          const galleries: Array<{ title: string; images: GalleryImage[] }> = []
+          for (const m of rest.matchAll(GALLERY_TOKEN_RE)) {
+            const { title, images } = extractGalleryImages(m as RegExpExecArray)
+            if (images.length > 0) galleries.push({ title, images })
+          }
+          const cleaned = rest.replace(GALLERY_TOKEN_RE, '').trim()
+          out.push({ kind: 'p', text: cleaned, galleries })
+        }
         continue
       }
     }

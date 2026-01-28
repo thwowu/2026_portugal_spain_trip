@@ -125,9 +125,11 @@ export function ItineraryLeafletMap({
     const bounds = L.latLngBounds(
       latlngs.map((p) => L.latLng(p.lat, p.lng)),
     )
-    // Slightly tighter default framing so the route feels closer.
-    // Keep a conservative maxZoom so 1–2 waypoint routes don't zoom into street level.
-    map.fitBounds(bounds.pad(0.12), { animate: false, maxZoom: 8 })
+    // User request: make the background map feel "closer".
+    // Leaflet zoom is exponential; +1 zoom level ~= 2x closer.
+    // Keep a conservative cap so 1–2 waypoint routes don't zoom into street level.
+    map.fitBounds(bounds.pad(0.06), { animate: false, maxZoom: 9 })
+    map.setZoom(Math.min(map.getZoom() + 1, 10), { animate: false })
 
     // Vite + Leaflet sometimes needs a size refresh after first paint.
     setTimeout(() => {

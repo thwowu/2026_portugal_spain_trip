@@ -10,60 +10,60 @@ title: 馬德里（Madrid）
 
 ## must
 
-### Day 12（晚到/緩衝）：先用「馬德里城市感」開機
+### Day 12 *（晚到/緩衝）*：先用「馬德里城市感」開機
 
-#### 格蘭大道（Gran Vía；夜景/電影感；大路好走）
+#### **格蘭大道（Gran Vía）** *（夜景/電影感；大路好走）*
 {{gallery:Gran Vía|https://commons.wikimedia.org/wiki/Special:FilePath/Gran_V%C3%ADa_(Madrid)_45.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Gran_V%C3%ADa_(Madrid)_01.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Gran_Via_a_Plaza_Espa%C3%B1a_(Madrid).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Calle_Gran_Via_-_Madrid_-_panoramio.jpg?width=1800}}
 
 最容易「馬上有在大城市」的地方：建築、霓虹與人流一起出現，晚到那天走一段就很滿足。它是 20 世紀初城市改造工程代表，串起核心商業與娛樂區，也因此成為馬德里現代都市景觀的符號。
-小加分：路口的 `Metrópolis` 圓頂（勝利女神像）很有「馬德里百老匯」的招牌感。
+*小加分*：路口的 `Metrópolis` 圓頂（勝利女神像）很有「馬德里百老匯」的招牌感。
 
-#### 太陽門／主廣場（Puerta del Sol / Plaza Mayor）
+#### **太陽門／主廣場（Puerta del Sol / Plaza Mayor）**
 {{gallery:Sol / Plaza Mayor|https://commons.wikimedia.org/wiki/Special:FilePath/Puerta_del_Sol_(Madrid)_04.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Madrid-_Puerta_del_Sol.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Madrid_Bear_at_Puerta_del_Sol.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Plaza_Mayor_de_Madrid_06.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/The_plaza_mayor_in_madrid.jpg?width=1800|https://source.unsplash.com/NqHJ-ogQRZQ/1800x1200}}
 
 把它當作城市的客廳：不必久留，但走過就能把地理感建立起來。Sol 是傳統市中心節點，Plaza Mayor 則代表哈布斯堡時期的城市尺度與公共生活舞台。
 Sol 的小任務：找「零公里（Km 0）」標誌、跟「熊與草莓樹」（馬德里市徽）拍照就算打卡完成。
 
-#### 聖米格爾市場（Mercado de San Miguel）：點心站（吃 2–3 樣就撤退）
+#### **聖米格爾市場（Mercado de San Miguel）** *：點心站（吃 2–3 樣就撤退）*
 {{gallery:Mercado de San Miguel|https://commons.wikimedia.org/wiki/Special:FilePath/Madrid_-_Mercado_de_San_Miguel_2016.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Mercado_de_San_Miguel_(Madrid)_01.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Mercado_de_San_Miguel_(Madrid)_06.jpg?width=1800}}
 
-用最省腦的方式快速吃到西班牙。不求坐下吃滿一餐，反而更好控制時間與預算。人多時顧好手機/錢包。參考：`https://en.wikivoyage.org/wiki/Madrid`
+用最省腦的方式快速吃到西班牙。不求坐下吃滿一餐，反而更好控制時間與預算。*人多時顧好手機/錢包。* 參考：`https://en.wikivoyage.org/wiki/Madrid`
 
-### Day 13（文化之日）：一館＋一個公園，就很完整
+### Day 13 *（文化之日）*：一館＋一個公園，就很完整
 
-#### 索菲亞王后國家藝術中心（Reina Sofía / Museo Reina Sofía；Guernica《格爾尼卡》；建議早到/開門就到）
+#### **索菲亞王后國家藝術中心（Reina Sofía / Museo Reina Sofía）** *（Guernica《格爾尼卡》；建議早到/開門就到）*
 {{gallery:Reina Sofía|https://commons.wikimedia.org/wiki/Special:FilePath/Museo_Nacional_Centro_de_Arte_Reina_Sofia_-_MNCARS_(5185170497).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/MNCARS_ampliaci%C3%B3n_01.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Museo_Reina_Sof%C3%ADa.jpg?width=1800}}
 
 如果你只選一個近代/現代大館，這裡最有代表性。Guernica 本人是那種看過就會記一輩子的作品。它作為國家級現代藝術館，收藏聚焦 20 世紀西班牙藝術與歷史創傷，Guernica 也成為西班牙內戰與反戰記憶的象徵。
 
-#### （順路加分）Atocha 熱帶花園（10–20 分鐘就回本）
+#### （順路加分）**Atocha 熱帶花園** *（10–20 分鐘就回本）*
 {{gallery:Atocha 熱帶花園|https://commons.wikimedia.org/wiki/Special:FilePath/Turtles_in_Atocha_garden_(Madrid)_01.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Atocha_Station,_Madrid_2.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Estaci%C3%B3n_de_Atocha_(Madrid)_19.jpg?width=1800}}
 
 同一個動線上就能用室內綠意把疲勞重置。Atocha 也是馬德里的重要交通樞紐之一，站體在現代化改造後成為城市公共空間的一部分。
 
-#### 麗池公園（Parque del Retiro；含水晶宮；平路好走、長椅多）
+#### **麗池公園（Parque del Retiro）** *（含水晶宮；平路好走、長椅多）*
 {{gallery:Retiro|https://source.unsplash.com/QlLTj9dgbOk/1800x1200|https://source.unsplash.com/0aB2bvIOcZs/1800x1200|https://commons.wikimedia.org/wiki/Special:FilePath/Madrid_Palacio_Cristal_R01.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Palacio_de_Cristal_(Retiro,_Madrid)_06.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Palacio_de_Cristal,_Retiro,_Madrid.jpg?width=1800}}
 
 把城市步調調慢的最佳場所。水晶宮那種透明光感非常上相，也很適合當行程緩衝。它原本與王室園林脈絡相關，後來成為市民公園；水晶宮則是 19 世紀末展覽建築代表作之一。
 （順路可收）`Puerta de Alcalá` 在公園周邊，屬於「走到就很有城市標誌感」的凱旋門系地標。
 
-### （選配）馬德里王宮（Royal Palace）＋東方廣場
+### （選配）**馬德里王宮（Royal Palace）＋東方廣場**
 {{gallery:Royal Palace|https://commons.wikimedia.org/wiki/Special:FilePath/Palacio_Real_de_Madrid_-_21.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/El_Palacio_Real_de_Madrid.JPG?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Palacio_Real.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Palacio_Real_de_Madrid_-_Interior_04.jpg?width=1800}}
 
 不一定要進去；外觀＋廣場＋夕陽就很有感。它是西班牙王室的重要象徵建築，位處核心政治／王權區域，承接王朝更迭下的宮廷與儀式場景。
 
-#### （同區加分）阿穆德納聖母主教座堂（Almudena Cathedral）
+#### （同區加分）**阿穆德納聖母主教座堂（Almudena Cathedral）**
 就在王宮旁邊，同動線一起收很省力。它相對年輕，但外觀/內部的風格混搭很有記憶點；如果你們想要「視野」，再看體力決定要不要上去（不用硬上）。
 
-#### （同區加分）皇家劇院（Teatro Real）
+#### （同區加分）**皇家劇院（Teatro Real）**
 在 `Plaza de Oriente` 一帶，屬於「你不一定要看表演，但路過會覺得：喔這是首都」的那種存在；想要更深入再加導覽/歌劇即可。
 
-### （選配）Prado / Thyssen（二選一就好）
+### （選配）**Prado / Thyssen**（二選一就好）
 {{gallery:Prado / Thyssen|https://commons.wikimedia.org/wiki/Special:FilePath/Puerta_de_Goya_del_Museo_del_Prado.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Interior_del_Museo_del_Prado.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/0_V%C3%A9nus_et_Cupidon_-_P.P._Rubens_-_Mus%C3%A9e_Thyssen-Bornemisza_(2).JPG?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Retrato_de_una_mujer_joven_llamada_%22la_Bella%22,_por_Palma_el_Viejo.jpg?width=1800}}
 
 想看歐洲繪畫教科書選 Prado；想要更好逛、更完整跨時代脈絡選 Thyssen。兩館都與王室／私人收藏的累積有關，形成馬德里「藝術三角」核心。
 
-### 街區散步（三選一）：La Latina / Malasaña / Lavapiés
+### 街區散步（三選一）：**La Latina / Malasaña / Lavapiés**
 {{gallery:La Latina / Malasaña|https://commons.wikimedia.org/wiki/Special:FilePath/La_Latina_-_Madrid.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Madrid_-_Barrio_de_Malasa%C3%B1a_32.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Calle_de_Manuela_Malasa%C3%B1a_(Madrid).jpg?width=1800}}
 
 想把馬德里從景點切換成生活，就靠街區散步。逛雜貨小店、咖啡館與街角酒吧會更有在地感。參考：`https://en.wikivoyage.org/wiki/Madrid`

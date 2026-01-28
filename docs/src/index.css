@@ -143,10 +143,11 @@
   padding: 12px;
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  /* User request: keep ~half-screen separation between day cards */
+  gap: 50vh;
   /* card-position: right */
   margin-left: auto;
-  /* Make the itinerary list more compact without affecting other pages/cards. */
+  /* Keep typography scoped to itinerary only. */
   font-size: var(--text-sm);
   line-height: 1.6;
 }
@@ -770,6 +771,10 @@ select:focus-visible {
   border-radius: 8px;
   border: 1px solid var(--hairline);
   background: color-mix(in oklab, var(--surface-2) 70%, white);
+  /* Prevent long inline code (e.g. backticked URLs) from causing horizontal overflow. */
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  white-space: pre-wrap;
 }
 
 /* Attractions nested list (md->generated TS preserves indentation, UI must too) */
