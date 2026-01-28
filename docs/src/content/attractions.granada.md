@@ -65,12 +65,12 @@ title: 格拉納達（Granada）
 
 一次把 Alhambra（含 Generalife）和 Sierra Nevada 收進同一張明信片構圖。天氣好回報超高，但上坡石階多。
 
-####（加分更在地）Sacromonte（薩克羅蒙特；洞穴區）
+#### （加分更在地）Sacromonte（薩克羅蒙特；洞穴區）
 {{gallery:Sacromonte|https://commons.wikimedia.org/wiki/Special:FilePath/Sacromonte-Granada_(1).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Sacromonte_Nasrid_wall_Granada_Spain.jpg?width=1800}}
 
 洞穴住宅地景＋更野的山坡視角，很適合想看 Granada 另一面的人。它長期與吉普賽／弗拉明戈文化連結，被視為 Granada 具有代表性的在地文化區。參考：`https://en.wikivoyage.org/wiki/Granada_(Spain)`
 
-###（選配）Hammam Al Ándalus（雨天/冷天/想放鬆：超適合）
+### （選配）Hammam Al Ándalus（雨天/冷天/想放鬆：超適合）
 {{gallery:Hammam / Arab Baths|https://commons.wikimedia.org/wiki/Special:FilePath/Aa_albaicin_facade_down_el_banuelo_granada_arab_baths.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Bench_hammam,_Alhambra,_Granada,_Spain.jpg?width=1800}}
 
 把「安達盧斯的水與蒸氣文化」用最舒服的方式體驗一次，特別適合走爆的那天當作復活。它是現代浴場體驗，但靈感來自伊斯蘭世界哈曼傳統，和 Granada 仍可見的摩爾浴場遺跡形成呼應。

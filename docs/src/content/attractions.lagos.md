@@ -42,7 +42,7 @@ title: 拉各斯（Lagos，阿爾加維 Algarve）
 
 為什麼去：海色與岩壁構圖超夢幻，拍照回報高。它同屬 Lagos 近海的海蝕岩岸系統，因「下去看到的那一幕」而成為旅人最常提到的名海灘之一。
 
-###（加分；搭配 Day 8，擇一）
+### （加分；搭配 Day 8，擇一）
 
 #### 卡爾沃埃羅（Carvoeiro）＋阿爾加塞科（Algar Seco）：陸上岩洞/天然窗
 {{gallery:Algar Seco / Carvoeiro|https://commons.wikimedia.org/wiki/Special:FilePath/Algar_Seco_rocks,_Carvoeiro,_Portugal_julesvernex2-4.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Praia_do_Carvalho,_Carvoeiro,_Algarve,_Portugal_2017-04.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Praia_do_Carvalho_-_Portugal_(53106421405).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Costa_de_Algarve,_Portugal.jpg?width=1800}}
@@ -59,20 +59,20 @@ title: 拉各斯（Lagos，阿爾加維 Algarve）
 
 空間不大，但能把旅程從漂亮海岸補到歷史陰影與反思的一面，記憶點很強。它與葡萄牙早期奴隸貿易歷史相關，提醒 Lagos 在大航海時代的港口角色不只有浪漫敘事。參考：`https://en.wikivoyage.org/wiki/Lagos_(Portugal)`
 
-###（風浪 OK 才加）Ponta da Piedade 船/皮划艇/小船
+### （風浪 OK 才加）Ponta da Piedade 船/皮划艇/小船
 如果你想「進到洞穴與拱門裡面」而不是只看上方步道，選這個。遇風浪就改走陸上。參考：`https://en.wikivoyage.org/wiki/Lagos_(Portugal)`
 
 為什麼去：把「看」變成「進入」。從水面貼近拱門與洞穴，地形的震撼會放大好幾倍（海況允許時）。
 
-###（更好走的替代海灘）波爾圖德莫斯海灘（Praia do Porto de Mós）
+### （更好走的替代海灘）波爾圖德莫斯海灘（Praia do Porto de Mós）
 {{gallery:Praia do Porto de Mós|https://commons.wikimedia.org/wiki/Special:FilePath/Praia_do_Porto_de_M%C3%B3s.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Praia_de_Porto_de_M%C3%B3s_-_Portugal_(14216685014).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Porto_de_M%C3%B3s%2C_Algarve_(8344398911).jpg?width=1800}}
 
 你想要的是舒服好走而不是挑戰階梯時，這裡最合適。沙灘寬、撤退也簡單。
 
-###（拍照但不爆累）Praia do Camilo 上方觀景台
+### （拍照但不爆累）Praia do Camilo 上方觀景台
 不一定下長樓梯，站在上面就能拍到夢幻海色。參考：`https://wikitravel.org/en/Lagos_(Portugal)`
 
-###（步道控必收）Dona Ana / Camilo ↔ Ponta da Piedade 懸崖上方串連
+### （步道控必收）Dona Ana / Camilo ↔ Ponta da Piedade 懸崖上方串連
 同一段路能把岩壁與海色一次收齊，走累就撤退折返，非常適合非自駕或想控體力的人。參考：`https://en.wikivoyage.org/wiki/Lagos_(Portugal)`
 
 ## easy

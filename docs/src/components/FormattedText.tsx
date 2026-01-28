@@ -190,8 +190,11 @@ function parseBlocks(text: string): Block[] {
     // Headings: treat a single-line block as heading if it starts with ##/###
     if (trimmed.length === 1) {
       const one = trimmed[0] ?? ''
-      if (one.startsWith('### ')) return { kind: 'h', level: 4, text: one.slice(4).trim() }
-      if (one.startsWith('## ')) return { kind: 'h', level: 3, text: one.slice(3).trim() }
+      // Allow "###（中文...）" (no space) as well as "### Title".
+      const h4 = /^###\s*(.+)$/.exec(one)
+      if (h4) return { kind: 'h', level: 4, text: (h4[1] ?? '').trim() }
+      const h3 = /^##\s*(.+)$/.exec(one)
+      if (h3) return { kind: 'h', level: 3, text: (h3[1] ?? '').trim() }
     }
 
     // Block quote: all lines start with ">"

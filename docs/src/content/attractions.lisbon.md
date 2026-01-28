@@ -30,7 +30,7 @@ title: 里斯本（Lisbon）
 
 為什麼去：平路好走，風景又是「大河＋大橋＋開闊天際線」，很適合當作 Belém 行程的舒服收尾。Belém 河岸一帶本來就是里斯本面向大西洋的門面區，與航海、港口與帝國記憶密切相連。
 
-####（選配）MAAT（進館看展／買票 vs 只拍建築外觀）
+#### （選配）MAAT（進館看展／買票 vs 只拍建築外觀）
 {{gallery:MAAT|https://commons.wikimedia.org/wiki/Special:FilePath/MAAT_-_The_Museum_of_Art,_Architecture_and_Technology_(33806657011).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/MAAT_-_The_Museum_of_Art,_Architecture_and_Technology_(33806650751).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/MAAT_-_Museu_de_Arte_,_Arquitetura_,_Tecnologia_._Lisboa_,_Portugal._(30088010851).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Museum_of_Art,_Architecture_and_Technology_-_MAAT_(28952328878).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/MAAT_-_The_Museum_of_Art,_Architecture_and_Technology_(33806657011).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/MAAT_-_The_Museum_of_Art,_Architecture_and_Technology_(33806650751).jpg?width=1800}}
 
 為什麼去：即使不進館，外觀曲線與河岸光線就很值得。想把里斯本加上「現代建築」這一筆時很適合。它屬於近年的河岸文化設施更新，並與旁邊的發電廠工業遺產脈絡形成新舊對比。
@@ -50,7 +50,7 @@ title: 里斯本（Lisbon）
 
 為什麼去：天然海蝕地形很有戲，海浪撞擊聲與岩洞視覺會一起上來。走路成本不高，回報很快。它屬於海岸侵蝕地形的代表點，名字與傳說式的景觀想像綁在一起，變成 Cascais 經典打卡地。
 
-####（加分）Azenhas do Mar（海邊白屋村）或一個海灘點（視交通／體力）
+#### （加分）Azenhas do Mar（海邊白屋村）或一個海灘點（視交通／體力）
 {{gallery:Azenhas do Mar|https://commons.wikimedia.org/wiki/Special:FilePath/Azenhas_do_Mar_-_Portugal_(8465855175).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/P%C3%B4r_do_Sol_na_praia_das_Azenhas.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Azenhas_do_Mar.JPG?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Azenhas_do_Mar_-_Portugal_(8465855175).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/P%C3%B4r_do_Sol_na_praia_das_Azenhas.jpg?width=1800}}
 
 為什麼去：白屋貼著懸崖的構圖非常上相，是那種看到照片就知道在哪的葡萄牙海岸名場面。它是傳統海岸聚落的地景延伸，因獨特的懸崖村景觀而成為里斯本周邊最常被提及的經典海景點之一。
@@ -65,7 +65,7 @@ title: 里斯本（Lisbon）
 
 為什麼去：收藏品質很像一館抵多館，又能把雨天或腿酸日救回來。花園也適合當作安靜的休息段。它由基金會體系支撐，呈現私人收藏轉化為公共文化資產的典型案例。
 
-####（2026 暫停）國家磁磚博物館（Museu Nacional do Azulejo）
+#### （2026 暫停）國家磁磚博物館（Museu Nacional do Azulejo）
 官網標示整修中，預計至 2026/6。這趟先不要排，改用其他室內點（如 Gulbenkian / 里斯本海洋館 Oceanário / MAAT）。官網：`https://www.museunacionaldoazulejo.pt/en`
 
 {{gallery:Museu Nacional do Azulejo|https://commons.wikimedia.org/wiki/Special:FilePath/Small_cloister_(Claustrim)%2C_Museu_Nacional_do_Azulejo%2C_Lisbon%2C_Portugal_julesvernex2.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Museu_Nacional_do_Azulejo%2C_Lisbon%2C_townscape_azulejo.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Igreja_do_Convento_da_Madre_de_Deus%2C_Lisboa_(Portugal).jpg?width=1800}}
@@ -75,7 +75,7 @@ title: 里斯本（Lisbon）
 
 為什麼去：里斯本的魅力很大一部分就是高低差＋屋頂海。挑 1–2 個眺望點坐下來看光線變化就會很滿足。眺望點分布在老城山丘，對應里斯本沿山勢發展的城市結構，也是一種最直覺的地形課。
 
-####（選配）如果 Day 2 沒去 MAAT／或你想再補一次「現代建築＋展」
+#### （選配）如果 Day 2 沒去 MAAT／或你想再補一次「現代建築＋展」
 把 MAAT 放這天也很順。外觀就很值得；是否進館看展就看你當期展覽與體力。
 
 ### 阿爾法瑪（Alfama）：傍晚老城迷路散步（配 1 個眺望點就很夠）
@@ -83,7 +83,7 @@ title: 里斯本（Lisbon）
 
 小巷、階梯、晾衣繩與轉角視野，把里斯本最經典的老城質感濃縮在這裡。傍晚走最舒服也最好拍。它也是里斯本最古老、最具傳統紋理的街區之一，保留強烈的中世紀山城地形與生活肌理。
 
-###（選配）Fado（現場小場次／訂位）
+### （選配）Fado（現場小場次／訂位）
 {{gallery:Fado|https://commons.wikimedia.org/wiki/Special:FilePath/Lisbon._Fado_at_A_Baiuca._(41223895034).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Museu_do_Fado_-_Lisboa_-_Portugal_(51532759851).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Museu_do_Fado_-_Lisboa_-_Portugal_(52853515828).jpg?width=1800}}
 
 把里斯本的情緒用一晚聽進身體裡。小場次比大秀更容易感受到那種近距離的張力。Fado 是葡萄牙最具代表性的城市音樂傳統之一，與港口城市的生活、遷徙與鄉愁情感緊密相連。

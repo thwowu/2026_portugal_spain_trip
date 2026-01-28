@@ -36,7 +36,7 @@ Sol 的小任務：找「零公里（Km 0）」標誌、跟「熊與草莓樹」
 
 如果你只選一個近代/現代大館，這裡最有代表性。Guernica 本人是那種看過就會記一輩子的作品。它作為國家級現代藝術館，收藏聚焦 20 世紀西班牙藝術與歷史創傷，Guernica 也成為西班牙內戰與反戰記憶的象徵。
 
-####（順路加分）Atocha 熱帶花園（10–20 分鐘就回本）
+#### （順路加分）Atocha 熱帶花園（10–20 分鐘就回本）
 {{gallery:Atocha 熱帶花園|https://commons.wikimedia.org/wiki/Special:FilePath/Turtles_in_Atocha_garden_(Madrid)_01.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Atocha_Station,_Madrid_2.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Estaci%C3%B3n_de_Atocha_(Madrid)_19.jpg?width=1800}}
 
 同一個動線上就能用室內綠意把疲勞重置。Atocha 也是馬德里的重要交通樞紐之一，站體在現代化改造後成為城市公共空間的一部分。
@@ -47,18 +47,18 @@ Sol 的小任務：找「零公里（Km 0）」標誌、跟「熊與草莓樹」
 把城市步調調慢的最佳場所。水晶宮那種透明光感非常上相，也很適合當行程緩衝。它原本與王室園林脈絡相關，後來成為市民公園；水晶宮則是 19 世紀末展覽建築代表作之一。
 （順路可收）`Puerta de Alcalá` 在公園周邊，屬於「走到就很有城市標誌感」的凱旋門系地標。
 
-###（選配）馬德里王宮（Royal Palace）＋東方廣場
+### （選配）馬德里王宮（Royal Palace）＋東方廣場
 {{gallery:Royal Palace|https://commons.wikimedia.org/wiki/Special:FilePath/Palacio_Real_de_Madrid_-_21.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/El_Palacio_Real_de_Madrid.JPG?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Palacio_Real.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Palacio_Real_de_Madrid_-_Interior_04.jpg?width=1800}}
 
 不一定要進去；外觀＋廣場＋夕陽就很有感。它是西班牙王室的重要象徵建築，位處核心政治／王權區域，承接王朝更迭下的宮廷與儀式場景。
 
-####（同區加分）阿穆德納聖母主教座堂（Almudena Cathedral）
+#### （同區加分）阿穆德納聖母主教座堂（Almudena Cathedral）
 就在王宮旁邊，同動線一起收很省力。它相對年輕，但外觀/內部的風格混搭很有記憶點；如果你們想要「視野」，再看體力決定要不要上去（不用硬上）。
 
-####（同區加分）皇家劇院（Teatro Real）
+#### （同區加分）皇家劇院（Teatro Real）
 在 `Plaza de Oriente` 一帶，屬於「你不一定要看表演，但路過會覺得：喔這是首都」的那種存在；想要更深入再加導覽/歌劇即可。
 
-###（選配）Prado / Thyssen（二選一就好）
+### （選配）Prado / Thyssen（二選一就好）
 {{gallery:Prado / Thyssen|https://commons.wikimedia.org/wiki/Special:FilePath/Puerta_de_Goya_del_Museo_del_Prado.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Interior_del_Museo_del_Prado.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/0_V%C3%A9nus_et_Cupidon_-_P.P._Rubens_-_Mus%C3%A9e_Thyssen-Bornemisza_(2).JPG?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Retrato_de_una_mujer_joven_llamada_%22la_Bella%22,_por_Palma_el_Viejo.jpg?width=1800}}
 
 想看歐洲繪畫教科書選 Prado；想要更好逛、更完整跨時代脈絡選 Thyssen。兩館都與王室／私人收藏的累積有關，形成馬德里「藝術三角」核心。
@@ -113,10 +113,10 @@ Sol 的小任務：找「零公里（Km 0）」標誌、跟「熊與草莓樹」
 ### 刺激：RIU Plaza España 高空玻璃空橋
 想要「高、刺激、視野」一次到位可以考慮（價格通常也比較高）。如果你們對透明玻璃橋無感，就直接去 Círculo 這種 CP 值更高的版本。
 
-###（加分）Faro de Moncloa（蒙克洛亞塔）
+### （加分）Faro de Moncloa（蒙克洛亞塔）
 相對少觀光客的高點觀景台；天氣好時視野很乾淨，適合當成「不是屋頂酒吧」的替代方案。
 
-###（加分）Teleférico（纜車）＋ Casa de Campo（田園之家）
+### （加分）Teleférico（纜車）＋ Casa de Campo（田園之家）
 從城市另一側回望馬德里天際線（跟 Debod 的視角不一樣）。週末很在地，但天氣差/風大就別硬搭。
 
 ## routes

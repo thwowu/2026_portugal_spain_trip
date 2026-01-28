@@ -125,7 +125,9 @@ export function ItineraryLeafletMap({
     const bounds = L.latLngBounds(
       latlngs.map((p) => L.latLng(p.lat, p.lng)),
     )
-    map.fitBounds(bounds.pad(0.18), { animate: false })
+    // Slightly tighter default framing so the route feels closer.
+    // Keep a conservative maxZoom so 1–2 waypoint routes don't zoom into street level.
+    map.fitBounds(bounds.pad(0.12), { animate: false, maxZoom: 8 })
 
     // Vite + Leaflet sometimes needs a size refresh after first paint.
     setTimeout(() => {

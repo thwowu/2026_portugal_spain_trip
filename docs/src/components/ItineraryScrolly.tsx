@@ -39,6 +39,7 @@ export function ItineraryScrolly() {
   const [hoveredStep, setHoveredStep] = useState<number | null>(null)
   const [selectedDay, setSelectedDay] = useState<ItineraryDay | null>(null)
   const stepRefs = useRef<Map<number, HTMLElement>>(new Map())
+  const ioRef = useRef<IntersectionObserver | null>(null)
 
   useEffect(() => {
     const d = days[activeStep]
@@ -71,8 +72,12 @@ export function ItineraryScrolly() {
       { root: null, rootMargin: '-40% 0px -55% 0px', threshold: [0, 0.1] },
     )
 
+    ioRef.current = io
     stepRefs.current.forEach((el) => io.observe(el))
-    return () => io.disconnect()
+    return () => {
+      io.disconnect()
+      ioRef.current = null
+    }
   }, [])
 
   useEffect(() => {
@@ -147,7 +152,13 @@ export function ItineraryScrolly() {
             data-step={d.day}
             data-step-index={idx}
             ref={(el) => {
-              if (el) stepRefs.current.set(idx, el)
+              if (el) {
+                stepRefs.current.set(idx, el)
+                // Ensure the card is observed even if refs settle after the effect.
+                ioRef.current?.observe(el)
+              } else {
+                stepRefs.current.delete(idx)
+              }
             }}
             tabIndex={-1}
             onMouseEnter={() => setHoveredStep(idx)}
@@ -156,14 +167,14 @@ export function ItineraryScrolly() {
             onBlur={() => setHoveredStep(null)}
           >
             <div className="cardInner">
-              <h3 style={{ margin: 0, fontSize: '1.25em' }}>{`Day ${d.day}${d.dateLabel ? `｜${d.dateLabel}` : ''}`}</h3>
-              <h4 style={{ margin: '8px 0 0 0' }}>{d.cityLabel}</h4>
-              <p style={{ margin: '10px 0 0 0', whiteSpace: 'pre-wrap' }}>{d.title}</p>
-              <p style={{ margin: '10px 0 0 0', whiteSpace: 'pre-wrap' }}>{dayCardText(d)}</p>
-              <div style={{ marginTop: 12 }}>
+              <h3 className="itDayHeading">{`Day ${d.day}${d.dateLabel ? `｜${d.dateLabel}` : ''}`}</h3>
+              <h4 className="itCityHeading">{d.cityLabel}</h4>
+              <p className="itTitleText">{d.title}</p>
+              <p className="itSummaryText">{dayCardText(d)}</p>
+              <div className="itActions">
                 <button
                   type="button"
-                  className="btn btnPrimary"
+                  className="btn btnPrimary btnSm"
                   onClick={() => setSelectedDay(d)}
                   aria-haspopup="dialog"
                   aria-label={`展開細節：Day ${d.day}`}

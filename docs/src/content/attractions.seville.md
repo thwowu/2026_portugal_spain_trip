@@ -10,7 +10,7 @@ title: 塞維爾（Seville）
 
 ## must
 
-###（Day 10 半天快閃，推薦順序）西班牙廣場＋瑪麗亞路易莎公園（Plaza de España + Parque de María Luisa）
+### （Day 10 半天快閃，推薦順序）西班牙廣場＋瑪麗亞路易莎公園（Plaza de España + Parque de María Luisa）
 {{gallery:Plaza de España|https://source.unsplash.com/-obj1_oSNA4/1800x1200|https://source.unsplash.com/XxN_4HuqzRw/1800x1200|https://commons.wikimedia.org/wiki/Special:FilePath/Plaza_de_Espana_-_Sevilla.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Plaza_de_Espa%C3%B1a_-_Sevilla_-_015_-_Panorama.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Monumental_Plaza_de_Espa%C3%B1a_de_Sevilla.jpg?width=1800}}
 
 一到現場就知道為什麼它是 Sevilla 的代表照：尺度、磁磚細節與水道把氛圍直接拉滿。這段平路好走，也可隨時坐下休息，對「半天快閃」非常友善。
@@ -29,12 +29,12 @@ title: 塞維爾（Seville）
 
 白天看木構建築就有感，傍晚再上去看夕陽，把它當成「視野＋城市中樞」。它雖是現代建築，但所在位置與城市公共空間更新相關，象徵 Sevilla 近年的城市再生與當代地標化。參考：`https://en.wikivoyage.org/wiki/Seville`
 
-###（有票/有完整一天才升級）Real Alcázar（塞維爾王宮）
+### （有票/有完整一天才升級）Real Alcázar（塞維爾王宮）
 {{gallery:Real Alcázar|https://source.unsplash.com/lsb1qSQUHm4/1800x1200|https://source.unsplash.com/BNYEBEu9G4s/1800x1200|https://commons.wikimedia.org/wiki/Special:FilePath/Sevilla_Alcazar_03.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Sevilla._Alcazar,_Patio_de_las_Doncellas.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Sevilla-Reales_Alcazares-Patio_de_las_Doncellas_3-20110915.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Real_Alc%C3%A1zar,_Cuarto_del_Almirante.jpg?width=1800}}
 
 如果你喜歡 Granada 的 Alhambra，這裡是同一條審美脈絡的另一個高峰。庭園很好走、很好拍，雨天也能逛。它從摩爾王朝時期的宮殿／要塞發展而來，後續在基督教統治下持續擴建與使用，是多世紀層累積的王宮群。
 
-###（有票/有完整一天才升級）塞維爾主教座堂＋吉拉達塔（Giralda）
+### （有票/有完整一天才升級）塞維爾主教座堂＋吉拉達塔（Giralda）
 {{gallery:Seville Cathedral + Giralda|https://commons.wikimedia.org/wiki/Special:FilePath/Seville_Cathedral.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Cathedral_with_Giralda_Tower_-_Seville_-_Spain.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/La_Giralda,_Seville,_Spain_-_Sep_2009.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Giralda,_Sevilla.JPG?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Giralda_Tower_Seville_Spain.jpg?width=1800}}
 
 想要視野就上 Giralda（需要走/坡道）。你會把塞維爾的宗教與城市高度一次補滿。大教堂與 Giralda 反映從伊斯蘭到基督教的城市轉折（塔身與舊清真寺傳統相連），是 Sevilla 最核心的歷史地標群。參考：`https://en.wikivoyage.org/wiki/Seville`
@@ -44,7 +44,7 @@ title: 塞維爾（Seville）
 
 把它當作連接 Alcázar ↔ 大教堂 ↔ 河岸的散步網格，迷路也好玩。它保留大量中世紀巷弄尺度與生活肌理，是城市歷史核心的步行舞台。參考：`https://en.wikivoyage.org/wiki/Seville`、`https://wikitravel.org/en/Seville`
 
-###（同街區的免費室內短停）印地亞斯總檔案館（Archivo General de Indias）
+### （同街區的免費室內短停）印地亞斯總檔案館（Archivo General de Indias）
 {{gallery:Archivo General de Indias|https://commons.wikimedia.org/wiki/Special:FilePath/Sevilla_-_Archivo_General_de_Indias_1.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Sevilla_-_Archivo_General_de_Indias_2.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Archivo_de_Indias_002.jpg?width=1800}}
 
 就在大教堂旁邊，免費/低成本且很適合熱或雨的短停。它集中保存與西班牙海外殖民／航海帝國相關的檔案資料，是 Sevilla 作為帝國行政中心記憶的重要容器。參考：`https://en.wikivoyage.org/wiki/Seville`

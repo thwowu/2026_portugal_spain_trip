@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useCallback, useEffect, useMemo, useState } from 'react'
 import { ATTRACTIONS_DATA, EXTENSIONS_DATA } from '../generated'
 import { CITIES, STAYS_CITY_ORDER } from '../data/core'
 import type { CityId } from '../data/core'
@@ -85,6 +85,27 @@ export function AttractionsPage() {
     return idx >= 0 ? idx : 0
   }, [activeCityId, cityOrder])
 
+  const scrollToCity = useCallback((cityId: CityId) => {
+    const el = document.getElementById(`attr-${cityId}`)
+    if (!el) return
+    const prefersReducedMotion =
+      typeof window !== 'undefined' && window.matchMedia
+        ? window.matchMedia('(prefers-reduced-motion: reduce)').matches
+        : false
+    el.scrollIntoView({ behavior: prefersReducedMotion ? 'auto' : 'smooth', block: 'start' })
+    setActiveCityId(cityId)
+  }, [])
+
+  const prevCityId = useMemo(() => {
+    const id = cityOrder[activeCityIdx - 1]
+    return (id as CityId | undefined) ?? null
+  }, [activeCityIdx, cityOrder])
+
+  const nextCityId = useMemo(() => {
+    const id = cityOrder[activeCityIdx + 1]
+    return (id as CityId | undefined) ?? null
+  }, [activeCityIdx, cityOrder])
+
   useEffect(() => {
     // Track which city section is currently "in view" (for highlighting / quick nav).
     const els = Array.from(
@@ -126,6 +147,33 @@ export function AttractionsPage() {
     for (const el of els) io.observe(el)
     return () => io.disconnect()
   }, [])
+
+  useEffect(() => {
+    // Keyboard quick-nav: ArrowLeft / ArrowRight to jump across cities.
+    // Avoid stealing keys when modals/lightboxes are open.
+    if (active || lightbox || gallery) return
+
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.defaultPrevented) return
+      const target = e.target as HTMLElement | null
+      const tag = target?.tagName?.toLowerCase()
+      if (tag === 'input' || tag === 'textarea' || tag === 'select' || target?.isContentEditable) return
+
+      if (e.key === 'ArrowLeft') {
+        if (!prevCityId) return
+        e.preventDefault()
+        scrollToCity(prevCityId)
+      }
+      if (e.key === 'ArrowRight') {
+        if (!nextCityId) return
+        e.preventDefault()
+        scrollToCity(nextCityId)
+      }
+    }
+
+    window.addEventListener('keydown', onKeyDown)
+    return () => window.removeEventListener('keydown', onKeyDown)
+  }, [active, gallery, lightbox, nextCityId, prevCityId, scrollToCity])
 
   useEffect(() => {
     let raf = 0
@@ -192,10 +240,34 @@ export function AttractionsPage() {
       <div className="attrSectionProgress" aria-label="章節進度（景點）">
         <div className="card attrSectionProgressCard">
           <div className="cardInner attrSectionProgressInner">
-            <div className="attrSectionProgressLabel">
-              <span className="attrSectionProgressHint">這段是</span>
-              <span className="attrSectionProgressCity">{activeCityId ? CITIES[activeCityId]?.label : '—'}</span>
-              <span className="attrSectionProgressMeta">{activeCityId ? `${activeCityIdx + 1}/${cityOrder.length}` : '—'}</span>
+            <div className="attrSectionProgressTopRow">
+              <div className="attrSectionProgressLabel">
+                <span className="attrSectionProgressHint">這段是</span>
+                <span className="attrSectionProgressCity">{activeCityId ? CITIES[activeCityId]?.label : '—'}</span>
+                <span className="attrSectionProgressMeta">{activeCityId ? `${activeCityIdx + 1}/${cityOrder.length}` : '—'}</span>
+              </div>
+              <div className="attrSectionProgressNav" role="group" aria-label="切換城市">
+                <button
+                  type="button"
+                  className="btn attrSectionProgressNavBtn"
+                  onClick={() => prevCityId && scrollToCity(prevCityId)}
+                  disabled={!prevCityId}
+                  aria-label="上一個城市"
+                  title="上一個城市（←）"
+                >
+                  ←
+                </button>
+                <button
+                  type="button"
+                  className="btn attrSectionProgressNavBtn"
+                  onClick={() => nextCityId && scrollToCity(nextCityId)}
+                  disabled={!nextCityId}
+                  aria-label="下一個城市"
+                  title="下一個城市（→）"
+                >
+                  →
+                </button>
+              </div>
             </div>
             <div className="attrSectionProgressBar" aria-hidden="true">
               <div className="attrSectionProgressBarFill" style={{ width: `${Math.round(cityProgress * 100)}%` }} />

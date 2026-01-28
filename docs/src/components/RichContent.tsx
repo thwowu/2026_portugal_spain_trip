@@ -69,12 +69,15 @@ function parseBlocks(content: string): Block[] {
     // Headings: single-line ### / #### only (keeps authoring simple + predictable)
     if (trimmed.length === 1) {
       const one = trimmed[0] ?? ''
-      if (one.startsWith('#### ')) {
-        out.push({ kind: 'h', level: 4, text: one.slice(5).trim() })
+      // Allow headings with or without a space after hashes, e.g. "###（中文...）".
+      const h4 = /^####\s*(.+)$/.exec(one)
+      if (h4) {
+        out.push({ kind: 'h', level: 4, text: (h4[1] ?? '').trim() })
         continue
       }
-      if (one.startsWith('### ')) {
-        out.push({ kind: 'h', level: 3, text: one.slice(4).trim() })
+      const h3 = /^###\s*(.+)$/.exec(one)
+      if (h3) {
+        out.push({ kind: 'h', level: 3, text: (h3[1] ?? '').trim() })
         continue
       }
     }
