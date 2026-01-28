@@ -1,6 +1,4 @@
-import { useRef } from 'react'
 import { useSettings, type FontScale } from '../state/settings'
-import { useProgress } from '../state/progress'
 import { Modal } from './Modal'
 import { MotionToggle } from './MotionToggle'
 
@@ -17,9 +15,7 @@ export function SettingsModal({
   open: boolean
   onClose: () => void
 }) {
-  const { fontScale, setFontScale, showSeenHints, setShowSeenHints, resetRecommended } = useSettings()
-  const { actions: progressActions } = useProgress()
-  const closeBtnRef = useRef<HTMLButtonElement | null>(null)
+  const { fontScale, setFontScale, resetRecommended } = useSettings()
 
   const title = '設定'
 
@@ -29,7 +25,6 @@ export function SettingsModal({
       ariaLabel={title}
       onClose={onClose}
       overlayClassName="modalOverlay modalOverlayHigh"
-      initialFocusRef={closeBtnRef}
     >
       <div className="cardInner">
           <div className="modalHeader">
@@ -39,9 +34,6 @@ export function SettingsModal({
                 字體預設偏大、好閱讀；如果覺得太大/太小，可在這裡調整。
               </div>
             </div>
-            <button className="btn modalCloseBtn" ref={closeBtnRef} onClick={onClose}>
-              關閉
-            </button>
           </div>
 
           <hr className="hr" />
@@ -100,30 +92,6 @@ export function SettingsModal({
           </div>
 
           <div style={{ height: 10 }} />
-
-          <div className="card modalSectionCard">
-            <div className="cardInner">
-              <div style={{ display: 'flex', justifyContent: 'space-between', gap: 12, alignItems: 'center', flexWrap: 'wrap' }}>
-                <div style={{ fontWeight: 900 }}>已讀/已看過提示</div>
-                <button
-                  type="button"
-                  className={`btn ${showSeenHints ? 'btnPrimary' : ''}`}
-                  onClick={() => setShowSeenHints(!showSeenHints)}
-                  aria-pressed={showSeenHints}
-                >
-                  {showSeenHints ? '開' : '關'}
-                </button>
-              </div>
-              <div className="muted" style={{ marginTop: 8, fontSize: 'var(--text-sm)' }}>
-                開啟後，看過某段內容會顯示「已看過」，方便爸媽知道哪些已經掃過。
-              </div>
-              <div style={{ marginTop: 12, display: 'flex', gap: 10, flexWrap: 'wrap' }}>
-                <button className="btn" type="button" onClick={() => progressActions.clearAllSeen()}>
-                  清除已讀/已看過標記
-                </button>
-              </div>
-            </div>
-          </div>
 
           <div className="modalActions">
             <button className="btn btnPrimary" onClick={onClose}>

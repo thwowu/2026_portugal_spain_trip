@@ -9,7 +9,34 @@ type InlineToken =
   | { kind: 'link'; label: string; href: string }
   | { kind: 'bold'; value: string }
   | { kind: 'italic'; value: string }
-  | { kind: 'url'; href: string }
+  | { kind: 'url'; href: string; label: string }
+
+function splitTrailingUrlPunct(url: string) {
+  // Common trailing punctuations in our zh-TW content + markdown-ish contexts
+  const m = /^(.*?)([),.;:!?，。；：！？、》」）】]+)?$/.exec(url)
+  if (!m) return { url, punct: '' }
+  return { url: (m[1] ?? url).trim(), punct: (m[2] ?? '').trim() }
+}
+
+function formatUrlLabel(href: string) {
+  try {
+    const u = new URL(href)
+    const host = (u.hostname || '').replace(/^www\./, '')
+    // Friendly labels for common travel references
+    if (host === 'maps.app.goo.gl' || host === 'goo.gl' || host === 'google.com' || host === 'www.google.com') {
+      if (u.pathname.includes('/maps') || host.includes('goo.gl') || host.includes('maps')) return 'Google Maps'
+    }
+    if (host.endsWith('klook.com')) return 'Klook'
+    if (host.endsWith('getyourguide.com')) return 'GetYourGuide'
+    if (host.endsWith('booking.com')) return 'Booking.com'
+    if (host.endsWith('airbnb.com')) return 'Airbnb'
+    if (host.endsWith('rome2rio.com')) return 'Rome2Rio'
+    if (host) return host
+  } catch {
+    // ignore
+  }
+  return '連結'
+}
 
 function tokenizeInline(input: string): InlineToken[] {
   // Priority order:
@@ -115,10 +142,12 @@ function tokenizeInline(input: string): InlineToken[] {
     for (const m of s.matchAll(BARE_URL_RE)) {
       const idx = m.index ?? -1
       if (idx < 0) continue
-      const href = (m[1] ?? '').trim()
+      const hrefRaw = (m[1] ?? '').trim()
+      const { url: href, punct } = splitTrailingUrlPunct(hrefRaw)
       if (!href) continue
       if (idx > last) final.push({ kind: 'text', value: s.slice(last, idx) })
-      final.push({ kind: 'url', href })
+      final.push({ kind: 'url', href, label: formatUrlLabel(href) })
+      if (punct) final.push({ kind: 'text', value: punct })
       last = idx + m[0].length
     }
     if (last < s.length) final.push({ kind: 'text', value: s.slice(last) })
@@ -146,8 +175,8 @@ export function FormattedInline({ text }: { text: string }) {
           )
         if (t.kind === 'url')
           return (
-            <a key={i} href={t.href} target="_blank" rel="noreferrer noopener">
-              {t.href}
+            <a key={i} href={t.href} target="_blank" rel="noreferrer noopener" title={t.href}>
+              {t.label}
             </a>
           )
         return null

@@ -32,8 +32,8 @@ export function OnboardingModal({ onClose }: { onClose: () => void }) {
           icon: <IconStays />,
           title: '住宿（寫一句話原因）',
           subtitle: '給爸媽一眼看懂：交通方便／不用爬坡／有電梯。',
-          heroSrc: withBaseUrl('/illustrations/3d-hotel-building-isometric.png'),
-          heroAlt: '示意插圖：住宿（3D）',
+          heroSrc: withBaseUrl('/illustrations/suitcase.png'),
+          heroAlt: '示意插圖：住宿',
           bullets: ['先把原因寫好就夠', '需要時再看風險/注意'],
         },
       ] as const,
@@ -82,9 +82,6 @@ export function OnboardingModal({ onClose }: { onClose: () => void }) {
             <div className="modalTitle">第一次使用：給爸媽的 30 秒導覽</div>
             <div className="muted modalSub">之後也可以從右上角「使用說明」再打開，或到「設定」裡重播。</div>
           </div>
-          <button className="btn modalCloseBtn" onClick={onClose}>
-            關閉
-          </button>
         </div>
 
         <hr className="hr" />

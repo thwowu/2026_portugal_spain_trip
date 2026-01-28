@@ -73,7 +73,7 @@ function App() {
       <div className="topBar" ref={topBarRef}>
         <div className="topBarInner">
           <div className="brand">
-            <div className="brandTitle">葡西之旅規劃</div>
+            <div className="brandTitle">葡西雙國深度走訪｜城景與海岸一次收齊</div>
             <div className="brandSub">
               用底部選單切換：行程 / 交通 / 住宿 / 景點
             </div>

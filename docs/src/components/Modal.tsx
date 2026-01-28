@@ -1,4 +1,5 @@
 import { useEffect, useRef, type CSSProperties, type ReactNode, type RefObject } from 'react'
+import { createPortal } from 'react-dom'
 import { useLockBodyScroll } from '../hooks/useLockBodyScroll'
 
 export function Modal({
@@ -7,6 +8,8 @@ export function Modal({
   overlayClassName = 'modalOverlay',
   cardClassName = 'card modalCard',
   onClose,
+  floatingClose = true,
+  closeAriaLabel = '關閉',
   initialFocusRef,
   overlayStyle,
   cardStyle,
@@ -17,12 +20,17 @@ export function Modal({
   overlayClassName?: string
   cardClassName?: string
   onClose: () => void
+  /** Show an always-visible top-right close button (recommended for long content). */
+  floatingClose?: boolean
+  /** Accessible label for the close button. */
+  closeAriaLabel?: string
   initialFocusRef?: RefObject<HTMLElement | null>
   overlayStyle?: CSSProperties
   cardStyle?: CSSProperties
   children: ReactNode
 }) {
   const cardRef = useRef<HTMLDivElement | null>(null)
+  const closeBtnRef = useRef<HTMLButtonElement | null>(null)
   const lastActiveRef = useRef<HTMLElement | null>(null)
 
   useLockBodyScroll(open)
@@ -50,6 +58,12 @@ export function Modal({
         return
       }
 
+      const closeBtn = closeBtnRef.current
+      if (floatingClose && closeBtn && document.contains(closeBtn)) {
+        closeBtn.focus?.()
+        return
+      }
+
       const root = cardRef.current
       if (!root) return
       const selector =
@@ -60,17 +74,19 @@ export function Modal({
 
     const raf = window.requestAnimationFrame(focusFirst)
     return () => window.cancelAnimationFrame(raf)
-  }, [open, initialFocusRef])
+  }, [open, initialFocusRef, floatingClose])
 
   useEffect(() => {
     if (!open) return
 
     const getFocusables = () => {
+      const closeBtn = closeBtnRef.current
       const root = cardRef.current
       if (!root) return [] as HTMLElement[]
       const selector =
         'button:not([disabled]), [href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])'
-      return Array.from(root.querySelectorAll<HTMLElement>(selector)).filter((el) => el.tabIndex !== -1)
+      const withinCard = Array.from(root.querySelectorAll<HTMLElement>(selector)).filter((el) => el.tabIndex !== -1)
+      return (floatingClose && closeBtn && !closeBtn.disabled ? [closeBtn, ...withinCard] : withinCard) as HTMLElement[]
     }
 
     const onKey = (e: KeyboardEvent) => {
@@ -103,11 +119,15 @@ export function Modal({
 
     window.addEventListener('keydown', onKey)
     return () => window.removeEventListener('keydown', onKey)
-  }, [open, onClose])
+  }, [open, onClose, floatingClose])
 
   if (!open) return null
+  if (typeof document === 'undefined') return null
 
-  return (
+  // Render into <body> to avoid `position: fixed` being constrained by
+  // transformed ancestors (e.g. reveal animations), which can make the overlay
+  // appear only within a card and "lock" the UI.
+  return createPortal(
     <div
       role="dialog"
       aria-modal="true"
@@ -116,6 +136,23 @@ export function Modal({
       className={overlayClassName}
       style={overlayStyle}
     >
+      {floatingClose ? (
+        <div className="modalCloseDock" aria-hidden="false">
+          <button
+            ref={closeBtnRef}
+            type="button"
+            className="btn modalCloseIconBtn"
+            aria-label={closeAriaLabel}
+            title={`${closeAriaLabel}（ESC）`}
+            onClick={(e) => {
+              e.stopPropagation()
+              onClose()
+            }}
+          >
+            ✕
+          </button>
+        </div>
+      ) : null}
       <div
         ref={cardRef}
         className={cardClassName}
@@ -125,7 +162,8 @@ export function Modal({
       >
         {children}
       </div>
-    </div>
+    </div>,
+    document.body
   )
 }
 

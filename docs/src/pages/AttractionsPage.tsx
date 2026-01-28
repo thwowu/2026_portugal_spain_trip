@@ -3,7 +3,6 @@ import { ATTRACTIONS_DATA, EXTENSIONS_DATA } from '../generated'
 import { CITIES, STAYS_CITY_ORDER } from '../data/core'
 import type { CityId } from '../data/core'
 import { useProgress } from '../state/progress'
-import { useSettings } from '../state/settings'
 import { useHashScroll } from '../hooks/useHashScroll'
 import { useReveal } from '../hooks/useReveal'
 import { Lightbox } from '../components/Lightbox'
@@ -37,8 +36,7 @@ const DEFAULT_ATTRACTIONS_CITY_ID: CityId | null = (() => {
 })()
 
 export function AttractionsPage() {
-  const { state: progress, actions: progressActions } = useProgress()
-  const { showSeenHints } = useSettings()
+  const { actions: progressActions } = useProgress()
   useHashScroll()
   const [open, setOpen] = useState<Record<string, boolean>>({})
   const [active, setActive] = useState<{ cityId: string; tripId: string } | null>(null)
@@ -306,7 +304,6 @@ export function AttractionsPage() {
                     <div className="attrCityHeaderText">
                       <div className="attrCityNameRow">
                         <div className="attrCityName">{c.title}</div>
-                        {showSeenHints && progress.attractionsSeen[c.cityId as CityId] ? <div className="chip">已看過</div> : null}
                       </div>
                       <div className="attrCitySub">用章節切換快速掃重點（不做每段卡片）。</div>
                     </div>
@@ -473,9 +470,6 @@ function ExtensionModal({
               {trip.title}
             </div>
           </div>
-          <button className="btn" onClick={onClose}>
-            關閉
-          </button>
         </div>
 
         <hr className="hr" />

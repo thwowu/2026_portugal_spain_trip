@@ -18,9 +18,9 @@ test.describe('landing page logic', () => {
     await slider.focus()
     await slider.press('ArrowRight')
 
-    // Toggle seen hints OFF
-    await page.getByRole('button', { name: '開', exact: true }).click()
-    await expect(page.getByRole('button', { name: '關', exact: true })).toBeVisible()
+    // Flip UI mode + motion to ensure settings updates are reflected.
+    await page.getByTitle('標準模式').click()
+    await page.getByTitle('標準動態（仍會尊重系統減少動態）').click()
 
     await page.getByRole('button', { name: '完成' }).click()
 
@@ -28,12 +28,24 @@ test.describe('landing page logic', () => {
     await expect
       .poll(async () => page.evaluate(() => document.documentElement.dataset.font))
       .toBe('2')
+    await expect
+      .poll(async () => page.evaluate(() => document.documentElement.dataset.ui))
+      .toBe('standard')
+    await expect
+      .poll(async () => page.evaluate(() => document.documentElement.dataset.motion))
+      .toBe('standard')
 
     // Reload should keep settings
     await page.reload()
     await expect
       .poll(async () => page.evaluate(() => document.documentElement.dataset.font))
       .toBe('2')
+    await expect
+      .poll(async () => page.evaluate(() => document.documentElement.dataset.ui))
+      .toBe('standard')
+    await expect
+      .poll(async () => page.evaluate(() => document.documentElement.dataset.motion))
+      .toBe('standard')
 
     // Reset recommended should restore defaults and close
     await page.getByRole('button', { name: '設定' }).click()

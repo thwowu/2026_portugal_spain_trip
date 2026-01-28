@@ -3,11 +3,9 @@ import { STAYS_DATA } from '../generated'
 import { CITIES, STAYS_CITY_ORDER } from '../data/core'
 import { useHashScroll } from '../hooks/useHashScroll'
 import { useReveal } from '../hooks/useReveal'
-import { ILLUSTRATION } from '../illustrations'
 import { PageHero } from '../components/PageHero'
 import { FormattedInline } from '../components/FormattedText'
 import { ExpandingBox } from '../components/ExpandingBox'
-import { PixelatedBackground } from '../components/PixelatedBackground'
 
 function statusPill(status: 'primary' | 'secondary' | 'backup' | undefined) {
   if (!status) return null
@@ -28,19 +26,12 @@ export function StaysPage() {
       <div className="card">
         <div className="cardInner">
           <div className="staysHero">
-            <PixelatedBackground
-              className="staysHeroBg"
-              src={ILLUSTRATION.heroStays.src}
-              fallbackSrc={ILLUSTRATION.suitcase.src}
-              pixelSize={16}
-            />
-            <div className="staysHeroShade" aria-hidden="true" />
             <div className="staysHeroContent">
               <PageHero
                 title="住宿"
                 subtitle={
                   <>
-                    每城市固定模板：住宿推薦＋入住提醒＋附近交通節點＋「大眾交通怎麼買」＋省錢密技。
+                    每城市固定模板：住宿推薦、入住/省錢提醒、附近交通節點與票卡怎麼買。
                   </>
                 }
               />

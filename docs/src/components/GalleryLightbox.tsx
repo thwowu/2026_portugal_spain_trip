@@ -157,8 +157,15 @@ function GalleryLightboxInner({
           >
             →
           </button>
-          <button className="btn galleryCloseBtn" type="button" ref={closeBtnRef} onClick={onClose} title="關閉（ESC）">
-            關閉
+          <button
+            className="btn galleryCloseBtn"
+            type="button"
+            ref={closeBtnRef}
+            onClick={onClose}
+            aria-label="關閉"
+            title="關閉（ESC）"
+          >
+            ✕
           </button>
         </div>
       </div>

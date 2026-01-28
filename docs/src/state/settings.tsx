@@ -10,12 +10,10 @@ type SettingsState = {
   motion: MotionSetting
   uiMode: UiMode
   fontScale: FontScale
-  showSeenHints: boolean
   prefersReducedMotion: boolean
   setMotion: (next: MotionSetting) => void
   setUiMode: (next: UiMode) => void
   setFontScale: (next: FontScale) => void
-  setShowSeenHints: (next: boolean) => void
   resetRecommended: () => void
 }
 
@@ -27,12 +25,11 @@ type PersistedSettings = {
   motion: MotionSetting
   uiMode?: UiMode
   fontScale?: FontScale
-  showSeenHints?: boolean
 }
 
 function defaultPersisted(): PersistedSettings {
   // Default for this project: senior-friendly (bigger, clearer, less motion).
-  return { motion: 'low', uiMode: 'senior', fontScale: 1, showSeenHints: true }
+  return { motion: 'low', uiMode: 'senior', fontScale: 1 }
 }
 
 export function SettingsProvider({ children }: { children: React.ReactNode }) {
@@ -43,12 +40,11 @@ export function SettingsProvider({ children }: { children: React.ReactNode }) {
   const [uiMode, setUiMode] = useState<UiMode>(persisted.uiMode ?? 'senior')
   const [motion, setMotion] = useState<MotionSetting>(persisted.motion ?? 'low')
   const [fontScale, setFontScale] = useState<FontScale>(persisted.fontScale ?? 1)
-  const [showSeenHints, setShowSeenHints] = useState<boolean>(persisted.showSeenHints ?? true)
   const [prefersReducedMotion, setPrefersReducedMotion] = useState(false)
 
   useEffect(() => {
-    saveJson<PersistedSettings>(STORAGE_KEY, { motion, uiMode, fontScale, showSeenHints })
-  }, [motion, uiMode, fontScale, showSeenHints])
+    saveJson<PersistedSettings>(STORAGE_KEY, { motion, uiMode, fontScale })
+  }, [motion, uiMode, fontScale])
 
   useEffect(() => {
     // Let CSS react to UI mode.
@@ -81,7 +77,6 @@ export function SettingsProvider({ children }: { children: React.ReactNode }) {
       motion,
       uiMode,
       fontScale,
-      showSeenHints,
       prefersReducedMotion,
       setMotion,
       setUiMode: (next) => {
@@ -91,15 +86,13 @@ export function SettingsProvider({ children }: { children: React.ReactNode }) {
         if (next === 'senior') setMotion('low')
       },
       setFontScale,
-      setShowSeenHints,
       resetRecommended: () => {
         setUiMode('senior')
         setMotion('low')
         setFontScale(1)
-        setShowSeenHints(true)
       },
     }),
-    [motion, uiMode, fontScale, showSeenHints, prefersReducedMotion],
+    [motion, uiMode, fontScale, prefersReducedMotion],
   )
 
   return <SettingsContext.Provider value={value}>{children}</SettingsContext.Provider>

@@ -34,7 +34,7 @@ test.describe('trip planner smoke', () => {
     await page.waitForLoadState('networkidle')
     await expect(
       page.getByText(
-        '每城市固定模板：住宿推薦＋入住提醒＋附近交通節點＋「大眾交通怎麼買」＋省錢密技。',
+        '每城市固定模板：住宿推薦、入住/省錢提醒、附近交通節點與票卡怎麼買。',
       ),
     ).toBeVisible()
 

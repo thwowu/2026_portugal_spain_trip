@@ -9,7 +9,6 @@ export type IllustrationKey =
   | 'safety'
   | 'heroDashboard'
   | 'heroTransport'
-  | 'heroStays'
   | 'heroAttractions'
   | 'heroNotFound'
 
@@ -64,11 +63,6 @@ export const ILLUSTRATION: Record<IllustrationKey, { src: string; alt: string; s
     heroTransport: {
       src: withBaseUrl('/illustrations/3d-train-on-landscape.jpg'),
       alt: '交通（3D 插圖）',
-      style: '3d',
-    },
-    heroStays: {
-      src: withBaseUrl('/illustrations/3d-hotel-building-isometric.jpg'),
-      alt: '住宿（3D 插圖）',
       style: '3d',
     },
     heroAttractions: {

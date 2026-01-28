@@ -191,15 +191,14 @@ export function ItineraryScrolly() {
         open={selectedDay !== null}
         ariaLabel={selectedDay ? `Day ${selectedDay.day}｜細節` : '行程細節'}
         onClose={() => setSelectedDay(null)}
-        overlayClassName="modalOverlay modalOverlayHigh"
-        cardClassName="card modalCard"
-        cardStyle={{ maxWidth: 'min(860px, 100%)' }}
+        overlayClassName="modalOverlay modalOverlayHigh itModalOverlay"
+        cardClassName="card modalCard itModalCard"
       >
         {selectedDay ? (
           <div className="cardInner">
             <div style={{ display: 'flex', justifyContent: 'space-between', gap: 12, alignItems: 'flex-start' }}>
               <div style={{ minWidth: 0 }}>
-                <div style={{ fontWeight: 950, fontSize: 'var(--text-xl)', lineHeight: 1.15 }}>
+                <div style={{ fontWeight: 950, fontSize: 'var(--text-lg)', lineHeight: 1.15 }}>
                   Day {selectedDay.day}
                   {selectedDay.dateLabel ? `｜${selectedDay.dateLabel}` : ''}
                 </div>
@@ -207,9 +206,6 @@ export function ItineraryScrolly() {
                   {selectedDay.cityLabel} · {selectedDay.title}
                 </div>
               </div>
-              <button className="btn" onClick={() => setSelectedDay(null)}>
-                關閉
-              </button>
             </div>
 
             <hr className="hr" />
@@ -217,7 +213,7 @@ export function ItineraryScrolly() {
             <div style={{ display: 'grid', gap: 10 }}>
               {selectedDay.details.morning ? (
                 <div className="card" style={{ boxShadow: 'none', background: 'var(--surface-2)' }}>
-                  <div className="cardInner">
+                  <div className="cardInner itDetailCardInner">
                     <div style={{ fontWeight: 800 }}>早</div>
                     <div style={{ marginTop: 6 }}>
                       <FormattedText text={selectedDay.details.morning} />
@@ -227,7 +223,7 @@ export function ItineraryScrolly() {
               ) : null}
               {selectedDay.details.noon ? (
                 <div className="card" style={{ boxShadow: 'none', background: 'var(--surface-2)' }}>
-                  <div className="cardInner">
+                  <div className="cardInner itDetailCardInner">
                     <div style={{ fontWeight: 800 }}>中</div>
                     <div style={{ marginTop: 6 }}>
                       <FormattedText text={selectedDay.details.noon} />
@@ -237,7 +233,7 @@ export function ItineraryScrolly() {
               ) : null}
               {selectedDay.details.evening ? (
                 <div className="card" style={{ boxShadow: 'none', background: 'var(--surface-2)' }}>
-                  <div className="cardInner">
+                  <div className="cardInner itDetailCardInner">
                     <div style={{ fontWeight: 800 }}>晚</div>
                     <div style={{ marginTop: 6 }}>
                       <FormattedText text={selectedDay.details.evening} />
@@ -247,7 +243,7 @@ export function ItineraryScrolly() {
               ) : null}
               {selectedDay.details.notes?.length ? (
                 <div className="card" style={{ boxShadow: 'none', background: 'var(--surface-2)' }}>
-                  <div className="cardInner">
+                  <div className="cardInner itDetailCardInner">
                     <div style={{ fontWeight: 800 }}>備註</div>
                     <ul style={{ marginTop: 8, marginBottom: 0, paddingLeft: 18 }}>
                       {selectedDay.details.notes.map((n, idx) => (
@@ -265,7 +261,7 @@ export function ItineraryScrolly() {
               !selectedDay.details.evening &&
               !selectedDay.details.notes?.length ? (
                 <div className="card" style={{ boxShadow: 'none', background: 'var(--surface-2)' }}>
-                  <div className="cardInner">
+                  <div className="cardInner itDetailCardInner">
                     <div style={{ fontWeight: 800 }}>尚無細節</div>
                     <div className="muted" style={{ marginTop: 6 }}>
                       你可以在 <code>docs/src/content/itinerary.md</code> 的該天區塊加入 <code>- details:</code> 來補上早/中/晚或備註。

@@ -131,22 +131,18 @@ export function ExpandingBox({
           ariaLabel={aria}
           onClose={() => setModalOpen(false)}
           overlayClassName="modalOverlay modalOverlayHigh"
-          cardClassName="card modalCard"
-          cardStyle={{ maxWidth: 'min(860px, 100%)' }}
+          cardClassName="card modalCard expModalCard"
         >
           <div className="cardInner">
             <div style={{ display: 'flex', justifyContent: 'space-between', gap: 12, alignItems: 'flex-start' }}>
               <div style={{ minWidth: 0 }}>
-                <div style={{ fontWeight: 950, fontSize: 'var(--text-xl)', lineHeight: 1.15 }}>{title}</div>
+                <div style={{ fontWeight: 950, fontSize: 'var(--text-lg)', lineHeight: 1.15 }}>{title}</div>
                 {meta ? (
                   <div className="muted" style={{ fontSize: 'var(--text-xs)', marginTop: 6 }}>
                     {meta}
                   </div>
                 ) : null}
               </div>
-              <button className="btn" onClick={() => setModalOpen(false)}>
-                關閉
-              </button>
             </div>
 
             <hr className="hr" />
