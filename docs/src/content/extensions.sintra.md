@@ -8,7 +8,11 @@ title: 辛特拉（Sintra）延伸行程（詳情）
 
 ## split-2days | 拆成 2 天（不硬塞、旺季更舒服）
 
-如果你不想在 Sintra 被人潮與上下山交通打爆，拆兩天是最穩的做法：山城上下坡多、旺季排隊久，一天硬塞只會把體力耗在等車與排隊。把最難的 Pena（分時段）獨立一天當作票務錨點，另一天下放給 Regaleira＋鎮上慢走，節奏會從趕路變成享受。交通以 434/435 公車為主，完全不搭計程車時拆兩天更保守；也很適合搭第一波公車＋早場門票，先把最痛苦的尖峰排隊避掉。
+如果你不想在 Sintra 被人潮與上下山交通拖累，拆兩天是最穩的做法。
+
+山城上下坡多、旺季排隊久，一天硬塞常常只會把體力耗在等車與排隊。把最難的 Pena（分時段）獨立一天當作票務錨點，另一天下放給 Regaleira＋鎮上慢走，節奏會從趕路變成享受。
+
+交通以 434/435 公車為主；如果全程都不搭計程車，拆兩天會更保守。也很適合用「第一波公車＋早場門票」先把尖峰排隊避掉。
 
 ### images
 {{gallery:Sintra（2 days）|https://commons.wikimedia.org/wiki/Special:FilePath/Pena_National_Palace_-_Sintra_-_Pal%C3%A1cio_Nacional_da_Pena_(15842491914)_(cropped).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Sintra_Portugal_Pal%C3%A1cio_da_Pena-01.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/The_gardens_of_the_Quinta_da_Regaleira_-_Initiation_Well_(34322957286).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Initiation_Well,_Quinta_da_Regaleira,_Light_at_the_End_of_the_Tunnel_(50657854571).jpg?width=1800|https://images.pexels.com/photos/1601495/pexels-photo-1601495.jpeg?auto=compress&cs=tinysrgb&w=1800|https://images.pexels.com/photos/4514109/pexels-photo-4514109.jpeg?auto=compress&cs=tinysrgb&w=1800}}
@@ -23,7 +27,7 @@ Day B：Pena（按時段）→（選配）Monserrate（人通常較少）。
 拆兩天後每天都能做成早出晚回或半日，彈性大很多。
 
 ### backup
-天氣起霧：把山上視野當加分，重點放在宮殿/花園本體。
+如果天氣起霧：把山上視野當加分，重點放在宮殿/花園本體。
 
 ### sources
 Parques de Sintra（Pena 官方票務）：https://www.parquesdesintra.pt/en/plan-your-visit/tickets-palace-of-pena/
@@ -32,7 +36,11 @@ Wikivoyage（Sintra）：https://en.wikivoyage.org/wiki/Sintra
 
 ## transit-strategy | 434/435 + 避排隊策略（旺季保命）
 
-旺季的 Sintra 痛點通常不是走路，而是「排隊＋等車」把你精神與時間吃光；這個策略的核心，就是用 434/435 當主要幹線、配合早班與早場把尖峰避掉，然後勇敢把點數縮到 2 個以內。你少塞一個點，往往就能換回 1–2 小時，把時間從排隊挪回景點本體；下午也別硬拖，下山休息會讓整天體感好很多。全程只靠 434/435＋步行即可成立，不搭計程車也能做，只是更要保守抓時間。
+旺季的 Sintra 痛點通常不是走路，而是「排隊＋等車」把你精神與時間吃光。
+
+這個策略的核心很簡單：用 434/435 當主要幹線，配合早班與早場把尖峰避掉，然後勇敢把點數縮到 2 個以內。你少塞一個點，往往就能換回 1–2 小時，把時間從排隊挪回景點本體。
+
+下午也別硬拖：下山休息會讓整天體感好很多。全程只靠 434/435＋步行即可成立；不搭計程車也能做，只是更要保守抓時間。
 
 ### images
 {{gallery:434/435 + 補段|https://commons.wikimedia.org/wiki/Special:FilePath/Pena_National_Palace_-_Sintra_-_Pal%C3%A1cio_Nacional_da_Pena_(15842491914)_(cropped).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Initiation_Well,_Quinta_da_Regaleira,_Light_at_the_End_of_the_Tunnel_(50657854571).jpg?width=1800}}
@@ -46,7 +54,7 @@ Wikivoyage（Sintra）：https://en.wikivoyage.org/wiki/Sintra
 典型做法：上午先上山完成最重要的一個點 → 下午回鎮上慢走/吃甜點（不要再硬塞第 3 個）。這個策略的目的就是把浪費在排隊的時間，換成真的在逛景點的時間。
 
 ### backup
-排隊太久/精神被耗掉：立刻把行程縮減到 2 個點，不要硬塞第 3 個。
+如果排隊太久/精神被耗掉：立刻把行程縮減到 2 個點，不要硬塞第 3 個。
 
 ### sources
 Wikivoyage（Sintra）：https://en.wikivoyage.org/wiki/Sintra
@@ -63,7 +71,7 @@ Wikivoyage（Sintra）：https://en.wikivoyage.org/wiki/Sintra
 半日/收尾版：Pena（按時段）→ Monserrate（走花園＋休息）→ 回鎮上吃甜點。建議抓 2–3 小時（含交通）。
 
 ### backup
-時間不夠：Monserrate 優先走花園＋外觀就撤，不用硬塞室內。
+如果時間不夠：Monserrate 優先走花園＋外觀就撤，不用硬塞室內。
 
 ### sources
 Monserrate（Parques de Sintra）：https://www.parquesdesintra.pt/en/wifi-landing-pages/park-and-palace-of-monserrate/
@@ -80,7 +88,7 @@ Monserrate（Parques de Sintra）：https://www.parquesdesintra.pt/en/wifi-landi
 半日：Capuchos → 回鎮上吃甜點/休息（當作低人潮備案日）。交通 + 參觀：抓 3–5 小時較舒服。
 
 ### backup
-霧雨太重：改成鎮上王宮/咖啡店（山裡會更冷更濕）。
+如果霧雨太重：改成鎮上王宮/咖啡店（山裡會更冷更濕）。
 
 ### sources
 Wikivoyage（Sintra）：https://en.wikivoyage.org/wiki/Sintra
@@ -97,7 +105,7 @@ Wikivoyage（Sintra）：https://en.wikivoyage.org/wiki/Sintra
 加點版（天氣好才推薦）：上午山上宮殿 → 下午海岸線（Roca / Azenhas 擇一）→ 傍晚回里斯本。建議抓整天才不會變成趕路日。
 
 ### backup
-風雨很大：直接取消海岸線加點，回鎮上喝咖啡/逛王宮更舒服。
+如果風雨很大：直接取消海岸線加點，回鎮上喝咖啡/逛王宮會更舒服。
 
 ### sources
 Wikivoyage（Sintra）：https://en.wikivoyage.org/wiki/Sintra
@@ -117,7 +125,7 @@ Day 2：Cascais 海岸線散步（輕鬆收尾）。
 兩天各自都能做成早出晚回或半日，彈性大。
 
 ### backup
-天氣不好：把海邊改成里斯本室內點（博物館/市場），不浪費體力。
+如果天氣不好：把海邊改成里斯本室內點（博物館/市場），不浪費體力。
 
 ### sources
 Wikivoyage（Sintra）：https://en.wikivoyage.org/wiki/Sintra

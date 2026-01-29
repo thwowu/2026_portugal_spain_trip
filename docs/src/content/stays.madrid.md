@@ -6,17 +6,22 @@ title: 馬德里（Madrid）住宿
 
 # 馬德里（Madrid）住宿
 
-🛏️ 先看 options 選區域｜🚇 再看 publicTransportHowToBuy｜💸 moneySavingTips
+讀法：先看 `options` 選區域；再看 `publicTransportHowToBuy`；最後看 `moneySavingTips`。
 
 ## options
+先講結論：如果你們想「走路就能把大部分點串起來」，就住 Centro；想把博物館＋公園走得舒服，Retiro/Atocha 一帶會更順；想住得乾淨好走、咖啡店多，再看 Salamanca/Chueca。
+
 - 市中心（Centro；太陽門 Puerta del Sol / 格蘭大道 Gran Vía / 主廣場 Plaza Mayor 一帶，首選：步行動線最直覺）
-  - risk: 人潮密度高、噪音風險較高；價格也較浮動
+  - why: 景點密度高，很多行程不用搭車就能完成；臨時想回住宿休息也方便。
+  - risk: 人潮密度高、噪音風險較高；價格也較浮動。
   - link: Google Maps | https://www.google.com/maps/search/?api=1&query=Puerta%20del%20Sol%20Madrid
 - 麗池／藝術大道／阿托查（Retiro / Paseo del Arte / Atocha；麗池公園 Parque del Retiro / 藝術大道 Paseo del Arte / 阿托查 Atocha；次選：博物館/公園動線方便）
-  - risk: 去 Centro 夜生活/逛街多半要搭一段地鐵或走 20–40 分鐘
+  - why: 博物館、公園、車站一帶動線集中，想走文化路線很省腦。
+  - risk: 去 Centro 夜生活/逛街多半要搭一段地鐵或走 20–40 分鐘。
   - link: Google Maps | https://www.google.com/maps/search/?api=1&query=Parque%20del%20Retiro%20Madrid
 - 薩拉曼卡／丘埃卡（Salamanca / Chueca；薩拉曼卡 Salamanca / 丘埃卡 Chueca；備選：乾淨好走＋咖啡店多）
-  - risk: 距離主要觀光點看你選的位置（可能需要更頻繁搭車）
+  - why: 街區比較乾淨、走路舒服，生活感也強；不一定要一直待在最觀光的核心區。
+  - risk: 距離主要觀光點看你選的位置（可能需要更頻繁搭車）。
   - link: Google Maps | https://www.google.com/maps/search/?api=1&query=Salamanca%20Madrid
 
 ## publicTransportHowToBuy
@@ -35,18 +40,3 @@ title: 馬德里（Madrid）住宿
 - 行程若主要集中在市中心：通常「10 趟票」就很夠用；除非你確定每天很多趟再買旅遊票（避免買了用不到）。先用售票機估算你的搭乘量再決定。（CRTM：[`What tickets can you charge?`](https://crtm.es/billetes-y-tarifas/tarjeta-multi/titulos-que-puedes-cargar.aspx?lang=en)）
 - 機場日別為了省幾站票錢繞路：機場地鐵有 €3 suplemento 的規則，直接照售票機流程買最省時間（別到現場才卡在票種組合）。（Aena：[`Cómo llegar en metro`](https://www.aena.es/es/adolfo-suarez-madrid-barajas/como-llegar/metro.html)）
 - 行李日／機場日：人潮多＋扒手風險高，寧可多留時間、少轉乘；把住宿選在「離地鐵站近、平路好走」的點，降低拖行李走遠路的機率。（Wikivoyage：[`Madrid`](https://en.wikivoyage.org/wiki/Madrid)；Wikitravel：[`Madrid`](https://wikitravel.org/en/Madrid)）
-
-## scoringModel
-### weights
-- 抵達日穩定性（長途交通後：入住流程/櫃檯） | weight=0.3
-- 交通便利與爬坡風險 | weight=0.2
-- 房間品質（新舊、空間、隔音） | weight=0.2
-- 評論一致性（極端負評比例） | weight=0.15
-- 成本效率 | weight=0.15
-
-### table
-| 住宿 | 抵達日穩定性（長途交通後：入住流程/櫃檯） | 交通便利與爬坡風險 | 房間品質（新舊、空間、隔音） | 評論一致性（極端負評比例） | 成本效率 | 加權積分 |
-| --- | --- | --- | --- | --- | --- | --- |
-| Centro（Sol/Gran Vía） | 4 | 5 | 3 | 3 | 3 | 3.70 |
-| Retiro / Paseo del Arte | 4 | 4 | 3 | 3 | 4 | 3.75 |
-| Salamanca / Chueca | 4 | 4 | 4 | 3 | 3 | 3.75 |

@@ -97,25 +97,17 @@ title: 里斯本（Lisbon）住宿
   - risk: ...
   - link: Google Maps | https://maps.app.goo.gl/...
 
+  # （可選）讓 why/risk 能分段：用縮排續寫（會保留換行）
+  - why: 第一段第一行
+    第一段第二行
+
+    第二段（中間留空行）
+
 ## publicTransportHowToBuy
 - ...
 
 ## moneySavingTips
 - ...
-
-## scoringModel
-### weights
-- 抵達日穩定性（長途交通後/第一晚） | weight=0.3
-- 交通便利與爬坡風險 | weight=0.2
-- 房間品質 | weight=0.2
-- 評論一致性 | weight=0.15
-- 成本效率 | weight=0.15
-
-### table
-| 住宿 | 抵達日穩定性（長途交通後/第一晚） | 交通便利與爬坡風險 | 房間品質 | 評論一致性 | 成本效率 | 加權積分 |
-| --- | --- | --- | --- | --- | --- | --- |
-| Option A | 5 | 5 | 5 | 4 | 3 | 4.35 |
-| Option B | 4 | 5 | 4 | 4 | 3 | 4.05 |
 ```
 
 ### Transport (per segment)

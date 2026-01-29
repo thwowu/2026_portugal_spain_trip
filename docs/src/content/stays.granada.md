@@ -6,18 +6,22 @@ title: 格拉納達（Granada）住宿
 
 # 格拉納達（Granada）住宿
 
-🛏️ 先看 options 選區域｜🚇 再看 publicTransportHowToBuy｜💸 moneySavingTips
+讀法：先看 `options` 選區域；再看 `publicTransportHowToBuy`；最後看 `moneySavingTips`。
 
 ## options
+先講結論：如果你們希望「省坡、走得順、行李好處理」，就選市中心；想要更靠近阿爾罕布拉山腳，再看 Realejo；Albaicín 很漂亮，但體力與行李成本也最高。
+
 - 市中心（Centro；大教堂/格蘭大道 Gran Vía 一帶，首選：省坡）
-  - risk: 旺季價格浮動，熱門路段可能有噪音（餐廳/人流）
+  - why: 景點密度高、平路比例高；需要休息或補給也方便。
+  - risk: 旺季價格浮動，熱門路段可能有噪音（餐廳/人流）。
   - link: Google Maps | https://www.google.com/maps/search/?api=1&query=Granada%20Cathedral
 - 雷阿萊霍（Realejo；次選：靠近阿爾罕布拉山腳）
-  - risk: 部分街區仍有坡與石板路，拖行李要評估
+  - why: 位置介於市中心與上坡區之間，行程想安排 Alhambra 會比較順。
+  - risk: 部分街區仍有坡與石板路，拖行李要評估。
   - link: Google Maps | https://www.google.com/maps/search/?api=1&query=Realejo%20Granada
 - 阿爾拜辛（Albaicín；備選：景觀/氛圍最強但最累）
-  - risk: 坡/階梯/石板路密集，帶行李與夜間行走成本高（也更吃體力）
-  - risk: 車輛接送不一定能到門口（巷弄狹窄）
+  - why: 老城氛圍與視角很強，適合想把「住在山城裡」的感覺住出來。
+  - risk: 坡/階梯/石板路密集，帶行李與夜間行走成本高；車輛接送也不一定能到門口（巷弄狹窄）。
   - link: Google Maps | https://www.google.com/maps/search/?api=1&query=Albaicin%20Granada
 
 ## publicTransportHowToBuy
@@ -33,18 +37,3 @@ title: 格拉納達（Granada）住宿
 - 只搭 1–2 趟：先用單程票即可；如果你發現自己每天都要搭好幾趟再換 `Credibús`（它本質上就是為「常搭」設計的折扣票種）。（Movilidad Granada：[`Bus fares`](http://www.movilidadgranada.com/bus_tarifas.php?idioma=en)）
 - 善用「60 分鐘免費轉乘」：把行程拆成「上坡搭車、下坡步行」或「去程搭車、回程走路」，通常最省錢也最省力。（Movilidad Granada：[`Bus fares`](http://www.movilidadgranada.com/bus_tarifas.php?idioma=en)）
 - 坡段把錢花在省體力：上阿爾拜辛/阿爾罕布拉那種坡，公車票錢通常比膝蓋受傷與時間成本更便宜。（Wikivoyage：[`Granada`](https://en.wikivoyage.org/wiki/Granada_(Spain))）
-
-## scoringModel
-### weights
-- 抵達日穩定性（長途交通後：入住流程/櫃檯） | weight=0.3
-- 交通便利與爬坡風險 | weight=0.2
-- 房間品質（新舊、空間、隔音） | weight=0.2
-- 評論一致性（極端負評比例） | weight=0.15
-- 成本效率 | weight=0.15
-
-### table
-| 住宿 | 抵達日穩定性（長途交通後：入住流程/櫃檯） | 交通便利與爬坡風險 | 房間品質（新舊、空間、隔音） | 評論一致性（極端負評比例） | 成本效率 | 加權積分 |
-| --- | --- | --- | --- | --- | --- | --- |
-| Centro | 4 | 5 | 3 | 3 | 4 | 3.85 |
-| Realejo | 3 | 4 | 3 | 3 | 4 | 3.45 |
-| Albaicín | 2 | 2 | 3 | 3 | 3 | 2.55 |

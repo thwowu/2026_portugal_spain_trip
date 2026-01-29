@@ -1,6 +1,6 @@
 # Testing
 
-This project supports both **manual testing** and **automated smoke tests**.
+This project supports both **manual testing** and **automated tests** (smoke + E2E).
 
 ## Quick commands (smoke)
 
@@ -24,7 +24,7 @@ From `docs/`:
 
 From `docs/`:
 
-- `npm install`
+- `npm ci`
 - `npx playwright install`
 
 ### Run
