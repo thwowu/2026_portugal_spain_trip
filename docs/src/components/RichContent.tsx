@@ -1,7 +1,12 @@
 import { useMemo } from 'react'
-import type { GalleryImage } from './GalleryLightbox'
 import { FormattedInline, FormattedText } from './FormattedText'
 import { withBaseUrl } from '../utils/asset'
+
+export type GalleryImage = {
+  src: string
+  alt?: string
+  caption?: string
+}
 
 const GALLERY_TOKEN_RE = /\{\{gallery(?::([^|}]+))?\|([^}]+)\}\}/g
 const IMAGE_MD_RE = /^!\[([^\]]*)\]\((.+)\)$/
@@ -275,6 +280,14 @@ export function RichContent({
         }
 
         if (b.kind === 'image') {
+          if (!onOpenImage) {
+            return (
+              <div key={idx} className="inlineImageCard" style={{ marginTop: idx === 0 ? 0 : 10, cursor: 'default' }}>
+                <img src={b.src} alt={b.alt} loading="lazy" />
+                <div className="inlineImageCaption">{b.alt}</div>
+              </div>
+            )
+          }
           return (
             <button
               key={idx}
@@ -334,24 +347,46 @@ export function RichContent({
             ) : null}
 
             {b.galleries.length > 0 ? (
-              <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap', marginTop: hasText ? 10 : 0 }}>
-                {b.galleries.map((g, i) => {
-                  const title = g.title || '圖庫'
-                  return (
-                    <button
-                      key={`${idx}-g-${i}-${title}`}
-                      type="button"
-                      className="btn"
-                      style={{ minHeight: 34, padding: '8px 12px' }}
-                      onClick={() => onOpenGallery?.(g.images, title)}
-                      aria-label={`開啟圖庫：${title}`}
-                      title="點擊開啟圖庫"
-                    >
-                      {title === '圖庫' ? '圖庫' : `圖庫：${title}`}
-                    </button>
-                  )
-                })}
-              </div>
+              onOpenGallery ? (
+                <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap', marginTop: hasText ? 10 : 0 }}>
+                  {b.galleries.map((g, i) => {
+                    const title = g.title || '圖庫'
+                    return (
+                      <button
+                        key={`${idx}-g-${i}-${title}`}
+                        type="button"
+                        className="btn"
+                        style={{ minHeight: 34, padding: '8px 12px' }}
+                        onClick={() => onOpenGallery?.(g.images, title)}
+                        aria-label={`開啟圖庫：${title}`}
+                        title="點擊開啟圖庫"
+                      >
+                        {title === '圖庫' ? '圖庫' : `圖庫：${title}`}
+                      </button>
+                    )
+                  })}
+                </div>
+              ) : (
+                <div style={{ display: 'grid', gap: 8, marginTop: hasText ? 10 : 0 }}>
+                  {b.galleries.map((g, i) => {
+                    const title = g.title || '圖庫'
+                    return (
+                      <div key={`${idx}-g-${i}-${title}`}>
+                        <div className="muted" style={{ fontSize: 'var(--text-xs)', marginBottom: 6 }}>
+                          {title}
+                        </div>
+                        <div style={{ display: 'flex', gap: 10, overflowX: 'auto', paddingBottom: 6 }}>
+                          {g.images.map((im, j) => (
+                            <div key={`${idx}-g-${i}-${title}-${j}-${im.src}`} className="galleryThumb" aria-hidden="true">
+                              <img src={im.src} alt={im.alt ?? title} loading="lazy" decoding="async" />
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    )
+                  })}
+                </div>
+              )
             ) : null}
           </div>
         )

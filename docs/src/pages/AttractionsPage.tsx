@@ -1,17 +1,18 @@
 import { useCallback, useEffect, useMemo, useState } from 'react'
+import { useLocation } from 'react-router-dom'
 import { ATTRACTIONS_DATA, EXTENSIONS_DATA } from '../generated'
 import { CITIES, STAYS_CITY_ORDER } from '../data/core'
 import type { CityId } from '../data/core'
 import { useProgress } from '../state/progress'
 import { useHashScroll } from '../hooks/useHashScroll'
 import { useReveal } from '../hooks/useReveal'
-import { Lightbox } from '../components/Lightbox'
-import { GalleryLightbox, type GalleryImage } from '../components/GalleryLightbox'
 import { Modal } from '../components/Modal'
 import { ILLUSTRATION } from '../illustrations'
 import { PageHero } from '../components/PageHero'
 import { RichContent } from '../components/RichContent'
 import { firstContentSnippet } from '../utils/richContentSnippet'
+import { useMotionEnabled } from '../state/settings'
+import { AttractionsSpotCards } from '../components/AttractionsSpotCards'
 
 const SECTION_TAB_LABEL: Record<string, string> = {
   must: '必去',
@@ -38,13 +39,14 @@ const DEFAULT_ATTRACTIONS_CITY_ID: CityId | null = (() => {
 export function AttractionsPage() {
   const { actions: progressActions } = useProgress()
   useHashScroll()
+  const location = useLocation()
+  const motionEnabled = useMotionEnabled()
   const [open, setOpen] = useState<Record<string, boolean>>({})
   const [active, setActive] = useState<{ cityId: string; tripId: string } | null>(null)
-  const [lightbox, setLightbox] = useState<{ src: string; title: string } | null>(null)
-  const [gallery, setGallery] = useState<{ title: string; images: GalleryImage[]; index: number } | null>(null)
   const [activeCityId, setActiveCityId] = useState<CityId | null>(DEFAULT_ATTRACTIONS_CITY_ID)
   const [activeTabByCity, setActiveTabByCity] = useState<Record<string, string>>({})
   const [cityProgress, setCityProgress] = useState(0)
+  const [requestedSpot, setRequestedSpot] = useState<{ cityId: string; kind: string; slug: string } | null>(null)
 
   const extensionsByCity = useMemo(() => {
     const m = new Map<string, (typeof EXTENSIONS_DATA)[number]>()
@@ -148,8 +150,8 @@ export function AttractionsPage() {
 
   useEffect(() => {
     // Keyboard quick-nav: ArrowLeft / ArrowRight to jump across cities.
-    // Avoid stealing keys when modals/lightboxes are open.
-    if (active || lightbox || gallery) return
+    // Avoid stealing keys when modals are open.
+    if (active) return
 
     const onKeyDown = (e: KeyboardEvent) => {
       if (e.defaultPrevented) return
@@ -171,7 +173,7 @@ export function AttractionsPage() {
 
     window.addEventListener('keydown', onKeyDown)
     return () => window.removeEventListener('keydown', onKeyDown)
-  }, [active, gallery, lightbox, nextCityId, prevCityId, scrollToCity])
+  }, [active, nextCityId, prevCityId, scrollToCity])
 
   useEffect(() => {
     let raf = 0
@@ -210,6 +212,49 @@ export function AttractionsPage() {
       window.removeEventListener('resize', onScroll)
     }
   }, [activeCityId, cityOrder])
+
+  useEffect(() => {
+    const raw = (location.hash ?? '').replace('#', '').trim()
+    if (!raw) {
+      setRequestedSpot(null)
+      return
+    }
+    let id = raw
+    try {
+      id = decodeURIComponent(raw)
+    } catch {
+      // ignore decode errors; use raw
+    }
+    if (!id.startsWith('attr-')) return
+    const parts = id.split('-')
+    // attr-<cityId>-<kind>-<spotSlug...>
+    if (parts.length < 4) {
+      setRequestedSpot(null)
+      return
+    }
+    const cityId = parts[1] ?? ''
+    const kind = parts[2] ?? ''
+    const slug = parts.slice(3).join('-')
+    if (!cityId || !kind || !slug) return
+
+    setActiveCityId(cityId as CityId)
+    setActiveTabByCity((prev) => ({ ...prev, [cityId]: kind }))
+    setRequestedSpot({ cityId, kind, slug })
+
+    // Scroll only after the correct city/tab renders the target element.
+    let tries = 0
+    const tick = () => {
+      const el = document.getElementById(id)
+      if (el) {
+        el.scrollIntoView({ behavior: motionEnabled ? 'smooth' : 'auto', block: 'start' })
+        el.classList.add('hashFlash')
+        window.setTimeout(() => el.classList.remove('hashFlash'), 1100)
+        return
+      }
+      if (tries++ < 30) window.requestAnimationFrame(tick)
+    }
+    window.requestAnimationFrame(tick)
+  }, [location.hash, motionEnabled])
 
   return (
     <div className="container pageAttractions">
@@ -305,7 +350,7 @@ export function AttractionsPage() {
                       <div className="attrCityNameRow">
                         <div className="attrCityName">{c.title}</div>
                       </div>
-                      <div className="attrCitySub">用章節切換快速掃重點（不做每段卡片）。</div>
+                      <div className="attrCitySub">用章節切換快速掃重點；每個 ### 會變成可折疊卡片（先看摘要，想看再展開）。</div>
                     </div>
                   </div>
                 </div>
@@ -338,11 +383,17 @@ export function AttractionsPage() {
                             （此章節目前尚無內容）
                           </div>
                         ) : (
-                          <RichContent
+                          <AttractionsSpotCards
+                            cityId={c.cityId}
+                            kind={activeSection.kind}
                             content={activeSection.content}
-                            className="attrProse"
-                            onOpenImage={(src, title) => setLightbox({ src, title })}
-                            onOpenGallery={(images, title) => setGallery({ images, title, index: 0 })}
+                            requestedSpotSlug={
+                              requestedSpot &&
+                              requestedSpot.cityId === c.cityId &&
+                              requestedSpot.kind === activeSection.kind
+                                ? requestedSpot.slug
+                                : null
+                            }
                           />
                         )}
                       </div>
@@ -409,26 +460,8 @@ export function AttractionsPage() {
           tripId={active.tripId}
           onClose={() => setActive(null)}
           data={extensionsByCity.get(active.cityId)}
-          onOpenImage={(src, title) => setLightbox({ src, title })}
-          onOpenGallery={(images, title) => setGallery({ images, title, index: 0 })}
         />
       )}
-
-      <GalleryLightbox
-        open={!!gallery}
-        title={gallery?.title}
-        images={gallery?.images ?? []}
-        initialIndex={gallery?.index ?? 0}
-        onClose={() => setGallery(null)}
-      />
-
-      <Lightbox
-        open={!!lightbox}
-        src={lightbox?.src ?? ''}
-        alt={lightbox?.title ?? '圖片'}
-        title={lightbox?.title}
-        onClose={() => setLightbox(null)}
-      />
     </div>
   )
 }
@@ -438,15 +471,11 @@ function ExtensionModal({
   tripId,
   data,
   onClose,
-  onOpenImage,
-  onOpenGallery,
 }: {
   cityId: string
   tripId: string
   data: (typeof EXTENSIONS_DATA)[number] | undefined
   onClose: () => void
-  onOpenImage?: (src: string, title: string) => void
-  onOpenGallery?: (images: GalleryImage[], title: string) => void
 }) {
   const trip = data?.trips.find((t) => t.id === tripId)
   if (!trip) return null
@@ -493,8 +522,6 @@ function ExtensionModal({
                 <RichContent
                   content={s.content}
                   className="attrProse"
-                  onOpenImage={onOpenImage}
-                  onOpenGallery={onOpenGallery}
                 />
               </div>
             </section>

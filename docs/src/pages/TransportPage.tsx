@@ -2,7 +2,6 @@ import { useEffect, useMemo, useState } from 'react'
 import { TRANSPORT_DATA } from '../generated'
 import { TRANSPORT_SEGMENTS, type TransportSegmentId } from '../data/core'
 import { useProgress } from '../state/progress'
-import { Lightbox } from '../components/Lightbox'
 import { useHashScroll } from '../hooks/useHashScroll'
 import { useReveal } from '../hooks/useReveal'
 import { ILLUSTRATION } from '../illustrations'
@@ -33,7 +32,6 @@ function Accordion({
 
 export function TransportPage() {
   const { actions: progressActions } = useProgress()
-  const [lightbox, setLightbox] = useState<{ src: string; title: string } | null>(null)
   useHashScroll()
 
   const transportById = useMemo(() => {
@@ -122,7 +120,7 @@ export function TransportPage() {
                         key={`${seg.id}-train-${idx}-${o.title}`}
                         title={trainOptions.length === 1 ? '火車方案（Train）' : `火車方案（Train）${idx + 1}`}
                       >
-                        {renderOption(o, (src, title) => setLightbox({ src, title }))}
+                        <TransportOption o={o} />
                       </Accordion>
                     ))
                   ) : (
@@ -139,7 +137,7 @@ export function TransportPage() {
                         key={`${seg.id}-bus-${idx}-${o.title}`}
                         title={busOptions.length === 1 ? '巴士方案（Bus）' : `巴士方案（Bus）${idx + 1}`}
                       >
-                        {renderOption(o, (src, title) => setLightbox({ src, title }))}
+                        <TransportOption o={o} />
                       </Accordion>
                     ))
                   ) : (
@@ -167,13 +165,6 @@ export function TransportPage() {
         })}
       </div>
 
-      <Lightbox
-        open={!!lightbox}
-        src={lightbox?.src ?? ''}
-        alt={lightbox?.title ?? '截圖'}
-        title={lightbox?.title}
-        onClose={() => setLightbox(null)}
-      />
     </div>
   )
 }
@@ -213,11 +204,22 @@ function RevealSection({
   )
 }
 
-function renderOption(
-  o: (typeof TRANSPORT_DATA)[number]['options'][number],
-  onOpenImage: (src: string, title: string) => void,
-) {
+function TransportOption({ o }: { o: (typeof TRANSPORT_DATA)[number]['options'][number] }) {
   const toJpg = (src: string) => (src.endsWith('.png') ? src.replace(/\.png$/i, '.jpg') : src)
+  const shots = useMemo(() => {
+    return (o.screenshots ?? []).map((s) => ({
+      ...s,
+      src: withBaseUrl(s.src),
+      jpg: withBaseUrl(toJpg(s.src)),
+    }))
+  }, [o.screenshots])
+
+  const [idx, setIdx] = useState(0)
+  const safeIdx = Math.max(0, Math.min(shots.length - 1, idx))
+  const active = shots[safeIdx]
+  const canPrev = safeIdx > 0
+  const canNext = safeIdx < shots.length - 1
+
   return (
     <div style={{ display: 'grid', gap: 10 }}>
       <div style={{ display: 'flex', gap: 10, alignItems: 'baseline', flexWrap: 'wrap' }}>
@@ -261,11 +263,65 @@ function renderOption(
 
       <div>
         <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', gap: 10, flexWrap: 'wrap' }}>
-          <div style={{ fontWeight: 850 }}>截圖（可點放大）</div>
+          <div style={{ fontWeight: 850 }}>截圖</div>
           <div className="muted" style={{ fontSize: 'var(--text-xs)' }}>
-            左右滑看更多
+            {shots.length > 1 ? '左右滑看更多 / 點縮圖切換' : '點縮圖切換'}
           </div>
         </div>
+
+        {active ? (
+          <div
+            className="card"
+            style={{
+              marginTop: 10,
+              boxShadow: 'none',
+              overflow: 'hidden',
+              borderRadius: 14,
+              background: 'var(--surface)',
+            }}
+            aria-label="截圖預覽"
+          >
+            <div style={{ display: 'flex', justifyContent: 'space-between', gap: 10, alignItems: 'center', padding: 10 }}>
+              <div style={{ fontWeight: 800, fontSize: 'var(--text-sm)', minWidth: 0 }}>
+                <span style={{ whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis', display: 'block' }}>
+                  {active.label}
+                </span>
+              </div>
+              <div style={{ display: 'flex', gap: 10, alignItems: 'center' }}>
+                <button
+                  className="btn"
+                  type="button"
+                  onClick={() => setIdx((i) => Math.max(0, i - 1))}
+                  disabled={!canPrev}
+                  aria-label="上一張截圖"
+                  title="上一張"
+                >
+                  ←
+                </button>
+                <button
+                  className="btn"
+                  type="button"
+                  onClick={() => setIdx((i) => Math.min(shots.length - 1, i + 1))}
+                  disabled={!canNext}
+                  aria-label="下一張截圖"
+                  title="下一張"
+                >
+                  →
+                </button>
+              </div>
+            </div>
+            <picture>
+              <source srcSet={active.jpg} type="image/jpeg" />
+              <img
+                src={active.src}
+                alt={active.label}
+                style={{ width: '100%', height: 260, objectFit: 'cover', display: 'block' }}
+                loading="lazy"
+                decoding="async"
+              />
+            </picture>
+          </div>
+        ) : null}
 
         <div
           style={{
@@ -279,7 +335,7 @@ function renderOption(
           }}
           aria-label="截圖輪播（左右滑動）"
         >
-          {o.screenshots.map((s) => (
+          {shots.map((s, i) => (
             <button
               key={s.src}
               className="btn"
@@ -292,14 +348,14 @@ function renderOption(
                 textAlign: 'left',
                 background: 'var(--surface)',
               }}
-              onClick={() => onOpenImage(withBaseUrl(toJpg(s.src)), s.label)}
-              title="點擊放大"
-              aria-label={`查看大圖：${s.label}`}
+              onClick={() => setIdx(i)}
+              title="切換預覽"
+              aria-label={`切換預覽：${s.label}`}
             >
               <picture>
-                <source srcSet={withBaseUrl(toJpg(s.src))} type="image/jpeg" />
+                <source srcSet={s.jpg} type="image/jpeg" />
                 <img
-                  src={withBaseUrl(s.src)}
+                  src={s.src}
                   alt={s.label}
                   style={{ width: '100%', height: 150, objectFit: 'cover', display: 'block' }}
                   loading="lazy"
@@ -309,7 +365,7 @@ function renderOption(
               <div style={{ padding: 10 }}>
                 <div style={{ fontWeight: 750, fontSize: 'var(--text-sm)', lineHeight: 1.25 }}>{s.label}</div>
                 <div className="muted" style={{ fontSize: 'var(--text-xs)', marginTop: 4 }}>
-                  點擊放大
+                  切換預覽
                 </div>
               </div>
             </button>
