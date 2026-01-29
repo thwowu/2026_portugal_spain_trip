@@ -7,7 +7,7 @@ import { useReveal } from '../hooks/useReveal'
 import { ILLUSTRATION } from '../illustrations'
 import { PageHero } from '../components/PageHero'
 import { withBaseUrl } from '../utils/asset'
-import { FormattedInline, FormattedText } from '../components/FormattedText'
+import { FormattedInline } from '../components/FormattedText'
 import { ExpandingBox } from '../components/ExpandingBox'
 
 function Accordion({
@@ -107,7 +107,13 @@ export function TransportPage() {
                         </div>
                       </div>
                       <div className="muted" style={{ marginTop: 10 }}>
-                        {renderMixedList(seg.tldr.reminders, { ordered: false })}
+                        <ul style={{ margin: 0, paddingLeft: 18 }}>
+                          {seg.tldr.reminders.map((r) => (
+                            <li key={r} style={{ marginTop: 6 }}>
+                              <FormattedInline text={r} />
+                            </li>
+                          ))}
+                        </ul>
                       </div>
                     </div>
                   </div>
@@ -153,7 +159,13 @@ export function TransportPage() {
                       <div className="cardInner">
                         <div style={{ fontWeight: 900 }}>Plan B（備案）</div>
                         <div className="muted" style={{ marginTop: 6 }}>
-                          {renderMixedList(seg.planB, { ordered: false })}
+                          <ul style={{ margin: 0, paddingLeft: 18 }}>
+                            {seg.planB.map((b) => (
+                              <li key={b} style={{ marginTop: 6 }}>
+                                <FormattedInline text={b} />
+                              </li>
+                            ))}
+                          </ul>
                         </div>
                       </div>
                     </div>
@@ -230,7 +242,13 @@ function TransportOption({ o }: { o: (typeof TRANSPORT_DATA)[number]['options'][
       <div>
         <div style={{ fontWeight: 850 }}>怎麼搭（Step-by-step）</div>
         <div className="muted" style={{ marginTop: 6 }}>
-          {renderMixedList(o.steps, { ordered: true })}
+          <ol className="treeList treeListOrdered">
+            {o.steps.map((s) => (
+              <li key={s} style={{ marginTop: 6 }}>
+                <FormattedInline text={s} />
+              </li>
+            ))}
+          </ol>
         </div>
       </div>
 
@@ -250,14 +268,26 @@ function TransportOption({ o }: { o: (typeof TRANSPORT_DATA)[number]['options'][
       <div>
         <div style={{ fontWeight: 850 }}>大行李/麻煩程度</div>
         <div className="muted" style={{ marginTop: 6 }}>
-          {renderMixedList(o.luggageNotes, { ordered: false })}
+          <ul style={{ margin: 0, paddingLeft: 18 }}>
+            {o.luggageNotes.map((n) => (
+              <li key={n} style={{ marginTop: 6 }}>
+                <FormattedInline text={n} />
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
 
       <div>
         <div style={{ fontWeight: 850 }}>風險提醒</div>
         <div className="muted" style={{ marginTop: 6 }}>
-          {renderMixedList(o.riskNotes, { ordered: false })}
+          <ul style={{ margin: 0, paddingLeft: 18 }}>
+            {o.riskNotes.map((n) => (
+              <li key={n} style={{ marginTop: 6 }}>
+                <FormattedInline text={n} />
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
 
@@ -372,86 +402,6 @@ function TransportOption({ o }: { o: (typeof TRANSPORT_DATA)[number]['options'][
           ))}
         </div>
       </div>
-    </div>
-  )
-}
-
-function isMiniHeading(line: string) {
-  const t = (line ?? '').trim()
-  return /^#{3,4}\s*\S/.test(t)
-}
-
-function normalizeMiniHeading(line: string) {
-  // We treat "###" / "####" lines as mini headings.
-  // Our FormattedText supports "##/###" headings; normalize #### → ###.
-  const t = (line ?? '').trim()
-  const m = /^#{3,4}\s*(.+)$/.exec(t)
-  if (!m) return null
-  const title = (m[1] ?? '').trim()
-  if (!title) return null
-  return `### ${title}`
-}
-
-function renderMixedList(items: string[], { ordered }: { ordered: boolean }) {
-  const rows = (items ?? []).map((x) => x ?? '').map((x) => x.trim()).filter(Boolean)
-  if (rows.length === 0) return null
-
-  const blocks: Array<
-    | { kind: 'h'; text: string }
-    | { kind: 'list'; ordered: boolean; start: number; items: string[] }
-  > = []
-
-  let buf: string[] = []
-  let listIndex = 1
-  const flush = () => {
-    if (buf.length === 0) return
-    blocks.push({ kind: 'list', ordered, start: listIndex, items: buf })
-    if (ordered) listIndex += buf.length
-    buf = []
-  }
-
-  for (const r of rows) {
-    const h = isMiniHeading(r) ? normalizeMiniHeading(r) : null
-    if (h) {
-      flush()
-      blocks.push({ kind: 'h', text: h })
-      continue
-    }
-    buf.push(r)
-  }
-  flush()
-
-  return (
-    <div style={{ display: 'grid', gap: 8 }}>
-      {blocks.map((b, idx) => {
-        if (b.kind === 'h') {
-          return <FormattedText key={`h-${idx}-${b.text}`} text={b.text} className="prose" />
-        }
-        if (b.ordered) {
-          return (
-            <ol
-              key={`ol-${idx}-${b.items[0] ?? ''}`}
-              className="treeList treeListOrdered"
-              start={b.start}
-            >
-              {b.items.map((s) => (
-                <li key={s} style={{ marginTop: 6 }}>
-                  <FormattedInline text={s} />
-                </li>
-              ))}
-            </ol>
-          )
-        }
-        return (
-          <ul key={`ul-${idx}-${b.items[0] ?? ''}`} style={{ margin: 0, paddingLeft: 18 }}>
-            {b.items.map((s) => (
-              <li key={s} style={{ marginTop: 6 }}>
-                <FormattedInline text={s} />
-              </li>
-            ))}
-          </ul>
-        )
-      })}
     </div>
   )
 }

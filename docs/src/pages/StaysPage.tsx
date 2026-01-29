@@ -4,7 +4,7 @@ import { CITIES, STAYS_CITY_ORDER } from '../data/core'
 import { useHashScroll } from '../hooks/useHashScroll'
 import { useReveal } from '../hooks/useReveal'
 import { PageHero } from '../components/PageHero'
-import { FormattedInline, FormattedText } from '../components/FormattedText'
+import { FormattedInline } from '../components/FormattedText'
 import { ExpandingBox } from '../components/ExpandingBox'
 
 function statusPill(status: 'primary' | 'secondary' | 'backup' | undefined) {
@@ -83,17 +83,13 @@ export function StaysPage() {
                               </div>
                               {o.why.length > 0 && (
                                 <div className="muted" style={{ marginTop: 8 }}>
-                                  {o.why.length === 1 ? (
-                                    <FormattedText text={o.why[0] ?? ''} className="prose" />
-                                  ) : (
-                                    <ul style={{ margin: 0, paddingLeft: 18 }}>
-                                      {o.why.map((x, idx) => (
-                                        <li key={x} style={{ marginTop: idx === 0 ? 0 : 6 }}>
-                                          <FormattedInline text={x} />
-                                        </li>
-                                      ))}
-                                    </ul>
-                                  )}
+                                  <ul style={{ margin: 0, paddingLeft: 18 }}>
+                                    {o.why.map((x, idx) => (
+                                      <li key={x} style={{ marginTop: idx === 0 ? 0 : 6 }}>
+                                        <FormattedInline text={x} />
+                                      </li>
+                                    ))}
+                                  </ul>
                                 </div>
                               )}
                               {o.risks.length > 0 && (
@@ -136,7 +132,13 @@ export function StaysPage() {
                       style={{ boxShadow: 'none', background: 'var(--surface-2)' }}
                     >
                       <div className="muted" style={{ marginTop: 8 }}>
-                        <FormattedText text={c.publicTransportHowToBuy} className="prose" />
+                        <ul style={{ margin: 0, paddingLeft: 18 }}>
+                          {c.publicTransportHowToBuy.map((x, idx) => (
+                            <li key={x} style={{ marginTop: idx === 0 ? 0 : 6 }}>
+                              <FormattedInline text={x} />
+                            </li>
+                          ))}
+                        </ul>
                       </div>
                     </ExpandingBox>
 
@@ -148,7 +150,13 @@ export function StaysPage() {
                       style={{ boxShadow: 'none', background: 'var(--surface-2)' }}
                     >
                       <div className="muted" style={{ marginTop: 8 }}>
-                        <FormattedText text={c.moneySavingTips} className="prose" />
+                        <ul style={{ margin: 0, paddingLeft: 18 }}>
+                          {c.moneySavingTips.map((x, idx) => (
+                            <li key={x} style={{ marginTop: idx === 0 ? 0 : 6 }}>
+                              <FormattedInline text={x} />
+                            </li>
+                          ))}
+                        </ul>
                       </div>
                     </ExpandingBox>
                   </div>

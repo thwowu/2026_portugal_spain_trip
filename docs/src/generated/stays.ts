@@ -11,11 +11,9 @@ export const STAYS_DATA: CityStay[] = [
     "options": [
       {
         "name": "市中心（Centro；大教堂/格蘭大道 Gran Vía 一帶，首選：省坡）",
-        "why": [
-          "景點密度高、平路比例高；需要休息或補給也方便。"
-        ],
+        "why": [],
         "risks": [
-          "旺季價格浮動，熱門路段可能有噪音（餐廳/人流）。"
+          "旺季價格浮動，熱門路段可能有噪音（餐廳/人流）"
         ],
         "links": [
           {
@@ -26,11 +24,9 @@ export const STAYS_DATA: CityStay[] = [
       },
       {
         "name": "雷阿萊霍（Realejo；次選：靠近阿爾罕布拉山腳）",
-        "why": [
-          "位置介於市中心與上坡區之間，行程想安排 Alhambra 會比較順。"
-        ],
+        "why": [],
         "risks": [
-          "部分街區仍有坡與石板路，拖行李要評估。"
+          "部分街區仍有坡與石板路，拖行李要評估"
         ],
         "links": [
           {
@@ -41,11 +37,10 @@ export const STAYS_DATA: CityStay[] = [
       },
       {
         "name": "阿爾拜辛（Albaicín；備選：景觀/氛圍最強但最累）",
-        "why": [
-          "老城氛圍與視角很強，適合想把「住在山城裡」的感覺住出來。"
-        ],
+        "why": [],
         "risks": [
-          "坡/階梯/石板路密集，帶行李與夜間行走成本高；車輛接送也不一定能到門口（巷弄狹窄）。"
+          "坡/階梯/石板路密集，帶行李與夜間行走成本高（也更吃體力）",
+          "車輛接送不一定能到門口（巷弄狹窄）"
         ],
         "links": [
           {
@@ -55,8 +50,88 @@ export const STAYS_DATA: CityStay[] = [
         ]
       }
     ],
-    "publicTransportHowToBuy": "- 市中心多數景點可走路，但上阿爾拜辛/薩克羅蒙特/阿爾罕布拉「坡很有感」，若同行有人不適合爬坡/樓梯，就把「上坡段」交給公車（回程再視體力走路/搭車）。（Wikivoyage：[`Granada`](https://en.wikivoyage.org/wiki/Granada_(Spain))；Wikitravel：[`Granada (Spain)`](https://wikitravel.org/en/Granada_(Spain))）\n- 單程票（Sencillo）：可上車向司機購買；也可在部分站點的售票機購買（官方說明亦提到部分路線站點有機器）。（Movilidad Granada：[`Bus fares`](http://www.movilidadgranada.com/bus_tarifas.php?idioma=en)）\n- `Credibús`（最常用的儲值卡/多次票）怎麼買：\n  - 第一次買卡：卡片押金/費用 €2，且最低需先加值 €5；可在車上或部分站點售票機購買。（Movilidad Granada：[`Bus fares`](http://www.movilidadgranada.com/bus_tarifas.php?idioma=en)）\n  - 刷卡/驗票：上車後每次都要感應驗票；`Credibús` 允許多人「同一趟同行」共用（但不是每種卡都能共用）。（Movilidad Granada：[`Bus fares`](http://www.movilidadgranada.com/bus_tarifas.php?idioma=en)）\n- 轉乘規則（官方版）：單程票與 `Credibús` 都可在 60 分鐘內跨「不同路線」免費轉乘。（Movilidad Granada：[`Bus fares`](http://www.movilidadgranada.com/bus_tarifas.php?idioma=en)）\n- 觀光常用上坡線：前往 Alhambra / Albayzín / Sacromonte 的公車/小巴是最省體力的做法（實際路線號碼與站點以當下官方資訊/Google Maps 顯示為準）。（Wikivoyage：[`Granada`](https://en.wikivoyage.org/wiki/Granada_(Spain))）",
-    "moneySavingTips": "- 只搭 1–2 趟：先用單程票即可；如果你發現自己每天都要搭好幾趟再換 `Credibús`（它本質上就是為「常搭」設計的折扣票種）。（Movilidad Granada：[`Bus fares`](http://www.movilidadgranada.com/bus_tarifas.php?idioma=en)）\n- 善用「60 分鐘免費轉乘」：把行程拆成「上坡搭車、下坡步行」或「去程搭車、回程走路」，通常最省錢也最省力。（Movilidad Granada：[`Bus fares`](http://www.movilidadgranada.com/bus_tarifas.php?idioma=en)）\n- 坡段把錢花在省體力：上阿爾拜辛/阿爾罕布拉那種坡，公車票錢通常比膝蓋受傷與時間成本更便宜。（Wikivoyage：[`Granada`](https://en.wikivoyage.org/wiki/Granada_(Spain))）"
+    "publicTransportHowToBuy": [
+      "市中心多數景點可走路，但上阿爾拜辛/薩克羅蒙特/阿爾罕布拉「坡很有感」，若同行有人不適合爬坡/樓梯，就把「上坡段」交給公車（回程再視體力走路/搭車）。（Wikivoyage：[`Granada`](https://en.wikivoyage.org/wiki/Granada_(Spain))；Wikitravel：[`Granada (Spain)`](https://wikitravel.org/en/Granada_(Spain))）",
+      "單程票（Sencillo）：可上車向司機購買；也可在部分站點的售票機購買（官方說明亦提到部分路線站點有機器）。（Movilidad Granada：[`Bus fares`](http://www.movilidadgranada.com/bus_tarifas.php?idioma=en)）",
+      "`Credibús`（最常用的儲值卡/多次票）怎麼買：",
+      "轉乘規則（官方版）：單程票與 `Credibús` 都可在 60 分鐘內跨「不同路線」免費轉乘。（Movilidad Granada：[`Bus fares`](http://www.movilidadgranada.com/bus_tarifas.php?idioma=en)）",
+      "觀光常用上坡線：前往 Alhambra / Albayzín / Sacromonte 的公車/小巴是最省體力的做法（實際路線號碼與站點以當下官方資訊/Google Maps 顯示為準）。（Wikivoyage：[`Granada`](https://en.wikivoyage.org/wiki/Granada_(Spain))）"
+    ],
+    "moneySavingTips": [
+      "只搭 1–2 趟：先用單程票即可；如果你發現自己每天都要搭好幾趟再換 `Credibús`（它本質上就是為「常搭」設計的折扣票種）。（Movilidad Granada：[`Bus fares`](http://www.movilidadgranada.com/bus_tarifas.php?idioma=en)）",
+      "善用「60 分鐘免費轉乘」：把行程拆成「上坡搭車、下坡步行」或「去程搭車、回程走路」，通常最省錢也最省力。（Movilidad Granada：[`Bus fares`](http://www.movilidadgranada.com/bus_tarifas.php?idioma=en)）",
+      "坡段把錢花在省體力：上阿爾拜辛/阿爾罕布拉那種坡，公車票錢通常比膝蓋受傷與時間成本更便宜。（Wikivoyage：[`Granada`](https://en.wikivoyage.org/wiki/Granada_(Spain))）"
+    ],
+    "scoringModel": {
+      "weights": [
+        {
+          "criterion": "抵達日穩定性（長途交通後：入住流程/櫃檯）",
+          "weight": 0.3
+        },
+        {
+          "criterion": "交通便利與爬坡風險",
+          "weight": 0.2
+        },
+        {
+          "criterion": "房間品質（新舊、空間、隔音）",
+          "weight": 0.2
+        },
+        {
+          "criterion": "評論一致性（極端負評比例）",
+          "weight": 0.15
+        },
+        {
+          "criterion": "成本效率",
+          "weight": 0.15
+        }
+      ],
+      "table": {
+        "headers": [
+          "住宿",
+          "抵達日穩定性（長途交通後：入住流程/櫃檯）",
+          "交通便利與爬坡風險",
+          "房間品質（新舊、空間、隔音）",
+          "評論一致性（極端負評比例）",
+          "成本效率",
+          "加權積分"
+        ],
+        "rows": [
+          {
+            "label": "Centro",
+            "values": [
+              "4",
+              "5",
+              "3",
+              "3",
+              "4",
+              "3.85"
+            ]
+          },
+          {
+            "label": "Realejo",
+            "values": [
+              "3",
+              "4",
+              "3",
+              "3",
+              "4",
+              "3.45"
+            ]
+          },
+          {
+            "label": "Albaicín",
+            "values": [
+              "2",
+              "2",
+              "3",
+              "3",
+              "3",
+              "2.55"
+            ]
+          }
+        ]
+      }
+    }
   },
   {
     "cityId": "lagos",
@@ -64,11 +139,10 @@ export const STAYS_DATA: CityStay[] = [
     "options": [
       {
         "name": "拉各斯老城 / 碼頭區（Lagos Old Town / Marina；首選：最省腦）",
-        "why": [
-          "吃飯、逛街、看海都在附近，行李日也比較不容易踩到「拖行李走很遠/走坡」。"
-        ],
+        "why": [],
         "risks": [
-          "旺季夜間可能較吵（餐酒吧/人潮）；自駕停車也可能比較麻煩（需找停車場/路邊位）。"
+          "旺季夜間較吵（餐酒吧/人潮）",
+          "若自駕停車較麻煩（需找停車場/路邊位）"
         ],
         "links": [
           {
@@ -79,11 +153,10 @@ export const STAYS_DATA: CityStay[] = [
       },
       {
         "name": "唐娜安娜海灘 / 皮耶達德角方向（Praia Dona Ana / Ponta da Piedade；海景派）",
-        "why": [
-          "距離海灘與海岸步道更近，想把重點放在海岸景觀很適合。"
-        ],
+        "why": [],
         "risks": [
-          "往舊城/碼頭多半要走一段（部分路段有坡）；靠海風大潮濕，曬衣與體感可能比較不友善（看房型與天氣）。"
+          "往舊城/碼頭多半要走一段（且部分路段有坡）",
+          "靠海風大潮濕，曬衣/體感可能比較不友善（看房型與天氣）"
         ],
         "links": [
           {
@@ -94,11 +167,10 @@ export const STAYS_DATA: CityStay[] = [
       },
       {
         "name": "梅亞海灘 / 拉各斯火車站一帶（Meia Praia / Lagos 火車站；平地＋大沙灘）",
-        "why": [
-          "平地比例高，走起來最不累；要搭火車/跨城移動也比較順。"
-        ],
+        "why": [],
         "risks": [
-          "去舊城吃飯/逛街通常要走更遠或短程交通（來回時間成本較高）；晚上若想逛熱鬧區，回程要留意路況/時間。"
+          "去舊城吃飯/逛街通常要走更遠或短程交通（來回時間成本較高）",
+          "晚上若想逛熱鬧區，回程要留意路況/時間"
         ],
         "links": [
           {
@@ -108,24 +180,243 @@ export const STAYS_DATA: CityStay[] = [
         ]
       }
     ],
-    "publicTransportHowToBuy": "- 市區本體：Lagos 舊城/碼頭一帶很適合用走路解決；如果你想把「行李日」也走得順，就把住宿選在 Old Town / Marina 或 bus terminal/火車站附近，減少拖行李走坡/走遠路的機率；若你真的遇到「行李太重/晚到/路不好走」，短程計程車通常很便宜，直接搭最省事。（Wikivoyage：[`Lagos (Portugal)`](https://en.wikivoyage.org/wiki/Lagos_(Portugal))；Wikitravel：[`Lagos (Portugal)`](https://wikitravel.org/en/Lagos_(Portugal))）\n- 市內公車（A ONDA，拉各斯市內線）：\n  - 直接上車買 `Bilhete a Bordo`（單程；依區域 A/B 不同，且票有效 1 小時可轉乘 A ONDA 其他線）。（A ONDA：[`Tarifários`](https://aonda.pt/onda-tarifas/)）\n  - 若會搭多次：可買 `Bilhete de 1 dia / 3 dias / 5 dias / 7 dias` 或預買多次票（到指定售點辦理/加值）。（A ONDA：[`Tarifários`](https://aonda.pt/onda-tarifas/)）\n  - 售點在哪：最常用的是 `Terminal Rodoviário (S. João)`，也可在 Luz / Odiáxere / Bensafrim / Barão S. João 等售點辦理。（A ONDA：[`Postos de Venda`](https://aonda.pt/onda-venda/)）\n- 阿爾加維跨城巴士（VAMUS Algarve，用於 Lagos ↔ Portimão / Albufeira / Faro 等）：若你會用巴士跑多個城鎮，可留意 VAMUS 的 `Tourist Pass`（3 日 / 7 日無限搭；以官方公告為準）。（VAMUS：[`Passe Turístico / Tourist Pass` PDF](http://vamus.pt/wp-content/uploads/2022/06/Flyer-Passe-Turistico-_08Abril2022-2.pdf)）\n- 火車（CP）：區域線可往 Portimão / Faro / Tunes；想省排隊就用 CP 官網或 CP App 線上購票/查班次。（CP：[`Buy tickets`](https://www.cp.pt/passageiros/en/buy-tickets)；Wikivoyage：[`Lagos (Portugal)`](https://en.wikivoyage.org/wiki/Lagos_(Portugal))）",
-    "moneySavingTips": "- 若主要活動都在舊城＋碼頭＋近郊海灘：先用「走路＋必要時單程公車」，很多人其實不需要買任何日票。（Wikivoyage：[`Lagos (Portugal)`](https://en.wikivoyage.org/wiki/Lagos_(Portugal))）\n- 真的會一直搭市內公車：把票種簡化成兩步驟 —— 先上車買單程；確認你一天會搭多趟後再改買 `1 日` 或 `多日` 票（A ONDA 有 1/3/5/7 日票）。（A ONDA：[`Tarifários`](https://aonda.pt/onda-tarifas/)）\n- 若你打算用巴士跑阿爾加維多城：用 VAMUS 的 3 日/7 日 `Tourist Pass` 可能比單次買票省腦也省錢（以行程密度為準）。（VAMUS：[`Passe Turístico / Tourist Pass` PDF](http://vamus.pt/wp-content/uploads/2022/06/Flyer-Passe-Turistico-_08Abril2022-2.pdf)）\n- 行李多/晚上回住宿：底層策略是「住平地、離車站/terminal 近」（例如 Meia Praia / 火車站一帶）來減少搬運；真的卡住就把行程節奏放慢、沿大路走，或改成先回住宿放行李再出門；若你還是覺得不安全/太累，短程計程車通常很便宜，直接搭。（Wikivoyage：[`Lagos (Portugal)`](https://en.wikivoyage.org/wiki/Lagos_(Portugal))）"
+    "publicTransportHowToBuy": [
+      "市區本體：Lagos 舊城/碼頭一帶很適合用走路解決；如果你想把「行李日」也走得順，就把住宿選在 Old Town / Marina 或 bus terminal/火車站附近，減少拖行李走坡/走遠路的機率；若你真的遇到「行李太重/晚到/路不好走」，短程計程車通常很便宜，直接搭最省事。（Wikivoyage：[`Lagos (Portugal)`](https://en.wikivoyage.org/wiki/Lagos_(Portugal))；Wikitravel：[`Lagos (Portugal)`](https://wikitravel.org/en/Lagos_(Portugal))）",
+      "市內公車（A ONDA，拉各斯市內線）：",
+      "阿爾加維跨城巴士（VAMUS Algarve，用於 Lagos ↔ Portimão / Albufeira / Faro 等）：若你會用巴士跑多個城鎮，可留意 VAMUS 的 `Tourist Pass`（3 日 / 7 日無限搭；以官方公告為準）。（VAMUS：[`Passe Turístico / Tourist Pass` PDF](http://vamus.pt/wp-content/uploads/2022/06/Flyer-Passe-Turistico-_08Abril2022-2.pdf)）",
+      "火車（CP）：區域線可往 Portimão / Faro / Tunes；想省排隊就用 CP 官網或 CP App 線上購票/查班次。（CP：[`Buy tickets`](https://www.cp.pt/passageiros/en/buy-tickets)；Wikivoyage：[`Lagos (Portugal)`](https://en.wikivoyage.org/wiki/Lagos_(Portugal))）"
+    ],
+    "moneySavingTips": [
+      "若主要活動都在舊城＋碼頭＋近郊海灘：先用「走路＋必要時單程公車」，很多人其實不需要買任何日票。（Wikivoyage：[`Lagos (Portugal)`](https://en.wikivoyage.org/wiki/Lagos_(Portugal))）",
+      "真的會一直搭市內公車：把票種簡化成兩步驟 —— 先上車買單程；確認你一天會搭多趟後再改買 `1 日` 或 `多日` 票（A ONDA 有 1/3/5/7 日票）。（A ONDA：[`Tarifários`](https://aonda.pt/onda-tarifas/)）",
+      "若你打算用巴士跑阿爾加維多城：用 VAMUS 的 3 日/7 日 `Tourist Pass` 可能比單次買票省腦也省錢（以行程密度為準）。（VAMUS：[`Passe Turístico / Tourist Pass` PDF](http://vamus.pt/wp-content/uploads/2022/06/Flyer-Passe-Turistico-_08Abril2022-2.pdf)）",
+      "行李多/晚上回住宿：底層策略是「住平地、離車站/terminal 近」（例如 Meia Praia / 火車站一帶）來減少搬運；真的卡住就把行程節奏放慢、沿大路走，或改成先回住宿放行李再出門；若你還是覺得不安全/太累，短程計程車通常很便宜，直接搭。（Wikivoyage：[`Lagos (Portugal)`](https://en.wikivoyage.org/wiki/Lagos_(Portugal))）"
+    ],
+    "scoringModel": {
+      "weights": [
+        {
+          "criterion": "抵達日穩定性（長途交通後：入住流程/櫃檯）",
+          "weight": 0.3
+        },
+        {
+          "criterion": "交通便利與爬坡風險",
+          "weight": 0.2
+        },
+        {
+          "criterion": "房間品質（新舊、空間、隔音）",
+          "weight": 0.2
+        },
+        {
+          "criterion": "評論一致性（極端負評比例）",
+          "weight": 0.15
+        },
+        {
+          "criterion": "成本效率",
+          "weight": 0.15
+        }
+      ],
+      "table": {
+        "headers": [
+          "住宿",
+          "抵達日穩定性（長途交通後：入住流程/櫃檯）",
+          "交通便利與爬坡風險",
+          "房間品質（新舊、空間、隔音）",
+          "評論一致性（極端負評比例）",
+          "成本效率",
+          "加權積分"
+        ],
+        "rows": [
+          {
+            "label": "Lagos Old Town / Marina",
+            "values": [
+              "4",
+              "5",
+              "3",
+              "3",
+              "4",
+              "3.85"
+            ]
+          },
+          {
+            "label": "Praia Dona Ana / Ponta da Piedade",
+            "values": [
+              "3",
+              "4",
+              "3",
+              "3",
+              "3",
+              "3.30"
+            ]
+          },
+          {
+            "label": "Meia Praia / 火車站一帶",
+            "values": [
+              "3",
+              "3",
+              "3",
+              "3",
+              "4",
+              "3.15"
+            ]
+          }
+        ]
+      }
+    }
   },
   {
     "cityId": "lisbon",
     "title": "里斯本（Lisbon）住宿",
     "options": [
       {
-        "name": "[盧澤羅斯套房（Luzeiros Suites）](https://maps.app.goo.gl/szKwdhc3Yp7RuU8e8)",
-        "why": [
-          "我們已預訂房型「Superior Room, Courtyard View」（約 20 ㎡，最多 3 人，1 張 Queen Bed 或 2 張單人床）。第一晚就用它當「落地保險」：抵達後先穩定入住，把體力睡回來。\n**位置**：在 Campo Pequeno 斗牛場一帶，周邊步行友善。\n**館內服務**：24 小時櫃檯與禮賓服務（可寄放行李、問票務/行程）、電梯、房內免費 Wi‑Fi；館內也有餐廳與 snack bar/deli。\n**房間重點**：偏安靜（主打隔音），配備冷暖空調與遮光窗簾，並有庭院景。房內常用設備齊全：書桌＋筆電工作區、筆電保險箱、平面有線電視、電熱水壺、Espresso 機與迷你吧；衛浴是私人淋浴，附備品與吹風機。（無障礙友善設計/設備的實際供應仍以當日房型為準）\n**從機場到住宿**：\n第一航廈可搭 `744` 公車到住宿附近（可用信用卡/手機直接感應付費，不用另外買票）。如果你有行李、或只想少折騰一點，Uber/Bolt 從機場到住宿大約 €7–€11，直接叫車其實很划算。到站放完行李後，可以先進市區吃飯逛一下，等 14:00 再回來 check-in 休息。\n**附近地鐵**：最近的大站是 `Campo Pequeno`（黃線 Linha Amarela），進城與轉乘都很順。\n**城市稅**：每人每晚 €4；本次合計 €40，會在 check-in 時由櫃檯收取。"
+        "name": "盧澤羅斯套房（Luzeiros Suites；首選）",
+        "why": [],
+        "risks": [
+          "價格不是最低",
+          "部分方案可能不可取消"
         ],
-        "risks": [],
-        "links": []
+        "links": [
+          {
+            "label": "Google Maps",
+            "href": "https://maps.app.goo.gl/szKwdhc3Yp7RuU8e8"
+          }
+        ]
+      },
+      {
+        "name": "LX 蘇活精品酒店（Lx Soho Boutique；次選）",
+        "why": [],
+        "risks": [
+          "價格可能波動",
+          "可能不可取消"
+        ],
+        "links": [
+          {
+            "label": "Google Maps",
+            "href": "https://maps.app.goo.gl/aPKctvDx6LYoy38c8"
+          }
+        ]
+      },
+      {
+        "name": "共和大道 83 號（Republica 83；備案：公寓式）",
+        "why": [],
+        "risks": [
+          "可能沒有 24H 櫃檯（晚到/行李寄放風險）",
+          "老樓電梯/隔音/熱水等變因較多，第一晚不確定性偏高"
+        ],
+        "links": [
+          {
+            "label": "Google Maps（搜尋）",
+            "href": "https://www.google.com/maps/search/?api=1&query=Republica%2083%20Lisbon"
+          }
+        ]
+      },
+      {
+        "name": "易捷飯店・里斯本（easyHotel Lisbon；備案：連鎖平價）",
+        "why": [],
+        "risks": [
+          "房間普遍偏小、隔音/舒適度取決於房型",
+          "交通便利度/周邊體驗可能不如前兩個選項"
+        ],
+        "links": [
+          {
+            "label": "Google Maps（搜尋）",
+            "href": "https://www.google.com/maps/search/?api=1&query=easyHotel%20Lisbon"
+          }
+        ]
       }
     ],
-    "publicTransportHowToBuy": "### 先搞懂這張卡\n里斯本交通卡不用想太複雜：先弄到一張 **`Navegante Card`（前身 `VIVA Viagem`；也常寫 `navegante ocasional`）**，接下來只要決定今天用 `Zapping` 還是 `24h`。\n\n如果你只是偶爾搭地鐵，里斯本地鐵也可直接用 *contactless* 銀行卡/手機/手錶感應進站（每次每卡限 1 人；進出站用同一張卡/同一裝置；票價以官方公告為準）。（Metro Lisboa：[`Viajar no Metro com cartão bancário contactless`](https://www.metrolisboa.pt/comprar/viajar-no-metro-com-cartao-bancario-contactless/)）但只要你會搭到公車/電車，或行程比較多趟，建議每人買一張 `Navegante`：**一人一張**。\n### 票種怎麼選\n選票種就用「四次法則」：一天大概 **≤ 4 趟** 用 `Zapping`；要密集搭乘（電車/纜車/升降機一路刷）就用 `24h CARRIS/METRO`（從第一次刷卡起算連續 24 小時）。`Lisboa Card` 是「景點門票＋交通」套裝，只有你那天也要密集跑付費景點才容易划算。\n\n有個很重要的限制一定要記住：同一張 `Navegante Card` **不能同時載入**「`Zapping` 儲值金額」和「`24h` 通票」。所以你會看到很多人皮夾裡不只一張卡：目的很單純，就是避免自己卡在「卡裡還有餘額、但今天想改買通票」的尷尬。\n### 買卡/加值在哪裡最省腦\n保守做法：買卡/加值優先去火車站（售票/加值機器；常見綠色機器）。我去年親自測試時，地鐵站內的機器加值不太順（有遇過無法加值的情況），而且觸控/感應有時偏慢，所以建議提早到站把這步先處理掉。\n\n也可用 Multibanco 或 Portal VIVA（線上通常需要讀卡器）。（Portal VIVA：[`Carregar cartões VIVA`](https://portalviva.pt/pt/homepage/onde-carregar.aspx)）\n\n售票機大多能切英文。買新卡就是選張數＋載入 `Zapping` 或 `24h`；加值舊卡就是插卡後再選要加 `Zapping` 金額或載入 `24h`。如果系統不讓你把 `Zapping` 和 `24h` 放同一張卡，那是規則，不是機器壞；最保守做法是小額儲值，或備第二張卡。\n\n收據先留著：卡片故障/消磁時，拿收據去窗口比較好處理。\n\n一個很關鍵的省時省錢：**別在車上跟司機買票**（通常更貴、也更慢）。有卡就刷，會順很多。\n### 怎麼刷/怎麼用（最容易出錯的地方）\n先記幾條就夠用：\n- 地鐵/火車：**進出都要刷**（同一張卡/同一裝置）。\n- 巴士/電車/纜車：多半是**上車刷**；要下車先按停靠鈕（不按可能不停）。\n- 使用 *contactless*（銀行卡/手機/手錶）時：每次每卡限 1 人；進出站請用同一張卡/同一裝置。\n\n排隊與「先下後上」的禮貌習慣，放在下面的 `publicTransportEtiquette`。\n### 機場往返（尤其回程 T2）\n機場回程提醒：若航班在 `T2`（常見廉航），地鐵只到 `T1` 還要轉接駁車；時間緊或大行李，直接叫車到 `T2` 最省腦。（Wikivoyage：[`Lisbon`](https://en.wikivoyage.org/wiki/Lisbon)；Wikitravel：[`Lisbon`](https://wikitravel.org/en/Lisbon)）\n\n帶嬰兒/需要安全座椅：Uber/Bolt 不一定叫得到，建議提前訂接送。\n\n要去長途巴士/轉運站，最常用的兩個是 `Sete Rios` 和 `Oriente`。從住宿附近的 `Campo Pequeno`（黃線）出發，你可以把去 `Sete Rios` 記成一條口訣：「黃線到 `Marquês de Pombal` → 轉藍線 → `Jardim Zoológico`」，下車跟著指標走就是巴士站。去 `Oriente` 更單純：「黃線到 `Saldanha` → 轉紅線 → `Oriente`」，同站也能轉火車/地鐵，很適合當大型轉運點。行李多或時間卡很緊，直接叫 Uber/Bolt 到站通常最省腦。",
-    "moneySavingTips": "### 先抓住省錢的核心\n省錢的核心就一句：**別臨時買票、別為了排隊花錢**。日常用 `Zapping`，要密集搭乘再開 `24h`。（Carris：[`Occasional journeys`](https://www.carris.pt/en/buy/occasional-journeys/)；Metro Lisboa：[`Comprar`](https://www.metrolisboa.pt/comprar/)）\n\n里斯本坡多、石板路雨後很滑，鞋子抓地力不夠，你會一直想叫車，最後反而更花錢。\n### 復古電車：少排隊、比較好拍的玩法\n想體驗復古電車，把 `Tram 28` 當成「體驗」不是「交通」。白天熱門時段很擠；想坐得舒服就選清晨剛開跑（約 6–7 點多）或深夜，並盡量從兩端起訖站上車（`Martim Moniz` / `Campo de Ourique`）。中途站臨時想上車，常見就是車滿或全程站著。\n\n如果你的目標其實是「拍風景＋坐到靠窗」，我會更推薦 `Tram 12` 和 `Tram 24`。`Tram 12` 有點像 `28` 的迷你版：它繞著老城跑一圈，路線跟阿爾法瑪、城堡周邊的氣氛很接近，而且通常不用像 `28` 一樣排很久；你想拍紅瓦屋頂和河景，直接把行程設在 `Miradouro de Santa Luzia` 附近就很順。`Tram 24` 則是另一種漂亮：從 `Luís de Camões` 一帶出發，穿過比較「優雅生活感」的街區（像 `Príncipe Real`），你拍到的會是比較寬、比較鬆、比較像日常的里斯本；如果你本來就想去 `Miradouro de São Pedro de Alcântara` 看全景，這條線也很搭。`Tram 18` 走向又更不一樣，適合你想順路去 `LX Factory` 或 `Ajuda` 那一側的時候，當作「復古感＋河岸方向」的輕鬆補充。\n\n至於你在明信片上最常看到的那張「黃車在陡坡、後面是河」——很多時候指的是 `Ascensor da Bica`。它熱門到你未必需要真的搭進去才算體驗：站在街邊等它上上下下、把畫面拍好，通常比擠在車廂裡更舒服也更好看。\n\n「紅色觀光電車」是觀光服務，票價/規則跟大眾運輸不同，通常不能用 `Navegante`。\n### 電梯/纜車：把錢花在「值得的那一段」\n`Santa Justa Lift` 想省錢又省時間：走到 `Carmo Convent` 一帶從上方通道上觀景台就好。真的要搭電梯，選 `24h` 那天順手搭，或改從上往下搭。\n\n爬坡想省體力，先找免費的公用電梯再說。往城堡方向可以用 `Elevador do Castelo / Elevador da Baixa` 這種室內捷徑，阿爾法瑪一帶也有 `Elevador de Santa Luzia` 這類現代電梯：不浪漫，但很有效。復古纜車想坐得舒服、人又少一點，就優先 `Ascensor do Lavra`；像 `Glória` 這種熱門線更像拍照點，隊伍太長就別硬排，等你哪天剛好路過、人少再搭。\n\n多人同行：從機場進城這種「一趟就到」的行程，分攤 Uber/Bolt 常更省力也可能更划算；尖峰時段要考慮塞車。\n### 近郊火車：省錢不多，省時間很有感\n去 `Sintra` / `Cascais`，`Zapping` 的優點主要是省時間：不用排隊買票，也比較不會買錯。\n\n這裡有個最常見的誤會要先講清楚：很多人以為「我今天買了市區 `24h`，那去 `Sintra/Cascais` 的火車也一起包了吧？」通常不是。市區那張 `24h CARRIS/METRO` 主要是給里斯本市區的地鐵/公車/電車用；你真的要把郊區火車也包進來，常見的做法反而是 `Lisboa Card` 這種套裝。結論很簡單：不確定就用 `Zapping`，最不容易踩雷。\n這裡有個最常見的誤會要先講清楚：很多人以為「我今天買了市區 `24h`，那去 `Sintra/Cascais` 的火車也一起包了吧？」通常不是。市區那張 `24h CARRIS/METRO` 主要是給里斯本市區的地鐵/公車/電車用；你真的要把郊區火車也包進來，常見的做法反而是 `Lisboa Card` 這種套裝。結論很簡單：不確定就用 `Zapping`，最不容易出錯。\n\n有些通勤火車到站不會自動開門，要按按鈕。\n\n市區移動有兩條巴士很省力：去貝倫搭 `Bus 728`（常比 `Tram 15` 舒服），去城堡搭 `Bus 737`（省掉那段上坡）。\n\n想把通勤當觀光：從 `Cais do Sodré` 搭渡輪到 `Cacilhas`，用很低的成本看塔霍河與夕陽。`Cristo Rei` 想省腦就叫車過橋，想慢慢來就走渡輪轉乘。\n\n免費高點觀景台：`Senhora do Monte`。視野很開，但要上坡；體力不想花就用巴士/叫車上去。\n免費高點觀景台：`Senhora do Monte`。視野很開，但要上坡；不想走太多就用巴士/叫車上去。"
+    "publicTransportHowToBuy": [
+      "先決定你是「用感應信用卡/手機」還是「買一張可重複加值的票卡」：",
+      "哪裡買/哪裡加值（最保險做法）：地鐵站自動售票機/窗口；也可用 Multibanco 或 Portal VIVA（線上通常需要讀卡器）。（Portal VIVA：[`Carregar cartões VIVA`](https://portalviva.pt/pt/homepage/onde-carregar.aspx)）",
+      "公車/電車臨時單程：可在車上用驗票機用 `Bank Card / MB WAY` 付款；若直接跟司機買票通常只收現金（部分新電車不收現金）。（Carris：[`Occasional journeys`](https://www.carris.pt/en/buy/occasional-journeys/)）",
+      "機場到市區：地鐵可直達多數區域；如果是「大行李/晚到/要走上坡/同行有人不適合爬坡或樓梯」，省腦做法通常是把住宿選在「地鐵站旁、出站到門口幾乎平路」，並用地鐵/公車把行李日的摩擦降到最低。（Wikivoyage：[`Lisbon`](https://en.wikivoyage.org/wiki/Lisbon)；Wikitravel：[`Lisbon`](https://wikitravel.org/en/Lisbon)）"
+    ],
+    "moneySavingTips": [
+      "先用「走路＋少量單程」跑半天，確認你一天實際會搭幾趟，再決定要不要上 `24h`：`24h CARRIS/METRO` 只在你確定會密集搭乘時才划算。（Carris：[`Occasional journeys`](https://www.carris.pt/en/buy/occasional-journeys/)；Metro Lisboa：[`Comprar`](https://www.metrolisboa.pt/comprar/)）",
+      "`VIVA Viagem / navegante ocasional` 有效期 1 年、可重複加值：不要用完就丟，之後搭到第 2–3 天就會回本（少買一次新卡就是省）。（Portal VIVA：[`VIVA Viagem`](https://www.portalviva.pt/pt/homepage/cart%C3%B5es/transportes/viva-viagem.aspx)）",
+      "驗票時把卡/手機從皮夾拿出來，避免多張 *contactless* 卡一起感應造成失敗或扣錯。（Metro Lisboa：[`Viajar no Metro com cartão bancário contactless`](https://www.metrolisboa.pt/comprar/viajar-no-metro-com-cartao-bancario-contactless/)）",
+      "行李日/坡多的區域：最省錢的底層策略是「住宿選平地＋離地鐵近」＋「該搭地鐵就搭」；如果你已經卡在上坡/行李很重/晚到，就把節奏放慢、走大路，或先回到最近的地鐵/公車主幹線再轉（避免走錯路與摔倒風險）。（Wikivoyage：[`Lisbon`](https://en.wikivoyage.org/wiki/Lisbon)；Wikitravel：[`Lisbon`](https://wikitravel.org/en/Lisbon)）"
+    ],
+    "scoringModel": {
+      "weights": [
+        {
+          "criterion": "第一晚穩定性（入住流程、櫃檯）",
+          "weight": 0.3
+        },
+        {
+          "criterion": "交通便利與爬坡風險",
+          "weight": 0.2
+        },
+        {
+          "criterion": "房間品質（新舊、空間、隔音）",
+          "weight": 0.2
+        },
+        {
+          "criterion": "評論一致性（極端負評比例）",
+          "weight": 0.15
+        },
+        {
+          "criterion": "成本效率",
+          "weight": 0.15
+        }
+      ],
+      "table": {
+        "headers": [
+          "住宿",
+          "第一晚穩定性（入住流程、櫃檯）",
+          "交通便利與爬坡風險",
+          "房間品質（新舊、空間、隔音）",
+          "評論一致性（極端負評比例）",
+          "成本效率",
+          "加權積分"
+        ],
+        "rows": [
+          {
+            "label": "Luzeiros Suites",
+            "values": [
+              "5",
+              "5",
+              "5",
+              "4",
+              "3",
+              "4.35"
+            ]
+          },
+          {
+            "label": "Lx Soho Boutique",
+            "values": [
+              "4",
+              "5",
+              "4",
+              "4",
+              "3",
+              "4.05"
+            ]
+          },
+          {
+            "label": "Republica 83",
+            "values": [
+              "2",
+              "5",
+              "3",
+              "2",
+              "5",
+              "3.1"
+            ]
+          },
+          {
+            "label": "easyHotel Lisbon",
+            "values": [
+              "3",
+              "3",
+              "2",
+              "3",
+              "5",
+              "3.15"
+            ]
+          }
+        ]
+      }
+    }
   },
   {
     "cityId": "madrid",
@@ -133,11 +424,9 @@ export const STAYS_DATA: CityStay[] = [
     "options": [
       {
         "name": "市中心（Centro；太陽門 Puerta del Sol / 格蘭大道 Gran Vía / 主廣場 Plaza Mayor 一帶，首選：步行動線最直覺）",
-        "why": [
-          "景點密度高，很多行程不用搭車就能完成；臨時想回住宿休息也方便。"
-        ],
+        "why": [],
         "risks": [
-          "人潮密度高、噪音風險較高；價格也較浮動。"
+          "人潮密度高、噪音風險較高；價格也較浮動"
         ],
         "links": [
           {
@@ -148,11 +437,9 @@ export const STAYS_DATA: CityStay[] = [
       },
       {
         "name": "麗池／藝術大道／阿托查（Retiro / Paseo del Arte / Atocha；麗池公園 Parque del Retiro / 藝術大道 Paseo del Arte / 阿托查 Atocha；次選：博物館/公園動線方便）",
-        "why": [
-          "博物館、公園、車站一帶動線集中，想走文化路線很省腦。"
-        ],
+        "why": [],
         "risks": [
-          "去 Centro 夜生活/逛街多半要搭一段地鐵或走 20–40 分鐘。"
+          "去 Centro 夜生活/逛街多半要搭一段地鐵或走 20–40 分鐘"
         ],
         "links": [
           {
@@ -163,11 +450,9 @@ export const STAYS_DATA: CityStay[] = [
       },
       {
         "name": "薩拉曼卡／丘埃卡（Salamanca / Chueca；薩拉曼卡 Salamanca / 丘埃卡 Chueca；備選：乾淨好走＋咖啡店多）",
-        "why": [
-          "街區比較乾淨、走路舒服，生活感也強；不一定要一直待在最觀光的核心區。"
-        ],
+        "why": [],
         "risks": [
-          "距離主要觀光點看你選的位置（可能需要更頻繁搭車）。"
+          "距離主要觀光點看你選的位置（可能需要更頻繁搭車）"
         ],
         "links": [
           {
@@ -177,8 +462,90 @@ export const STAYS_DATA: CityStay[] = [
         ]
       }
     ],
-    "publicTransportHowToBuy": "- 市區移動概念：馬德里很適合步行，市中心景點密度高，很多路線都可以靠走路串起來；需要加速時再用地鐵補。若你們會搭多次，`Tarjeta Multi`（多功能卡）再加值通常最省事，常見的 10 次票也比較划算，而且可以多人共用（同一張卡輪流刷）。Tourist card 通常要到「每天狂搭」才可能更值得。地鐵進出機場站常見會有額外附加費，細節以現場公告為準。\n- 第一步先搞定「卡」：多數地鐵票/多次票/旅遊票都要載入在 `Tarjeta Multi`（感應式、非記名）或 `Tarjeta de Transporte Público` 上；可在地鐵站售票機/窗口購買。（CRTM：[`What tickets can you charge?`](https://crtm.es/billetes-y-tarifas/tarjeta-multi/titulos-que-puedes-cargar.aspx?lang=en)；Aena：[`Cómo llegar en metro`](https://www.aena.es/es/adolfo-suarez-madrid-barajas/como-llegar/metro.html)）\n- 票種怎麼選（簡化版，先求省腦）：\n  - 只搭幾次：買地鐵單程（票價依站數/區間變動，以售票機顯示為準）。（Aena：[`Cómo llegar en metro`](https://www.aena.es/es/adolfo-suarez-madrid-barajas/como-llegar/metro.html)）\n  - 會搭很多次：買 `10 trips` 類型（Metro / EMT / intercity 依類別不同）並載入在 `Tarjeta Multi`。（CRTM：[`What tickets can you charge?`](https://crtm.es/billetes-y-tarifas/tarjeta-multi/titulos-que-puedes-cargar.aspx?lang=en)）\n  - 連續多天且每天都會搭：買 `Tourist tickets`（旅遊票）載入 `Tarjeta Multi`。（CRTM：[`Tourist tickets`](https://crtm.es/billetes-y-tarifas/otras-tarjetas/turistica/?lang=en)）\n- 公車單程票的小提醒：`Tarjeta Multi` **不支援**「市區/郊區公車單程票」載入；這種單程通常是上車當下購買。（CRTM：[`What tickets can you charge?`](https://crtm.es/billetes-y-tarifas/tarjeta-multi/titulos-que-puedes-cargar.aspx?lang=en)）\n- 機場地鐵附加費（Line 8）：進出 T1-T2-T3 / T4 站，若你使用的是 Metro Zona A 等票種，需另外加購 `suplemento del aeropuerto €3`（售票機會引導你一起載入）。（Aena：[`Cómo llegar en metro`](https://www.aena.es/es/adolfo-suarez-madrid-barajas/como-llegar/metro.html)）\n- 機場往返（省腦版）：如果你們想少換線、拖行李也輕鬆，Airport Express Bus 是最省腦的方案之一（24 小時運行、單程常見 €5，以路線/站點公告為準）。計程車則常見機場 ↔ 市中心固定費率（以官方公告為準）；若你用叫車平台，規則與價格可能不同，出發前先看清楚。\n- 實務建議：用 Google Maps / Citymapper 看路線，市區以地鐵為主、補公車；夜間移動先看夜巴/地鐵營運時間，把行程排在「好撤退」的區域，避免為了抄近路鑽小巷；若你真的遇到「晚到/轉乘太繞/行李日」，短程計程車通常不貴，直接搭。（Wikivoyage：[`Madrid`](https://en.wikivoyage.org/wiki/Madrid)；Wikitravel：[`Madrid`](https://wikitravel.org/en/Madrid)）",
-    "moneySavingTips": "- 行程若主要集中在市中心：通常「10 趟票」就很夠用；除非你確定每天很多趟再買旅遊票（避免買了用不到）。先用售票機估算你的搭乘量再決定。（CRTM：[`What tickets can you charge?`](https://crtm.es/billetes-y-tarifas/tarjeta-multi/titulos-que-puedes-cargar.aspx?lang=en)）\n- 機場日別為了省幾站票錢繞路：機場地鐵有 €3 suplemento 的規則，直接照售票機流程買最省時間（別到現場才卡在票種組合）。（Aena：[`Cómo llegar en metro`](https://www.aena.es/es/adolfo-suarez-madrid-barajas/como-llegar/metro.html)）\n- 行李日／機場日：人潮多＋扒手風險高，寧可多留時間、少轉乘；把住宿選在「離地鐵站近、平路好走」的點，降低拖行李走遠路的機率。（Wikivoyage：[`Madrid`](https://en.wikivoyage.org/wiki/Madrid)；Wikitravel：[`Madrid`](https://wikitravel.org/en/Madrid)）"
+    "publicTransportHowToBuy": [
+      "市區移動概念：馬德里很適合步行，市中心景點密度高，很多路線都可以靠走路串起來；需要加速時再用地鐵補。若你們會搭多次，`Tarjeta Multi`（多功能卡）再加值通常最省事，常見的 10 次票也比較划算，而且可以多人共用（同一張卡輪流刷）。Tourist card 通常要到「每天狂搭」才可能更值得。地鐵進出機場站常見會有額外附加費，細節以現場公告為準。",
+      "第一步先搞定「卡」：多數地鐵票/多次票/旅遊票都要載入在 `Tarjeta Multi`（感應式、非記名）或 `Tarjeta de Transporte Público` 上；可在地鐵站售票機/窗口購買。（CRTM：[`What tickets can you charge?`](https://crtm.es/billetes-y-tarifas/tarjeta-multi/titulos-que-puedes-cargar.aspx?lang=en)；Aena：[`Cómo llegar en metro`](https://www.aena.es/es/adolfo-suarez-madrid-barajas/como-llegar/metro.html)）",
+      "票種怎麼選（簡化版，先求省腦）：",
+      "公車單程票的小提醒：`Tarjeta Multi` **不支援**「市區/郊區公車單程票」載入；這種單程通常是上車當下購買。（CRTM：[`What tickets can you charge?`](https://crtm.es/billetes-y-tarifas/tarjeta-multi/titulos-que-puedes-cargar.aspx?lang=en)）",
+      "機場地鐵附加費（Line 8）：進出 T1-T2-T3 / T4 站，若你使用的是 Metro Zona A 等票種，需另外加購 `suplemento del aeropuerto €3`（售票機會引導你一起載入）。（Aena：[`Cómo llegar en metro`](https://www.aena.es/es/adolfo-suarez-madrid-barajas/como-llegar/metro.html)）",
+      "機場往返（省腦版）：如果你們想少換線、拖行李也輕鬆，Airport Express Bus 是最省腦的方案之一（24 小時運行、單程常見 €5，以路線/站點公告為準）。計程車則常見機場 ↔ 市中心固定費率（以官方公告為準）；若你用叫車平台，規則與價格可能不同，出發前先看清楚。",
+      "實務建議：用 Google Maps / Citymapper 看路線，市區以地鐵為主、補公車；夜間移動先看夜巴/地鐵營運時間，把行程排在「好撤退」的區域，避免為了抄近路鑽小巷；若你真的遇到「晚到/轉乘太繞/行李日」，短程計程車通常不貴，直接搭。（Wikivoyage：[`Madrid`](https://en.wikivoyage.org/wiki/Madrid)；Wikitravel：[`Madrid`](https://wikitravel.org/en/Madrid)）"
+    ],
+    "moneySavingTips": [
+      "行程若主要集中在市中心：通常「10 趟票」就很夠用；除非你確定每天很多趟再買旅遊票（避免買了用不到）。先用售票機估算你的搭乘量再決定。（CRTM：[`What tickets can you charge?`](https://crtm.es/billetes-y-tarifas/tarjeta-multi/titulos-que-puedes-cargar.aspx?lang=en)）",
+      "機場日別為了省幾站票錢繞路：機場地鐵有 €3 suplemento 的規則，直接照售票機流程買最省時間（別到現場才卡在票種組合）。（Aena：[`Cómo llegar en metro`](https://www.aena.es/es/adolfo-suarez-madrid-barajas/como-llegar/metro.html)）",
+      "行李日／機場日：人潮多＋扒手風險高，寧可多留時間、少轉乘；把住宿選在「離地鐵站近、平路好走」的點，降低拖行李走遠路的機率。（Wikivoyage：[`Madrid`](https://en.wikivoyage.org/wiki/Madrid)；Wikitravel：[`Madrid`](https://wikitravel.org/en/Madrid)）"
+    ],
+    "scoringModel": {
+      "weights": [
+        {
+          "criterion": "抵達日穩定性（長途交通後：入住流程/櫃檯）",
+          "weight": 0.3
+        },
+        {
+          "criterion": "交通便利與爬坡風險",
+          "weight": 0.2
+        },
+        {
+          "criterion": "房間品質（新舊、空間、隔音）",
+          "weight": 0.2
+        },
+        {
+          "criterion": "評論一致性（極端負評比例）",
+          "weight": 0.15
+        },
+        {
+          "criterion": "成本效率",
+          "weight": 0.15
+        }
+      ],
+      "table": {
+        "headers": [
+          "住宿",
+          "抵達日穩定性（長途交通後：入住流程/櫃檯）",
+          "交通便利與爬坡風險",
+          "房間品質（新舊、空間、隔音）",
+          "評論一致性（極端負評比例）",
+          "成本效率",
+          "加權積分"
+        ],
+        "rows": [
+          {
+            "label": "Centro（Sol/Gran Vía）",
+            "values": [
+              "4",
+              "5",
+              "3",
+              "3",
+              "3",
+              "3.70"
+            ]
+          },
+          {
+            "label": "Retiro / Paseo del Arte",
+            "values": [
+              "4",
+              "4",
+              "3",
+              "3",
+              "4",
+              "3.75"
+            ]
+          },
+          {
+            "label": "Salamanca / Chueca",
+            "values": [
+              "4",
+              "4",
+              "4",
+              "3",
+              "3",
+              "3.75"
+            ]
+          }
+        ]
+      }
+    }
   },
   {
     "cityId": "seville",
@@ -186,11 +553,10 @@ export const STAYS_DATA: CityStay[] = [
     "options": [
       {
         "name": "市中心／聖十字街區（Centro / Santa Cruz；市中心 / 聖十字街區 Barrio Santa Cruz；首選：景點密度高、步行最好用）",
-        "why": [
-          "舊城核心景點多、吃飯也方便；白天走累了想回住宿休息，距離通常比較好控制。"
-        ],
+        "why": [],
         "risks": [
-          "旺季（含 Semana Santa）人潮大、價格浮動，晚上也可能較吵；尖峰時段車輛可能進不來或需要繞行（封路/單行道）。"
+          "旺季（含 Semana Santa）人潮大、價格浮動，晚上也可能較吵",
+          "尖峰時段車輛可能進不來或需要繞行（封路/單行道）"
         ],
         "links": [
           {
@@ -201,11 +567,9 @@ export const STAYS_DATA: CityStay[] = [
       },
       {
         "name": "聖胡斯塔車站 / 涅維翁區（Santa Justa / Nervión；次選：轉乘方便、搬行李省力）",
-        "why": [
-          "距離車站近，抵達/離開那天比較不折騰；若行程有跨城移動，會更省心。"
-        ],
+        "why": [],
         "risks": [
-          "去老城主要靠步行 20–35 分鐘或搭車（每天來回會累）。"
+          "去老城主要靠步行 20–35 分鐘或搭車（每天來回會累）"
         ],
         "links": [
           {
@@ -216,11 +580,9 @@ export const STAYS_DATA: CityStay[] = [
       },
       {
         "name": "特里亞納（Triana；備選：在地感＋河岸）",
-        "why": [
-          "河岸散步、在地小店與市場氛圍強，喜歡生活感的人會很喜歡。"
-        ],
+        "why": [],
         "risks": [
-          "到主要景點多半要過橋＋走路或搭車（動線會多一道）。"
+          "到主要景點多半要過橋＋走路或搭車（動線會多一道）"
         ],
         "links": [
           {
@@ -230,7 +592,87 @@ export const STAYS_DATA: CityStay[] = [
         ]
       }
     ],
-    "publicTransportHowToBuy": "- 走路優先：舊城區景點密度很高，多數行程「走路＋少量公車/電車」就夠。（Wikivoyage：[`Seville`](https://en.wikivoyage.org/wiki/Seville)；Wikitravel：[`Seville`](https://wikitravel.org/en/Seville)）\n- 市區公車/電車（TUSSAM）怎麼買最不踩雷：\n  - 偶爾搭：可直接在車上買票（票價與付款方式依現場/路線為準）。（Wikivoyage：[`Seville`](https://en.wikivoyage.org/wiki/Seville)）\n  - 會搭多次：買 `Travelcard / Tarjeta Multiviaje`（可儲值、可多人共用），第一次買卡會有押金（TUSSAM 例：€1.50；最低加值 €7、最高 €50；可選「無轉乘/有轉乘」兩種費率）。（TUSSAM：[`How to get here`（Travelcard 說明）](https://www.tussam.es/en/descubre-sevilla/how-get-here)）\n  - 哪裡買卡：市區大量 kiosks / tobacconists（菸店）可買；也可到 TUSSAM 售點（普拉多·德聖塞巴斯提安 Prado de San Sebastián / 蓬塞・德萊昂廣場 Plaza Ponce de León / 安達盧西亞大道 11 號 Avenida de Andalucía 11）。（TUSSAM：[`How to get here`](https://www.tussam.es/en/descubre-sevilla/how-get-here)）\n- 機場 ↔ 市區（EA 機場巴士）：單程 €5 車上買；同日來回可買 return（€6，車上買）。（TUSSAM：[`How to get here`（EA）](https://www.tussam.es/en/descubre-sevilla/how-get-here)）\n- 地鐵（Metro de Sevilla）：所有車站都有售票機可買/加值；票價依「跨區（saltos）」而定，常見票種包含 `billete sencillo / ida y vuelta / bonometro / bono plus / bono de un día`。（Metro de Sevilla：[`Horarios y tarifas – Títulos`](https://www.metro-sevilla.es/horarios-y-tarifas?section=titulosMetro)；CTAS：[`Sales points`](https://www.ctas.es/en/cards-and-rates/sales-points)）",
-    "moneySavingTips": "- 住舊城/景點圈：先用「走路＋少量單程」跑半天；確認你一天確實會搭很多次再買 Travelcard（或再加值），避免買了用不到。（Wikivoyage：[`Seville`](https://en.wikivoyage.org/wiki/Seville)）\n- 轉乘多的那天：TUSSAM Travelcard 有「可轉乘」版本（1 小時內可換線），如果你會換車，選對版本通常比一直買單程更划算。（TUSSAM：[`How to get here`（Sin/Con Transbordo）](https://www.tussam.es/en/descubre-sevilla/how-get-here)）\n- 機場當天若確定會回機場：同日來回直接買 EA return（€6）省一步。（TUSSAM：[`How to get here`（EA）](https://www.tussam.es/en/descubre-sevilla/how-get-here)）\n- 中午最熱/帶行李的移動：優先選「有遮蔭、少走路」的公車/電車路線；如果你發現會變成「走很遠＋曝曬」或「爬樓梯/拖行李」，就把移動改成「先回住宿休息／或把行程砍一段」更保險；真的卡住就短程計程車（通常不貴，買體力也避免中暑）。（Wikitravel：[`Seville`](https://wikitravel.org/en/Seville)）"
+    "publicTransportHowToBuy": [
+      "走路優先：舊城區景點密度很高，多數行程「走路＋少量公車/電車」就夠。（Wikivoyage：[`Seville`](https://en.wikivoyage.org/wiki/Seville)；Wikitravel：[`Seville`](https://wikitravel.org/en/Seville)）",
+      "市區公車/電車（TUSSAM）怎麼買最不踩雷：",
+      "機場 ↔ 市區（EA 機場巴士）：單程 €5 車上買；同日來回可買 return（€6，車上買）。（TUSSAM：[`How to get here`（EA）](https://www.tussam.es/en/descubre-sevilla/how-get-here)）",
+      "地鐵（Metro de Sevilla）：所有車站都有售票機可買/加值；票價依「跨區（saltos）」而定，常見票種包含 `billete sencillo / ida y vuelta / bonometro / bono plus / bono de un día`。（Metro de Sevilla：[`Horarios y tarifas – Títulos`](https://www.metro-sevilla.es/horarios-y-tarifas?section=titulosMetro)；CTAS：[`Sales points`](https://www.ctas.es/en/cards-and-rates/sales-points)）"
+    ],
+    "moneySavingTips": [
+      "住舊城/景點圈：先用「走路＋少量單程」跑半天；確認你一天確實會搭很多次再買 Travelcard（或再加值），避免買了用不到。（Wikivoyage：[`Seville`](https://en.wikivoyage.org/wiki/Seville)）",
+      "轉乘多的那天：TUSSAM Travelcard 有「可轉乘」版本（1 小時內可換線），如果你會換車，選對版本通常比一直買單程更划算。（TUSSAM：[`How to get here`（Sin/Con Transbordo）](https://www.tussam.es/en/descubre-sevilla/how-get-here)）",
+      "機場當天若確定會回機場：同日來回直接買 EA return（€6）省一步。（TUSSAM：[`How to get here`（EA）](https://www.tussam.es/en/descubre-sevilla/how-get-here)）",
+      "中午最熱/帶行李的移動：優先選「有遮蔭、少走路」的公車/電車路線；如果你發現會變成「走很遠＋曝曬」或「爬樓梯/拖行李」，就把移動改成「先回住宿休息／或把行程砍一段」更保險；真的卡住就短程計程車（通常不貴，買體力也避免中暑）。（Wikitravel：[`Seville`](https://wikitravel.org/en/Seville)）"
+    ],
+    "scoringModel": {
+      "weights": [
+        {
+          "criterion": "抵達日穩定性（長途交通後：入住流程/櫃檯）",
+          "weight": 0.3
+        },
+        {
+          "criterion": "交通便利與爬坡風險",
+          "weight": 0.2
+        },
+        {
+          "criterion": "房間品質（新舊、空間、隔音）",
+          "weight": 0.2
+        },
+        {
+          "criterion": "評論一致性（極端負評比例）",
+          "weight": 0.15
+        },
+        {
+          "criterion": "成本效率",
+          "weight": 0.15
+        }
+      ],
+      "table": {
+        "headers": [
+          "住宿",
+          "抵達日穩定性（長途交通後：入住流程/櫃檯）",
+          "交通便利與爬坡風險",
+          "房間品質（新舊、空間、隔音）",
+          "評論一致性（極端負評比例）",
+          "成本效率",
+          "加權積分"
+        ],
+        "rows": [
+          {
+            "label": "Centro / Santa Cruz",
+            "values": [
+              "4",
+              "5",
+              "3",
+              "3",
+              "3",
+              "3.70"
+            ]
+          },
+          {
+            "label": "Santa Justa / Nervión",
+            "values": [
+              "4",
+              "4",
+              "3",
+              "3",
+              "4",
+              "3.75"
+            ]
+          },
+          {
+            "label": "Triana",
+            "values": [
+              "3",
+              "4",
+              "3",
+              "3",
+              "4",
+              "3.45"
+            ]
+          }
+        ]
+      }
+    }
   }
 ]
