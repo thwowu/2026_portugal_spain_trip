@@ -6,25 +6,13 @@ test.describe('stays modal (public transport how-to)', () => {
     await page.waitForLoadState('networkidle')
 
     // Open modal from any city's stays card.
-    const openBtn = page.getByRole('button', { name: '看完整說明', exact: true }).first()
-    try {
-      await openBtn.click({ timeout: 3000 })
-    } catch {
-      // Mobile emulation can consider fixed overlays “intercepting” even when the
-      // button is visually tappable. This is a modal smoke, so force the click.
-      await openBtn.click({ force: true })
-    }
+    await page.getByRole('button', { name: '看完整說明', exact: true }).first().click()
 
     // The modal is a role=dialog overlay; it should be visible and closable.
     const dialog = page.getByRole('dialog')
     await expect(dialog).toBeVisible()
 
-    const closeBtn = dialog.getByRole('button', { name: '關閉', exact: true })
-    try {
-      await closeBtn.click({ timeout: 3000 })
-    } catch {
-      await closeBtn.click({ force: true })
-    }
+    await dialog.getByRole('button', { name: '關閉', exact: true }).click()
     await expect(dialog).toBeHidden()
   })
 })

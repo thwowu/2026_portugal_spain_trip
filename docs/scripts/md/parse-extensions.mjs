@@ -7,6 +7,27 @@ import {
   parseLines,
 } from './md.mjs'
 
+/**
+ * Serialize a section node's markdown block including descendant headings.
+ * This keeps authoring flexible (allows #### subheadings under ### sections).
+ *
+ * @param {{depth:number, text:string, content:{text:string}[], children:any[]}} node
+ */
+function serializeSectionBody(node) {
+  /** @type {string[]} */
+  const out = []
+  for (const row of node.content) out.push(row.text)
+  const walk = (n) => {
+    for (const c of n.children || []) {
+      out.push(`${'#'.repeat(c.depth)} ${c.text}`)
+      for (const row of c.content || []) out.push(row.text)
+      walk(c)
+    }
+  }
+  walk(node)
+  return out.join('\n').trim()
+}
+
 function slugify(s) {
   return s
     .toLowerCase()
@@ -63,7 +84,7 @@ export function parseExtensionsCityMd({ sourcePath, raw }) {
     const h3s = findChildren(h2, 3)
     for (const h3 of h3s) {
       const key = slugify(h3.text.trim() || 'section')
-      const content = h3.content.map((r) => r.text).join('\n').trim()
+      const content = serializeSectionBody(h3)
       if (!content) continue
       sections.push({
         key,

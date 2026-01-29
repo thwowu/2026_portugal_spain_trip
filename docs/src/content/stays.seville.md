@@ -6,18 +6,22 @@ title: 塞維爾（Seville）住宿
 
 # 塞維爾（Seville）住宿
 
-🛏️ 先看 options 選區域｜🚇 再看 publicTransportHowToBuy｜💸 moneySavingTips
+讀法：先看 `options` 選區域；再看 `publicTransportHowToBuy`；最後看 `moneySavingTips`。
 
 ## options
+先講結論：如果你們想「景點密度高、走路最好用」，就選 Centro/Santa Cruz；如果你們更重視轉乘與行李日的省力，Santa Justa/Nervión 很實用；Triana 氛圍很好，但動線會多一段「過橋」。
+
 - 市中心／聖十字街區（Centro / Santa Cruz；市中心 / 聖十字街區 Barrio Santa Cruz；首選：景點密度高、步行最好用）
-  - risk: 旺季（含 Semana Santa）人潮大、價格浮動，晚上也可能較吵
-  - risk: 尖峰時段車輛可能進不來或需要繞行（封路/單行道）
+  - why: 舊城核心景點多、吃飯也方便；白天走累了想回住宿休息，距離通常比較好控制。
+  - risk: 旺季（含 Semana Santa）人潮大、價格浮動，晚上也可能較吵；尖峰時段車輛可能進不來或需要繞行（封路/單行道）。
   - link: Google Maps | https://www.google.com/maps/search/?api=1&query=Santa%20Cruz%20Seville
 - 聖胡斯塔車站 / 涅維翁區（Santa Justa / Nervión；次選：轉乘方便、搬行李省力）
-  - risk: 去老城主要靠步行 20–35 分鐘或搭車（每天來回會累）
+  - why: 距離車站近，抵達/離開那天比較不折騰；若行程有跨城移動，會更省心。
+  - risk: 去老城主要靠步行 20–35 分鐘或搭車（每天來回會累）。
   - link: Google Maps | https://www.google.com/maps/search/?api=1&query=Sevilla%20Santa%20Justa%20Station
 - 特里亞納（Triana；備選：在地感＋河岸）
-  - risk: 到主要景點多半要過橋＋走路或搭車（動線會多一道）
+  - why: 河岸散步、在地小店與市場氛圍強，喜歡生活感的人會很喜歡。
+  - risk: 到主要景點多半要過橋＋走路或搭車（動線會多一道）。
   - link: Google Maps | https://www.google.com/maps/search/?api=1&query=Triana%20Seville
 
 ## publicTransportHowToBuy
@@ -34,18 +38,3 @@ title: 塞維爾（Seville）住宿
 - 轉乘多的那天：TUSSAM Travelcard 有「可轉乘」版本（1 小時內可換線），如果你會換車，選對版本通常比一直買單程更划算。（TUSSAM：[`How to get here`（Sin/Con Transbordo）](https://www.tussam.es/en/descubre-sevilla/how-get-here)）
 - 機場當天若確定會回機場：同日來回直接買 EA return（€6）省一步。（TUSSAM：[`How to get here`（EA）](https://www.tussam.es/en/descubre-sevilla/how-get-here)）
 - 中午最熱/帶行李的移動：優先選「有遮蔭、少走路」的公車/電車路線；如果你發現會變成「走很遠＋曝曬」或「爬樓梯/拖行李」，就把移動改成「先回住宿休息／或把行程砍一段」更保險；真的卡住就短程計程車（通常不貴，買體力也避免中暑）。（Wikitravel：[`Seville`](https://wikitravel.org/en/Seville)）
-
-## scoringModel
-### weights
-- 抵達日穩定性（長途交通後：入住流程/櫃檯） | weight=0.3
-- 交通便利與爬坡風險 | weight=0.2
-- 房間品質（新舊、空間、隔音） | weight=0.2
-- 評論一致性（極端負評比例） | weight=0.15
-- 成本效率 | weight=0.15
-
-### table
-| 住宿 | 抵達日穩定性（長途交通後：入住流程/櫃檯） | 交通便利與爬坡風險 | 房間品質（新舊、空間、隔音） | 評論一致性（極端負評比例） | 成本效率 | 加權積分 |
-| --- | --- | --- | --- | --- | --- | --- |
-| Centro / Santa Cruz | 4 | 5 | 3 | 3 | 3 | 3.70 |
-| Santa Justa / Nervión | 4 | 4 | 3 | 3 | 4 | 3.75 |
-| Triana | 3 | 4 | 3 | 3 | 4 | 3.45 |

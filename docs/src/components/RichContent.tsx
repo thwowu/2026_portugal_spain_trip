@@ -1,17 +1,7 @@
 import { useMemo } from 'react'
-<<<<<<< HEAD
-import { FormattedInline, FormattedText } from './FormattedText'
-=======
 import type { GalleryImage } from './GalleryLightbox'
-import { FormattedInline } from './FormattedText'
->>>>>>> parent of 300e17b (545646488888)
+import { FormattedInline, FormattedText } from './FormattedText'
 import { withBaseUrl } from '../utils/asset'
-
-export type GalleryImage = {
-  src: string
-  alt?: string
-  caption?: string
-}
 
 const GALLERY_TOKEN_RE = /\{\{gallery(?::([^|}]+))?\|([^}]+)\}\}/g
 const IMAGE_MD_RE = /^!\[([^\]]*)\]\((.+)\)$/
@@ -52,7 +42,50 @@ function extractGalleryImages(tokenMatch: RegExpExecArray) {
 type Block =
   | { kind: 'h'; level: 3 | 4; text: string }
   | { kind: 'image'; alt: string; src: string }
+  | { kind: 'quote'; text: string }
+  | { kind: 'ul'; items: UlItem[] }
+  | { kind: 'ol'; items: string[] }
   | { kind: 'p'; text: string; galleries: Array<{ title: string; images: GalleryImage[] }> }
+
+type UlItem = { text: string; children: UlItem[] }
+
+function buildUlTree(rows: Array<{ level: number; text: string }>): UlItem[] {
+  const root: UlItem[] = []
+  const stack: Array<{ level: number; items: UlItem[] }> = [{ level: -1, items: root }]
+
+  for (const r of rows) {
+    const level = Math.max(0, r.level)
+    const text = (r.text ?? '').trim()
+    if (!text) continue
+
+    while (stack.length > 1 && level <= stack[stack.length - 1]!.level) stack.pop()
+
+    const parent = stack[stack.length - 1]!
+    const item: UlItem = { text, children: [] }
+
+    if (level > parent.level + 1) {
+      // Clamp overly-indented lines to avoid building empty intermediary levels.
+      // (We author with 2-space indents, but we keep this defensive.)
+      parent.items.push(item)
+      stack.push({ level: parent.level + 1, items: item.children })
+      continue
+    }
+
+    if (level === parent.level + 1 && parent.items.length > 0) {
+      // Nest under the previous sibling.
+      const prev = parent.items[parent.items.length - 1]!
+      prev.children.push(item)
+      stack.push({ level, items: item.children })
+      continue
+    }
+
+    // Same level as parent container: append to container.
+    parent.items.push(item)
+    stack.push({ level, items: item.children })
+  }
+
+  return root
+}
 
 function parseBlocks(content: string): Block[] {
   const rawLines = content.replace(/\r\n/g, '\n').split('\n')
@@ -110,6 +143,38 @@ function parseBlocks(content: string): Block[] {
           const cleaned = rest.replace(GALLERY_TOKEN_RE, '').trim()
           out.push({ kind: 'p', text: cleaned, galleries })
         }
+        continue
+      }
+    }
+
+    // Block quote: all lines start with ">"
+    {
+      const isQuote = trimmed.length > 0 && trimmed.every((l) => /^>\s?/.test(l))
+      if (isQuote) {
+        const q = trimmed.map((l) => l.replace(/^>\s?/, '')).join('\n').trim()
+        out.push({ kind: 'quote', text: q })
+        continue
+      }
+    }
+
+    // Lists (simple top-level blocks only): "- item" / "1. item"
+    {
+      const ulMatches = lines.map((l) => /^(\s*)[-*]\s+(.+)$/.exec(l))
+      const isUl = ulMatches.length > 0 && ulMatches.every(Boolean)
+      if (isUl) {
+        const rows = ulMatches
+          .map((m) => {
+            const indent = (m?.[1] ?? '').replace(/\t/g, '  ')
+            const level = Math.floor(indent.length / 2)
+            return { level, text: (m?.[2] ?? '').trim() }
+          })
+          .filter((x) => x.text.length > 0)
+        out.push({ kind: 'ul', items: buildUlTree(rows) })
+        continue
+      }
+      const isOl = trimmed.length > 0 && trimmed.every((l) => /^\d+\.\s+/.test(l))
+      if (isOl) {
+        out.push({ kind: 'ol', items: trimmed.map((l) => l.replace(/^\d+\.\s+/, '').trim()).filter(Boolean) })
         continue
       }
     }
@@ -176,6 +241,27 @@ export function RichContent({
 }) {
   const blocks = useMemo(() => parseBlocks(content), [content])
 
+  const renderUl = (items: UlItem[], keyPrefix: string, depth = 0) => {
+    const ulStyle: React.CSSProperties =
+      depth === 0
+        ? { margin: 0, paddingLeft: 18 }
+        : { margin: '6px 0 0 0', paddingLeft: 18 }
+
+    return (
+      <ul style={ulStyle}>
+        {items.map((it, i) => {
+          const key = `${keyPrefix}-${depth}-${i}-${it.text}`
+          return (
+            <li key={key} style={{ marginTop: i === 0 ? 0 : 6 }}>
+              <FormattedInline text={it.text} />
+              {it.children.length > 0 ? renderUl(it.children, key, depth + 1) : null}
+            </li>
+          )
+        })}
+      </ul>
+    )
+  }
+
   return (
     <div className={className}>
       {blocks.map((b, idx) => {
@@ -189,14 +275,6 @@ export function RichContent({
         }
 
         if (b.kind === 'image') {
-          if (!onOpenImage) {
-            return (
-              <div key={idx} className="inlineImageCard" style={{ marginTop: idx === 0 ? 0 : 10, cursor: 'default' }}>
-                <img src={b.src} alt={b.alt} loading="lazy" />
-                <div className="inlineImageCaption">{b.alt}</div>
-              </div>
-            )
-          }
           return (
             <button
               key={idx}
@@ -213,6 +291,39 @@ export function RichContent({
           )
         }
 
+        if (b.kind === 'quote') {
+          return (
+            <blockquote
+              key={idx}
+              style={{
+                margin: idx === 0 ? 0 : '10px 0 0 0',
+                padding: '10px 12px',
+                borderLeft: '4px solid color-mix(in oklab, var(--accent) 25%, var(--hairline))',
+                background: 'color-mix(in oklab, var(--surface-2) 55%, white)',
+                borderRadius: 12,
+              }}
+            >
+              <FormattedText text={b.text} className={className} />
+            </blockquote>
+          )
+        }
+
+        if (b.kind === 'ul') {
+          return <div key={idx}>{renderUl(b.items, `ul-${idx}`)}</div>
+        }
+
+        if (b.kind === 'ol') {
+          return (
+            <ol key={idx} style={{ margin: 0, paddingLeft: 22 }}>
+              {b.items.map((it, i) => (
+                <li key={`${idx}-${i}-${it}`} style={{ marginTop: i === 0 ? 0 : 6 }}>
+                  <FormattedInline text={it} />
+                </li>
+              ))}
+            </ol>
+          )
+        }
+
         const hasText = b.text.trim().length > 0
         return (
           <div key={idx} style={{ marginTop: idx === 0 ? 0 : 10 }}>
@@ -223,46 +334,24 @@ export function RichContent({
             ) : null}
 
             {b.galleries.length > 0 ? (
-              onOpenGallery ? (
-                <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap', marginTop: hasText ? 10 : 0 }}>
-                  {b.galleries.map((g, i) => {
-                    const title = g.title || '圖庫'
-                    return (
-                      <button
-                        key={`${idx}-g-${i}-${title}`}
-                        type="button"
-                        className="btn"
-                        style={{ minHeight: 34, padding: '8px 12px' }}
-                        onClick={() => onOpenGallery?.(g.images, title)}
-                        aria-label={`開啟圖庫：${title}`}
-                        title="點擊開啟圖庫"
-                      >
-                        {title === '圖庫' ? '圖庫' : `圖庫：${title}`}
-                      </button>
-                    )
-                  })}
-                </div>
-              ) : (
-                <div style={{ display: 'grid', gap: 8, marginTop: hasText ? 10 : 0 }}>
-                  {b.galleries.map((g, i) => {
-                    const title = g.title || '圖庫'
-                    return (
-                      <div key={`${idx}-g-${i}-${title}`}>
-                        <div className="muted" style={{ fontSize: 'var(--text-xs)', marginBottom: 6 }}>
-                          {title}
-                        </div>
-                        <div style={{ display: 'flex', gap: 10, overflowX: 'auto', paddingBottom: 6 }}>
-                          {g.images.map((im, j) => (
-                            <div key={`${idx}-g-${i}-${title}-${j}-${im.src}`} className="galleryThumb" aria-hidden="true">
-                              <img src={im.src} alt={im.alt ?? title} loading="lazy" decoding="async" />
-                            </div>
-                          ))}
-                        </div>
-                      </div>
-                    )
-                  })}
-                </div>
-              )
+              <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap', marginTop: hasText ? 10 : 0 }}>
+                {b.galleries.map((g, i) => {
+                  const title = g.title || '圖庫'
+                  return (
+                    <button
+                      key={`${idx}-g-${i}-${title}`}
+                      type="button"
+                      className="btn"
+                      style={{ minHeight: 34, padding: '8px 12px' }}
+                      onClick={() => onOpenGallery?.(g.images, title)}
+                      aria-label={`開啟圖庫：${title}`}
+                      title="點擊開啟圖庫"
+                    >
+                      {title === '圖庫' ? '圖庫' : `圖庫：${title}`}
+                    </button>
+                  )
+                })}
+              </div>
             ) : null}
           </div>
         )

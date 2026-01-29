@@ -2,12 +2,13 @@ import { useEffect, useMemo, useState } from 'react'
 import { TRANSPORT_DATA } from '../generated'
 import { TRANSPORT_SEGMENTS, type TransportSegmentId } from '../data/core'
 import { useProgress } from '../state/progress'
+import { Lightbox } from '../components/Lightbox'
 import { useHashScroll } from '../hooks/useHashScroll'
 import { useReveal } from '../hooks/useReveal'
 import { ILLUSTRATION } from '../illustrations'
 import { PageHero } from '../components/PageHero'
 import { withBaseUrl } from '../utils/asset'
-import { FormattedInline } from '../components/FormattedText'
+import { FormattedInline, FormattedText } from '../components/FormattedText'
 import { ExpandingBox } from '../components/ExpandingBox'
 
 function Accordion({
@@ -32,6 +33,7 @@ function Accordion({
 
 export function TransportPage() {
   const { actions: progressActions } = useProgress()
+  const [lightbox, setLightbox] = useState<{ src: string; title: string } | null>(null)
   useHashScroll()
 
   const transportById = useMemo(() => {
@@ -107,13 +109,7 @@ export function TransportPage() {
                         </div>
                       </div>
                       <div className="muted" style={{ marginTop: 10 }}>
-                        <ul style={{ margin: 0, paddingLeft: 18 }}>
-                          {seg.tldr.reminders.map((r) => (
-                            <li key={r} style={{ marginTop: 6 }}>
-                              <FormattedInline text={r} />
-                            </li>
-                          ))}
-                        </ul>
+                        {renderMixedList(seg.tldr.reminders, { ordered: false })}
                       </div>
                     </div>
                   </div>
@@ -126,7 +122,7 @@ export function TransportPage() {
                         key={`${seg.id}-train-${idx}-${o.title}`}
                         title={trainOptions.length === 1 ? '火車方案（Train）' : `火車方案（Train）${idx + 1}`}
                       >
-                        <TransportOption o={o} />
+                        {renderOption(o, (src, title) => setLightbox({ src, title }))}
                       </Accordion>
                     ))
                   ) : (
@@ -143,7 +139,7 @@ export function TransportPage() {
                         key={`${seg.id}-bus-${idx}-${o.title}`}
                         title={busOptions.length === 1 ? '巴士方案（Bus）' : `巴士方案（Bus）${idx + 1}`}
                       >
-                        <TransportOption o={o} />
+                        {renderOption(o, (src, title) => setLightbox({ src, title }))}
                       </Accordion>
                     ))
                   ) : (
@@ -159,13 +155,7 @@ export function TransportPage() {
                       <div className="cardInner">
                         <div style={{ fontWeight: 900 }}>Plan B（備案）</div>
                         <div className="muted" style={{ marginTop: 6 }}>
-                          <ul style={{ margin: 0, paddingLeft: 18 }}>
-                            {seg.planB.map((b) => (
-                              <li key={b} style={{ marginTop: 6 }}>
-                                <FormattedInline text={b} />
-                              </li>
-                            ))}
-                          </ul>
+                          {renderMixedList(seg.planB, { ordered: false })}
                         </div>
                       </div>
                     </div>
@@ -177,6 +167,13 @@ export function TransportPage() {
         })}
       </div>
 
+      <Lightbox
+        open={!!lightbox}
+        src={lightbox?.src ?? ''}
+        alt={lightbox?.title ?? '截圖'}
+        title={lightbox?.title}
+        onClose={() => setLightbox(null)}
+      />
     </div>
   )
 }
@@ -216,22 +213,11 @@ function RevealSection({
   )
 }
 
-function TransportOption({ o }: { o: (typeof TRANSPORT_DATA)[number]['options'][number] }) {
+function renderOption(
+  o: (typeof TRANSPORT_DATA)[number]['options'][number],
+  onOpenImage: (src: string, title: string) => void,
+) {
   const toJpg = (src: string) => (src.endsWith('.png') ? src.replace(/\.png$/i, '.jpg') : src)
-  const shots = useMemo(() => {
-    return (o.screenshots ?? []).map((s) => ({
-      ...s,
-      src: withBaseUrl(s.src),
-      jpg: withBaseUrl(toJpg(s.src)),
-    }))
-  }, [o.screenshots])
-
-  const [idx, setIdx] = useState(0)
-  const safeIdx = Math.max(0, Math.min(shots.length - 1, idx))
-  const active = shots[safeIdx]
-  const canPrev = safeIdx > 0
-  const canNext = safeIdx < shots.length - 1
-
   return (
     <div style={{ display: 'grid', gap: 10 }}>
       <div style={{ display: 'flex', gap: 10, alignItems: 'baseline', flexWrap: 'wrap' }}>
@@ -242,13 +228,7 @@ function TransportOption({ o }: { o: (typeof TRANSPORT_DATA)[number]['options'][
       <div>
         <div style={{ fontWeight: 850 }}>怎麼搭（Step-by-step）</div>
         <div className="muted" style={{ marginTop: 6 }}>
-          <ol className="treeList treeListOrdered">
-            {o.steps.map((s) => (
-              <li key={s} style={{ marginTop: 6 }}>
-                <FormattedInline text={s} />
-              </li>
-            ))}
-          </ol>
+          {renderMixedList(o.steps, { ordered: true })}
         </div>
       </div>
 
@@ -268,90 +248,24 @@ function TransportOption({ o }: { o: (typeof TRANSPORT_DATA)[number]['options'][
       <div>
         <div style={{ fontWeight: 850 }}>大行李/麻煩程度</div>
         <div className="muted" style={{ marginTop: 6 }}>
-          <ul style={{ margin: 0, paddingLeft: 18 }}>
-            {o.luggageNotes.map((n) => (
-              <li key={n} style={{ marginTop: 6 }}>
-                <FormattedInline text={n} />
-              </li>
-            ))}
-          </ul>
+          {renderMixedList(o.luggageNotes, { ordered: false })}
         </div>
       </div>
 
       <div>
         <div style={{ fontWeight: 850 }}>風險提醒</div>
         <div className="muted" style={{ marginTop: 6 }}>
-          <ul style={{ margin: 0, paddingLeft: 18 }}>
-            {o.riskNotes.map((n) => (
-              <li key={n} style={{ marginTop: 6 }}>
-                <FormattedInline text={n} />
-              </li>
-            ))}
-          </ul>
+          {renderMixedList(o.riskNotes, { ordered: false })}
         </div>
       </div>
 
       <div>
         <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', gap: 10, flexWrap: 'wrap' }}>
-          <div style={{ fontWeight: 850 }}>截圖</div>
+          <div style={{ fontWeight: 850 }}>截圖（可點放大）</div>
           <div className="muted" style={{ fontSize: 'var(--text-xs)' }}>
-            {shots.length > 1 ? '左右滑看更多 / 點縮圖切換' : '點縮圖切換'}
+            左右滑看更多
           </div>
         </div>
-
-        {active ? (
-          <div
-            className="card"
-            style={{
-              marginTop: 10,
-              boxShadow: 'none',
-              overflow: 'hidden',
-              borderRadius: 14,
-              background: 'var(--surface)',
-            }}
-            aria-label="截圖預覽"
-          >
-            <div style={{ display: 'flex', justifyContent: 'space-between', gap: 10, alignItems: 'center', padding: 10 }}>
-              <div style={{ fontWeight: 800, fontSize: 'var(--text-sm)', minWidth: 0 }}>
-                <span style={{ whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis', display: 'block' }}>
-                  {active.label}
-                </span>
-              </div>
-              <div style={{ display: 'flex', gap: 10, alignItems: 'center' }}>
-                <button
-                  className="btn"
-                  type="button"
-                  onClick={() => setIdx((i) => Math.max(0, i - 1))}
-                  disabled={!canPrev}
-                  aria-label="上一張截圖"
-                  title="上一張"
-                >
-                  ←
-                </button>
-                <button
-                  className="btn"
-                  type="button"
-                  onClick={() => setIdx((i) => Math.min(shots.length - 1, i + 1))}
-                  disabled={!canNext}
-                  aria-label="下一張截圖"
-                  title="下一張"
-                >
-                  →
-                </button>
-              </div>
-            </div>
-            <picture>
-              <source srcSet={active.jpg} type="image/jpeg" />
-              <img
-                src={active.src}
-                alt={active.label}
-                style={{ width: '100%', height: 260, objectFit: 'cover', display: 'block' }}
-                loading="lazy"
-                decoding="async"
-              />
-            </picture>
-          </div>
-        ) : null}
 
         <div
           style={{
@@ -365,7 +279,7 @@ function TransportOption({ o }: { o: (typeof TRANSPORT_DATA)[number]['options'][
           }}
           aria-label="截圖輪播（左右滑動）"
         >
-          {shots.map((s, i) => (
+          {o.screenshots.map((s) => (
             <button
               key={s.src}
               className="btn"
@@ -378,14 +292,14 @@ function TransportOption({ o }: { o: (typeof TRANSPORT_DATA)[number]['options'][
                 textAlign: 'left',
                 background: 'var(--surface)',
               }}
-              onClick={() => setIdx(i)}
-              title="切換預覽"
-              aria-label={`切換預覽：${s.label}`}
+              onClick={() => onOpenImage(withBaseUrl(toJpg(s.src)), s.label)}
+              title="點擊放大"
+              aria-label={`查看大圖：${s.label}`}
             >
               <picture>
-                <source srcSet={s.jpg} type="image/jpeg" />
+                <source srcSet={withBaseUrl(toJpg(s.src))} type="image/jpeg" />
                 <img
-                  src={s.src}
+                  src={withBaseUrl(s.src)}
                   alt={s.label}
                   style={{ width: '100%', height: 150, objectFit: 'cover', display: 'block' }}
                   loading="lazy"
@@ -395,13 +309,93 @@ function TransportOption({ o }: { o: (typeof TRANSPORT_DATA)[number]['options'][
               <div style={{ padding: 10 }}>
                 <div style={{ fontWeight: 750, fontSize: 'var(--text-sm)', lineHeight: 1.25 }}>{s.label}</div>
                 <div className="muted" style={{ fontSize: 'var(--text-xs)', marginTop: 4 }}>
-                  切換預覽
+                  點擊放大
                 </div>
               </div>
             </button>
           ))}
         </div>
       </div>
+    </div>
+  )
+}
+
+function isMiniHeading(line: string) {
+  const t = (line ?? '').trim()
+  return /^#{3,4}\s*\S/.test(t)
+}
+
+function normalizeMiniHeading(line: string) {
+  // We treat "###" / "####" lines as mini headings.
+  // Our FormattedText supports "##/###" headings; normalize #### → ###.
+  const t = (line ?? '').trim()
+  const m = /^#{3,4}\s*(.+)$/.exec(t)
+  if (!m) return null
+  const title = (m[1] ?? '').trim()
+  if (!title) return null
+  return `### ${title}`
+}
+
+function renderMixedList(items: string[], { ordered }: { ordered: boolean }) {
+  const rows = (items ?? []).map((x) => x ?? '').map((x) => x.trim()).filter(Boolean)
+  if (rows.length === 0) return null
+
+  const blocks: Array<
+    | { kind: 'h'; text: string }
+    | { kind: 'list'; ordered: boolean; start: number; items: string[] }
+  > = []
+
+  let buf: string[] = []
+  let listIndex = 1
+  const flush = () => {
+    if (buf.length === 0) return
+    blocks.push({ kind: 'list', ordered, start: listIndex, items: buf })
+    if (ordered) listIndex += buf.length
+    buf = []
+  }
+
+  for (const r of rows) {
+    const h = isMiniHeading(r) ? normalizeMiniHeading(r) : null
+    if (h) {
+      flush()
+      blocks.push({ kind: 'h', text: h })
+      continue
+    }
+    buf.push(r)
+  }
+  flush()
+
+  return (
+    <div style={{ display: 'grid', gap: 8 }}>
+      {blocks.map((b, idx) => {
+        if (b.kind === 'h') {
+          return <FormattedText key={`h-${idx}-${b.text}`} text={b.text} className="prose" />
+        }
+        if (b.ordered) {
+          return (
+            <ol
+              key={`ol-${idx}-${b.items[0] ?? ''}`}
+              className="treeList treeListOrdered"
+              start={b.start}
+            >
+              {b.items.map((s) => (
+                <li key={s} style={{ marginTop: 6 }}>
+                  <FormattedInline text={s} />
+                </li>
+              ))}
+            </ol>
+          )
+        }
+        return (
+          <ul key={`ul-${idx}-${b.items[0] ?? ''}`} style={{ margin: 0, paddingLeft: 18 }}>
+            {b.items.map((s) => (
+              <li key={s} style={{ marginTop: 6 }}>
+                <FormattedInline text={s} />
+              </li>
+            ))}
+          </ul>
+        )
+      })}
     </div>
   )
 }

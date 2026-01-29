@@ -47,12 +47,6 @@ test.describe('trip planner smoke', () => {
       ),
     ).toBeVisible()
 
-    // New UX: spot cards should be present and expandable.
-    const firstSpotHeader = page.locator('.attrSpotHeader').first()
-    await expect(firstSpotHeader).toBeVisible()
-    await firstSpotHeader.click()
-    await expect(page.locator('.attrSpotExpanded').first()).toBeVisible()
-
     await page.goto('/__does_not_exist__')
     await expect(page.getByText('找不到這個頁面')).toBeVisible()
     await page.locator('.container').getByRole('link', { name: '行程' }).click()

@@ -99,35 +99,13 @@ export const StayOptionSchema = z.object({
   statusHint: z.enum(['primary', 'secondary', 'backup']).optional(),
 })
 
-export const MarkdownTableSchema = z.object({
-  headers: z.array(z.string().min(1)).min(1),
-  rows: z
-    .array(
-      z.object({
-        label: z.string().min(1),
-        values: z.array(z.string()),
-      }),
-    )
-    .min(1),
-})
-
-export const ScoringWeightSchema = z.object({
-  criterion: z.string().min(1),
-  weight: z.number().min(0).max(1),
-})
-
-export const StayScoringModelSchema = z.object({
-  weights: z.array(ScoringWeightSchema).min(1),
-  table: MarkdownTableSchema,
-})
-
 export const CityStaySchema = z.object({
   cityId: CityIdSchema,
   title: z.string().min(1),
   options: z.array(StayOptionSchema).min(1),
-  publicTransportHowToBuy: z.array(z.string().min(1)),
-  moneySavingTips: z.array(z.string().min(1)),
-  scoringModel: StayScoringModelSchema,
+  // Store raw markdown blocks to support subheadings (###) and paragraphs.
+  publicTransportHowToBuy: z.string().min(1),
+  moneySavingTips: z.string().min(1),
 })
 
 export const StaysFileSchema = z.object({
