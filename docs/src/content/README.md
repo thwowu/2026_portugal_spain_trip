@@ -1,6 +1,6 @@
 # 內容 SSOT（單一真實來源）
 
-這個資料夾是旅遊內容的 **單一真實來源（SSOT）**。
+這個資料夾是旅遊內容的 單一真實來源（SSOT）。
 
 ## 你應該改哪裡？
 
@@ -12,9 +12,9 @@
 
 較舊/雜記型的長文可以放在 `*.legacy.md`（build 會忽略它們）。
 
-App **不會在 runtime 直接渲染整份 Markdown 文件**；而是先把內容轉成 `src/generated/` 下的 TypeScript 資料，前端再用資料去 render。
+App 不會在 runtime 直接渲染整份 Markdown 文件；而是先把內容轉成 `src/generated/` 下的 TypeScript 資料，前端再用資料去 render。
 
-為了讓內容好寫、UI 好讀，部分欄位支援 **小範圍 Markdown 子集**：
+為了讓內容好寫、UI 好讀，部分欄位支援 小範圍 Markdown 子集：
 
 - `**粗體**`
 - `` `行內 code` ``

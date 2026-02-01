@@ -17,9 +17,11 @@ title: 格拉納達（Granada）延伸行程（詳情）
 天氣好時回報最高；如果下雨/起霧，就果斷換 Guadix 或回 Granada 市區會更舒服。
 
 ### images
+@card: 圖庫：先用畫面判斷你對不對這個題材；需要細節再往下讀。
 {{gallery:Las Alpujarras（白村山景）|https://commons.wikimedia.org/wiki/Special:FilePath/Calle_en_Pampaneira._La_Alpujarra,_Granada..JPG?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Calle_Ver%C3%B3nica,_Pampaneira.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Alpujarras-Location1.PNG?width=1800}}
 
 ### how
+@card: 交通與動線重點整理：怎麼去、怎麼排、以及時間抓法（以當日班次/狀況為準）；先把交通穩住，白村一日才會更像度假而不是轉乘硬仗。
 交通以巴士為主，但班次/轉乘要先查清楚（如果不搭計程車，就別把時間抓太緊）。
 
 保守走法：只選 1–2 個白村散步＋看景就回，不要想一天跑很多村。
@@ -27,9 +29,11 @@ title: 格拉納達（Granada）延伸行程（詳情）
 保守一日：選 1–2 個白村（散步＋景觀點）→ 午餐 → 提早回 Granada。通常 7–9 小時（含交通）。
 
 ### backup
+@card: Plan B 與可撤退版本：下雨/起霧時山景回報下降，這段告訴你怎麼換成 Guadix 或回 Granada 市區，避免把一天押在天氣上。
 如果下雨/起霧：山景回報下降，改成 Guadix 或 Granada 市區（教堂/茶館/Hammam）。
 
 ### sources
+@card: 資料來源與查詢入口：需要核對規則、交通或官方資訊可從這裡往下追。
 Spain.info（Alpujarras）：https://www.spain.info/en/activities/discover-the-alpujarras-legado-andalusi-granada/
 
 Wikivoyage（Granada）：https://en.wikivoyage.org/wiki/Granada_(Spain)
@@ -43,13 +47,16 @@ Wikivoyage（Granada）：https://en.wikivoyage.org/wiki/Granada_(Spain)
 交通用火車來回，不搭計程車也能完成。最保守的節奏是搭早班去、下午回，半日到一天都成立；陰天也不太吃虧。
 
 ### images
+@card: 圖庫：先用畫面判斷你對不對這個題材；需要細節再往下讀。
 {{gallery:Guadix（洞穴住居）|https://commons.wikimedia.org/wiki/Special:FilePath/IAPH_Casas_cueva_Purullena.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Guadix_chimneys.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Cathedral_-_Guadix_-_Spain_-_20110808.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Teatro_romano_de_Guadix_(Julia_Gemella_Acci).jpg?width=1800}}
 
 ### how
+@card: 交通與動線重點整理：火車往返就能完成；主題是洞穴住居地景與「人用地景當房子」的生活方式，題材換腦、走路量也好控制。
 火車：Granada ↔ Guadix（可用 Renfe / Trainline 查班次）。
 半日～一日：到 Guadix → 洞穴區/地景點 → 回 Granada。單程約 1 小時上下（以班次為準）。
 
 ### sources
+@card: 資料來源與查詢入口：需要核對規則、交通或官方資訊可從這裡往下追。
 Trainline（Guadix ↔ Granada）：https://www.thetrainline.com/en/train-times/guadix-to-granada
 
 ## alhambra-ticketing | Alhambra 票務規則（備忘）
@@ -63,9 +70,11 @@ Nasrid Palaces 是分時段入場，遲到通常就進不去。做法很簡單�
 當天至少提早 30–45 分鐘進園，會大幅降低排隊與趕路的壓力。
 
 ### images
+@card: 圖庫：先用畫面判斷你對不對這個題材；需要細節再往下讀。
 {{gallery:Alhambra（備忘）|https://commons.wikimedia.org/wiki/Special:FilePath/Alhambra_-_Granada.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Architectural_details_in_Alhambra,_Granada_(6930669668).jpg?width=1800|https://source.unsplash.com/gM1lnTTdWuE/1800x1200|https://source.unsplash.com/ryzLAmYJq1c/1800x1200}}
 
 ### how
+@card: 票務備忘與操作順序：先鎖日期＋Nasrid 時段，再讓其他安排讓路；提早進園是避免趕路與排隊壓力的關鍵。
 先做：
 1. 上 Patronato 官方買票
 2. 選日期 + Nasrid Palaces 時段
@@ -74,6 +83,7 @@ Nasrid Palaces 是分時段入場，遲到通常就進不去。做法很簡單�
 當天：至少提早 30–45 分鐘進園（園區很大，走到入口要時間；排隊也可能拉長）。
 
 ### sources
+@card: 資料來源與查詢入口：需要核對規則、交通或官方資訊可從這裡往下追。
 Patronato 官方票務：https://compratickets.alhambra-patronato.es/reservarEntradas.aspx?opc=142&gid=432&lg=en-GB&ca=0&m=GENERAL
 
 入場時段規則：https://www.alhambra-patronato.es/en/visit/organize-your-visit/time-of-the-visit
@@ -87,15 +97,19 @@ Patronato 官方票務：https://compratickets.alhambra-patronato.es/reservarEnt
 不必拚很早：想避人潮就早去早回，或乾脆做成晚出早回的輕鬆版本。
 
 ### images
+@card: 圖庫：先用畫面判斷你對不對這個題材；需要細節再往下讀。
 {{gallery:Málaga|https://commons.wikimedia.org/wiki/Special:FilePath/Malaga_port.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/ES-Malaga-Hafen.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Palmeral_de_las_Sorpresas_(M%C3%A1laga)_01.jpg?width=1800}}
 
 ### how
+@card: 交通與動線重點整理：火車/巴士往返，把它當「城市海邊補給日」最對味；走路量可控、節奏也更像休息而不是再拚景點。
 交通以火車/巴士為主（先查班次再排回程）。
 到 Málaga → 海邊散步/午餐 → 傍晚回 Granada。建議抓整天或晚出早回。
 
 ### backup
+@card: Plan B 與可撤退版本：如果當天太累，直接留在 Granada 做 Hammam/茶館也很完整；把休息當成行程的一部分會更舒服。
 如果當天太累：直接留在 Granada（Hammam/茶館）會更舒服。
 
 ### sources
+@card: 資料來源與查詢入口：需要核對規則、交通或官方資訊可從這裡往下追。
 Wikivoyage（Granada）：https://en.wikivoyage.org/wiki/Granada_(Spain)
 

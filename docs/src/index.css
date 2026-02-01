@@ -496,6 +496,72 @@ select:focus-visible {
   box-shadow: none;
 }
 
+.modalCardSplit {
+  /* Split-layout modal: header + scroll body + footer (no overlay scrolling). */
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  max-height: min(
+    82vh,
+    calc(100vh - (var(--modal-pad) * 2) - env(safe-area-inset-top, 0px) - env(safe-area-inset-bottom, 0px))
+  );
+}
+
+.modalCardSplitHeader {
+  padding: 14px 16px 12px;
+  border-bottom: 1px solid color-mix(in oklab, var(--hairline) 90%, white);
+  background: color-mix(in oklab, var(--surface) 92%, var(--surface-2));
+}
+
+.modalCardSplitHeaderTitle {
+  font-weight: 950;
+  font-size: var(--text-lg);
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+}
+
+.modalCardSplitHeaderSub {
+  margin-top: 6px;
+  color: var(--muted);
+  font-size: var(--text-xs);
+  line-height: 1.35;
+}
+
+.modalCardSplitBody {
+  flex: 1 1 auto;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+  padding: var(--pad-card);
+}
+
+.modalCardSplitProgressTrack {
+  height: 4px;
+  width: 100%;
+  background: color-mix(in oklab, var(--hairline) 70%, white);
+}
+
+.modalCardSplitProgressFill {
+  height: 100%;
+  width: 0%;
+  background: color-mix(in oklab, var(--accent) 75%, white);
+}
+
+:root:not([data-motion='low']) .modalCardSplitProgressFill {
+  transition: width 120ms linear;
+}
+
+.modalCardSplitFooter {
+  padding: 12px 16px 14px;
+  border-top: 1px solid color-mix(in oklab, var(--hairline) 90%, white);
+  background: color-mix(in oklab, var(--surface) 88%, var(--surface-2));
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+
 .expModalCard {
   /* "View full description" modal (Stays/Transport): keep card compact */
   max-width: min(680px, 100%);
@@ -871,6 +937,32 @@ select:focus-visible {
   overflow-wrap: anywhere;
   word-break: break-word;
   white-space: pre-wrap;
+}
+
+/* Text clamping utilities (for responsive cards) */
+.clamp2,
+.clamp3 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.clamp2 {
+  -webkit-line-clamp: 2;
+}
+.clamp3 {
+  -webkit-line-clamp: 3;
+}
+
+/* Highlight (markdown inline syntax: ::...::) */
+mark {
+  color: inherit;
+  font-weight: 800;
+  padding: 0.04em 0.28em;
+  border-radius: 0.55em;
+  border: 1px solid color-mix(in oklab, var(--accent) 22%, var(--hairline));
+  background: color-mix(in oklab, var(--accent) 16%, transparent);
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
 }
 
 /* Attractions nested list (md->generated TS preserves indentation, UI must too) */
@@ -1541,6 +1633,310 @@ details > summary span[aria-hidden='true'] {
   font-weight: 950;
   letter-spacing: 0.01em;
   margin-bottom: 8px;
+}
+
+/* Attractions: text-first carousel */
+.textCarousel {
+  box-shadow: none;
+  background: color-mix(in oklab, var(--surface) 94%, var(--surface-2));
+}
+
+.textCarouselInner {
+  display: grid;
+  gap: 10px;
+}
+
+.textCarouselHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.textCarouselTitle {
+  font-weight: 950;
+  font-size: var(--text-md);
+  line-height: 1.15;
+}
+
+.textCarouselSubtitle {
+  margin-top: 6px;
+  font-size: var(--text-xs);
+  line-height: 1.35;
+}
+
+.textCarouselHeaderActions {
+  display: inline-flex;
+  gap: 8px;
+  flex: 0 0 auto;
+}
+
+.textCarouselNavBtn {
+  padding: 10px 12px;
+  min-width: 44px;
+  font-weight: 950;
+}
+
+.textCarouselViewport {
+  --items-per-view: 1;
+  --carousel-gap: 10px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 6px;
+}
+
+.textCarouselTrack {
+  display: flex;
+  gap: var(--carousel-gap);
+  min-width: 0;
+}
+
+.textCarouselItem {
+  flex: 0 0
+    calc(
+      (100% - (var(--carousel-gap) * (calc(var(--items-per-view) - 1)))) / var(--items-per-view)
+    );
+  scroll-snap-align: start;
+  border-radius: 16px;
+  border: 1px solid var(--hairline);
+  background: var(--surface);
+  overflow: hidden;
+  min-width: 0;
+  display: grid;
+}
+
+.textCarouselMedia {
+  width: 100%;
+  height: 120px;
+  background: color-mix(in oklab, var(--surface) 70%, black);
+}
+
+.textCarouselMedia img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.textCarouselBody {
+  padding: 12px 12px;
+  display: grid;
+  gap: 8px;
+}
+
+.textCarouselItemTitle {
+  font-weight: 950;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+}
+
+.textCarouselItemSummary {
+  font-size: var(--text-sm);
+  line-height: 1.6;
+}
+
+.textCarouselItemActions {
+  margin-top: 4px;
+}
+
+.textCarouselHint {
+  font-size: var(--text-xs);
+}
+
+@media (min-width: 860px) {
+  .textCarouselViewport {
+    padding-bottom: 0;
+  }
+}
+
+/* Attractions: toolbox (food/safety/practical) */
+.attrToolbox {
+  margin-top: 14px;
+}
+
+.attrToolboxHeader {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.attrToolboxTitle {
+  font-weight: 950;
+  letter-spacing: 0.01em;
+}
+
+.attrToolboxSub {
+  font-size: var(--text-xs);
+}
+
+.attrToolboxRow {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 6px;
+}
+
+.attrToolboxCard {
+  flex: 0 0 min(280px, 82%);
+  scroll-snap-align: start;
+  text-align: left;
+  cursor: pointer;
+  box-shadow: none;
+  background: color-mix(in oklab, var(--surface) 94%, var(--surface-2));
+}
+
+.attrToolboxCardInner {
+  display: grid;
+  gap: 8px;
+}
+
+.attrToolboxCardTitle {
+  font-weight: 950;
+}
+
+.attrToolboxCardExcerpt {
+  font-size: var(--text-sm);
+  line-height: 1.6;
+}
+
+.attrToolboxCardMeta {
+  font-size: var(--text-xs);
+}
+
+@media (min-width: 860px) {
+  .attrToolboxRow {
+    overflow-x: visible;
+    scroll-snap-type: none;
+    padding-bottom: 0;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .attrToolboxCard {
+    flex: initial;
+    width: 100%;
+  }
+}
+
+/* Routes/Extensions: Zigzag timeline */
+.zigzagTimeline {
+  margin-top: 10px;
+}
+
+.zigzagTimelineTitle {
+  font-weight: 950;
+  letter-spacing: 0.01em;
+}
+
+.zigzagTimelineSubtitle {
+  margin-top: 6px;
+  font-size: var(--text-xs);
+}
+
+.zigzagTimelineList {
+  margin-top: 10px;
+  display: grid;
+  gap: 12px;
+}
+
+.zigzagTimelineItem {
+  position: relative;
+  padding-left: 36px; /* room for milestone */
+}
+
+.zigzagTimelineItem::before {
+  content: '';
+  position: absolute;
+  left: 14px;
+  top: 0;
+  bottom: -12px;
+  width: 2px;
+  background: color-mix(in oklab, var(--accent) 14%, var(--hairline));
+}
+
+.zigzagTimelineItem:last-child::before {
+  bottom: 18px;
+}
+
+.zigzagTimelineMilestone {
+  position: absolute;
+  left: 2px;
+  top: 18px;
+  width: 26px;
+  height: 26px;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  font-weight: 950;
+  font-size: 12px;
+  color: var(--accent-2);
+  border: 2px solid color-mix(in oklab, var(--accent) 22%, var(--hairline));
+  background: color-mix(in oklab, var(--accent) 10%, var(--surface));
+  box-shadow: 0 10px 26px rgba(18, 17, 14, 0.12);
+}
+
+.zigzagTimelineItemTitle {
+  font-weight: 950;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+}
+
+.zigzagTimelineItemSummary {
+  margin-top: 6px;
+  font-size: var(--text-sm);
+  line-height: 1.6;
+}
+
+.zigzagTimelineItemActions {
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media (min-width: 860px) {
+  .zigzagTimelineItem {
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+
+  .zigzagTimelineItem::before {
+    display: none;
+  }
+
+  .zigzagTimelineItem:nth-child(2n) {
+    border-left: 1px solid color-mix(in oklab, var(--hairline) 92%, white);
+  }
+
+  .zigzagTimelineItem:nth-child(2n + 1) {
+    border-right: 1px solid color-mix(in oklab, var(--hairline) 92%, white);
+  }
+
+  .zigzagTimelineItem:nth-child(2n) .zigzagTimelineMilestone {
+    left: 0;
+    transform: translate(-50%, 0);
+  }
+
+  .zigzagTimelineItem:nth-child(2n + 1) .zigzagTimelineMilestone {
+    right: 0;
+    left: auto;
+    transform: translate(50%, 0);
+  }
+
+  .zigzagTimelineItem:nth-child(2n) .zigzagTimelineCard {
+    max-width: 620px;
+    margin-left: auto;
+  }
+
+  .zigzagTimelineItem:nth-child(2n + 1) .zigzagTimelineCard {
+    max-width: 620px;
+    margin-right: auto;
+  }
 }
 
 @media (max-width: 520px) {

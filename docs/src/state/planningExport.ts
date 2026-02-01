@@ -67,6 +67,7 @@ export function mergePlanningState(base: PlanningState, incoming: unknown): Plan
   return {
     ...base,
     attractionDecisions: { ...base.attractionDecisions, ...(p.attractionDecisions ?? {}) },
+    transportDecisions: { ...base.transportDecisions, ...(p.transportDecisions ?? {}) },
     checklist: Array.isArray(p.checklist) ? (p.checklist as PlanningState['checklist']) : base.checklist,
     changelog: Array.isArray(p.changelog) ? (p.changelog as PlanningState['changelog']) : base.changelog,
   }

@@ -27,6 +27,7 @@ createRoot(document.getElementById('root')!).render(
               { cityId: CityId; mustSee: string[]; optional: string[]; skip: string[] }
             >,
           ),
+          transportDecisions: {},
           checklist: [],
           changelog: [],
         }}

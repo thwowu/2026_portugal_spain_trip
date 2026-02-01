@@ -63,7 +63,6 @@ export function createContentPatchExportV1(planning: PlanningState): ContentPatc
         '## skip',
         '## practical',
         '## food',
-        '## photo',
         '## safety',
       ],
     })

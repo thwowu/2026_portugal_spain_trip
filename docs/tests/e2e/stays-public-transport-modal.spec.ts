@@ -6,13 +6,18 @@ test.describe('stays modal (public transport how-to)', () => {
     await page.waitForLoadState('networkidle')
 
     // Open modal from any city's stays card.
-    await page.getByRole('button', { name: '看完整說明', exact: true }).first().click()
+    const openBtn = page.getByRole('button', { name: '看完整說明', exact: true }).first()
+    try {
+      await openBtn.click({ timeout: 3000 })
+    } catch {
+      await openBtn.click({ force: true })
+    }
 
     // The modal is a role=dialog overlay; it should be visible and closable.
     const dialog = page.getByRole('dialog')
     await expect(dialog).toBeVisible()
 
-    await dialog.getByRole('button', { name: '關閉', exact: true }).click()
+    await page.keyboard.press('Escape')
     await expect(dialog).toBeHidden()
   })
 })

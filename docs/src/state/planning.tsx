@@ -1,6 +1,6 @@
 /* eslint-disable react-refresh/only-export-components */
 import { createContext, useContext, useEffect, useMemo, useState } from 'react'
-import type { CityId } from '../data/core'
+import type { CityId, TransportSegmentId } from '../data/core'
 import { loadJson, saveJson } from './storage'
 
 export type DecisionStatus = 'candidate' | 'decided' | 'rejected'
@@ -13,6 +13,12 @@ export type AttractionDecision = {
 }
 
 export type ChecklistCategory = 'tickets' | 'stays' | 'transport' | 'backup' | 'other'
+
+export type TransportDecision = {
+  segmentId: TransportSegmentId
+  choice: 'train' | 'bus' | null
+  reason: string
+}
 
 export type ChecklistItem = {
   id: string
@@ -30,12 +36,14 @@ export type ChangelogEntry = {
 
 export type PlanningState = {
   attractionDecisions: Record<CityId, AttractionDecision>
+  transportDecisions: Partial<Record<TransportSegmentId, TransportDecision>>
   checklist: ChecklistItem[]
   changelog: ChangelogEntry[]
 }
 
 export type PlanningActions = {
   setAttractions: (cityId: CityId, patch: Partial<AttractionDecision>) => void
+  setTransportDecision: (segmentId: TransportSegmentId, patch: Partial<TransportDecision>) => void
   addChecklistItem: (text: string, category: ChecklistCategory) => void
   toggleChecklistItem: (id: string) => void
   deleteChecklistItem: (id: string) => void
@@ -84,6 +92,18 @@ export function PlanningProvider({
             [cityId]: { ...s.attractionDecisions[cityId], ...patch },
           },
         }))
+      },
+      setTransportDecision: (segmentId, patch) => {
+        setState((s) => {
+          const cur = s.transportDecisions[segmentId] ?? { segmentId, choice: null, reason: '' }
+          return {
+            ...s,
+            transportDecisions: {
+              ...s.transportDecisions,
+              [segmentId]: { ...cur, ...patch },
+            },
+          }
+        })
       },
       addChecklistItem: (text, category) => {
         const item: ChecklistItem = {

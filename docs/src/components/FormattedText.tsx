@@ -9,6 +9,7 @@ type InlineToken =
   | { kind: 'link'; label: string; href: string }
   | { kind: 'bold'; value: string }
   | { kind: 'italic'; value: string }
+  | { kind: 'mark'; value: string }
   | { kind: 'url'; href: string; label: string }
 
 function splitTrailingUrlPunct(url: string) {
@@ -42,9 +43,10 @@ function tokenizeInline(input: string): InlineToken[] {
   // Priority order:
   // 1) inline code: `...`
   // 2) markdown links: [label](https://...)
-  // 3) bold: **...**
-  // 4) italic: *...*  (very simple; avoids matching "**")
-  // 5) bare URLs
+  // 3) mark: ::...::
+  // 4) bold: **...**
+  // 5) italic: *...*  (very simple; avoids matching "**")
+  // 6) bare URLs
   //
   // This is a deliberately small, safe subset (no HTML, no nested parsing guarantees).
   const tokens: InlineToken[] = []
@@ -79,7 +81,7 @@ function tokenizeInline(input: string): InlineToken[] {
     if (rest) tokens.push({ kind: 'text', value: rest })
   }
 
-  // Expand bold/italic + bare urls only within text tokens (don’t touch code/link)
+  // Expand mark/bold/italic + bare urls only within text tokens (don’t touch code/link)
   const expanded: InlineToken[] = []
   for (const t of tokens) {
     if (t.kind !== 'text') {
@@ -87,20 +89,45 @@ function tokenizeInline(input: string): InlineToken[] {
       continue
     }
 
-    // Bold: **...**
-    const boldParts: InlineToken[] = []
-    let cursor = 0
-    const s = t.value
-    const boldRe = /\*\*([^*]+)\*\*/g
-    for (const m of s.matchAll(boldRe)) {
-      const idx = m.index ?? -1
-      if (idx < 0) continue
-      if (idx > cursor) boldParts.push({ kind: 'text', value: s.slice(cursor, idx) })
-      const inner = (m[1] ?? '').trim()
-      if (inner) boldParts.push({ kind: 'bold', value: inner })
-      cursor = idx + m[0].length
+    // Mark: ::...::
+    const markParts: InlineToken[] = []
+    {
+      let cursor0 = 0
+      const s0 = t.value
+      const markRe = /::([^\n]+?)::/g
+      for (const m of s0.matchAll(markRe)) {
+        const idx = m.index ?? -1
+        if (idx < 0) continue
+        if (idx > cursor0) markParts.push({ kind: 'text', value: s0.slice(cursor0, idx) })
+        const inner = (m[1] ?? '').trim()
+        if (inner) markParts.push({ kind: 'mark', value: inner })
+        cursor0 = idx + m[0].length
+      }
+      if (cursor0 < s0.length) markParts.push({ kind: 'text', value: s0.slice(cursor0) })
     }
-    if (cursor < s.length) boldParts.push({ kind: 'text', value: s.slice(cursor) })
+
+    // Bold: **...** (within remaining text tokens)
+    const boldParts: InlineToken[] = []
+    const boldRe = /\*\*([^*]+)\*\*/g
+    // If we have mark tokens, we must preserve them while parsing bold.
+    // We do this by running bold parsing per text token in markParts.
+    for (const mp of markParts) {
+      if (mp.kind !== 'text') {
+        boldParts.push(mp)
+        continue
+      }
+      const seg = mp.value
+      let cursorBold = 0
+      for (const m of seg.matchAll(boldRe)) {
+        const idx = m.index ?? -1
+        if (idx < 0) continue
+        if (idx > cursorBold) boldParts.push({ kind: 'text', value: seg.slice(cursorBold, idx) })
+        const inner = (m[1] ?? '').trim()
+        if (inner) boldParts.push({ kind: 'bold', value: inner })
+        cursorBold = idx + m[0].length
+      }
+      if (cursorBold < seg.length) boldParts.push({ kind: 'text', value: seg.slice(cursorBold) })
+    }
 
     // Italic: *...* (skip segments that still contain "**")
     for (const bt of boldParts) {
@@ -167,6 +194,7 @@ export function FormattedInline({ text }: { text: string }) {
         if (t.kind === 'code') return <code key={i}>{t.value}</code>
         if (t.kind === 'bold') return <strong key={i}>{t.value}</strong>
         if (t.kind === 'italic') return <em key={i}>{t.value}</em>
+        if (t.kind === 'mark') return <mark key={i}>{t.value}</mark>
         if (t.kind === 'link')
           return (
             <a key={i} href={t.href} target="_blank" rel="noreferrer noopener">

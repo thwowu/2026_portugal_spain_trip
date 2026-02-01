@@ -11,6 +11,7 @@ title: 格拉納達（Granada）
 ## must
 
 ### [阿爾罕布拉宮 Alhambra](https://www.google.com/maps/search/?api=1&query=Alhambra%20Granada)（Day 11 主菜、需預約）
+@card: Granada 的世界級主菜：以 Nasrid 定時入場為錨點，把「摩爾王宮城＋庭院水景」一次看懂；細節密度高，現場比照片更有感。
 {{gallery:Alhambra|https://source.unsplash.com/gM1lnTTdWuE/1800x1200|https://source.unsplash.com/ryzLAmYJq1c/1800x1200|https://commons.wikimedia.org/wiki/Special:FilePath/Alhambra_-_Granada.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Architectural_details_in_Alhambra,_Granada_(6930669668).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Patio_de_los_Leones.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Alcazaba_Alhambra_Granada_Spain.jpg?width=1800}}
 
 重點：納斯里德宮（Nasrid Palaces / Palacios Nazaríes）分時段入場、庭院水景、整個園區的世界級氛圍。
@@ -22,6 +23,7 @@ title: 格拉納達（Granada）
 建議停留：半天到一整天（看你走多慢＋拍照）。
 
 ### [軒尼洛里費花園（Generalife）](https://www.google.com/maps/search/?api=1&query=Generalife%20Granada)（通常含在套票裡，別錯過）
+@card: 把 Alhambra 的節奏放鬆下來：水道、花園與春天綠意是「喘口氣」的那一段；和主宮殿一起走，整個王宮城的體驗才算完整。
 {{gallery:Generalife|https://commons.wikimedia.org/wiki/Special:FilePath/Palacio_Generalife.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Granada_Spain_Alhambra-Palacio-Generalife-01.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Granada,_Generalife,_Mirador_del_Patio_de_la_Acequia_(1).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Alhambra,_Generalife_and_Albayz%C3%ADn,_Granada-110149.jpg?width=1800}}
 
 重點：花園＋水道＋春天的綠意（四月很加分）。
@@ -33,6 +35,7 @@ title: 格拉納達（Granada）
 建議停留：1–1.5 小時。
 
 ### Day 12 市區主菜（推薦順序：平路先吃氛圍 → 再上坡看景 → 隨時好撤退）
+@card: Day 12 的重點是「平路先拿明信片氛圍，再看體力決定上坡」：用河谷街段當主菜、Plaza Nueva 當撤退點，整天最容易穩。
 
 #### [新廣場（Plaza Nueva）](https://www.google.com/maps/search/?api=1&query=Plaza%20Nueva%20Granada) → Darro 河谷入口
 {{gallery:Plaza Nueva|https://commons.wikimedia.org/wiki/Special:FilePath/Plaza_Nueva_Granada.JPG?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Granada%2C_Plaza_Nueva.JPG?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Plaza_Nueva_de_Granada.jpg?width=1800}}
@@ -86,6 +89,7 @@ title: 格拉納達（Granada）
 它長期與吉普賽／弗拉明戈文化連結，被視為 Granada 具有代表性的在地文化區。
 
 ### （選配）[Hammam Al Ándalus](https://www.google.com/maps/search/?api=1&query=Hammam%20Al%20%C3%81ndalus%20Granada)（雨天/冷天/想放鬆：超適合）
+@card: 把「安達盧斯的水與蒸氣文化」用最舒服的方式體驗一次：雨天、冷天或走爆那天超適合，讓身體與節奏一起回到旅行狀態。
 {{gallery:Hammam / Arab Baths|https://commons.wikimedia.org/wiki/Special:FilePath/Aa_albaicin_facade_down_el_banuelo_granada_arab_baths.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Bench_hammam,_Alhambra,_Granada,_Spain.jpg?width=1800}}
 
 把「安達盧斯的水與蒸氣文化」用最舒服的方式體驗一次，特別適合走爆的那天當作復活。它是現代浴場體驗，但靈感來自伊斯蘭世界哈曼傳統，和 Granada 仍可見的摩爾浴場遺跡形成呼應。
@@ -112,12 +116,21 @@ Mirador de San Nicolás（夕陽/夜景都強）是最經典視角。想避人�
 
 ## routes
 
+### Day 11（Alhambra 日：票務錨點）
+@card: 以 Nasrid 時段為錨點：::其他都圍著票走::，園區很大，寧可少一點、走舒服一點。
+
 Day 11 的錨點就是票上那個 Nasrid 時段：其他都圍著它排。園區很大，寧可少一點、走舒服一點，不要趕場。
+
+### Day 12（市區：平路 → 上坡選配 → 撤退點）
+@card: 不想走爆的版本：先走平路河谷，再看體力決定上坡，最後一定回 Plaza Nueva 撤退回血。
 
 Day 12（市區）建議用「平路 → 上坡（選配）→ 撤退點」的順序走：
 - 先平路：Cathedral 周邊 → Plaza Nueva → Darro 河谷（Carrera del Darro / Paseo de los Tristes）。
 - 再看體力決定要不要上坡：想看經典視角再去 Albaicín／Mirador de San Nicolás；不想走就到河谷街段為止。
 - 撤退點固定抓 Plaza Nueva 一帶：走累就回到這附近坐下來休息、補水再決定下一段。
+
+### （加分）傍晚只加一段河谷夜走
+@card: 如果腳還有力：傍晚回市區後只加 Darro 河谷夜走就好，::不用再上坡::。
 
 如果你腳還有力：傍晚回市區後只加一段 Darro 河谷夜走就很夠（不用再上坡）。
 

@@ -7,7 +7,25 @@ import {
   parseLines,
 } from './md.mjs'
 
+// Section kinds shown as city tabs in the Attractions page.
+//
+// Note: `photo` is intentionally OPTIONAL. It used to be required, but we decided
+// some cities don't need a dedicated photo section anymore.
 const REQUIRED_KINDS = /** @type {const} */ ([
+  'must',
+  'easy',
+  'rain',
+  'views',
+  'routes',
+  'skip',
+  'practical',
+  'food',
+  'safety',
+])
+
+const OPTIONAL_KINDS = /** @type {const} */ (['photo'])
+
+const KIND_ORDER = /** @type {const} */ ([
   'must',
   'easy',
   'rain',
@@ -19,6 +37,8 @@ const REQUIRED_KINDS = /** @type {const} */ ([
   'photo',
   'safety',
 ])
+
+const ALLOWED_KINDS = /** @type {const} */ ([...KIND_ORDER])
 
 const DEFAULT_TITLES = {
   must: '必去（Top picks）',
@@ -78,7 +98,7 @@ export function parseAttractionsCityMd({ sourcePath, raw }) {
   const byKind = new Map()
   for (const h2 of findChildren(h1, 2)) {
     const kind = h2.text.trim()
-    if (!REQUIRED_KINDS.includes(kind)) continue
+    if (!ALLOWED_KINDS.includes(kind)) continue
     const content = serializeSectionBody(h2)
     byKind.set(kind, { kind, title: DEFAULT_TITLES[kind] || kind, content })
   }
@@ -102,7 +122,7 @@ export function parseAttractionsCityMd({ sourcePath, raw }) {
   return {
     cityId,
     title,
-    sections: REQUIRED_KINDS.map((k) => byKind.get(k)),
+    sections: KIND_ORDER.filter((k) => byKind.has(k)).map((k) => byKind.get(k)),
     ...(extensions.length ? { extensions } : {}),
   }
 }

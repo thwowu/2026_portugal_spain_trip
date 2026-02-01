@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from 'react'
 import { TRANSPORT_DATA } from '../generated'
 import { TRANSPORT_SEGMENTS, type TransportSegmentId } from '../data/core'
 import { useProgress } from '../state/progress'
+import { usePlanning } from '../state/planning'
 import { Lightbox } from '../components/Lightbox'
 import { useHashScroll } from '../hooks/useHashScroll'
 import { useReveal } from '../hooks/useReveal'
@@ -33,6 +34,7 @@ function Accordion({
 
 export function TransportPage() {
   const { actions: progressActions } = useProgress()
+  const { state: planning, actions: planningActions } = usePlanning()
   const [lightbox, setLightbox] = useState<{ src: string; title: string } | null>(null)
   useHashScroll()
 
@@ -86,6 +88,7 @@ export function TransportPage() {
         {orderedSegments.map((seg) => {
           const trainOptions = seg.options.filter((o) => o.mode === 'train')
           const busOptions = seg.options.filter((o) => o.mode === 'bus')
+          const decision = planning.transportDecisions[seg.id] ?? { segmentId: seg.id, choice: null, reason: '' }
 
           return (
             <RevealSection key={seg.id} id={`seg-${seg.id}`} segmentId={seg.id} onSeen={progressActions.markTransportSeen}>
@@ -110,6 +113,75 @@ export function TransportPage() {
                       </div>
                       <div className="muted" style={{ marginTop: 10 }}>
                         {renderMixedList(seg.tldr.reminders, { ordered: false })}
+                      </div>
+                    </div>
+                  </div>
+
+                  <div style={{ height: 12 }} />
+
+                  {/* Decision (persisted) */}
+                  <div className="card" style={{ boxShadow: 'none', background: 'var(--surface-2)' }} data-testid={`transport-decision-${seg.id}`}>
+                    <div className="cardInner">
+                      <div style={{ display: 'flex', gap: 10, alignItems: 'center', flexWrap: 'wrap' }}>
+                        <div style={{ fontWeight: 900 }}>我的決定</div>
+                        {decision.choice ? <div className="chip">已選：{decision.choice === 'train' ? '火車' : '巴士'}</div> : <div className="chip">未決定</div>}
+                      </div>
+
+                      <div style={{ marginTop: 10, display: 'grid', gap: 10 }}>
+                        <fieldset style={{ border: 0, padding: 0, margin: 0 }} aria-label={`${seg.label} 我的決定`}>
+                          <div style={{ display: 'flex', gap: 14, flexWrap: 'wrap' }}>
+                            <label style={{ display: 'flex', gap: 8, alignItems: 'center' }}>
+                              <input
+                                type="radio"
+                                name={`transport-choice-${seg.id}`}
+                                checked={decision.choice === 'train'}
+                                onChange={() => planningActions.setTransportDecision(seg.id, { choice: 'train' })}
+                              />
+                              火車
+                            </label>
+                            <label style={{ display: 'flex', gap: 8, alignItems: 'center' }}>
+                              <input
+                                type="radio"
+                                name={`transport-choice-${seg.id}`}
+                                checked={decision.choice === 'bus'}
+                                onChange={() => planningActions.setTransportDecision(seg.id, { choice: 'bus' })}
+                              />
+                              巴士
+                            </label>
+                            <button
+                              type="button"
+                              className="btn"
+                              onClick={() => planningActions.setTransportDecision(seg.id, { choice: null, reason: '' })}
+                              aria-label={`清除決定：${seg.label}`}
+                            >
+                              清除
+                            </button>
+                          </div>
+                        </fieldset>
+
+                        <div>
+                          <div style={{ fontWeight: 850 }}>理由（給未來的自己）</div>
+                          <div className="muted" style={{ marginTop: 6, fontSize: 'var(--text-sm)' }}>
+                            一句話即可：為什麼選這個？有什麼注意點？
+                          </div>
+                          <textarea
+                            value={decision.reason}
+                            onChange={(e) => planningActions.setTransportDecision(seg.id, { reason: e.target.value })}
+                            rows={3}
+                            style={{
+                              width: '100%',
+                              marginTop: 8,
+                              padding: 10,
+                              borderRadius: 12,
+                              border: '1px solid var(--hairline)',
+                              background: 'var(--surface)',
+                              color: 'var(--text)',
+                              resize: 'vertical',
+                            }}
+                            placeholder="例如：巴士直達、站更近；但要提早到站排隊。"
+                            aria-label={`交通決定理由：${seg.label}`}
+                          />
+                        </div>
                       </div>
                     </div>
                   </div>

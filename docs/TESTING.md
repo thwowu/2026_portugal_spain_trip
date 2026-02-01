@@ -7,6 +7,7 @@ This project supports both **manual testing** and **automated tests** (smoke + E
 From `docs/`:
 
 - `npm run content:check`
+- `npm run content:ui-check`
 - `npm run lint`
 - `npm run build`
 - `npm run preview`
@@ -14,7 +15,7 @@ From `docs/`:
 
 ### When to run what
 
-- **After editing any `docs/src/content/*.md`**: `npm run content:check` (or `npm run build`, since `prebuild` regenerates content).
+- **After editing any `docs/src/content/*.md`**: `npm run content:check && npm run content:ui-check` (or `npm run build`, since `prebuild` regenerates content).
 - **Before sharing/deploying**: `npm run test:smoke`.
 - **Before major changes/releases**: `npm run test:e2e` (covers routing + persistence + import/export).
 
@@ -73,6 +74,7 @@ Notes:
 ### C. Content correctness (md → generated)
 
 - `npm run content:check` passes.
+- `npm run content:ui-check` passes (guards against UI parsing issues like broken `{{gallery...}}`, malformed `@card:` lines, and non-list-lead bold).
 - If itinerary day numbers are not contiguous, `content:check` fails (see `docs/scripts/build-content.mjs` `validateItinerary()`).
 - App pages render without runtime errors using `docs/src/generated/*`.
 

@@ -8,6 +8,7 @@ export function firstContentSnippet(content: string, maxLen = 120): string {
     .split('\n')
     .map((l) => l.trim())
     .filter(Boolean)
+    .filter((l) => !l.startsWith('@card:'))
     .filter((l) => !l.startsWith('#'))
     .map((l) => l.replace(GALLERY_TOKEN_RE, '').trim())
     .filter(Boolean)

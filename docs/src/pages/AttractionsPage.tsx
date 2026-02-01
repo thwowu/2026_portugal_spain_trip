@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useMemo, useState } from 'react'
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { ATTRACTIONS_DATA, EXTENSIONS_DATA } from '../generated'
 import { CITIES, STAYS_CITY_ORDER } from '../data/core'
 import type { CityId } from '../data/core'
@@ -12,6 +12,10 @@ import { ILLUSTRATION } from '../illustrations'
 import { PageHero } from '../components/PageHero'
 import { RichContent } from '../components/RichContent'
 import { firstContentSnippet } from '../utils/richContentSnippet'
+import { FormattedInline } from '../components/FormattedText'
+import { TextCarouselCard } from '../components/TextCarouselCard'
+import { ZigzagTimeline } from '../components/ZigzagTimeline'
+import { extractH3CarouselItems, stripCardLinesFromContent } from '../utils/extractCarouselItems'
 
 const SECTION_TAB_LABEL: Record<string, string> = {
   must: '必去',
@@ -24,6 +28,19 @@ const SECTION_TAB_LABEL: Record<string, string> = {
   food: '吃',
   photo: '拍照',
   safety: '安全',
+}
+
+const TOOLBOX_KINDS = new Set(['food', 'safety', 'practical'])
+
+// If a section is extremely long, offer a dedicated reading modal.
+// (2500 chars ~= a few screens on mobile; tuned for our current content.)
+const LONG_SECTION_MODAL_THRESHOLD_CHARS = 2500
+
+type LongReadModalState = {
+  ariaLabel: string
+  headerTitle: string
+  headerSub?: string
+  content: string
 }
 
 // Keep Attractions city order aligned with the itinerary (same as stays).
@@ -40,6 +57,7 @@ export function AttractionsPage() {
   useHashScroll()
   const [open, setOpen] = useState<Record<string, boolean>>({})
   const [active, setActive] = useState<{ cityId: string; tripId: string } | null>(null)
+  const [longRead, setLongRead] = useState<LongReadModalState | null>(null)
   const [lightbox, setLightbox] = useState<{ src: string; title: string } | null>(null)
   const [gallery, setGallery] = useState<{ title: string; images: GalleryImage[]; index: number } | null>(null)
   const [activeCityId, setActiveCityId] = useState<CityId | null>(DEFAULT_ATTRACTIONS_CITY_ID)
@@ -149,7 +167,7 @@ export function AttractionsPage() {
   useEffect(() => {
     // Keyboard quick-nav: ArrowLeft / ArrowRight to jump across cities.
     // Avoid stealing keys when modals/lightboxes are open.
-    if (active || lightbox || gallery) return
+    if (active || longRead || lightbox || gallery) return
 
     const onKeyDown = (e: KeyboardEvent) => {
       if (e.defaultPrevented) return
@@ -171,7 +189,7 @@ export function AttractionsPage() {
 
     window.addEventListener('keydown', onKeyDown)
     return () => window.removeEventListener('keydown', onKeyDown)
-  }, [active, gallery, lightbox, nextCityId, prevCityId, scrollToCity])
+  }, [active, gallery, lightbox, longRead, nextCityId, prevCityId, scrollToCity])
 
   useEffect(() => {
     let raf = 0
@@ -279,9 +297,20 @@ export function AttractionsPage() {
       <div style={{ display: 'grid', gap: 14 }}>
         {orderedAttractions.map((c) => {
           const cityKey = c.cityId
-          const defaultKind = c.sections[0]?.kind
-          const activeKind = activeTabByCity[cityKey] ?? defaultKind
-          const activeSection = c.sections.find((s) => s.kind === activeKind) ?? c.sections[0]
+          const visibleSections = c.sections.filter((s) => !TOOLBOX_KINDS.has(s.kind))
+          const defaultKind = visibleSections[0]?.kind ?? c.sections[0]?.kind
+          const wantedKind = activeTabByCity[cityKey] ?? defaultKind
+          const activeKind = TOOLBOX_KINDS.has(wantedKind) ? defaultKind : wantedKind
+          const activeSection = c.sections.find((s) => s.kind === activeKind) ?? visibleSections[0] ?? c.sections[0]
+          const sectionContent = activeSection?.content ?? ''
+          const cleanedSectionContent = stripCardLinesFromContent(sectionContent)
+          const canOpenLongRead = !!cleanedSectionContent.trim() && cleanedSectionContent.trim().length >= LONG_SECTION_MODAL_THRESHOLD_CHARS
+
+          const toolboxSections = {
+            food: c.sections.find((s) => s.kind === 'food'),
+            safety: c.sections.find((s) => s.kind === 'safety'),
+            practical: c.sections.find((s) => s.kind === 'practical'),
+          }
 
           return (
             <RevealSection
@@ -289,6 +318,7 @@ export function AttractionsPage() {
               id={`attr-${c.cityId}`}
               cityId={c.cityId as CityId}
               onSeen={progressActions.markAttractionsSeen}
+              testId={`attr-city-${c.cityId}`}
             >
               <div className="card attrCityCard">
                 <div className="attrCityCardHeader">
@@ -314,7 +344,7 @@ export function AttractionsPage() {
                   {!activeSection ? null : (
                     <>
                       <div className="attrTabs" role="tablist" aria-label={`${c.title} 章節`}>
-                        {c.sections.map((s) => {
+                        {visibleSections.map((s) => {
                           const isActive = s.kind === activeSection.kind
                           return (
                             <button
@@ -333,18 +363,167 @@ export function AttractionsPage() {
 
                       <div className="attrTabPanel" role="tabpanel">
                         <div className="attrTabTitle">{activeSection.title}</div>
-                        {!activeSection.content?.trim() ? (
+
+                        {!cleanedSectionContent.trim() ? (
                           <div className="muted" style={{ marginTop: 8 }}>
                             （此章節目前尚無內容）
                           </div>
                         ) : (
-                          <RichContent
-                            content={activeSection.content}
-                            className="attrProse"
-                            onOpenImage={(src, title) => setLightbox({ src, title })}
-                            onOpenGallery={(images, title) => setGallery({ images, title, index: 0 })}
-                          />
+                          <>
+                            {activeSection.kind === 'routes' ? (
+                              <>
+                                <ZigzagTimeline
+                                  testId={`routes-timeline-${c.cityId}`}
+                                  items={extractH3CarouselItems(sectionContent, { snippetMaxLen: 140 }).map((it) => ({
+                                    title: it.title,
+                                    summary: it.summary,
+                                    content: it.content,
+                                    onOpen: () =>
+                                      setLongRead({
+                                        ariaLabel: `${c.title}｜${activeSection.title}｜${it.title}`,
+                                        headerTitle: it.title,
+                                        headerSub: c.title,
+                                        content: it.content,
+                                      }),
+                                  }))}
+                                />
+                                <div style={{ marginTop: 10 }}>
+                                  <button
+                                    type="button"
+                                    className="btn"
+                                    onClick={() =>
+                                      setLongRead({
+                                        ariaLabel: `${c.title}｜${activeSection.title}`,
+                                        headerTitle: activeSection.title,
+                                        headerSub: c.title,
+                                        content: cleanedSectionContent,
+                                      })
+                                    }
+                                  >
+                                    看完整段落…
+                                  </button>
+                                </div>
+                              </>
+                            ) : (
+                              <>
+                                {(() => {
+                                  const items = extractH3CarouselItems(sectionContent, { snippetMaxLen: 140 })
+                                  if (items.length < 3) return null
+                                  return (
+                                    <div style={{ marginTop: 10 }}>
+                                      <TextCarouselCard
+                                        title="快速掃重點"
+                                        subtitle="左右滑動；需要細節再點開。"
+                                        items={items.map((it) => ({
+                                          title: it.title,
+                                          summary: it.summary,
+                                          imageSrc: it.imageSrc,
+                                          onOpen: () =>
+                                            setLongRead({
+                                              ariaLabel: `${c.title}｜${activeSection.title}｜${it.title}`,
+                                              headerTitle: it.title,
+                                              headerSub: c.title,
+                                              content: it.content,
+                                            }),
+                                        }))}
+                                        testId={`attr-carousel-${c.cityId}-${activeSection.kind}`}
+                                      />
+                                      <div style={{ marginTop: 10 }}>
+                                        <button
+                                          type="button"
+                                          className="btn"
+                                          onClick={() =>
+                                            setLongRead({
+                                              ariaLabel: `${c.title}｜${activeSection.title}`,
+                                              headerTitle: activeSection.title,
+                                              headerSub: c.title,
+                                              content: cleanedSectionContent,
+                                            })
+                                          }
+                                        >
+                                          看完整段落…
+                                        </button>
+                                      </div>
+                                    </div>
+                                  )
+                                })()}
+
+                                {canOpenLongRead && extractH3CarouselItems(sectionContent).length < 3 ? (
+                                  <div style={{ marginBottom: 10 }}>
+                                    <button
+                                      type="button"
+                                      className="btn"
+                                      onClick={() =>
+                                        setLongRead({
+                                          ariaLabel: `${c.title}｜${activeSection.title}`,
+                                          headerTitle: activeSection.title,
+                                          headerSub: c.title,
+                                          content: cleanedSectionContent,
+                                        })
+                                      }
+                                    >
+                                      開啟詳情…
+                                    </button>
+                                  </div>
+                                ) : null}
+
+                                {extractH3CarouselItems(sectionContent).length < 3 ? (
+                                  <RichContent
+                                    content={cleanedSectionContent}
+                                    className="attrProse"
+                                    onOpenImage={(src, title) => setLightbox({ src, title })}
+                                    onOpenGallery={(images, title) => setGallery({ images, title, index: 0 })}
+                                  />
+                                ) : null}
+                              </>
+                            )}
+                          </>
                         )}
+                      </div>
+
+                      <div className="attrToolbox" data-testid={`attr-toolbox-${c.cityId}`}>
+                        <div className="attrToolboxHeader">
+                          <div className="attrToolboxTitle">工具箱</div>
+                          <div className="muted attrToolboxSub">Food / Safety / Practical（點開看完整）</div>
+                        </div>
+                        <div className="attrToolboxRow" aria-label={`${c.title} 工具箱（左右滑動）`}>
+                          {(
+                            [
+                              { kind: 'food', title: '吃什麼', section: toolboxSections.food },
+                              { kind: 'safety', title: '安全提醒', section: toolboxSections.safety },
+                              { kind: 'practical', title: '實用資訊', section: toolboxSections.practical },
+                            ] as const
+                          ).map((t) => {
+                            const content = stripCardLinesFromContent(t.section?.content ?? '')
+                            const excerpt = firstContentSnippet(content, 90)
+                            return (
+                              <button
+                                key={`${c.cityId}-${t.kind}`}
+                                type="button"
+                                className="card attrToolboxCard"
+                                onClick={() =>
+                                  setLongRead({
+                                    ariaLabel: `${c.title}｜${t.title}`,
+                                    headerTitle: t.title,
+                                    headerSub: c.title,
+                                    content,
+                                  })
+                                }
+                                aria-label={`${t.title}（開啟）`}
+                              >
+                                <div className="cardInner attrToolboxCardInner">
+                                  <div className="attrToolboxCardTitle">{t.title}</div>
+                                  {excerpt ? (
+                                    <div className="muted attrToolboxCardExcerpt clamp3">
+                                      <FormattedInline text={excerpt} />
+                                    </div>
+                                  ) : null}
+                                  <div className="attrToolboxCardMeta muted">點開看完整…</div>
+                                </div>
+                              </button>
+                            )
+                          })}
+                        </div>
                       </div>
                     </>
                   )}
@@ -414,6 +593,35 @@ export function AttractionsPage() {
         />
       )}
 
+      {longRead && (
+        <ModalSplitCard
+          ariaLabel={longRead.ariaLabel}
+          headerTitle={longRead.headerTitle}
+          headerSub={longRead.headerSub}
+          onClose={() => setLongRead(null)}
+          cardStyle={{ maxWidth: 'min(860px, 100%)' }}
+          bodyTestId="attractions-longread-body"
+          progressTestId="attractions-longread-progress"
+          footer={
+            <>
+              <button className="btn" type="button" onClick={() => setLongRead(null)}>
+                關閉
+              </button>
+              <div className="muted" style={{ fontSize: 'var(--text-xs)' }}>
+                （ESC 也可關閉）
+              </div>
+            </>
+          }
+        >
+          <RichContent
+            content={stripCardLinesFromContent(longRead.content)}
+            className="attrProse"
+            onOpenImage={(src, title) => setLightbox({ src, title })}
+            onOpenGallery={(images, title) => setGallery({ images, title, index: 0 })}
+          />
+        </ModalSplitCard>
+      )}
+
       <GalleryLightbox
         open={!!gallery}
         title={gallery?.title}
@@ -430,6 +638,88 @@ export function AttractionsPage() {
         onClose={() => setLightbox(null)}
       />
     </div>
+  )
+}
+
+function ModalSplitCard({
+  ariaLabel,
+  headerTitle,
+  headerSub,
+  onClose,
+  overlayClassName = 'modalOverlay modalOverlayHigh',
+  cardStyle,
+  bodyTestId,
+  progressTestId,
+  footer,
+  children,
+}: {
+  ariaLabel: string
+  headerTitle: string
+  headerSub?: string
+  onClose: () => void
+  overlayClassName?: string
+  cardStyle?: React.CSSProperties
+  bodyTestId?: string
+  progressTestId?: string
+  footer?: React.ReactNode
+  children: React.ReactNode
+}) {
+  const [scrollProgress, setScrollProgress] = useState(0)
+  const bodyRef = useRef<HTMLDivElement | null>(null)
+
+  const computeProgress = () => {
+    const el = bodyRef.current
+    if (!el) return
+    const denom = el.scrollHeight - el.clientHeight
+    const p = denom <= 0 ? 1 : Math.min(1, Math.max(0, el.scrollTop / denom))
+    setScrollProgress(p)
+  }
+
+  useEffect(() => {
+    const raf = window.requestAnimationFrame(computeProgress)
+    return () => window.cancelAnimationFrame(raf)
+    // Recompute on open/content change signaled via ariaLabel changes.
+  }, [ariaLabel])
+
+  return (
+    <Modal
+      open
+      ariaLabel={ariaLabel}
+      onClose={onClose}
+      overlayClassName={overlayClassName}
+      cardClassName="card modalCard modalCardSplit"
+      cardStyle={cardStyle}
+    >
+      <div className="modalCardSplitHeader">
+        <div className="modalCardSplitHeaderTitle">{headerTitle}</div>
+        {headerSub ? <div className="modalCardSplitHeaderSub">{headerSub}</div> : null}
+      </div>
+
+      <div ref={bodyRef} className="modalCardSplitBody" onScroll={computeProgress} data-testid={bodyTestId}>
+        {children}
+      </div>
+
+      <div className="modalCardSplitProgressTrack" aria-hidden="true">
+        <div
+          className="modalCardSplitProgressFill"
+          style={{ width: `${Math.round(scrollProgress * 100)}%` }}
+          data-testid={progressTestId}
+        />
+      </div>
+
+      <div className="modalCardSplitFooter">
+        {footer ?? (
+          <>
+            <button className="btn" type="button" onClick={onClose}>
+              關閉
+            </button>
+            <div className="muted" style={{ fontSize: 'var(--text-xs)' }}>
+              （ESC 也可關閉）
+            </div>
+          </>
+        )}
+      </div>
+    </Modal>
   )
 }
 
@@ -452,56 +742,54 @@ function ExtensionModal({
   if (!trip) return null
 
   return (
-    <Modal
-      open
+    <ModalSplitCard
       ariaLabel={trip.title}
+      headerTitle={trip.title}
+      headerSub={CITIES[cityId as keyof typeof CITIES]?.label}
       onClose={onClose}
-      overlayClassName="modalOverlay modalOverlayHigh"
-      cardClassName="card modalCard"
       cardStyle={{ maxWidth: 'min(860px, 100%)' }}
+      bodyTestId="extensions-modal-body"
+      progressTestId="extensions-modal-progress"
     >
-      <div className="cardInner">
-        <div style={{ display: 'flex', justifyContent: 'space-between', gap: 12, alignItems: 'flex-start' }}>
-          <div>
-            <div className="muted" style={{ fontSize: 'var(--text-xs)' }}>
-              {CITIES[cityId as keyof typeof CITIES]?.label}
-            </div>
-            <div style={{ fontWeight: 950, fontSize: 'var(--text-xl)', lineHeight: 1.15, marginTop: 6 }}>
-              {trip.title}
-            </div>
-          </div>
-        </div>
-
-        <hr className="hr" />
-
-        <div style={{ display: 'grid', gap: 10 }}>
-          {trip.sections.map((s) => (
-            <section
-              key={s.key}
-              className="card expStatic"
-              style={{ boxShadow: 'none' }}
-              aria-label={s.title}
-            >
-              <div className="expHeader expHeaderRow">
-                <span className="expHeaderTitle">
-                  <span className="attrSectionTitleRow">
-                    <span className="attrSectionTitleText">{s.title}</span>
-                  </span>
+      <div style={{ display: 'grid', gap: 10 }}>
+        {trip.sections.map((s) => (
+          <section key={s.key} className="card expStatic" style={{ boxShadow: 'none' }} aria-label={s.title}>
+            <div className="expHeader expHeaderRow">
+              <span className="expHeaderTitle">
+                <span className="attrSectionTitleRow">
+                  <span className="attrSectionTitleText">{s.title}</span>
                 </span>
-              </div>
-              <div className="expStaticBody">
-                <RichContent
-                  content={s.content}
-                  className="attrProse"
-                  onOpenImage={onOpenImage}
-                  onOpenGallery={onOpenGallery}
-                />
-              </div>
-            </section>
-          ))}
-        </div>
+              </span>
+            </div>
+            <div className="expStaticBody">
+              {(() => {
+                const raw = s.content ?? ''
+                const items = extractH3CarouselItems(raw, { snippetMaxLen: 140 })
+                if (items.length >= 2) {
+                  return (
+                    <ZigzagTimeline
+                      items={items.map((it) => ({
+                        title: it.title,
+                        summary: it.summary,
+                        content: it.content,
+                      }))}
+                    />
+                  )
+                }
+                return (
+                  <RichContent
+                    content={stripCardLinesFromContent(raw)}
+                    className="attrProse"
+                    onOpenImage={onOpenImage}
+                    onOpenGallery={onOpenGallery}
+                  />
+                )
+              })()}
+            </div>
+          </section>
+        ))}
       </div>
-    </Modal>
+    </ModalSplitCard>
   )
 }
 
@@ -509,11 +797,13 @@ function RevealSection({
   id,
   cityId,
   onSeen,
+  testId,
   children,
 }: {
   id: string
   cityId: CityId
   onSeen: (cityId: CityId) => void
+  testId?: string
   children: React.ReactNode
 }) {
   const ref = useReveal<HTMLElement>()
@@ -534,7 +824,7 @@ function RevealSection({
     return () => io.disconnect()
   }, [onSeen, cityId, ref])
   return (
-    <section id={id} data-city-id={cityId} className="reveal attrCitySection" ref={ref}>
+    <section id={id} data-city-id={cityId} data-testid={testId} className="reveal attrCitySection" ref={ref}>
       {children}
     </section>
   )

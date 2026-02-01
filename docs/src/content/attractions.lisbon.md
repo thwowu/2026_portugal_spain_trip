@@ -14,11 +14,12 @@ title: 里斯本（Lisbon）
 ## must
 
 ### [貝倫（Belém）](https://www.google.com/maps/search/?api=1&query=Bel%C3%A9m%20Lisbon)（Day 2 主菜）
+@card: 半天把大航海時代的河岸線看懂：修道院＋蛋塔＋河岸散步（把尺度打開）。
 {{gallery:Belém|https://source.unsplash.com/djtkAFkVcjw/1800x1200|https://source.unsplash.com/qRcdLzfVq9M/1800x1200|https://source.unsplash.com/29ZidP35xDE/1800x1200}}
 
 Belém 是里斯本「大航海時代」的榮耀縮影：修道院、紀念碑、河口要塞，全部都在同一條河岸線上。
 
-更重要的是，**它相對平坦**，不像舊城區那樣需要一直爬坡，走起來省力很多。Belém 很適合用「半天」完成：早上先做一個主景點，午餐吃點東西補能量，下午沿河岸散步、把視野打開。
+更重要的是，它相對平坦，不像舊城區那樣需要一直爬坡，走起來省力很多。Belém 很適合用「半天」完成：早上先做一個主景點，午餐吃點東西補能量，下午沿河岸散步、把視野打開。
 
 Belém 的重點不是跑很多點，而是用一條平路的動線，把「港口城市的尺度」看懂、也走得舒服。
 
@@ -47,13 +48,13 @@ Belém 的重點不是跑很多點，而是用一條平路的動線，把「港�
 
 做法很簡單：午餐前後把它當成能量補給點。
 
-如果你們追求的是「蛋塔內餡偏滑嫩、接近布丁」的那種口感，很多食評/旅人會把它當成很有代表性的版本之一（但出爐時間、溫度與批次都會讓口感有變化）。保守做法是：**先買 1–2 顆趁熱吃**，覺得對味再加點。
+如果你們追求的是「蛋塔內餡偏滑嫩、接近布丁」的那種口感，很多食評/旅人會把它當成很有代表性的版本之一（但出爐時間、溫度與批次都會讓口感有變化）。保守做法是：先買 1–2 顆趁熱吃，覺得對味再加點。
 
 就算排隊，通常也消化得很快，適合當作 Belém 半天行程的節奏中繼站。
 
-小技巧：看到門口排隊先別緊張。很多時候那是**外帶隊伍**，內用區反而更好消化。想要「立刻坐下」就直接進去找內用座位（或請店員指引），通常也比較容易順便上洗手間。
+小技巧：看到門口排隊先別緊張。很多時候那是外帶隊伍，內用區反而更好消化。想要「立刻坐下」就直接進去找內用座位（或請店員指引），通常也比較容易順便上洗手間。
 
-如果你們這天不想把體力花在排隊上，就把蛋塔改成市區的 **Manteigaria**（多分店、品質穩，通常更好買），Belém 則專心看修道院與河岸尺度。
+如果你們這天不想把體力花在排隊上，就把蛋塔改成市區的 `Manteigaria`（多分店、品質穩，通常更好買），Belém 則專心看修道院與河岸尺度。
 
 #### （選配）[國立馬車博物館（Museu Nacional dos Coches）](https://www.google.com/maps/search/?api=1&query=Museu%20Nacional%20dos%20Coches%20Lisbon)
 Belém 區很適合補一個「室內、好逛、不太累」的點，馬車博物館就是那種低壓回報：空間大、工藝細節多，常比隔壁世界級招牌景點更好消化。
@@ -62,8 +63,8 @@ Belém 區很適合補一個「室內、好逛、不太累」的點，馬車博�
 它像一艘帆船停在河邊，船首站著恩里克王子，後方是一整排航海家與歷史人物的群像，站在旁邊很容易把「葡萄牙怎麼走向海洋」這件事具象化。
 
 比較舒服的點：
-- **地面大多平坦**，適合慢慢走、慢慢看。
-- 紀念碑內部通常有**電梯**可上觀景台（以現場開放為準），想要省力看全景，這個點很划算。
+- 地面大多平坦，適合慢慢走、慢慢看。
+- 紀念碑內部通常有電梯可上觀景台（以現場開放為準），想要省力看全景，這個點很划算。
 
 一個很好玩的「小彩蛋」：除了拍紀念碑本體，也可以在廣場地面的世界地圖找「日本」之類的標示拍照；當作一個小小的「歷史連結儀式感」就好（地圖細節以現場為準）。
 
@@ -88,9 +89,10 @@ Belém 區很適合補一個「室內、好逛、不太累」的點，馬車博�
 - **中段**：蛋塔＋午餐（補能量、坐下來）
 - **下午**：發現者紀念碑 → 河岸散步 →（路過）貝倫塔外觀 → MAAT 外觀
 
-交通建議：從市中心過來用 **15E** 或河岸向的公車（如 **728**）通常最省腦；如果想「一定有位子」就盡量避開尖峰時段，或直接 Uber/Bolt 點對點到修道院附近再開始走。
+交通建議：從市中心過來用 `15E` 或河岸向的公車（如 `728`）通常最省腦；如果想「一定有位子」就盡量避開尖峰時段，或直接 Uber/Bolt 點對點到修道院附近再開始走。
 
 ### 里斯本（Lisbon）市區日（Day 5 文化＋高處）
+@card: 一個大館＋一個高處，把里斯本的文化與地形一次讀懂（再看狀態加散步/現代建築）。
 {{gallery:Lisbon 市區日|https://commons.wikimedia.org/wiki/Special:FilePath/25_de_Abril_Bridge_Lisbon_(10061877435).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/25_De_Abril_Bridge_(226290561).jpeg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Lisbon_city_view_-_Miradouro_das_Portas_do_Sol.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Lisboa,_Miradouro_das_Portas_do_Sol,_vista.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/25_de_Abril_Bridge_Lisbon_(10061877435).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/25_De_Abril_Bridge_(226290561).jpeg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Lisbon_city_view_-_Miradouro_das_Portas_do_Sol.jpg?width=1800}}
 
 把這天當成「走路少但看懂里斯本」：室內一個大館，眺望點選一個坐下來，下午看狀態補一段城市散步或現代建築。
@@ -98,42 +100,67 @@ Belém 區很適合補一個「室內、好逛、不太累」的點，馬車博�
 #### [古本基安博物館＋花園（Calouste Gulbenkian Museum）](https://www.google.com/maps/search/?api=1&query=Calouste%20Gulbenkian%20Museum%20Lisbon)（世界級收藏，雨天超穩）
 {{gallery:Gulbenkian|https://commons.wikimedia.org/wiki/Special:FilePath/Museu_Calouste_Gulbenkian_(Main_Entrance).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Museu_Calouste_Gulbenkian_(3578666700).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Jules_and_Gabriel_inside_tree_tunnel,_Jardim_da_Funda%C3%A7%C3%A3o_Calouste_Gulbenkian,_Lisbon,_Portugal_julesvernex2.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Calouste_Gulbenkian_Museum,_Modern_Collection_-_Exhibition_Hall_(49051054278).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Museu_Calouste_Gulbenkian_(Main_Entrance).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Museu_Calouste_Gulbenkian_(3578666700).jpg?width=1800}}
 
-怎麼用最划算：把它當作「雨天/腿酸日的主菜」，一個地方就能撐起半天節奏。
+Gulbenkian 基金會的整個文化基地（園區本身就像一座安靜的文化公園）。館藏之所以有那種「一館抵多館」的厚度，核心來自 Calouste Gulbenkian 的收藏與捐贈脈絡；從古代文物到歐洲繪畫/裝飾藝術的跨度很大（規模、展品輪替以館方資訊為準）。所以你如果只想選一個「不用動腦換場」的大館，選它通常不會後悔。
 
-收藏品質很像一館抵多館，花園也適合當作安靜的休息段。
+更迷人的其實是「場域」本身：花園不是拿來當背景照的，而是設計成讓你在樹蔭、池水、步道之間慢慢降速。你走著走著會發現建築沒有要搶風頭，它更像是在做「一段很長的過渡」：先把你收進室內，再把視線溫柔地放回綠色裡。
 
-加分點：館內/園區通常就有咖啡與座位，逛完不用再走出去找地方坐（以現場開放為準）。
+如果你們剛好遇到園區內的 CAM 現代藝術中心（Centro de Arte Moderna） 開放，這段會把「建築與自然對話」變成一個很具體的體驗：它在 2024/9 對外重開，改造由隈研吾主導，最標誌的元素是一段很長的「廊下（Engawa）式」屋簷/棚架（官方資訊也特別提到這個概念與長尺度的屋簷設計）。你可以先不要急著進館，在屋簷下停一下，看看光線怎麼被切成一格一格、再落到路面與樹影上。
+
+大窗＋自然光＋花園視線，它不是那種「把你關進白盒子看展」的館，而是一直在提醒你：外面那片綠也算展覽的一部分。逛完再順著動線去商店/咖啡坐一下，很適合把這裡當成「看展＋休息一次完成」的回血點（以現場開放為準）。
+
 
 #### （選配）[國立古代美術館（Museu Nacional de Arte Antiga）](https://www.google.com/maps/search/?api=1&query=Museu%20Nacional%20de%20Arte%20Antiga%20Lisbon)（想補一個「安靜的大館」時）
 如果你們這天還有精神、又想要一個「人流相對舒服、可以慢慢看」的室內選項，這裡很適合當備案。資料常提到館藏裡有與 16–17 世紀葡日交流相關的「南蠻屏風（Namban byōbu）」題材作品（是否上展/借展以當天為準）；有對到你們興趣再去就好。
 
+補充（把它當「文化選配＋安靜回血」）：
+這裡最值得鎖定的通常就是「南蠻屏風」這種題材：你在貝倫區看到的是大航海時代的「出發者視角」，而屏風常在畫面裡給你一個「到達者/被觀看者」的角度，兩邊一起看會更立體（是否上展以當天為準）。
+
+另外它很適合用來當 30–60 分鐘的室內回血段。日文旅遊紀錄（例如 cymlog）也常把它當成「不用硬撐逛很久、看重點就好」的那種館。
+
+票務方面，若你們有 `Lisboa Card`，常見情況是可入場或折扣，但規則會調整，保守做法是出發前看官方公告。
+
+最後留一個心理預期：偶爾會遇到館內局部維修（例如附屬禮拜堂/特定展區暫停）。把期待放在主要館藏（像屏風與大航海題材作品）上，就算遇到封閉也不會太失望。
+
 #### （2026 暫停）國家磁磚博物館（Museu Nacional do Azulejo）
-官網標示整修中，預計至 2026/6。這趟先不要排，改用其他室內點（如 Gulbenkian / 里斯本海洋館 Oceanário / MAAT）。官網：`https://www.museunacionaldoazulejo.pt/en`
+官網標示整修中，預計至 2026/6。這趟先不要排。
 
 {{gallery:Museu Nacional do Azulejo|https://commons.wikimedia.org/wiki/Special:FilePath/Small_cloister_(Claustrim)%2C_Museu_Nacional_do_Azulejo%2C_Lisbon%2C_Portugal_julesvernex2.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Museu_Nacional_do_Azulejo%2C_Lisbon%2C_townscape_azulejo.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Igreja_do_Convento_da_Madre_de_Deus%2C_Lisboa_(Portugal).jpg?width=1800}}
 
-#### （選配）[Palácio Fronteira（Fronteira 宮）](https://www.google.com/maps/search/?api=1&query=Pal%C3%A1cio%20Fronteira%20Lisbon)（azulejo 迷的安靜高回報）
-如果你們很吃「磁磚花園/宮邸」這種題材，很多人會把它列為「安靜但超強」的回報點。它不像大景點那樣隨到隨進，開放日與參觀方式可能會變；保守做法是出發前看官網或電話確認。
+#### （選配）[Palácio Fronteira（Fronteira 宮）](https://www.google.com/maps/search/?api=1&query=Pal%C3%A1cio%20Fronteira%20Lisbon)（azulejo 迷的行家私房）
+如果你對 azulejo 真的是「有執念」的那種，Fronteira 會很容易讓你站在原地看很久。它常被形容成「磁磚界的西斯汀教堂」：不是因為它多豪華，而是因為磁磚在這裡不是裝飾，是主角。
+
+這個稱號其實是在說：里斯本市區你到處都能遇到磁磚（功能性的、裝飾性的都有），也有專門的磁磚博物館在講工藝史與題材演變；但如果你想看的是「磁磚以壁畫/畫廊的密度在現場講故事」——而且是那種把你整個包起來的沉浸感——Fronteira 的完成度很難被取代。
+
+參觀重點就幾個字：花園＋露台＋走廊。把它當成一座戶外磁磚畫廊來看。成排的藍白磁磚面板在敘事，細節很寫實，偶爾還帶點幽默感（有些角色的眼神真的很好笑）；也能留意葡萄牙國徽（五盾七城堡）與各式動植物圖案的密度。越看越上癮。
+
+如果你想要更「點名式」的目標，很多人會直奔水池/露台一帶：例如 Tank of the Knights（騎士水池） 周邊的磁磚牆與露台視角，以及常被稱作「國王畫廊」那類歷代人物/肖像題材牆面（名稱、是否可到達與動線以現場標示/導覽為準）。
+
+背景也補一下：它位在里斯本市區偏北，離「市中心觀光主線」有一段距離，周邊更像住宅/日常區域，所以氛圍會跟 Baixa/Belém 的景點密度完全不一樣；同時也因為航道位置，現場常會聽到飛機起降的環境音——安靜，但不是完全無聲。
+
+實務面：它比較像「私人宅邸對外開放」的節奏，花園與室內參觀有時會分開/分段安排，開放日與票種也可能變動。花園地面也可能有碎石路段；另外園區不一定像大型博物館那樣有完整的咖啡廳/休息設施。出發前看官網（或打電話）確認時段、票種與當天限制，會比較不踩雷。
 
 #### （選配）[Feira da Ladra（跳蚤市場）](https://www.google.com/maps/search/?api=1&query=Feira%20da%20Ladra%20Lisbon)（想逛「舊物與故事」的里斯本）
-如果你們想看更生活化的里斯本，這類市場很有「翻舊物/翻故事」的質感。保守做法是白天去、包包放前面、逛一圈就收工；另外 **不要買看起來像老磁磚的單片 `azulejo`**，來源很難驗證，直接跳過最省事。
+如果你想在里斯本看一種「很在地、很市井、但又很有故事感」的場景，這裡非常對味。它是里斯本最有名、也常被提到是最老牌的跳蚤市場之一；名字直譯像「女賊市集／小偷市集」，本身就帶著那種半開玩笑的市井幽默。
+
+背景先補齊：市集通常在 `週二/週六上午` 出現，地點在 Alfama 一帶的 `Campo de Santa Clara`，旁邊就是 `國家先賢祠（Panteão Nacional）` 的大圓頂。就算你不買任何東西，光是看人群、攤位、舊物的年代感，已經很像在翻一座城市的抽屜。
+
+它迷人的地方在於「垃圾與寶藏只差一個眼光」：常見會看到舊明信片、老照片、零散硬幣、黑膠、二手衣物與小家飾。你買到的通常不是一個商品，而是一個「這東西以前屬於誰？」的想像。
+
+提醒：人多時注意隨身物品；另外不要買看起來像老磁磚的單片 `azulejo`，來源很難驗證，也有人提醒這類市集上的老磁磚可能牽涉到不當拆取古蹟的灰色鏈條。想買磁磚紀念品，選正規商店的複刻/新品會比較安心。
 
 #### 觀景台（Miradouro）眺望點（選 1–2 個就好，不要集郵）
 {{gallery:Miradouro|https://commons.wikimedia.org/wiki/Special:FilePath/12_2016_Miradouro_das_Portas_do_Sol_Lisbon_9703.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Miradouro_das_Portas_do_Sol_(120FAITH_3801)_(37035756443).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Tram_at_Portas_Sol,_Largo_Portas_do_Sol,_Lisbon.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Largo_das_Portas_do_Sol.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/12_2016_Miradouro_das_Portas_do_Sol_Lisbon_9703.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Miradouro_das_Portas_do_Sol_(120FAITH_3801)_(37035756443).jpg?width=1800}}
 
 做法：挑 1–2 個眺望點坐下來看光線變化就好，不用集郵。候選清單與走法看 `views`。
 
-### [阿爾法瑪（Alfama）](https://www.google.com/maps/search/?api=1&query=Alfama%20Lisbon)：傍晚老城迷路散步（配 1 個眺望點就很夠）
-{{gallery:Alfama|https://commons.wikimedia.org/wiki/Special:FilePath/Lisboa-Alfama-Rua_S%C3%A3o_Miguel-20140917.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Rua_Norberto_de_Ara%C3%BAjo_%22Cerca_Velha%22_Portas_do_Sol_Alfama_Lisbon_(3799765385).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Lisbon,_view_from_Elevador_de_Santa_Justa_to_Alfama.JPG?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Lisboa_-_Azulejo_com_mapa_do_Bairro_de_Alfama.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Lisboa-Alfama-Rua_S%C3%A3o_Miguel-20140917.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Rua_Norberto_de_Ara%C3%BAjo_%22Cerca_Velha%22_Portas_do_Sol_Alfama_Lisbon_(3799765385).jpg?width=1800}}
-
-傍晚來走最舒服也最好拍：小巷、階梯、晾衣繩與轉角視野，把里斯本最經典的老城質感濃縮在這裡。
-
 ### （選配）Fado（現場小場次／訂位）
+@card: 用一場現場 Fado 把「里斯本的聲音」補上：不求懂歌詞，求氣氛有沒有打到你。
 {{gallery:Fado|https://commons.wikimedia.org/wiki/Special:FilePath/Lisbon._Fado_at_A_Baiuca._(41223895034).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Museu_do_Fado_-_Lisboa_-_Portugal_(51532759851).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Museu_do_Fado_-_Lisboa_-_Portugal_(52853515828).jpg?width=1800}}
 
 把里斯本的情緒用一晚聽進身體裡。小場次比大秀更容易感受到那種近距離的張力。Fado 是葡萄牙最具代表性的城市音樂傳統之一，與港口城市的生活、遷徙與鄉愁情感緊密相連。
 
 ### [聖喬治城堡（Castelo de São Jorge）](https://www.google.com/maps/search/?api=1&query=Castelo%20de%20S%C3%A3o%20Jorge%20Lisbon)：高度回報最穩的一個點
+@card: 想要俯瞰老城與河景，城堡是最穩的「高處回報」選項之一（拍得到、也看得懂）。
 {{gallery:Castelo de São Jorge|https://commons.wikimedia.org/wiki/Special:FilePath/Castelo_de_S%C3%A3o_Jorge%2C_Lisboa_183.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Castelo_de_S%C3%A3o_Jorge%2C_Lisboa_50.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/CASTLE_OF_ST._GEORGE_Lisbon_Portugal_(24576418571).jpg?width=1800}}
 
 為什麼去：一張門票同時買到城堡感與超廣角市景。如果你只想挑一個高度回報的點，它很穩。它位於城市制高點，是要塞系統的核心之一，長期象徵里斯本的防禦與權力位置。白天去比較好拍也比較不擠。
@@ -145,81 +172,156 @@ Belém 區很適合補一個「室內、好逛、不太累」的點，馬車博�
 有些旅人會特別提到城堡裡的孔雀：如果當天剛好遇到牠們在園區裡散步，會是一個很療癒的「古蹟＋動物」畫面（是否看得到看當天緣分）。
 
 ### [卡爾莫修道院遺跡（Convento do Carmo）](https://www.google.com/maps/search/?api=1&query=Convento%20do%20Carmo%20Lisbon)：沒有屋頂的教堂
+@card: 沒有屋頂的教堂遺跡，把地震記憶與城市斷面直接攤給你看（短時間也很有感）。
 {{gallery:Convento do Carmo|https://commons.wikimedia.org/wiki/Special:FilePath/Convento_do_Carmo_ruins_in_Lisbon.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Ru%C3%ADnas_do_Carmo_Lisboa.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Convento_do_Carmo_de_Lisboa_12.JPG?width=1800}}
 
-不用花很多時間，就能用「沒有屋頂的教堂」收穫強烈的視覺與情緒記憶，是很高 CP 的歷史切片。它在里斯本大地震中嚴重受損而保留為遺跡，成為城市記憶與災難史最具象徵性的場景之一。
+它迷人的地方很直接：你站在哥德式拱門下，抬頭看到的不是天花板，而是天空。這座修道院始於 14 世紀末（常見資料寫 1389 年），曾是里斯本最重要的哥德式宗教建築之一；1755 大地震（連帶海嘯與火災）讓屋頂坍塌，留下今天這個「無頂教堂」的形狀。那種壯觀與蒼涼，基本上是里斯本城市記憶最具象徵性的畫面之一。
 
-小技巧：想要聖胡斯塔電梯那個「高處視角」，可以從卡爾莫附近走到電梯的頂層觀景台，少掉排隊與擠電梯的折磨。
+如果你想把它「看得更有料」：遺跡內有 `Museu Arqueológico do Carmo`（考古博物館），會看到石棺/雕刻構件等收藏，甚至有南美木乃伊題材（展出內容、票價以現場為準）。不進館也可以：Largo do Carmo 本身就很舒服，季節對了會有藍花楹，旁邊也常有 kiosque 可以買飲料坐一下。
+
+順路提示：修道院旁邊就是 `Santa Justa Lift` 的頂層連接橋。想要那個「高處視角」的話，直接從 Chiado/Carmo 這一側走到上層觀景平台就好；通常比從 Baixa 端排隊上來更順（開放與動線以現場為準）。
 
 ### [萬國公園（Parque das Nações）](https://www.google.com/maps/search/?api=1&query=Parque%20das%20Na%C3%A7%C3%B5es%20Lisbon)：平路好走＋現代城市感
+@card: 平路現代河岸：海洋館＋車站建築＋大橋視角，氣質跟老城完全不同。
 {{gallery:Parque das Nações|https://commons.wikimedia.org/wiki/Special:FilePath/Panoramic_view%2C_Parque_das_Na%C3%A7%C3%B5es%2C_Lisbon%2C_Portugal_julesvernex2-3.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Panoramic_view%2C_Parque_das_Na%C3%A7%C3%B5es%2C_Lisbon%2C_Portugal_julesvernex2-2.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Rooftop_detail_of_FIL_building%2C_Parque_das_Na%C3%A7%C3%B5es%2C_Lisbon%2C_Portugal_julesvernex2.jpg?width=1800}}
 
-想要幾乎全平地，又能看到另一種里斯本（更現代、更開闊），這裡是最省體力的選擇之一。它屬於近代的大型城市更新區域，代表里斯本在 20 世紀末以後的河岸再開發與現代化面貌。
+如果你們已經看膩了老城的窄巷、磁磚與石板路，來這裡會有一種「切換到另一個里斯本」的感覺：萬國公園是 1998 世界博覽會（Expo ’98） 的舊址，整區就是一個現代河岸實驗場，尺度更大、線條更乾淨、空氣也更開闊。
+
+參觀重點可以抓四個地標（不必全收）：
+- **Oceanário de Lisboa（海洋館）**：這區最有名的明星景點之一，偏「一個點就能把半天撐起來」的類型。熱門時段現場排隊會很長，有要去就先線上買票比較保險（票務規則以官方為準）。
+- **Gare do Oriente（東方車站）**：交通樞紐本身就是建築作品，樹狀鋼構＋玻璃拱頂很上鏡；很多人來這區第一張照片其實就是在車站拍到的。
+- **Ponte Vasco da Gama（瓦斯科·達·伽馬大橋）**：在河岸看會有「橋無限延伸」的視覺感，和 25 de Abril 大橋那種經典紅色完全是兩種氣質。
+- **Telecabine Lisboa（河岸纜車）**：它不是交通必需，是「空中視角」的體驗。票券通常是獨立購買，不包含在一般大眾運輸票卡裡；若你們有 `Lisboa Card`，常見是有折扣（例如 10%）但以當下合作為準。
+
+行程串法很直覺：Oriente 下車先拍車站 → 河岸散步看大橋 → 想加一個「空中視角」就搭纜車 → 最後在河岸或 `Vasco da Gama Shopping Center` 吃飯收尾。
 
 ### [LX Factory](https://www.google.com/maps/search/?api=1&query=LX%20Factory%20Lisbon)（文青工業風；行程空檔填充很強）
+@card: 工業空間改造的生活聚落：書店、選物、吃飯都集中在一個地方，逛起來像城市裡的副本。
 {{gallery:LX Factory|https://commons.wikimedia.org/wiki/Special:FilePath/Lisboa_LX_Factory_1.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Lisboa_LX_Factory_2.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Lisboa_LX_Factory_4.jpg?width=1800}}
 
-吃飯、咖啡、書店與小店密集，時間碎也很好逛。想要「不太觀光」的休息段很合適。它由工業／倉庫空間轉化而來，呈現里斯本近年的文化與產業轉型風景。
+如果你喜歡「老工廠改造」的那種粗糙質感，LX Factory 很好懂也很上癮：它把紡織工廠/倉庫群轉成創意園區，紅磚、鋼架、塗鴉、店面招牌全部混在一起；你會感覺自己從老城的磁磚與教堂，切換到一個更年輕、更當代的里斯本。
 
-很多人會直奔的「必看風景」是 [Ler Devagar](https://www.google.com/maps/search/?api=1&query=Ler%20Devagar%20LX%20Factory) 書店：挑高空間＋舊機具裝置，很適合拍「工業廢墟感＋文藝感」的同框（以當天人潮/開放狀況為準）。
+必看與必逛也很集中：
+- **[Ler Devagar](https://www.google.com/maps/search/?api=1&query=Ler%20Devagar%20LX%20Factory)**：這裡不只是書店，空間本身就是展品——挑高、舊印刷機具、還有那個很標誌的「空中腳踏車」裝置，拍起來就是 LX Factory 的名片（以當天人潮/開放狀況為準）。
+- **選物/伴手禮**：想找「不是磁磚冰箱貼」的東西，這區很好挖。常見的路線是軟木製品、燕子意象、Bordallo Pinheiro 風格的陶器；也常有人特地去逛 `Comur` 的沙丁魚罐頭（印年份當紀念，趣味性很強）。
+- **週日加成**：如果你剛好遇到週日，常見會有 `LX Market` 之類的攤集氛圍，手作/二手/飾品更密集（是否舉辦以當天為準）。
+- **吃飯這件事**：這裡餐廳選擇多；有人會特別提 `Cantina`（帶「工廠食堂」的工業風背景）這種比較有場景感的選項。
+
+交通：不一定要特地繞路，很多人會把它接在貝倫線附近一起跑；搭電車（例如 15/18）到 `Calvário` 一帶再走過來也很常見（以當天路線/站名為準）。
 
 ### [聖維森特教堂（Igreja de São Vicente de Fora）](https://www.google.com/maps/search/?api=1&query=Igreja%20de%20S%C3%A3o%20Vicente%20de%20Fora%20Lisbon)：Azulejo 替代（磁磚回報直接）
+@card: 磁磚密度高、視覺回報直接；想看 azulejo 又不想只追熱門點時很好用。
 {{gallery:Igreja de São Vicente de Fora|https://commons.wikimedia.org/wiki/Special:FilePath/Igreja_de_S%C3%A3o_Vicente_de_Fora_%E2%80%A2_Monastery_of_S%C3%A3o_Vicente_de_Fora_(50662503502).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/View_of_Igreja_e_Mosteiro_de_S%C3%A3o_Vicente_de_Fora_from_Miradouro_das_Portas_do_Sol.JPG?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Igreja_de_S%C3%A3o_Vicente_de_Fora_-_7.jpg?width=1800}}
 
-想看 azulejo（磁磚）又不想把自己跑到很遠，這裡的回報很直接。也能順便把老城宗教建築補一筆。它是修道院／教堂系統的一部分，承接里斯本宗教與王權記憶，並以磁磚裝飾呈現葡萄牙的視覺傳統。
+想把「磁磚」看得更像一門藝術、而不是只當成背景花紋，São Vicente de Fora 很值得。它不是磁磚博物館那種「按年代看工藝史」，而是把磁磚直接用在建築本體上：你走進修道院回廊，就像走進一套藍白壁畫的敘事裝置——磁磚在這裡是空間的一部分。
+
+背景也補齊：這裡和里斯本的宗教與王權記憶綁得很深。常見資料會提到它與 1147 收復里斯本的歷史脈絡有關，而現存建築在 16 世紀末開始重建（常見資料寫 1582 年），屬於偏「風格主義（Mannerist）」的尺度與秩序感。也因此，它後來成為布拉干薩王朝的王室先賢祠之一——你不是在看一座教堂而已，是在看王朝如何把自己放進城市裡。
+
+參觀重點可以抓三件事：
+- **修道院回廊的磁磚敘事**：精華通常在付費的修道院/博物館區，走廊牆面大量藍白磁磚面板的「密度」就是它的震撼點（題材與展出以當天為準）。
+- **屋頂/露台的構圖感**：很多人把這裡叫「隱藏絕景」不是因為它更高，而是因為它的前景很漂亮——雙塔、白色石材、圓頂等建築細節當前景，後面才是河面與紅屋頂；拍起來比單純遠景更有層次（以當天開放為準）。
+- **和 Panteão 的串連**：它和國家先賢祠（Panteão Nacional / Santa Engrácia）就在附近，兩個一起看會更能理解「宗教、國族、王室記憶」在里斯本怎麼疊在同一區。
+
+實務上也分得很清楚：教堂區域多半可先看氛圍；想看回廊磁磚與上屋頂，通常需要買修道院/博物館票。作為博物館型空間，它也可能會比戶外觀景台更早關閉（例如傍晚前後），想追日落就把它當成「黃金時刻」的點來看（開放與票價以現場公告為準）。
 
 ### [商業廣場（Praça do Comércio）](https://www.google.com/maps/search/?api=1&query=Pra%C3%A7a%20do%20Com%C3%A9rcio%20Lisbon)：里斯本的客廳（河岸尺度）
+@card: 河岸邊的城市客廳：看光線、看尺度、看人怎麼使用這座廣場。
 {{gallery:Praça do Comércio|https://commons.wikimedia.org/wiki/Special:FilePath/Arco_Triunfal_da_Rua_Augusta%2C_Plaza_del_Comercio%2C_Lisboa%2C_Portugal%2C_2012-05-12%2C_DD_02.JPG?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Lisbon_Pra%C3%A7a_do_Com%C3%A9rcio_BW_2018-10-08_17-42-58.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Lisbon_Pra%C3%A7a_do_Com%C3%A9rcio_BW_2018-10-08_17-45-56.jpg?width=1800}}
 
-把它當作里斯本的客廳：白天拍建築，傍晚看金色光。這裡的尺度非常「首都」，站在河邊看整片立面就能把里斯本的氣場建立起來。它也是大地震後重建的門面級廣場之一。
+把它當作里斯本的客廳：白天拍建築，傍晚等金色光。站在河邊看整片立面，那種很「首都」的尺度會很直接地把里斯本的氣場拉起來；而它也是 1755 大地震後重建時，用來收束城市門面的代表性廣場——更精準地說，這裡原本就是里貝拉宮（Ribeira Palace）一帶，災後不重建宮殿，改用巨大而開放的廣場當作新的「皇室玄關」。
+
+廣場中央那尊騎馬雕像是若澤一世（King José I），面向特茹河。想一次把「龐巴爾下城的幾何街廓」和「廣場＋河面」都看懂，直接上 `Arco da Rua Augusta` 凱旋門頂端，回報很高（開放/排隊/票價與是否含 Lisboa Card 以當下為準）。想要更有「抵達里斯本」的儀式感，就走到南側河岸的 `Cais das Colunas`（大理石台階）站一會兒放空。
+
+小提醒：廣場周邊露天餐廳多半偏觀光價格；偶爾會遇到兜售墨鏡或「hashish」的搭話（多是騙局），無視/說 no 直接走就好。要買紀念品或補給，旁邊常見的 `Lisboa Shop` 比較像「官方/品質穩」（折扣以現場為準）。交通上它也是超好用的集合/換乘點：到 Belém 的 15E、Terreiro do Paço 地鐵站與渡輪碼頭都在附近。
 
 ### [下城／希亞多（Baixa/Chiado）](https://www.google.com/maps/search/?api=1&query=Baixa%20Chiado%20Lisbon)：最好走、最好撤退的城市段落
+@card: 地勢最友善的一段：逛街、咖啡、甜點與城市漫步都能在這裡自然接起來。
 {{gallery:Baixa / Rossio / Chiado|https://commons.wikimedia.org/wiki/Special:FilePath/Pra%C3%A7a_Dom_Pedro_IV%2C_Lisboa_01.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Armaz%C3%A9ns_do_Chiado_at_dusk_and_with_Christmas_decorations%2C_Lisbon%2C_Portugal_julesvernex2.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/View_of_Baixa_from_Chiado._Lisbon%2C_Portugal.jpg?width=1800}}
 
 挑 1–2 條好走的街逛就好，不要把整段當成必須逛完。這裡屬於 1755 大地震後重建的核心市區格局：網格街廓、對稱尺度，走起來很省腦，也很適合「隨時撤退」。有興趣的話，你可以把它當成一個城市規劃的案例：從災後重建，走向更理性、更現代的市中心。
 
+補充（省力散步＋撤退指南）：
+這段之所以「最好走」，其實就是地形紅利：Baixa 卡在兩個丘陵之間的谷底，相對平坦，路也更直更寬，對長輩、推行李，或只是想省電的旅人都很友善。你一邊走一邊也可以把它當成災後重建的展示櫥窗：龐巴爾系統把城市用網格和對稱重新整理，甚至還常被提到「龐巴爾籠（Pombaline cage）」這種早期抗震結構概念（當作逛街時順便看的城市工程彩蛋就好）。
+
+路線別貪心，抓兩條就夠：走 `Rua Augusta`（Rossio → Praça do Comércio）看葡式碎石路、一路走到盡頭的 `Arco da Rua Augusta`；逛累了想「撤退」到比較優雅的咖啡/書店氛圍，就往 Chiado 接 `Rua Garrett`。需要真正坐下來回血的點，觀光但好用的 `A Brasileira`（順便看 Pessoa 銅像）或安靜的 `Livraria Bertrand` 都很穩。小提醒也一樣：Rossio / Rua Augusta 周邊偶爾會有人兜售「毒品」給觀光客，多半是騙局（例如香料/月桂葉之類），無視、說 no、繼續走就行。
+
 ### [聖洛克堂（Igreja de São Roque）](https://www.google.com/maps/search/?api=1&query=Igreja%20de%20S%C3%A3o%20Roque%20Lisbon)：如果你想在里斯本找到「與日本有關的歷史交點」
+@card: 外表低調、內部奢華；也能順著葡日交流的歷史線索，讀出另一個里斯本。
 這是一座耶穌會背景的教堂，外觀不張揚，但內部的空間與小堂裝飾很值得慢慢看。如果你剛好對「日本與葡萄牙的歷史線索」有興趣，這裡也常被提到：資料常提到它與聖方濟・沙勿略（St. Francis Xavier）以及天正遣歐使節團的歐洲旅程有關聯。
+
+補充重點（把它當成「坐下來就能穿越 500 年」的點）：
+如果你對「日本與葡萄牙的歷史線索」有興趣，這裡常被放進同一條脈絡：它在耶穌會系統裡，常被視為 16 世紀「往亞洲／日本傳教路線」在里斯本的重要節點之一；也常見資料提到天正遣歐使節團曾造訪此地。進到教堂裡可以順便留意是否有與聖方濟・沙勿略（St. Francis Xavier）相關的聖像／雕像（以現場陳設為準）。
+
+它的反差也很爽：外觀不張揚，但一進去是很強烈的奢華感，側方小堂、金飾與壁畫細節都很有料。實務上也好操作——教堂主體多數時候可直接進入參觀；想看附設博物館再另外購票。因為仍在使用中，遇到彌撒／活動可能會限制入場或動線（以現場公告為準）。
 
 省力點：通常是「走進去就能看」的室內景點，節奏安靜，也比較容易立刻坐下來休息（以現場開放/活動為準）。
 
 ### [纜車坡道（Elevador da Bica / Glória）](https://www.google.com/maps/search/?api=1&query=Elevador%20da%20Bica%20Lisbon)：陡坡＋電車名場面
+@card: 陡坡街景＋電車名場面：拍照、看城市坡度，體驗的重點常在「外面那條街」。
 {{gallery:Elevador da Bica / Glória|https://commons.wikimedia.org/wiki/Special:FilePath/Elevador_da_Bica_-_Lisboa_-_Portugal_(52519254036).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Lisboa_-_Elevador_da_Bica_(53861208616).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Elevador_da_Bica_-_Lisboa_(50391625516).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Lisboa_-_Elevador_da_Gl%C3%B3ria.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Gl%C3%B3ria_Funicular_%E2%80%A2_Elevador_da_Gl%C3%B3ria%2C_Cal%C3%A7ada_da_Gl%C3%B3ria_%E2%80%A2_Lisbon.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Elevador_da_Gl%C3%B3ria%2C_Lisboa_(20240212182426).jpg?width=1800}}
 
 不一定要搭，拍照＋走一小段就有感。纜車系統是城市應對高低差的交通解法之一，也因此成為里斯本公共交通與街景文化的標誌。
 
+補充攻略（實話版）：
+- **Bica：比較像「拍照景點」**：經典角度通常是站在外面拍（往軌道上方/下方抓角度），比「坐在車上」更容易得到想要的畫面。車體狀態（例如塗鴉、磨損）也很看當天維護情況。
+- **Glória：比較像「上坡捷徑」**：它把市中心（Restauradores）拉上去接近 `Miradouro de São Pedro de Alcântara`，對不想爬陡坡的人很有用。
+- **常見雷點**：排隊可能很久、車廂通常很擠；如果你的目標只是照片或省體力，通常「外面拍＋走一小段」或直接改搭計程車/Uber/Bolt 會更省時。
+- **票務提醒**：現場票價與規則可能浮動；要搭的話，優先用 `Viva Viagem / Navegante`（儲值/一日券通常比單程現買友善很多，以當下票價為準）。
+- **安全提醒**：人擠人的時候就是扒手最舒服的環境，包包背前面、手機不要露在外側口袋。
+
 ### [馬丁莫尼什 / 莫拉里亞（Martim Moniz / Mouraria）](https://www.google.com/maps/search/?api=1&query=Martim%20Moniz%20Mouraria%20Lisbon)：更庶民、更混雜的里斯本（晚上走主要路線）
+@card: 多文化的庶民街區：白天小吃與巷弄更有趣，晚上就走主要路線感受氛圍即可。
 {{gallery:Martim Moniz / Mouraria|https://commons.wikimedia.org/wiki/Special:FilePath/Largo_Martim_Moniz%2C_Lisboa_03.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Mouraria%2C_Lisboa_-_panoramio.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Below_Castelo_de_S._Jorge_-_Mouraria_in_the_night_-_Lisboa_(50193322887).jpg?width=1800}}
 
 想吃更平價、更多元的在地餐點或補給時很好用。也能看到「不那麼明信片」的真實里斯本。它是老城邊緣的多元街區之一，長期呈現移民與城市生活交織的面貌。
 
-如果你們剛好想補亞洲調味/熟食、或想買豆腐/味噌這種「回飯店很救命」的補給，也可以參考 **[Mercado Oriental Martim Moniz](https://www.google.com/maps/search/?api=1&query=Mercado%20Oriental%20Martim%20Moniz%20Lisbon)**（上架品項以當天為準）。保守做法就用「白天去、買完就走」原則，別在這一帶逛太久。
+如果你們剛好想補亞洲調味/熟食、或想買豆腐/味噌這種「回飯店很救命」的補給，也可以參考 [Mercado Oriental Martim Moniz](https://www.google.com/maps/search/?api=1&query=Mercado%20Oriental%20Martim%20Moniz%20Lisbon)（上架品項以當天為準）。保守做法就用「白天去、買完就走」原則，別在這一帶逛太久。
 
 ### [聖卡塔琳娜觀景台（Miradouro de Santa Catarina）](https://www.google.com/maps/search/?api=1&query=Miradouro%20de%20Santa%20Catarina%20Lisbon)：河景＋放空（坐下來 20 分鐘就值）
+@card: 河景長椅＋放空氛圍；不追「最高」，追「坐著看城市怎麼呼吸」。
 {{gallery:Miradouro de Santa Catarina|https://commons.wikimedia.org/wiki/Special:FilePath/Lisboa_-_Miradouro_de_Santa_Catarina_(53897765512).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Miradouro_de_Santa_Catarina_-_Lisboa_-_Portugal_(51793131734).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Miradouro_de_Santa_Catarina_-_Lisboa_-_Portugal_(49396454011).jpg?width=1800}}
 
-你需要的不是更多景點，是坐下來 20 分鐘。坐著看 Tagus 河與光線變化就很值，是最適合安排在「你真的需要休息」那天的眺望點。
+里斯本的 miradouro 不只是「看風景」，也是當地人的社交客廳；而 Santa Catarina（也常被叫 `Adamastor`）的魅力在於，它既看得到河口與 25 de Abril 大橋的尺度，又保留了比較鬆的氣氛。
+
+參觀重點可以抓三個：Adamastor 雕像（葡萄牙大航海想像的象徵之一）、傍晚的金色光（河面反光＋屋頂色溫會很漂亮）、以及旁邊的小亭子/露台那種「人坐著聊天、有人彈唱」的生活感（以當天現場為準）。
+
+實用提醒（不是省力，是安全/體感）：通往觀景台的石板路遇到潮濕會很滑；高處風跟日曬都會比你想像更有感，鞋底抓地力、防曬跟薄外套很值得帶。
 
 ### [里貝拉市場（Mercado da Ribeira / Time Out Market）](https://www.google.com/maps/search/?api=1&query=Mercado%20da%20Ribeira%20Lisbon)／市場題材（雨天也能成主菜）
+@card: 市場本體與 Time Out Market 同場對照：一邊是生活，一邊是觀光版的味覺拼圖。
 {{gallery:Mercado da Ribeira|https://commons.wikimedia.org/wiki/Special:FilePath/Mercado_da_Ribeira%2C_Lisbon_02.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Mercado_da_Ribeira%2C_Lisbon_01.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Mercado_da_Ribeira%2C_Time_Out_Market%2C_Lisbon.jpg?width=1800}}
 
-雨天不用硬撐戶外，直接用市場「吃＋逛＋休息」把行程救回來。它也很適合當作動線中的補給站。市場文化本來就是里斯本日常的一部分，近年也出現更偏觀光／美食集中的形式，成為旅人常用的室內備案。
+這裡是一個很典型的「又愛又恨」點：同一棟建築裡有兩個世界。它本身是 19 世紀末的市場建築（常見資料寫 1892），一側仍保留傳統生鮮市場的氣味；另一側則是 2014 年起由《Time Out》策劃的 `Time Out Market`，把名店/名廚的櫃位和吧台塞進同一個屋簷下——像高級版美食街，但氣氛更熱鬧、公共長桌更像「城市食堂」。
+
+怎麼玩比較對味：
+- **想看在地生活**：去傳統市場那一側，上午會比較像「市場本體」，下午常會安靜很多（營業狀況以當天為準）。
+- **想一次解決多人不同口味**：去 Time Out Market。把它當成「味蕾懶人包」沒問題，但要有心理準備價格偏觀光、尖峰時段座位像戰場。
+- **吃什麼比較不後悔**：與其硬吃一份昂貴主菜，不如用小食/甜點把代表性味道點起來：炸馬介休球（Pastéis de bacalhau）、炸肉餅（Croqueteria 類型的 croquette）、章魚沙拉這類開胃菜，再用一顆現烤蛋塔收尾（常見會看到 Manteigaria 分店/櫃位，以現場為準）。喝的就隨你喜好：啤酒、葡萄酒、sangria 都有人點。
+
+除了吃，這裡也很好買伴手禮：常見會有 `A Vida Portuguesa` 這類選物的櫃位或相似店家，魚罐頭、香皂、牙膏、軟木小物、Bordallo Pinheiro 風格陶器都很適合挑。
+
+最後一個重要提醒：市場或市集看到「看起來很老」的單片 `azulejo`，來源很難驗證，也有人提醒可能牽涉到不當拆取古蹟的灰色鏈條；想買磁磚題材就選正規店的複刻/新品，心裡比較踏實。
 
 ## easy
 
 ### 抵達日（Day 1）：飯店附近散步＋河岸走一小段就好
+@card: 抵達日只做兩件事：醒腦回復、建立方向感；用飯店附近散步＋河岸短走把時差收進身體，隨時可撤退，不必硬塞景點。
 今天不硬排景點，目標只有醒腦與回復。你會需要的是「隨時能撤退」的路線，而不是多跑點。
 
 ### 市區平路散步（最友善、可隨時撤退）
+@card: Baixa → Rossio → Chiado 的平路散步線：甜點咖啡好插入、街景密度高，最適合用半天把里斯本的骨架走出來、又不會被坡度追著跑。
 下城（Baixa）→ 羅西奧（Rossio）→ 希亞多（Chiado）是最省腦的組合：甜點與咖啡很好插入。
 
 ### Principe Real 區散步（安靜、質感、好休息）
+@card: 想躲開 Baixa 的觀光推擠：Principe Real 更安靜、更像在度假；公園、選物與咖啡都舒服，適合慢慢走、走累就坐。
 比起 Baixa 的觀光密度，Principe Real 通常更安靜、更像在度假：公園、選物店、咖啡都比較舒服。想逛街但不想被人潮推著走，這一區很適合拿來「慢慢走、走累就坐」。
 
 ### 河岸散步（體力友善）
+@card: 河岸散步的價值是把呼吸放大：Cais do Sodré ↔ 市場 ↔ 河岸走一段就舒服；風大、人多或累了就改成坐著看河景也很值。
 索德雷碼頭（Cais do Sodré）↔ 里貝拉市場（Time Out Market / Mercado da Ribeira）↔ 里貝拉河岸，走一段就會舒服很多。
 
 ### 電車 15E 去 Belém（比 28 更實用）
+@card: `15E` 是去 Belém 的實用交通：把它當移動工具順便看街景即可，不必把「搭電車」當成成就解鎖；重點是把時間留給河岸線。
 你可以把它當作交通工具，也可以把它當作「短短一段街景體驗」。不需要把搭電車當成成就解鎖。
 
 ## rain
@@ -227,18 +329,24 @@ Belém 區很適合補一個「室內、好逛、不太累」的點，馬車博�
 雨天的節奏不是「找更多點」，而是「短段走路 → 室內坐下來 → 再短段走路」。
 
 ### 最穩：Gulbenkian / Oceanário / MAAT
+@card: 雨天最穩的三個主菜：Gulbenkian / Oceanário / MAAT 各抓 1.5–3 小時就能撐起一個下午；選一個就夠把天氣救回來。
 各自都能抓 1.5–3 小時。選一個就夠把雨天救回來。
 
 ### 里貝拉市場（Time Out Market / Mercado da Ribeira）
+@card: 雨天直接用市場：吃、逛、坐下來一次完成，把「補給」當主菜就不會覺得被天氣打敗；想更安靜就避開尖峰時段。
 雨天直接用市場吃＋逛＋休息，不用硬撐戶外。
 
 ## views
 
 ### 觀景台（Miradouro）只選 1–2 個
-里斯本的魅力很大一部分是高低差。挑一個坐下來看光線變化，比集郵更有感。
+@card: 里斯本的魅力很大一部分是高低差，但不必集郵：選 1–2 個觀景台坐下來看光線變化，比跑更多點更有感。
+觀景台怎麼挑也很簡單：依你的動線選一個就好；上坡段真的卡，就用短程計程車／Uber/Bolt 把力氣留給看景與拍照。
 
-### 觀景台（Miradouro）候選：蒙特聖母（Senhora do Monte）/ 太陽門（Portas do Sol）/ 聖盧西亞（Santa Luzia）/ 聖佩德羅・德・阿爾坎塔拉（São Pedro de Alcântara）
-依動線選一個就好。真的卡在上坡段就短程計程車／Uber/Bolt，通常比硬撐省事。
+### 觀景台（Miradouro）候選（依動線挑 1 個）
+- 蒙特聖母（Senhora do Monte）
+- 太陽門（Portas do Sol）
+- 聖盧西亞（Santa Luzia）
+- 聖佩德羅・德・阿爾坎塔拉（São Pedro de Alcântara）
 
 如果你們想走「清晨的靜謐感」路線，`Senhora do Monte` 這種更高的觀景點早一點去會舒服很多；做法是把車叫到上面，再慢慢往下走。
 
@@ -251,68 +359,80 @@ Belém 區很適合補一個「室內、好逛、不太累」的點，馬車博�
 
 ## routes
 
-如果你只想用「最省腦」的方式把里斯本跑順，先抓這三條就夠。每條都照「準備→出發→到達→怎麼做」排好，你只要照做。
+如果你想用更省心、摩擦更低的方式把里斯本跑順，先抓這三條就夠。每條都用「準備 → 出發 → 到達 → 動線」排好：照順序走就會順；時間不夠時，停在任一段收工也合理。
 
 ### Belém 半日（平路多、節奏最好控）
+@card: 動線可照抄：Jerónimos → 蛋塔＋午餐 → 發現者 → 河岸 →（路過）貝倫塔外觀 → MAAT 外觀。
 
-#### 準備
-- 能早就早（修道院類熱門時段隊伍會拉長）。
-- 你想把隊伍壓到最低：先看 `must/Belém` 的票務提醒。
+1. 早上：熱羅尼莫斯修道院（Mosteiro dos Jerónimos）
+   - 重點是早到；如果你只想選一段最有「光影」的精華，常見路線會把目光放在迴廊（Cloister）。
+2. 早午茶：`Pastéis de Belém`（優先內用，把排隊換成坐下來）
+   - 常見狀況是外帶隊伍很長；如果你不想把時間消耗在外帶隊伍上，可以直接進店內用（以現場動線/人潮為準）。
+   - 坐下來點一杯 `bica` 配剛出爐的蛋塔；喜歡肉桂的話，自己撒一點肉桂粉會更有儀式感。
+3. 散步：發現者紀念碑＋貝倫塔（外觀為主）
+   - 想進貝倫塔的話，建議先看現場隊伍再決定；很多人其實只需要在外面的公園/河岸把「它浮在水面上的角度」拍到就滿足了。
+4. 午後亮點（二選一）
+   - MAAT：不看展也可以用外觀＋河岸＋屋頂/步道（是否可上、是否需票以現場規則為準）拿到現代建築的河景視角。
+   - 國家馬車博物館（Museu dos Coches）：如果你喜歡歷史物件，這是貝倫一帶很容易被略過、但內容很扎實的一站。
+5. 延伸（可選）：用「水路」換視角（通勤渡輪）
+   - 如果你不想只站在岸邊看河，可以從貝倫一帶找渡輪碼頭，搭一段通勤渡輪到河對岸（如 Trafaria / Porto Brandão 方向；實際航線與班次以現場/官方資訊為準）。
+   - 在船上回望貝倫塔、發現者紀念碑與 4 月 25 日大橋，視角會很不一樣，也很適合拍照。
+6. 結尾：去 `LX Factory` 收尾（把半天從歷史軸拉回當代）
+   - 這裡是舊工廠改建的文創園區，常見分享會提到 `Ler Devagar` 書店、設計小店、露天餐廳；氛圍更年輕，跟貝倫的歷史感會形成很漂亮的對比。
+   - 適合放在傍晚：逛一下、喝一杯或吃晚餐，順便把「遊客區」的感覺稀釋掉。
 
-#### 出發
-- 交通優先：**15E** 或河岸向公車（如 **728**）。
-- 想要更穩：直接 Uber/Bolt 點對點到修道院附近再開始走。
-
-#### 到達
-- 先把行程起點放在 `Mosteiro dos Jerónimos` 一帶，動線最順。
-
-#### 怎麼做（照抄順序）
-- 熱羅尼莫斯修道院 → 蛋塔＋午餐（坐下來補能量）→ 發現者紀念碑 → 河岸散步 →（路過）貝倫塔外觀 → MAAT 外觀
 ### 市區平路散步（隨時可撤退）
+@card: 動線可照抄：Baixa → Rossio → Chiado → 看狀態加一個教堂/咖啡/甜點收尾。
 
-#### 準備
-- 目標是「走一段就收工」，不要追求走完。
-
-#### 出發
-- 直接把起點放在 `Baixa/Chiado` 一帶。
-
-#### 到達
-- 人多就先找一家咖啡店坐下來再說，節奏會穩很多。
-
-#### 怎麼做（照抄順序）
-- 下城（Baixa）→ 羅西奧（Rossio）→ 希亞多（Chiado）→ 看狀態加一個教堂/咖啡/甜點當收尾
+1. 下城（Baixa）：先把方向感找回來，腳步放慢
+2. 羅西奧（Rossio）：廣場＋補給
+   - 可選：想要「酒精開局」，可以在 Rossio 周邊加一杯 `ginjinha`（例如 `A Ginjinha` / `Ginjinha Sem Rival`；價格以店家當天標示為準）。
+3. Madalena 一帶：用 `bifana` 補能量再走
+   - 可選：想吃一個「站著吃就很里斯本」的版本，可以找 `As Bifanas do Afonso` 這類小店；加料（芥末/辣油等）以店家提供為準，不確定就先原味吃半個再決定。
+4. 轉場（Carmo / Santa Justa 頂層連接橋）：用高低差拿一個視角
+   - 不一定要在下方排隊搭電梯：從 `Carmo` 一帶走到頂層連接橋/觀景平台即可（細節看 `practical/避開排隊陷阱`），也會順路經過 `Convento do Carmo`。
+5. 希亞多（Chiado）：甜點/散步收尾
+   - 可選：想看蛋塔現場製作可去 `Manteigaria`，站著吃一顆熱蛋塔配 `bica` 很剛好。
+   - 可選：想收一個「文青句點」，可順路進 `Bertrand Livreiros` 晃一圈；不必買書，買張明信片或蓋個章就能撤退。
+6. 收尾：看狀態加一個教堂/咖啡/甜點（「能撤退」比「再多一個點」重要）
 
 ### 河岸短走（低風險、拿到河景就回）
+@card: 動線可照抄：Time Out Market（先吃）→ Pink Street（拿畫面）→ 渡輪到 Cacilhas（河面視角）→ 回來河岸 kiosk 坐著收尾。
 
-#### 準備
-- 這條就是「看河、坐一下、回去」，不用硬走長。
+如果你要搭渡輪，準備好交通卡/感應支付會比較順；票價與扣款以當天系統/站點公告為準。
 
-#### 出發
-- 起點放在 `Cais do Sodré` 或 `Time Out Market` 都可以。
-
-#### 到達
-- 看到風大/人多，就把「走路」改成「坐下來看風景」。
-
-#### 怎麼做（照抄順序）
-- 索德雷碼頭（Cais do Sodré）↔ 里貝拉市場（Time Out Market / Mercado da Ribeira）↔ 河岸走一小段就收工
+1. Time Out Market：把它當成「補給點」，不要硬逛到心累
+   - 常見做法是先鎖定 1–2 個目標：一份鹹食＋一杯飲料（或甜點）就足夠把節奏穩住。
+   - 常見分享會提到：市場裡有 `Manteigaria` 櫃位可買蛋塔；也有不少炸物/可樂餅、海鮮類攤位（以現場店家為準）。
+2. Pink Street（Rua Nova do Carvalho）：拿一個畫面就走
+   - 白天比較適合拍照；晚上更像夜生活入口，氛圍會更混雜（依當天人潮而定）。
+   - 如果你想把「魚罐頭」變成下酒菜，常見分享會提到 `Sol e Pesca` 這類小店；不餓的話點一份分享盤配杯酒就夠。
+3. 渡輪到 Cacilhas：把「河岸散步」升級成「河面視角」
+   - 從 `Cais do Sodré` 一帶搭一段通勤渡輪到對岸（例如 Cacilhas；航線與班次以現場/官方資訊為準），船程不長，但回望里斯本山城與 4 月 25 日大橋的視角很值得。
+   - 下船後如果你想再走一小段，可以沿著河岸方向慢慢晃；常見路線會提到 `Rua do Ginjal` 这一帶的河景与餐廳（是否營業/是否需訂位以現場為準）。
+4. 回到里斯本河岸坐著收尾（kiosk）
+   - 搭船回來後，如果還有力氣，可以到 `Ribeira das Naus` 一帶買杯飲料坐下來看光線變化；風大就縮短停留、改成室內也很合理。
 
 ## skip
 
 ### 電車 28
-結論：**不必硬搭**。人擠、急煞、常沒位子，還要多留意扒手。
+@card: `28` 的定位是「看過即可」：人擠、急煞、常沒位子還要顧扒手；想要電車街景，用定點拍照或短段體驗往往更舒服。
+結論：不必硬搭。人擠、急煞、常沒位子，還要多留意扒手。
 
 如果你只是想要「看過電車街景」：挑一段定點拍照就好；細節看 `practical/避開排隊陷阱` 與 `safety`。
 
 ### 聖胡斯塔電梯（Santa Justa Lift）
-結論：**不用排隊搭電梯**。想拿到同視角：先到 `Convento do Carmo` 一帶，直接走到電梯的**頂層連接橋/觀景平台**。
+@card: 不用排電梯也能拿同視角：從 `Carmo` 一帶走到頂層連接橋/觀景平台，把排隊換成幾分鐘步行，視野一樣到手。
+結論：不用排隊搭電梯。想拿到同視角：先到 `Convento do Carmo` 一帶，直接走到電梯的頂層連接橋/觀景平台。
 
 細節（包含怎麼走、怎麼避人潮）統一放在 `practical/避開排隊陷阱`。
 
 ## practical
 
 ### 先看這裡（怎麼用這份筆記）
+@card: 這份筆記的用法：先用 `routes` 選節奏，再用 `must/rain/views` 補主菜，最後用 `practical/food/safety` 把當天走順、把坑先排掉。
 
-如果你只想記一句：**少跑點、挑回報，把體力留給風景與餐桌**。
+如果你只想記一句：少跑點、挑回報，把體力留給風景與餐桌。
 
 用法（照這個順序走最省腦）：
 - **先選你今天的節奏**：看 `routes`（Belém 半日 / 市區平路散步 / 河岸短走）。
@@ -323,10 +443,11 @@ Belém 區很適合補一個「室內、好逛、不太累」的點，馬車博�
 > 補充：這一段（`practical`）只放「整座城市通用」的做法；各景點的票務/整修資訊，留在對應景點段落，避免你來回翻頁。
 
 ### 準備（出門前先做這 3 件事）
+@card: 出門前先做三件事：票務/營業時間、鞋與外套（風/坡/溫差）、再選一個可撤退的備案；把這三件做完，里斯本就不會玩崩。
 
-1. **鞋底先顧好**：里斯本「七丘」＋石板路很吃鞋；下雨天尤其滑。鞋底抓地、好走，比你帶幾件衣服還重要。
-2. **先決定今天是不是「省力日」**：只要行程有老城/觀景台/上坡段，就把叫車當作動線的一部分（下面有做法）。
-3. **把票卡/手機準備好**：需要搭地鐵/火車/渡輪的那天，先把卡儲值好，現場才不會卡在機台前。
+1. 鞋底先顧好：里斯本「七丘」＋石板路很吃鞋；下雨天尤其滑。鞋底抓地、好走，比你帶幾件衣服還重要。
+2. 先決定今天是不是「省力日」：只要行程有老城/觀景台/上坡段，就把叫車當作動線的一部分（下面有做法）。
+3. 把票卡/手機準備好：需要搭地鐵/火車/渡輪的那天，先把卡儲值好，現場才不會卡在機台前。
 
 #### 準備：交通卡（Viva Viagem / Navegante）
 如果你們會搭到地鐵／公車／渡輪，買一張可重複使用的交通卡並用儲值（常被叫做 zapping）會比較省事：不用每次找零，也通常比單程票划算。票種與價格會調整，現場機台照當下資訊選最簡單的方案即可。
@@ -334,32 +455,44 @@ Belém 區很適合補一個「室內、好逛、不太累」的點，馬車博�
 #### 準備：Zapping（儲值按次扣款）怎麼買怎麼用
 你可以把 `zapping` 想成「把歐元存進卡裡、每次搭車自動扣款」的模式，概念很像悠遊卡/八達通。通常它比你每次現場買單程票更省事、也常見更划算（實際扣款與票價以當天系統為準）。
 
-**A) 買卡＋儲值（在地鐵/火車/渡輪站機台做）**
-- **1) 先有一張卡**：第一次買就選「購買新卡/購卡」那類選項（各機台用詞不同，以現場顯示為準）。這種紙卡/可重複使用卡通常有押金/卡費與效期，機台會直接顯示。
-- **2) 選 `zapping / stored value`（儲值金額）**：如果你是要加值舊卡，就選「插入/放上卡片以加值」的選項，然後挑 `zapping / stored value`。
-- **3) 選金額＋付款**：機台會提供固定金額選項（最低/最高會調整，以機台為準）。可以用現金或刷卡（依站點設備而定）。
-- **4) 收據先別丟**：保守做法是把收據留到行程結束；若卡片故障/餘額問題，收據常是你處理的依據（以櫃檯規則為準）。
+A) 買卡＋儲值（在地鐵/火車/渡輪站機台做）
+- 1) 先有一張卡：第一次買就選「購買新卡/購卡」那類選項（各機台用詞不同，以現場顯示為準）。這種紙卡/可重複使用卡通常有押金/卡費與效期，機台會直接顯示。
+- 2) 選 `zapping / stored value`（儲值金額）：如果你是要加值舊卡，就選「插入/放上卡片以加值」的選項，然後挑 `zapping / stored value`。
+- 3) 選金額＋付款：機台會提供固定金額選項（最低/最高會調整，以機台為準）。可以用現金或刷卡（依站點設備而定）。
+- 4) 收據先別丟：保守做法是把收據留到行程結束；若卡片故障/餘額問題，收據常是你處理的依據（以櫃檯規則為準）。
 
-**B) 怎麼刷（不同交通工具刷法不一樣）**
-- **地鐵（Metro）**：通常是**進出站都要感應**（跟著閘門提示走即可）。
-- **公車/電車/纜車（Bus/Tram/Funicular）**：多數情況是**上車感應一次**即可（找到黃色/綠色感應器，靠近感應一下）。
-- **火車（CP / 近郊線）**：依站點可能是閘門或月台入口的感應器；保守做法是**進出都感應**，照現場指示走。
-- **渡輪（Ferry）**：碼頭多是閘門感應，照指示進出即可。
+B) 怎麼刷（不同交通工具刷法不一樣）
+- 地鐵（Metro）：通常進出站都要感應（跟著閘門提示走即可）。
+- 公車/電車/纜車（Bus/Tram/Funicular）：多數情況是上車感應一次即可（找到黃色/綠色感應器，靠近感應一下）。
+- 火車（CP / 近郊線）：依站點可能是閘門或月台入口的感應器；保守做法是進出都感應，照現場指示走。
+- 渡輪（Ferry）：碼頭多是閘門感應，照指示進出即可。
 
-**C) Zapping 常見注意事項（很多人會踩的坑）**
-- **同一張卡通常不能同時放多種票種**：例如你卡裡是 `zapping`，通常就不能在同一張卡上再叠加「24 小時票」等產品；想切換票種，保守做法是**用另一張卡**（以機台與當期規則為準）。
-- **一人一卡，別共用**：技術上你可能會想「兩人輪流刷同一張」，但遇到需要進出站都感應的情境會很麻煩；保守做法就直接一人一張最省腦。
-- **最後會剩零頭很正常**：固定面額加值很容易剩一點餘額；把它當作便利成本就好。
+C) Zapping 常見注意事項（很多人會踩的坑）
+- 同一張卡通常不能同時放多種票種：例如你卡裡是 `zapping`，通常就不能在同一張卡上再叠加「24 小時票」等產品；想切換票種，保守做法是用另一張卡（以機台與當期規則為準）。
+- 一人一卡，別共用：技術上你可能會想「兩人輪流刷同一張」，但遇到需要進出站都感應的情境會很麻煩；保守做法就直接一人一張最省腦。
+- 最後會剩零頭很正常：固定面額加值很容易剩一點餘額；把它當作便利成本就好。
 
 #### 準備：Lisbon Card vs `zapping`（儲值）＋單買門票
 網路上很多攻略會把它說得很神，但最簡單的判斷其實是這樣：
 
-- **你是「博物館/古蹟狂熱者」**（同一天要進 2–3 個以上付費景點、而且都會真的走進去逛）：才比較有機會把卡用回本。
-- **你只想看重點、也不想一直排隊**：多數時候用 `zapping`（交通儲值）＋「你真的想進去的點」單買門票，反而更符合省力節奏。
+- 你是「博物館/古蹟狂熱者」（同一天要進 2–3 個以上付費景點、而且都會真的走進去逛）：才比較有機會把卡用回本。
+- 你只想看重點、也不想一直排隊：多數時候用 `zapping`（交通儲值）＋「你真的想進去的點」單買門票，反而更符合省力節奏。
 
 一個很實用的做法：今天晚上把「明天一定會付費進去」的點列出來，估個大概的門票總額，再跟通行卡價格比一下就好。像 `Padrão dos Descobrimentos` 這類景點，很多人光看外觀＋河岸尺度就覺得回報很高；如果你本來就不打算進去，那通行卡對你就更不一定划算。
 
+### 高 CP 值玩法（省錢/省排隊，把日常交通當觀光工具）
+@card: 里斯本的「高 CP」不是追更多點，而是用更聰明的方法拿到同樣視野：免費觀景台、通勤渡輪當遊船、避開把時間耗在排隊上。
+在里斯本談「高 CP 值」，通常不是追求「更多景點」，而是用更聰明的方式拿到同樣（甚至更好）的視野與體驗：免費觀景台、通勤渡輪當遊船、以及避免把時間耗在排隊上。
+
+- **免費觀景台 > 城堡門票（只想看全景的話）**：先看本篇 `views` 的「免費視野」清單；最好用的套路通常是叫車到上面 → 慢慢往下走。
+- **Santa Justa Lift：走頂層連接橋，別排電梯**：做法統一看本篇 `practical/到達後怎麼走/避開排隊陷阱`（以及 `views` 的對應條目）。
+- **通勤渡輪當遊船：Cais do Sodré ↔ Cacilhas（交通卡就能搭）**：不用特地買觀光遊船；完整過河動線與「吃海鮮/看夕陽」備案看本篇 `food/Cacilhas`。
+- **MAAT：不進館也很值（外觀＋河岸線條）**：把它當成 Belém 的「現代建築視角」補齊點；看本篇 `must/Belém` 與 `views`。
+- **Igreja de São Roque：外表低調、裡面很震撼**：想要「看懂」它，直接看本篇 `must/聖洛克堂` 的讀法就好。
+- **（近郊加分）Boca do Inferno：免費的大自然演出**：如果你有去 `Cascais`，風大浪大時更戲劇化；風大別靠太邊、鞋底要防滑。
+
 ### 出發（今天怎麼移動）
+@card: 今天怎麼移動：Uber/Bolt、巴士/電車與上坡捷徑各有取捨；用交通去買到視野與體力，而不是硬爬把心情耗光。
 
 #### Uber / Bolt
 - **為什麼推薦**：點對點接送、少爬坡、少等車，舒適度最高。很多旅人也會覺得市區短程價格相對可接受。
@@ -367,76 +500,42 @@ Belém 區很適合補一個「室內、好逛、不太累」的點，馬車博�
 - **適合這種情境**：Gulbenkian、各種 miradouro、老城區上坡段、想把行程節奏抓鬆的那天。
 
 #### 大眾運輸（選「更實用」的路線，不用硬追社群熱門交通）
-- **上城堡不用硬爬**：很多人會用 **737** 公車把人直接送到城堡入口附近（省掉最陡的那段）。
-- **去 Belém 的舒服選擇**：**15E**（現代化車廂）或河岸方向的公車路線（如 **728**）通常比老式觀光電車更省力。
+- **上城堡不用硬爬**：很多人會用 `737` 公車把人直接送到城堡入口附近（省掉最陡的那段）。
+- **去 Belém 的舒服選擇**：`15E`（現代化車廂）或河岸方向的公車路線（如 `728`）通常比老式觀光電車更省力。
 
 > 小提醒：路線與班次可能會調整，出發前用 Google Maps / Citymapper 看當天建議即可。
 
-#### 近郊與跨河（平穩、回報高）
-- **去 Cascais**：從 [Cais do Sodré](https://www.google.com/maps/search/?api=1&query=Cais%20do%20Sodr%C3%A9%20Lisbon) 搭火車沿海走，車程平穩、風景也很加分。想看海景，很多人會選坐靠海那側（以當天行進方向為準）。
-- **去 Cacilhas 吃海鮮**：搭渡輪最直覺、也很穩。10–15 分鐘就到，當成「順便看河景」的小行程很剛好。
-- **（若去 Sintra）省力替代：Palácio de Monserrate 代替佩納宮**：佩納宮常見問題是人多、動線擠、上山累；更省力的替代是 [Palácio de Monserrate](https://www.google.com/maps/search/?api=1&query=Pal%C3%A1cio%20de%20Monserrate%20Sintra)，相對安靜、花園也比較好走（是否開放/票務以當天為準）。
-
 ### 到達後怎麼走（避雷／撤退）
+@card: 到達後先避開兩個坑：排隊陷阱（Santa Justa／28）與上坡誤判；把動線改成「先拿視野、再慢慢走下來」，節奏會明顯更舒服。
 
 #### 「由上往下」原則（拯救膝蓋）
-想走老城區與觀景台時，最省力的做法通常是：**先把車叫到高處（或搭纜車/公車上去）→ 再慢慢往下走**。這樣你比較不會一直在石板路上「硬爬坡」，也更容易安排休息點。
+想走老城區與觀景台時，最省力的做法通常是：先把車叫到高處（或搭纜車/公車上去）→ 再慢慢往下走。這樣你比較不會一直在石板路上「硬爬坡」，也更容易安排休息點。
+
+#### 隱藏版公共電梯（Public Lifts / Elevadores）：免費捷徑把你送上半山腰
+里斯本除了付費的古老纜車/電車，市中心其實藏著幾座現代化的通勤電梯，專門解決 Baixa（下城）到城堡/阿爾法瑪/希亞多這些高處的落差。多數情況是免費或可用交通票卡涵蓋（以現場標示/當期規則為準），而且通常比 28 號電車不那麼擁擠。
+
+1) 去城堡/阿爾法瑪：兩段式「Fanqueiros → Chão do Loureiro」
+做法其實很直覺：先用 `Elevador da Baixa / Fanqueiros` 把你從下城送到「主教座堂高度」，再接 `Elevador do Castelo` 把你送到更靠近城堡高處，後段步行會明顯平緩很多。第一段入口在 `Rua dos Fanqueiros 170–178` 附近（靠近 `Praça do Comércio` 一帶），外觀很像一般建築/通道，留意「Elevador / Castelo」相關標示；上去後大概到接近 `Rua da Madalena` 的高度，走幾分鐘就能接近 `Sé de Lisboa`（里斯本主教座堂）周邊。接著就跟著「Castelo」方向走，通常會被引導到 `Chão do Loureiro` 市場/停車場那棟建築附近，搭第二段電梯上去後會更接近城堡/`Portas do Sol`（太陽門）一帶（以現場入口/動線標示為準）。
+
+2) 阿爾法瑪內部捷徑：Elevador de Santa Luzia
+- **用途**：在 `Alfama` 迷宮巷弄裡想省樓梯/省陡坡時很好用，能把你帶到 `Miradouro de Santa Luzia`（聖盧西亞觀景台）附近的高度（以現場入口/動線為準）。
+
+3) 去希亞多/卡爾莫：Santa Justa 的「免費後門」
+- **重點**：不要在下城（`Rua de Santa Justa`）排隊搭電梯。改從 `Convento do Carmo`（卡爾莫修道院）附近走到頂層連接橋/觀景平台拿同視角（上面 `避開排隊陷阱` 那段有完整做法）。
+
+省力口訣（照抄版）：
+ - 去城堡？找 `Fanqueiros` 電梯 + `Chão do Loureiro` 市場電梯。
+- 去聖盧西亞？找 `Elevador de Santa Luzia`。
+- 去希亞多？走 `Carmo` → Santa Justa 頂層連接橋，不要在下面排隊。
 
 #### 避開排隊陷阱（Santa Justa／28）
-- **聖胡斯塔電梯**：不要排隊。最省力做法是去 `Convento do Carmo` 一帶，直接走到電梯的**頂層連接橋/觀景平台**。這樣不用擠電梯、也通常不用為了風景付費；最頂端旋轉樓梯是否收費/是否開放，以現場為準。
+- **聖胡斯塔電梯**：不要排隊。最省力做法是去 `Convento do Carmo` 一帶，直接走到電梯的頂層連接橋/觀景平台。這樣不用擠電梯、也通常不用為了風景付費；最頂端旋轉樓梯是否收費/是否開放，以現場為準。
 - **28 號電車**：人擠、急煞顛簸、常沒座位，也比較需要留意扒手。多數情況「看過就好」，不必硬搭。
   - **替代想法**：真的想拍電車街景，就挑一段定點拍照；或選更早的時段、避開尖峰。
 
-### 購物與伴手禮（省力版：質感＋不踩雷）
-里斯本的「好買」不是買很多，而是買對：**傳統工藝、Zakka 風、限定感、精美包裝**——而且帶回家「真的會用」。下面這幾條原則把「送禮 vs 自用」「儀式感 vs CP 值」「磁磚/易碎品避雷」整理在同一處，讓你不用到處翻。
-
-- **先決定你要買哪一種回報**：
-  - **儀式感送禮（包裝/故事）**：年份罐頭、選品店、職人罐頭店很適合（但價格常偏「觀光包裝」）。
-  - **自己吃/追 CP（量與價格）**：直接去超市最穩（下面也有快速選項）。
-- **省力買法：把「會碎/會重」集中到同一天**
-  - 陶瓷/玻璃這種重物：**挑一兩件真心喜歡的**就好，買完就用 `Uber/Bolt` 直接回飯店（別背著走石板路）。
-  - 食品類（罐頭、巧克力、抹醬）：適合「每天少量補貨」，回房間先整理/分裝。
-- **磁磚（`azulejo`）避雷**：只留一個原則：不要買路邊「看起來很老」的單片磁磚；完整替代方案看 `safety/紀念品`。
-- **把購物塞進「你本來就會去」的點**：例如 `LX Factory`（書店＋選品＋罐頭店）或 `Baixa/Chiado`（書店＋選品）——不用為了小店繞很多坡。
-- **排隊就不買（尤其觀光店）**：你們這趟的核心是「舒服」。看到人潮/隊伍，保守做法就是換超市或改天再說。
-
-#### 推薦店型（選 1–3 間就好，別逛到變硬仗）
-- **[A Vida Portuguesa](https://www.google.com/maps/search/?api=1&query=A%20Vida%20Portuguesa%20Lisbon)**：選品店路線，香皂、陶瓷、罐頭、紡織品都好買；很多人會留意 **燕子（Andorinhas）陶瓷** 或 **azulejo 圖案周邊**（品項以當天為準）。
-- **[Cutipol](https://www.google.com/maps/search/?api=1&query=Cutipol%20Lisbon)**：餐具品牌，在日本也很紅；比較像「買一套會一直用」的那種禮物（價格/退稅規則以現場為準）。
-- **[Meia.dúzia](https://www.google.com/maps/search/?api=1&query=Meia.d%C3%BAzia%20Lisbon)**：顏料管果醬/抹醬，體積小、包裝強，送禮很省腦（口味以現場為準）。
-- **罐頭＝儀式感（送禮向）**：像 [Conserveira de Lisboa](https://www.google.com/maps/search/?api=1&query=Conserveira%20de%20Lisboa) / [Comur](https://www.google.com/maps/search/?api=1&query=Comur%20Lisbon) 這類店型更偏「包裝與職人感」（品項與價位以現場為準）。
-- **陶瓷挖寶（看釉色/形狀）**：像 [Cerâmicas na Linha](https://www.google.com/maps/search/?api=1&query=Cer%C3%A2micas%20na%20Linha%20Lisbon) 這種店型，適合買一兩件真的會用的碗盤（計價方式以現場標示為準）。
-- **追 CP 值（自己吃/買多）**：超市最穩： [Pingo Doce](https://www.google.com/maps/search/?api=1&query=Pingo%20Doce%20Lisbon) / [Lidl](https://www.google.com/maps/search/?api=1&query=Lidl%20Lisbon) / [Continente](https://www.google.com/maps/search/?api=1&query=Continente%20Lisbon)（上架品項以當天為準）。
-
-### 高 CP 值景點攻略（免費百萬夜景／用交通卡當觀光設施／破解排隊）
-在里斯本談「高 CP 值」，通常不是追求「更多景點」，而是用更聰明的方式拿到同樣（甚至更好）的視野與體驗：**免費觀景台、通勤渡輪當遊船、以及避免把時間耗在排隊上**。
-
-1) **Santa Justa Lift：走頂層連接橋，別排電梯**
-   - 做法：看本篇 `practical/到達後怎麼走/避開排隊陷阱`（上面那段）。重點就是從 `Convento do Carmo` 一帶走到 **頂層連接橋/觀景平台**，不排電梯也能拿到同視角；最頂端旋轉樓梯是否收費/是否開放，以現場為準。
-
-2) **Senhora do Monte：比城堡更像「最高點視野」**
-   - 如果你只是想看全景，不一定要花門票進 `Castelo de São Jorge`：`Senhora do Monte` 這類更高的觀景點，常被視為更直接的「俯瞰老城＋看城堡本體」視角（免費/開放狀況以現場為準）。
-  - 最好用的解法：**叫車到上面 → 慢慢往下走**（本篇 `views` 也有免費觀景台 5 選 1 的整理）。
-
-3) **通勤渡輪當遊船：去 Cacilhas（交通卡就能搭）**
-   - 不用特地買觀光遊船：從 `Cais do Sodré` 搭通勤渡輪過河，本身就能拿到「水面看里斯本」的城市全景與大橋角度。
-   - 到對岸散步或吃海鮮都很順：`Ponto Final` 這類點如果有訂到位更爽；就算不吃，河岸走一段也很值得（本篇 `food` 有完整 Cacilhas 策略）。
-   - 票價會調整，以當天扣款為準；重點是「用日常交通得到觀光級視角」。
-
-4) **Igreja de São Roque：外表低調、裡面很震撼（＋日葡歷史交點）**
-   - 很多人是被它「外觀樸素 → 內部金碧/小堂精緻」的反差打中。教堂本體是否免費、以及附設博物館/小堂是否需票，會依當期規則而變，保守做法是到門口看公告。
-   - 想要「看懂」它：往上看本篇 `must/聖洛克堂` 的讀法就很夠。
-
-5) **MAAT：不進館也很值（外觀＋河岸線條）**
-   - 你不一定要進館看展：外觀曲線＋河岸光線就很值得。本篇 `Belém` 也把它當作「現代建築視角」的省力補齊點。
-   - 屋頂/步道是否可上去、是否需票，依當天現場規則；把它當成「可上去更賺、不能上去也不虧」最省心。
-
-6) **（近郊加分）Boca do Inferno：免費的大自然演出**
-   - 如果你有去 `Cascais`，這是最省腦的免費自然點：風大浪大時更戲劇化。
-  - 小提醒：風大別靠太邊、鞋底要防滑；把它當作「海邊散步的終點」最舒服。
-
 ### 休息點與咖啡（走到累就照這張清單）
-行程好不好玩，常常取決於兩件事：**能不能立刻坐下來**，以及**環境是不是安靜舒服**。里斯本很適合用「景點 → 坐下 → 再走」的節奏跑。
+@card: 里斯本行程好不好玩，常常取決於能不能立刻坐下來：把景點與咖啡休息交替，走到累就照清單找座位，節奏會穩很多。
+行程好不好玩，常常取決於兩件事：能不能立刻坐下來，以及環境是不是安靜舒服。里斯本很適合用「景點 → 坐下 → 再走」的節奏跑。
 
 #### 最省力：館內咖啡/座位（逛完不用再找）
 - **Gulbenkian**：博物館／園區通常就能找到咖啡與座位，逛完直接坐下來最省力（以現場開放為準）。
@@ -445,173 +544,189 @@ Belém 區很適合補一個「室內、好逛、不太累」的點，馬車博�
 #### 坐著看風景：把「觀景台」改成「景觀休息」
 - **城堡附近**：[Café da Garagem](https://www.google.com/maps/search/?api=1&query=Caf%C3%A9%20da%20Garagem%20Lisbon)
 - **[São Pedro de Alcântara](https://www.google.com/maps/search/?api=1&query=Miradouro%20de%20S%C3%A3o%20Pedro%20de%20Alc%C3%A2ntara)**：現場常見 `quiosque`（公園售貨亭）＋露天座位，點杯飲料就能坐很久。
-  - **為什麼特別好用**：花園式空間、長椅多、常有樹蔭；坐著就能看 **Castelo de São Jorge** 與下城（Baixa）屋頂。
+  - **為什麼特別好用**：花園式空間、長椅多、常有樹蔭；坐著就能看 `Castelo de São Jorge` 與下城（Baixa）屋頂。
   - **怎麼用最舒服**：在 `Bairro Alto / São Roque` 一帶買好外帶（像 `Padaria São Roque` 的麵包/點心），走來這裡坐下來吃；把「觀景台」變成「野餐＋休息」會比一直走更省膝蓋。
   - **小提醒**：傍晚很漂亮、人也可能變多；包包就放前面、桌上別放手機，避免被順手牽羊。
-  - 也有人會把這裡當成「坐著等城市點燈」的風景點；另外，網路上也流傳這裡和知名廣告 **「消臭力（Shoshuriki）」** 有關（細節以你看過的版本與現場角度為準）。
+  - 也有人會把這裡當成「坐著等城市點燈」的風景點；另外，網路上也流傳這裡和知名廣告「消臭力（Shoshuriki）」有關（細節以你看過的版本與現場角度為準）。
     - **怎麼拍比較像**：找一段欄杆、背對城市全景拍一小段影片/照片就很有儀式感，不必追求完全一樣的構圖。
-    - **怎麼上來最省力**：它就在 **`Ascensor da Glória（Glória 升降機）`** 的上站附近；直接搭上來，別硬走那段陡坡。
+    - **怎麼上來最省力**：它就在 `Ascensor da Glória（Glória 升降機）` 的上站附近；直接搭上來，別硬走那段陡坡。
 
 #### Belém：優先選「內用」而不是站著吃
 - **Pastéis de Belém**：外帶隊伍很長時，直接找內用區通常更舒服（也更容易順便上洗手間）。
+
 - **[Starbucks（Belém）](https://www.google.com/maps/search/?api=1&query=Starbucks%20Bel%C3%A9m%20Lisbon)**：不用為了咖啡特地跑，但如果你剛好在 Belém 走累了，當作避暑/休息點很實用（品項以現場為準）。
 
 #### 老城區的「避難所」：需要乾淨座位與洗手間
 - 走到阿爾法瑪/舊城區腿酸時，找一間你們順路、評價穩的咖啡店坐下來就好。像 [Copenhagen Coffee Lab](https://www.google.com/maps/search/?api=1&query=Copenhagen%20Coffee%20Lab%20Lisbon) 這類連鎖在市區常見，環境乾淨、節奏也比較可預期（分店以當下位置為準）。
-- [Fora](https://www.google.com/maps/search/?api=1&query=Fora%20Lisbon%20coffee)：阿爾法瑪一帶的咖啡店選項之一；很多人喜歡它的「老城街景＋坐下來喝一杯」氛圍（座位/人潮以現場為準）。
-- [COBA / Comoba](https://www.google.com/maps/search/?api=1&query=COBA%20Lisbon%20Comoba)：偏現代空間、餐點與咖啡都比較「可預期」的店型；如果你那天就是需要穩定座位，這類備案很救命（座位/店內節奏以現場為準）。
+- [Fora](https://www.google.com/maps/search/?api=1&query=Fora%20Lisbon%20coffee)：更像「在老城裡找一個乾淨角落坐下來」的節奏；把它當作走累時的短休息站就好（座位/人潮以現場為準）。
+- [COBA / Comoba](https://www.google.com/maps/search/?api=1&query=COBA%20Lisbon%20Comoba)：空間偏現代、出品比較可預期；需要穩定座位與洗手間時，這種店型特別救命（座位/店內節奏以現場為準）。
 
-小提醒：里斯本公園的 kiosque 是很在地的「休息文化」——點一杯飲料就能坐很久。如果需要洗手間，**博物館/大型景點內的咖啡區**通常最可靠。
+小提醒：里斯本公園的 kiosque 是很在地的「休息文化」——點一杯飲料就能坐很久。如果需要洗手間，博物館/大型景點內的咖啡區通常最可靠。
 
-### 走路提醒
-Alfama 上下坡多，穿防滑好走的鞋。真的卡在上坡段就短程計程車／Uber/Bolt，通常不貴，還能把體力留給「你真的想看的那一段」。
+### 購物與伴手禮（質感＋不踩雷）
+@card: 買得有質感又不踩雷：用選物、餐具、罐頭與生活用品把葡萄牙的日常美學帶回家；不要讓紀念品變成回家後的雜物負擔。
 
-### 住宿小技巧（玩累了不想出門的那天）
-一個很實用的「介於飯店與 Airbnb 之間」選項是：**服務式公寓/公寓式酒店（serviced apartment / aparthotel）**。
+`azulejo`（花磚）避雷你只要記一句：不要買路邊那種「看起來很老」的單片磁磚；完整替代方案看 `safety/紀念品`。另外兩個很實際的原則是：能順路就順路（例如 `LX Factory` 或 `Baixa/Chiado` 一帶），以及看到長隊就先略過（尤其觀光店）——把時間留給你真正喜歡的店、喜歡的街區比較值得。
 
-- **為什麼好用**：有廚房與客廳（可以自炊/泡茶/早點吃熱的），但又常有櫃檯與清潔服務；有些甚至能提供送餐/客房服務（是否提供、以住宿方說明為準）。
-- **怎麼找最省腦**：訂房網站直接用關鍵字 `serviced apartment / aparthotel / reception / lift` 篩選；地點優先看 `Baixa / Chiado` 這種平路多、撤退容易的區域。
-- **保守加分條件**：電梯、24h 櫃檯、可寄放行李、房內熱水壺/微波爐（是否有、以房型為準）。這些小事會大幅影響「累的那天」舒不舒服。
+#### 推薦店型（選 1–3 間就好，別逛到變硬仗）
+- **[A Vida Portuguesa](https://www.google.com/maps/search/?api=1&query=A%20Vida%20Portuguesa%20Lisbon)**：想買「有質感、又很葡萄牙」的紀念品，來這裡通常不會失望。店名直譯就是「葡萄牙的生活」：它賣的其實是葡萄牙人日常會用、也一直珍惜的東西——香皂、陶瓷、罐頭、紡織品、文具。好逛的點不只在品項多，而是整個選品與陳列都在講同一件事：對傳統的熱愛與 `Made in Portugal` 的驕傲。逛起來像一間把日用品當成作品在展示的小型生活博物館（品項以當天為準）。
+  
+店裡最有代表性的符號之一是 燕子（Andorinhas）陶瓷：在葡萄牙文化裡，燕子常被視為「家、幸福與回歸」的象徵；做成可掛牆的陶瓷後，就變成很適合帶回家、掛起來的「家」的紀念。你也很可能會看到 Bordallo Pinheiro 那種帶幽默感的寫實陶瓷，例如醒目的「高麗菜」餐盤/碗（Cabbage Ware）——一眼就知道是葡萄牙的餐桌語言。至於罐頭與香皂區，復古包裝、鮮豔色彩、像書牆一樣的陳列本身就很值得慢慢看，送禮也很體面。最後別忘了 `azulejo`（花磚）圖案周邊，遇到喜歡的圖樣再帶走就好。
+
+- **[Cutipol](https://www.google.com/maps/search/?api=1&query=Cutipol%20Lisbon)**：葡萄牙最具代表性的精品餐具品牌之一，也常被視為里斯本的「質感擔當」。它在亞洲（尤其日本、台灣）受歡迎，關鍵就是那種 simple and sophisticated（簡單而精緻）的設計語言：線條乾淨、比例俐落、手柄細長，視覺上很輕盈，也特別容易和東方餐桌的留白感放在一起。
+  
+逛店時可以把重點放在經典的 GOA 系列（細柄、配色選擇多，常見黑/白搭金屬端頭等）：它最迷人的地方其實是「握在手上」那一下——重量分配、手感與光澤，跟照片差很多。旗艦店的陳列也很有設計感，像珠寶店一樣把餐具當作品展示；你可以單支買、也可以選禮盒組，對喜歡下廚或重視餐桌儀式感的人來說，這裡很像朝聖點。
+  
+最後補一個比較現實的觀察：雖然是產地，價格不一定比台灣/香港或日本更便宜（匯率影響很大），而且也有人分享在葡萄牙當地餐廳不一定常見它（取決於店家風格與定位）。因此它的「來里斯本買的價值」更多時候是——款式更齊、顏色更全、能挑到你最想要的那一支；如果你本來就想入手，出發前先查一下心儀品項的價格，到現場再把退稅後金額一起算進去對照，會更踏實（價格/退稅規則以現場為準）。
+
+- **[Meia.dúzia](https://www.google.com/maps/search/?api=1&query=Meia.d%C3%BAzia%20Lisbon)**：一間很會玩「視覺誤導」的店——乍看像美術用品店，架上排滿顏料管，但其實每一管都是可以吃的葡萄牙味道。它把果醬、巧克力醬、甚至橄欖油裝進鋁管裡，包裝有趣、拿在手上很像小玩具，送人也很容易引發一個「欸這是什麼？」的驚喜（品項/口味以現場為準）。
+  
+口味選擇很多，概念上可以先用「怎麼吃」來挑：想走比較葡萄牙的路線，可以找適合搭起司與麵包的果醬口味（不少人會提到 `無花果`、`南瓜` 這類方向，特別容易和起司的鹹香做出對比）；如果收禮的人偏甜口，巧克力醬通常更安全；而喜歡下廚的人，顏料管橄欖油會是更特別的選擇。店家也常主打使用來自葡萄牙各地的原料——你不一定要記品牌故事，挑你「看到就想試」的那一管就夠了。
+
+- **罐頭＝儀式感（送禮向）**：如果超市罐頭是「日常吃的」，那麼 [Conserveira de Lisboa](https://www.google.com/maps/search/?api=1&query=Conserveira%20de%20Lisboa) 這種老牌罐頭店賣的更像是「品味與傳統」——不靠花俏噱頭，重點放在魚獲與醃漬工藝本身。店裡常保留很復古的包裝視覺，結帳時用牛皮紙與棉繩俐落手工打包，那一下很有老店的體面與儀式感。
+  
+另一路線像 [Comur](https://www.google.com/maps/search/?api=1&query=Comur%20Lisbon) 這種店型，則更偏「包裝與職人感」兼具的伴手禮選擇。你也可能在市場型場域（例如 `Time Out Market` 一帶）看到能把罐頭直接點來吃的做法：開罐搭麵包/沙拉當 tapas，先吃過喜歡的再帶走會更踏實（品項與價位以現場為準）。
+
+- **陶瓷挖寶（看釉色/形狀）**：像 [Cerâmicas na Linha](https://www.google.com/maps/search/?api=1&query=Cer%C3%A2micas%20na%20Linha%20Lisbon) 這種店，比起「精品櫥窗」更像陶瓷界的尋寶場。它的迷人之處在於你會看到各式葡萄牙製餐具與器皿以比較「堆疊式」的方式陳列，慢慢挑釉色、挑形狀、挑手感；有些品項會採 `秤重計價` 或以現場標示方式販售，價格邏輯也更接近日用品而不是紀念品。常見的樂趣是翻到工廠尾單、過季品或小瑕疵品：外觀可能只是釉色落點不同、印花有一點偏移，但整體質感依然很葡萄牙，很適合挑幾件回家當作真正會上桌的碗盤（計價方式以現場標示為準）。
 
 ### 四月初（復活節週）
+@card: 四月初與復活節週人潮明顯上升：熱門點盡量早到；博物館/修道院可能休館或縮短營業，出發前看官網公告避免白跑。
 人潮明顯變多，熱門景點盡量早到。Easter Sunday（2026/4/5）常見休館/縮短營業（尤其博物館/修道院類），出發前看官網當日公告。
 
 ## food
 
-蛋塔、bifana（三明治）、bacalhau（鱈魚料理）、ginjinha（櫻桃酒）是最不費腦的四件套。
+蛋塔、bifana（三明治）、bacalhau（鱈魚料理）、ginjinha（櫻桃酒）是里斯本飲食裡最常見、也最容易上手的四件套。
 
-### 咖啡怎麼點（避開「遊客卡布」）
-如果你們想喝的是「奶咖」但不想每次都用 cappuccino 來猜：
+### 咖啡怎麼點（避開「遊客卡布奇諾老梗」）
+@card: 用在地詞彙點咖啡更準：`bica / meia de leite / galão` 把成品鎖定，再用 `com/sem espuma` 說清楚奶泡；你是在點一個詞，不是在賭英文理解。
+走進一間傳統 `pastelaria`，你會發現大家點咖啡其實很「直覺」：先決定你要不要奶、要大杯還小杯；剩下的只是把奶泡、熱度、糖說清楚。與其用 cappuccino / latte 這種英文詞去賭店家理解，不如用在地詞彙把成品鎖定（各店做法以現場為準）。
 
-- **Bica**：濃縮咖啡（espresso）。如果你想喝「最在地的咖啡基準」，點它就對了。
-- **Meia de Leite**：杯裝奶咖，口感接近拿鐵但通常更「日常」。
-- **Galão**：玻璃杯大杯奶咖，想坐久一點、慢慢喝很適合。
+#### 30 秒點單流程（照順序講就好）
+1. 先選杯型：::bica::（純濃縮） / ::meia de leite::（瓷杯半奶咖） / ::galão::（玻璃杯大杯奶咖）
+2. 再講奶泡：`com espuma`（要）/ `sem espuma`（不要）/ `pouca espuma`（少一點）
+3. 需要的話再補兩個細節：`bem quente`（更熱）/ `morno`（溫一點），以及 `açúcar?`（要不要糖）
 
-想吃點澱粉配咖啡：除了白麵包，也可以留意 **Broa de Milho（玉米麵包）** 這種更有穀物香氣的選項（實際供應看店家）。
+你如果開口說 `um café`，多半端上來的就是 `bica`：小瓷杯、1 shot 濃縮，味道集中、偏苦香，喝起來很短也很醒；桌上常見糖包，店員有時會問 `açúcar?`（要不要糖）。想要更短更濃，就加一句 `curto`（`um café curto`）；想要多一點點咖啡液量、不要那麼短，有些店也聽得懂 `cheio`（`um café cheio`，各店習慣不同）。
 
-小提醒（在老牌咖啡館/蛋塔店更常遇到）：
-- 你如果直接說 **"Coffee" / `um café`**，多數情況服務生預設就是給你 **`bica`（濃縮）**。
-- 你如果直接說 **"Latte"**，各店理解可能不一樣；保守做法是改用 **`meia de leite`（杯裝半奶）** 或 **`galão`（玻璃杯奶更多）**，比較不會拿到跟你想像不同的飲料。
-- **美式咖啡**：很多店聽得懂 `americano`，但葡萄牙更常見的在地說法是 **`abatanado`**（比 `bica` 更大杯、偏淡）。想喝「大杯淡咖啡」就直接點 `abatanado` 最省腦。
-- **Cappuccino**：有些地方會有，但在很多旅人觀察裡它更像「給觀光客的選項」。想喝「道地奶咖」用 `meia de leite / galão` 通常更穩（各店菜單與做法以現場為準）。
+如果你要的是奶咖，就記兩個畫面：瓷杯的 `meia de leite`（字面「半奶」）通常比較像「中杯、奶與咖啡更接近 1:1」的方向，咖啡存在感更明顯；玻璃杯的 `galão` 則通常是更「長」的大杯奶咖，體感更接近拿鐵那種可以慢慢喝的比例。至於你腦中的「卡布奇諾奶泡感」，關鍵往往不在於硬點 cappuccino，而是直接把奶泡講清楚：`com espuma`（要奶泡）/ `sem espuma`（不要奶泡）/ `pouca espuma`（奶泡少一點）。如果你對熱度很敏感，也可以補一句 `bem quente`（熱一點）或 `morno`（溫一點）——你會發現店家反而更容易做出你想要的那杯。
+
+照抄點單句（中文空耳僅近似發音）：
+- `Um galão, por favor.`（大杯奶咖；空耳：嗯 嘎朗，普法沃）
+- `Uma meia de leite, por favor.`（瓷杯半奶咖；空耳：烏瑪 梅亞 德 雷特，普法沃）
+- `Um café / uma bica, por favor.`（濃縮；空耳：嗯 咖啡／烏瑪 比卡，普法沃）
+- 想指定奶泡：在句尾加 `com espuma` / `sem espuma`（空耳：空 伊斯普瑪／桑 伊斯普瑪；例如 `Um galão, sem espuma, por favor.`）
+
+最後補兩個很常用、但容易誤會的詞：你說 `"Latte"`，各店理解不一樣；想更穩就回到 `meia de leite / galão`。另外你想喝「美式那種大杯淡咖啡」，很多店聽得懂 `americano`，但更在地的說法是 `abatanado`（比 `bica` 更大杯、偏淡）。
+
+想吃點澱粉配咖啡：除了白麵包，也可以留意 `Broa de Milho（玉米麵包）` 這種更有穀物香氣的選項（實際供應看店家）。
 
 #### 咖啡店怎麼挑（精品/老店/蛋塔店內用）
-這裡用最省腦的方式整理：**想喝得講究就去精品咖啡**；**只想坐下休息就去傳統 pastelaria**；**想把蛋塔行程「順便變成咖啡時間」就用名店內用區**。
+@card: 咖啡店三選一：::想喝得講究:: 去精品；::想坐下休息:: 去老 `pastelaria`；::想把蛋塔變咖啡時間:: 用名店內用區。
+1. ::想喝得講究::（手沖/單品/選豆）→ 往「精品咖啡（specialty / roastery）」找
+2. ::想坐下休息::（腳放回地面、慢慢看櫥窗）→ 往「經典老店（historic pastelaria / cafe）」找
+3. ::想把蛋塔變咖啡時間::（遇到熱的就坐下吃一顆）→ 往「蛋塔名店內用區」找
 
-**精品咖啡（specialty / roastery）**
+##### 精品咖啡（specialty / roastery）
 - **[Filtro](https://www.google.com/maps/search/?api=1&query=Filtro%20Lisbon)**：常被提到的精品咖啡點之一；如果你想喝手沖/單品、想選豆子，來這類店最像「把咖啡當主角」。甜點偶爾也會出現比較「鹹甜混搭」的創意口味（是否供應以當天為準）。
 
-**特色飲品（抹茶/亞洲口味取向）**
+##### 特色飲品（抹茶/亞洲口味取向）
 - **[Origami](https://www.google.com/maps/search/?api=1&query=Origami%20Matcha%20Lisbon)**：抹茶專門店類型，很多人會點 `matcha latte`（例如燕麥奶、不加糖的版本）或草莓抹茶這種層次飲品；甜度/是否加糖各店差很多，保守做法是點餐時先說「不要太甜」。
 
-**經典老店（historic pastelaria / cafe）**
-- **[Pastelaria Suíça](https://www.google.com/maps/search/?api=1&query=Pastelaria%20Su%C3%AD%C3%A7a%20Pra%C3%A7a%20da%20Figueira%20Lisbon)**：很多人會把它當成「老店翻新、傳統與現代混在一起」的代表：在 `Praça da Figueira` 一帶很順路，適合坐下來喝一杯、也很像觀光路上的休息站。
-  - **甜點亮點**（以櫥窗為準）：`Pão de Ló` 這類濕潤海綿蛋糕常被拿來跟亞洲蛋糕口感對照；也有人會點比較現代的酥皮甜點（例如開心果類），或用一個鹹派/餡餅做平衡。
-  - **咖啡與價格感**：相較精品咖啡，傳統 `pastelaria` 的咖啡常被覺得「比較親民」，但價格與品項會調整，以現場標示為準。
-- **Castro**：有些人會把它當成 `Pastéis de Belém / Manteigaria` 之外的備案；常見形容是塔皮更偏硬脆、甜度更保守，配 `bica` 很合（以你們當天吃到的批次為準）。
-- **[Café A Brasileira](https://www.google.com/maps/search/?api=1&query=Caf%C3%A9%20A%20Brasileira%20Lisbon)**：經典老咖啡館氣氛很強；把它當作「坐下來喝杯 `bica / galão`」就好，餐點/甜點想吃再看當天櫃檯（以現場為準）。
-- **[Sacolinha](https://www.google.com/maps/search/?api=1&query=Sacolinha%20Lisbon)**：連鎖麵包/咖啡店型，適合當作「不追名店、就順路坐一下」的日常備案（品項以現場為準）。
+##### 經典老店（historic pastelaria / cafe）
+> 這幾家更像「里斯本的餐飲地標」：你去的目的不只是吃一個品項，而是坐進那個空間、聽它的聲音、看它如何服務一整座城市。你可以把它們想成行程裡的「文化插曲」——一杯咖啡的時間，就能讀到一小段里斯本。
+- **[Pastelaria Suíça](https://www.google.com/maps/search/?api=1&query=Pastelaria%20Su%C3%AD%C3%A7a%20Pra%C3%A7a%20da%20Figueira%20Lisbon)**：在 `Praça da Figueira` 旁邊的老字號（常被提到的關鍵字是「翻新後回歸」）：它迷人的地方不在於「某一道必吃」而是那種很里斯本的日常感——觀光客在廣場穿梭、電車與人流的聲音在外面，你在裡面坐下來喝杯咖啡、看櫥窗，像把城市節奏暫停一下。
+  - 背景：常見說法是創立於 1920s（1922）；2018 年一度停業，之後以「保留老靈魂＋加入現代甜點櫥窗」的姿態回來（實際營運/供應仍以現場為準）。
+  - 你可以期待的畫面：它的位置本身就很「城市中心」——窗外是廣場與人流，你會很直覺地把它當成「坐一下、把腳放回地面」的地方。這類老 `pastelaria` 的魅力是日常：看在地人快速喝完一杯 `bica` 就走、也看觀光客慢慢研究櫥窗，兩種節奏同時存在。
+  - 甜點怎麼挑（以櫥窗為準）：
+    - 想吃傳統口感：看 `Pão de Ló`（濕潤海綿蛋糕；有些版本會有更濕潤、偏「蛋香蛋黃醬感」的中心口感）。
+    - 想吃更現代、油脂香更明顯：挑酥皮類（例如開心果方向、或「紐約卷/酥皮卷」這種櫥窗常見的現代甜點；口味輪替很快，以當天為準）。
+    - 想做甜鹹平衡：加一個鹹派/餡餅類，吃起來會更像「一頓完整的下午茶」。
+  - 咖啡怎麼喝：多數人會在這裡點很典型的 `pastelaria` 咖啡——`bica / meia de leite / galão` 都合理。你來這裡其實是在「喝空間」：桌距、聲音、走動的服務節奏、以及窗外廣場的光線。
+- **[Castro](https://www.google.com/maps/search/?api=1&query=Castro%20Pastel%20de%20Nata%20Lisbon)**：常被拿來當作 `Pastéis de Belém / Manteigaria` 之外的「另一種路線」：它的迷人之處是把蛋塔做得更像一個精緻甜點——塔皮層次感更銳利、口感更偏乾脆（甚至有人形容偏硬脆），內餡也常被描述為更濃稠、甜度更克制或更集中（實際仍會受批次/溫度影響）。適合搭一杯短小的 `bica`，用「酥皮聲音」跟「蛋奶香」對話。
+  - 它的性格：如果你把蛋塔分成「街頭熱騰騰」與「甜點店的精緻」，Castro 更靠近後者：你會更容易注意到酥皮層次是否整齊、咬下去的碎裂感、以及蛋奶香氣在口腔裡停留的方式。
+  - 怎麼吃會更有趣：先不要急著撒肉桂粉，先用原味去抓它的「酥皮乾脆度」與「內餡濃稠度」；第二口再加肉桂粉，看香料怎麼把蛋奶的甜度往後推、把香氣往前拉（桌上是否提供/口味偏好都以現場為準）。
+- **[Café A Brasileira](https://www.google.com/maps/search/?api=1&query=Caf%C3%A9%20A%20Brasileira%20Lisbon)**：Chiado 的經典地標咖啡館——門口那尊佩索亞（Fernando Pessoa）雕像就是它的招牌畫面。它真正迷人的地方是「走進去就像走進一段里斯本的文學與咖啡史」：銅色、鏡面、木作、老派侍者穿梭的忙碌感都很有戲。你可以單純把它當成「坐下來喝杯 `bica / galão`、感受空間」的地方；甜點/餐點想吃再看當天櫃檯即可（供應以現場為準）。
+  - 為什麼值得：它不是「安靜的咖啡店」，更像一個永遠有人聲的舞台——你會感覺到觀光與在地、老派與現代都擠在同一個房間裡。即使你只點一杯咖啡，也很容易把這一段當成「Chiado 的一個章節」。
+  - 點單靈感：`bica` 是最貼近它的節奏（短、醒、帶一點老派的苦香）；想慢慢坐久一點就點 `galão / meia de leite`。蛋塔/甜點口味常見評價會有「意外地不差」的驚喜，但每天狀態仍會變動，以現場為準。
 
-**蛋塔名店的咖啡時間（把排隊/外帶改成「坐下來」）**
-- **`Pastéis de Belém`**：外帶隊伍很長時，很多人反而會選內用區坐下來，配一杯 `galão` 或 `bica` 把蛋塔吃得更舒服（內用動線/候位以現場為準；本篇 `Belém/practical` 也有寫法）。除了蛋塔，店內也常見一些簡單鹹食/三明治類可以搭配（供應以現場為準）。
-- **`Manteigaria`**：更像「看師傅出爐」的節奏；如果你剛好路過，就把它當作短暫站著吃一顆、喝一口咖啡的補給點（分店狀況以現場為準）。
-- **`Fábrica da Nata`**：不少人會把它當作「比較好坐下來」的蛋塔選項之一；有些分店可能會出現季節/限定口味（例如蘋果肉桂方向），看到再試就好（供應以現場為準）。
+蛋塔名店的咖啡時間（把蛋塔當成一段「里斯本式的坐下來」）
+> 這三家可以想成三種「里斯本蛋塔場景」：`Pastéis de Belém` 是歷史與規模感、`Manteigaria` 是出爐節奏與香氣、`Fábrica da Nata` 則常以更像沙龍的裝潢把蛋塔包裝成一段漂亮的下午茶。
+- **`Pastéis de Belém`**：把它當成「歷史場景」更準：常見資料會提到 1837 年開業；配方與製作也常被描述帶有秘方傳說。它就在 `Jerónimos Monastery` 一帶，修道院／航海時代的脈絡，讓這顆蛋塔更像一段地方甜點傳統。店內藍白 `azulejos` 與大尺度內用空間很有辨識度；人潮再高，動線與服務仍維持一種固定秩序。蛋塔常見搭配是 `galão` 或 `bica`，桌上通常有肉桂粉與糖粉可自己調整；想把它做成一段小停靠，也常能找到簡單鹹食/三明治（供應以現場為準；候位/內用動線可參考本篇 `Belém/practical`）。
+  - 口感線索（常見口碑）：塔皮薄酥、偶爾帶一點鹹感；內餡甜度相對收斂（仍會受出爐時間/批次影響）。
+  - 空間線索：值得抬頭看磁磚、也看看人流如何被分流與引導；「高客流下的秩序感」本身就是體驗的一部分。
+- **`Manteigaria`**：它的魅力比較像「蛋塔現場秀」：玻璃後面是擀皮、填餡、出爐的節奏，空氣裡會有很直接的奶油香（店名也就是「奶油」的意思）。這家常被視為貝倫之外的強力對手之一；如果你剛好遇到出爐時刻，趁熱咬下那個酥皮聲音與蛋奶香，體驗會特別完整（分店空間/是否好坐以現場為準）。
+  - 你可以注意的小細節：有些分店會在剛出爐時用「聲音」提醒（例如敲鈴/提醒語），那個瞬間會把整間店的注意力拉向烤箱，氣氛很像小型表演（各分店做法以現場為準）。
+  - 口感線索（常見口碑）：店名就叫奶油，很多人記住的是塔皮的奶油香與焦糖化斑點的香氣；內餡方向常被描述為更「像醬」、奶感更厚。
+- **`Fábrica da Nata`**：它常被提到的迷人之處是「裝潢很有戲」：有些分店會用藍色系與水晶燈把蛋塔店做得像小型沙龍，坐下來喝咖啡、吃一顆熱的蛋塔，整體氛圍更偏「漂亮的下午茶」而不是快閃外帶。部分分店也可能會出現季節/限定口味（例如蘋果肉桂方向），若剛好遇到就可以試試（供應以現場為準）。
+  - 除了蛋塔：不少人也會在這裡點一些鹹食搭配（例如炸物/鱈魚類小點等，依分店與供應為準），把它做成更像「一頓下午的坐下來」而不只是甜點快閃。
 
-小提醒：如果你只是想喝一杯「像美式」的咖啡，在葡萄牙常見的點法是 `abatanado`（比 `bica` 更大杯、偏淡）；在精品店與傳統店的價格差距也會比較明顯，依你當天想要的「咖啡品質」或「座位與休息」做選擇就好。
 
 ### 蛋塔（Pastel de Nata）怎麼吃比較像當地人
-經典吃法通常會撒一點**肉桂粉（cinnamon）**和**糖粉**。你可以先吃一口原味，再撒一點點做對比——也比較好掌握甜度與香料刺激度。
+@card: 蛋塔的在地吃法是肉桂粉＋糖粉：先吃原味再少量加，抓住甜度與香料刺激的對比才好玩；趁熱吃更容易分辨口感差異。
+經典吃法通常會撒一點肉桂粉（cinnamon）和糖粉。你可以先吃一口原味，再撒一點點做對比——也比較好掌握甜度與香料刺激度。
 
-#### 口感怎麼選（想找「布丁滑嫩」 vs「偏卡士達醬」）
-不同店的蛋塔內餡口感會有差：有的偏「布丁感、滑嫩顫動」；也有的更像「卡士達醬、奶油感更厚」。常見口碑是：`Pastéis de Belém` 的塔皮更酥、甜度相對保守；市區像 `Manteigaria` 這類則常被描述為「更像醬/奶感更厚」的方向（實際仍會受出爐時間、溫度與批次影響）。最保守的玩法依然是：**各買 1 顆趁熱吃**，用舌頭自己判定哪個比較對味。
+不同店的蛋塔內餡口感會有差：有的偏「布丁感、滑嫩顫動」；也有的更像「卡士達醬、奶油感更厚」。常見口碑是：`Pastéis de Belém` 的塔皮更酥、甜度相對保守；市區像 `Manteigaria` 這類則常被描述為「更像醬/奶感更厚」的方向（實際仍會受出爐時間、溫度與批次影響）。最保守的玩法依然是：各買 1 顆趁熱吃，用舌頭自己判定哪個比較對味。
 
-### 麵包店（Padaria）怎麼用：把每天的節奏變舒服
-里斯本很適合用「麵包店當補給站」：買小點、坐一下、上洗手間（依店家而定），再回到行程。
-
-- **買什麼**：除了麵包本體，櫃裡的 `salgados`（鹹點）也很適合當「小口熱食」。
-- **怎麼帶**：如果你們喜歡慢慢逛，也可以帶個小布袋/購物袋裝麵包，走一段就能隨時補能量。
-- **搭配靈感**：在葡萄牙，像 **Caldo Verde（綠菜湯）＋麵包** 這種組合很常見；它是暖胃、又不太費咀嚼的安全牌。
-
-### 麵包店/糕點店不只是「買了就走」：把它當作一段在地體驗
-在葡萄牙，`padaria / pastelaria` 很像「日常版的文化場所」：你可以在裡面站一下、坐一下、看一下，再把節奏接回行程。重點是：**少站、能坐就坐、不要把它當成需要排隊打卡的點**。
-
-- **1) 看一段「小小的製作秀」（有些店是開放式）**
-  - **Manteigaria**：不少人會把它當作「邊看邊吃」的蛋塔點——如果你看到玻璃後方在製作/出爐，那就當作順便看一眼的小表演（以現場動線為準）。
-  - **Pastéis de Belém**：即使不一定看得到完整工序，店內那種百年老店的忙碌節奏、以及大空間的運作感，本身就是它的「歷史氛圍」。
-
-- **2) 肉桂粉儀式：自己調味，才像在地人**
-  - 點蛋塔時，桌上常見 **肉桂粉＋糖粉**；你可以先吃一口原味，再「少量」撒一點做對比，也比較好掌握香料刺激度與甜度。
-
-- **3) 湯與麵包：最省腦、也最暖胃的在地組合**
-  - `Caldo Verde（綠菜湯）＋麵包` 是最省腦、也最暖胃的搭配；如果你看到店裡有湯品，這往往比硬吃甜點更舒服。
-  - `Pão com Chouriço（香腸麵包）` 這類鹹麵包也很常見；建議一樣是 **兩人分一份**，比較不負擔。
-
-- **4) 甜點配酒（可選，看狀態）**
-  - 有些店/餐廳會提供甜點配甜酒（像波特酒）的搭配。這種屬於「大人下午茶」加分項；如果你們不喝酒或擔心酒精，就跳過也完全不影響體驗。
-
-- **5) 連空間都值得看：老店的裝潢/磁磚**
-  - 有些店本身就很有「老里斯本」的室內氣場（例如 `Padaria São Roque` 的 Art Nouveau 風格）；保守做法是把它當成**很漂亮的老店空間**，進去坐一下、喝杯咖啡就好。
-  - 像 `Pastéis de Belém` 這類名店，內部常能看到 **azulejos（藍白磁磚）**；把它當作一段「坐下來看牆」的休息也很值。
-
-- **6) 布袋/麵包袋文化（你不一定要有，但可以學那個態度）**
-  - 在地人買麵包有時會自帶袋子；你們不用特地準備，但帶個小布袋/購物袋，會讓「買麵包當補給」這件事更順手、也更像在地節奏。
-
-- **7) 工作坊（加分項，不用硬找）**
-  - 如果你們很喜歡蛋塔/烘焙，城市裡常見會有 `Pastel de Nata` 相關的體驗課（是否在里斯本/是否有中文/英文、以當期課程為準）。保守建議是把它當作「下雨日備案」：有興趣再查就好，不必為了上課去趕行程。
 
 ### Pão de Deus（上帝之麵包）：甜麵包裡最值得試的一個
-如果你們想在「鹹點/麵包」之外補一個傳統甜麵包，`Pão de Deus` 很常見、也很有代表性。
+@card: `Pão de Deus` 的精華在椰子頂層：椰香甜＋微 `nutty`，口感介於麵包與蛋糕；有些人會聯想到椰子系亞洲甜點，是很葡萄牙的日常小點。
+如果你們想在「鹹點/麵包」之外補一個傳統甜麵包，`Pão de Deus` 很常見、也很有代表性。介於麵包與蛋糕之間：它被描述為麵包與蛋糕的混合體。
 
-- **味道方向**：上層常會鋪一層椰子/奶香感的甜餡或甜霜，椰香很明顯；整體甜度不少人覺得不會太膩，但每家做法差很多，以你們當天吃到的為準。
-- **口感方向**：麵包體多偏鬆軟，上層那層椰子可能帶一點點顆粒/微酥感；整體常被形容介於「麵包」與「蛋糕」之間，通常算好入口。
-- **哪裡買**：
-  - **麵包店（padaria）**：最常見，想吃新鮮就直接跟著你們行程路過的麵包店挑一個。
-  - **超市烘焙區**：也常買得到，像本篇提到的 [ALDI](https://www.google.com/maps/search/?api=1&query=ALDI%20Lisbon) / [Lidl](https://www.google.com/maps/search/?api=1&query=Lidl%20Lisbon) 這種就很方便；想省錢當下午茶補給很適合。
-- **什麼時候吃最剛好**：下午走累了配一杯咖啡（`Galão` 或 `Meia de Leite`）當作「坐下來的理由」，會比硬跑下一個點舒服很多。
+#### 30 秒吃法（吃出它的層次）
+1. 先聞一下香氣（很多人會覺得有一點像甜甜圈的奶香甜味）。
+2. 第一口先咬到「椰子頂層」，抓它的椰香與甜度。
+3. 第二口再把椰子層＋麵包一起吃，會更容易感受到「椰香甜、麵包軟」怎麼疊起來（甜度與做法各店會不同，以當天為準）。
 
-### 值得一訪的麵包店/糕點店（把早餐升級）
-如果你們已經吃過海鮮與 bifana，接下來很值得把「麵包與糕點」當成旅程亮點：不用跑很遠，一兩間就夠把日常質感拉起來。
+#### 口感線索（你可以期待什麼）
+- ::味道:: 重點在上面那層「椰子蓋子」——椰香很前、甜度也偏明顯，但常見描述是甜得很奶、帶一點堅果般的香氣（`nutty`）。有人會把它聯想到亞洲的椰子系甜點（例如 `macapuno`、`ensaimada` 那條線）。
+- ::口感:: 麵包體多偏鬆軟；頂部那層椰子常是「椰子絲＋蛋＋糖」烤出來的質地，表面可能帶一點金黃薄殼與細微顆粒，讓它介於「麵包」與「蛋糕」之間。
 
-- **[Gleba](https://www.google.com/maps/search/?api=1&query=Gleba%20Lisbon)**（酸種麵包派）
-  - **常被提到的特色**：酸種天然發酵＋長時間發酵（不少店會做到 24 小時以上的節奏）、自家磨粉/石磨、以及使用葡萄牙在地穀物與古老小麥品種（例如 barbela）這類「把穀物當主角」的路線（以當天供應/店家說明為準）。
-  - **適合的原因**：酸種麵包很多人會覺得「比較好消化、比較不容易膩」，但每個人體質不同，這不是醫療建議；保守做法是先買小份量試試。
-  - **到店怎麼買最省腦**：
-    - 先問今天有哪些「比較軟」的麵包心（適合牙口），或直接請他幫忙切片。
-    - 想吃在地風味：**Broa（玉米麵包）** 值得試，但外皮常偏硬，切薄片更舒服。
-    - 想吃香氣/油脂感：也可以留意 **focaccia** 或每日限定口味（例如迷迭香、橄欖油、蜂蜜堅果等，依當天為準）。
-    - （加分玩法）如果你看到櫃檯/小黑板寫 `specials` 或「今日限定」，可以當作每日驚喜：不少人分享會遇到像 **Olive Oil & Rosemary（橄欖油＋迷迭香）** 或 **Honey & Almond（蜂蜜＋杏仁）** 這種代表性的組合，但口味輪替很快，以當天為準；不確定成分就直接問店員最省腦。
-  - **地點/動線**：常見分店在 Alcântara 一帶，和 LX Factory 同區域；如果你們不想特地跑，有些餐廳也會標註使用它的麵包（以店家為準）。
-  - **外送**：若行程太滿，部分平台（如 Uber Eats/Glovo）有機會搜得到，但以當天是否上架為準。
-- **[Lully 1661](https://www.google.com/maps/search/?api=1&query=Lully%201661%20Lisbon)**（可頌/酥皮派）
-  - 主打酥皮類，適合把早餐吃得更「精緻一點」。店內風格多被形容為明亮通透，早上坐著吃很舒服。
-  - **常見必點方向**（以當天供應為準）：
-    - **番茄＋瑞可塔起司可頌（Tomato & Ricotta）**：很多人喜歡它的「清爽感」——番茄的酸香＋ricotta 的奶味，吃起來不會膩。
-    - **cruffin（可頌馬芬）類**：外層更酥脆、內部比較像鬆軟的馬芬體，常見會有覆盆子等偏酸的內餡；如果你們很吃酸，這類通常會很對味。
-  - 價格會隨時間調整，現場看櫃檯為準。
-- **[Padaria São Roque](https://www.google.com/maps/search/?api=1&query=Padaria%20S%C3%A3o%20Roque%20Lisbon)**（「看裝潢也值」的老麵包店）
-  - 以新藝術風格（Art Nouveau）室內裝飾聞名，店裡甚至有「Catedral do Pão（麵包大教堂）」的稱呼；很多人會把它當作「進去坐一下、喝杯咖啡」的休息點。
-  - 和 `São Roque` 這一帶的氛圍很搭：如果你們要去 [聖洛克堂（Igreja de São Roque）](https://www.google.com/maps/search/?api=1&query=Igreja%20de%20S%C3%A3o%20Roque%20Lisbon)，可以順路把它當作「看完教堂就坐下」的補給站。
-  - **買完外帶之後去哪裡坐（很實用）**：
-    - **首選：**[Miradouro de São Pedro de Alcântara](https://www.google.com/maps/search/?api=1&query=Miradouro%20de%20S%C3%A3o%20Pedro%20de%20Alc%C3%A2ntara)（長椅多、樹蔭多、視野大）——很適合把麵包/點心當成「野餐＋休息」。
-    - **不想走遠：**[Largo Trindade Coelho（São Roque 教堂前廣場）](https://www.google.com/maps/search/?api=1&query=Largo%20Trindade%20Coelho%20Lisbon)（就在教堂前）——坐一下、吃兩口就走也很剛好。
-  - 關於「宮殿」：有資料提到這一帶與舊貴族宅邸/宮殿用地的歷史背景相關，因此室內才會有那種很浮誇的「老里斯本」氣場；但最保守的做法是把它當成 **歷史感很強的老店空間** 來享受就好。
-  - 店內也常見傳統麵包/點心；如果你看到 **broa** 類麵包也可以試試。
-- **[Pastéis de Belém](https://www.google.com/maps/search/?api=1&query=Past%C3%A9is%20de%20Bel%C3%A9m%20Lisbon)**（不只蛋塔）
-  - 除了蛋塔，店裡也有其他甜點與 `salgados` 可以搭配；**Bolo Rei（國王蛋糕）**這類傳統糕點多半是季節性（常見在聖誕期間），看到就當作「遇到再買」的加分項即可。
-- **超市烘焙區（省錢補給）**：[Lidl](https://www.google.com/maps/search/?api=1&query=Lidl%20Lisbon) / [ALDI](https://www.google.com/maps/search/?api=1&query=ALDI%20Lisbon)
-  - 如果只是想買便宜早餐麵包/點心當補給，超市烘焙區很夠用；把錢省下來留給一兩餐海鮮或真正想吃的店。
 
-### 溫熱慢煮系：點菜想省腦就看這段
-葡萄牙料理有一個很實用的優點：很多經典菜走 **燉煮／熱食** 路線，口感常是「軟嫩入味、溫暖好消化」。點菜時如果你只想省腦，直接盯著下面幾個關鍵字就行。
+#### 麵包店／酥皮店（清單）
+@card: 挑 1–2 間坐下來吃一份麵包或酥皮點心，就很有里斯本的早晨感。
+
+- [Gleba](https://www.google.com/maps/search/?api=1&query=Gleba%20Lisbon)（酸種麵包派）
+  走「麵包本體」路線時，`Gleba` 很省心：常見資料會把它寫成自然發酵酸種麵包的代表之一，主打葡萄牙在地穀物／古老品種（例如 `barbela`），並用慢發酵把香氣拉長（常見說法是至少 24 小時）。
+  
+  也有介紹特別提到店內能看到石磨研磨的流程；你把它當成「麵粉在眼前發生」的早餐場景去理解，會更容易抓到它在追求什麼。
+  - 買什麼最有代表性（看當天供應）：`Broa`（玉米麵包）、`Barbela` 系列、當日 `specials / focaccia`
+  - 路線怎麼接：資料常提到它從 Alcântara 起家、也有其他分店；若你要順路接 LX Factory 一帶，用地圖選離你最近的那間就好。
+
+- [Lully 1661](https://www.google.com/maps/search/?api=1&query=Lully%201661%20Lisbon)（可頌/酥皮派）
+  如果你想把早餐吃得更「精緻一點」，這家很容易被排進清單：主打可頌與起酥類麵包，不少分享會把它當成里斯本的烘焙名店之一。也有分享提到價格帶偏親民（甜款約 €1.6、鹹款約 €2.8；皆以現場為準）。
+  
+  店內氛圍常被形容偏明亮通透、陳列簡單現代；在附近咖啡店密度高的街區活動時，剛好適合插一段「買個點心就走」的節奏。
+  - 常見推薦（以當天供應為準）：
+    - `Tomato & Ricotta`：常見分享會提到它走清爽路線；番茄的酸感＋淡淡青醬（pesto）香氣，最後才是 `ricotta` 的奶甜；也有人提到份量偏大。
+    - `Cruffin`（muffin × croissant）：常見版本會塞覆盆子果醬，酸度被形容很明顯；酥脆感集中在表層，內部更鬆軟、層次感不像傳統可頌（口味與內餡以現場為準）。
+
+- [Padaria São Roque](https://www.google.com/maps/search/?api=1&query=Padaria%20S%C3%A3o%20Roque%20Lisbon)（「看裝潢也值」的老麵包店）
+  這家很適合用「走進去看一眼」當作行程的小插曲：它不只是買麵包，更像一個把老里斯本留在室內的空間。常見資料會把它連到 `Panificação Reunida de São Roque`（有時也會看到全名 `Panificação Reunida de São Roque` / `Panificação S. Roque`）這個體系；位置多被描述在 Bairro Alto 與 Príncipe Real 一帶的交界（以地圖為準）。
+
+  亮點幾乎都在可觀測的裝飾細節：新藝術（Art Nouveau）風格的立面與室內、彩色磁磚（常見說法會提到 `azulejos` 上有麥穗主題），以及店內那句「`Catedral do Pão`」的招牌感。你不一定要專程吃什麼，單純坐下喝杯咖啡、看光線落在磁磚與鏡面上，就很有「老店仍在運作」的真實感。
+  - 吃什麼（以現場為準）：麵包/點心選你當下想吃的就好；有資料特別提到它的 `broa de Coimbra` 是店內招牌之一。節慶時段也可能會出現 `Bolo Rei` 等季節甜點，看到再買就好。
+  - 逛完怎麼接（外帶坐點）：[Miradouro de São Pedro de Alcântara](https://www.google.com/maps/search/?api=1&query=Miradouro%20de%20S%C3%A3o%20Pedro%20de%20Alc%C3%A2ntara) 或 [Largo Trindade Coelho（São Roque 教堂前廣場）](https://www.google.com/maps/search/?api=1&query=Largo%20Trindade%20Coelho%20Lisbon) 都很順路，適合把麵包/點心變成一段野餐休息。
+  - 如果順路去教堂：要去 [聖洛克堂（Igreja de São Roque）](https://www.google.com/maps/search/?api=1&query=Igreja%20de%20S%C3%A3o%20Roque%20Lisbon) 的話，可以把它當作「看完教堂就坐下」的補給站。
+- [Pastéis de Belém](https://www.google.com/maps/search/?api=1&query=Past%C3%A9is%20de%20Bel%C3%A9m%20Lisbon)（不只蛋塔）
+  把它當成「歷史名店＋可以坐下來」的組合更準：除了蛋塔，店裡也常見其他甜點與 `salgados` 可以搭配；Bolo Rei（國王蛋糕）這類傳統糕點多半是季節性（常見在聖誕期間），遇到再買即可（供應以現場為準）。
+
+### 溫熱慢煮系：想吃到「軟嫩、暖胃、好入口」就看這段
+@card: 點菜想不踩雷就盯燉煮關鍵字：葡式經典很多是溫熱、軟嫩、入味的慢煮路線；走累後坐下來吃這類菜，體感往往最幸福。
+葡萄牙料理有一個很實用的優點：很多經典菜走「燉煮／熱食」路線，口感常是軟嫩入味、溫暖好消化。你如果想快速抓方向，就用下面這個「關鍵字＋口感想像」去點菜。
+
+#### 30 秒點菜流程
+1. 先挑一個你想要的方向：::湯飯:: / ::章魚:: / ::滑蛋系:: / ::魚燉飯::
+2. 看到菜單對應關鍵字就點（看不懂就直接問服務生這道是不是「帶湯汁/偏濕潤」）。
+3. 如果你對米心/鹹度很敏感，先講清楚偏好（能不能調整以現場為準）。
 
 #### 慢煮系必點關鍵字（軟嫩、暖胃、好入口）
 - **Arroz de Marisco（海鮮湯飯，Malandrinho）**：帶湯汁的海鮮飯，口感介於濃湯與稀飯之間，米飯吸滿海鮮高湯，偏濕潤好入口。
   - **先把預期校正**：它不是西班牙 `paella` 那種偏乾的飯，更像「湯飯/雜炊」路線；而且有些店的米心會保留一點口感（你可能會覺得偏硬），這是常見的口味落差點。
   - **如果你們真的想更軟**：可以試著跟店家說 `bem cozido / mais cozido`（想煮軟一點），但是否能調整要看店家與當天鍋況，以現場為準。
 - **Polvo à Lagareiro（拉加雷羅式章魚）**：通常是「先燉後烤」，章魚會軟到可以用叉子切開，配橄欖油與馬鈴薯非常順口。
-- **Bacalhau à Brás（布拉斯式馬介休）**：把撕碎的鱈魚、洋蔥、超細薯條（常見會叫 `batata palha`）和蛋液炒成滑蛋狀，**無刺、濕潤、鹹香**，很像家常菜。
+- **Bacalhau à Brás（布拉斯式馬介休）**：把撕碎的鱈魚、洋蔥、超細薯條（常見會叫 `batata palha`）和蛋液炒成滑蛋狀，無刺、濕潤、鹹香，很像家常菜。
   - **常見口感形容**：味道偏「溫柔」、口感像滑蛋/卵とじ那種濃稠滑嫩（`torotto`）感；薯條在蛋液裡會變軟但還留一點口感。
-  - **怎麼點最省腦**：兩人分食一份很剛好；如果你們怕鹹，搭配白飯/馬鈴薯會更順（本篇也有 `Pouco sal` 小技巧）。
+  - **分食建議**：兩人分食一份很剛好；如果你們怕鹹，搭配白飯/馬鈴薯會更順（本篇也有 `Pouco sal` 小技巧）。
   - **想「回家復刻」的方向**：很多人會提那包 `batata palha` ——超市就可能買得到；但鱈魚的鹹度處理各品牌差很多，想自己做就當作旅行趣味，不必追求完全一樣。
 - **Arroz de Tamboril（鮟鱇魚燉飯）**：多半也是帶湯汁的燉飯形式；鮟鱇魚細刺少、吃起來省心，想吃魚但不想挑刺可優先考慮。
 
@@ -621,17 +736,18 @@ Alfama 上下坡多，穿防滑好走的鞋。真的卡在上坡段就短程計�
 - **[AFURI](https://www.google.com/maps/search/?api=1&query=AFURI%20Lisbon)**：日本拉麵品牌的分店選項之一，很多人會把它當成「口味重置」的安全牌（菜單與品質以當天為準）。
 - **[cru.lisboa](https://www.google.com/maps/search/?api=1&query=cru.lisboa%20Lisbon)**：想找比較像居酒屋/現代小料理的氣氛時可以參考；常見會有偏日式的小菜或烤魚/湯品方向（以當天菜單為準）。
 
-### bifana（葡萄牙豬扒包）：常見濕潤、好入口的省腦主食
-很多人第一次聽到「豬扒包」會先腦補成乾煎豬排、需要用力咬的那種，但實際上，**不少店家的 bifana 是用薄片豬肉在醬汁裡燉煮到很軟**，再夾進相對蓬鬆的麵包裡，所以整體口感常是**濕潤、軟嫩、比較不費力**（各店作法仍會不同）。
+### bifana（葡萄牙豬扒包）：常見濕潤、好入口的街頭主食
+@card: bifana 30 秒吃法：先吃一口原味 → ::mustard:: 再上 → 想吃辣再加 ::piri-piri::；它多半是「燉到軟的豬肉＋吸醬汁的麵包」而不是乾柴豬排。
+很多人第一次聽到「豬扒包」會先腦補成乾煎豬排、需要用力咬的那種，但實際上，不少店家的 bifana 是用薄片豬肉在醬汁裡燉煮到很軟，再夾進相對蓬鬆的麵包裡，所以整體口感常是濕潤、軟嫩、比較不費力（各店作法仍會不同）。
 
 你可以把它想成「軟麵包＋吸滿醬汁的豬肉薄片」，有點像手撕豬肉那種纖維感，但更輕、更好入口。
 
-它好吃的關鍵通常分兩層：**鍋裡的燉煮醬汁**＋**上桌後的桌邊佐料**。
+它好吃的關鍵通常分兩層：鍋裡的燉煮醬汁＋上桌後的桌邊佐料。
 
 - **燉煮醬汁（基底）**：很多店會用白酒＋蒜頭作底，再加紅椒粉（paprika）與香料讓肉片上色、入味；豬肉薄片在醬汁裡慢慢燉到軟，才會有那種濕潤好咬的口感（各店配方會有差）。
-- **桌邊佐料（常見標配）**：
-  - **黃芥末（mustard）**：最經典的搭配，提味也更順口。
-  - **辣油/辣醬（常見會被叫 piri-piri）**：想吃辣再加；很多人也會用「芥末＋一點辣」一起搭，保守做法是先少量試試。
+- **桌邊佐料（常見標配）**：先 ::mustard:: 再 ::piri-piri::，通常最不容易踩到口味落差。
+  - ::mustard::（黃芥末）：最經典的搭配，提味也更順口。
+  - ::piri-piri::（辣油/辣醬）：想吃辣再加；第一次建議先少量試試。
 
 有些店也會提供番茄醬/美乃滋等選項，但如果你們想走最常見的在地吃法，通常就是從「芥末」開始。
 
@@ -639,16 +755,17 @@ Alfama 上下坡多，穿防滑好走的鞋。真的卡在上坡段就短程計�
 
 常被旅人提到的兩家（出發前看當天評價/營業狀況即可）：
 
-- [As Bifanas do Afonso](https://www.google.com/maps/search/?api=1&query=As%20Bifanas%20do%20Afonso%20Lisbon)
-- [O Trevo](https://www.google.com/maps/search/?api=1&query=O%20Trevo%20Lisbon)
+- [As Bifanas do Afonso](https://www.google.com/maps/search/?api=1&query=As%20Bifanas%20do%20Afonso%20Lisbon)：更偏「站著吃、快速補能量」的那種節奏；路過順便試一個就好（供應以現場為準）。
+- [O Trevo](https://www.google.com/maps/search/?api=1&query=O%20Trevo%20Lisbon)：如果你剛好在市中心一帶想用一個豬扒包把午餐收掉，這家常被提到（供應以現場為準）。
 
 ### Salgados / Petiscos（鹹點小吃）：走路逛街的「小口熱食補給」
-如果你們走到一半只想補點熱量、又不想坐下來吃一整餐，`salgados / petiscos` 是最省腦的在地解法：很多咖啡店/麵包店都有玻璃櫃，直接指給店員就行。
+@card: 小口熱食補給：`salgados / petiscos` 在咖啡店玻璃櫃就能選，適合不想坐大餐但需要熱量的那段；用這種小吃把節奏接回行程最順。
+如果你們走到一半只想補點熱量、又不想坐下來吃一整餐，`salgados / petiscos` 是最常見的在地解法：很多咖啡店/麵包店都有玻璃櫃，直接指給店員就行。
 
-省腦點法（先記 3 個原則）：
-- **一人一個就好、兩人分食更穩**：先試一兩樣，不要一次點一盤炸物。
-- **能選「偏濕潤/有餡」的就選它**：口感通常更好入口（牙口友善）。
-- **想吃熱的就直接問能不能加熱**：很多店會願意幫你回烤/加熱（以店家為準）。
+#### 30 秒拿法（照順序做就好）
+1. 先少量拿：::一人一個:: 或 ::兩人分食::，先試一兩樣就好。
+2. 優先選口感：看到 ::偏濕潤/有餡:: 的先拿（通常更好入口）。
+3. 想吃熱的就直接問能不能加熱（很多店願意回烤/加熱，以店家為準）。
 
 推薦清單（看到就會點）：
 - **Croquetes de Carne（可樂餅）**：多半是燉煮肉泥/白醬感的內餡，口感偏濕潤；如果「牛肉製品可接受」但不想吃牛排包，這類很適合當鹹點收尾（各店配方差很多，以當天為準）。
@@ -661,38 +778,39 @@ Alfama 上下坡多，穿防滑好走的鞋。真的卡在上坡段就短程計�
 - **Alheira（禽肉香腸）**：常見說法是它有一段與宗教迫害時期相關的歷史背景；吃法多是煎/烤到外皮微脆、內裡偏軟糯。這更像餐廳裡的 `petisco/prato`，如果你在菜單看到 `Alheira de Mirandela` 類字樣，可以點一份兩人分食試味道就好。
 - **Conservas（罐頭魚）**：在里斯本「罐頭當下酒菜」很常見——把沙丁魚/鮪魚/鯖魚這類罐頭配麵包、配酒。像 [Sol e Pesca](https://www.google.com/maps/search/?api=1&query=Sol%20e%20Pesca%20Lisbon) 這類型店會把它做得很有儀式感；保守做法是挑離峰，或把它當作「路過有座位就坐」的加分項，不必硬排。
 
-如果你們想一次試很多種：美食市場（例如 [Time Out Market（Mercado da Ribeira）](https://www.google.com/maps/search/?api=1&query=Time%20Out%20Market%20Mercado%20da%20Ribeira%20Lisbon)）確實好比價、好挑；但人潮也常很可怕。最保守的做法是：**只有剛好路過＋看到有座位才進去**，否則去一般 `pastelaria` 慢慢點，反而更舒服。
+如果你們想一次試很多種：美食市場（例如 [Time Out Market（Mercado da Ribeira）](https://www.google.com/maps/search/?api=1&query=Time%20Out%20Market%20Mercado%20da%20Ribeira%20Lisbon)）確實好比價、好挑；但人潮也常很可怕。最保守的做法是：只有剛好路過＋看到有座位才進去，否則去一般 `pastelaria` 慢慢點，反而更舒服。
 
 ### 獨特餐廳清單（賣的不只是食物：單一招牌/場景/故事）
+@card: 想吃到「比好吃更有記憶點」的那種體驗：這裡收單一招牌、場景感與故事型餐廳；挑一兩間當亮點餐就夠，不必把每晚都吃成任務。
 如果你想在里斯本吃到「比好吃更有記憶點」的那種體驗，下面這幾家常被旅人拿來當作代表：有的任性到幾乎只賣一道菜；有的把罐頭變成主題；有的賣的是夕陽與河面。
 
-1) **[Marisqueira Uma](https://www.google.com/maps/search/?api=1&query=Marisqueira%20Uma%20Lisbon)**：幾乎只專攻 `Arroz de Marisco`（海鮮湯飯）的傳奇小店  
+1) [Marisqueira Uma](https://www.google.com/maps/search/?api=1&query=Marisqueira%20Uma%20Lisbon)：幾乎只專攻 `Arroz de Marisco`（海鮮湯飯）的傳奇小店  
    - **為什麼獨特**：你不用研究菜單，很多人就是為了那一鍋湯飯而來。  
-   - **怎麼用最舒服**：店小又熱門，排隊常見；細節（份量、現金、碎殼提醒、避尖峰）本篇在 `海鮮` 段落已寫完整，直接照那段做最省腦。
+   - **怎麼排比較舒服**：店小又熱門，排隊常見；細節（份量、現金、碎殼提醒、避尖峰）本篇在 `海鮮` 段落已寫完整，直接照那段走就好。
 
-2) **[Sol e Pesca](https://www.google.com/maps/search/?api=1&query=Sol%20e%20Pesca%20Lisbon)**：把「魚罐頭」當成下酒菜/主題吃  
+2) [Sol e Pesca](https://www.google.com/maps/search/?api=1&query=Sol%20e%20Pesca%20Lisbon)：把「魚罐頭」當成下酒菜/主題吃  
    - **為什麼獨特**：從釣具店改造而來的空間感很強，主打葡萄牙 `conservas`（魚罐頭）文化，把罐頭用更有儀式感的方式端上桌。  
    - **提醒**：它在 `Pink Street` 一帶，夜晚氛圍更吵也更混雜；保守做法是白天/傍晚早一點去、坐著吃一盤就收工。
 
-3) **[Geographia](https://www.google.com/maps/search/?api=1&query=Geographia%20Lisbon)**：用「葡語世界」吃一張前殖民地風味地圖  
+3) [Geographia](https://www.google.com/maps/search/?api=1&query=Geographia%20Lisbon)：用「葡語世界」吃一張前殖民地風味地圖  
    - **為什麼獨特**：不是傳統葡國菜，而是把巴西、非洲葡語圈、果阿（印度）、澳門等元素做成融合菜。  
-   - **點法**：先點 1–2 道共享就好；遇到看不懂的香料/辣度，直接問店員最省腦（實際菜單以當天為準）。
+   - **點法**：先點 1–2 道共享就好；遇到看不懂的香料/辣度，直接問店員最準（實際菜單以當天為準）。
 
-4) **[Ponto Final](https://www.google.com/maps/search/?api=1&query=Ponto%20Final%20Cacilhas)**：坐在河邊碼頭看夕陽（風景值回票價）  
+4) [Ponto Final](https://www.google.com/maps/search/?api=1&query=Ponto%20Final%20Cacilhas)：坐在河邊碼頭看夕陽（風景值回票價）  
    - **為什麼獨特**：座位非常貼近碼頭邊緣，視野正對里斯本天際線與 4 月 25 日大橋。  
-   - **提醒**：熱門時段常需要訂位/等位；想省力就提早到，或把它當成「有訂到才去」的加分項。本篇 `Cacilhas` 段落有完整過河動線與備案。
+   - **提醒**：熱門時段常需要訂位/等位；想坐得舒服就提早到，或把它當成「有訂到才去」的加分項。本篇 `Cacilhas` 段落有完整過河動線與備案。
 
-5) **[Tu e Eu](https://www.google.com/maps/search/?api=1&query=Tu%20e%20Eu%20Lisbon)**：阿爾法瑪的小店（小到像在別人家廚房吃飯）  
+5) [Tu e Eu](https://www.google.com/maps/search/?api=1&query=Tu%20e%20Eu%20Lisbon)：阿爾法瑪的小店（小到像在別人家廚房吃飯）  
    - **為什麼獨特**：店很小、很有家庭感；很多人會被它的「故事感」打中。  
    - **招牌方向**：蒜味蝦這類「醬汁很香、用麵包沾著吃」的菜色常被提到；尖峰容易等，想少排隊就早點到。
 
-6) **[SEM](https://www.google.com/maps/search/?api=1&query=SEM%20Lisbon%20restaurant)**：零浪費（zero waste）概念的現代品嚐套餐  
+6) [SEM](https://www.google.com/maps/search/?api=1&query=SEM%20Lisbon%20restaurant)：零浪費（zero waste）概念的現代品嚐套餐  
    - **為什麼獨特**：把永續與創意料理結合，常見是多道式品嚐菜單。  
    - **提醒**：通常需要訂位、用餐時間也較長；如果不想吃「太實驗」或不想坐太久，這家就當作美食控加分項即可。
 
-7) **[Time Out Market（Mercado da Ribeira）](https://www.google.com/maps/search/?api=1&query=Time%20Out%20Market%20Mercado%20da%20Ribeira%20Lisbon)**：觀光但有「策展」概念的美食市場  
+7) [Time Out Market（Mercado da Ribeira）](https://www.google.com/maps/search/?api=1&query=Time%20Out%20Market%20Mercado%20da%20Ribeira%20Lisbon)：觀光但有「策展」概念的美食市場  
    - **為什麼獨特**：同一個屋簷下聚集很多名店/名廚攤位，你可以用一餐時間快速掃過里斯本的熱門味道。  
-   - **提醒**：人潮變化很大；最保守做法依然是：**看到有座位才進去**，不然寧可去一般餐廳坐著慢慢吃。
+   - **提醒**：人潮變化很大；最保守做法依然是：看到有座位才進去，不然寧可去一般餐廳坐著慢慢吃。
 
 #### 其他具體店家備忘（有順路再加，重點是「坐著吃」）
 - **[Dois Arcos](https://www.google.com/maps/search/?api=1&query=Dois%20Arcos%20Lisbon)**：偏在地 `tasca` 氣氛的小店型，常有人推薦「章魚飯/章魚燉飯」這種湯汁感米飯與蒜味海鮮類（以當天黑板/菜單為準）。店小可能要等；抓早一點的用餐時段更舒服。
@@ -702,194 +820,178 @@ Alfama 上下坡多，穿防滑好走的鞋。真的卡在上坡段就短程計�
 - **[Casa das Artes](https://www.google.com/maps/search/?api=1&query=Casa%20das%20Artes%20Almada)**：把「過河」變成行程的一部分，找更像家常小店的氛圍（以當天供應為準）。坐渡輪本身就很加分；回程晚了就直接叫車回住宿，別硬走坡路。
 
 ### 肉控 CP：巴西烤肉 Rodízio（想吃肉再選）
-里斯本巴西移民多，所以巴西料理選擇也不少。若你們這趟想用一餐「快速補蛋白質」、又不想研究菜單，`rodízio / churrascaria` 這種桌邊現切的烤肉吃到飽，很多人會覺得 CP 值很高。
+@card: Rodízio 30 秒上手：先自助吧拿「飯/豆/蔬菜」→ ::綠牌:: 吃肉、::紅牌:: 暫停 → 看到 `picanha` 再上 → 肉桂鳳梨收尾。
+里斯本巴西移民多，所以 `rodízio / churrascaria` 這種桌邊現切的烤肉吃到飽也很常見。它的定位很清楚：用一餐把蛋白質補滿、吃的是熱鬧與豪邁，不用把它期待成精緻料理。選店時就挑住宿附近、評價穩、而且有清楚標示 `rodízio` 固定價位方案的店即可（午晚餐價位、包含項目以店家當天為準）。
 
-- **怎麼找最省腦**：挑你們住宿附近、評價穩的店，確認它有 `rodízio`（固定價位）方案即可（午晚餐價位、包含項目、以店家當天為準）。
+#### 進場流程（照順序做就好）
+1. 先去自助吧拿一點米飯/豆子類＋一兩樣熟蔬菜，先把胃「墊」起來（味覺比較不容易一路疲勞）。
+2. 把牌子翻 ::綠牌::，開始接桌邊現切的肉串（供應輪替以當天為準）。
+3. 覺得鹹/油或想休息就翻 ::紅牌::，去喝水、拿配菜、緩一下，再回來翻綠。
+4. 想吃經典部位就直接點名：例如 `picanha`，可以問服務生有沒有（供應與切法各店差很多，以現場為準）。
+5. 最後用肉桂烤鳳梨（grilled pineapple w/ cinnamon）收尾：酸甜＋肉桂香很能把油脂感拉回來（以當天供應為準）。
+
+#### 紅綠牌（你只要記兩句）
+Rodízio 不用自己夾肉：服務生會拿著肉串走到桌邊現切；你只要用桌牌控制節奏就好。
+- ::綠牌:: ＝ 繼續上肉（不想吃也可以直接說不要或少拿一點）
+- ::紅牌:: ＝ 暫停（去自助吧/喝水/休息一下，再翻綠）
 
 #### 亞洲胃比較容易覺得「親切」的品項（看到就會懂）
-- **雞心（chicken hearts / coração）**：是巴西烤肉的經典之一；喜歡內臟類的人常會很買單。
-- **黑香腸（blood sausage，常見會寫 `morcela`）**：很多人會形容「有點像中式臘腸/血腸的方向感」，煙燻味重。
-- **蒜香/起司麵包（蒜味麵包 or `pão de queijo` 等）**：不一定每家都有「蒜味起司麵包」這種固定名稱，但巴西烤肉店常會出現偏重口味的麵包/起司點心；看到就可以拿一點配肉吃。
-- **黑豆飯/黑豆燉（`feijão` / `feijoada` 類）＋炸香蕉**：這組合很多亞洲旅人會覺得「像熱便當配菜」，吃起來很能安撫胃。
+- **雞心（chicken hearts / coração）**：巴西烤肉經典之一，喜歡內臟的人常會很買單。
+- **黑香腸（blood sausage，常見寫 `morcela`）**：煙燻味重，有人會覺得像中式臘腸/血腸。
+- **蒜香/起司麵包（蒜味麵包 or `pão de queijo` 等）**：看到就拿一點配肉吃。
+- **黑豆飯/黑豆燉（`feijão` / `feijoada` 類）＋炸香蕉**：很多人形容像「熱便當配菜」，很能安撫胃。
 
-#### 自助吧怎麼拿（想吃得更像「家常熱食」）
-除了桌邊現切的肉，很多人真正覺得「像家鄉味」的部分反而在熱食自助吧：米飯、燉肉/燉豆、熟蔬菜這種溫熱配菜，口味常被形容更貼近「家常燉煮」而不是陌生香料（各店做法差很多，以當天為準）。
-
-- **優先順序（省腦版）**：先拿一點米飯/豆子類 + 一兩樣熟蔬菜，再配肉；這樣比較不會一路吃肉吃到太膩、也比較好消化。
-- **你可能會看到的配菜方向**：木薯（cassava）、地瓜（sweet potato）、黑橄欖等；想嘗鮮就少量拿一點就好。
-
-#### 現場玩法（紅綠牌）＋甜點彩蛋
-- **紅綠牌制度（核心玩法）**：桌上常見一個小圓牌/小卡片，兩面是綠/紅，操作超直觀。
-  - **綠色朝上**＝「我要吃肉，儘管上」：服務生會拿著肉串走到桌邊現切（供應的肉類輪替以各店為準）。
-  - **紅色朝上**＝「暫停/吃飽了」：你想先去沙拉吧、想休息、或已經收工，就翻紅讓他先別上肉。覺得鹹/油或想緩一下時，翻紅真的很好用。
-  - **小撇步：綠色也可以拒絕**：就算你翻綠，服務生端來你不想吃的肉（常見像香腸/雞翅等），你也可以直接說不要、少拿一點，留肚子等你更想吃的部位（例如 `picanha`；供應與切法各店差很多，以現場為準）。
-- **肉桂烤鳳梨（grilled pineapple w/ cinnamon）**：不少店會把它當成「解膩收尾」——酸甜＋肉桂香，很多人甚至覺得比肉更驚喜。
-  - **怎麼吃更爽**：試試把鳳梨跟牛肉一起吃或交替吃，酸甜會把油脂感拉回來；如果你們那天肉吃到有點膩，這一口通常很救命（以當天供應為準）。
-
-#### 小撇步（別被「便宜肉」塞爆）
-- 剛開始上桌的往往會先從香腸/雞肉等比較「容易出」的品項開始。你們想把肚子留給更想吃的部位時，可以**少拿一點、或直接翻紅休息**，等下一輪再說。
-- 想吃比較經典的牛肉部位（例如 `picanha`），保守做法是直接問服務生「有沒有這個」或等他端著肉串來時再拿（供應與切法各店差很多，以現場為準）。
-
-- **小提醒**：這類通常偏鹹、偏油、份量又大；牙口/腸胃敏感的人不一定舒服。保守做法是兩人共享節奏、不要硬吃到回本，把它當成「想吃肉的那一天」再去就好（尤其別安排在要爬坡的時段）。
+#### 小提醒（這餐通常偏重）
+口味多半偏鹹、偏油、份量也大；牙口/腸胃敏感的人不一定舒服。兩人慢慢吃、共享節奏，吃到舒服就停就好。
 
 ### Rosa da Rua（高 CP 家常體驗：像在葡萄牙人家裡吃飯）
+@card: 家常自助節奏的踏實感：像在葡萄牙人家裡吃飯，不用研究菜單也能吃飽；適合把它當作一餐穩定器，讓行程回到舒服的日常節奏。
+
 如果你們想要「不用研究菜單、吃得飽又不太貴」的方向，[Rosa da Rua](https://www.google.com/maps/search/?api=1&query=Rosa%20da%20Rua%20Lisbon) 這種偏家常/自助節奏的店型可以參考。
 
 對亞洲旅人來說，它的價值常不在「多厲害的名菜」，而在「終於可以吃到像家常的熱食」——尤其是旅行幾天後，想要熱湯與熱蔬菜的那種時刻。
 
-- **熱蔬菜（cooked vegetables）很多**：不少人會把它當成「補纖維、補青菜」的地方；對覺得歐洲旅行容易蔬菜不足的人很加分（實際當天供應以現場為準）。
-- **有熱湯（soup）就先拿一碗**：葡萄牙本來就有喝湯文化（例如 `Caldo Verde` 這類方向），對「湯胃」很療癒，也很適合拿來暖胃。
-- **燉煮/濕潤菜色比例高**：家常燉肉、燉豆、帶醬汁的配菜這類，口感通常比較軟、也更像「熱食套餐」的方向；不太需要用力咀嚼。
+Rosa da Rua 這種家常自助型餐廳，最打中亞洲胃的通常是兩件事：第一是「熱蔬菜真的很多」，你會看到一排燉煮蔬菜、豆類、帶醬汁的配菜，口感軟、熱度夠，很像在吃一份踏實的熱食套餐；第二是「熱湯文化」，這在葡萄牙很典型。看到 `Caldo Verde` 可以直接試：它不是清湯，而是用馬鈴薯泥打底的濃湯，裡面有切得很細的青菜（常被形容像 collard greens / kale 的方向）和幾片香腸提味，熱熱喝下去會很暖、也很有飽足感。
 
-- **怎麼吃比較舒服**：你們可以用「少量多樣」的方式吃——先湯、再蔬菜、再挑一兩個燉菜/主菜，吃到舒服就停，不用硬撐到回本。
-- **小提醒（計價/形式）**：是否為吃到飽、自助規則、以及價格都可能會變。保守做法是到現場先看價目/問清楚再拿菜；想避開人潮就早點到。
+如果你們剛好遇到比較傳統的燉菜（例如 `Cozido à Portuguesa` 這種把肉類、香腸和大量蔬菜一起燉的家常大鍋），或是 `Arroz de Feijão`（豆子飯/豆子湯飯）這類帶湯汁的主食，也很值得拿一點試試：它們的共同點就是「濕潤、好吞、很家常」。吃法上就照你們身體想要的節奏來：先一碗湯、再多拿蔬菜，最後挑一兩樣燉菜當主角就好。
+
+計價與形式方面，旅人常把 Rosa da Rua 形容成「吃到飽/自助」路線，價位有人分享約每人 `€20` 左右、可能含飲料與甜點，但規則與價格都會變動，現場菜單/店員說明為準；如果不想遇到人潮，抓開門前後去通常會更從容。
 
 ### Francesinha（濕搭搭三明治）：罪惡但建議兩人分食
-`Francesinha` 是源自波多的重口味料理，在里斯本也常找得到：火腿/香腸/肉排堆疊，上面蓋融化起司，再淋番茄＋啤酒系的醬汁。它的正確定位不是「精緻」，而是「熱量很爽」。
+@card: `Francesinha` 的正確定位不是精緻，而是「熱量很爽」：起司＋醬汁＋肉堆疊，建議分食當體驗就好，吃的是葡式重口味的存在感。
+`Francesinha` 是源自波多（Porto）的重口味料理，在里斯本也常找得到。它的組成本身就是為了「極致飽足與高熱量」而生：兩片吐司之間會堆疊火腿、培根、香腸，很多版本還會夾一整塊肉排；外層再用融化起司把整個三明治包起來，有些店還會在頂部加一顆半熟蛋，畫面非常邪惡。
 
-- **怎麼吃最不後悔**：兩人分一份最剛好；旁邊點個沙拉或只配飲料就行。吃完要走上坡的行程就別安排在同一段。
+之所以會被形容成「濕搭搭」，靈魂其實在醬汁：常見以番茄＋啤酒為基底，帶微酸、微辣的方向（有人會嚐到像番茄湯、或覺得有芥末/辣醬的影子，各店配方差很多，以你們當天吃到的為準）。它一方面讓整份三明治更濕潤，一方面也用酸辣去中和大量肉與起司的油膩感。
+
+也因此，最推薦的吃法就是兩人分食，把它當成「一餐裡的重口味亮點」：一份通常份量很驚人，兩個人一起吃剛好停在「覺得好吃」的階段，不容易吃到後面開始覺得膩。另有旅人提到，夾在裡面的牛排有時可能偏熟或帶筋，咀嚼久了會有點累；分食會更舒服。旁邊如果再配一份沙拉、或乾脆只配飲料，整體體感會更平衡；吃完如果接著要安排很多上坡路段，可能就會覺得更重一點。
 
 ### 海鮮：把「很值得的一餐」留在這裡
-想吃葡萄牙海鮮，最舒服的策略是：**不要在最觀光的主街硬吃**，改找海鮮專門店（marisqueira / cervejaria），或乾脆過河到 Cacilhas，環境更鬆、景色更值。
+@card: 想吃葡萄牙海鮮，把值得的一餐留給專門店：避開最觀光主街，改去 `marisqueira` 或過河到 Cacilhas，環境更鬆、景色也更值。
+想吃葡萄牙海鮮，最舒服的策略是：避開 Baixa/Chiado 這種觀光強度很高、門口常有人拉客的主街餐廳，把海鮮留給「海鮮專門店」（`marisqueira / cervejaria`）或乾脆過河到對岸（Cacilhas/Almada）。渡輪一過去，氣氛會明顯變得更放鬆、更在地；像河岸的 Ponto Final 這種「坐在河邊看夕陽吃海鮮」的體驗，很多人願意為了那個景色與氛圍排隊（熱門時段也常被建議提早規劃，以現場/訂位狀況為準）。
 
-先記幾個很省腦的關鍵字（看到就會點）：
+至於點菜，記住四道經典就夠用，而且每一道的「口感想像」其實很明確。`Arroz de Marisco`（海鮮湯飯，常被形容 `malandrinho`）走的是濕潤、帶湯汁的路線，更像一鍋濃郁海鮮粥/雜炊，跟西班牙 `paella` 的乾爽完全不同；有些店會保留一點米心口感，覺得偏硬也算常見的葡式風格。`Polvo à Lagareiro`（章魚）則是「章魚腳很大但很軟」的代表菜，通常配大量橄欖油與烤馬鈴薯，蒜香和油脂感很迷人。`Bacalhau à Brás` 是把撕碎的鹽醃鱈魚、洋蔥、極細炸薯絲和蛋液炒成滑嫩濕潤的家常味，口感有層次、也幾乎不用擔心魚刺；坊間也常有人把它當作「入門必點」。`Arroz de Tamboril`（鮟鱇魚燉飯/湯飯）則很適合想吃魚又不想挑刺的人：鮟鱇魚肉質結實、細刺少，湯底常見會帶番茄與香草的方向（各店做法差很多，以當天為準）。
 
-- **Arroz de Marisco（海鮮湯飯，Malandrinho）**：像海鮮粥／海鮮湯飯，暖胃、濕潤、好入口（米心是否偏硬、各店差很多；先把它當「湯飯」來吃比較不會落差）。
-- **Polvo à Lagareiro（烤章魚）**：章魚通常很軟嫩，配馬鈴薯和橄欖油，也好咀嚼。
-- **Bacalhau à Brás**：撕碎魚肉＋蛋液，濕潤好入口，也比較不用擔心魚刺。
-- **Arroz de Tamboril（鮟鱇魚燉飯）**：想吃魚但不想挑刺時很加分。
+最後兩個搭配的小加分：吃海鮮時點一杯葡萄牙的 `Vinho Verde`（綠酒）很常見，它清爽、酸度高、微微氣泡感很解膩；如果桌上有 `piri-piri`，想提鮮可以少量加一點，味道會更立體。
 
-#### 推薦餐廳（依「省力程度」排序）
+#### 推薦餐廳（依體驗風格排序）
 
 ##### 1) [Marisqueira Uma](https://www.google.com/maps/search/?api=1&query=Marisqueira%20Uma%20Lisbon)：專注海鮮湯飯的傳奇小店
-它在里斯本算是「很傳奇」的那種老店：店小、節奏很有個性，而且幾乎把全部的心力都放在同一件事上 —— **Arroz de Marisco（海鮮湯飯）**。
+它在里斯本算是「很傳奇」的那種老店：店小、節奏很有個性，而且幾乎把全部的心力都放在同一件事上 —— Arroz de Marisco（海鮮湯飯）。
 
-為什麼省腦、好控節奏：
+Uma 的迷人之處，在於它那種「老派又任性」的專注：店面不大、節奏很直接，幾乎把火力都押在 `Arroz de Marisco` 這一道。你們來這裡吃的，不只是海鮮本身，還有那種把一件事做到很徹底的老店氣場。
 
-- **點餐超省腦**：很多人喜歡它的原因之一就是「不用研究菜單」。你們就是來吃海鮮湯飯的，坐下來跟著店家節奏走就好。
-- **口感更接近粥／湯飯**：它不是西班牙 paella 那種偏乾、米心偏硬的路線，而是帶湯汁的（常被形容成 `malandrinho` 風格）。熱騰騰、濕潤、好吞嚥，對喜歡熱食的人很友善。
-  - **你可以把它想成「海鮮湯泡飯」**：米飯吸滿海鮮高湯，精華常在「湯汁＋米飯」那個整體口感，而不是只吃海鮮料。
-  - **常見湯底方向**：番茄/洋蔥/蒜頭一類的底味再疊上海鮮熬出來的鮮甜（各店做法差很多，以你們當天吃到的為準）。
-  - **想吃辣再加 `piri-piri`**：加一點會更提鮮，但保守建議先少量試試。
-- **一鍋料很豪邁**：常見會有蝦、淡菜、蟹類等帶殼海鮮（當天用什麼以現場為準），湯頭是那種「熬出來」的鮮甜。
+而 `Arroz de Marisco` 在葡萄牙常被形容是 `malandrinho` 風格：它不是西班牙 `paella` 那種偏乾的飯，而是帶湯汁、介於濃湯與雜炊之間的口感。可以把它想成「海鮮湯泡飯」——米飯吸滿海鮮高湯，精華常在「湯汁＋米飯」那個整體的鮮味與熱度；常見會有番茄/洋蔥/蒜頭等底味，再疊上海鮮熬出的甜（各店做法差很多，以你們當天吃到的為準）。另外也先講清楚一個常見落差：有些店會留一點米心；如果你們偏好更軟的口感，可以試著問能不能做 `bem cozido / mais cozido`（能不能調整以現場為準）。
 
-注意事項（這幾個先記起來）：
+至於料的豪邁感也很有記憶點：常見會有蝦、淡菜、蟹類等帶殼海鮮（當天用什麼以現場為準），湯頭是那種「熬出來」的鮮甜。
 
-- **現金**：不少旅人提到它可能偏向 **cash only**。保守做法是身上準備一些歐元現金，避免結帳時卡住。
-- **份量**：湯飯通常很有存在感；兩人建議先以「一份主菜＋少量其他」為原則，不要一開始點太多前菜。若你們食量小，可以先問店家能不能兩人分一份（各店規則不同，以現場為準）。
-- **排隊**：店面不大又熱門，尖峰可能要等；也有旅人分享即使離峰時間仍可能客滿。想把站著排隊的時間降到最低，就抓開門附近的時間去，或把它當成「有排到就吃」的加分項。
-  - **訂位/候位規則**：不少旅人分享它的規則可能偏「看當天狀況」——例如只在特定條件下接受訂位（有人提到 6 人以上才有機會），但最保守的做法是**不要把訂位當成保證**，直接提早到現場確認。
-- **碎殼提醒**：帶殼海鮮一起燉煮時，偶爾可能會有碎殼混在飯裡；吃的時候放慢一點、口腔敏感的人更要注意。
+吃之前先知道的幾件事：不少旅人分享它可能偏向 `cash only`，身上備一點歐元現金比較安心；湯飯通常是一大鍋的存在感，兩人多半「一份主菜＋少量其他」就很夠，食量小也可以先問能不能兩人分一份（各店規則不同，以現場為準）。另外店小又熱門，尖峰等候算常態，開門前後通常機率比較高；至於訂位/候位規則，旅人分享多半偏「看當天狀況」（也有人提到 6 人以上才有機會），不要把訂位當成保證，到現場以店家安排為準。最後一個小提醒：帶殼海鮮一起燉煮時，偶爾可能會有碎殼混在飯裡，吃的時候放慢一點、口腔敏感的人更要注意。
 
 ##### 2) Cacilhas 看景海鮮：把「過河」當成行程的一部分
 你可以從 [Cais do Sodré](https://www.google.com/maps/search/?api=1&query=Cais%20do%20Sodr%C3%A9%20Lisbon) 搭渡輪到對岸 Cacilhas（約 10–15 分鐘），晚餐配夕陽很穩。
 
 - **首選**：[Ponto Final](https://www.google.com/maps/search/?api=1&query=Ponto%20Final%20Cacilhas)（河岸景觀非常強）
-  - **建議**：熱門時段通常需要訂位／等位，想省力就提早去，或把它當成「有訂到就去」的加分項
+  - **建議**：熱門時段通常需要訂位／等位，想坐得舒服就提早去，或把它當成「有訂到就去」的加分項
 - **備案**：[Atira-te ao Rio](https://www.google.com/maps/search/?api=1&query=Atira-te%20ao%20Rio%20Cacilhas)
 
 ##### 3) [Último Porto](https://www.google.com/maps/search/?api=1&query=%C3%9Altimo%20Porto%20Lisbon)：碼頭深處的炭烤鮮魚
-- **適合的情境**：你們想吃「很在地的烤魚」，又不想在人潮裡擠
-- **到達方式**：位置相對偏，**直接 Uber/Bolt** 最省心
-- **點法**：當天魚獲用炭火烤，魚肉新鮮就是賣點
+Último Porto 的魅力很直接：它主打「當天捕獲的新鮮魚貨（fresh local caught that day）」，用很在地、很不花俏的方式把魚的品質端上桌。跟市中心那些觀光感比較重的海鮮餐廳相比，這裡更像是在碼頭區吃到的那種樸實海味；如果你們想把「里斯本的優質海鮮」留給一間更在地的店，它會是很漂亮的一筆。
 
-##### 4) [Tu e Eu](https://www.google.com/maps/search/?api=1&query=Tu%20e%20Eu%20Lisbon)：阿爾法瑪區的小店（走累了就吃這種）
-- **招牌常見**：蒜味蝦（Garlic Shrimp）這類「醬汁很香、可以配麵包」的菜色
-- **小提醒**：店小、尖峰可能要等；想少排隊就**避開最晚的用餐尖峰**，早點到更舒服
+它的位置在市中心外的碼頭區（docks），不是那種散步會順路走到的地方，因此比較實際的做法是搭交通工具前往——多數人會直接叫車（例如 Uber/Bolt）過去。點餐時就照當天魚獲走：看店家今天有哪些魚、想吃哪種口感就點哪種，讓「新鮮」當主角（實際魚種與烹調方式以當天供應為準）。
 
-##### 5) [Cervejaria Ramiro](https://www.google.com/maps/search/?api=1&query=Cervejaria%20Ramiro%20Lisbon) 類型的海鮮啤酒屋：海鮮展示櫃＋熱鬧氣氛
-- **適合的情境**：想吃「蝦蟹很豪邁」的海鮮大餐
-- **常見點法**：大蝦、蒜味蝦、螃蟹等（通常需要剝殼／敲殼；如果不想花力氣處理殼類，就改點湯飯/章魚這種比較省事的）
+##### 4) [Tu e Eu](https://www.google.com/maps/search/?api=1&query=Tu%20e%20Eu%20Lisbon)：阿爾法瑪區的家庭式小館（很有人情味）
+Tu e Eu 的風格和前面那種「海鮮專門、場面很大」的店不太一樣，它更像一間小小的家庭式餐館：空間不大，但氣氛很有人情味，也因此常被旅人說「這家賣的不只是食物，也賣故事」。
 
-很多海鮮啤酒屋還有一個很有趣的在地習慣：**海鮮吃到尾聲，來一份 `Prego` 當作「甜點」**。它不是甜的，而是拿它做「收尾」：海鮮多是蛋白質、又要剝殼慢慢吃，吃完有時會覺得「好像還缺一點澱粉」。這時一個蒜香牛排三明治上桌，飽足感直接補齊，也把味道拉回更厚實的句點。
+最常被點名的招牌是蒜味蝦（Garlic Shrimp）。很多分享都會特別提到它的醬汁很有記憶點，強烈建議一定要點麵包，把醬汁沾到最後一口；也有人會配白飯一起吃，等於把這道菜當作整桌的靈魂（實際搭配與份量以當天為準）。
+
+關於背景故事，有旅人提到店主是一位令人敬佩的女士，菜單上印著她在後來人生重新開始、展現韌性的經歷，讀完會讓人對這間小店多一層情感連結（若你們當天看到菜單，也可以花一分鐘讀一下）。
+
+用餐上要有心理準備：不少分享提到它不接受訂位（no reservations），晚餐時段可能需要排隊；如果你們想把「等位」的變數降到最低，很多人會建議抓午餐剛開門（約 `12:00`）去比較容易入座。位置在阿爾法瑪區，靠近郵輪停靠處上方一帶、相對隱密，走過頭很正常，就當作在巷弄裡尋寶。價格方面，有旅人分享兩人點兩份蒜味蝦、兩杯飲料、共享一份飯和麵包，總共約 `€40` 左右；不過價位會隨時間調整，保守就以現場菜單為準。
+
 
 小筆記（Prego vs Bifana）：
 
 - **Prego（Prego no Pão）**：牛排三明治，常見於海鮮啤酒屋當作結尾；蒜香很重，飽足感也更強。
 - **Bifana**：豬扒包，更多是街頭小吃／快速午餐；常見更濕潤、也更好入口（本篇上面有寫吃法與店家）。
 
-建議：如果服務生問要不要 Prego，**兩人分一份就好**；若你們那天狀態比較普通，就把它當「嚐文化」的小收尾，不必硬把一整份吃完。
+建議：如果服務生問要不要 Prego，兩人分一份就好；若你們那天狀態比較普通，就把它當「嚐文化」的小收尾，不必硬把一整份吃完。
 
-如果你們**不吃牛**，或擔心牛排比較難咀嚼，收尾也有很在地的替代選擇：
+如果你們不吃牛，或擔心牛排比較難咀嚼，收尾也有很在地的替代選擇：
 
-- **首選：Bifana**（豬扒包）—— 通常比 Prego 更軟嫩，也比較常見「濕潤好入口」的口感；點法與店家本篇上面已整理。
-- **輕量收尾：Salgados（葡式鹹點/炸物小點）** —— 很多餐廳/咖啡店會有玻璃櫃，一口一個，不會太撐。
-  - **Pastéis de Bacalhau**（馬介休球/炸鱈魚餅）：外酥內綿，內餡有馬鈴薯泥，通常好入口。
+- 首選：Bifana（豬扒包）—— 通常比 Prego 更軟嫩，也比較常見「濕潤好入口」的口感；點法與店家本篇上面已整理。
+- 輕量收尾：Salgados（葡式鹹點/炸物小點） —— 很多餐廳/咖啡店會有玻璃櫃，一口一個，不會太撐。
+  - `Pastéis de Bacalhau`（馬介休球/炸鱈魚餅）：外酥內綿，內餡有馬鈴薯泥，通常好入口。
     - **起司爆漿版（com Queijo da Serra）**：有些專賣店會把起司包在中間，趁熱咬下去會流出來；很有「體驗感」，但通常也更貴、更偏商業化。常見店型例如 [Casa Portuguesa do Pastel de Bacalhau](https://www.google.com/maps/search/?api=1&query=Casa%20Portuguesa%20do%20Pastel%20de%20Bacalhau%20Lisbon)。
-      - **市場/美食廣場也可能買得到「起司版」**：像 [Time Out Market（Mercado da Ribeira）](https://www.google.com/maps/search/?api=1&query=Time%20Out%20Market%20Mercado%20da%20Ribeira%20Lisbon) 這種美食廣場，有機會在攤位看到起司口味，甚至偶爾也會出現加入 **Padrón 青椒（pimentos padrón）** 的變化版。不過「咬下去會流心爆漿」那種視覺效果，多半還是專賣店的招牌強項。
+      - **市場/美食廣場也可能買得到「起司版」**：像 [Time Out Market（Mercado da Ribeira）](https://www.google.com/maps/search/?api=1&query=Time%20Out%20Market%20Mercado%20da%20Ribeira%20Lisbon) 這種美食廣場，有機會在攤位看到起司口味，甚至偶爾也會出現加入 `Padrón 青椒（pimentos padrón）` 的變化版。不過「咬下去會流心爆漿」那種視覺效果，多半還是專賣店的招牌強項。
       - **傳統市場/超市通常以原味為主**：例如 [Mercado de Campo de Ourique](https://www.google.com/maps/search/?api=1&query=Mercado%20de%20Campo%20de%20Ourique%20Lisbon) 這類比較在地的市場，多半是傳統版本；超市（冷藏/冷凍或半成品）也常買得到，但口感通常無法跟「現炸熱騰騰」的版本比。
-    - **創意配料/醬料**：有些餐廳會加果醬、醃漬洋蔥等做成前菜版本；或搭一點 **piri-piri** 讓味道更開胃（保守建議少量試試）。
+    - **創意配料/醬料**：有些餐廳會加果醬、醃漬洋蔥等做成前菜版本；或搭一點 `piri-piri` 讓味道更開胃（保守建議少量試試）。
     - **如果想把它吃成「一餐」**：在餐廳把它當 `prato`（主菜）或 `petiscos`（佐酒小食）點時，有時會搭配一些更「正餐型」的配菜，吃起來就不只是點心。
       - **Arroz de Feijão（豆子燉飯/豆飯）**：帶湯汁、口感濕潤；也能把炸物的口感拉得更順、更不乾。
       - **清爽冷盤/沙拉**：像章魚沙拉、豆子沙拉、或帶柑橘的沙拉，用酸味把炸物的油感收掉（實際搭配以店家為準）。
       - **piri-piri**：想提味就加一點點即可（保守建議少量試）。
-  - **Rissóis de Camarão**（炸蝦餃/蝦餅）：蝦仁＋白醬的熱食小點，適合當鹹食收尾。
-  - **Croquetes de Carne**（可樂餅）：如果「牛肉製品可以接受」但不想吃牛排，這種通常是燉煮肉泥口感，咀嚼負擔相對低。
-- **Pão com Chouriço（香腸麵包）** —— 熱的時候很香，但麵包本體可能稍有嚼勁；當成「想吃澱粉但不想吃牛排包」的備案就好。
+  - `Rissóis de Camarão`（炸蝦餃/蝦餅）：蝦仁＋白醬的熱食小點，適合當鹹食收尾。
+  - `Croquetes de Carne`（可樂餅）：如果「牛肉製品可以接受」但不想吃牛排，這種通常是燉煮肉泥口感，咀嚼負擔相對低。
+- Pão com Chouriço（香腸麵包） —— 熱的時候很香，但麵包本體可能稍有嚼勁；當成「想吃澱粉但不想吃牛排包」的備案就好。
 
 ### 點餐與用餐小貼士（少踩雷版）
-- **餐廳入座小菜（couvert）多半要收費**：不想吃就一開始請他收走（或不要動它），避免不必要的加價。更多避免踩雷的細節也可看本篇 `safety`。
-- **現金與刷卡**：小店/老店偶爾會遇到 **cash only**、或刷卡機狀況不穩。保守做法是身上備一點歐元現金；不確定就先問一句「Can I pay by card?」再點餐最省心（以店家規則為準）。
-- **小費**：通常不強制。很多人會用「無條件進位」或留一點零錢當作心意；如果服務特別好，也有人會留到一個你覺得舒服的比例（各人習慣不同）。刷卡想加小費時，常見做法是直接跟店員說「刷這個總額」即可（流程以店家機台為準）。
-- **用餐時間**：葡萄牙晚餐偏晚。想要少排隊、也比較好控節奏，保守做法是 **19:00 開門就到**。
-- **份量**：葡萄牙餐廳份量常偏大；像湯飯/燉飯這種「兩人份」通常很有存在感，兩人點一份主餐再加一個前菜/沙拉通常就夠。
-- **鹹度**：像 bacalhau（鹽醃鱈魚）有時會偏鹹；可以試著跟店家說 **Pouco sal（少鹽）** 或 **Less salt**，或搭配白飯／馬鈴薯一起吃會更順。
-- **語言禮儀（小細節但很加分）**：不確定要說什麼就直接講英文最安全；有些人會提醒「別一開口就用西班牙文」以免讓對方覺得你把兩國混在一起。想要一句在地感，謝謝是 **Obrigado（男）/ Obrigada（女）**（發音與用法以現場多聽多用即可）。
-- **名店內用小技巧**：像 `Pastéis de Belém` 這種店，門口隊伍常是外帶隊。你們如果要內用，通常可以直接進去找座位/跟著店員指引走（以現場動線為準；本篇 `practical` 也有寫做法）。
+@card: 入座後先做 30 秒檢查：::couvert:: 要不要、::卡/現金:: 先問、::份量:: 先抓住；其餘用這段快速對齊就不太會踩雷。
 
-### 快速總結（如果你只想記 4 件事）
-- **Manteigaria 蛋塔**：不想排 Belém 的隊伍時，用它在市區補上蛋塔體驗就好。
-- **bifana**：省腦主食，常見濕潤、比較不費力。
-- **Arroz de Marisco / Polvo à Lagareiro**：海鮮湯飯＋烤章魚，偏濕潤、通常好入口。
-- **Cacilhas 渡輪＋海鮮**：過河吃晚餐兼收景色回報。
+#### 入座後 30 秒檢查（照順序掃一遍）
+1. ::couvert::（麵包/橄欖/起司/奶油）多半要收費；不想吃就一開始請他收走，或乾脆不要碰它（以店家為準）。
+2. ::付款:: 先問能不能刷卡。有些小店/老店可能 `cash only`，刷卡機也可能不穩；身上備一點歐元現金（小面額）會比較自在。
+3. ::份量:: 多數餐廳份量偏大；兩人常見是「1 份主菜＋1 份前菜/沙拉」就很夠。像海鮮湯飯/燉飯（Seafood Rice）這類常按人頭計價但端上來是一大鍋。
+4. ::用餐時間:: 晚餐常見落在 `20:00–22:00`；很多店 `19:00–19:30` 左右開門，但熱鬧通常更晚才開始。
+5. ::怕鹹:: bacalhau（鹽醃鱈魚）有時會偏鹹；可以說 `Pouco sal` / `Less salt`，或搭配白飯/馬鈴薯一起吃會更順（能不能調整以店家為準）。
+6. ::一句在地謝謝:: `Obrigado（男）/ Obrigada（女）`；想安全就直接講英文，也別一開口就用西班牙文（例如「Gracias」）。
+7. ::名店排隊判斷:: 像 `Pastéis de Belém` 這種店，門口長隊伍常是外帶隊；內用動線/找位子方式可能完全不一樣，進去跟著店員指引走通常更順（以現場為準）。
 
-## photo
-
-![貝倫塔（Belém Tower / Torre de Belém）](https://source.unsplash.com/djtkAFkVcjw/1600x1000)
-
-河岸景點外觀、眺望點取景（夕陽/夜景）、纜車坡道/電車街景，都是里斯本的代表畫面。拍照不要追車，站定拍一張就好。
+#### 小費怎麼留（不強制）
+- 常見做法是「進位」或留零錢當心意；服務特別好，留 `5%–10%` 也算常見。
+- 刷卡想加小費時，通常要主動跟店員說你希望刷的總額（例如帳單 50 歐，請他刷 55 歐；以機台流程為準）。
 
 ## safety
 
 ### avoidTouristTraps
-這裡只收一些「跟交通無關、但很常踩雷」的點。重點是讓你少花冤枉錢、也少被影響心情。
+@card: 觀光陷阱速讀：拉客、假導覽與各種小騙局的底線做法都在這裡；記住幾條規則就能少花冤枉錢，也少被影響心情。
+這段只收一些「跟交通無關、但很常踩雷」的點。把它當幾條規則記住：少花冤枉錢，也少被影響心情。
 
-**提款與匯率**
-路上那種藍黃配色的 `Euronet` ATM，常見就是匯率與手續費偏不友善。要提款建議找有 `Multibanco` 標誌或本地銀行的機台。
+> 一句話原則：任何地方問你「要不要幫你換匯」，大多時候選 `EUR`（以歐元結算）最穩；把匯率交回你的發卡銀行處理。
 
-如果畫面跳出「要不要幫你換匯」，保守做法是選「以歐元結算／不要換匯」，把匯率交回你的發卡銀行處理。
+### 提款、刷卡、匯率：先擋掉 DCC（動態貨幣換算）
+@card: 看到「幫你換匯」就選 EUR／Decline conversion。
+實務上最簡單的順序是：提款先避開路上那種藍黃配色、很常見的 `Euronet`，改找有 `Multibanco` 標誌或本地銀行的 ATM（規則通常更透明）。不管是提款還是刷卡，只要螢幕問你「要不要幫你換匯」，保守做法就選「以歐元結算／不要換匯」（`Charge in EUR` / `Decline conversion`），把匯率交回你的發卡銀行處理。
 
-**路邊搭訕與騙術**
-有人突然靠很近、很熱情、硬要送你東西，通常不是好事。遇到手環硬套、街頭兜售「神秘物質」、或 Pink Street/Baixa 一帶的搭訕，最好的回應是不接招、不停下。
+### 路邊搭訕與騙術：不接招、不停下
+@card: 不拿、不回應、不停下；往人多/有店家的方向走。
+常見的套路是突然靠很近、硬要送你東西/套手環、兜售「神秘物質」，或在 Pink Street / Baixa 一帶用聊天把你「停住」。最好用的反應很單純：不拿、不回應、不停下，直接繼續走；如果對方還跟上來，就往人多或有店家的方向走。人潮多的地方也順手做基本防偷：包包轉到胸前、拉鍊朝內，手機別放外側口袋；夜間移動走亮的大路、不為抄近路鑽小巷，必要時改搭大眾運輸或短程 Uber/Bolt 回住宿。
 
-人多的地方把包包轉到胸前、拉鍊朝內；手機不要放外側口袋。夜間移動走亮的大路，不為抄近路鑽小巷；需要就改搭大眾運輸或短程計程車回住宿。
+### 吃飯的小坑：看店型、先問規則
+@card: 拉客＋大照片菜單不一定雷，但在觀光區要更謹慎。
+用餐選店時先看「互動方式」：如果店家需要站在門口追著你遞菜單、一直喊「come in」，通常不用特地繞去吃。再看菜單型態：大照片＋多語言菜單不一定是雷，但在觀光區更常是「一次性觀光客友善」而不是「味道特別好」；想吃得更像當地人，挑那種看起來樸素、菜單不長、店裡葡語比較多的小店（常見自稱 `Tasca` 或類似風格）會更穩。最後是費用規則：入座就先端上來的麵包/橄欖/起司（`couvert`）通常不是免費招待，想吃就留著；不想多花錢，一開始就請他收走。
 
-**吃飯的小坑**
-一家店如果需要站在門口拉客，通常不用特地繞去吃。想吃得比較像當地人，就找看起來樸素、菜單不長、店裡葡語比較多的小店（常見會自稱 `Tasca` 或類似風格）。
+### 排隊與門票：先排除「買票隊伍」
+@card: 先看官方線上票；轉賣/代購先確認是不是官方。
+- **熱門景點售票口排很長**：先看官方線上票（很多時候排最久的是買票，不是入場）。
+- **看到「快速通關/代購」**：先停一下看是不是官方；觀光區越熱，轉賣票/加價服務越常見。
 
-另外，餐廳一坐下來端上麵包、橄欖、起司之類的小點，**通常不是免費招待**。你想吃就留著；不想多花錢，就一開始請他收走。
+### Belém（貝倫）一級戰區：把體力留給修道院與河岸
+@card: Belém 很值得，但最容易被「拍照型商店＋拉客」打亂節奏。
+Belém 本身很值得，但它同時也是觀光強度最高的區域之一。最不打斷節奏的策略是用「視覺判斷＋消費規則」避雷，不讓小陷阱拖走節奏。
 
-**排隊與門票**
-熱門景點如果售票口排很長，先看官方線上票。很多時候排最久的是買票，不是入場。
-
-**Belém（貝倫）一級戰區：用「視覺判斷＋消費規則」避雷**
-Belém 本身很值得，但它同時也是觀光強度最高的區域之一。最省力的策略是：**把體力留給修道院與河岸，別被消費陷阱拖走節奏**。
-
-- **花俏到像遊樂園的沙丁魚罐頭店**：如果你看到一間店裝潢像馬戲團/遊樂園、顏色很浮誇、主打「罐頭很夢幻」，多半是把你「吸進去拍照」的那種。
-  - **想買儀式感/禮物**：可以逛、可以買（例如找出生年份罐頭這種玩法），把它當紀念品就好。
-  - **想買來吃、追 CP 值**：去超市通常更符合在地節奏（常見老牌罐頭很多，挑你看得順眼的就好；例如 `Bom Petisco` 這類在地品牌在一些通路常見，以當天上架為準）。
+- **花俏到像遊樂園的沙丁魚罐頭店**：如果你看到店面裝潢像馬戲團/遊樂園、顏色很浮誇、主打「罐頭很夢幻」，多半是把你「吸進去拍照」的那種。
+  - **想買儀式感/禮物**：可以逛、可以買（例如找出生年份罐頭），把它當紀念品就好。
+  - **想買來吃、追 CP 值**：去超市通常更符合在地節奏（常見老牌罐頭很多；例如 `Bom Petisco` 這類在地品牌在一些通路常見，以當天上架為準）。
   - 超市快速選項： [Pingo Doce](https://www.google.com/maps/search/?api=1&query=Pingo%20Doce%20Bel%C3%A9m) / [Continente](https://www.google.com/maps/search/?api=1&query=Continente%20Bel%C3%A9m)
-- **餐廳拉客**：如果門口有人拿菜單追著你、用多國語言一直招呼「come in」，通常不用特地繞去吃。好吃的店比較少需要這種方式。
-- **菜單大照片＋多語言**：不是一定踩雷，但在 Belém 這種區域，這類店更常是「一次性觀光客友善」而非「味道特別好」。想吃得更像當地人，稍微走離主景點一兩條街找小店會比較穩。
-- **蛋塔創始店的排隊迷思**：Pastéis de Belém 本身不是陷阱；真正的坑常是「在外面太陽下排外帶隊伍」。做法是盡量改成內用、先坐下再吃（本篇 Belém 段落已寫操作方式）。
+- **餐廳拉客**：Belém 這種區域，如果門口有人拿菜單追著你、多國語言一直招呼，通常不用特地繞去吃；稍微走離主景點一兩條街找小店會比較穩。
+- **Pastéis de Belém 的排隊迷思**：它本身不是陷阱；真正的坑常是「在外面太陽下排外帶隊伍」。做法是盡量改成內用、先坐下再吃（本篇 Belém 段落已寫操作方式）。
 
-**紀念品**
-跳蚤市場看到單片老瓷磚（`Azulejos`）很誘人，但來源很難查證；保守做法是**不要買那種「看起來像從牆上拆下來」的老磁磚**，避免不小心助長破壞古蹟的行為。
+### 紀念品：Azulejos 老瓷磚先不要衝
+@card: 不買「看起來像從牆上拆下來」的老磁磚，改買復刻/正規來源。
+跳蚤市場看到單片老瓷磚（`Azulejos`）很誘人，但來源很難查證；保守做法是不要買那種「看起來像從牆上拆下來」的老磁磚，避免不小心助長破壞古蹟的行為。
 
 更安心、也更符合「雜貨美學」的替代方案：
 - **買復刻/新製**：磁磚圖案的杯墊、隔熱墊、海報、磁鐵、或陶瓷燕子等（選品店/博物館商店類通常更穩）。
 - **買軟木周邊**：葡萄牙是軟木大國，`LX Factory` 這種設計小店常能看到磁磚圖案的軟木製品（以當天供應為準）。
 - **真的想收藏磁磚**：優先找正規店或博物館商店的複製品；不要追求「看起來越舊越好」。
 
-原則很簡單：**看到「排隊很長＋價格很貴＋有人催你」，先停一下，問自己值不值得。**
+原則很簡單：看到「排隊很長＋價格很貴＋有人催你」，先停一下，問自己值不值得。
 

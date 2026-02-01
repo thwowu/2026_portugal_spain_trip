@@ -31,7 +31,7 @@ title: 馬德里（Madrid）住宿
   - 只搭幾次：買地鐵單程（票價依站數/區間變動，以售票機顯示為準）。（Aena：[`Cómo llegar en metro`](https://www.aena.es/es/adolfo-suarez-madrid-barajas/como-llegar/metro.html)）
   - 會搭很多次：買 `10 trips` 類型（Metro / EMT / intercity 依類別不同）並載入在 `Tarjeta Multi`。（CRTM：[`What tickets can you charge?`](https://crtm.es/billetes-y-tarifas/tarjeta-multi/titulos-que-puedes-cargar.aspx?lang=en)）
   - 連續多天且每天都會搭：買 `Tourist tickets`（旅遊票）載入 `Tarjeta Multi`。（CRTM：[`Tourist tickets`](https://crtm.es/billetes-y-tarifas/otras-tarjetas/turistica/?lang=en)）
-- 公車單程票的小提醒：`Tarjeta Multi` **不支援**「市區/郊區公車單程票」載入；這種單程通常是上車當下購買。（CRTM：[`What tickets can you charge?`](https://crtm.es/billetes-y-tarifas/tarjeta-multi/titulos-que-puedes-cargar.aspx?lang=en)）
+- 公車單程票的小提醒：`Tarjeta Multi` 不支援「市區/郊區公車單程票」載入；這種單程通常是上車當下購買。（CRTM：[`What tickets can you charge?`](https://crtm.es/billetes-y-tarifas/tarjeta-multi/titulos-que-puedes-cargar.aspx?lang=en)）
 - 機場地鐵附加費（Line 8）：進出 T1-T2-T3 / T4 站，若你使用的是 Metro Zona A 等票種，需另外加購 `suplemento del aeropuerto €3`（售票機會引導你一起載入）。（Aena：[`Cómo llegar en metro`](https://www.aena.es/es/adolfo-suarez-madrid-barajas/como-llegar/metro.html)）
 - 機場往返（省腦版）：如果你們想少換線、拖行李也輕鬆，Airport Express Bus 是最省腦的方案之一（24 小時運行、單程常見 €5，以路線/站點公告為準）。計程車則常見機場 ↔ 市中心固定費率（以官方公告為準）；若你用叫車平台，規則與價格可能不同，出發前先看清楚。
 - 實務建議：用 Google Maps / Citymapper 看路線，市區以地鐵為主、補公車；夜間移動先看夜巴/地鐵營運時間，把行程排在「好撤退」的區域，避免為了抄近路鑽小巷；若你真的遇到「晚到/轉乘太繞/行李日」，短程計程車通常不貴，直接搭。（Wikivoyage：[`Madrid`](https://en.wikivoyage.org/wiki/Madrid)；Wikitravel：[`Madrid`](https://wikitravel.org/en/Madrid)）

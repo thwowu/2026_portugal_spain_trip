@@ -26,15 +26,37 @@ title: 塞維爾（Seville）住宿
 
 ## publicTransportHowToBuy
 - 走路優先：舊城區景點密度很高，多數行程「走路＋少量公車/電車」就夠。（Wikivoyage：[`Seville`](https://en.wikivoyage.org/wiki/Seville)；Wikitravel：[`Seville`](https://wikitravel.org/en/Seville)）
+- 「嗶」卡/手機付款（省去研究售票機）：近年不少公車/電車/地鐵會支援感應式信用卡（contactless）或手機支付（Apple Pay/Google Pay）直接付款；但不同系統/站點支援度可能不同，以現場標示為準。
+  - 地鐵常見規則：可能需要「進站刷、出站也刷」（tap on / tap off）以便按距離或分區計費；記得跟著閘門/售票機指示操作，避免被收取不必要的費用。（Metro de Sevilla：[`Horarios y tarifas – Títulos`](https://www.metro-sevilla.es/horarios-y-tarifas?section=titulosMetro)）
 - 市區公車/電車（TUSSAM）怎麼買最不踩雷：
   - 偶爾搭：可直接在車上買票（票價與付款方式依現場/路線為準）。（Wikivoyage：[`Seville`](https://en.wikivoyage.org/wiki/Seville)）
   - 會搭多次：買 `Travelcard / Tarjeta Multiviaje`（可儲值、可多人共用），第一次買卡會有押金（TUSSAM 例：€1.50；最低加值 €7、最高 €50；可選「無轉乘/有轉乘」兩種費率）。（TUSSAM：[`How to get here`（Travelcard 說明）](https://www.tussam.es/en/descubre-sevilla/how-get-here)）
   - 哪裡買卡：市區大量 kiosks / tobacconists（菸店）可買；也可到 TUSSAM 售點（普拉多·德聖塞巴斯提安 Prado de San Sebastián / 蓬塞・德萊昂廣場 Plaza Ponce de León / 安達盧西亞大道 11 號 Avenida de Andalucía 11）。（TUSSAM：[`How to get here`](https://www.tussam.es/en/descubre-sevilla/how-get-here)）
-- 機場 ↔ 市區（EA 機場巴士）：單程 €5 車上買；同日來回可買 return（€6，車上買）。（TUSSAM：[`How to get here`（EA）](https://www.tussam.es/en/descubre-sevilla/how-get-here)）
+- 機場 ↔ 市區（如果你們住大教堂 Catedral 附近、又有行李/長輩）：到達與離開那一段，計程車通常是最省力。
+  - 計程車（Taxi）：機場到市區常見是「固定費率（flat fare）」；依時段/假日/行李可能不同，通常約 €25–€30（以現場公告與司機收費為準）。優點是可直接到住宿附近（但大教堂周邊有徒步區，最後可能需要走一小段）。
+- 機場 ↔ 市區（EA 機場巴士）：屬於相對「特例」的機場線，票務/票價以官方公告為準；單程與同日來回多半可在車上購買。（TUSSAM：[`How to get here`（EA）](https://www.tussam.es/en/descubre-sevilla/how-get-here)）
+- 路面電車（MetroCentro / Tranvía；T1）：如果你們住大教堂附近，這條線非常好用，屬於「走累了就上車」的省體力工具。
+  - 密技：大教堂旁就有站（`Archivo de Indias`），住舊城的話很好用。
+  - 路線/停靠：常見動線是 `Plaza Nueva → Archivo de Indias（大教堂旁）→ Puerta de Jerez → Prado de San Sebastián`（要去西班牙廣場/瑪麗亞路易莎公園一帶，走路嫌遠時就靠它）。
+  - 友善點：車廂低底盤、相對無障礙（少爬樓梯）、通常有冷氣；逛完西班牙廣場覺得累時，搭回大教堂周邊很舒服。
+  - 票務/付款：可用 TUSSAM 的單程票/卡種；許多車輛也支援感應式信用卡（contactless）直接付款；以月台售票機與現場規則為準。（TUSSAM：[`How to get here`](https://www.tussam.es/en/descubre-sevilla/how-get-here)）
+- 觀光馬車（Horse carriage）：大教堂周邊常見馬車排班，適合想「坐著看城市」的人。
+  - 價格多半是固定價（依季節/路線/時間而變）；建議上車前先把路線與價格問清楚。
+  - 夏季高溫：不只人會累，馬也辛苦；若要體驗，通常傍晚較舒服。
 - 地鐵（Metro de Sevilla）：所有車站都有售票機可買/加值；票價依「跨區（saltos）」而定，常見票種包含 `billete sencillo / ida y vuelta / bonometro / bono plus / bono de un día`。（Metro de Sevilla：[`Horarios y tarifas – Títulos`](https://www.metro-sevilla.es/horarios-y-tarifas?section=titulosMetro)；CTAS：[`Sales points`](https://www.ctas.es/en/cards-and-rates/sales-points)）
+  - 什麼時候最實用：跨河去 Triana 一帶、或要去比較遠/熱到不想走路時（站內通常比地面涼）。
+  - Triana 小捷徑：如果目標是 Triana 核心區，可看路線是否有經過 `Plaza de Cuba` 等站點（以你們當天要去的位置為準）。
+  - 小提醒：計價依分區/距離，買票時看清楚你要去的站在哪個區間。
 
 ## moneySavingTips
 - 住舊城/景點圈：先用「走路＋少量單程」跑半天；確認你一天確實會搭很多次再買 Travelcard（或再加值），避免買了用不到。（Wikivoyage：[`Seville`](https://en.wikivoyage.org/wiki/Seville)）
 - 轉乘多的那天：TUSSAM Travelcard 有「可轉乘」版本（1 小時內可換線），如果你會換車，選對版本通常比一直買單程更划算。（TUSSAM：[`How to get here`（Sin/Con Transbordo）](https://www.tussam.es/en/descubre-sevilla/how-get-here)）
 - 機場當天若確定會回機場：同日來回直接買 EA return（€6）省一步。（TUSSAM：[`How to get here`（EA）](https://www.tussam.es/en/descubre-sevilla/how-get-here)）
 - 中午最熱/帶行李的移動：優先選「有遮蔭、少走路」的公車/電車路線；如果你發現會變成「走很遠＋曝曬」或「爬樓梯/拖行李」，就把移動改成「先回住宿休息／或把行程砍一段」更保險；真的卡住就短程計程車（通常不貴，買體力也避免中暑）。（Wikitravel：[`Seville`](https://wikitravel.org/en/Seville)）
+- 走累了就買體力：塞維爾短程計程車/叫車（Uber/Cabify 常見）通常比「硬走到中暑」更划算；尤其是 `西班牙廣場/公園一帶 → 大教堂周邊` 這種回程，累的時候直接搭車收尾（常見約 €5–€10，依時間/路況為準）。
+  - 路邊攔車小辨識：官方計程車多為白色，車身常見黃色斜線標示（以現場車況為準）。
+- 千萬不要開車鑽舊城：舊城區路窄、單行與徒步區多；開車進去非常容易迷路、刮車、找不到停車位（也可能遇到管制）。
+- 注意自行車道「銀色小圓扣」：舊城區石板路上有時會看到一排排銀色小金屬圓扣（中間可能還有模糊的自行車圖案）；那通常是自行車道的邊界標示。走路時盡量走在圓扣外側，把路讓給腳踏車/滑板車，避免被高速通過的車嚇到或擦撞。
+- App 小抄（少在太陽下空等）：
+  - `AppTussam`：TUSSAM 官方 App，可看公車到站時間/路線資訊（以實際可用功能為準）。
+  - `Citymapper`：規劃轉乘與步行指引通常比 Google Maps 更「講人話」，尤其是要找對出口或走最省力路線時。
