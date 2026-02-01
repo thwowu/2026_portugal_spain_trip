@@ -8,6 +8,11 @@ title: 里斯本（Lisbon）延伸行程（詳情）
 
 ## obidos-nazare | 奧比杜斯（Óbidos）+ 納扎雷（Nazaré）（中世紀小鎮 + 海岸懸崖）
 
+- **Key takeaways**：
+  - **節奏**：上午 Óbidos（巷弄/城牆看體力）→ 下午 Nazaré（懸崖視角）→ 早點回里斯本。
+  - **難點**：中段轉乘/接駁；轉乘對不上就縮成「只去 Óbidos」最穩。
+  - **體力**：城牆/懸崖區可能爬坡或樓梯，同行有人不想爬就別硬走。
+
 如果你想在里斯本多加一個「不是市區散步」的變化，這條很值得收進口袋。它也很適合當作備案日（下雨、前面太累、或想換個節奏）。
 
 走法抓一個原則就好：上午給 Óbidos（白牆巷弄＋看你體力要不要上城牆），下午再去 Nazaré 吹海風、看懸崖視角收尾。（巨浪不保證，真的看季節與運氣。）
@@ -18,7 +23,7 @@ title: 里斯本（Lisbon）延伸行程（詳情）
 
 ### images
 @card: 圖庫：先用畫面判斷你對不對這個題材；需要細節再往下讀。
-{{gallery:Óbidos + Nazaré|https://commons.wikimedia.org/wiki/Special:FilePath/The_%C3%93bidos%27_Castle_(4017081137).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Castillo_de_%C3%93bidos,_%C3%93bidos,_Portugal,_2021-09-09,_DD_24.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Train_station_seen_from_the_top_of_%C3%93bidos_Castle_(50119216497).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Sitio_cliff_at_Nazare_Portugal.JPG?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/O_Sitio,_Nazar%C3%A9_(30424018745).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Nazare_North_at_sunset_2021_-4_(wide_with_beach).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Praia_do_Norte,Nazar%C3%A9_-19_(50655732248).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Farol_da_Nazare.jpg?width=1800|https://images.pexels.com/photos/10706604/pexels-photo-10706604.jpeg?auto=compress&cs=tinysrgb&w=1800|https://images.pexels.com/photos/24377407/pexels-photo-24377407.jpeg?auto=compress&cs=tinysrgb&w=1800}}
+{{gallery:Óbidos + Nazaré|https://source.unsplash.com/f5VjyPNK9O4/1800x1200|https://source.unsplash.com/mdGY9xSBVsA/1800x1200|https://source.unsplash.com/3PX6wMdQWoE/1800x1200|https://source.unsplash.com/H5ElLjDKW5c/1800x1200|https://source.unsplash.com/5zHxWVUaFms/1800x1200|https://images.pexels.com/photos/10706604/pexels-photo-10706604.jpeg?auto=compress&cs=tinysrgb&w=1800|https://images.pexels.com/photos/24377407/pexels-photo-24377407.jpeg?auto=compress&cs=tinysrgb&w=1800}}
 
 ### when
 @card: 什麼時候去最對味：人潮、天氣與回程風險的時間帶整理，幫你挑到回報最高、也最不容易被拖慢的一天。
@@ -65,13 +70,18 @@ Wikivoyage（Nazaré）：https://en.wikivoyage.org/wiki/Nazar%C3%A9
 
 ## evora | 埃武拉（Évora；UNESCO 古城：羅馬神殿/老城）
 
+- **Key takeaways**：
+  - **題材**：UNESCO 老城＋羅馬遺跡＋教堂街廓，一天就能把「內陸古城」讀出來。
+  - **省腦**：到站後靠步行串點，坡度相對友善。
+  - **放法**：很適合當備案日（下雨/太累想換節奏）或補一段文化散步。
+
 這是一個很省腦、但很有「葡萄牙內陸古城」感的一日：老城密度高，用走路就能把羅馬神殿、中世紀街廓、教堂與廣場串起來。
 
 地形以老城散步為主，坡度不算兇；火車/巴士到站後靠走路即可完成。早到會更舒服（人少、節奏慢），也很適合當作「不是海岸線」的備案日，或補一段 UNESCO 氣質的城市散步。
 
 ### images
 @card: 圖庫：先用畫面判斷你對不對這個題材；需要細節再往下讀。
-{{gallery:Évora|https://commons.wikimedia.org/wiki/Special:FilePath/Roman_Temple_Evora_Portugal_01.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Cathedral_Evora_Portugal_01.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Evora_-_Cathedral_-_Front.jpg?width=1800}}
+{{gallery:Évora|https://source.unsplash.com/hOGUAwvorSU/1800x1200|https://source.unsplash.com/s8V3OclkfV0/1800x1200|https://source.unsplash.com/AIcEoa8Wigo/1800x1200|https://source.unsplash.com/4O4A7Owt2Go/1800x1200}}
 
 ### how
 @card: 交通與動線重點整理：火車/巴士二選一，進城後靠步行就能把老城串起來；這段讓你用最少的交通決策，換到最完整的 UNESCO 老城氛圍。
@@ -105,8 +115,8 @@ Wikivoyage（Évora）：https://en.wikivoyage.org/wiki/%C3%89vora
 
 ### images
 @card: 圖庫：先用畫面判斷你對不對這個題材；需要細節再往下讀。
-{{gallery:Cascais|https://commons.wikimedia.org/wiki/Special:FilePath/Ba%C3%ADa_de_Cascais.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Boca_do_Inferno_-_Cascais_-_Portugal_(269119308).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Bocadoinferno.jpg?width=1800|https://images.pexels.com/photos/24377407/pexels-photo-24377407.jpeg?auto=compress&cs=tinysrgb&w=1800}}
-{{gallery:Azenhas do Mar|https://commons.wikimedia.org/wiki/Special:FilePath/Azenhas_do_Mar_-_Portugal_(8465855175).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/P%C3%B4r_do_Sol_na_praia_das_Azenhas.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Azenhas_do_Mar.JPG?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Azenhas_do_Mar_-_Portugal_(8465855175).jpg?width=1800}}
+{{gallery:Cascais|https://source.unsplash.com/MUHe6nNMXVI/1800x1200|https://source.unsplash.com/wBjdDQo0Iws/1800x1200|https://source.unsplash.com/X7c1hwJ_huc/1800x1200|https://source.unsplash.com/Wi1l1fJ2nmE/1800x1200|https://images.pexels.com/photos/24377407/pexels-photo-24377407.jpeg?auto=compress&cs=tinysrgb&w=1800}}
+{{gallery:Azenhas do Mar|https://source.unsplash.com/hfTYX_sDxZU/1800x1200|https://source.unsplash.com/7RaonO0Jn9E/1800x1200|https://source.unsplash.com/yAN-kUesgck/1800x1200|https://source.unsplash.com/IvTFMKG_b7U/1800x1200}}
 
 ### how
 @card: 交通與動線重點整理：從 `Cais do Sodré` 直達 Cascais，班次密集很彈性；重點是海岸線慢走＋小鎮氛圍，把它當作低風險回血日。
@@ -118,7 +128,7 @@ Wikivoyage（Évora）：https://en.wikivoyage.org/wiki/%C3%89vora
 3. 走去 Boca do Inferno（步道/海岸岩洞感，回報很快）。
 4. 累了就折返，沿海慢慢走回站 → 回里斯本吃晚餐。
 
-（加分、看交通/體力）如果你還想再補一個海岸名場面：可以看一下 [Azenhas do Mar（海邊白屋村）](https://www.google.com/maps/search/?api=1&query=Azenhas%20do%20Mar%20Portugal)。白屋貼著懸崖的構圖非常上相，是那種看到照片就知道在哪的葡萄牙海岸名場面。
+（加分、看交通/體力）如果你還想再補一個海岸名場面：可以看一下 Azenhas do Mar（海邊白屋村） [Azenhas do Mar Portugal](https://www.google.com/maps/search/?api=1&query=Azenhas%20do%20Mar%20Portugal)。白屋貼著懸崖的構圖非常上相，是那種看到照片就知道在哪的葡萄牙海岸名場面。
 
 ### sources
 @card: 資料來源與查詢入口：需要核對規則、班次或官方公告可從這裡往下追。

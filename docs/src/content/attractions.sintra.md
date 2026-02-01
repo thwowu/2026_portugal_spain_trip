@@ -20,6 +20,12 @@ title: 辛特拉（Sintra）
 
 ## must
 
+### Key takeaways
+- **主菜只選 1–2 個**：辛特拉的敵人是交通＋排隊＋上坡，不是景點數量。
+- **順序用來控不確定性**：先做山頂最熱門（佩納宮），再一路往下收尾最穩。
+- **霧牆/風雨就砍視野點**：天氣差時摩爾人城堡回報會歸零，果斷換備案。
+- **上坡段別硬走**：需要就用短程 Uber/Bolt/巴士，把膝蓋留給景點本體。
+
 ### 一日遊黃金順序（對應行程 Day 4；邏輯是「先控不確定性，再一路往下收尾」）
 @card: 把辛特拉當成「控不確定性」的一日遊：先做山頂最熱門，再一路往下收尾，用順序把排隊、人潮與上坡成本鎖住，節奏最容易成功。
 
@@ -38,8 +44,8 @@ title: 辛特拉（Sintra）
 - 班次密集、車程約 40 分鐘。越早出發越舒服（避開旅行團尖峰）。
 - 票務：用 `Viva Viagem / Navegante` 走 `Zapping（儲值扣款）` 通常最省腦、也少排隊。保守做法是在 `Rossio` 先加值好（尖峰機器偏慢，提早到站處理最穩）。
 
-#### Step 1：[佩納宮（Palácio da Pena）](https://www.google.com/maps/search/?api=1&query=Pal%C3%A1cio%20da%20Pena%20Sintra)（先做最熱門的）
-{{gallery:Palácio da Pena|https://commons.wikimedia.org/wiki/Special:FilePath/Pal%C3%A1cio_da_Pena_2019.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Pena_Palace_in_Sintra.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Pena_Palace_Sintra.jpg?width=1800}}
+#### [Step 1：佩納宮（Palácio da Pena）](https://www.google.com/maps/search/?api=1&query=Pal%C3%A1cio%20da%20Pena%20Sintra)（先做最熱門的）（先做最熱門的）
+{{gallery:Palácio da Pena|https://source.unsplash.com/Q1YHAmV6JIo/1800x1200|https://source.unsplash.com/oz--wcq-5BQ/1800x1200|https://source.unsplash.com/ML7tR9erUps/1800x1200|https://source.unsplash.com/LhYFlcgQQJA/1800x1200|https://source.unsplash.com/ar9jizD0V88/1800x1200}}
 
 為什麼去：色彩與混合風格的外觀是辛特拉的視覺圖騰，回報最直接。
 
@@ -54,8 +60,8 @@ title: 辛特拉（Sintra）
 
 更完整的票務、排隊與時間抓法，統一放在下面的 `## practical`（避免你在這份筆記裡讀到同一件事三次）。
 
-#### Step 2：[摩爾人城堡（Castelo dos Mouros）](https://www.google.com/maps/search/?api=1&query=Castelo%20dos%20Mouros%20Sintra)（從佩納宮走 10–15 分）
-{{gallery:Castelo dos Mouros|https://commons.wikimedia.org/wiki/Special:FilePath/Castelo_dos_Mouros,_Sintra_(37024841522).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Castelo_dos_Mouros_-_Sintra_-_Portugal_(31410260216).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Castelo_dos_Mouros,_Sintra,_Portugal.jpg?width=1800}}
+#### [Step 2：摩爾人城堡（Castelo dos Mouros）](https://www.google.com/maps/search/?api=1&query=Castelo%20dos%20Mouros%20Sintra)（從佩納宮走 10–15 分）（從佩納宮走 10–15 分）
+{{gallery:Castelo dos Mouros|https://source.unsplash.com/gKYrC6ozs6A/1800x1200|https://source.unsplash.com/ar9jizD0V88/1800x1200|https://source.unsplash.com/rpMRy2L68ds/1800x1200|https://source.unsplash.com/JBbM9wAKQ_0/1800x1200}}
 
 亮點：像「葡萄牙萬里長城」的城牆線，也是拍佩納宮全景最穩的角度之一。
 
@@ -71,8 +77,8 @@ title: 辛特拉（Sintra）
 正餐候選：
 - `Tascantiga`（tapas；也常見推薦豬頰肉）
 
-#### Step 4：[雷加萊拉莊園（Quinta da Regaleira）](https://www.google.com/maps/search/?api=1&query=Quinta%20da%20Regaleira%20Sintra)（迷宮花園＋地下動線）
-{{gallery:Quinta da Regaleira|https://commons.wikimedia.org/wiki/Special:FilePath/Quinta_da_Regaleira_-_Initiation_Well.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Quinta_da_Regaleira,_Sintra,_Portugal.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Quinta_da_Regaleira_-_Sintra.jpg?width=1800}}
+#### [Step 4：雷加萊拉莊園（Quinta da Regaleira）](https://www.google.com/maps/search/?api=1&query=Quinta%20da%20Regaleira%20Sintra)（迷宮花園＋地下動線）（迷宮花園＋地下動線）
+{{gallery:Quinta da Regaleira|https://source.unsplash.com/5v4KLhE62a0/1800x1200|https://source.unsplash.com/7-rEzi6T8oo/1800x1200|https://source.unsplash.com/SvSQZtBr544/1800x1200}}
 
 先講做法：不要只為「井」衝進來拍一張就走。
 
@@ -117,7 +123,7 @@ title: 辛特拉（Sintra）
 - 地下段落偏暗、地面可能濕：手機先開手電筒、鞋底要抓地。
 - 別把它當「拍一張就走」：井本體＋隧道出口＋瀑布/踏腳石，才是它的完整敘事。
 
-#### Step 5（選修）：[辛特拉宮（Palácio Nacional de Sintra）](https://www.google.com/maps/search/?api=1&query=Pal%C3%A1cio%20Nacional%20de%20Sintra) 或直接回里斯本
+#### [Step 5（選修）：辛特拉宮（Palácio Nacional de Sintra）](https://www.google.com/maps/search/?api=1&query=Pal%C3%A1cio%20Nacional%20de%20Sintra) 或直接回里斯本 或直接回里斯本
 
 先講結論：想把一天收得漂亮，有兩個選項就夠了。
 
@@ -337,6 +343,165 @@ title: 辛特拉（Sintra）
 
 - **去程**：如果你們覺得「火車＋轉乘」太折騰，可以從里斯本住宿直接叫車到「第一站」（佩納宮或 Monserrate），把它當作「用錢買精力」。
 - **回程**：回程通常更容易用火車（你已經在鎮中心/下坡段，體力壓力較小）。
+
+### split-2days｜拆成 2 天（不硬塞、旺季更舒服）
+@card: 拆 2 天最穩：把 Pena 分時段票獨立當錨點，另一天下放給 Regaleira＋鎮上慢走，把排隊與等車壓力拆開。
+
+- Key takeaways:
+  - **旺季/不想硬塞就拆 2 天**：把 Pena 時段票獨立當錨點，另一天下放慢走最穩。
+  - **交通與排隊是主成本**：點不用多，順序與撤退版本更重要。
+  - **起霧/人潮就改花園/鎮上**：視野只是加分，別把一天押在不確定性上。
+
+如果你不想在 Sintra 被人潮與上下山交通拖累，拆兩天是最穩的做法。
+
+山城上下坡多、旺季排隊久，一天硬塞常常只會把體力耗在等車與排隊。把最難的 Pena（分時段）獨立一天當作票務錨點，另一天下放給 Regaleira＋鎮上慢走，節奏會從趕路變成享受。
+
+交通以 434/435 公車為主；如果全程都不搭計程車，拆兩天會更保守。也很適合用「第一波公車＋早場門票」先把尖峰排隊避掉。
+
+#### images
+@card: 圖庫：先用畫面判斷你對不對這個題材；需要細節再往下讀。
+{{gallery:Sintra（2 days）|https://source.unsplash.com/Q1YHAmV6JIo/1800x1200|https://source.unsplash.com/oz--wcq-5BQ/1800x1200|https://source.unsplash.com/5v4KLhE62a0/1800x1200|https://source.unsplash.com/7-rEzi6T8oo/1800x1200|https://images.pexels.com/photos/1601495/pexels-photo-1601495.jpeg?auto=compress&cs=tinysrgb&w=1800|https://images.pexels.com/photos/4514109/pexels-photo-4514109.jpeg?auto=compress&cs=tinysrgb&w=1800}}
+
+#### how
+@card: 交通與動線重點整理：把 Pena 分時段當票務錨點、另一天下放給 Regaleira/鎮上慢走；拆兩天能把排隊與等車壓力拆開，節奏更像享受。
+票務錨點：先買 Pena（有分時段，晚到通常直接失去入場）。
+
+交通策略：用早班公車 + 早場票避開尖峰。排隊太久就立刻減少景點數量，不要硬塞。
+Day A：Quinta da Regaleira（先衝螺旋井）→ 鎮上甜點/王宮（視體力）。
+
+Day B：Pena（按時段）→（選配）Monserrate（人通常較少）。
+拆兩天後每天都能做成早出晚回或半日，彈性大很多。
+
+#### backup
+@card: Plan B 與可撤退版本：起霧時把山上視野當加分，重點放在宮殿/花園本體與鎮上室內點，讓天氣不穩也能成立。
+如果天氣起霧：把山上視野當加分，重點放在宮殿/花園本體。
+
+#### sources
+@card: 資料來源與查詢入口：需要核對票務、規則或官方公告可從這裡往下追。
+Parques de Sintra（Pena 官方票務）：https://www.parquesdesintra.pt/en/plan-your-visit/tickets-palace-of-pena/
+
+Wikivoyage（Sintra）：https://en.wikivoyage.org/wiki/Sintra
+
+### transit-strategy｜434/435 + 避排隊策略（旺季保命）
+@card: 旺季保命策略：434/435 當幹線、早班＋早場避尖峰；公車排爆就把點數縮到 2 個內，時間回到景點本體。
+
+旺季的 Sintra 痛點通常不是走路，而是「排隊＋等車」把你精神與時間吃光。
+
+這個策略的核心很簡單：用 434/435 當主要幹線，配合早班與早場把尖峰避掉，然後勇敢把點數縮到 2 個以內。你少塞一個點，往往就能換回 1–2 小時，把時間從排隊挪回景點本體。
+
+下午也別硬拖：下山休息會讓整天體感好很多。全程只靠 434/435＋步行即可成立；不搭計程車也能做，只是更要保守抓時間。
+
+#### images
+@card: 圖庫：先用畫面判斷你對不對這個題材；需要細節再往下讀。
+{{gallery:434/435 + 補段|https://source.unsplash.com/Q1YHAmV6JIo/1800x1200|https://source.unsplash.com/5v4KLhE62a0/1800x1200}}
+
+#### how
+@card: 交通與排隊策略：用 434/435 當幹線、早班＋早場避尖峰；公車排爆就把點數縮到 2 個內，讓時間回到景點本體而不是耗在等車。
+先鎖票務錨點：Pena 入場時段（或 Regaleira 早場）。
+
+公車排爆時：不要硬等下一班；先把行程縮到 2 個點（最保守）。
+
+下山優先：傍晚別拖到最後一波（塞車＋疲勞會放大）。
+典型做法：上午先上山完成最重要的一個點 → 下午回鎮上慢走/吃甜點（不要再硬塞第 3 個）。這個策略的目的就是把浪費在排隊的時間，換成真的在逛景點的時間。
+
+#### backup
+@card: Plan B 與可撤退版本：排隊太久或精神被耗掉就立刻縮減到 2 個點；少做一個點通常能換回 1–2 小時，體感會差很多。
+如果排隊太久/精神被耗掉：立刻把行程縮減到 2 個點，不要硬塞第 3 個。
+
+#### sources
+@card: 資料來源與查詢入口：需要核對票務、規則或官方公告可從這裡往下追。
+Wikivoyage（Sintra）：https://en.wikivoyage.org/wiki/Sintra
+
+### monserrate｜蒙塞拉特宮（Monserrate）（避人潮的舒服收尾）
+@card: 避人潮的舒服收尾：Monserrate 以花園散步為主、節奏可慢，放在 Pena/Regaleira 後當第二站很順。
+
+如果你已經被 Pena 擠到煩、又不想放棄 Sintra 的精緻，Monserrate 很適合當作舒服的收尾：花園散步為主、節奏可以很慢，拍照也好看，重點是終於能好好逛而不是一直被人潮推著走。它把 Sintra 那種浪漫主義「把自然當舞台」的美學延伸做得很完整，但人通常少很多。交通以公車/接駁為主（先看當天路線與班次），也不必拚很早，放在人潮最煩的一天最後一站剛剛好。
+
+#### images
+@card: 圖庫：先用畫面判斷你對不對這個題材；需要細節再往下讀。
+{{gallery:Monserrate|https://source.unsplash.com/gKYrC6ozs6A/1800x1200|https://source.unsplash.com/N6f1SG7Ir9g/1800x1200|https://source.unsplash.com/K1_BKJO583A/1800x1200}}
+
+#### how
+@card: 交通與動線重點整理：把 Monserrate 當作「避人潮的舒服收尾」；花園散步為主、節奏慢，適合放在 Pena 後或 Regaleira 後當第二站。
+做法：把 Monserrate 當作 Day B 的第二站（Pena 後）或 Day A 的收尾（Regaleira 後）。
+半日/收尾版：Pena（按時段）→ Monserrate（走花園＋休息）→ 回鎮上吃甜點。建議抓 2–3 小時（含交通）。
+
+#### backup
+@card: Plan B 與可撤退版本：時間不夠就優先走花園＋外觀撤退，不必硬塞室內；把它當「舒服」的一站才會更值。
+如果時間不夠：Monserrate 優先走花園＋外觀就撤，不用硬塞室內。
+
+#### sources
+@card: 資料來源與查詢入口：需要核對票務、規則或官方公告可從這裡往下追。
+Monserrate（Parques de Sintra）：https://www.parquesdesintra.pt/en/wifi-landing-pages/park-and-palace-of-monserrate/
+
+### capuchos｜卡普舒什修道院（Convento dos Capuchos）（森林修道院：小眾但很有味道）
+@card: 小眾換腦題材：森林＋極簡苦修的修道院。路面較原始、雨天濕滑；不搭計程車就別硬塞。
+
+如果你在 Sintra 看了一堆浪漫主義的華麗，Capuchos 會用「森林＋極簡苦修」把你直接拉回地面，很有效換腦：洞穴/花崗岩與修道院的生活痕跡不是豪華建築，而是一種貼近自然的生活方式。這裡路面比較原始，雨天可能濕滑，怕滑就要保守；而且公車不方便，不搭計程車的話不建議硬塞。真要去就早去早回，天氣差就乾脆取消，體感會更好。
+
+#### images
+@card: 圖庫：先用畫面判斷你對不對這個題材；需要細節再往下讀。
+{{gallery:Capuchos|https://source.unsplash.com/gKYrC6ozs6A/1800x1200|https://source.unsplash.com/m18V_Bm0yrY/1800x1200|https://source.unsplash.com/EdiSQeVj0wc/1800x1200}}
+
+#### how
+@card: 交通與動線重點整理：公車不方便，適合當「小眾換腦題材」；不搭計程車就要更保守、不要硬塞，雨天更要把滑倒風險放在第一位。
+交通：公車不方便。把它當作特別題材的一站，不硬塞；不搭計程車就更不建議。
+半日：Capuchos → 回鎮上吃甜點/休息（當作低人潮備案日）。交通 + 參觀：抓 3–5 小時較舒服。
+
+#### backup
+@card: Plan B 與可撤退版本：霧雨太重就改成鎮上王宮/咖啡店；把這段當成「可取消加碼」會更舒服。
+如果霧雨太重：改成鎮上王宮/咖啡店（山裡會更冷更濕）。
+
+#### sources
+@card: 資料來源與查詢入口：需要核對票務、規則或官方公告可從這裡往下追。
+Wikivoyage（Sintra）：https://en.wikivoyage.org/wiki/Sintra
+
+### cabo-roca-azenhas｜羅卡角（Cabo da Roca）+ 海邊白屋村（Azenhas do Mar）（海岸線加點）
+@card: 海岸線加點（很吃天氣/交通）：風大懸崖視野很強，但別為它打散本日節奏；不搭計程車就不要壓時間。
+
+這個加點是把 Sintra 的山城故事接到大西洋邊界：風很大，但視野會讓你覺得自己真的到了「最西端」。Cabo da Roca 的象徵感很強，Azenhas 則用白屋與峭壁把畫面直接做滿；但它很吃天氣，天氣好才值。地形是懸崖風口（走路不一定長，但站久很消耗），交通以公車為主，班次/轉乘務必抓寬，不搭計程車就不要壓時間；建議早去比較不趕，風大時就短停拍照收工即可。
+
+#### images
+@card: 圖庫：先用畫面判斷你對不對這個題材；需要細節再往下讀。
+{{gallery:Cabo da Roca + Azenhas|https://source.unsplash.com/JBbM9wAKQ_0/1800x1200|https://source.unsplash.com/rpMRy2L68ds/1800x1200|https://source.unsplash.com/yAN-kUesgck/1800x1200|https://source.unsplash.com/hfTYX_sDxZU/1800x1200}}
+
+#### how
+@card: 交通與動線重點整理：公車班次要抓寬，天氣好才推薦；把它當「海岸線加點」而不是必做主菜，避免把一天變成趕路日。
+交通以公車為主，班次要抓寬。這個加點很吃時間，別壓太緊。
+加點版（天氣好才推薦）：上午山上宮殿 → 下午海岸線（Roca / Azenhas 擇一）→ 傍晚回里斯本。建議抓整天才不會變成趕路日。
+
+#### backup
+@card: Plan B 與可撤退版本：風雨很大就直接取消海岸線加點，回鎮上喝咖啡/逛王宮更舒服；短停拍照就好，不必硬站在風口。
+如果風雨很大：直接取消海岸線加點，回鎮上喝咖啡/逛王宮會更舒服。
+
+#### sources
+@card: 資料來源與查詢入口：需要核對票務、規則或官方公告可從這裡往下追。
+Wikivoyage（Sintra）：https://en.wikivoyage.org/wiki/Sintra
+
+### coast-cascais｜沿海連動：辛特拉（Sintra）+ 卡斯凱什（Cascais）（海岸放鬆日）
+@card: 更舒服的拆法：一天跑山（Sintra），一天跑海（Cascais），避免硬把海岸線塞進同一天把兩邊都玩壞。
+
+這個兩天拆法的目的只有一個：讓你每天都舒服。Sintra 本來就容易累，硬把海岸線塞進同一天只會讓兩邊都不好玩；拆成「一天跑山、一天跑海」才是最順的節奏。Day 1 早上做 Sintra 把票務/人潮最硬的部分先處理掉，Day 2 就晚點出門去 Cascais 放鬆走海岸線；兩天都能用火車/公車完成，完全符合不搭計程車，而且每天都能走得很保守、不會走到爆。
+
+#### images
+@card: 圖庫：先用畫面判斷你對不對這個題材；需要細節再往下讀。
+{{gallery:Sintra + Cascais|https://source.unsplash.com/Q1YHAmV6JIo/1800x1200|https://source.unsplash.com/5v4KLhE62a0/1800x1200|https://source.unsplash.com/KnLUW2YZtjM/1800x1200|https://source.unsplash.com/N6f1SG7Ir9g/1800x1200|https://source.unsplash.com/77sfoYp_40U/1800x1200}}
+
+#### how
+@card: 交通與動線重點整理：把「一天跑山、一天跑海」拆開最舒服；先完成 Sintra 的票務難題，再把第二天留給 Cascais 放鬆走海岸線。
+做法：先把 Sintra 的最難票務完成，再把第二天留給海邊（不用擠在同一天）。
+Day 1：Sintra（Pena/Regaleira 依時段）→ 回里斯本。
+
+Day 2：Cascais 海岸線散步（輕鬆收尾）。
+兩天各自都能做成早出晚回或半日，彈性大。
+
+#### backup
+@card: Plan B 與可撤退版本：天氣不好就把海邊改成里斯本室內點（博物館/市場），不浪費體力；核心是「每天都舒服」。
+如果天氣不好：把海邊改成里斯本室內點（博物館/市場），不浪費體力。
+
+#### sources
+@card: 資料來源與查詢入口：需要核對票務、規則或官方公告可從這裡往下追。
+Wikivoyage（Sintra）：https://en.wikivoyage.org/wiki/Sintra
 
 ## skip
 
@@ -576,7 +741,7 @@ title: 辛特拉（Sintra）
 - 搭配一杯黑咖啡：可以把甜膩收乾淨，口感會更立體。
 
 去哪裡吃：
-- `Pastelaria Piriquita`（朝聖店）  
+- `Pastelaria Piriquita`（朝聖店）
   Google Maps：<https://www.google.com/maps/search/?api=1&query=Pastelaria%20Piriquita%20Sintra>
 
 #### Queijadas（起司塔）：外殼硬脆＋內餡像「豆腐」般的黏稠回彈
@@ -584,7 +749,7 @@ title: 辛特拉（Sintra）
 關鍵口感：外殼帶焦香、偏硬脆；內餡不是奶油滑，而是靠「地方鮮起司」形成更有彈性的凝乳質地，常伴肉桂香。
 
 去哪裡吃（在地人常推這家更細緻）：
-- `Queijadas da Sapa`（火車站 → 市中心路上很順）  
+- `Queijadas da Sapa`（火車站 → 市中心路上很順）
   Google Maps：<https://www.google.com/maps/search/?api=1&query=Queijadas%20da%20Sapa%20Sintra>
 
 ### 甜點背後的兩個「風味基石」（你吃到的不是糖，是原料工藝）
@@ -613,7 +778,7 @@ title: 辛特拉（Sintra）
 
 - **甜點**：`Pastelaria Piriquita`（枕頭酥）
 - **起司塔**：`Queijadas da Sapa`
-- **正餐/petiscos（葡式小菜）**：`Tascantiga`  
+- **正餐/petiscos（葡式小菜）**：`Tascantiga`
   Google Maps：<https://www.google.com/maps/search/?api=1&query=Tascantiga%20Sintra>
 
 ### 像當地人一樣吃（把人潮與節奏一起解決）
@@ -648,7 +813,7 @@ title: 辛特拉（Sintra）
 
 #### 兩個經典角度（只要拿到這兩張就夠了）
 
-- **由上往下（俯視）**：螺旋幾何＋深度眩暈感最強。  
+- **由上往下（俯視）**：螺旋幾何＋深度眩暈感最強。
   提醒：懼高就不要硬靠邊，安全第一。
 - **由下往上（仰視）**：井口亮光＋井底暗部形成戲劇性反差（也很符合「重生」的敘事）。
 
@@ -669,8 +834,8 @@ title: 辛特拉（Sintra）
 
 #### 1) 拍全景（最壯觀）：從摩爾人城堡看過去
 
-- **最佳點**：摩爾人城堡的城牆高處／塔樓附近視角  
-  位置： [摩爾人城堡（Castelo dos Mouros）](https://www.google.com/maps/search/?api=1&query=Castelo%20dos%20Mouros%20Sintra)
+- **最佳點**：摩爾人城堡的城牆高處／塔樓附近視角
+  位置： 摩爾人城堡（Castelo dos Mouros） [Castelo dos Mouros Sintra](https://www.google.com/maps/search/?api=1&query=Castelo%20dos%20Mouros%20Sintra)
 - **拍到什麼**：佩納宮完整輪廓「立在山頂」，紅黃宮殿＋綠色森林對比非常強
 - **霧的兩面性**：薄霧＝像漂浮在雲上；霧太濃＝直接什麼都看不到（這天就不要硬追全景）
 
@@ -686,8 +851,8 @@ title: 辛特拉（Sintra）
 
 #### 3) 拍「森林包圍的宮殿」（風景派最愛）：高十字架（Cruz Alta / High Cross）
 
-- **位置**：佩納宮公園（Pena Park）內最高點之一  
-  位置： [Cruz Alta（High Cross）](https://www.google.com/maps/search/?api=1&query=Cruz%20Alta%20Sintra)
+- **位置**：佩納宮公園（Pena Park）內最高點之一
+  位置： Cruz Alta（High Cross） [Cruz Alta Sintra](https://www.google.com/maps/search/?api=1&query=Cruz%20Alta%20Sintra)
 - **拍到什麼**：宮殿被森林包住的尺度感（更像「住在山裡的城堡」）
 - **提醒**：這點需要走路/健行；時間不夠或霧太濃就跳過，把力氣留給主菜
 

@@ -12,6 +12,7 @@ title: 里斯本（Lisbon）→ 拉各斯（Lagos）
 - recommended: bus
 - because: 直達、少轉乘；帶大行李比較不折騰，班次也多（常見從 Oriente / Sete Rios 出發）。
 - reminders:
+  - ### Key takeaways
   - 先確認出發站點（常見：里斯本東方站 Oriente / 七河站 Sete Rios），避免跑錯站。
   - 再抓時間提早到站：一般 20–30 分鐘；旺季/連假抓 30–45 分鐘。
   - 有大行李：訂票時先確認「可托運行李」與額外行李加購規則；貴重物品留在隨身包。

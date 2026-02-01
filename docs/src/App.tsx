@@ -70,7 +70,7 @@ function App() {
 
   return (
     <BrowserRouter basename={import.meta.env.BASE_URL}>
-      <div className="topBar" ref={topBarRef}>
+      <header className="topBar" ref={topBarRef}>
         <div className="topBarInner">
           <div className="brand">
             <div className="brandTitle">葡西雙國深度走訪｜城景與海岸一次收齊</div>
@@ -85,9 +85,9 @@ function App() {
           </div>
         </div>
         <ScrollProgress />
-      </div>
+      </header>
 
-      <div className="appShell">
+      <main className="appShell" id="main">
         <AppRoutes />
 
         <footer className="siteFooter" aria-label="Impressum / Disclaimer">
@@ -98,7 +98,7 @@ function App() {
             </div>
           </div>
         </footer>
-      </div>
+      </main>
 
       <nav className="bottomNav" aria-label="主選單" ref={bottomNavRef}>
         <div className="bottomNavInner">

@@ -2,18 +2,13 @@ import { useMemo } from 'react'
 import type { GalleryImage } from './GalleryLightbox'
 import { FormattedInline, FormattedText } from './FormattedText'
 import { withBaseUrl } from '../utils/asset'
+import { prefersReducedMotion } from '../utils/motion'
+import { splitTrailingUrlPunct } from '../markdownLite/utils'
 
 const GALLERY_TOKEN_RE = /\{\{gallery(?::([^|}]+))?\|([^}]+)\}\}/g
 const IMAGE_MD_RE = /^!\[([^\]]*)\]\((.+)\)$/
 const MD_LINK_RE = /^\[([^\]]*)\]\((https?:\/\/[^)\s]+)\)$/
 const IMAGE_EXT_RE = /\.(png|jpe?g|webp|gif|svg)(\?.*)?$/i
-
-function splitTrailingUrlPunct(url: string) {
-  // Common trailing punctuations in our zh-TW content + markdown-ish contexts
-  const m = /^(.*?)([),.;:!?，。；：！？、》」）】]+)?$/.exec(url)
-  if (!m) return { url, punct: '' }
-  return { url: (m[1] ?? url).trim(), punct: (m[2] ?? '').trim() }
-}
 
 function isDynamicUnsplash(src: string) {
   return src.startsWith('https://source.unsplash.com/featured/')
@@ -40,7 +35,7 @@ function extractGalleryImages(tokenMatch: RegExpExecArray) {
 }
 
 type Block =
-  | { kind: 'h'; level: 3 | 4; text: string }
+  | { kind: 'h'; level: 3 | 4; text: string; id: string }
   | { kind: 'image'; alt: string; src: string }
   | { kind: 'quote'; text: string }
   | { kind: 'ul'; items: UlItem[] }
@@ -106,6 +101,22 @@ function parseBlocks(content: string): Block[] {
   flush()
 
   const out: Block[] = []
+  const usedHeadingIds = new Map<string, number>()
+
+  const makeHeadingId = (raw: string) => {
+    const base =
+      (raw ?? '')
+        .trim()
+        .toLowerCase()
+        // Keep CJK; remove most punctuation; collapse spaces.
+        .replace(/[\s]+/g, '-')
+        .replace(/[^\p{Letter}\p{Number}\u4e00-\u9fff\u3400-\u4dbf\u3040-\u30ff\uac00-\ud7af-]/gu, '')
+        .replace(/-+/g, '-')
+        .replace(/^-|-$/g, '') || 'section'
+    const n = (usedHeadingIds.get(base) ?? 0) + 1
+    usedHeadingIds.set(base, n)
+    return n === 1 ? base : `${base}-${n}`
+  }
   for (const lines of blocks) {
     const trimmed = lines.map((l) => l.trim())
 
@@ -117,7 +128,8 @@ function parseBlocks(content: string): Block[] {
       // Allow headings with or without a space after hashes, e.g. "###（中文...）".
       const h4 = /^####\s*(.+)$/.exec(first)
       if (h4) {
-        out.push({ kind: 'h', level: 4, text: (h4[1] ?? '').trim() })
+        const text = (h4[1] ?? '').trim()
+        out.push({ kind: 'h', level: 4, text, id: makeHeadingId(text) })
         const rest = lines.slice(1).join('\n').trim()
         if (rest) {
           const galleries: Array<{ title: string; images: GalleryImage[] }> = []
@@ -132,7 +144,8 @@ function parseBlocks(content: string): Block[] {
       }
       const h3 = /^###\s*(.+)$/.exec(first)
       if (h3) {
-        out.push({ kind: 'h', level: 3, text: (h3[1] ?? '').trim() })
+        const text = (h3[1] ?? '').trim()
+        out.push({ kind: 'h', level: 3, text, id: makeHeadingId(text) })
         const rest = lines.slice(1).join('\n').trim()
         if (rest) {
           const galleries: Array<{ title: string; images: GalleryImage[] }> = []
@@ -231,15 +244,29 @@ function parseBlocks(content: string): Block[] {
 export function RichContent({
   content,
   className = 'prose',
+  showToc = false,
   onOpenImage,
   onOpenGallery,
 }: {
   content: string
   className?: string
+  showToc?: boolean
   onOpenImage?: (src: string, title: string) => void
   onOpenGallery?: (images: GalleryImage[], title: string) => void
 }) {
   const blocks = useMemo(() => parseBlocks(content), [content])
+  const headings = useMemo(() => blocks.filter((b) => b.kind === 'h') as Array<Extract<Block, { kind: 'h' }>>, [blocks])
+
+  const isKeyTakeawaysHeading = (t: string) => {
+    const s = (t ?? '').trim().toLowerCase()
+    return (
+      s === 'key takeaways' ||
+      s.includes('key takeaways') ||
+      s.includes('重點') ||
+      s.includes('摘要') ||
+      s.includes('先看這裡')
+    )
+  }
 
   const renderUl = (items: UlItem[], keyPrefix: string, depth = 0) => {
     const ulStyle: React.CSSProperties =
@@ -264,22 +291,83 @@ export function RichContent({
 
   return (
     <div className={className}>
-      {blocks.map((b, idx) => {
+      {showToc && headings.length >= 2 ? (
+        <nav className="not-prose longformWide" aria-label="目錄" style={{ marginBottom: 12 }}>
+          <details className="card" style={{ boxShadow: 'none', background: 'var(--surface-2)' }} open={false}>
+            <summary className="cardInner" style={{ cursor: 'pointer', fontWeight: 900 }}>
+              目錄（點開）
+            </summary>
+            <div className="cardInner" style={{ paddingTop: 0 }}>
+              <ul style={{ margin: 0, paddingLeft: 18 }}>
+                {headings.map((h) => (
+                  <li key={h.id} style={{ marginTop: 6 }}>
+                    <button
+                      type="button"
+                      className="btn"
+                      style={{ minHeight: 34, padding: '8px 12px', fontSize: 'var(--text-sm)' }}
+                      onClick={() => {
+                        const el = document.getElementById(h.id)
+                        el?.scrollIntoView({ behavior: prefersReducedMotion() ? 'auto' : 'smooth', block: 'start' })
+                      }}
+                      aria-label={`跳到：${h.text}`}
+                    >
+                      {h.text}
+                    </button>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </details>
+        </nav>
+      ) : null}
+      {(() => {
+        const out: React.ReactNode[] = []
+        for (let idx = 0; idx < blocks.length; idx++) {
+          const b = blocks[idx]!
+
+          // Summary/Key takeaways: render as a distinct callout card when followed by a UL.
+          if (b.kind === 'h' && isKeyTakeawaysHeading(b.text)) {
+            const next = blocks[idx + 1]
+            if (next?.kind === 'ul') {
+              out.push(
+                <section
+                  key={`takeaways-${b.id}`}
+                  className="not-prose longformWide card"
+                  style={{ boxShadow: 'none', background: 'var(--surface-2)' }}
+                  aria-label={b.text}
+                >
+                  <div className="cardInner">
+                    <div style={{ fontWeight: 950, fontSize: 'var(--text-lg)', lineHeight: 1.15 }}>{b.text}</div>
+                    <div style={{ marginTop: 10 }}>{renderUl(next.items, `takeaways-ul-${idx}`)}</div>
+                  </div>
+                </section>,
+              )
+              idx += 1
+              continue
+            }
+          }
+
         if (b.kind === 'h') {
           const Tag = b.level === 4 ? 'h4' : 'h3'
-          return (
-            <Tag key={idx} style={{ margin: idx === 0 ? 0 : '14px 0 0 0', fontWeight: 950, lineHeight: 1.18 }}>
+          out.push(
+            <Tag
+              key={idx}
+              id={b.id}
+              className="longformHeading"
+              style={{ margin: idx === 0 ? 0 : '14px 0 0 0', fontWeight: 950, lineHeight: 1.18 }}
+            >
               <FormattedInline text={b.text} />
             </Tag>
           )
+          continue
         }
 
         if (b.kind === 'image') {
-          return (
+          out.push(
             <button
               key={idx}
               type="button"
-              className="inlineImageCard"
+              className="inlineImageCard longformWide not-prose"
               onClick={() => onOpenImage?.(b.src, b.alt)}
               title="點擊放大"
               aria-label={`查看大圖：${b.alt}`}
@@ -289,10 +377,11 @@ export function RichContent({
               <div className="inlineImageCaption">{b.alt}</div>
             </button>
           )
+          continue
         }
 
         if (b.kind === 'quote') {
-          return (
+          out.push(
             <blockquote
               key={idx}
               style={{
@@ -306,14 +395,16 @@ export function RichContent({
               <FormattedText text={b.text} className={className} />
             </blockquote>
           )
+          continue
         }
 
         if (b.kind === 'ul') {
-          return <div key={idx}>{renderUl(b.items, `ul-${idx}`)}</div>
+          out.push(<div key={idx}>{renderUl(b.items, `ul-${idx}`)}</div>)
+          continue
         }
 
         if (b.kind === 'ol') {
-          return (
+          out.push(
             <ol key={idx} style={{ margin: 0, paddingLeft: 22 }}>
               {b.items.map((it, i) => (
                 <li key={`${idx}-${i}-${it}`} style={{ marginTop: i === 0 ? 0 : 6 }}>
@@ -322,10 +413,11 @@ export function RichContent({
               ))}
             </ol>
           )
+          continue
         }
 
         const hasText = b.text.trim().length > 0
-        return (
+        out.push(
           <div key={idx} style={{ marginTop: idx === 0 ? 0 : 10 }}>
             {hasText ? (
               <p style={{ whiteSpace: 'pre-wrap', margin: 0 }}>
@@ -334,7 +426,10 @@ export function RichContent({
             ) : null}
 
             {b.galleries.length > 0 ? (
-              <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap', marginTop: hasText ? 10 : 0 }}>
+              <div
+                className="not-prose"
+                style={{ display: 'flex', gap: 10, flexWrap: 'wrap', marginTop: hasText ? 10 : 0 }}
+              >
                 {b.galleries.map((g, i) => {
                   const title = g.title || '圖庫'
                   return (
@@ -355,7 +450,9 @@ export function RichContent({
             ) : null}
           </div>
         )
-      })}
+        }
+        return out
+      })()}
     </div>
   )
 }

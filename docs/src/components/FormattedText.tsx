@@ -1,22 +1,64 @@
 import React from 'react'
+import { IconGoogleMaps } from './NavIcons'
+import { parseBasicBlocks } from '../markdownLite/blocks'
+import { tokenizeInline } from '../markdownLite/inline'
 
-const LINK_MD_RE = /\[([^\]]+)\]\((https?:\/\/[^)\s]+)\)/g
-const BARE_URL_RE = /(https?:\/\/[^\s)]+)(?![^<]*>)/g
+function isGoogleMapsHref(href: string) {
+  try {
+    const u = new URL(href)
+    const host = (u.hostname || '').replace(/^www\./, '').toLowerCase()
+    const path = (u.pathname || '').toLowerCase()
 
-type InlineToken =
-  | { kind: 'text'; value: string }
-  | { kind: 'code'; value: string }
-  | { kind: 'link'; label: string; href: string }
-  | { kind: 'bold'; value: string }
-  | { kind: 'italic'; value: string }
-  | { kind: 'mark'; value: string }
-  | { kind: 'url'; href: string; label: string }
+    // Google redirect wrapper (occasionally appears when copying links)
+    if ((host === 'google.com' || host.startsWith('google.')) && path === '/url') {
+      const wrapped = u.searchParams.get('q') || u.searchParams.get('url')
+      if (wrapped && (wrapped.startsWith('http://') || wrapped.startsWith('https://'))) {
+        return isGoogleMapsHref(wrapped)
+      }
+    }
 
-function splitTrailingUrlPunct(url: string) {
-  // Common trailing punctuations in our zh-TW content + markdown-ish contexts
-  const m = /^(.*?)([),.;:!?，。；：！？、》」）】]+)?$/.exec(url)
-  if (!m) return { url, punct: '' }
-  return { url: (m[1] ?? url).trim(), punct: (m[2] ?? '').trim() }
+    // Short links
+    if (host === 'maps.app.goo.gl') return true
+    if (host === 'goo.gl') return path.startsWith('/maps')
+
+    // google.{tld}/maps... or maps.google.{tld}/...
+    const isGoogleHost =
+      host === 'google.com' ||
+      host.startsWith('google.') ||
+      host === 'maps.google.com' ||
+      host.startsWith('maps.google.')
+    if (isGoogleHost) return path.startsWith('/maps') || path.includes('/maps/')
+  } catch {
+    // ignore
+  }
+  return false
+}
+
+function renderMapsIconLink({ key, href }: { key: React.Key; href: string }) {
+  return (
+    <a
+      key={key}
+      className="mapsIconLink"
+      href={href}
+      target="_blank"
+      rel="noreferrer noopener"
+      aria-label="在 Google Maps 開啟"
+      title={href}
+    >
+      <IconGoogleMaps size={18} />
+    </a>
+  )
+}
+
+function renderMapsTextPlusIcon({ key, label, href }: { key: React.Key; label: string; href: string }) {
+  return (
+    <span key={key} className="mapsTextWithIcon">
+      <a className="mapsTextLink" href={href} target="_blank" rel="noreferrer noopener" title={href}>
+        {label}
+      </a>
+      {renderMapsIconLink({ key: `${String(key)}-icon`, href })}
+    </span>
+  )
 }
 
 function formatUrlLabel(href: string) {
@@ -39,150 +81,6 @@ function formatUrlLabel(href: string) {
   return '連結'
 }
 
-function tokenizeInline(input: string): InlineToken[] {
-  // Priority order:
-  // 1) inline code: `...`
-  // 2) markdown links: [label](https://...)
-  // 3) mark: ::...::
-  // 4) bold: **...**
-  // 5) italic: *...*  (very simple; avoids matching "**")
-  // 6) bare URLs
-  //
-  // This is a deliberately small, safe subset (no HTML, no nested parsing guarantees).
-  const tokens: InlineToken[] = []
-
-  // Split by inline code first (odd parts are code)
-  const codeParts = input.split('`')
-  for (let i = 0; i < codeParts.length; i++) {
-    const part = codeParts[i] ?? ''
-    const isCode = i % 2 === 1
-    if (!part) continue
-    if (isCode) {
-      tokens.push({ kind: 'code', value: part })
-      continue
-    }
-
-    // Parse markdown links inside non-code text
-    let last = 0
-    for (const m of part.matchAll(LINK_MD_RE)) {
-      const idx = m.index ?? -1
-      if (idx < 0) continue
-
-      const before = part.slice(last, idx)
-      if (before) tokens.push({ kind: 'text', value: before })
-
-      const label = (m[1] ?? '').trim()
-      const href = (m[2] ?? '').trim()
-      tokens.push({ kind: 'link', label: label || href, href })
-
-      last = idx + m[0].length
-    }
-    const rest = part.slice(last)
-    if (rest) tokens.push({ kind: 'text', value: rest })
-  }
-
-  // Expand mark/bold/italic + bare urls only within text tokens (don’t touch code/link)
-  const expanded: InlineToken[] = []
-  for (const t of tokens) {
-    if (t.kind !== 'text') {
-      expanded.push(t)
-      continue
-    }
-
-    // Mark: ::...::
-    const markParts: InlineToken[] = []
-    {
-      let cursor0 = 0
-      const s0 = t.value
-      const markRe = /::([^\n]+?)::/g
-      for (const m of s0.matchAll(markRe)) {
-        const idx = m.index ?? -1
-        if (idx < 0) continue
-        if (idx > cursor0) markParts.push({ kind: 'text', value: s0.slice(cursor0, idx) })
-        const inner = (m[1] ?? '').trim()
-        if (inner) markParts.push({ kind: 'mark', value: inner })
-        cursor0 = idx + m[0].length
-      }
-      if (cursor0 < s0.length) markParts.push({ kind: 'text', value: s0.slice(cursor0) })
-    }
-
-    // Bold: **...** (within remaining text tokens)
-    const boldParts: InlineToken[] = []
-    const boldRe = /\*\*([^*]+)\*\*/g
-    // If we have mark tokens, we must preserve them while parsing bold.
-    // We do this by running bold parsing per text token in markParts.
-    for (const mp of markParts) {
-      if (mp.kind !== 'text') {
-        boldParts.push(mp)
-        continue
-      }
-      const seg = mp.value
-      let cursorBold = 0
-      for (const m of seg.matchAll(boldRe)) {
-        const idx = m.index ?? -1
-        if (idx < 0) continue
-        if (idx > cursorBold) boldParts.push({ kind: 'text', value: seg.slice(cursorBold, idx) })
-        const inner = (m[1] ?? '').trim()
-        if (inner) boldParts.push({ kind: 'bold', value: inner })
-        cursorBold = idx + m[0].length
-      }
-      if (cursorBold < seg.length) boldParts.push({ kind: 'text', value: seg.slice(cursorBold) })
-    }
-
-    // Italic: *...* (skip segments that still contain "**")
-    for (const bt of boldParts) {
-      if (bt.kind !== 'text') {
-        expanded.push(bt)
-        continue
-      }
-      const s2 = bt.value
-      let cursor2 = 0
-      const italicRe = /(^|[^*])\*([^*\n]+)\*/g
-      // We keep the leading char (group1) as plain text.
-      for (const m of s2.matchAll(italicRe)) {
-        const idx = m.index ?? -1
-        if (idx < 0) continue
-        const lead = m[1] ?? ''
-        const inner = (m[2] ?? '').trim()
-
-        const before = s2.slice(cursor2, idx)
-        if (before) expanded.push({ kind: 'text', value: before })
-
-        if (lead) expanded.push({ kind: 'text', value: lead })
-        if (inner) expanded.push({ kind: 'italic', value: inner })
-
-        cursor2 = idx + m[0].length
-      }
-      if (cursor2 < s2.length) expanded.push({ kind: 'text', value: s2.slice(cursor2) })
-    }
-  }
-
-  // Auto-link bare urls in remaining text tokens
-  const final: InlineToken[] = []
-  for (const t of expanded) {
-    if (t.kind !== 'text') {
-      final.push(t)
-      continue
-    }
-    const s = t.value
-    let last = 0
-    for (const m of s.matchAll(BARE_URL_RE)) {
-      const idx = m.index ?? -1
-      if (idx < 0) continue
-      const hrefRaw = (m[1] ?? '').trim()
-      const { url: href, punct } = splitTrailingUrlPunct(hrefRaw)
-      if (!href) continue
-      if (idx > last) final.push({ kind: 'text', value: s.slice(last, idx) })
-      final.push({ kind: 'url', href, label: formatUrlLabel(href) })
-      if (punct) final.push({ kind: 'text', value: punct })
-      last = idx + m[0].length
-    }
-    if (last < s.length) final.push({ kind: 'text', value: s.slice(last) })
-  }
-
-  return final
-}
-
 export function FormattedInline({ text }: { text: string }) {
   const tokens = tokenizeInline(text)
   if (tokens.length === 0) return null
@@ -195,94 +93,27 @@ export function FormattedInline({ text }: { text: string }) {
         if (t.kind === 'bold') return <strong key={i}>{t.value}</strong>
         if (t.kind === 'italic') return <em key={i}>{t.value}</em>
         if (t.kind === 'mark') return <mark key={i}>{t.value}</mark>
-        if (t.kind === 'link')
+        if (t.kind === 'link') {
+          if (isGoogleMapsHref(t.href)) return renderMapsTextPlusIcon({ key: i, label: t.label, href: t.href })
           return (
             <a key={i} href={t.href} target="_blank" rel="noreferrer noopener">
               {t.label}
             </a>
           )
-        if (t.kind === 'url')
+        }
+        if (t.kind === 'url') {
+          const label = formatUrlLabel(t.href)
+          if (isGoogleMapsHref(t.href)) return renderMapsTextPlusIcon({ key: i, label, href: t.href })
           return (
             <a key={i} href={t.href} target="_blank" rel="noreferrer noopener" title={t.href}>
-              {t.label}
+              {label}
             </a>
           )
+        }
         return null
       })}
     </>
   )
-}
-
-type Block =
-  | { kind: 'p'; text: string }
-  | { kind: 'ul'; items: string[] }
-  | { kind: 'ol'; items: string[] }
-  | { kind: 'checklist'; items: Array<{ checked: boolean; text: string }> }
-  | { kind: 'quote'; text: string }
-  | { kind: 'h'; level: 2 | 3 | 4; text: string }
-
-function parseBlocks(text: string): Block[] {
-  const rawLines = text.replace(/\r\n/g, '\n').split('\n')
-
-  const blocks: string[][] = []
-  let buf: string[] = []
-  const flush = () => {
-    const cleaned = buf.map((l) => l.trimEnd())
-    const hasAny = cleaned.some((l) => l.trim().length > 0)
-    if (hasAny) blocks.push(cleaned)
-    buf = []
-  }
-
-  for (const line of rawLines) {
-    if (line.trim() === '') {
-      flush()
-    } else {
-      buf.push(line)
-    }
-  }
-  flush()
-
-  return blocks.map((lines) => {
-    const trimmed = lines.map((l) => l.trim())
-    // Headings: treat a single-line block as heading if it starts with ##/###
-    if (trimmed.length === 1) {
-      const one = trimmed[0] ?? ''
-      // Allow "###（中文...）" (no space) as well as "### Title".
-      const h4 = /^###\s*(.+)$/.exec(one)
-      if (h4) return { kind: 'h', level: 4, text: (h4[1] ?? '').trim() }
-      const h3 = /^##\s*(.+)$/.exec(one)
-      if (h3) return { kind: 'h', level: 3, text: (h3[1] ?? '').trim() }
-    }
-
-    // Block quote: all lines start with ">"
-    const isQuote = trimmed.every((l) => /^>\s?/.test(l))
-    if (isQuote) {
-      const q = trimmed.map((l) => l.replace(/^>\s?/, '')).join('\n').trim()
-      return { kind: 'quote', text: q }
-    }
-
-    // Checklist: "- [ ]" / "- [x]"
-    const isChecklist = trimmed.every((l) => /^[-*]\s+\[( |x|X)\]\s+/.test(l))
-    if (isChecklist) {
-      const items = trimmed.map((l) => {
-        const m = /^[-*]\s+\[( |x|X)\]\s+(.+)$/.exec(l)
-        const checked = (m?.[1] ?? '').toLowerCase() === 'x'
-        const txt = (m?.[2] ?? '').trim()
-        return { checked, text: txt }
-      })
-      return { kind: 'checklist', items }
-    }
-
-    const isUl = trimmed.every((l) => /^[-*]\s+/.test(l))
-    if (isUl) {
-      return { kind: 'ul', items: trimmed.map((l) => l.replace(/^[-*]\s+/, '').trim()) }
-    }
-    const isOl = trimmed.every((l) => /^\d+\.\s+/.test(l))
-    if (isOl) {
-      return { kind: 'ol', items: trimmed.map((l) => l.replace(/^\d+\.\s+/, '').trim()) }
-    }
-    return { kind: 'p', text: lines.join('\n').trim() }
-  })
 }
 
 export function FormattedText({
@@ -292,7 +123,7 @@ export function FormattedText({
   text: string
   className?: string
 }) {
-  const blocks = parseBlocks(text)
+  const blocks = parseBasicBlocks(text)
 
   return (
     <div className={className}>

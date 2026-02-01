@@ -21,33 +21,6 @@
   }
 }
 
-.inlineImageCard {
-  width: min(620px, 100%);
-  border: 1px solid var(--hairline);
-  border-radius: 16px;
-  overflow: hidden;
-  padding: 0;
-  background: var(--surface);
-  text-align: left;
-  cursor: pointer;
-}
-
-.inlineImageCard img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-  display: block;
-  background: color-mix(in oklab, var(--surface) 70%, black);
-}
-
-.inlineImageCaption {
-  padding: 10px 12px 12px;
-  font-size: var(--text-xs);
-  line-height: 1.25;
-  font-weight: 750;
-  color: var(--text);
-}
-
 .galleryThumb {
   flex: 0 0 auto;
   width: 88px;

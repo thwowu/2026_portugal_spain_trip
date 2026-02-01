@@ -7,7 +7,7 @@ title: 里斯本（Lisbon）住宿
 # 里斯本（Lisbon）住宿
 
 ## options
-- [盧澤羅斯套房（Luzeiros Suites）](https://maps.app.goo.gl/szKwdhc3Yp7RuU8e8)
+- 盧澤羅斯套房（Luzeiros Suites）- [盧澤羅斯套房（Luzeiros Suites）](https://maps.app.goo.gl/szKwdhc3Yp7RuU8e8)
   - why: 我們已預訂房型「Superior Room, Courtyard View」（約 20 ㎡，最多 3 人，1 張 Queen Bed 或 2 張單人床）。第一晚就用它當「落地保險」：抵達後先穩定入住，把體力睡回來。
 
     位置：在 Campo Pequeno 斗牛場一帶，周邊步行友善。
@@ -25,6 +25,12 @@ title: 里斯本（Lisbon）住宿
 
 
 ## publicTransportHowToBuy
+### Key takeaways
+- **一人一張卡**：`Navegante`（VIVA Viagem）建議每人各買一張，刷卡最省腦。
+- **票種用「四次法則」**：一天大概 ≤ 4 趟用 `Zapping`；想密集搭乘再開 `24h`。
+- **同一卡不能同時放 `Zapping` + `24h`**：避免卡在「卡裡還有餘額但今天想買通票」。
+- **不要上車跟司機買票**：通常更貴、更慢，也更容易出錯。
+
 ### 先搞懂這張卡
 里斯本交通卡不用想太複雜：先弄到一張 `Navegante Card`（前身 `VIVA Viagem`；也常寫 `navegante ocasional`），接下來只要決定今天用 `Zapping` 還是 `24h`。
 
@@ -62,6 +68,11 @@ title: 里斯本（Lisbon）住宿
 要去長途巴士/轉運站，最常用的兩個是 `Sete Rios` 和 `Oriente`。從住宿附近的 `Campo Pequeno`（黃線）出發，你可以把去 `Sete Rios` 記成一條口訣：「黃線到 `Marquês de Pombal` → 轉藍線 → `Jardim Zoológico`」，下車跟著指標走就是巴士站。去 `Oriente` 更單純：「黃線到 `Saldanha` → 轉紅線 → `Oriente`」，同站也能轉火車/地鐵，很適合當大型轉運點。行李多或時間卡很緊，直接叫 Uber/Bolt 到站通常最省腦。
 
 ## moneySavingTips
+### Key takeaways
+- **省錢的核心**：別臨時買票、別為了排隊花錢；日常用 `Zapping`，要密集搭乘再開 `24h`。
+- **電車體驗≠交通**：把 `Tram 28` 當體驗，不要硬擠尖峰；想坐得舒服選清晨/深夜或改 `Tram 12/24`。
+- **鞋子抓地力很值錢**：坡多＋石板路滑，鞋不行會讓你一直想叫車（最後更花錢）。
+
 ### 先抓住省錢的核心
 省錢的核心就一句：別臨時買票、別為了排隊花錢。日常用 `Zapping`，要密集搭乘再開 `24h`。（Carris：[`Occasional journeys`](https://www.carris.pt/en/buy/occasional-journeys/)；Metro Lisboa：[`Comprar`](https://www.metrolisboa.pt/comprar/)）
 

@@ -12,6 +12,7 @@ title: 拉各斯（Lagos）→ 塞維爾（Seville）
 - recommended: bus
 - because: 跨境用直達巴士最直覺；FlixBus 可直達塞維爾（Seville；常見到 Plaza de Armas 等站）。
 - reminders:
+  - ### Key takeaways
   - 先確認上車點與終點站（車票會寫清楚），避免到現場才找不到月台/站牌。
   - 再抓時間提早到站：一般 20–30 分鐘；旺季抓 30–45 分鐘。
   - 護照/證件隨身放（跨境可能備查），不要放托運行李。

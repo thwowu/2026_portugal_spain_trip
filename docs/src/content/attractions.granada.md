@@ -10,9 +10,15 @@ title: 格拉納達（Granada）
 
 ## must
 
-### [阿爾罕布拉宮 Alhambra](https://www.google.com/maps/search/?api=1&query=Alhambra%20Granada)（Day 11 主菜、需預約）
+### Key takeaways
+- **Alhambra 以 Nasrid 時段票當全日錨點**：先鎖時段，再排其他，行程就不會亂。
+- **主菜只要 1–2 個就夠**：宮殿細節密度很高，別把整天塞爆。
+- **上坡段用公車/短程車省膝蓋**：把力氣留給園區本體與拍照。
+- **市區走法「平路先、上坡後」**：先吃氛圍，再看體力決定上坡看景。
+
+### [阿爾罕布拉宮 Alhambra](https://www.google.com/maps/search/?api=1&query=Alhambra%20Granada)（Day 11 主菜、需預約）（Day 11 主菜、需預約）
 @card: Granada 的世界級主菜：以 Nasrid 定時入場為錨點，把「摩爾王宮城＋庭院水景」一次看懂；細節密度高，現場比照片更有感。
-{{gallery:Alhambra|https://source.unsplash.com/gM1lnTTdWuE/1800x1200|https://source.unsplash.com/ryzLAmYJq1c/1800x1200|https://commons.wikimedia.org/wiki/Special:FilePath/Alhambra_-_Granada.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Architectural_details_in_Alhambra,_Granada_(6930669668).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Patio_de_los_Leones.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Alcazaba_Alhambra_Granada_Spain.jpg?width=1800}}
+{{gallery:Alhambra|https://source.unsplash.com/gM1lnTTdWuE/1800x1200|https://source.unsplash.com/ryzLAmYJq1c/1800x1200|https://source.unsplash.com/utfiDJBebHw/1800x1200|https://source.unsplash.com/BOQt33kG_vE/1800x1200|https://source.unsplash.com/_OOWuh5k5RM/1800x1200|https://source.unsplash.com/HN9Jf9ICvCo/1800x1200}}
 
 重點：納斯里德宮（Nasrid Palaces / Palacios Nazaríes）分時段入場、庭院水景、整個園區的世界級氛圍。
 
@@ -22,9 +28,9 @@ title: 格拉納達（Granada）
 
 建議停留：半天到一整天（看你走多慢＋拍照）。
 
-### [軒尼洛里費花園（Generalife）](https://www.google.com/maps/search/?api=1&query=Generalife%20Granada)（通常含在套票裡，別錯過）
+### [軒尼洛里費花園（Generalife）](https://www.google.com/maps/search/?api=1&query=Generalife%20Granada)（通常含在套票裡，別錯過）（通常含在套票裡，別錯過）
 @card: 把 Alhambra 的節奏放鬆下來：水道、花園與春天綠意是「喘口氣」的那一段；和主宮殿一起走，整個王宮城的體驗才算完整。
-{{gallery:Generalife|https://commons.wikimedia.org/wiki/Special:FilePath/Palacio_Generalife.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Granada_Spain_Alhambra-Palacio-Generalife-01.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Granada,_Generalife,_Mirador_del_Patio_de_la_Acequia_(1).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Alhambra,_Generalife_and_Albayz%C3%ADn,_Granada-110149.jpg?width=1800}}
+{{gallery:Generalife|https://source.unsplash.com/gM1lnTTdWuE/1800x1200|https://source.unsplash.com/BOQt33kG_vE/1800x1200|https://source.unsplash.com/ryzLAmYJq1c/1800x1200|https://source.unsplash.com/HN9Jf9ICvCo/1800x1200}}
 
 重點：花園＋水道＋春天的綠意（四月很加分）。
 
@@ -37,60 +43,60 @@ title: 格拉納達（Granada）
 ### Day 12 市區主菜（推薦順序：平路先吃氛圍 → 再上坡看景 → 隨時好撤退）
 @card: Day 12 的重點是「平路先拿明信片氛圍，再看體力決定上坡」：用河谷街段當主菜、Plaza Nueva 當撤退點，整天最容易穩。
 
-#### [新廣場（Plaza Nueva）](https://www.google.com/maps/search/?api=1&query=Plaza%20Nueva%20Granada) → Darro 河谷入口
-{{gallery:Plaza Nueva|https://commons.wikimedia.org/wiki/Special:FilePath/Plaza_Nueva_Granada.JPG?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Granada%2C_Plaza_Nueva.JPG?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Plaza_Nueva_de_Granada.jpg?width=1800}}
+#### [新廣場（Plaza Nueva）](https://www.google.com/maps/search/?api=1&query=Plaza%20Nueva%20Granada) → Darro 河谷入口 → Darro 河谷入口
+{{gallery:Plaza Nueva|https://source.unsplash.com/HN9Jf9ICvCo/1800x1200|https://source.unsplash.com/ZvB34PkHLvU/1800x1200|https://source.unsplash.com/cDVlPjOrJgU/1800x1200}}
 
 把它當成 Granada 的樞紐：走累就回到這附近補給/撤退。它位在舊城要道核心，長期是市中心往山坡歷史街區的入口與集散點。
 把它當成 Granada 的樞紐：走累就回到這附近補給/撤退。它也剛好是市中心通往山坡歷史街區的入口。
 
-#### [達羅街（Carrera del Darro）](https://www.google.com/maps/search/?api=1&query=Carrera%20del%20Darro%20Granada)＋[悲傷大道（Paseo de los Tristes）](https://www.google.com/maps/search/?api=1&query=Paseo%20de%20los%20Tristes%20Granada)
-{{gallery:Carrera del Darro + Paseo de los Tristes|https://commons.wikimedia.org/wiki/Special:FilePath/Carrera_del_Darro_Granada_Spain.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Granada_-_Carrera_del_Darro_1.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Paseo_de_los_Tristes_%26_Alhambra_-_Granada.JPG?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Alhambra_from_below_Paseo_de_los_Tristes_Granada_Spain.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Granada%2C_Paseo_de_los_Tristes.jpg?width=1800}}
+#### [達羅街（Carrera del Darro）](https://www.google.com/maps/search/?api=1&query=Carrera%20del%20Darro%20Granada)＋悲傷大道（Paseo de los Tristes） [Paseo de los Tristes Granada](https://www.google.com/maps/search/?api=1&query=Paseo%20de%20los%20Tristes%20Granada)＋悲傷大道（Paseo de los Tristes）#### [達羅街（Carrera del Darro） [Carrera del Darro Granada](https://www.google.com/maps/search/?api=1&query=Carrera%20del%20Darro%20Granada)＋悲傷大道（Paseo de los Tristes）](https://www.google.com/maps/search/?api=1&query=Paseo%20de%20los%20Tristes%20Granada)
+{{gallery:Carrera del Darro + Paseo de los Tristes|https://source.unsplash.com/HN9Jf9ICvCo/1800x1200|https://source.unsplash.com/ZvB34PkHLvU/1800x1200|https://source.unsplash.com/utfiDJBebHw/1800x1200|https://source.unsplash.com/ryzLAmYJq1c/1800x1200}}
 
 白天/傍晚走都漂亮，是 Granada 的明信片街段。河谷石橋、老建築立面與上方山城視角很有層次，不需要做功課，走一段就很 Granada。
 白天或傍晚走都漂亮，是 Granada 的明信片街段。不需要做功課，沿著河走一段就很有感。
 
-#### [巴紐埃洛阿拉伯浴場遺址（El Bañuelo）](https://www.google.com/maps/search/?api=1&query=El%20Ba%C3%B1uelo%20Granada)（短停加分）
-{{gallery:El Bañuelo|https://commons.wikimedia.org/wiki/Special:FilePath/El_Ba%C3%B1uelo_Granada_01.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/El_Ba%C3%B1uelo_Granada_02.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/El_Ba%C3%B1uelo_Granada_interior_1.jpg?width=1800}}
+#### [巴紐埃洛阿拉伯浴場遺址（El Bañuelo）](https://www.google.com/maps/search/?api=1&query=El%20Ba%C3%B1uelo%20Granada)（短停加分）（短停加分）
+{{gallery:El Bañuelo|https://source.unsplash.com/BNYEBEu9G4s/1800x1200|https://source.unsplash.com/PUMw1z67VmQ/1800x1200|https://source.unsplash.com/LjJV56L48CQ/1800x1200}}
 
 規模小但氛圍很對：拱頂、天窗與石柱會很快讓你進入中世紀伊斯蘭公共浴場的想像。它是 Granada 保存最完整、也最古老的摩爾式公共浴場遺跡之一。
 規模不大，但很值得短停：拱頂、天窗與石柱很有辨識度。它是 Granada 保存很完整、也很古老的摩爾式公共浴場遺跡之一。
 
-#### [格拉納達主教座堂（Granada Cathedral）](https://www.google.com/maps/search/?api=1&query=Granada%20Cathedral)＋[皇家禮拜堂（Capilla Real）](https://www.google.com/maps/search/?api=1&query=Capilla%20Real%20Granada)
-{{gallery:Granada Cathedral|https://commons.wikimedia.org/wiki/Special:FilePath/Fachada_de_la_Catedral_de_Granada.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Catedral_de_Granada,_18001_Granada,_Spain_-_panoramio.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Catedral_de_Granada._Interior.jpg?width=1800}}
+#### [格拉納達主教座堂（Granada Cathedral）](https://www.google.com/maps/search/?api=1&query=Granada%20Cathedral)＋皇家禮拜堂（Capilla Real） [Capilla Real Granada](https://www.google.com/maps/search/?api=1&query=Capilla%20Real%20Granada)＋皇家禮拜堂（Capilla Real）#### [格拉納達主教座堂（Granada Cathedral） [Granada Cathedral](https://www.google.com/maps/search/?api=1&query=Granada%20Cathedral)＋皇家禮拜堂（Capilla Real）](https://www.google.com/maps/search/?api=1&query=Capilla%20Real%20Granada)
+{{gallery:Granada Cathedral|https://source.unsplash.com/6tlisBy0hhg/1800x1200|https://source.unsplash.com/-3sPFcLqrA0/1800x1200|https://source.unsplash.com/4DAlQATl3YA/1800x1200}}
 
 想把 Granada 從摩爾王宮城補成「西班牙城市本體」很適合。收復後它成為重要宗教與王權象徵；皇家禮拜堂與天主教雙王（伊莎貝拉與費迪南）密切相關，對應 1492 的轉折。
 想把 Granada 從摩爾王宮城補成「西班牙城市」的樣子，來這裡很適合。
 收復後它成為重要宗教與王權象徵；皇家禮拜堂與天主教雙王（伊莎貝拉與費迪南）密切相關，對應 1492 的轉折。
 
-#### [古市集巷弄（La Alcaicería）](https://www.google.com/maps/search/?api=1&query=La%20Alcaicer%C3%ADa%20Granada)（10–20 分鐘就有感）
-{{gallery:La Alcaicería|https://commons.wikimedia.org/wiki/Special:FilePath/Entrada_a_la_alcaicer%C3%ADa_de_Granada.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Granada_-_La_Alcaicer%C3%ADa_1.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Granada_-_La_Alcaicer%C3%ADa_3.jpg?width=1800}}
+#### [古市集巷弄（La Alcaicería）](https://www.google.com/maps/search/?api=1&query=La%20Alcaicer%C3%ADa%20Granada)（10–20 分鐘就有感）（10–20 分鐘就有感）
+{{gallery:La Alcaicería|https://source.unsplash.com/cDVlPjOrJgU/1800x1200|https://source.unsplash.com/ZvB34PkHLvU/1800x1200|https://source.unsplash.com/HN9Jf9ICvCo/1800x1200}}
 
 巷弄尺度小、氛圍強，走一圈就有市集迷宮感。它原本與絲綢／手工品交易相關，延續了 Granada 作為安達盧斯城市的商業記憶。
 巷弄尺度小、氛圍很強，走一圈就有市集迷宮感。10–20 分鐘就夠，不用硬逛很久。
 
-#### [阿爾拜辛（Albaicín）](https://www.google.com/maps/search/?api=1&query=Albaic%C3%ADn%20Granada)老城散步（白天走比較舒服）
-{{gallery:Albaicín|https://commons.wikimedia.org/wiki/Special:FilePath/Albaizin,_part,_from_Alhambra,_Granada,_Andalusia,_Spain.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Granada_albaicin_carmen_santa_ines.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Alhambra,_Generalife_and_Albayz%C3%ADn,_Granada-110149.jpg?width=1800}}
+#### [阿爾拜辛（Albaicín）](https://www.google.com/maps/search/?api=1&query=Albaic%C3%ADn%20Granada)老城散步（白天走比較舒服）老城散步（白天走比較舒服）
+{{gallery:Albaicín|https://source.unsplash.com/ZvB34PkHLvU/1800x1200|https://source.unsplash.com/HN9Jf9ICvCo/1800x1200|https://source.unsplash.com/utfiDJBebHw/1800x1200|https://source.unsplash.com/ryzLAmYJq1c/1800x1200}}
 
 白牆小巷、石階與轉角視野很摩爾老城，隨便走都像在找景。它是 Granada 最古老的街區之一，保留濃厚的摩爾城市紋理。
 白牆小巷、石階與轉角視野很摩爾老城，隨便走都像在找景。
 提醒：石階不少，建議白天走，走累就回到 Plaza Nueva 一帶休息。
 
 #### [聖尼古拉斯觀景台（Mirador de San Nicolás）](https://www.google.com/maps/search/?api=1&query=Mirador%20de%20San%20Nicol%C3%A1s%20Granada)
-{{gallery:Mirador de San Nicolás|https://commons.wikimedia.org/wiki/Special:FilePath/Night_view_of_Alhambra,_Granada_from_Mirador_de_San_Nicolas_(cropped).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/The_Generalife_and_The_Alhambra,_Granada,_Andalusia,_Spain.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Alhambra,_Generalife_and_Albayz%C3%ADn,_Granada-110149.jpg?width=1800}}
+{{gallery:Mirador de San Nicolás|https://source.unsplash.com/utfiDJBebHw/1800x1200|https://source.unsplash.com/gM1lnTTdWuE/1800x1200|https://source.unsplash.com/ryzLAmYJq1c/1800x1200|https://source.unsplash.com/HN9Jf9ICvCo/1800x1200}}
 
 一次把 Alhambra（含 Generalife）和 Sierra Nevada 收進同一張明信片構圖。天氣好回報超高，但上坡石階多。
 一次把 Alhambra（含 Generalife）和 Sierra Nevada 收進同一張構圖。天氣好畫面很強，但上坡石階多，量力而為。
 
-#### （加分更在地）[Sacromonte（薩克羅蒙特）](https://www.google.com/maps/search/?api=1&query=Sacromonte%20Granada)（洞穴區）
-{{gallery:Sacromonte|https://commons.wikimedia.org/wiki/Special:FilePath/Sacromonte-Granada_(1).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Sacromonte_Nasrid_wall_Granada_Spain.jpg?width=1800}}
+#### [（加分更在地）Sacromonte（薩克羅蒙特）](https://www.google.com/maps/search/?api=1&query=Sacromonte%20Granada)（洞穴區）（洞穴區）
+{{gallery:Sacromonte|https://source.unsplash.com/HN9Jf9ICvCo/1800x1200|https://source.unsplash.com/ZvB34PkHLvU/1800x1200|https://source.unsplash.com/utfiDJBebHw/1800x1200}}
 
 洞穴住宅地景＋更野的山坡視角，很適合想看 Granada 另一面的人。它長期與吉普賽／弗拉明戈文化連結，被視為 Granada 具有代表性的在地文化區。
 洞穴住宅地景＋更野的山坡視角，想看 Granada 另一面可以加。
 它長期與吉普賽／弗拉明戈文化連結，被視為 Granada 具有代表性的在地文化區。
 
-### （選配）[Hammam Al Ándalus](https://www.google.com/maps/search/?api=1&query=Hammam%20Al%20%C3%81ndalus%20Granada)（雨天/冷天/想放鬆：超適合）
+### [（選配）Hammam Al Ándalus](https://www.google.com/maps/search/?api=1&query=Hammam%20Al%20%C3%81ndalus%20Granada)（雨天/冷天/想放鬆：超適合）（雨天/冷天/想放鬆：超適合）
 @card: 把「安達盧斯的水與蒸氣文化」用最舒服的方式體驗一次：雨天、冷天或走爆那天超適合，讓身體與節奏一起回到旅行狀態。
-{{gallery:Hammam / Arab Baths|https://commons.wikimedia.org/wiki/Special:FilePath/Aa_albaicin_facade_down_el_banuelo_granada_arab_baths.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Bench_hammam,_Alhambra,_Granada,_Spain.jpg?width=1800}}
+{{gallery:Hammam / Arab Baths|https://source.unsplash.com/PUMw1z67VmQ/1800x1200|https://source.unsplash.com/BNYEBEu9G4s/1800x1200|https://source.unsplash.com/LjJV56L48CQ/1800x1200}}
 
 把「安達盧斯的水與蒸氣文化」用最舒服的方式體驗一次，特別適合走爆的那天當作復活。它是現代浴場體驗，但靈感來自伊斯蘭世界哈曼傳統，和 Granada 仍可見的摩爾浴場遺跡形成呼應。
 把「安達盧斯的水與蒸氣文化」用比較舒服的方式體驗一次，特別適合走累的那天當作休息。
@@ -112,7 +118,7 @@ Hammam、Granada 大教堂＋皇家禮拜堂、以及市中心茶館（Calle Cal
 
 Mirador de San Nicolás（夕陽/夜景都強）是最經典視角。想避人可以白天拍照，晚上就當散步看氣氛，不用勉強卡到最前排。
 
-想要更高更開闊：[Mirador de San Miguel Alto](https://www.google.com/maps/search/?api=1&query=Mirador%20de%20San%20Miguel%20Alto%20Granada)（但走路更累）。
+想要更高更開闊：Mirador de San Miguel Alto [Mirador de San Miguel Alto Granada](https://www.google.com/maps/search/?api=1&query=Mirador%20de%20San%20Miguel%20Alto%20Granada)（但走路更累）。
 
 ## routes
 

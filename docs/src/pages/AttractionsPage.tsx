@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
-import { ATTRACTIONS_DATA, EXTENSIONS_DATA } from '../generated'
+import { ATTRACTIONS_DATA, EXTENSIONS_DATA, ITINERARY_PHASES } from '../generated'
 import { CITIES, STAYS_CITY_ORDER } from '../data/core'
 import type { CityId } from '../data/core'
 import { useProgress } from '../state/progress'
@@ -32,6 +32,45 @@ const SECTION_TAB_LABEL: Record<string, string> = {
 
 const TOOLBOX_KINDS = new Set(['food', 'safety', 'practical'])
 
+function cityIdFromItineraryCityLabel(label: string): CityId | null {
+  const s = (label ?? '').trim().toLowerCase()
+  // We match both Chinese and English (in case content changes later).
+  if (s.includes('sintra') || s.includes('辛特拉')) return 'sintra'
+  if (s.includes('lisbon') || s.includes('里斯本')) return 'lisbon'
+  if (s.includes('lagos') || s.includes('拉狗')) return 'lagos'
+  if (s.includes('seville') || s.includes('塞維爾')) return 'seville'
+  if (s.includes('granada') || s.includes('格拉納達')) return 'granada'
+  if (s.includes('madrid') || s.includes('馬德里')) return 'madrid'
+  return null
+}
+
+// City order should follow the itinerary's day sequence (including day trips like Sintra).
+const ITINERARY_CITY_ORDER: CityId[] = (() => {
+  const out: CityId[] = []
+  const seen = new Set<CityId>()
+
+  for (const phase of ITINERARY_PHASES) {
+    for (const d of phase.days) {
+      const id = cityIdFromItineraryCityLabel(d.cityLabel)
+      if (!id || seen.has(id)) continue
+      out.push(id)
+      seen.add(id)
+    }
+  }
+
+  // Ensure we include any attraction cities even if label matching fails.
+  for (const c of ATTRACTIONS_DATA) {
+    const id = c.cityId as CityId
+    if (seen.has(id)) continue
+    out.push(id)
+    seen.add(id)
+  }
+
+  // Final fallback (should never happen): keep the old stays-based order.
+  if (out.length === 0) return [...(STAYS_CITY_ORDER as unknown as CityId[])]
+  return out
+})()
+
 // If a section is extremely long, offer a dedicated reading modal.
 // (2500 chars ~= a few screens on mobile; tuned for our current content.)
 const LONG_SECTION_MODAL_THRESHOLD_CHARS = 2500
@@ -43,10 +82,9 @@ type LongReadModalState = {
   content: string
 }
 
-// Keep Attractions city order aligned with the itinerary (same as stays).
-// Note: we intentionally omit Sintra here (day trip; no attractions.<sintra>.md).
+// Keep Attractions city order aligned with the itinerary.
 const DEFAULT_ATTRACTIONS_CITY_ID: CityId | null = (() => {
-  for (const id of STAYS_CITY_ORDER) {
+  for (const id of ITINERARY_CITY_ORDER) {
     if (ATTRACTIONS_DATA.some((c) => c.cityId === id)) return id
   }
   return (ATTRACTIONS_DATA[0]?.cityId as CityId) ?? null
@@ -75,8 +113,8 @@ export function AttractionsPage() {
     for (const c of ATTRACTIONS_DATA) byId.set(c.cityId as CityId, c)
 
     const ordered: (typeof ATTRACTIONS_DATA) = []
-    // 1) Primary order: same as itinerary/stays
-    for (const id of STAYS_CITY_ORDER) {
+    // 1) Primary order: same as itinerary day sequence
+    for (const id of ITINERARY_CITY_ORDER) {
       const c = byId.get(id)
       if (c) {
         ordered.push(c)
@@ -231,6 +269,7 @@ export function AttractionsPage() {
 
   return (
     <div className="container pageAttractions">
+      <h1 className="srOnly">景點（Attractions）</h1>
       <div className="card">
         <div className="cardInner">
           <PageHero
@@ -470,7 +509,7 @@ export function AttractionsPage() {
                                 {extractH3CarouselItems(sectionContent).length < 3 ? (
                                   <RichContent
                                     content={cleanedSectionContent}
-                                    className="attrProse"
+                                    className="longformGrid prose attrProse"
                                     onOpenImage={(src, title) => setLightbox({ src, title })}
                                     onOpenGallery={(images, title) => setGallery({ images, title, index: 0 })}
                                   />
@@ -615,7 +654,8 @@ export function AttractionsPage() {
         >
           <RichContent
             content={stripCardLinesFromContent(longRead.content)}
-            className="attrProse"
+            className="longformGrid prose attrProse"
+            showToc
             onOpenImage={(src, title) => setLightbox({ src, title })}
             onOpenGallery={(images, title) => setGallery({ images, title, index: 0 })}
           />
@@ -779,7 +819,7 @@ function ExtensionModal({
                 return (
                   <RichContent
                     content={stripCardLinesFromContent(raw)}
-                    className="attrProse"
+                    className="longformGrid prose attrProse"
                     onOpenImage={onOpenImage}
                     onOpenGallery={onOpenGallery}
                   />

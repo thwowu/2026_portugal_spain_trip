@@ -36,4 +36,15 @@ export default defineConfig([
       },
     },
   },
+  {
+    files: ['tests/unit/**/*.{ts,tsx}'],
+    languageOptions: {
+      ecmaVersion: 2020,
+      globals: {
+        ...globals.browser,
+        ...globals.node,
+        ...globals.vitest,
+      },
+    },
+  },
 ])

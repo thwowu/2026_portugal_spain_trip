@@ -6,6 +6,11 @@ title: 拉各斯（Lagos）延伸行程（詳情）
 
 # 拉各斯（Lagos）延伸行程（詳情）
 
+- Key takeaways:
+  - **先挑「今天不想踩的雷」**：風浪？膝蓋？交通成本？先決定，再選題目。
+  - **一天只做 1 個遠點**：把時間留給吃飯、回程與 Plan B，體感會好很多。
+  - **出海永遠可取消**：風浪不穩就改陸上（回報更穩也更安全）。
+
 ## basics | 延伸日怎麼挑（先看這段）
 
 如果你只想把延伸日排得「順、好撤退、少踩雷」，先看這一段就夠。你不用背細節，出門前掃一眼，當天照著挑題目就很穩。
@@ -94,7 +99,7 @@ Wikivoyage（Lagos 城牆與防禦體系脈絡）：https://en.wikivoyage.org/wi
 
 ### images
 @card: 圖庫：先用畫面判斷你對不對這個題材；需要細節再往下讀。
-{{gallery:Sagres + Cabo de São Vicente|https://commons.wikimedia.org/wiki/Special:FilePath/Sagres_-_Farol_de_Cabo_de_S%C3%A3o_Vicente.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Cape_St._Vincent_Lighthouse.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Farol_Cabo_S%C3%A3o_Vicente_Sagres.jpg?width=1800|https://images.pexels.com/photos/24377407/pexels-photo-24377407.jpeg?auto=compress&cs=tinysrgb&w=1800}}
+{{gallery:Sagres + Cabo de São Vicente|https://source.unsplash.com/H5ElLjDKW5c/1800x1200|https://source.unsplash.com/3PX6wMdQWoE/1800x1200|https://source.unsplash.com/HG4mrt9tyQY/1800x1200|https://source.unsplash.com/6NeqDglW5Zo/1800x1200|https://images.pexels.com/photos/24377407/pexels-photo-24377407.jpeg?auto=compress&cs=tinysrgb&w=1800}}
 
 ### when
 @card: 最適合放在風浪大或 Benagil 取消那天：不上船也能吃到「世界盡頭」的懸崖尺度；四月初風大偏冷，防風保暖很重要。
@@ -181,7 +186,7 @@ Wikipedia（Farol do Cabo de São Vicente：光束距離等資訊）：https://p
 
 ArchDaily（A Voz do Mar 介紹）：https://www.archdaily.com/980220/a-voz-do-mar-chamber-of-sound-installation-ressano-garcia
 
-Wikimedia Commons（Letzte Bratwurst vor Amerika）：https://commons.wikimedia.org/wiki/File:Algarve_Portugal_Cabo_de_Sao_Vicente_Letzte_Bratwurst_vor_Amerika.jpg
+Letzte Bratwurst vor Amerika（餐車梗）：現場看到就買，無需特定連結。
 
 ## silves-monchique | 席爾維什（Silves）+ 蒙希克（Monchique）（古城 + 山區）
 
@@ -189,7 +194,7 @@ Wikimedia Commons（Letzte Bratwurst vor Amerika）：https://commons.wikimedia.
 
 ### images
 @card: 圖庫：先用畫面判斷你對不對這個題材；需要細節再往下讀。
-{{gallery:Silves + Monchique|https://commons.wikimedia.org/wiki/Special:FilePath/Silves_castle_-_ancient_capital_of_Algarve_-_The_Algarve,_Portugal_(1388844198).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Silves_castle_-_ancient_capital_of_Algarve_-_The_Algarve,_Portugal_(1387949771).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Monchique.JPG?width=1800}}
+{{gallery:Silves + Monchique|https://source.unsplash.com/4WMsb4tHwhc/1800x1200|https://source.unsplash.com/UfNpYASXcTk/1800x1200|https://source.unsplash.com/RPk4aFw1K4w/1800x1200|https://source.unsplash.com/m18V_Bm0yrY/1800x1200}}
 
 ### when
 @card: 想換口味的內陸日：Silves 是主菜、Monchique/Fóia 看天氣加碼；陰天或不想被海風限制時特別成立，起霧就把重點放回 Silves。
@@ -204,11 +209,11 @@ Wikimedia Commons（Letzte Bratwurst vor Amerika）：https://commons.wikimedia.
 - 版本 B（想要地形反差、但不勉強）：如果天氣很好、你也抓得到交通，再評估 Monchique（通常要早出門，而且回程別壓太晚）
 
 五大亮點（把它當作「內陸一日遊菜單」挑就好，不用全做）：
-1. Castelo de Silves（紅城堡）：最有代表性的摩爾城堡；站在上面看全城與山谷很有感。  
+1. Castelo de Silves（紅城堡）：最有代表性的摩爾城堡；站在上面看全城與山谷很有感。
    小加分：有些旅客很喜歡在城堡區域小坐喝點東西，把它當成「城堡頂端的休息站」（以現場營運為準）。
-2. Silves 舊城＋大教堂：城堡下來就是老城散步區（鵝卵石路＋咖啡館＋歷史感）。  
+2. Silves 舊城＋大教堂：城堡下來就是老城散步區（鵝卵石路＋咖啡館＋歷史感）。
    提醒：老城有坡，就用「走一段 → 坐一下」節奏，不要追“走遍”。
-3. Fóia（902m，阿爾加維最高點）：最大優點是「幾乎開車即達」的視野點；天氣好時能把海岸線一路看到很遠。  
+3. Fóia（902m，阿爾加維最高點）：最大優點是「幾乎開車即達」的視野點；天氣好時能把海岸線一路看到很遠。
    提醒：山頂風會冷、視野很吃天氣；起霧就直接當作路過，不要硬等。
    到了山頂怎麼玩（省力版、最不累）：
    - **360 度視野就是主菜**：天氣極好時，視野可能一路掃到西邊的 Cabo de São Vicente；你不用追“看多遠”，站在那裡把海岸線收進眼裡就很值得。
@@ -216,7 +221,7 @@ Wikimedia Commons（Letzte Bratwurst vor Amerika）：https://commons.wikimedia.
    - **通訊塔地標**：山頂的通訊塔很顯眼，它的存在本身就在告訴你「這裡是最高點」。
    - **補給＋小店（以當日為準）**：常見會有咖啡/小吃點或小店（有時是餐車）；如果你們想買一點「到此一遊」的小東西，小店有時也會兼賣酒、簡單紀念品（不要期待大採買）。
    - **日落**：確實很美，但別硬撐到全黑；看完「開始變金」就可以撤退，避免越晚越冷。
-4. Caldas de Monchique（溫泉村）：綠意、樹蔭、療養氛圍，很容易讓人喜歡的 Monchique 版本。  
+4. Caldas de Monchique（溫泉村）：綠意、樹蔭、療養氛圍，很容易讓人喜歡的 Monchique 版本。
    玩法：把它當成「散步＋喝咖啡/下午茶」主菜，而不是追景。
    補充（更貼近日常會在意的點）：
    - **它為什麼這麼“像療養地”**：Caldas de Monchique 本身就是溫泉鎮（spa town）定位，溫泉/水療文化很成熟；「自羅馬時代以來就有人來用這裡的泉水」這件事，更多是一種歷史與地方傳統的背書。
@@ -236,7 +241,7 @@ Monchique 小鎮（Town walk）怎麼玩（人文散步版）：
 
 逛街期待值（先講白會更舒服）：
 - Monchique 的重點比較像「氛圍與自然」，不像 Lagos / Carvoeiro 那樣有一整排伴手禮店。想買東西可以把期待放在 Fóia 山頂的小店或零星小店；鎮中心更多是用來「散步拍照、喝咖啡、感受山城生活」。
-5. Jeep Safari / Off-road（可選）：可以用「坐車看山景」的方式深入森林/軟木橡樹地景，有時也會搭配品酒或在地小點（以行程內容為準）。  
+5. Jeep Safari / Off-road（可選）：可以用「坐車看山景」的方式深入森林/軟木橡樹地景，有時也會搭配品酒或在地小點（以行程內容為準）。
    提醒：越野段通常顛、噪、久坐也累；若要選，務必挑「短時長、路況溫和、車況新、座位有支撐」的團，否則寧可不做。
 
 Monchique 的森林步道小抄（跟海岸步道完全不同）：
@@ -293,7 +298,7 @@ Wikipedia（Fóia）：https://en.wikipedia.org/wiki/F%C3%B3ia_(mountain)
 
 ### images
 @card: 圖庫：先用畫面判斷你對不對這個題材；需要細節再往下讀。
-{{gallery:Ferragudo|https://commons.wikimedia.org/wiki/Special:FilePath/Street_in_Ferragudo_-_The_Algarve,_Portugal_(1469921670).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Praia_do_Pintadinho,_Ferragudo.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Fort_of_S%C3%A3o_Jo%C3%A3o_do_Arade_(25621436275).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/15-05-2017_Igreja_de_Ferragudo_(1).JPG?width=1800}}
+{{gallery:Ferragudo|https://source.unsplash.com/UfNpYASXcTk/1800x1200|https://source.unsplash.com/ziA-EKzRm6Y/1800x1200|https://source.unsplash.com/99IJLPFAgU0/1800x1200|https://source.unsplash.com/4YUrSXo80Js/1800x1200}}
 
 ### when
 @card: 半日就很舒服的河口漁村：適合低壓力回血日，不追大景，追巷弄慢走＋河景座位坐下來吃一頓的度假感。
@@ -301,7 +306,7 @@ Wikipedia（Fóia）：https://en.wikipedia.org/wiki/F%C3%B3ia_(mountain)
 
 ### how
 @card: 交通重點：沒有 Lagos → Ferragudo 的定期公共渡輪；最穩是先到 Portimão 再用水上計程車過河，把船段留在河口內通常更平穩、體感也更好。
-先講一句最重要的：目前沒有 Lagos → Ferragudo 的「定期公共渡輪」。  
+先講一句最重要的：目前沒有 Lagos → Ferragudo 的「定期公共渡輪」。
 如果你硬要「從 Lagos 搭船去 Ferragudo」，通常會變成商業遊船/快艇（走外海），風浪與座椅型態體感不太友善。
 
 最穩、最省腦的做法是「陸路接駁 + 河上過河」（把船段留在河口內，通常比外海平穩很多）：
@@ -358,7 +363,7 @@ Wikivoyage（Ferragudo）：https://en.wikivoyage.org/wiki/Ferragudo
 
 ### images
 @card: 圖庫：先用畫面判斷你對不對這個題材；需要細節再往下讀。
-{{gallery:Faro|https://commons.wikimedia.org/wiki/Special:FilePath/Faro_Old_Town.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Old_Town_-_Faro,_Portugal_(46471079874).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Faro_Largo_da_S%C3%A9_R01.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Bone_Chapel_in_Faro,_Portugal.JPG?width=1800}}
+{{gallery:Faro|https://source.unsplash.com/1uSP-tCz4W8/1800x1200|https://source.unsplash.com/EdiSQeVj0wc/1800x1200|https://source.unsplash.com/UfNpYASXcTk/1800x1200}}
 
 ### when
 @card: 適合把節奏切回「城市生活」的一天：走老城＋補給很舒服；海風太大不想再走岩岸步道時，Faro 也很穩、好撤退。
@@ -415,7 +420,7 @@ CP（查班次）：https://www.cp.pt/passageiros/en
 
 ### images
 @card: 圖庫：先用畫面判斷你對不對這個題材；需要細節再往下讀。
-{{gallery:Ria Formosa|https://commons.wikimedia.org/wiki/Special:FilePath/Ria_Formosa_9.JPG?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Flamingo-comum_(Phoenicopterus_roseus)_(48628933488).jpg?width=1800}}
+{{gallery:Ria Formosa|https://source.unsplash.com/WNYsopmEpIg/1800x1200|https://source.unsplash.com/eATi_QmtnLM/1800x1200|https://source.unsplash.com/gK795m7I40Y/1800x1200}}
 
 ### when
 @card: 想做水上活動但不想賭外海顛簸：Ria Formosa 看的是潟湖/沙洲/鳥類，節奏更溫柔、也更容易「坐著放空」。
@@ -448,7 +453,7 @@ Wikipedia（Ria Formosa）：https://en.wikipedia.org/wiki/Ria_Formosa
 
 ### images
 @card: 圖庫：先用畫面判斷你對不對這個題材；需要細節再往下讀。
-{{gallery:Tavira|https://commons.wikimedia.org/wiki/Special:FilePath/Tavira_Portugal.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Tavira_(Portugal)_(12219403924).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Marina_de_Tavira_-_Portugal_(9400661120).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Praia_da_Ilha_de_Tavira_-_Portugal_(20072462770).jpg?width=1800}}
+{{gallery:Tavira|https://source.unsplash.com/UfNpYASXcTk/1800x1200|https://source.unsplash.com/4YUrSXo80Js/1800x1200|https://source.unsplash.com/99IJLPFAgU0/1800x1200|https://source.unsplash.com/ziA-EKzRm6Y/1800x1200}}
 
 ### when
 @card: 想要安靜河岸小城的一天：Tavira 不追大景、追舒服，但交通成本更高；越早出發、越早回程，體感會更像慢遊而不是趕車。
@@ -490,7 +495,7 @@ VisitPortugal（Tavira）：https://www.visitportugal.com/en/NR/exeres/5517ED19-
 
 ### images
 @card: 圖庫：先用畫面判斷你對不對這個題材；需要細節再往下讀。
-{{gallery:Praia da Luz|https://commons.wikimedia.org/wiki/Special:FilePath/Portugal_-_Algarve_-_Praia_de_Luz_-_beach_(25207324584).jpg?width=1800}}
+{{gallery:Praia da Luz|https://source.unsplash.com/w145ktwzx6o/1800x1200|https://source.unsplash.com/4YUrSXo80Js/1800x1200|https://source.unsplash.com/99IJLPFAgU0/1800x1200}}
 
 ### when
 @card: 想出門但不想走太多的一天：Luz 是「離 Lagos 很近、平坦海濱長廊＋坐下來看海」的低壓力午後選項，度假感很直接。
@@ -504,8 +509,8 @@ VisitPortugal（Tavira）：https://www.visitportugal.com/en/NR/exeres/5517ED19-
 - 如果你們那天狀態很好：再加碼「村內短巷弄」走到教堂附近就好，不用爬高、不用追點
 
 濱海長廊「確切走法」（幾乎零坡、零階梯）：
-- **起點（地標式集合點）**：把車停/下車在教堂附近最省力：  
-  [Igreja de Nossa Senhora da Luz（Google Maps）](https://www.google.com/maps/search/?api=1&query=Igreja%20de%20Nossa%20Senhora%20da%20Luz%20Praia%20da%20Luz)
+- **起點（地標式集合點）**：把車停/下車在教堂附近最省力：
+  Igreja de Nossa Senhora da Luz [Igreja de Nossa Senhora da Luz Praia da Luz](https://www.google.com/maps/search/?api=1&query=Igreja%20de%20Nossa%20Senhora%20da%20Luz%20Praia%20da%20Luz)
 - **中段**：從教堂一帶走到海邊主步道後，沿著海灘平行慢慢走。這段的重點是：
   - 路面通常是鋪設好的步道（好走、寬、平）
   - 長椅多、露天餐廳與咖啡座也多：累了就坐（不要追距離）
@@ -534,11 +539,11 @@ Wikipedia（Praia da Luz）：https://en.wikipedia.org/wiki/Praia_da_Luz
 
 一句話定位：這是「復健型半日」：幾乎全平地的木棧道，適合膝蓋想休息、但又想出門走走的那天。
 
-全平地但仍要注意濕滑：[Alvor 潟湖木棧道](https://www.google.com/maps/search/?api=1&query=Passadi%C3%A7os%20de%20Alvor) 雨後也可能滑，鞋底防滑很重要。
+全平地但仍要注意濕滑：Alvor 潟湖木棧道 [Passadiços de Alvor](https://www.google.com/maps/search/?api=1&query=Passadi%C3%A7os%20de%20Alvor) 雨後也可能滑，鞋底防滑很重要。
 
 ### images
 @card: 圖庫：先用畫面判斷你對不對這個題材；需要細節再往下讀。
-{{gallery:Alvor|https://commons.wikimedia.org/wiki/Special:FilePath/Passadi%C3%A7os_de_Alvor_-_Portugal_(49381851036).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Rua_25_de_Abril,_Alvor,_18_September_2015_(3).JPG?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Castelo_de_Alvor.JPG?width=1800}}
+{{gallery:Alvor|https://source.unsplash.com/5-R6bG-GCjk/1800x1200|https://source.unsplash.com/udOXKfd_8T0/1800x1200|https://source.unsplash.com/LCPUm3qTExU/1800x1200|https://source.unsplash.com/m18V_Bm0yrY/1800x1200}}
 
 ### when
 @card: 膝蓋想休息的半日：全平木棧道＋潟湖安靜感，強風天也低風險；適合把節奏放慢、走一段就收工的那天。
@@ -584,7 +589,7 @@ First Nature（Ria de Alvor Nature Reserve / wildlife）：https://www.first-nat
 
 ### images
 @card: 圖庫：先用畫面判斷你對不對這個題材；需要細節再往下讀。
-{{gallery:Carvoeiro + Marinha|https://commons.wikimedia.org/wiki/Special:FilePath/Algar_Seco_rocks,_Carvoeiro,_Portugal_julesvernex2-4.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Praia_da_Marinha_-_Lagoa2.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Praia_da_Marinha_(35518737040).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Praia_do_Carvalho,_Carvoeiro,_Algarve,_Portugal_2017-04.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Praia_do_Carvalho_-_Portugal_(53106421405).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Costa_de_Algarve,_Portugal.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Praia_da_Marinha_portugal_189_(22350177388).jpg?width=1800}}
+{{gallery:Carvoeiro + Marinha|https://source.unsplash.com/99IJLPFAgU0/1800x1200|https://source.unsplash.com/4YUrSXo80Js/1800x1200|https://source.unsplash.com/ziA-EKzRm6Y/1800x1200|https://source.unsplash.com/fYVqIyU5BKg/1800x1200|https://source.unsplash.com/z8j6KnfUT9E/1800x1200}}
 
 ### how
 @card: 動線照抄：上午 Carvoeiro（Algar Seco/木棧道）→ 午後 Marinha（上方觀景＋短步道）→ 回 Lagos；重點放在「上面看」，不把自己逼去下沙灘爬上爬下。
@@ -597,7 +602,7 @@ First Nature（Ria de Alvor Nature Reserve / wildlife）：https://www.first-nat
 
 Carvoeiro Top 5（省力版，把「走路量」控制住）：
 1. Carvoeiro Boardwalk（日落散步首選）：木棧道沿崖頂修；你可以把它當成「看海的大露台」，不必走到很遠。
-2. Algar Seco + A Boneca（天然窗）：想看就看、想停就停；石區不平就只留在上方視野點。  
+2. Algar Seco + A Boneca（天然窗）：想看就看、想停就停；石區不平就只留在上方視野點。
    如果你們願意走幾階：`Boneca Bar` 的位置很有記憶點，但以膝蓋為準，不用勉強。
 3. Seven Hanging Valleys Trail（只走一小段就夠）：它很美，但全走很累；省力玩法是「挑一段平/好撤退的路段走 20–40 分鐘就回頭」。
 4. 小船洞穴導覽（想解鎖 Benagil 時）：Carvoeiro 是到 Benagil 的近點之一；要訂船就直接參考 `benagil` 的 `### comfort`（船型/出發地/上午時段/不登陸新規）。
@@ -629,7 +634,7 @@ Benagil 是阿爾加維最「名片級」的海洞，但現在的重點不再是
 
 ### images
 @card: 圖庫：先用畫面判斷你對不對這個題材；需要細節再往下讀。
-{{gallery:Benagil Cave|https://commons.wikimedia.org/wiki/Special:FilePath/Benagil_Cave_(4).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Praia_de_Benagil.JPG?width=1800|https://source.unsplash.com/sR0o2409EXI/1800x1200|https://source.unsplash.com/olx62EtHRzQ/1800x1200|https://source.unsplash.com/p_63WsGgf3c/1800x1200}}
+{{gallery:Benagil Cave|https://source.unsplash.com/sR0o2409EXI/1800x1200|https://source.unsplash.com/olx62EtHRzQ/1800x1200|https://source.unsplash.com/p_63WsGgf3c/1800x1200}}
 
 ### when
 @card: 把 Benagil 當作可取消的加碼：風浪大很容易取消或品質打折；把期待放在「進洞內仰望天窗」的短時間回報，而不是登陸沙灘。

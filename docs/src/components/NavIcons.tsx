@@ -84,3 +84,15 @@ export function IconAttractions(props: IconProps) {
   )
 }
 
+export function IconGoogleMaps(props: IconProps) {
+  return (
+    <SvgIcon {...props}>
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      {/* simple map icon */}
+      <path d="M9 18l-6 3v-15l6 -3l6 3l6 -3v15l-6 3l-6 -3z" />
+      <path d="M9 3v15" />
+      <path d="M15 6v15" />
+    </SvgIcon>
+  )
+}
+

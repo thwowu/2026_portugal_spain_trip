@@ -12,6 +12,7 @@ export const TRANSPORT_DATA: TransportSegment[] = [
       "recommended": "train",
       "because": "省時間（約 3.5 小時）且路線清楚，適合先把移動日定下來。",
       "reminders": [
+        "### Key takeaways",
         "想省錢可看巴士，但通常更久，也更吃體力。",
         "先看清楚「抵達站」：Madrid Estación Sur / Avenida de América / 機場 T4 等會影響你後續轉乘。",
         "有大行李：訂票時把行李與座位規則先看過，當天會順很多。"
@@ -113,6 +114,7 @@ export const TRANSPORT_DATA: TransportSegment[] = [
       "recommended": "bus",
       "because": "跨境用直達巴士最直覺；FlixBus 可直達塞維爾（Seville；常見到 Plaza de Armas 等站）。",
       "reminders": [
+        "### Key takeaways",
         "先確認上車點與終點站（車票會寫清楚），避免到現場才找不到月台/站牌。",
         "再抓時間提早到站：一般 20–30 分鐘；旺季抓 30–45 分鐘。",
         "護照/證件隨身放（跨境可能備查），不要放托運行李。",
@@ -191,6 +193,7 @@ export const TRANSPORT_DATA: TransportSegment[] = [
       "recommended": "bus",
       "because": "直達、少轉乘；帶大行李比較不折騰，班次也多（常見從 Oriente / Sete Rios 出發）。",
       "reminders": [
+        "### Key takeaways",
         "先確認出發站點（常見：里斯本東方站 Oriente / 七河站 Sete Rios），避免跑錯站。",
         "再抓時間提早到站：一般 20–30 分鐘；旺季/連假抓 30–45 分鐘。",
         "有大行李：訂票時先確認「可托運行李」與額外行李加購規則；貴重物品留在隨身包。",
@@ -277,6 +280,7 @@ export const TRANSPORT_DATA: TransportSegment[] = [
       "recommended": "train",
       "because": "整體更穩、也比較舒服；抵達後通常比較好接住宿休息。",
       "reminders": [
+        "### Key takeaways",
         "先看你的目標：想舒服就火車；想省錢可改巴士（但更久）。",
         "帶行李就把「轉乘次數」降到最低，走起來會順很多。",
         "把 check-in 時間一起算：太早到可能要先寄放行李再回住宿，多跑一趟。"

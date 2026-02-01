@@ -14,6 +14,7 @@ export function ItineraryPage() {
 
   return (
     <div className="pageItinerary">
+      <h1 className="srOnly">行程（Itinerary）</h1>
       <div className="container" style={{ position: 'relative', zIndex: 1 }}>
         <div className="card">
           <div className="cardInner">

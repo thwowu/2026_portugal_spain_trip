@@ -6,6 +6,11 @@ title: 馬德里（Madrid）延伸行程（詳情）
 
 # 馬德里（Madrid）延伸行程（詳情）
 
+- Key takeaways:
+  - **先選題材再選舒適度**：迷宮古城（Toledo）／大景（水道橋 Segovia）／王室題材（Escorial/Aranjuez）用這條邏輯挑就不會後悔。
+  - **一日遊的成本是「最後一哩＋坡」**：怕累就把上坡段交給公車/短程車。
+  - **回程別壓太晚**：把班次不確定性留緩衝，才不會把一天玩崩。
+
 ## quick-pick | 一日遊怎麼選（30 秒決策）
 選擇可以很簡單，先想你要「題材」還是「舒服」：
 - 想要「三種文化」＋迷宮老城：選 `Toledo`（但老城有坡、有樓梯）。
@@ -20,7 +25,7 @@ title: 馬德里（Madrid）延伸行程（詳情）
 
 ### images
 @card: 圖庫：先用畫面判斷你對不對這個題材；需要細節再往下讀。
-{{gallery:Toledo|https://commons.wikimedia.org/wiki/Special:FilePath/Mirador_del_Valle_-_Toledo.jpeg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Alcazar_Toledo_Mirador_Valle.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Alc%C3%A1zar_de_Toledo_-_01.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Toledo._Vista_del_Alc%C3%A1zar_desde_el_puente_de_San_Mart%C3%ADn,_Robert_P._Napper.jpg?width=1800}}
+{{gallery:Toledo|https://source.unsplash.com/b43Wkc5YiHo/1800x1200|https://source.unsplash.com/U2dMxuao_ck/1800x1200|https://source.unsplash.com/2TjxFYkae2k/1800x1200|https://source.unsplash.com/8tjUqoLKyWw/1800x1200}}
 
 ### how
 @card: 交通與動線重點整理：火車往返＋老城慢走的節奏怎麼排、以及如何把上坡成本壓下來；先拿 Mirador 招牌視角，再進城慢慢走最穩。
@@ -62,7 +67,7 @@ Toledo 自動扶梯（彙整）：https://toledospain.click/escalators-in-toledo
 
 ### images
 @card: 圖庫：先用畫面判斷你對不對這個題材；需要細節再往下讀。
-{{gallery:Segovia（Aqueduct）|https://commons.wikimedia.org/wiki/Special:FilePath/AcueductoSegovia04.JPG?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Aqueduct_Segovia_Spain.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/El_acueducto_romano_de_Segovia.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Segovia_Aqueduct.JPG?width=1800}}
+{{gallery:Segovia（Aqueduct）|https://source.unsplash.com/mokdRB8Io2o/1800x1200|https://source.unsplash.com/KSvIiR5ULis/1800x1200|https://source.unsplash.com/4Bxmf8zp6nI/1800x1200}}
 
 ### how
 @card: 交通與動線重點整理：火車往返＋水道橋主菜，走路負擔相對可控；想加老城/城堡再看體力，不必把一日遊變成全收任務。
@@ -102,8 +107,13 @@ Wikivoyage（Segovia）：https://en.wikivoyage.org/wiki/Segovia
 
 你不用一次看完，先用下面這段做快速挑選：看你想要的題材是城牆、花園、地形，還是偏文學的大學城。
 
+### images
+@card: 圖庫：一張代表一個題材，先用畫面快速選（城牆/花園/帝國建築/地形/文學大學城/傳統小鎮）。
+{{gallery:Madrid 周邊一日遊（題材快速選）|https://source.unsplash.com/b43Wkc5YiHo/1800x1200|https://source.unsplash.com/mokdRB8Io2o/1800x1200|https://source.unsplash.com/uB1Quc9_Hko/1800x1200|https://source.unsplash.com/4HWBIUH9yRM/1800x1200|https://source.unsplash.com/swFgtTgcpLA/1800x1200|https://source.unsplash.com/cXU6tNxhub0/1800x1200}}
+
 ### 1. 阿維拉（Ávila）— 中世紀城牆本體
 @card: 一日遊候選—Ávila：中世紀城牆本體最完整；不走上城牆也能很有感，交通約 1.5 小時級（依班次），節奏穩、回報直接。
+{{gallery:Ávila|https://source.unsplash.com/mokdRB8Io2o/1800x1200|https://source.unsplash.com/78F9oyKIo9g/1800x1200|https://source.unsplash.com/b43Wkc5YiHo/1800x1200|https://source.unsplash.com/2TjxFYkae2k/1800x1200}}
 這座城市以保存很完整的中世紀城牆聞名，是 UNESCO 世界遺產。就算你不走上城牆，光看外觀＋老城慢走也很有感。
 
 - 特色亮點
@@ -113,6 +123,7 @@ Wikivoyage（Segovia）：https://en.wikivoyage.org/wiki/Segovia
 
 ### 2. 阿蘭胡埃斯（Aranjuez）— 皇室花園與草莓
 @card: 一日遊候選—Aranjuez：皇室花園＋度假感，比古城更優雅放鬆；近郊火車可達、步行量可控，還能順便吃草莓與蘆筍。
+{{gallery:Aranjuez|https://source.unsplash.com/ac2e7EdspVo/1800x1200|https://source.unsplash.com/BNYEBEu9G4s/1800x1200|https://source.unsplash.com/Qu80xglQJ3k/1800x1200|https://source.unsplash.com/uB1Quc9_Hko/1800x1200}}
 位於馬德里南方，這裡有皇宮與很大的花園。氛圍比古城更優雅放鬆，適合想走得輕鬆、又想看「王室＋花園」的人。
 
 - 特色亮點
@@ -123,6 +134,7 @@ Wikivoyage（Segovia）：https://en.wikivoyage.org/wiki/Segovia
 
 ### 3. 埃斯科里亞爾（San Lorenzo de El Escorial）— 西班牙文藝復興傑作
 @card: 一日遊候選—El Escorial：帝國尺度的皇家修道院，建築/宗教/權力題材濃；近郊火車約 40 分鐘級，走路量相對可控，氣勢很硬派。
+{{gallery:El Escorial|https://source.unsplash.com/Qu80xglQJ3k/1800x1200|https://source.unsplash.com/uB1Quc9_Hko/1800x1200|https://source.unsplash.com/LjJV56L48CQ/1800x1200|https://source.unsplash.com/Tol_xw9Y22w/1800x1200}}
 這裡的皇家修道院規模非常大，氣勢很「帝國」。如果你喜歡建築、宗教與權力題材，這個點很穩。
 
 - 特色亮點
@@ -131,6 +143,7 @@ Wikivoyage（Segovia）：https://en.wikivoyage.org/wiki/Segovia
 
 ### 4. 昆卡（Cuenca）— 懸崖上的魔法之城
 @card: 一日遊候選—Cuenca：懸崖之城視覺很猛但更吃力；火車可達但老城上坡多，適合願意為地形與拍照回報付出體力的人。
+{{gallery:Cuenca|https://source.unsplash.com/fHpwEl_Rmek/1800x1200|https://source.unsplash.com/oq0MsN2fnxo/1800x1200|https://source.unsplash.com/b43Wkc5YiHo/1800x1200|https://source.unsplash.com/2TjxFYkae2k/1800x1200}}
 如果你願意跑遠一點（搭火車也方便），昆卡的地形景觀通常會讓人很驚艷。但它也比較吃力：老城上坡多，保守的人可能會覺得累。
 
 - 特色亮點
@@ -140,6 +153,7 @@ Wikivoyage（Segovia）：https://en.wikivoyage.org/wiki/Segovia
 
 ### 5. 阿爾卡拉・德・埃納雷斯（Alcalá de Henares）— 文學與大學城
 @card: 一日遊候選—Alcalá：文學與大學城氛圍，全平地好走、近郊火車方便；想做一個低風險文化散步、又不想爬坡很穩。
+{{gallery:Alcalá de Henares|https://source.unsplash.com/K1_BKJO583A/1800x1200|https://source.unsplash.com/s_alWUC7_Ro/1800x1200|https://source.unsplash.com/uB1Quc9_Hko/1800x1200|https://source.unsplash.com/cXU6tNxhub0/1800x1200}}
 這裡是《唐吉訶德》作者塞萬提斯的故鄉，也是一座充滿學術氣息的大學城。
 
 - 特色亮點
@@ -149,6 +163,7 @@ Wikivoyage（Segovia）：https://en.wikivoyage.org/wiki/Segovia
 
 ### 6. 欽瓊（Chinchón）— 傳統廣場與茴香酒
 @card: 一日遊候選—Chinchón：傳統主廣場＋小鎮日常，節奏慢、觀光壓力小；適合半日～一日的舒服備案，也能試 `Anís` 當作小鎮記憶點。
+{{gallery:Chinchón|https://source.unsplash.com/ufm2_BJBRGc/1800x1200|https://source.unsplash.com/moCexie9Qbo/1800x1200|https://source.unsplash.com/b43Wkc5YiHo/1800x1200|https://source.unsplash.com/2TjxFYkae2k/1800x1200}}
 這是一個相對「不那麼主流」但很有魅力的小鎮，適合想體驗傳統小鎮風情、又不想行程太緊的人。
 
 - 特色亮點
@@ -169,7 +184,7 @@ Wikivoyage（Segovia）：https://en.wikivoyage.org/wiki/Segovia
 
 ### images
 @card: 圖庫：先用畫面判斷你對不對這個題材；需要細節再往下讀。
-{{gallery:El Escorial + Aranjuez|https://commons.wikimedia.org/wiki/Special:FilePath/Real_Monasterio_de_San_Lorenzo_de_El_Escorial_(35948313624).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Monasterio_de_El_Escorial_en_Madrid.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Royal_Palace_in_Aranjuez_Spain.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Lago_Palacio_Real_de_Aranjuez.jpg?width=1800}}
+{{gallery:El Escorial + Aranjuez|https://source.unsplash.com/Qu80xglQJ3k/1800x1200|https://source.unsplash.com/LjJV56L48CQ/1800x1200|https://source.unsplash.com/ac2e7EdspVo/1800x1200|https://source.unsplash.com/BNYEBEu9G4s/1800x1200}}
 
 ### how
 @card: 交通與動線重點整理：用 Cercanías 把王室題材做成兩個舒服的一日（El Escorial / Aranjuez 各一天），走路量可控，也很適合多住加碼或雨天替代。
@@ -194,7 +209,7 @@ Wikivoyage（Aranjuez）：https://en.wikivoyage.org/wiki/Aranjuez
 
 ### images
 @card: 圖庫：先用畫面判斷你對不對這個題材；需要細節再往下讀。
-{{gallery:Ávila|https://commons.wikimedia.org/wiki/Special:FilePath/%C3%81vila_Walls.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Muralla_de_%C3%81vila_(27387815196).jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Murallas_de_%C3%81vila.jpg?width=1800}}
+{{gallery:Ávila|https://source.unsplash.com/mokdRB8Io2o/1800x1200|https://source.unsplash.com/78F9oyKIo9g/1800x1200|https://source.unsplash.com/b43Wkc5YiHo/1800x1200}}
 
 ### how
 @card: 交通與動線重點整理：火車往返＋城牆外觀/老城慢走；想走上城牆再看體力，早到人少回報更好，半日～一日都成立。
@@ -217,7 +232,7 @@ Wikivoyage（Ávila）：https://en.wikivoyage.org/wiki/%C3%81vila
 
 ### images
 @card: 圖庫：先用畫面判斷你對不對這個題材；需要細節再往下讀。
-{{gallery:Alcalá de Henares|https://commons.wikimedia.org/wiki/Special:FilePath/Universidad_de_Alcal%C3%A1_-_fachada.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Alcal%C3%A1_de_Henares_(Madrid)-School_of_Architecture_2.jpg?width=1800}}
+{{gallery:Alcalá de Henares|https://source.unsplash.com/K1_BKJO583A/1800x1200|https://source.unsplash.com/s_alWUC7_Ro/1800x1200|https://source.unsplash.com/uB1Quc9_Hko/1800x1200}}
 
 ### how
 @card: 交通與動線重點整理：近郊火車＋全平地散步，屬於睡晚一點也能去的低風險半日；適合當緩衝日把節奏放慢。
@@ -240,7 +255,7 @@ Wikivoyage（Alcalá de Henares）：https://en.wikivoyage.org/wiki/Alcal%C3%A1_
 
 ### images
 @card: 圖庫：先用畫面判斷你對不對這個題材；需要細節再往下讀。
-{{gallery:Cuenca|https://commons.wikimedia.org/wiki/Special:FilePath/Cuenca_Casas_Colgadas.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Casas_Colgadas_de_Cuenca.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Cuenca,_Spain_-_Hanging_houses_(Casas_Colgadas).jpg?width=1800}}
+{{gallery:Cuenca|https://source.unsplash.com/fHpwEl_Rmek/1800x1200|https://source.unsplash.com/oq0MsN2fnxo/1800x1200|https://source.unsplash.com/b43Wkc5YiHo/1800x1200}}
 
 ### how
 @card: 交通與動線重點整理：火車往返＋老城地形視野；回報很猛但上坡多，建議早去早回，把一日遊留在「好玩」而不是「硬撐」。
@@ -263,7 +278,7 @@ Wikivoyage（Cuenca）：https://en.wikivoyage.org/wiki/Cuenca_(Spain)
 
 ### images
 @card: 圖庫：先用畫面判斷你對不對這個題材；需要細節再往下讀。
-{{gallery:Chinchón|https://commons.wikimedia.org/wiki/Special:FilePath/Plaza%20Mayor%20Chinch%C3%B3n.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/28370_Chinch%C3%B3n,%20Madrid,%20Spain%20-%20panoramio%20(1).jpg?width=1800}}
+{{gallery:Chinchón|https://source.unsplash.com/ufm2_BJBRGc/1800x1200|https://source.unsplash.com/moCexie9Qbo/1800x1200|https://source.unsplash.com/b43Wkc5YiHo/1800x1200}}
 
 ### how
 @card: 交通與動線重點整理：巴士往返，把它當「主廣場坐下來慢慢看」的小鎮半日；不必拚早、不必跑遠，適合舒適備案。

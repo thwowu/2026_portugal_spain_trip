@@ -25,6 +25,11 @@ title: 拉各斯（Lagos）住宿
   - link: Google Maps | https://www.google.com/maps/search/?api=1&query=Meia%20Praia%20Lagos
 
 ## publicTransportHowToBuy
+### Key takeaways
+- **大部分用走路就夠**：Old Town / Marina 一帶用走路解決；需要再補單程公車/短程計程車。
+- **市內公車 A ONDA**：少搭就上車買單程；確定會搭多次再買 1 日/多日票。
+- **跨城用 VAMUS / CP**：要跑多城才考慮 VAMUS Tourist Pass；火車用 CP 線上查班次/買票省排隊。
+
 - 市區本體：Lagos 舊城/碼頭一帶很適合用走路解決；如果你想把「行李日」也走得順，就把住宿選在 Old Town / Marina 或 bus terminal/火車站附近，減少拖行李走坡/走遠路的機率；若你真的遇到「行李太重/晚到/路不好走」，短程計程車通常很便宜，直接搭最省事。（Wikivoyage：[`Lagos (Portugal)`](https://en.wikivoyage.org/wiki/Lagos_(Portugal))；Wikitravel：[`Lagos (Portugal)`](https://wikitravel.org/en/Lagos_(Portugal))）
 - 市內公車（A ONDA，拉各斯市內線）：
   - 直接上車買 `Bilhete a Bordo`（單程；依區域 A/B 不同，且票有效 1 小時可轉乘 A ONDA 其他線）。（A ONDA：[`Tarifários`](https://aonda.pt/onda-tarifas/)）
@@ -34,6 +39,11 @@ title: 拉各斯（Lagos）住宿
 - 火車（CP）：區域線可往 Portimão / Faro / Tunes；想省排隊就用 CP 官網或 CP App 線上購票/查班次。（CP：[`Buy tickets`](https://www.cp.pt/passageiros/en/buy-tickets)；Wikivoyage：[`Lagos (Portugal)`](https://en.wikivoyage.org/wiki/Lagos_(Portugal))）
 
 ## moneySavingTips
+### Key takeaways
+- **先用走路解決**：活動集中在舊城/碼頭/近郊海灘時，多數人不需要日票。
+- **票種先簡單後升級**：先買單程；一天真的會搭很多再改買 1 日或多日票。
+- **省力就是省錢**：行李日/夜晚回程如果覺得不安全或太累，短程計程車通常划算。
+
 - 若主要活動都在舊城＋碼頭＋近郊海灘：先用「走路＋必要時單程公車」，很多人其實不需要買任何日票。（Wikivoyage：[`Lagos (Portugal)`](https://en.wikivoyage.org/wiki/Lagos_(Portugal))）
 - 真的會一直搭市內公車：把票種簡化成兩步驟 —— 先上車買單程；確認你一天會搭多趟後再改買 `1 日` 或 `多日` 票（A ONDA 有 1/3/5/7 日票）。（A ONDA：[`Tarifários`](https://aonda.pt/onda-tarifas/)）
 - 若你打算用巴士跑阿爾加維多城：用 VAMUS 的 3 日/7 日 `Tourist Pass` 可能比單次買票省腦也省錢（以行程密度為準）。（VAMUS：[`Passe Turístico / Tourist Pass` PDF](http://vamus.pt/wp-content/uploads/2022/06/Flyer-Passe-Turistico-_08Abril2022-2.pdf)）

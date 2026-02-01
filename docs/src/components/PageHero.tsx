@@ -28,7 +28,7 @@ export function PageHero({
   return (
     <div className="pageHero">
       <div className="pageHeroText">
-        <div className="pageHeroTitle">{title}</div>
+        <h2 className="pageHeroTitle">{title}</h2>
         {subtitle ? <div className="pageHeroSubtitle muted">{subtitle}</div> : null}
       </div>
 

@@ -15,6 +15,7 @@ const GALLERY_TOKEN_RE = /\{\{gallery(?::([^|}]+))?\|([^}]+)\}\}/g
 const H3_RE = /^###(?!#)\s*(.+)$/
 const CARD_RE = /^\s*@card:\s*(.+)\s*$/
 const IMAGE_MD_RE = /!\[[^\]]*\]\(([^)\s]+)\)/
+const OLD_MAPS_LABEL_RE = /\[Google Maps\]\((https?:\/\/[^)\s]+)\)/g
 
 function splitLines(text) {
   return (text ?? '').replace(/\r\n/g, '\n').split('\n')
@@ -197,6 +198,26 @@ function validateFile(filePath, text) {
           lineNo,
           code: 'gallery-empty',
           message: 'Gallery token has 0 valid URLs (must contain at least one / or http(s) URL; featured.unsplash.com is disallowed).',
+        })
+      }
+    }
+  }
+
+  // 4.5) Disallow legacy Google Maps link label.
+  // We want places to be the clickable label, with the UI adding a maps icon next to it:
+  //   Good: [Belém](https://www.google.com/maps/...)
+  //   Bad:  [Google Maps](https://www.google.com/maps/...)
+  {
+    for (const { line, lineNo } of lines) {
+      const s = stripInlineCode(line)
+      if (!s.includes('[Google Maps](')) continue
+      for (const m of s.matchAll(OLD_MAPS_LABEL_RE)) {
+        const href = (m[1] ?? '').trim()
+        errors.push({
+          filePath,
+          lineNo,
+          code: 'legacy-maps-link-label',
+          message: `Found legacy Google Maps markdown link label. Use a place label instead (e.g. "[Place](${href})"), not "[Google Maps](...)".`,
         })
       }
     }

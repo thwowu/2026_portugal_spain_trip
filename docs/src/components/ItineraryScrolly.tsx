@@ -167,8 +167,8 @@ export function ItineraryScrolly() {
             onBlur={() => setHoveredStep(null)}
           >
             <div className="cardInner">
-              <h3 className="itDayHeading">{`Day ${d.day}${d.dateLabel ? `｜${d.dateLabel}` : ''}`}</h3>
-              <h4 className="itCityHeading">{d.cityLabel}</h4>
+              <h2 className="itDayHeading">{`Day ${d.day}${d.dateLabel ? `｜${d.dateLabel}` : ''}`}</h2>
+              <h3 className="itCityHeading">{d.cityLabel}</h3>
               <p className="itTitleText">{d.title}</p>
               <p className="itSummaryText">{dayCardText(d)}</p>
               <div className="itActions">

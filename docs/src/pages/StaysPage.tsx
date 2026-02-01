@@ -23,6 +23,7 @@ export function StaysPage() {
 
   return (
     <div className="container">
+      <h1 className="srOnly">住宿（Stays）</h1>
       <div className="card">
         <div className="cardInner">
           <div className="staysHero">
@@ -116,7 +117,7 @@ export function StaysPage() {
                                   <div className="muted" style={{ marginTop: 6 }}>
                                     {o.links.map((l) => (
                                       <div key={l.href}>
-                                        - <a href={l.href} target="_blank" rel="noreferrer">{l.label}</a>
+                                        - <FormattedInline text={`[${l.label}](${l.href})`} />
                                       </div>
                                     ))}
                                   </div>

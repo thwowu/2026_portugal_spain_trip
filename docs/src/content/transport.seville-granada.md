@@ -12,6 +12,7 @@ title: 塞維爾（Seville）→ 格拉納達（Granada）
 - recommended: train
 - because: 整體更穩、也比較舒服；抵達後通常比較好接住宿休息。
 - reminders:
+  - ### Key takeaways
   - 先看你的目標：想舒服就火車；想省錢可改巴士（但更久）。
   - 帶行李就把「轉乘次數」降到最低，走起來會順很多。
   - 把 check-in 時間一起算：太早到可能要先寄放行李再回住宿，多跑一趟。

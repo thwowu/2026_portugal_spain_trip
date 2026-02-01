@@ -3,17 +3,11 @@ import { expect, test } from '@playwright/test'
 test.describe('planning export/import', () => {
   test('export downloads JSON then import restores state', async ({ page }) => {
     await page.goto('/transport')
-    await page.evaluate(() => {
-      localStorage.removeItem('tripPlanner.planning.v1')
-      location.reload()
-    })
+    // Clear persisted planning state, then reload in a Playwright-controlled way.
+    // (Avoid doing `location.reload()` inside page.evaluate, which can race with subsequent evals.)
+    await page.evaluate(() => localStorage.removeItem('tripPlanner.planning.v1'))
+    await page.reload()
     await page.waitForLoadState('networkidle')
-
-    // Create some non-empty planning state.
-    const decision = page.locator('[data-testid^="transport-decision-"]').first()
-    await decision.getByLabel('巴士').click()
-    const reason = `ExportImport ${Date.now()}`
-    await decision.getByRole('textbox', { name: /^交通決定理由：/ }).fill(reason)
 
     // Open settings modal.
     await page.getByRole('button', { name: '設定' }).click()
@@ -29,27 +23,51 @@ test.describe('planning export/import', () => {
     // Close settings.
     await page.keyboard.press('Escape')
 
-    // Clear persisted planning state and verify decision is gone after reload.
-    await page.evaluate(() => {
-      localStorage.removeItem('tripPlanner.planning.v1')
-      location.reload()
-    })
+    // Clear persisted planning state.
+    await page.evaluate(() => localStorage.removeItem('tripPlanner.planning.v1'))
+    await page.reload()
     await page.waitForLoadState('networkidle')
 
-    const decisionAfterClear = page.locator('[data-testid^="transport-decision-"]').first()
-    await expect(decisionAfterClear.getByText('未決定')).toBeVisible()
+    // Import a JSON payload that contains a transport decision (even though the UI is removed,
+    // the planning state should still be importable/mergeable).
+    const segId = 'granada-madrid'
+    const reason = `ExportImport ${Date.now()}`
+    const importJson = {
+      version: 1,
+      createdAt: new Date().toISOString(),
+      payload: {
+        planning: {
+          attractionDecisions: {},
+          transportDecisions: {
+            [segId]: { segmentId: segId, choice: 'bus', reason },
+          },
+          checklist: [],
+          changelog: [],
+        },
+      },
+    }
 
-    // Import the exported JSON.
     await page.getByRole('button', { name: '設定' }).click()
     await expect(page.getByRole('dialog', { name: '設定' })).toBeVisible()
 
-    await page.getByTestId('planning-import').setInputFiles(filePath!)
+    await page.getByTestId('planning-import').setInputFiles({
+      name: 'planning-import.json',
+      mimeType: 'application/json',
+      buffer: Buffer.from(JSON.stringify(importJson), 'utf-8'),
+    })
     await expect(page.getByLabel('匯入匯出狀態')).toHaveText(/匯入成功/)
 
-    // Close and confirm transport decision is restored.
-    await page.keyboard.press('Escape')
-    await expect(page.locator('[data-testid^="transport-decision-"]').first().getByText('已選：巴士')).toBeVisible()
-    await expect(page.locator('[data-testid^="transport-decision-"]').first().getByRole('textbox', { name: /^交通決定理由：/ })).toHaveValue(reason)
+    // Verify localStorage is updated with the imported decision.
+    await expect.poll(async () => {
+      return await page.evaluate(() => localStorage.getItem('tripPlanner.planning.v1'))
+    }).toBeTruthy()
+
+    const persisted = await page.evaluate(() => {
+      const raw = localStorage.getItem('tripPlanner.planning.v1')
+      return raw ? JSON.parse(raw) : null
+    })
+    expect(persisted?.transportDecisions?.[segId]?.choice).toBe('bus')
+    expect(persisted?.transportDecisions?.[segId]?.reason).toBe(reason)
   })
 })
 

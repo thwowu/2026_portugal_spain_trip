@@ -12,6 +12,7 @@ title: 格拉納達（Granada）→ 馬德里（Madrid）
 - recommended: train
 - because: 省時間（約 3.5 小時）且路線清楚，適合先把移動日定下來。
 - reminders:
+  - ### Key takeaways
   - 想省錢可看巴士，但通常更久，也更吃體力。
   - 先看清楚「抵達站」：Madrid Estación Sur / Avenida de América / 機場 T4 等會影響你後續轉乘。
   - 有大行李：訂票時把行李與座位規則先看過，當天會順很多。

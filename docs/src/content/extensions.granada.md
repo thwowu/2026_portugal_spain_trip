@@ -8,6 +8,11 @@ title: 格拉納達（Granada）延伸行程（詳情）
 
 ## alpujarras | 阿爾普哈拉斯白村（Las Alpujarras；白村山景）
 
+- **Key takeaways**：
+  - **主菜**：白村＋山景＋慢慢走，選 1–2 個村就很夠。
+  - **交通**：不自駕通常要跟團或轉乘；先把交通搞定再排景點。
+  - **Plan B**：天氣差/太累就縮短成「市區散步＋吃飯」，不要硬拉車。
+
 這是 Granada 周邊最典型的白村＋山景題材：你不是去看單一景點，而是去看整片內華達山山麓的生活風景。白牆村落與梯田地形，本身就是「人在山裡怎麼生活」的答案。
 
 地形是山村坡度。如果其中一人不想爬樓梯/上坡，就要保守、不要硬走，把重點放在散步＋看景就好。
@@ -18,7 +23,7 @@ title: 格拉納達（Granada）延伸行程（詳情）
 
 ### images
 @card: 圖庫：先用畫面判斷你對不對這個題材；需要細節再往下讀。
-{{gallery:Las Alpujarras（白村山景）|https://commons.wikimedia.org/wiki/Special:FilePath/Calle_en_Pampaneira._La_Alpujarra,_Granada..JPG?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Calle_Ver%C3%B3nica,_Pampaneira.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Alpujarras-Location1.PNG?width=1800}}
+{{gallery:Las Alpujarras（白村山景）|https://source.unsplash.com/KCquKxmj2Is/1800x1200|https://source.unsplash.com/HN9Jf9ICvCo/1800x1200|https://source.unsplash.com/b43Wkc5YiHo/1800x1200}}
 
 ### how
 @card: 交通與動線重點整理：怎麼去、怎麼排、以及時間抓法（以當日班次/狀況為準）；先把交通穩住，白村一日才會更像度假而不是轉乘硬仗。
@@ -40,6 +45,11 @@ Wikivoyage（Granada）：https://en.wikivoyage.org/wiki/Granada_(Spain)
 
 ## guadix | 瓜迪克斯（Guadix；洞穴城市）
 
+- **Key takeaways**：
+  - **題材**：洞穴住居/地景很獨特，適合想換口味的一日。
+  - **時間**：抓半日～一日；重點是走在地景裡，不是跑點數。
+  - **交通**：班次/接駁先查清楚，回程別壓太晚。
+
 如果你在 Granada 已經看了一堆石頭建築，Guadix 會用洞穴城市直接換腦：題材完全不同，又很有記憶點。
 
 洞穴住居不是噱頭，而是對氣候與地形的適應。你看到的是「人用地景當房子」的生活方式；洞穴區走走看景就很有感，走路量也可控。
@@ -48,7 +58,7 @@ Wikivoyage（Granada）：https://en.wikivoyage.org/wiki/Granada_(Spain)
 
 ### images
 @card: 圖庫：先用畫面判斷你對不對這個題材；需要細節再往下讀。
-{{gallery:Guadix（洞穴住居）|https://commons.wikimedia.org/wiki/Special:FilePath/IAPH_Casas_cueva_Purullena.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Guadix_chimneys.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Cathedral_-_Guadix_-_Spain_-_20110808.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Teatro_romano_de_Guadix_(Julia_Gemella_Acci).jpg?width=1800}}
+{{gallery:Guadix（洞穴住居）|https://source.unsplash.com/QncUsnoEyO8/1800x1200|https://source.unsplash.com/4WMsb4tHwhc/1800x1200|https://source.unsplash.com/ZvB34PkHLvU/1800x1200}}
 
 ### how
 @card: 交通與動線重點整理：火車往返就能完成；主題是洞穴住居地景與「人用地景當房子」的生活方式，題材換腦、走路量也好控制。
@@ -61,6 +71,10 @@ Trainline（Guadix ↔ Granada）：https://www.thetrainline.com/en/train-times/
 
 ## alhambra-ticketing | Alhambra 票務規則（備忘）
 
+- **Key takeaways**：
+  - **先鎖 Nasrid 時段**：一切以定時入場為錨點。
+  - **票別拖**：熱門時段很容易售罄。
+  - **不追全吃**：買到票就先定下，其他行程再補。
 這不是延伸行程，而是避免踩雷的備忘。
 
 Nasrid Palaces 是分時段入場，遲到通常就進不去。做法很簡單：先把官方票務買好、鎖日期與時段，然後把那個時段當作全日的時間錨點。
@@ -71,7 +85,7 @@ Nasrid Palaces 是分時段入場，遲到通常就進不去。做法很簡單�
 
 ### images
 @card: 圖庫：先用畫面判斷你對不對這個題材；需要細節再往下讀。
-{{gallery:Alhambra（備忘）|https://commons.wikimedia.org/wiki/Special:FilePath/Alhambra_-_Granada.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Architectural_details_in_Alhambra,_Granada_(6930669668).jpg?width=1800|https://source.unsplash.com/gM1lnTTdWuE/1800x1200|https://source.unsplash.com/ryzLAmYJq1c/1800x1200}}
+{{gallery:Alhambra（備忘）|https://source.unsplash.com/gM1lnTTdWuE/1800x1200|https://source.unsplash.com/ryzLAmYJq1c/1800x1200|https://source.unsplash.com/utfiDJBebHw/1800x1200|https://source.unsplash.com/BOQt33kG_vE/1800x1200|https://source.unsplash.com/_OOWuh5k5RM/1800x1200}}
 
 ### how
 @card: 票務備忘與操作順序：先鎖日期＋Nasrid 時段，再讓其他安排讓路；提早進園是避免趕路與排隊壓力的關鍵。
@@ -90,6 +104,11 @@ Patronato 官方票務：https://compratickets.alhambra-patronato.es/reservarEnt
 
 ## malaga | Málaga（城市海邊：補給/放鬆，一日）
 
+- **Key takeaways**：
+  - **節奏**：把它當「補給＋放鬆」的一天，不要排太滿。
+  - **適合時機**：前面太累/想換城市感時放進來最剛好。
+  - **回報**：海邊散步＋吃飯＋坐著休息，體感會很好。
+
 這是一個把自己放回城市節奏的補給/放鬆日：在 Granada 走了很多坡與巷弄後，Málaga 更適合逛街、吃飯、看海，然後早點回去休息。
 
 它本來就是安達盧斯重要港城，港口與城市生活連在一起，所以「城市海岸感」很舒服。地形就是城市海邊散步，走路量可控；火車/巴士可達，不搭計程車也很順。
@@ -98,7 +117,7 @@ Patronato 官方票務：https://compratickets.alhambra-patronato.es/reservarEnt
 
 ### images
 @card: 圖庫：先用畫面判斷你對不對這個題材；需要細節再往下讀。
-{{gallery:Málaga|https://commons.wikimedia.org/wiki/Special:FilePath/Malaga_port.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/ES-Malaga-Hafen.jpg?width=1800|https://commons.wikimedia.org/wiki/Special:FilePath/Palmeral_de_las_Sorpresas_(M%C3%A1laga)_01.jpg?width=1800}}
+{{gallery:Málaga|https://source.unsplash.com/5HjqjvFtZaE/1800x1200|https://source.unsplash.com/DrnrdmpK4TE/1800x1200|https://source.unsplash.com/UfNpYASXcTk/1800x1200}}
 
 ### how
 @card: 交通與動線重點整理：火車/巴士往返，把它當「城市海邊補給日」最對味；走路量可控、節奏也更像休息而不是再拚景點。

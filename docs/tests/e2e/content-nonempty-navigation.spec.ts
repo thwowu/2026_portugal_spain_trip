@@ -36,7 +36,8 @@ test.describe('content non-empty navigation (tabs/sections)', () => {
       const seg = segments.nth(i)
       await seg.scrollIntoViewIfNeeded()
       await expect(seg.getByText('大建議')).toBeVisible()
-      await expect(seg.locator('[data-testid^="transport-decision-"]')).toBeVisible()
+      // At least one transport option accordion should exist.
+      await expect(seg.getByRole('button', { name: '看完整說明' }).first()).toBeVisible()
     }
   })
 

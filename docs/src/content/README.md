@@ -2,6 +2,11 @@
 
 這個資料夾是旅遊內容的 單一真實來源（SSOT）。
 
+### Key takeaways
+- **只改 `src/content/*.md`**：App 會把內容編譯成 `src/generated/*.ts`，runtime 不直接讀 Markdown。
+- **改完先跑 `npm run content:build`**：確保 schema 與輸出資料同步。
+- **格式出錯會直接讓 build 失敗**：錯誤訊息會指到檔案與行號，照提示修就好。
+
 ## 你應該改哪裡？
 
 - **SSOT（只改這些 Markdown 檔）**：`src/content/*.md`

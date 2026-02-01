@@ -25,6 +25,12 @@ title: 塞維爾（Seville）住宿
   - link: Google Maps | https://www.google.com/maps/search/?api=1&query=Triana%20Seville
 
 ## publicTransportHowToBuy
+### Key takeaways
+- **舊城走路優先**：景點密度高，先用走路串起來，累了再補公車/電車。
+- **會搭多次就買 TUSSAM Travelcard**：可儲值、可多人共用；kiosk/菸店常能買到。
+- **機場 ↔ 市區省腦選項**：有行李/住舊城核心時，計程車通常最省力；EA 機場巴士是備援。
+- **MetroCentro（T1）超好用**：住大教堂附近時，當作「走累了就上車」的省體力工具。
+
 - 走路優先：舊城區景點密度很高，多數行程「走路＋少量公車/電車」就夠。（Wikivoyage：[`Seville`](https://en.wikivoyage.org/wiki/Seville)；Wikitravel：[`Seville`](https://wikitravel.org/en/Seville)）
 - 「嗶」卡/手機付款（省去研究售票機）：近年不少公車/電車/地鐵會支援感應式信用卡（contactless）或手機支付（Apple Pay/Google Pay）直接付款；但不同系統/站點支援度可能不同，以現場標示為準。
   - 地鐵常見規則：可能需要「進站刷、出站也刷」（tap on / tap off）以便按距離或分區計費；記得跟著閘門/售票機指示操作，避免被收取不必要的費用。（Metro de Sevilla：[`Horarios y tarifas – Títulos`](https://www.metro-sevilla.es/horarios-y-tarifas?section=titulosMetro)）
@@ -49,6 +55,11 @@ title: 塞維爾（Seville）住宿
   - 小提醒：計價依分區/距離，買票時看清楚你要去的站在哪個區間。
 
 ## moneySavingTips
+### Key takeaways
+- **票種別買太大**：多數行程走路就夠；真的會搭很多次再買卡/日票。
+- **把錢花在「少爬樓梯少暴走」**：熱＋石板路時，短程交通的 CP 值常很高。
+- **熱門時段留彈性**：旺季人潮/封路會讓移動時間暴增，行程不要排太緊。
+
 - 住舊城/景點圈：先用「走路＋少量單程」跑半天；確認你一天確實會搭很多次再買 Travelcard（或再加值），避免買了用不到。（Wikivoyage：[`Seville`](https://en.wikivoyage.org/wiki/Seville)）
 - 轉乘多的那天：TUSSAM Travelcard 有「可轉乘」版本（1 小時內可換線），如果你會換車，選對版本通常比一直買單程更划算。（TUSSAM：[`How to get here`（Sin/Con Transbordo）](https://www.tussam.es/en/descubre-sevilla/how-get-here)）
 - 機場當天若確定會回機場：同日來回直接買 EA return（€6）省一步。（TUSSAM：[`How to get here`（EA）](https://www.tussam.es/en/descubre-sevilla/how-get-here)）

@@ -22,6 +22,11 @@ export default defineConfig({
       use: { ...devices['Desktop Chrome'], browserName: 'chromium' },
     },
     {
+      name: 'tablet-chromium',
+      // iPad device descriptors default to WebKit; keep Chromium for consistency.
+      use: { ...devices['iPad (gen 7)'], browserName: 'chromium' },
+    },
+    {
       name: 'mobile-chromium',
       // Playwright's iPhone device descriptors default to WebKit.
       // We want mobile viewport/emulation on Chromium for this project.

@@ -25,6 +25,12 @@ title: 馬德里（Madrid）住宿
   - link: Google Maps | https://www.google.com/maps/search/?api=1&query=Salamanca%20Madrid
 
 ## publicTransportHowToBuy
+### Key takeaways
+- **走路＋地鐵就能打穿市中心**：Centro 景點密度高，先用走路串，累了再用地鐵補。
+- **常用卡是 `Tarjeta Multi`**：10 次票/旅遊票多半要載入它；10 次票也常可多人共用（同卡輪流刷）。
+- **機場地鐵有附加費**：Line 8 進出機場站可能需要加購 `suplemento`（以售票機/公告為準）。
+- **行李日/晚到就用短程計程車**：通常 CP 值很高，少轉乘少折騰。
+
 - 市區移動概念：馬德里很適合步行，市中心景點密度高，很多路線都可以靠走路串起來；需要加速時再用地鐵補。若你們會搭多次，`Tarjeta Multi`（多功能卡）再加值通常最省事，常見的 10 次票也比較划算，而且可以多人共用（同一張卡輪流刷）。Tourist card 通常要到「每天狂搭」才可能更值得。地鐵進出機場站常見會有額外附加費，細節以現場公告為準。
 - 第一步先搞定「卡」：多數地鐵票/多次票/旅遊票都要載入在 `Tarjeta Multi`（感應式、非記名）或 `Tarjeta de Transporte Público` 上；可在地鐵站售票機/窗口購買。（CRTM：[`What tickets can you charge?`](https://crtm.es/billetes-y-tarifas/tarjeta-multi/titulos-que-puedes-cargar.aspx?lang=en)；Aena：[`Cómo llegar en metro`](https://www.aena.es/es/adolfo-suarez-madrid-barajas/como-llegar/metro.html)）
 - 票種怎麼選（簡化版，先求省腦）：
@@ -37,6 +43,11 @@ title: 馬德里（Madrid）住宿
 - 實務建議：用 Google Maps / Citymapper 看路線，市區以地鐵為主、補公車；夜間移動先看夜巴/地鐵營運時間，把行程排在「好撤退」的區域，避免為了抄近路鑽小巷；若你真的遇到「晚到/轉乘太繞/行李日」，短程計程車通常不貴，直接搭。（Wikivoyage：[`Madrid`](https://en.wikivoyage.org/wiki/Madrid)；Wikitravel：[`Madrid`](https://wikitravel.org/en/Madrid)）
 
 ## moneySavingTips
+### Key takeaways
+- **先用 10 次票**：行程集中在市中心時多半夠用；旅遊票只在「每天很多趟」才容易划算。
+- **把錢花在「少折騰」**：行李日/轉乘太繞/晚到時，短程計程車通常比時間與體力更便宜。
+- **機場往返先選省腦方案**：Airport Express Bus / 固定費率計程車，常比一直換線更穩。
+
 - 行程若主要集中在市中心：通常「10 趟票」就很夠用；除非你確定每天很多趟再買旅遊票（避免買了用不到）。先用售票機估算你的搭乘量再決定。（CRTM：[`What tickets can you charge?`](https://crtm.es/billetes-y-tarifas/tarjeta-multi/titulos-que-puedes-cargar.aspx?lang=en)）
 - 機場日別為了省幾站票錢繞路：機場地鐵有 €3 suplemento 的規則，直接照售票機流程買最省時間（別到現場才卡在票種組合）。（Aena：[`Cómo llegar en metro`](https://www.aena.es/es/adolfo-suarez-madrid-barajas/como-llegar/metro.html)）
 - 行李日／機場日：人潮多＋扒手風險高，寧可多留時間、少轉乘；把住宿選在「離地鐵站近、平路好走」的點，降低拖行李走遠路的機率。（Wikivoyage：[`Madrid`](https://en.wikivoyage.org/wiki/Madrid)；Wikitravel：[`Madrid`](https://wikitravel.org/en/Madrid)）
