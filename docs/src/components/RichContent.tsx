@@ -1,9 +1,11 @@
 import { useMemo } from 'react'
 import type { GalleryImage } from './GalleryLightbox'
 import { FormattedInline, FormattedText } from './FormattedText'
+import { TextCarouselCard } from './TextCarouselCard'
 import { withBaseUrl } from '../utils/asset'
 import { prefersReducedMotion } from '../utils/motion'
 import { splitTrailingUrlPunct } from '../markdownLite/utils'
+import { extractH3CarouselItems } from '../utils/extractCarouselItems'
 
 const GALLERY_TOKEN_RE = /\{\{gallery(?::([^|}]+))?\|([^}]+)\}\}/g
 const IMAGE_MD_RE = /^!\[([^\]]*)\]\((.+)\)$/
@@ -256,6 +258,33 @@ export function RichContent({
 }) {
   const blocks = useMemo(() => parseBlocks(content), [content])
   const headings = useMemo(() => blocks.filter((b) => b.kind === 'h') as Array<Extract<Block, { kind: 'h' }>>, [blocks])
+  const topicIndexItems = useMemo(() => {
+    if (!showToc) return []
+
+    const items = extractH3CarouselItems(content, { snippetMaxLen: 120 })
+    if (items.length < 3) return []
+
+    // Map each H3 slice to the corresponding rendered heading id (handles duplicates by order).
+    const h3Headings = headings.filter((h) => h.level === 3)
+    const out: Array<{ title: string; summary: string; id: string }> = []
+    let cursor = 0
+
+    for (const it of items) {
+      let found: (typeof h3Headings)[number] | null = null
+      for (let i = cursor; i < h3Headings.length; i++) {
+        const h = h3Headings[i]!
+        if (h.text === it.title) {
+          found = h
+          cursor = i + 1
+          break
+        }
+      }
+      if (!found) continue
+      out.push({ title: it.title, summary: it.summary, id: found.id })
+    }
+
+    return out
+  }, [content, headings, showToc])
 
   const isKeyTakeawaysHeading = (t: string) => {
     const s = (t ?? '').trim().toLowerCase()
@@ -291,6 +320,22 @@ export function RichContent({
 
   return (
     <div className={className}>
+      {showToc && topicIndexItems.length >= 3 ? (
+        <div className="not-prose longformWide" aria-label="主題索引" style={{ marginBottom: 12 }}>
+          <TextCarouselCard
+            title="主題索引"
+            subtitle="點「詳情…」可直接跳到該段落。"
+            items={topicIndexItems.map((it) => ({
+              title: it.title,
+              summary: it.summary,
+              onOpen: () => {
+                const el = document.getElementById(it.id)
+                el?.scrollIntoView({ behavior: prefersReducedMotion() ? 'auto' : 'smooth', block: 'start' })
+              },
+            }))}
+          />
+        </div>
+      ) : null}
       {showToc && headings.length >= 2 ? (
         <nav className="not-prose longformWide" aria-label="目錄" style={{ marginBottom: 12 }}>
           <details className="card" style={{ boxShadow: 'none', background: 'var(--surface-2)' }} open={false}>
@@ -322,6 +367,8 @@ export function RichContent({
       ) : null}
       {(() => {
         const out: React.ReactNode[] = []
+        let headingCount = 0
+        let paragraphCount = 0
         for (let idx = 0; idx < blocks.length; idx++) {
           const b = blocks[idx]!
 
@@ -348,13 +395,20 @@ export function RichContent({
           }
 
         if (b.kind === 'h') {
+          const isFirstHeading = headingCount === 0
+          headingCount += 1
           const Tag = b.level === 4 ? 'h4' : 'h3'
           out.push(
             <Tag
               key={idx}
               id={b.id}
               className="longformHeading"
-              style={{ margin: idx === 0 ? 0 : '14px 0 0 0', fontWeight: 950, lineHeight: 1.18 }}
+              data-rc-first={isFirstHeading ? '1' : undefined}
+              style={{
+                margin: idx === 0 ? 0 : 'var(--rc-heading-gap, 14px) 0 0 0',
+                fontWeight: 950,
+                lineHeight: 1.18,
+              }}
             >
               <FormattedInline text={b.text} />
             </Tag>
@@ -371,7 +425,7 @@ export function RichContent({
               onClick={() => onOpenImage?.(b.src, b.alt)}
               title="點擊放大"
               aria-label={`查看大圖：${b.alt}`}
-              style={{ marginTop: idx === 0 ? 0 : 10 }}
+              style={{ marginTop: idx === 0 ? 0 : 'var(--rc-block-gap, 10px)' }}
             >
               <img src={b.src} alt={b.alt} loading="lazy" />
               <div className="inlineImageCaption">{b.alt}</div>
@@ -384,13 +438,8 @@ export function RichContent({
           out.push(
             <blockquote
               key={idx}
-              style={{
-                margin: idx === 0 ? 0 : '10px 0 0 0',
-                padding: '10px 12px',
-                borderLeft: '4px solid color-mix(in oklab, var(--accent) 25%, var(--hairline))',
-                background: 'color-mix(in oklab, var(--surface-2) 55%, white)',
-                borderRadius: 12,
-              }}
+              className="rcQuote"
+              style={{ margin: idx === 0 ? 0 : 'var(--rc-block-gap, 10px) 0 0 0' }}
             >
               <FormattedText text={b.text} className={className} />
             </blockquote>
@@ -399,28 +448,40 @@ export function RichContent({
         }
 
         if (b.kind === 'ul') {
-          out.push(<div key={idx}>{renderUl(b.items, `ul-${idx}`)}</div>)
+          out.push(
+            <div key={idx} style={{ marginTop: idx === 0 ? 0 : 'var(--rc-block-gap, 10px)' }}>
+              {renderUl(b.items, `ul-${idx}`)}
+            </div>,
+          )
           continue
         }
 
         if (b.kind === 'ol') {
           out.push(
-            <ol key={idx} style={{ margin: 0, paddingLeft: 22 }}>
+            <ol
+              key={idx}
+              style={{
+                margin: idx === 0 ? 0 : 'var(--rc-block-gap, 10px) 0 0 0',
+                paddingLeft: 22,
+              }}
+            >
               {b.items.map((it, i) => (
                 <li key={`${idx}-${i}-${it}`} style={{ marginTop: i === 0 ? 0 : 6 }}>
                   <FormattedInline text={it} />
                 </li>
               ))}
-            </ol>
+            </ol>,
           )
           continue
         }
 
         const hasText = b.text.trim().length > 0
+        const shouldDropCap = hasText && paragraphCount === 0
+        if (hasText) paragraphCount += 1
         out.push(
-          <div key={idx} style={{ marginTop: idx === 0 ? 0 : 10 }}>
+          <div key={idx} style={{ marginTop: idx === 0 ? 0 : 'var(--rc-block-gap, 10px)' }}>
             {hasText ? (
-              <p style={{ whiteSpace: 'pre-wrap', margin: 0 }}>
+              <p className={`rcParagraph ${shouldDropCap ? 'rcDropcap' : ''}`} style={{ whiteSpace: 'pre-wrap', margin: 0 }}>
                 <FormattedInline text={b.text} />
               </p>
             ) : null}

@@ -851,6 +851,55 @@ select:focus-visible {
     /* Avoid long tokens (non-link) causing right overflow */
     overflow-wrap: anywhere;
     word-break: break-word;
+
+    /* RichContent rhythm tokens (overridable by `.attrProseEditorial`) */
+    --rc-block-gap: 12px;
+    --rc-heading-gap: 14px;
+    --rc-quote-pad: 10px 12px;
+    --rc-quote-radius: 12px;
+    --rc-quote-border: 4px;
+  }
+
+  /* Blog-post-like readability pack (scoped: only when we opt-in). */
+  .attrProseEditorial {
+    /* More comfortable rhythm for long-form reading */
+    --rc-block-gap: 16px;
+    --rc-heading-gap: 22px;
+
+    /* Slightly airier than default (still within elder-first constraints) */
+    line-height: 1.85;
+    letter-spacing: 0.001em;
+  }
+
+  .rcQuote {
+    padding: var(--rc-quote-pad);
+    border-left: var(--rc-quote-border) solid color-mix(in oklab, var(--accent) 25%, var(--hairline));
+    background: color-mix(in oklab, var(--surface-2) 55%, white);
+    border-radius: var(--rc-quote-radius);
+  }
+
+  .attrProseEditorial .rcQuote {
+    /* Make quotes feel like “pull quotes” (but keep them readable on mobile). */
+    font-size: var(--text-lg);
+    line-height: 1.75;
+  }
+
+  .attrProseEditorial .rcDropcap::first-letter {
+    float: left;
+    font-weight: 950;
+    font-size: 2.9em;
+    line-height: 0.9;
+    padding-right: 0.12em;
+    padding-top: 0.06em;
+    color: var(--accent-2);
+  }
+
+  .attrProseEditorial .longformHeading:not([data-rc-first='1'])::before {
+    content: '';
+    display: block;
+    height: 1px;
+    background: color-mix(in oklab, var(--hairline) 78%, white);
+    margin-bottom: 10px;
   }
 
   .attrProse img,
@@ -1753,6 +1802,13 @@ details > summary span[aria-hidden='true'] {
   padding-bottom: 6px;
 }
 
+.textCarouselViewportGrid {
+  /* Desktop scan mode: no horizontal scrolling; let the grid define the layout. */
+  overflow-x: visible;
+  scroll-snap-type: none;
+  padding-bottom: 0;
+}
+
 @media (hover: hover) and (pointer: fine) {
   .textCarouselViewport {
     cursor: grab;
@@ -1782,6 +1838,17 @@ details > summary span[aria-hidden='true'] {
   display: flex;
   gap: var(--carousel-gap);
   min-width: 0;
+}
+
+.textCarouselTrackGrid {
+  display: grid;
+  grid-template-columns: repeat(var(--items-per-view), minmax(0, 1fr));
+  gap: var(--carousel-gap);
+  align-items: stretch;
+}
+
+.textCarouselTrackGrid .textCarouselItem {
+  height: 100%;
 }
 
 .textCarouselItem {

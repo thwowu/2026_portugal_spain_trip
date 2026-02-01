@@ -509,7 +509,7 @@ export function AttractionsPage() {
                                 {extractH3CarouselItems(sectionContent).length < 3 ? (
                                   <RichContent
                                     content={cleanedSectionContent}
-                                    className="longformGrid prose attrProse"
+                                    className="longformGrid prose attrProse attrProseEditorial"
                                     onOpenImage={(src, title) => setLightbox({ src, title })}
                                     onOpenGallery={(images, title) => setGallery({ images, title, index: 0 })}
                                   />
@@ -654,7 +654,7 @@ export function AttractionsPage() {
         >
           <RichContent
             content={stripCardLinesFromContent(longRead.content)}
-            className="longformGrid prose attrProse"
+            className="longformGrid prose attrProse attrProseEditorial"
             showToc
             onOpenImage={(src, title) => setLightbox({ src, title })}
             onOpenGallery={(images, title) => setGallery({ images, title, index: 0 })}
@@ -819,7 +819,7 @@ function ExtensionModal({
                 return (
                   <RichContent
                     content={stripCardLinesFromContent(raw)}
-                    className="longformGrid prose attrProse"
+                    className="longformGrid prose attrProse attrProseEditorial"
                     onOpenImage={onOpenImage}
                     onOpenGallery={onOpenGallery}
                   />

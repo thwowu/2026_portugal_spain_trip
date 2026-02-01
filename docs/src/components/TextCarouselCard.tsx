@@ -11,11 +11,20 @@ export type TextCarouselItem = {
   onOpen?: () => void
 }
 
-function computeItemsPerView() {
-  if (typeof window === 'undefined' || typeof window.matchMedia === 'undefined') return 3
-  if (window.matchMedia('(max-width: 520px)').matches) return 1
-  if (window.matchMedia('(max-width: 860px)').matches) return 2
-  return 3
+type LayoutMode = 'carousel' | 'grid'
+
+type Layout = {
+  mode: LayoutMode
+  cols: number
+}
+
+function computeLayout(): Layout {
+  if (typeof window === 'undefined' || typeof window.matchMedia === 'undefined') return { mode: 'carousel', cols: 3 }
+  if (window.matchMedia('(max-width: 520px)').matches) return { mode: 'carousel', cols: 1 }
+  if (window.matchMedia('(max-width: 860px)').matches) return { mode: 'carousel', cols: 2 }
+  // Desktop: prefer grid for scan-ability.
+  if (window.matchMedia('(max-width: 1100px)').matches) return { mode: 'grid', cols: 2 }
+  return { mode: 'grid', cols: 3 }
 }
 
 export function TextCarouselCard({
@@ -33,7 +42,7 @@ export function TextCarouselCard({
   const itemRefs = useRef<Array<HTMLDivElement | null>>([])
   const prevBtnRef = useRef<HTMLButtonElement | null>(null)
   const nextBtnRef = useRef<HTMLButtonElement | null>(null)
-  const [itemsPerView, setItemsPerView] = useState<number>(() => computeItemsPerView())
+  const [layout, setLayout] = useState<Layout>(() => computeLayout())
   const [currentIndex, setCurrentIndex] = useState(0)
   const [isDragging, setIsDragging] = useState(false)
   const dragRef = useRef<{
@@ -53,20 +62,23 @@ export function TextCarouselCard({
   })
 
   useEffect(() => {
-    const onResize = () => setItemsPerView(computeItemsPerView())
+    const onResize = () => setLayout(computeLayout())
     window.addEventListener('resize', onResize)
     return () => window.removeEventListener('resize', onResize)
   }, [])
 
+  const isGrid = layout.mode === 'grid'
+  const cols = Math.max(1, Math.min(layout.cols, items.length))
+
   // When we show multiple items at once, the "last meaningful start index" is
   // (items.length - itemsPerView). This prevents the Next button from becoming
   // misleading / no-op on wide viewports.
-  const maxStartIndex = useMemo(() => Math.max(0, items.length - itemsPerView), [items.length, itemsPerView])
+  const maxStartIndex = useMemo(() => (isGrid ? 0 : Math.max(0, items.length - cols)), [cols, isGrid, items.length])
   // Derive a safe index instead of synchronously setting state in an effect.
   // This avoids cascading renders and keeps UI logic stable when the viewport changes.
-  const safeIndex = Math.min(maxStartIndex, Math.max(0, currentIndex))
-  const canGoPrev = safeIndex > 0
-  const canGoNext = safeIndex < maxStartIndex
+  const safeIndex = isGrid ? 0 : Math.min(maxStartIndex, Math.max(0, currentIndex))
+  const canGoPrev = !isGrid && safeIndex > 0
+  const canGoNext = !isGrid && safeIndex < maxStartIndex
 
   const scrollToIndex = useCallback((idx: number, behavior?: ScrollBehavior) => {
     const viewport = viewportRef.current
@@ -90,6 +102,7 @@ export function TextCarouselCard({
 
   const stepBy = useCallback(
     (delta: -1 | 1) => {
+      if (isGrid) return
       setCurrentIndex((i) => {
         const next = Math.min(maxStartIndex, Math.max(0, i + delta))
         // Use instant jumps for button/keyboard navigation to avoid a feedback loop where
@@ -98,13 +111,14 @@ export function TextCarouselCard({
         return next
       })
     },
-    [maxStartIndex, scrollToIndex],
+    [isGrid, maxStartIndex, scrollToIndex],
   )
 
   // Defensive: in some mobile browsers, React's synthetic click on these small nav buttons
   // can be flaky under heavy scroll/gesture interaction. Attach native listeners so the
   // arrows always work.
   useEffect(() => {
+    if (isGrid) return
     const prevEl = prevBtnRef.current
     const nextEl = nextBtnRef.current
     if (!prevEl || !nextEl) return
@@ -126,9 +140,10 @@ export function TextCarouselCard({
       prevEl.removeEventListener('click', onPrev)
       nextEl.removeEventListener('click', onNext)
     }
-  }, [canGoNext, canGoPrev, stepBy])
+  }, [canGoNext, canGoPrev, isGrid, stepBy])
 
   useEffect(() => {
+    if (isGrid) return
     const viewport = viewportRef.current
     if (!viewport) return
 
@@ -157,9 +172,10 @@ export function TextCarouselCard({
       cancelAnimationFrame(raf)
       viewport.removeEventListener('scroll', onScroll)
     }
-  }, [])
+  }, [isGrid])
 
   useEffect(() => {
+    if (isGrid) return
     const onKeyDown = (e: KeyboardEvent) => {
       if (e.defaultPrevented) return
       const target = e.target as HTMLElement | null
@@ -180,9 +196,10 @@ export function TextCarouselCard({
     }
     window.addEventListener('keydown', onKeyDown)
     return () => window.removeEventListener('keydown', onKeyDown)
-  }, [canGoNext, canGoPrev, stepBy])
+  }, [canGoNext, canGoPrev, isGrid, stepBy])
 
   const onPointerDown = useCallback((e: React.PointerEvent<HTMLDivElement>) => {
+    if (isGrid) return
     if (e.pointerType !== 'mouse') return
     // Only left-click should start a drag.
     if (e.button !== 0) return
@@ -209,9 +226,10 @@ export function TextCarouselCard({
     } catch {
       // ignore (older browsers)
     }
-  }, [])
+  }, [isGrid])
 
   const onPointerMove = useCallback((e: React.PointerEvent<HTMLDivElement>) => {
+    if (isGrid) return
     if (e.pointerType !== 'mouse') return
     const viewport = viewportRef.current
     if (!viewport) return
@@ -230,7 +248,7 @@ export function TextCarouselCard({
     // Prevent text selection and native drag behaviors while dragging.
     e.preventDefault()
     viewport.scrollLeft = dragRef.current.startScrollLeft - dx
-  }, [])
+  }, [isGrid])
 
   const endDrag = useCallback((pointerId: number) => {
     const viewport = viewportRef.current
@@ -261,29 +279,32 @@ export function TextCarouselCard({
 
   const onPointerUp = useCallback(
     (e: React.PointerEvent<HTMLDivElement>) => {
+      if (isGrid) return
       if (e.pointerType !== 'mouse') return
       if (!dragRef.current.active) return
       if (dragRef.current.pointerId !== e.pointerId) return
       endDrag(e.pointerId)
     },
-    [endDrag],
+    [endDrag, isGrid],
   )
 
   const onPointerCancel = useCallback(
     (e: React.PointerEvent<HTMLDivElement>) => {
+      if (isGrid) return
       if (e.pointerType !== 'mouse') return
       if (!dragRef.current.active) return
       if (dragRef.current.pointerId !== e.pointerId) return
       endDrag(e.pointerId)
     },
-    [endDrag],
+    [endDrag, isGrid],
   )
 
   const onClickCapture = useCallback((e: React.MouseEvent<HTMLDivElement>) => {
+    if (isGrid) return
     if (!dragRef.current.suppressClick) return
     e.preventDefault()
     e.stopPropagation()
-  }, [])
+  }, [isGrid])
 
   const headerSubtitle = useMemo(() => {
     const s = (subtitle ?? '').trim()
@@ -301,44 +322,46 @@ export function TextCarouselCard({
             <div className="textCarouselTitle">{title}</div>
             {headerSubtitle ? <div className="muted textCarouselSubtitle">{headerSubtitle}</div> : null}
           </div>
-          <div className="textCarouselHeaderActions" role="group" aria-label="切換卡片">
-            <button
-              type="button"
-              className="btn textCarouselNavBtn"
-              onClick={() => canGoPrev && stepBy(-1)}
-              disabled={!canGoPrev}
-              aria-label="上一張"
-              data-testid={testId ? `${testId}-prev` : undefined}
-              ref={prevBtnRef}
-            >
-              ←
-            </button>
-            <button
-              type="button"
-              className="btn textCarouselNavBtn"
-              onClick={() => canGoNext && stepBy(1)}
-              disabled={!canGoNext}
-              aria-label="下一張"
-              data-testid={testId ? `${testId}-next` : undefined}
-              ref={nextBtnRef}
-            >
-              →
-            </button>
-          </div>
+          {!isGrid ? (
+            <div className="textCarouselHeaderActions" role="group" aria-label="切換卡片">
+              <button
+                type="button"
+                className="btn textCarouselNavBtn"
+                onClick={() => canGoPrev && stepBy(-1)}
+                disabled={!canGoPrev}
+                aria-label="上一張"
+                data-testid={testId ? `${testId}-prev` : undefined}
+                ref={prevBtnRef}
+              >
+                ←
+              </button>
+              <button
+                type="button"
+                className="btn textCarouselNavBtn"
+                onClick={() => canGoNext && stepBy(1)}
+                disabled={!canGoNext}
+                aria-label="下一張"
+                data-testid={testId ? `${testId}-next` : undefined}
+                ref={nextBtnRef}
+              >
+                →
+              </button>
+            </div>
+          ) : null}
         </div>
 
         <div
           ref={viewportRef}
-          className={`textCarouselViewport ${isDragging ? 'isDragging' : ''}`}
-          aria-label="可左右滑動的卡片列"
-          style={{ ['--items-per-view' as never]: itemsPerView } as CSSProperties}
-          onPointerDown={onPointerDown}
-          onPointerMove={onPointerMove}
-          onPointerUp={onPointerUp}
-          onPointerCancel={onPointerCancel}
-          onClickCapture={onClickCapture}
+          className={`textCarouselViewport ${isDragging ? 'isDragging' : ''} ${isGrid ? 'textCarouselViewportGrid' : ''}`}
+          aria-label={isGrid ? '主題卡片（grid）' : '可左右滑動的卡片列'}
+          style={{ ['--items-per-view' as never]: cols } as CSSProperties}
+          onPointerDown={isGrid ? undefined : onPointerDown}
+          onPointerMove={isGrid ? undefined : onPointerMove}
+          onPointerUp={isGrid ? undefined : onPointerUp}
+          onPointerCancel={isGrid ? undefined : onPointerCancel}
+          onClickCapture={isGrid ? undefined : onClickCapture}
         >
-          <div className="textCarouselTrack">
+          <div className={`textCarouselTrack ${isGrid ? 'textCarouselTrackGrid' : ''}`}>
             {items.map((it, idx) => {
               const hasImage = !!it.imageSrc
               return (
@@ -380,9 +403,11 @@ export function TextCarouselCard({
           </div>
         </div>
 
-        <div className="muted textCarouselHint">
-          {itemsPerView === 1 ? '左右滑動或用 ←/→ 切換；點「詳情…」看完整。' : '用 ←/→ 切換；點「詳情…」看完整。'}
-        </div>
+        {!isGrid ? (
+          <div className="muted textCarouselHint">
+            {cols === 1 ? '左右滑動或用 ←/→ 切換；點「詳情…」看完整。' : '用 ←/→ 切換；點「詳情…」看完整。'}
+          </div>
+        ) : null}
       </div>
     </section>
   )

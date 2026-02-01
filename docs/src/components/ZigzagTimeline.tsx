@@ -38,7 +38,7 @@ export function ZigzagTimeline({
                 {it.summary ? <div className="muted zigzagTimelineItemSummary">{it.summary}</div> : null}
                 {!it.onOpen ? (
                   <div className="zigzagTimelineItemBody">
-                    <RichContent content={it.content} className="longformGrid prose attrProse" />
+                    <RichContent content={it.content} className="longformGrid prose attrProse attrProseEditorial" />
                   </div>
                 ) : null}
                 {it.onOpen ? (
