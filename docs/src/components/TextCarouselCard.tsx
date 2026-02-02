@@ -3,6 +3,8 @@ import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { FormattedInline } from './FormattedText'
 import { withBaseUrl } from '../utils/asset'
 import { prefersReducedMotion } from '../utils/motion'
+import { titleZhOnly } from '../utils/titleZhOnly'
+import { ILLUSTRATION } from '../illustrations'
 
 export type TextCarouselItem = {
   title: string
@@ -389,12 +391,26 @@ export function TextCarouselCard({
                 >
                   {hasImage ? (
                     <div className="textCarouselMedia" aria-hidden="true">
-                      <img src={withBaseUrl(it.imageSrc ?? '')} alt="" loading="lazy" draggable={false} />
+                      <img
+                        src={withBaseUrl(it.imageSrc ?? '')}
+                        alt=""
+                        loading="lazy"
+                        decoding="async"
+                        draggable={false}
+                        onError={(e) => {
+                          // External placeholder services can fail (e.g. Unsplash returning 503 / ORB).
+                          // Fall back to a bundled local illustration so the UI never looks broken.
+                          const img = e.currentTarget
+                          if (img.dataset.fallbackApplied === '1') return
+                          img.dataset.fallbackApplied = '1'
+                          img.src = ILLUSTRATION.signpost.src
+                        }}
+                      />
                     </div>
                   ) : null}
                   <div className="textCarouselBody">
                     <div className="textCarouselItemTitle clamp2">
-                      <FormattedInline text={it.title} />
+                      {titleZhOnly(it.title)}
                     </div>
                     <div className="muted textCarouselItemSummary clamp3">
                       <FormattedInline text={it.summary} />
@@ -405,7 +421,7 @@ export function TextCarouselCard({
                           type="button"
                           className="btn btnPrimary"
                           onClick={it.onOpen}
-                          aria-label={`詳情：${it.title}`}
+                          aria-label={`詳情：${titleZhOnly(it.title)}`}
                         >
                           詳情…
                         </button>

@@ -2,9 +2,10 @@ import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { ITINERARY_PHASES, type ItineraryDay } from '../data/itinerary'
 import { ItineraryLeafletMap } from './ItineraryLeafletMap'
 import { useMotionEnabled } from '../state/settings'
-import { FormattedText } from './FormattedText'
+import { FormattedInline, FormattedText } from './FormattedText'
 import { Modal } from './Modal'
 import { cityIdFromLabel } from '../utils/cityIdFromLabel'
+import { titleZhOnly } from '../utils/titleZhOnly'
 
 function dayCardText(d: ItineraryDay) {
   const parts: string[] = []
@@ -21,7 +22,12 @@ export function ItineraryScrolly() {
       ? window.matchMedia('(prefers-reduced-motion: reduce)').matches
       : false
 
-  const days = useMemo(() => ITINERARY_PHASES.flatMap((p) => p.days), [])
+  type DayWithPhase = ItineraryDay & { phaseId: string }
+
+  const days = useMemo<DayWithPhase[]>(
+    () => ITINERARY_PHASES.flatMap((p) => p.days.map((d) => ({ ...d, phaseId: p.id }))),
+    [],
+  )
   const waypoints = useMemo(
     () =>
       days.map((d) => ({
@@ -31,6 +37,16 @@ export function ItineraryScrolly() {
       })),
     [days],
   )
+
+  // Break the dashed route line at phase boundaries.
+  // This prevents showing a single "bus-like" line spanning unrelated city blocks.
+  const routeBreakIndices = useMemo(() => {
+    const breaks: number[] = []
+    for (let i = 1; i < days.length; i++) {
+      if (days[i]?.phaseId !== days[i - 1]?.phaseId) breaks.push(i)
+    }
+    return breaks
+  }, [days])
 
   const [activeStep, setActiveStep] = useState(0)
   const [hoveredStep, setHoveredStep] = useState<number | null>(null)
@@ -129,6 +145,7 @@ export function ItineraryScrolly() {
         <div className="overlay" style={{ width: '100%', height: '100%' }}>
           <ItineraryLeafletMap
             waypoints={waypoints}
+            routeBreakIndices={routeBreakIndices}
             activeStep={activeStep}
             hoveredStep={hoveredStep}
             onPickStepIndex={(idx) => jumpToIndex(idx)}
@@ -161,8 +178,12 @@ export function ItineraryScrolly() {
             <div className="cardInner">
               <h2 className="itDayHeading">{`Day ${d.day}${d.dateLabel ? `｜${d.dateLabel}` : ''}`}</h2>
               <h3 className="itCityHeading">{d.cityLabel}</h3>
-              <p className="itTitleText">{d.title}</p>
-              <p className="itSummaryText">{dayCardText(d)}</p>
+              <p className="itTitleText">
+                {titleZhOnly(d.title)}
+              </p>
+              <p className="itSummaryText">
+                <FormattedInline text={dayCardText(d)} allowInteractiveBilingual={false} />
+              </p>
               <div className="itActions">
                 <button
                   type="button"
@@ -195,7 +216,7 @@ export function ItineraryScrolly() {
                   {selectedDay.dateLabel ? `｜${selectedDay.dateLabel}` : ''}
                 </div>
                 <div className="muted" style={{ marginTop: 6 }}>
-                  {selectedDay.cityLabel} · {selectedDay.title}
+                  {selectedDay.cityLabel} · {titleZhOnly(selectedDay.title)}
                 </div>
               </div>
             </div>

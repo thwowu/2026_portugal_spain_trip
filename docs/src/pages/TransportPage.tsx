@@ -9,6 +9,7 @@ import { PageHero } from '../components/PageHero'
 import { withBaseUrl } from '../utils/asset'
 import { FormattedInline, FormattedText } from '../components/FormattedText'
 import { ExpandingBox } from '../components/ExpandingBox'
+import { titleZhOnly } from '../utils/titleZhOnly'
 
 function mapsSearchUrl(query: string) {
   return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(query)}`
@@ -106,7 +107,7 @@ export function TransportPage() {
                 className="btn"
                 onClick={() => document.getElementById(`seg-${s.id}`)?.scrollIntoView({ behavior: 'smooth' })}
               >
-                {s.label}
+                {titleZhOnly(s.label)}
               </button>
             ))}
           </div>
@@ -127,7 +128,7 @@ export function TransportPage() {
                 <div className="cardInner">
                   <div style={{ display: 'flex', alignItems: 'baseline', gap: 10, flexWrap: 'wrap' }}>
                     <div style={{ fontWeight: 950, fontSize: 'var(--text-xl)', lineHeight: 1.15 }}>
-                      {seg.label}
+                      {titleZhOnly(seg.label)}
                     </div>
                   </div>
 
@@ -158,7 +159,7 @@ export function TransportPage() {
                           <div className="muted" style={{ marginTop: 8 }}>
                             {mapPoints.map((p) => (
                               <div key={`${seg.id}-${p.label}`}>
-                                - <FormattedInline text={`[${p.label}](${mapsSearchUrl(p.query)})`} />
+                                - <FormattedInline text={`[${titleZhOnly(p.label)}](${mapsSearchUrl(p.query)})`} />
                               </div>
                             ))}
                           </div>
@@ -172,7 +173,7 @@ export function TransportPage() {
                     trainOptions.map((o, idx) => (
                       <Accordion
                         key={`${seg.id}-train-${idx}-${o.title}`}
-                        title={trainOptions.length === 1 ? '火車方案（Train）' : `火車方案（Train）${idx + 1}`}
+                        title={trainOptions.length === 1 ? '火車方案' : `火車方案 ${idx + 1}`}
                       >
                         {renderOption(o, (src, title) => setLightbox({ src, title }))}
                       </Accordion>
@@ -189,7 +190,7 @@ export function TransportPage() {
                     busOptions.map((o, idx) => (
                       <Accordion
                         key={`${seg.id}-bus-${idx}-${o.title}`}
-                        title={busOptions.length === 1 ? '巴士方案（Bus）' : `巴士方案（Bus）${idx + 1}`}
+                        title={busOptions.length === 1 ? '巴士方案' : `巴士方案 ${idx + 1}`}
                       >
                         {renderOption(o, (src, title) => setLightbox({ src, title }))}
                       </Accordion>
@@ -253,7 +254,7 @@ function renderOption(
   return (
     <div style={{ display: 'grid', gap: 10 }}>
       <div style={{ display: 'flex', gap: 10, alignItems: 'baseline', flexWrap: 'wrap' }}>
-        <div style={{ fontWeight: 900 }}>{o.title}</div>
+        <div style={{ fontWeight: 900 }}>{titleZhOnly(o.title)}</div>
       </div>
       <div className="muted">{o.summary}</div>
 

@@ -1,24 +1,23 @@
 import { useMemo } from 'react'
-import type { GalleryImage } from './GalleryLightbox'
 import { FormattedInline, FormattedText } from './FormattedText'
+import { ImageCarouselCard } from './ImageCarouselCard'
 import { TextCarouselCard } from './TextCarouselCard'
 import { withBaseUrl } from '../utils/asset'
 import { prefersReducedMotion } from '../utils/motion'
 import { extractH3CarouselItems } from '../utils/extractCarouselItems'
 import { parseRichBlocks, type RichBlock, type RichUlItem } from '../markdownLite/richContent'
+import { titleZhOnly } from '../utils/titleZhOnly'
 
 export function RichContent({
   content,
   className = 'prose',
   showToc = false,
   onOpenImage,
-  onOpenGallery,
 }: {
   content: string
   className?: string
   showToc?: boolean
   onOpenImage?: (src: string, title: string) => void
-  onOpenGallery?: (images: GalleryImage[], title: string) => void
 }) {
   const blocks = useMemo(() => parseRichBlocks(content, { resolveUrl: withBaseUrl }), [content])
   const headings = useMemo(
@@ -121,9 +120,9 @@ export function RichContent({
                         const el = document.getElementById(h.id)
                         el?.scrollIntoView({ behavior: prefersReducedMotion() ? 'auto' : 'smooth', block: 'start' })
                       }}
-                      aria-label={`跳到：${h.text}`}
+                      aria-label={`跳到：${titleZhOnly(h.text)}`}
                     >
-                      {h.text}
+                      {titleZhOnly(h.text)}
                     </button>
                   </li>
                 ))}
@@ -178,7 +177,7 @@ export function RichContent({
                 lineHeight: 1.18,
               }}
             >
-              <FormattedInline text={b.text} />
+              {titleZhOnly(b.text)}
             </Tag>
           )
           continue
@@ -255,24 +254,16 @@ export function RichContent({
             ) : null}
 
             {b.galleries.length > 0 ? (
-              <div
-                className="not-prose"
-                style={{ display: 'flex', gap: 10, flexWrap: 'wrap', marginTop: hasText ? 10 : 0 }}
-              >
+              <div className="not-prose" style={{ display: 'grid', gap: 10, marginTop: hasText ? 10 : 0 }}>
                 {b.galleries.map((g, i) => {
                   const title = g.title || '圖庫'
                   return (
-                    <button
+                    <ImageCarouselCard
                       key={`${idx}-g-${i}-${title}`}
-                      type="button"
-                      className="btn"
-                      style={{ minHeight: 34, padding: '8px 12px' }}
-                      onClick={() => onOpenGallery?.(g.images as unknown as GalleryImage[], title)}
-                      aria-label={`開啟圖庫：${title}`}
-                      title="點擊開啟圖庫"
-                    >
-                      {title === '圖庫' ? '圖庫' : `圖庫：${title}`}
-                    </button>
+                      title={title}
+                      images={g.images}
+                      onOpenImage={(src, t) => onOpenImage?.(src, t)}
+                    />
                   )
                 })}
               </div>

@@ -6,6 +6,7 @@ import { useReveal } from '../hooks/useReveal'
 import { PageHero } from '../components/PageHero'
 import { FormattedInline, FormattedText } from '../components/FormattedText'
 import { ExpandingBox } from '../components/ExpandingBox'
+import { titleZhOnly } from '../utils/titleZhOnly'
 
 function statusPill(status: 'primary' | 'secondary' | 'backup' | undefined) {
   if (!status) return null
@@ -65,7 +66,7 @@ export function StaysPage() {
                 <div className="cardInner">
                   <div style={{ display: 'flex', gap: 10, alignItems: 'baseline', flexWrap: 'wrap' }}>
                     <div style={{ fontWeight: 950, fontSize: 'var(--text-xl)', lineHeight: 1.15 }}>
-                      {c.title}
+                      {titleZhOnly(c.title)}
                     </div>
                   </div>
 
@@ -79,7 +80,7 @@ export function StaysPage() {
                           <div key={o.name} className="card" style={{ boxShadow: 'none' }}>
                             <div className="cardInner">
                               <div style={{ display: 'flex', gap: 10, alignItems: 'baseline', flexWrap: 'wrap' }}>
-                                <div style={{ fontWeight: 900 }}>{o.name}</div>
+                                <div style={{ fontWeight: 900 }}>{titleZhOnly(o.name)}</div>
                                 {statusPill(o.statusHint)}
                               </div>
                               {o.why.length > 0 && (

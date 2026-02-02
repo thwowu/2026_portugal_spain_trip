@@ -1,5 +1,6 @@
 import { FormattedInline } from './FormattedText'
 import { RichContent } from './RichContent'
+import { titleZhOnly } from '../utils/titleZhOnly'
 
 export type ZigzagTimelineItem = {
   title: string
@@ -33,9 +34,13 @@ export function ZigzagTimeline({
             <div className="zigzagTimelineCard card" style={{ boxShadow: 'none' }}>
               <div className="cardInner">
                 <div className="zigzagTimelineItemTitle">
-                  <FormattedInline text={it.title} />
+                  {titleZhOnly(it.title)}
                 </div>
-                {it.summary ? <div className="muted zigzagTimelineItemSummary">{it.summary}</div> : null}
+                {it.summary ? (
+                  <div className="muted zigzagTimelineItemSummary">
+                    <FormattedInline text={it.summary} allowInteractiveBilingual={false} />
+                  </div>
+                ) : null}
                 {!it.onOpen ? (
                   <div className="zigzagTimelineItemBody">
                     <RichContent content={it.content} className="longformGrid prose attrProse attrProseEditorial" />
@@ -43,7 +48,12 @@ export function ZigzagTimeline({
                 ) : null}
                 {it.onOpen ? (
                   <div className="zigzagTimelineItemActions">
-                    <button type="button" className="btn btnPrimary" onClick={it.onOpen} aria-label={`詳情：${it.title}`}>
+                    <button
+                      type="button"
+                      className="btn btnPrimary"
+                      onClick={it.onOpen}
+                      aria-label={`詳情：${titleZhOnly(it.title)}`}
+                    >
                       詳情…
                     </button>
                   </div>

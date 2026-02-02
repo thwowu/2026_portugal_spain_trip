@@ -3,6 +3,7 @@ import { IconGoogleMaps } from './NavIcons'
 import { parseBasicBlocks } from '../markdownLite/blocks'
 import { tokenizeInline } from '../markdownLite/inline'
 import { sanitizeHref } from '../utils/sanitizeHref'
+import { titleZhOnly } from '../utils/titleZhOnly'
 
 function toSafeDomId(raw: string) {
   const s = (raw ?? '').toString()
@@ -303,7 +304,7 @@ export function FormattedText({
           const Tag = b.level === 4 ? 'h4' : b.level === 3 ? 'h3' : 'h2'
           return (
             <Tag key={idx} style={{ margin: idx === 0 ? 0 : '12px 0 0 0', fontWeight: 900, lineHeight: 1.2 }}>
-              <FormattedInline text={b.text} />
+              {titleZhOnly(b.text)}
             </Tag>
           )
         }

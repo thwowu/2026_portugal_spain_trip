@@ -8,7 +8,18 @@ import {
 } from './md.mjs'
 
 function splitPipeParts(s) {
-  return s.split('|').map((p) => p.trim()).filter(Boolean)
+  // IMPORTANT:
+  // We use " | " (pipe with surrounding whitespace) as the authoring delimiter.
+  // Do NOT split on a bare "|" because our inline bilingual tokens use pipes too:
+  //   {{bi:中文|English}}
+  //   {{bilink:中文|English|https://...}}
+  //
+  // Those inline pipes intentionally have *no surrounding whitespace*, so splitting
+  // on /\s+\|\s+/ keeps the delimiter semantics without corrupting content.
+  return String(s ?? '')
+    .split(/\s+\|\s+/)
+    .map((p) => p.trim())
+    .filter(Boolean)
 }
 
 function parseDayHeading(text) {
@@ -16,24 +27,34 @@ function parseDayHeading(text) {
   //   "day 1 | 3/31（一） | 里斯本 | 抵達日..."
   // Backward-compatible:
   //   "day 1 | 里斯本 | 抵達日..."  (dateLabel will be empty)
-  const m4 = /^day\s+(\d+)\s*\|\s*(.+?)\s*\|\s*(.+?)\s*\|\s*(.+)$/.exec(text)
-  if (m4) {
+  const parts = splitPipeParts(text)
+  if (parts.length < 2) return null
+
+  const mDay = /^day\s+(\d+)$/i.exec(parts[0] ?? '')
+  if (!mDay) return null
+  const day = Number(mDay[1])
+  if (!Number.isFinite(day) || day <= 0) return null
+
+  // day N | dateLabel | cityLabel | title
+  if (parts.length >= 4) {
     return {
-      day: Number(m4[1]),
-      dateLabel: m4[2].trim(),
-      cityLabel: m4[3].trim(),
-      title: m4[4].trim(),
+      day,
+      dateLabel: (parts[1] ?? '').trim(),
+      cityLabel: (parts[2] ?? '').trim(),
+      title: parts.slice(3).join(' | ').trim(),
     }
   }
-  const m3 = /^day\s+(\d+)\s*\|\s*(.+?)\s*\|\s*(.+)$/.exec(text)
-  if (m3) {
+
+  // day N | cityLabel | title
+  if (parts.length === 3) {
     return {
-      day: Number(m3[1]),
+      day,
       dateLabel: '',
-      cityLabel: m3[2].trim(),
-      title: m3[3].trim(),
+      cityLabel: (parts[1] ?? '').trim(),
+      title: (parts[2] ?? '').trim(),
     }
   }
+
   return null
 }
 
@@ -125,7 +146,9 @@ export function parseItineraryMd({ sourcePath, raw }) {
     const parts = h2.text.trim().split(/\s+/)
     if (parts[0] !== 'phase') continue
     const after = h2.text.trim().slice('phase'.length).trim()
-    const [id, label] = splitPipeParts(after)
+    const p = splitPipeParts(after)
+    const id = p[0]
+    const label = p.slice(1).join(' | ')
     if (!id || !label) throw mdError(sourcePath, h2.line, 'Invalid phase heading. Expected: "## phase <id> | <label>"')
 
     const days = []

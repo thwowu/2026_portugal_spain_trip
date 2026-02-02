@@ -7,7 +7,6 @@ import type { CityId } from '../../data/core'
 import { useHashScroll } from '../../hooks/useHashScroll'
 import { useReveal } from '../../hooks/useReveal'
 import { Lightbox } from '../../components/Lightbox'
-import { GalleryLightbox, type GalleryImage } from '../../components/GalleryLightbox'
 import { ILLUSTRATION } from '../../illustrations'
 import { PageHero } from '../../components/PageHero'
 import { RichContent } from '../../components/RichContent'
@@ -20,6 +19,7 @@ import { extractH3CarouselItems, stripCardLinesFromContent } from '../../utils/e
 import { computeDefaultAttractionsCityId, computeItineraryCityOrder } from '../../domain/cities'
 import { ExtensionModal } from './components/ExtensionModal'
 import { ModalSplitCard } from './components/ModalSplitCard'
+import { titleZhOnly } from '../../utils/titleZhOnly'
 import {
   LONG_SECTION_MODAL_THRESHOLD_CHARS,
   SECTION_TAB_LABEL,
@@ -55,7 +55,6 @@ export function AttractionsPage() {
   const [active, setActive] = useState<{ cityId: string; tripId: string } | null>(null)
   const [longRead, setLongRead] = useState<LongReadModalState | null>(null)
   const [lightbox, setLightbox] = useState<{ src: string; title: string } | null>(null)
-  const [gallery, setGallery] = useState<{ title: string; images: GalleryImage[]; index: number } | null>(null)
   const [activeCityId, setActiveCityId] = useState<CityId | null>(DEFAULT_ATTRACTIONS_CITY_ID)
   const [activeTabByCity, setActiveTabByCity] = useState<Record<string, string>>({})
   const [cityProgress, setCityProgress] = useState(0)
@@ -163,7 +162,7 @@ export function AttractionsPage() {
   useEffect(() => {
     // Keyboard quick-nav: ArrowLeft / ArrowRight to jump across cities.
     // Avoid stealing keys when modals/lightboxes are open.
-    if (active || longRead || lightbox || gallery) return
+    if (active || longRead || lightbox) return
 
     const onKeyDown = (e: KeyboardEvent) => {
       if (e.defaultPrevented) return
@@ -185,7 +184,7 @@ export function AttractionsPage() {
 
     window.addEventListener('keydown', onKeyDown)
     return () => window.removeEventListener('keydown', onKeyDown)
-  }, [active, gallery, lightbox, longRead, nextCityId, prevCityId, scrollToCity])
+  }, [active, lightbox, longRead, nextCityId, prevCityId, scrollToCity])
 
   useEffect(() => {
     let raf = 0
@@ -341,7 +340,7 @@ export function AttractionsPage() {
                     </div>
                     <div className="attrCityHeaderText">
                       <div className="attrCityNameRow">
-                        <div className="attrCityName">{c.title}</div>
+                          <div className="attrCityName">{titleZhOnly(c.title)}</div>
                       </div>
                       <div className="attrCitySub">用章節切換快速掃重點（不做每段卡片）。</div>
                     </div>
@@ -365,14 +364,14 @@ export function AttractionsPage() {
                                 setActiveTabByCity((prev) => ({ ...prev, [cityKey]: s.kind }))
                               }
                             >
-                              {SECTION_TAB_LABEL[s.kind] ?? s.title}
+                              {titleZhOnly(SECTION_TAB_LABEL[s.kind] ?? s.title)}
                             </button>
                           )
                         })}
                       </div>
 
                       <div className="attrTabPanel" role="tabpanel">
-                        <div className="attrTabTitle">{activeSection.title}</div>
+                        <div className="attrTabTitle">{titleZhOnly(activeSection.title)}</div>
 
                         {!cleanedSectionContent.trim() ? (
                           <div className="muted" style={{ marginTop: 8 }}>
@@ -386,7 +385,7 @@ export function AttractionsPage() {
                                   testId={`routes-timeline-${c.cityId}`}
                                   items={extractH3CarouselItems(sectionContent, { snippetMaxLen: 140 }).map(
                                     (it) => ({
-                                      title: it.title,
+                                      title: titleZhOnly(it.title),
                                       summary: it.summary,
                                       content: it.content,
                                       onOpen: () =>
@@ -394,8 +393,8 @@ export function AttractionsPage() {
                                           ariaLabel: `${c.title}｜${inlineToPlainText(
                                             activeSection.title,
                                           )}｜${inlineToPlainText(it.title)}`,
-                                          headerTitle: it.title,
-                                          headerSub: c.title,
+                                          headerTitle: titleZhOnly(it.title),
+                                          headerSub: titleZhOnly(c.title),
                                           content: it.content,
                                           kind: activeSection.kind,
                                         }),
@@ -409,8 +408,8 @@ export function AttractionsPage() {
                                     onClick={() =>
                                       setLongRead({
                                         ariaLabel: `${c.title}｜${inlineToPlainText(activeSection.title)}`,
-                                        headerTitle: activeSection.title,
-                                        headerSub: c.title,
+                                        headerTitle: titleZhOnly(activeSection.title),
+                                        headerSub: titleZhOnly(c.title),
                                         content: cleanedSectionContent,
                                         kind: activeSection.kind,
                                       })
@@ -438,7 +437,7 @@ export function AttractionsPage() {
                                         hideHeader
                                         hideHint
                                         items={items.map((it) => ({
-                                          title: it.title,
+                                          title: titleZhOnly(it.title),
                                           summary: it.summary,
                                           imageSrc: it.imageSrc,
                                           onOpen: () =>
@@ -446,8 +445,8 @@ export function AttractionsPage() {
                                               ariaLabel: `${c.title}｜${inlineToPlainText(
                                                 activeSection.title,
                                               )}｜${inlineToPlainText(it.title)}`,
-                                              headerTitle: it.title,
-                                              headerSub: c.title,
+                                              headerTitle: titleZhOnly(it.title),
+                                              headerSub: titleZhOnly(c.title),
                                               content: it.content,
                                               kind: activeSection.kind,
                                             }),
@@ -461,8 +460,8 @@ export function AttractionsPage() {
                                           onClick={() =>
                                             setLongRead({
                                               ariaLabel: `${c.title}｜${inlineToPlainText(activeSection.title)}`,
-                                              headerTitle: activeSection.title,
-                                              headerSub: c.title,
+                                              headerTitle: titleZhOnly(activeSection.title),
+                                              headerSub: titleZhOnly(c.title),
                                               content: cleanedSectionContent,
                                               kind: activeSection.kind,
                                             })
@@ -484,8 +483,8 @@ export function AttractionsPage() {
                                       onClick={() =>
                                         setLongRead({
                                           ariaLabel: `${c.title}｜${inlineToPlainText(activeSection.title)}`,
-                                          headerTitle: activeSection.title,
-                                          headerSub: c.title,
+                                          headerTitle: titleZhOnly(activeSection.title),
+                                          headerSub: titleZhOnly(c.title),
                                           content: cleanedSectionContent,
                                           kind: activeSection.kind,
                                         })
@@ -502,7 +501,6 @@ export function AttractionsPage() {
                                       content={cleanedSectionContent}
                                       className="longformGrid prose attrProse attrProseEditorial"
                                       onOpenImage={(src, title) => setLightbox({ src, title })}
-                                      onOpenGallery={(images, title) => setGallery({ images, title, index: 0 })}
                                     />
                                   </div>
                                 ) : null}
@@ -588,7 +586,7 @@ export function AttractionsPage() {
                                         <div style={{ fontWeight: 900 }}>{t.title}</div>
                                         {excerpt && (
                                           <div className="muted" style={{ marginTop: 6 }}>
-                                            {excerpt}
+                                            <FormattedInline text={excerpt} allowInteractiveBilingual={false} />
                                           </div>
                                         )}
                                         <div style={{ marginTop: 10 }}>
@@ -624,7 +622,6 @@ export function AttractionsPage() {
           onClose={() => setActive(null)}
           data={extensionsByCity.get(active.cityId)}
           onOpenImage={(src, title) => setLightbox({ src, title })}
-          onOpenGallery={(images, title) => setGallery({ images, title, index: 0 })}
         />
       )}
 
@@ -654,19 +651,10 @@ export function AttractionsPage() {
               className="longformGrid prose attrProse attrProseEditorial"
               showToc
               onOpenImage={(src, title) => setLightbox({ src, title })}
-              onOpenGallery={(images, title) => setGallery({ images, title, index: 0 })}
             />
           </div>
         </ModalSplitCard>
       )}
-
-      <GalleryLightbox
-        open={!!gallery}
-        title={gallery?.title}
-        images={gallery?.images ?? []}
-        initialIndex={gallery?.index ?? 0}
-        onClose={() => setGallery(null)}
-      />
 
       <Lightbox
         open={!!lightbox}

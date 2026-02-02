@@ -8,7 +8,7 @@ function cityIdFromItineraryCityLabel(label: string): CityId | null {
   if (s.includes('sintra') || s.includes('辛特拉')) return 'sintra'
   if (s.includes('lisbon') || s.includes('里斯本')) return 'lisbon'
   // Lagos is sometimes authored as 拉各斯; older content may use 拉狗.
-  if (s.includes('lagos') || s.includes('拉各斯') || s.includes('拉狗')) return 'lagos'
+  if (s.includes('lagos') || s.includes('拉格斯') || s.includes('拉各斯') || s.includes('拉狗')) return 'lagos'
   if (s.includes('seville') || s.includes('塞維爾')) return 'seville'
   if (s.includes('granada') || s.includes('格拉納達')) return 'granada'
   if (s.includes('madrid') || s.includes('馬德里')) return 'madrid'

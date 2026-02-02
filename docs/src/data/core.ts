@@ -33,8 +33,8 @@ export const TRANSPORT_SEGMENTS: Array<{
   to: CityId
   label: string
 }> = [
-  { id: 'lisbon-lagos', from: 'lisbon', to: 'lagos', label: '里斯本 → Lagos' },
-  { id: 'lagos-seville', from: 'lagos', to: 'seville', label: 'Lagos → 塞維爾' },
+  { id: 'lisbon-lagos', from: 'lisbon', to: 'lagos', label: '里斯本 → 拉格斯' },
+  { id: 'lagos-seville', from: 'lagos', to: 'seville', label: '拉格斯 → 塞維爾' },
   { id: 'seville-granada', from: 'seville', to: 'granada', label: '塞維爾 → 格拉納達' },
   { id: 'granada-madrid', from: 'granada', to: 'madrid', label: '格拉納達 → 馬德里' },
 ]

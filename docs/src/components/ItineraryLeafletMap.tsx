@@ -18,11 +18,15 @@ function readCssVar(name: string, fallback: string) {
 
 export function ItineraryLeafletMap({
   waypoints,
+  routeBreakIndices,
   activeStep,
   hoveredStep,
   onPickStepIndex,
 }: {
   waypoints: Waypoint[]
+  // Indices in `waypoints` where the dashed route should "break" (start a new segment).
+  // Example: [5, 8] means connect 0-4, then 5-7, then 8-...
+  routeBreakIndices?: number[]
   activeStep: number
   hoveredStep: number | null
   onPickStepIndex?: (idx: number) => void
@@ -43,6 +47,23 @@ export function ItineraryLeafletMap({
       : false
 
   const latlngs = useMemo(() => waypoints.map((w) => MAP_CITY_LATLNG[w.cityId]), [waypoints])
+  const routeSegments = useMemo(() => {
+    const breaks = new Set(routeBreakIndices ?? [])
+    const segments: [number, number][][] = []
+    let cur: [number, number][] = []
+
+    for (let i = 0; i < latlngs.length; i++) {
+      if (i !== 0 && breaks.has(i)) {
+        if (cur.length >= 2) segments.push(cur)
+        cur = []
+      }
+      const p = latlngs[i]
+      cur.push([p.lat, p.lng])
+    }
+
+    if (cur.length >= 2) segments.push(cur)
+    return segments
+  }, [latlngs, routeBreakIndices])
 
   useEffect(() => {
     const el = mapElRef.current
@@ -73,10 +94,11 @@ export function ItineraryLeafletMap({
     }).addTo(map)
 
     // Trip polyline (straight segments; we keep it lightweight).
-    L.polyline(
-      latlngs.map((p) => [p.lat, p.lng] as [number, number]),
-      { color: primary, dashArray: '12 12', weight: 4, opacity: 0.9 },
-    ).addTo(map)
+    // Draw as segmented polylines so we don't imply a single continuous "bus route"
+    // spanning unrelated city blocks (e.g. Lisbon ↔ Seville ↔ Granada).
+    for (const seg of routeSegments) {
+      L.polyline(seg, { color: primary, dashArray: '12 12', weight: 4, opacity: 0.9 }).addTo(map)
+    }
 
     // Numbered waypoint markers.
     markersRef.current = waypoints.map((w, idx) => {

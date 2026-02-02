@@ -7,7 +7,7 @@ import type { ItineraryPhase } from '../data/itinerary'
 export const ITINERARY_PHASES: ItineraryPhase[] = [
   {
     "id": "phase-lisbon",
-    "label": "里斯本 + {{bi:辛特拉",
+    "label": "里斯本 + {{bi:辛特拉|Sintra}}（5 天）",
     "days": [
       {
         "day": 1,
@@ -56,9 +56,9 @@ export const ITINERARY_PHASES: ItineraryPhase[] = [
       },
       {
         "day": 3,
-        "dateLabel": "里斯本",
-        "cityLabel": "{{bi:卡斯凱什",
-        "title": "Cascais}}海岸線＋燈塔（放鬆日）",
+        "dateLabel": "",
+        "cityLabel": "里斯本",
+        "title": "{{bi:卡斯凱什|Cascais}}海岸線＋燈塔（放鬆日）",
         "tags": [
           "easy"
         ],
@@ -102,8 +102,8 @@ export const ITINERARY_PHASES: ItineraryPhase[] = [
       },
       {
         "day": 5,
-        "dateLabel": "{{bi:辛特拉",
-        "cityLabel": "Sintra}}",
+        "dateLabel": "",
+        "cityLabel": "{{bi:辛特拉|Sintra}}",
         "title": "夢幻宮殿（一日 WOW）",
         "tags": [
           "wow",
@@ -131,12 +131,12 @@ export const ITINERARY_PHASES: ItineraryPhase[] = [
   },
   {
     "id": "phase-lagos",
-    "label": "{{bi:阿爾加維・拉各斯",
+    "label": "{{bi:阿爾加維・拉各斯|Lagos}}（3 天）",
     "days": [
       {
         "day": 6,
-        "dateLabel": "{{bi:拉各斯",
-        "cityLabel": "Lagos}}",
+        "dateLabel": "",
+        "cityLabel": "{{bi:拉各斯|Lagos}}",
         "title": "里斯本 → 拉各斯（交通日）",
         "tags": [
           "travel_day"
@@ -158,8 +158,8 @@ export const ITINERARY_PHASES: ItineraryPhase[] = [
       },
       {
         "day": 7,
-        "dateLabel": "{{bi:拉各斯",
-        "cityLabel": "Lagos}}",
+        "dateLabel": "",
+        "cityLabel": "{{bi:拉各斯|Lagos}}",
         "title": "{{bi:皮耶達德角|Ponta da Piedade；WOW}}",
         "tags": [
           "wow",
@@ -182,8 +182,8 @@ export const ITINERARY_PHASES: ItineraryPhase[] = [
       },
       {
         "day": 8,
-        "dateLabel": "{{bi:拉各斯",
-        "cityLabel": "Lagos}}",
+        "dateLabel": "",
+        "cityLabel": "{{bi:拉各斯|Lagos}}",
         "title": "{{bi:貝納吉爾藍洞|Benagil；WOW}}",
         "tags": [
           "wow"
@@ -211,9 +211,9 @@ export const ITINERARY_PHASES: ItineraryPhase[] = [
     "days": [
       {
         "day": 9,
-        "dateLabel": "塞維爾",
-        "cityLabel": "{{bi:拉各斯",
-        "title": "Lagos}}→ 塞維爾（交通日）",
+        "dateLabel": "",
+        "cityLabel": "塞維爾",
+        "title": "{{bi:拉各斯|Lagos}}→ 塞維爾（交通日）",
         "tags": [
           "travel_day"
         ],
@@ -266,9 +266,9 @@ export const ITINERARY_PHASES: ItineraryPhase[] = [
       },
       {
         "day": 11,
-        "dateLabel": "格拉納達",
-        "cityLabel": "{{bi:阿爾罕布拉宮",
-        "title": "WOW}}",
+        "dateLabel": "",
+        "cityLabel": "格拉納達",
+        "title": "{{bi:阿爾罕布拉宮|WOW}}",
         "tags": [
           "wow",
           "ticket"

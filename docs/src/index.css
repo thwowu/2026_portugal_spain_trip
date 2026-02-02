@@ -2068,6 +2068,109 @@ details > summary span[aria-hidden='true'] {
   }
 }
 
+/* RichContent: inline image carousel (for Attractions detail) */
+.imageCarousel {
+  box-shadow: none;
+  background: color-mix(in oklab, var(--surface) 94%, var(--surface-2));
+}
+
+.imageCarouselInner {
+  display: grid;
+  gap: 10px;
+}
+
+.imageCarouselHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.imageCarouselHeaderText {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.imageCarouselTitle {
+  font-weight: 950;
+  font-size: var(--text-md);
+  line-height: 1.15;
+}
+
+.imageCarouselMeta {
+  font-size: var(--text-xs);
+}
+
+.imageCarouselHeaderActions {
+  display: inline-flex;
+  gap: 8px;
+  flex: 0 0 auto;
+}
+
+.imageCarouselNavBtn {
+  padding: 10px 12px;
+  min-width: 44px;
+  font-weight: 950;
+}
+
+.imageCarouselViewport {
+  --items-per-view: 1;
+  --carousel-gap: 10px;
+  --carousel-item-min: 240px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 6px;
+}
+
+@media (max-width: 420px) {
+  .imageCarouselViewport {
+    --carousel-item-min: 92%;
+  }
+}
+
+.imageCarouselTrack {
+  display: flex;
+  gap: var(--carousel-gap);
+  min-width: 0;
+}
+
+.imageCarouselItem {
+  flex: 0 0
+    max(
+      var(--carousel-item-min),
+      calc((100% - (var(--carousel-gap) * (calc(var(--items-per-view) - 1)))) / var(--items-per-view))
+    );
+  scroll-snap-align: start;
+  border-radius: 16px;
+  border: 1px solid var(--hairline);
+  background: var(--surface);
+  overflow: hidden;
+  min-width: 0;
+  padding: 0;
+  cursor: pointer;
+  display: block;
+}
+
+.imageCarouselItem:disabled {
+  cursor: default;
+}
+
+.imageCarouselImg {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+@media (min-width: 860px) {
+  .imageCarouselViewport {
+    padding-bottom: 0;
+  }
+}
+
 /* Attractions: toolbox (food/safety/practical) */
 .attrToolbox {
   margin-top: 14px;
