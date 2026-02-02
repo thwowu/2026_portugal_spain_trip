@@ -1,6 +1,6 @@
 # 內容 SSOT（單一真實來源）
 
-這個資料夾是旅遊內容的 單一真實來源（SSOT）。
+這個資料夾是旅遊內容的 {{bi:單一真實來源|SSOT}}。
 
 ### Key takeaways
 - **只改 `src/content/*.md`**：App 會把內容編譯成 `src/generated/*.ts`，runtime 不直接讀 Markdown。
@@ -28,6 +28,17 @@ App 不會在 runtime 直接渲染整份 Markdown 文件；而是先把內容轉
 - 勾選清單：`- [ ] item`、`- [x] item`
 - 引言：`> quoted text`
 
+## 雙語寫法（中文為主 + 英文提示）
+
+- **不可點雙語詞（term）**：`{{bi:中文|English}}`
+  - 例：`這裡主要是 {{bi:石灰岩|limestone}}`
+- **可點雙語連結（link）**：`{{bilink:中文|English|https://...}}`
+  - 例：`#### {{bilink:石灰岩|Limestone|https://example.com}}`
+- **重要限制**：避免在「用 | 分欄」的列表裡使用 `bi/bilink`
+  - 像 `transport.*.md` 的 `bookingLinks:` / `screenshots:` 用 `- Label | url` 解析
+  - 因為 `bi/bilink` 本身含 `|`，會把欄位切壞
+  - **做法**：改寫成 `Label（English） | https://...`（不要用 `{{bi:...}}`）
+
 ## 工作流程
 
 - **（可選）從主文件拆分**：`npm run content:split`
@@ -49,10 +60,10 @@ App 不會在 runtime 直接渲染整份 Markdown 文件；而是先把內容轉
 ---
 schema: v1
 cityId: lisbon
-title: 里斯本（Lisbon）
+title: {{bi:里斯本|Lisbon}}
 ---
 
-# 里斯本（Lisbon）
+# {{bi:里斯本|Lisbon}}
 
 ## must
 - ...
@@ -91,10 +102,10 @@ title: 里斯本（Lisbon）
 ---
 schema: v1
 cityId: lisbon
-title: 里斯本（Lisbon）住宿
+title: {{bi:里斯本|Lisbon}}住宿
 ---
 
-# 里斯本（Lisbon）住宿
+# {{bi:里斯本|Lisbon}}住宿
 
 ## options
 - Hotel name | status=primary
@@ -121,10 +132,10 @@ title: 里斯本（Lisbon）住宿
 ---
 schema: v1
 segmentId: lisbon-lagos
-title: 里斯本（Lisbon）→ 拉各斯（Lagos）
+title: {{bi:里斯本|Lisbon}}→ {{bi:拉各斯|Lagos}}
 ---
 
-# 里斯本（Lisbon）→ 拉各斯（Lagos）
+# {{bi:里斯本|Lisbon}}→ {{bi:拉各斯|Lagos}}
 
 ## tldr
 - recommended: bus
@@ -156,7 +167,7 @@ schema: v1
 
 # Itinerary
 
-## phase phase-lisbon | 里斯本 + 辛特拉（Sintra）（5 天）
+## phase phase-lisbon | 里斯本 + {{bi:辛特拉|Sintra}}（5 天）
 
 ### day 1 | 里斯本 | 抵達日（時差回收）
 - tags: easy

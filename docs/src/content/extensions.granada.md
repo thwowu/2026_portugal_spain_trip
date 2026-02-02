@@ -1,10 +1,10 @@
 ---
 schema: v1
 cityId: granada
-title: 格拉納達（Granada）延伸行程（詳情）
+title: {{bi:格拉納達|Granada}}延伸行程（詳情）
 ---
 
-# 格拉納達（Granada）延伸行程（詳情）
+# {{bi:格拉納達|Granada}}延伸行程（詳情）
 
 ## alpujarras | 阿爾普哈拉斯白村（Las Alpujarras；白村山景）
 
@@ -39,9 +39,9 @@ title: 格拉納達（Granada）延伸行程（詳情）
 
 ### sources
 @card: 資料來源與查詢入口：需要核對規則、交通或官方資訊可從這裡往下追。
-Spain.info（Alpujarras）：https://www.spain.info/en/activities/discover-the-alpujarras-legado-andalusi-granada/
+Spain. {{bi:info|Alpujarras}}：https://www.spain.info/en/activities/discover-the-alpujarras-legado-andalusi-granada/
 
-Wikivoyage（Granada）：https://en.wikivoyage.org/wiki/Granada_(Spain)
+{{bi:Wikivoyage|Granada}}：https://en.wikivoyage.org/wiki/Granada_(Spain)
 
 ## guadix | 瓜迪克斯（Guadix；洞穴城市）
 
@@ -67,7 +67,7 @@ Wikivoyage（Granada）：https://en.wikivoyage.org/wiki/Granada_(Spain)
 
 ### sources
 @card: 資料來源與查詢入口：需要核對規則、交通或官方資訊可從這裡往下追。
-Trainline（Guadix ↔ Granada）：https://www.thetrainline.com/en/train-times/guadix-to-granada
+{{bi:Trainline|Guadix ↔ Granada}}：https://www.thetrainline.com/en/train-times/guadix-to-granada
 
 ## alhambra-ticketing | Alhambra 票務規則（備忘）
 
@@ -130,5 +130,5 @@ Patronato 官方票務：https://compratickets.alhambra-patronato.es/reservarEnt
 
 ### sources
 @card: 資料來源與查詢入口：需要核對規則、交通或官方資訊可從這裡往下追。
-Wikivoyage（Granada）：https://en.wikivoyage.org/wiki/Granada_(Spain)
+{{bi:Wikivoyage|Granada}}：https://en.wikivoyage.org/wiki/Granada_(Spain)
 

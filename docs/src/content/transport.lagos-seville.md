@@ -1,10 +1,10 @@
 ---
 schema: v1
 segmentId: lagos-seville
-title: 拉各斯（Lagos）→ 塞維爾（Seville）
+title: {{bi:拉各斯|Lagos}}→ {{bi:塞維爾|Seville}}
 ---
 
-# 拉各斯（Lagos）→ 塞維爾（Seville）
+# {{bi:拉各斯|Lagos}}→ {{bi:塞維爾|Seville}}
 
 讀法：先看 `tldr` 抓結論；再看 `options`（bus/train）走細節。
 
@@ -20,7 +20,7 @@ title: 拉各斯（Lagos）→ 塞維爾（Seville）
 
 ## options
 ### bus | 巴士（直達、時間較短）
-- summary: 直達省心；FlixBus 路線頁會列出 Seville 的主要下車點（Plaza de Armas / Prado / Santa Justa）。
+- summary: 直達省心；FlixBus 路線頁會列出 Seville 的 {{bi:主要下車點|Plaza de Armas / Prado / Santa Justa}}。
 - steps:
   - 先線上買票，確認「上車點」與「Seville 下車點」（會寫在車票上）。
   - 當天提早到 Lagos terminal → 找到月台/站牌 → 上車（如有托運就先處理行李）→ 抵達 Seville（依車票顯示站點）。
@@ -37,7 +37,7 @@ title: 拉各斯（Lagos）→ 塞維爾（Seville）
   - 巴士（示意） | /images/transport/lagos-seville-bus.png
 
 ### bus | 轉乘方案（經 法魯（Faro），更彈性但比較累）
-- summary: 若直達班次不合/滿位：先到 法魯（Faro）（火車/巴士）→ 再接國際巴士到 塞維爾（Seville）。
+- summary: 若直達班次不合/滿位：先到 {{bi:法魯|Faro}}（火車/巴士）→ 再接國際巴士到 {{bi:塞維爾|Seville}}。
 - steps:
   - 第一步：Lagos → Faro（CP 火車或區域巴士，依你當天班次）。
   - 第二步：Faro → Seville（FlixBus 等國際巴士；依班次為準）。

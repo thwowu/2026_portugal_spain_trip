@@ -1,10 +1,10 @@
 ---
 schema: v1
 segmentId: lisbon-lagos
-title: 里斯本（Lisbon）→ 拉各斯（Lagos）
+title: {{bi:里斯本|Lisbon}}→ {{bi:拉各斯|Lagos}}
 ---
 
-# 里斯本（Lisbon）→ 拉各斯（Lagos）
+# {{bi:里斯本|Lisbon}}→ {{bi:拉各斯|Lagos}}
 
 讀法：先看 `tldr` 抓結論；再看 `options`（bus/train）走細節。
 
@@ -53,7 +53,7 @@ title: 里斯本（Lisbon）→ 拉各斯（Lagos）
   - 上車前把行李標記好；貴重物品留在隨身包
 - riskNotes:
   - 主要風險是塞車/誤點（出發前可用官方 tracker 看車況）。
-  - 出發站點（Oriente/Sete Rios）要先確認，避免跑錯站。
+  - {{bi:出發站點|Oriente/Sete Rios}}要先確認，避免跑錯站。
 - screenshots:
   - 巴士班次/票價（示意） | /images/transport/lisbon-lagos-bus.png
 

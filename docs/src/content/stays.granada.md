@@ -1,10 +1,10 @@
 ---
 schema: v1
 cityId: granada
-title: 格拉納達（Granada）住宿
+title: {{bi:格拉納達|Granada}}住宿
 ---
 
-# 格拉納達（Granada）住宿
+# {{bi:格拉納達|Granada}}住宿
 
 讀法：先看 `options` 選區域；再看 `publicTransportHowToBuy`；最後看 `moneySavingTips`。
 
@@ -31,7 +31,7 @@ title: 格拉納達（Granada）住宿
 - **善用 60 分鐘轉乘**：去程搭車、回程走路（或反過來）通常最省力也最省錢。
 
 - 市中心多數景點可走路，但上阿爾拜辛/薩克羅蒙特/阿爾罕布拉「坡很有感」，若同行有人不適合爬坡/樓梯，就把「上坡段」交給公車（回程再視體力走路/搭車）。（Wikivoyage：[`Granada`](https://en.wikivoyage.org/wiki/Granada_(Spain))；Wikitravel：[`Granada (Spain)`](https://wikitravel.org/en/Granada_(Spain))）
-- 單程票（Sencillo）：可上車向司機購買；也可在部分站點的售票機購買（官方說明亦提到部分路線站點有機器）。（Movilidad Granada：[`Bus fares`](http://www.movilidadgranada.com/bus_tarifas.php?idioma=en)）
+- {{bi:單程票|Sencillo}}：可上車向司機購買；也可在部分站點的售票機購買（官方說明亦提到部分路線站點有機器）。（Movilidad Granada：[`Bus fares`](http://www.movilidadgranada.com/bus_tarifas.php?idioma=en)）
 - `Credibús`（最常用的儲值卡/多次票）怎麼買：
   - 第一次買卡：卡片押金/費用 €2，且最低需先加值 €5；可在車上或部分站點售票機購買。（Movilidad Granada：[`Bus fares`](http://www.movilidadgranada.com/bus_tarifas.php?idioma=en)）
   - 刷卡/驗票：上車後每次都要感應驗票；`Credibús` 允許多人「同一趟同行」共用（但不是每種卡都能共用）。（Movilidad Granada：[`Bus fares`](http://www.movilidadgranada.com/bus_tarifas.php?idioma=en)）

@@ -31,11 +31,15 @@ export function TextCarouselCard({
   title,
   subtitle,
   items,
+  hideHeader = false,
+  hideHint = false,
   testId,
 }: {
   title: string
   subtitle?: string
   items: TextCarouselItem[]
+  hideHeader?: boolean
+  hideHint?: boolean
   testId?: string
 }) {
   const viewportRef = useRef<HTMLDivElement | null>(null)
@@ -314,41 +318,52 @@ export function TextCarouselCard({
 
   if (items.length === 0) return null
 
+  const headerActions = !isGrid ? (
+    <div className="textCarouselHeaderActions" role="group" aria-label="切換卡片">
+      <button
+        type="button"
+        className="btn textCarouselNavBtn"
+        onClick={() => canGoPrev && stepBy(-1)}
+        disabled={!canGoPrev}
+        aria-label="上一張"
+        data-testid={testId ? `${testId}-prev` : undefined}
+        ref={prevBtnRef}
+      >
+        ←
+      </button>
+      <button
+        type="button"
+        className="btn textCarouselNavBtn"
+        onClick={() => canGoNext && stepBy(1)}
+        disabled={!canGoNext}
+        aria-label="下一張"
+        data-testid={testId ? `${testId}-next` : undefined}
+        ref={nextBtnRef}
+      >
+        →
+      </button>
+    </div>
+  ) : null
+
   return (
     <section className="card textCarousel" data-testid={testId}>
       <div className="cardInner textCarouselInner">
-        <div className="textCarouselHeader">
-          <div className="textCarouselHeaderText">
-            <div className="textCarouselTitle">{title}</div>
-            {headerSubtitle ? <div className="muted textCarouselSubtitle">{headerSubtitle}</div> : null}
-          </div>
-          {!isGrid ? (
-            <div className="textCarouselHeaderActions" role="group" aria-label="切換卡片">
-              <button
-                type="button"
-                className="btn textCarouselNavBtn"
-                onClick={() => canGoPrev && stepBy(-1)}
-                disabled={!canGoPrev}
-                aria-label="上一張"
-                data-testid={testId ? `${testId}-prev` : undefined}
-                ref={prevBtnRef}
-              >
-                ←
-              </button>
-              <button
-                type="button"
-                className="btn textCarouselNavBtn"
-                onClick={() => canGoNext && stepBy(1)}
-                disabled={!canGoNext}
-                aria-label="下一張"
-                data-testid={testId ? `${testId}-next` : undefined}
-                ref={nextBtnRef}
-              >
-                →
-              </button>
+        {hideHeader ? (
+          // Keep navigation controls (carousel mode) but hide title/subtitle.
+          headerActions ? (
+            <div className="textCarouselHeader" style={{ justifyContent: 'flex-end' }}>
+              {headerActions}
             </div>
-          ) : null}
-        </div>
+          ) : null
+        ) : (
+          <div className="textCarouselHeader">
+            <div className="textCarouselHeaderText">
+              <div className="textCarouselTitle">{title}</div>
+              {headerSubtitle ? <div className="muted textCarouselSubtitle">{headerSubtitle}</div> : null}
+            </div>
+            {headerActions}
+          </div>
+        )}
 
         <div
           ref={viewportRef}
@@ -403,7 +418,7 @@ export function TextCarouselCard({
           </div>
         </div>
 
-        {!isGrid ? (
+        {!isGrid && !hideHint ? (
           <div className="muted textCarouselHint">
             {cols === 1 ? '左右滑動或用 ←/→ 切換；點「詳情…」看完整。' : '用 ←/→ 切換；點「詳情…」看完整。'}
           </div>

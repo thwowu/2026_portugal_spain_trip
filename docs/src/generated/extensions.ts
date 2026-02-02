@@ -7,7 +7,7 @@ import type { CityExtensions } from '../data/extensions'
 export const EXTENSIONS_DATA: CityExtensions[] = [
   {
     "cityId": "granada",
-    "title": "格拉納達（Granada）延伸行程（詳情）",
+    "title": "{{bi:格拉納達|Granada}}延伸行程（詳情）",
     "trips": [
       {
         "id": "alpujarras",
@@ -36,7 +36,7 @@ export const EXTENSIONS_DATA: CityExtensions[] = [
           {
             "key": "sources",
             "title": "資料來源（Sources）",
-            "content": "@card: 資料來源與查詢入口：需要核對規則、交通或官方資訊可從這裡往下追。\nSpain.info（Alpujarras）：https://www.spain.info/en/activities/discover-the-alpujarras-legado-andalusi-granada/\n\nWikivoyage（Granada）：https://en.wikivoyage.org/wiki/Granada_(Spain)"
+            "content": "@card: 資料來源與查詢入口：需要核對規則、交通或官方資訊可從這裡往下追。\nSpain. {{bi:info|Alpujarras}}：https://www.spain.info/en/activities/discover-the-alpujarras-legado-andalusi-granada/\n\n{{bi:Wikivoyage|Granada}}：https://en.wikivoyage.org/wiki/Granada_(Spain)"
           }
         ]
       },
@@ -62,7 +62,7 @@ export const EXTENSIONS_DATA: CityExtensions[] = [
           {
             "key": "sources",
             "title": "資料來源（Sources）",
-            "content": "@card: 資料來源與查詢入口：需要核對規則、交通或官方資訊可從這裡往下追。\nTrainline（Guadix ↔ Granada）：https://www.thetrainline.com/en/train-times/guadix-to-granada"
+            "content": "@card: 資料來源與查詢入口：需要核對規則、交通或官方資訊可從這裡往下追。\n{{bi:Trainline|Guadix ↔ Granada}}：https://www.thetrainline.com/en/train-times/guadix-to-granada"
           }
         ]
       },
@@ -119,7 +119,7 @@ export const EXTENSIONS_DATA: CityExtensions[] = [
           {
             "key": "sources",
             "title": "資料來源（Sources）",
-            "content": "@card: 資料來源與查詢入口：需要核對規則、交通或官方資訊可從這裡往下追。\nWikivoyage（Granada）：https://en.wikivoyage.org/wiki/Granada_(Spain)"
+            "content": "@card: 資料來源與查詢入口：需要核對規則、交通或官方資訊可從這裡往下追。\n{{bi:Wikivoyage|Granada}}：https://en.wikivoyage.org/wiki/Granada_(Spain)"
           }
         ]
       }
@@ -127,7 +127,7 @@ export const EXTENSIONS_DATA: CityExtensions[] = [
   },
   {
     "cityId": "lagos",
-    "title": "拉各斯（Lagos）延伸行程（詳情）",
+    "title": "{{bi:拉各斯|Lagos}}延伸行程（詳情）",
     "trips": [
       {
         "id": "basics",
@@ -151,18 +151,18 @@ export const EXTENSIONS_DATA: CityExtensions[] = [
           {
             "key": "backup",
             "title": "雨備/Plan B（Backup）",
-            "content": "@card: 延伸日常見 Plan B 開關：風、海象與岩岸安全；知道這些就能更果斷改題目，不把一天浪費在「硬撐不成立」的行程上。\n\n幾個「先知道會更舒服」的真相（也是最常用到的 Plan B 開關）：\n\n- **海水比照片冷**：阿爾加維面向大西洋，視覺很熱帶，但水溫不會像地中海那樣溫柔（春天尤其冷）。\n- **風＝行程的開關**：風浪大時，洞穴/小船類行程容易取消；這時改做陸上岩岸通常更穩。\n- **Benagil 的重點是「能不能停留」不是「能不能到」**：規定與海象常變，排法請用「只能水面觀賞、以當日公告為準」這種耐用原則。\n- **岩岸很美但會塌**：不論崖頂或崖底都不要靠太近；看到封鎖/告示就直接繞開，不跨欄、不貼邊。\n\n阿爾加維地質小抄（看景會更有感）：你不用變地質學家，只要記住一件事就好：上面（雨水）讓石灰岩變空，下面（海浪）把崖腳掏空，所以岩岸很美但也會塌。\n\n把這句對照到你們會去的點（最常用的連結）：\n\n- **Seven Hanging Valleys / Marinha**：崖頂裂縫/塌陷孔很多，走步道更要避免靠崖緣。\n- **Benagil（Algar de Benagil）**：天窗是「上方弱化後的塌陷」把光打進海蝕洞裡。\n- **Sagres（blowhole 概念）**：海浪把聲音與氣流往上推，風浪大時更有感。\n\n（用「歷史腳手架」看風景）如果你想把海岸線看得更有故事感，這三句很夠用：\n\n- **Lagos + Sagres 是「探索時代」的雙主角**：Sagres 是象徵性的邊界/前哨；Lagos 更像實際運作的港口城市。\n- **1755 地震＋海嘯的陰影**：阿爾加維沿岸很多城鎮都被重創；今天看到的街廓與教堂，很多都有災後修復的層次。\n- **海洋經濟的轉型**：Portimão 的 Museu de Portimão（前身是罐頭工廠）很適合當作室內文化點（雨天也很穩）。"
+            "content": "@card: 延伸日常見 Plan B 開關：風、海象與岩岸安全；知道這些就能更果斷改題目，不把一天浪費在「硬撐不成立」的行程上。\n\n幾個「先知道會更舒服」的真相（也是最常用到的 Plan B 開關）：\n\n- **海水比照片冷**：阿爾加維面向大西洋，視覺很熱帶，但水溫不會像地中海那樣溫柔（春天尤其冷）。\n- **風＝行程的開關**：風浪大時，洞穴/小船類行程容易取消；這時改做陸上岩岸通常更穩。\n- **Benagil 的重點是「能不能停留」不是「能不能到」**：規定與海象常變，排法請用「只能水面觀賞、以當日公告為準」這種耐用原則。\n- **岩岸很美但會塌**：不論崖頂或崖底都不要靠太近；看到封鎖/告示就直接繞開，不跨欄、不貼邊。\n\n阿爾加維地質小抄（看景會更有感）：你不用變地質學家，只要記住一件事就好：上面（雨水）讓石灰岩變空，下面（海浪）把崖腳掏空，所以岩岸很美但也會塌。\n\n把這句對照到你們會去的點（最常用的連結）：\n\n- **Seven Hanging Valleys / Marinha**：崖頂裂縫/塌陷孔很多，走步道更要避免靠崖緣。\n- ** {{bi:Benagil|Algar de Benagil}}**：天窗是「上方弱化後的塌陷」把光打進海蝕洞裡。\n- **Sagres（blowhole 概念）**：海浪把聲音與氣流往上推，風浪大時更有感。\n\n（用「歷史腳手架」看風景）如果你想把海岸線看得更有故事感，這三句很夠用：\n\n- **Lagos + Sagres 是「探索時代」的雙主角**：Sagres 是象徵性的邊界/前哨；Lagos 更像實際運作的港口城市。\n- **1755 地震＋海嘯的陰影**：阿爾加維沿岸很多城鎮都被重創；今天看到的街廓與教堂，很多都有災後修復的層次。\n- **海洋經濟的轉型**：Portimão 的 Museu de Portimão（前身是罐頭工廠）很適合當作室內文化點（雨天也很穩）。"
           },
           {
             "key": "sources",
             "title": "資料來源（Sources）",
-            "content": "@card: 資料來源與查詢入口：步道、海象、交通與安全的連結都在這裡，想核對規則或做最後確認可從這段往下追。\n\nAlgarve Portugal Tourism（Seven Hanging Valleys Trail）：https://www.algarveportugaltourism.com/lagoa/seven-hanging-valleys-trail.html\n\nLagos Portugal Tourism（Ponta da Piedade）：https://www.lagosportugaltourism.com/guide/ponta-da-piedade.html\n\nGeoparque Algarvensis（Geological history）：https://geoparquealgarvensis.pt/en/explore/geological-history\n\nBritannica（blowhole 基本機制）：https://www.britannica.com/science/blowhole-sea-cave\n\nCP（官方網站）：https://www.cp.pt/passageiros/en\n\nSeaTemperature（Algarve 海溫月平均資料）：https://www.seatemperature.org/europe/portugal/algarve/march.htm\n\nPortugal driving laws（roundabout lane rule）：https://portugaldrivinglaws.com/roundabouts.php\n\nThe Portugal News（Algarve cliff collapse warning）：https://www.theportugalnews.com/news/2024-01-16/algarve-cliff-collapse-warning/85153\n\nLagos Portugal Tourism（Slave Market / Mercado de Escravos）：https://www.lagosportugaltourism.com/guide/slave-market.html\n\nLagos Portugal Tourism（Igreja de Santo António）：https://www.lagosportugaltourism.com/guide/igreja-de-santo-antonio-church-museum.html\n\nVisitPortugal（Forte da Ponta da Bandeira）：https://www.visitportugal.com/pt-pt/NR/exeres/C411AAEA-06C3-48DE-AF94-F497E49D39D5\n\nMuseu de Portimão（museological programme / 前身為罐頭工廠脈絡）：https://museudeportimao.pt/en/museum/museological-mission-and-programme\n\nWikivoyage（Lagos 城牆與防禦體系脈絡）：https://en.wikivoyage.org/wiki/Lagos"
+            "content": "@card: 資料來源與查詢入口：步道、海象、交通與安全的連結都在這裡，想核對規則或做最後確認可從這段往下追。\n\nAlgarve Portugal {{bi:Tourism|Seven Hanging Valleys Trail}}：https://www.algarveportugaltourism.com/lagoa/seven-hanging-valleys-trail.html\n\nLagos Portugal {{bi:Tourism|Ponta da Piedade}}：https://www.lagosportugaltourism.com/guide/ponta-da-piedade.html\n\nGeoparque {{bi:Algarvensis|Geological history}}：https://geoparquealgarvensis.pt/en/explore/geological-history\n\nBritannica（blowhole 基本機制）：https://www.britannica.com/science/blowhole-sea-cave\n\nCP（官方網站）：https://www.cp.pt/passageiros/en\n\nSeaTemperature（Algarve 海溫月平均資料）：https://www.seatemperature.org/europe/portugal/algarve/march.htm\n\nPortugal driving {{bi:laws|roundabout lane rule}}：https://portugaldrivinglaws.com/roundabouts.php\n\nThe Portugal {{bi:News|Algarve cliff collapse warning}}：https://www.theportugalnews.com/news/2024-01-16/algarve-cliff-collapse-warning/85153\n\nLagos Portugal {{bi:Tourism|Slave Market / Mercado de Escravos}}：https://www.lagosportugaltourism.com/guide/slave-market.html\n\nLagos Portugal {{bi:Tourism|Igreja de Santo António}}：https://www.lagosportugaltourism.com/guide/igreja-de-santo-antonio-church-museum.html\n\n{{bi:VisitPortugal|Forte da Ponta da Bandeira}}：https://www.visitportugal.com/pt-pt/NR/exeres/C411AAEA-06C3-48DE-AF94-F497E49D39D5\n\nMuseu de Portimão（museological programme / 前身為罐頭工廠脈絡）：https://museudeportimao.pt/en/museum/museological-mission-and-programme\n\nWikivoyage（Lagos 城牆與防禦體系脈絡）：https://en.wikivoyage.org/wiki/Lagos"
           }
         ]
       },
       {
         "id": "sagres-cabo",
-        "title": "薩格雷什（Sagres）+ 聖文森特角（Cabo de São Vicente）（西岸懸崖/燈塔）",
+        "title": "{{bi:薩格雷什|Sagres}}+ {{bi:聖文森特角|Cabo de São Vicente}}（西岸懸崖/燈塔）",
         "sections": [
           {
             "key": "notes",
@@ -182,7 +182,7 @@ export const EXTENSIONS_DATA: CityExtensions[] = [
           {
             "key": "how",
             "title": "怎麼去（How to go）",
-            "content": "@card: 動線建議：只選 Sagres 或 Cabo 其一就回最穩；狀態好再做整天版。重點是看海的規模與風的存在感，不是跑景點清單。\n最穩走法（也最推薦）：只選 Sagres 或 Cabo 其中一個點就回（不要硬塞兩個點）。這樣比較像度假，不像趕行程。\n\n如果你狀態很好、也抓得到班次：上午 Sagres（要塞/海岸）→ 下午 Cabo de São Vicente（燈塔/懸崖）→ 傍晚回 Lagos。這樣排會比較像整天行程（含交通）。\n\n省力半日範本（想看最震撼、但不想走太多）：\n\n- 午後從 Lagos 出發 → 先去 `Sagres Fortress`（裡面相對平坦，風吹很大也能用「慢走＋停一下」的節奏）→ 再去 `Cabo` 燈塔短停 → 視體力決定要不要等日落（想等就一定要帶保暖層）→ 回 Lagos 吃晚餐。\n\n堡壘（Fortaleza de Sagres）重點（走進去才值）：\n- **環狀散步路線**：沿岬角懸崖邊緣慢慢走一圈；地形相對平坦、視野很開。\n- **A Voz do Mar（Sound Chamber / 海的聲音）**：設在天然裂縫/海蝕洞（blowhole）上方的裝置。風浪越大越有感，但也越冷、越需要防風。\n- **Rosa dos Ventos（羅盤玫瑰 / 風羅盤）**：這是堡壘最「神祕又標誌性」的一筆。\n  - **你會看到什麼**：一個直接刻在地面上的巨大圓形圖案，直徑約 `43 公尺`；走進堡壘內那段寬闊平地，它幾乎就是「在你腳下展開」。\n  - **它為什麼有名**：Sagres 與「恩里克王子（Henry the Navigator）」、以及葡萄牙早期航海探索的象徵綁得很深；這個巨大的圓形遺跡，常被拿來當作「大航海時代起點」的視覺符號。\n  - **傳說 vs. 現代說法（先知道會更舒服）**：所謂「薩格雷什航海學校（School of Sagres）」的具體形貌與運作方式，在史學上其實爭議不少；所以與其把它當作“有一所正式學校在此授課”，不如把它當作「在世界邊界的岬角上，人類開始學會理解風、海與未知」的象徵。\n  - **看法（最有感、也最省力）**：不用追解釋、也不用走很多路——站在圓心附近停 `30 秒`，往岬角方向看出去，再回頭看腳下的圖案，你會自然把它連到「從恐懼未知到走向遠洋」那股轉折感。\n\n步行友善度（膝蓋友善度重點）：\n- **幾乎都在平地上**：這裡不是「爬塔的古堡」，更像一整片海角平台；主要是鋪設步道＋壓實土路的組合，整體對膝蓋友善。\n- **真正的挑戰是「範圍很大 + 風很大」**：你不需要走滿一圈。建議採用「看風羅盤 → 走一小段邊緣視野 → 回頭」的折返走法，體感最好。\n- **A Voz do Mar 的小提醒**：它的位置在岬角邊緣一帶，走過去本身多半不難，但靠近裝置處可能會遇到比較窄/不平或短坡的路段（以現場為準）；覺得吃力就停在較平坦處聽海聲即可。\n\nCabo（燈塔）重點（短停就好）：\n- 沿燈塔周邊懸崖頂端走一小段就能收下「世界盡頭」的壓迫感；這裡更偏向拍照＋快閃。\n\n省力的「Cabo 正確打開方式」（幾乎開車即達）：\n- **把停留當成 30–45 分鐘的“震撼快閃”**：下車 → 走到觀景平台 → 站著聽海/看浪 → 回車上喝水保暖 → 收工。\n- **不要追“貼懸崖邊”**：這裡的價值不是走到邊緣，而是視野與風。留在鋪設路面/圍欄內就已經很壯觀。\n- **風大策略**：風大到站不穩時，不要硬撐；把它改成「車上休息＋下車拍一輪就走」。\n\n你如果想讓「燈塔」這件事更有感（但不需要進去）：\n- 這座燈塔的光束非常遠（官方/百科資料常見標示約 `59 km` 等級），你可以把它理解成「這裡是航海者必須繞過的危險海角」的地標。\n\n氣氛補充（不一定要做，但知道會更有感）：\n- Sagres 一帶也是衝浪大本營之一：就算不下水，看浪與看衝浪者挑戰大西洋，本身就很「Sagres」。\n\n日落提醒（想等日落的人一定要先看）：\n- 日落後體感溫度會掉很快；防風層＋保暖層請直接帶上。\n- 懸崖＋強風，拍照時離邊緣遠一點（不用硬貼邊）。\n\n小彩蛋：燈塔附近常有一台香腸餐車，常被叫作「`Letzte Bratwurst vor Amerika`（去美洲前的最後一根德國香腸 / Last Bratwurst before America）」。它不一定每次都營業，看到有開就直接買，別想著「等下再來」。"
+            "content": "@card: 動線建議：只選 Sagres 或 Cabo 其一就回最穩；狀態好再做整天版。重點是看海的規模與風的存在感，不是跑景點清單。\n最穩走法（也最推薦）：只選 Sagres 或 Cabo 其中一個點就回（不要硬塞兩個點）。這樣比較像度假，不像趕行程。\n\n如果你狀態很好、也抓得到班次：上午 Sagres（要塞/海岸）→ 下午 Cabo de São Vicente（燈塔/懸崖）→ 傍晚回 Lagos。這樣排會比較像整天行程（含交通）。\n\n省力半日範本（想看最震撼、但不想走太多）：\n\n- 午後從 Lagos 出發 → 先去 `Sagres Fortress`（裡面相對平坦，風吹很大也能用「慢走＋停一下」的節奏）→ 再去 `Cabo` 燈塔短停 → 視體力決定要不要等日落（想等就一定要帶保暖層）→ 回 Lagos 吃晚餐。\n\n{{bi:堡壘|Fortaleza de Sagres}}重點（走進去才值）：\n- **環狀散步路線**：沿岬角懸崖邊緣慢慢走一圈；地形相對平坦、視野很開。\n- **A Voz do Mar（Sound Chamber / 海的聲）**：{{bi:天然裂縫/海蝕洞|blowhole}}上方的裝置。風浪越大越有感，但也越冷、越需要防風。\n- **Rosa dos Ventos（羅盤玫瑰 / 風羅盤）**：這是堡壘最「神祕又標誌性」的一筆。\n  - **你會看到什麼**：一個直接刻在地面上的巨大圓形圖案，直徑約 `43 公尺`；走進堡壘內那段寬闊平地，它幾乎就是「在你腳下展開」。\n  - **它為什麼有名**：Sagres 與「 {{bi:恩里克王子|Henry the Navigator}}」、以及葡萄牙早期航海探索的象徵綁得很深；這個巨大的圓形遺跡，常被拿來當作「大航海時代起點」的視覺符號。\n  - **傳說 vs. 現代說法（先知道會更舒服）**：所謂「 {{bi:薩格雷什航海學校|School of Sagres}}」的具體形貌與運作方式，在史學上其實爭議不少；所以與其把它當作“有一所正式學校在此授課”，不如把它當作「在世界邊界的岬角上，人類開始學會理解風、海與未知」的象徵。\n  - **看法（最有感、也最省力）**：不用追解釋、也不用走很多路——站在圓心附近停 `30 秒`，往岬角方向看出去，再回頭看腳下的圖案，你會自然把它連到「從恐懼未知到走向遠洋」那股轉折感。\n\n步行友善度（膝蓋友善度重點）：\n- **幾乎都在平地上**：這裡不是「爬塔的古堡」，更像一整片海角平台；主要是鋪設步道＋壓實土路的組合，整體對膝蓋友善。\n- **真正的挑戰是「範圍很大 + 風很大」**：你不需要走滿一圈。建議採用「看風羅盤 → 走一小段邊緣視野 → 回頭」的折返走法，體感最好。\n- **A Voz do Mar 的小提醒**：它的位置在岬角邊緣一帶，走過去本身多半不難，但靠近裝置處可能會遇到比較窄/不平或短坡的路段（以現場為準）；覺得吃力就停在較平坦處聽海聲即可。\n\nCabo（燈塔）重點（短停就好）：\n- 沿燈塔周邊懸崖頂端走一小段就能收下「世界盡頭」的壓迫感；這裡更偏向拍照＋快閃。\n\n省力的「Cabo 正確打開方式」（幾乎開車即達）：\n- **把停留當成 30–45 分鐘的“震撼快閃”**：下車 → 走到觀景平台 → 站著聽海/看浪 → 回車上喝水保暖 → 收工。\n- **不要追“貼懸崖邊”**：這裡的價值不是走到邊緣，而是視野與風。留在鋪設路面/圍欄內就已經很壯觀。\n- **風大策略**：風大到站不穩時，不要硬撐；把它改成「車上休息＋下車拍一輪就走」。\n\n你如果想讓「燈塔」這件事更有感（但不需要進去）：\n- 這座燈塔的光束非常遠（官方/百科資料常見標示約 `59 km` 等級），你可以把它理解成「這裡是航海者必須繞過的危險海角」的地標。\n\n氣氛補充（不一定要做，但知道會更有感）：\n- Sagres 一帶也是衝浪大本營之一：就算不下水，看浪與看衝浪者挑戰大西洋，本身就很「Sagres」。\n\n日落提醒（想等日落的人一定要先看）：\n- 日落後體感溫度會掉很快；防風層＋保暖層請直接帶上。\n- 懸崖＋強風，拍照時離邊緣遠一點（不用硬貼邊）。\n\n小彩蛋：燈塔附近常有一台香腸餐車，常被叫作「`Letzte Bratwurst vor Amerika`（去美洲前的最後一根德國香腸 / Last Bratwurst before America）」。它不一定每次都營業，看到有開就直接買，別想著「等下再來」。"
           },
           {
             "key": "time",
@@ -202,13 +202,13 @@ export const EXTENSIONS_DATA: CityExtensions[] = [
           {
             "key": "sources",
             "title": "資料來源（Sources）",
-            "content": "@card: 資料來源與查詢入口：Vicentina Coast、堡壘官網（時間/票價）、以及航海學校/燈塔等背景連結，想補充脈絡可從這段往下追。\nVisitPortugal（Vicentina Coast）：https://www.visitportugal.com/en/content/vicentina-coast\n\nFortaleza de Sagres（官方網站：開放時間）：https://fortalezadesagres.pt/en/useful-information/schedules/\n\nFortaleza de Sagres（官方網站：票價）：https://fortalezadesagres.pt/en/useful-information/prices/\n\nVisitPortugal（Fortaleza de Sagres）：https://www.visitportugal.com/en/content/fortaleza-de-sagres\n\nLagosPortugalGuide（Sagres day trip）：https://www.lagosportugalguide.com/lagos-algarve/sagres-day-trip-from-lagos.html\n\nWikivoyage（Sagres）：https://en.wikivoyage.org/wiki/Sagres\n\nWikipedia（Escola de Sagres：關於「航海學校」爭議與脈絡）：https://en.wikipedia.org/wiki/Escola_de_Sagres\n\nWikipedia（Farol do Cabo de São Vicente：光束距離等資訊）：https://pt.wikipedia.org/wiki/Farol_do_Cabo_de_S%C3%A3o_Vicente\n\nArchDaily（A Voz do Mar 介紹）：https://www.archdaily.com/980220/a-voz-do-mar-chamber-of-sound-installation-ressano-garcia\n\nLetzte Bratwurst vor Amerika（餐車梗）：現場看到就買，無需特定連結。"
+            "content": "@card: 資料來源與查詢入口：Vicentina Coast、堡壘官網（時間/票價）、以及航海學校/燈塔等背景連結，想補充脈絡可從這段往下追。\n{{bi:VisitPortugal|Vicentina Coast}}：https://www.visitportugal.com/en/content/vicentina-coast\n\nFortaleza de Sagres（官方網站：開放時間）：https://fortalezadesagres.pt/en/useful-information/schedules/\n\nFortaleza de Sagres（官方網站：票價）：https://fortalezadesagres.pt/en/useful-information/prices/\n\n{{bi:VisitPortugal|Fortaleza de Sagres}}：https://www.visitportugal.com/en/content/fortaleza-de-sagres\n\n{{bi:LagosPortugalGuide|Sagres day trip}}：https://www.lagosportugalguide.com/lagos-algarve/sagres-day-trip-from-lagos.html\n\n{{bi:Wikivoyage|Sagres}}：https://en.wikivoyage.org/wiki/Sagres\n\nWikipedia（Escola de Sagres：關於「航海學校」爭議與脈絡）：https://en.wikipedia.org/wiki/Escola_de_Sagres\n\nWikipedia（Farol do Cabo de São Vicente：光束距離等資訊）：https://pt.wikipedia.org/wiki/Farol_do_Cabo_de_S%C3%A3o_Vicente\n\nArchDaily（A Voz do Mar 介紹）：https://www.archdaily.com/980220/a-voz-do-mar-chamber-of-sound-installation-ressano-garcia\n\nLetzte Bratwurst vor Amerika（餐車梗）：現場看到就買，無需特定連結。"
           }
         ]
       },
       {
         "id": "silves-monchique",
-        "title": "席爾維什（Silves）+ 蒙希克（Monchique）（古城 + 山區）",
+        "title": "{{bi:席爾維什|Silves}}+ {{bi:蒙希克|Monchique}}（古城 + 山區）",
         "sections": [
           {
             "key": "notes",
@@ -228,7 +228,7 @@ export const EXTENSIONS_DATA: CityExtensions[] = [
           {
             "key": "how",
             "title": "怎麼去（How to go）",
-            "content": "@card: 動線建議：不自駕也能成立但時間要抓寬；先把 Silves（城堡＋老城）做主菜，再看天氣與交通決定要不要加 Monchique（把它當甜點）。\n最穩（不自駕也成立）的排法：\n- 版本 A（最穩）：Silves 半日～一日（紅色城堡＋老城散步）→ 早回 Lagos 休息\n- 版本 B（想要地形反差、但不勉強）：如果天氣很好、你也抓得到交通，再評估 Monchique（通常要早出門，而且回程別壓太晚）\n\n五大亮點（把它當作「內陸一日遊菜單」挑就好，不用全做）：\n1. Castelo de Silves（紅城堡）：最有代表性的摩爾城堡；站在上面看全城與山谷很有感。\n   小加分：有些旅客很喜歡在城堡區域小坐喝點東西，把它當成「城堡頂端的休息站」（以現場營運為準）。\n2. Silves 舊城＋大教堂：城堡下來就是老城散步區（鵝卵石路＋咖啡館＋歷史感）。\n   提醒：老城有坡，就用「走一段 → 坐一下」節奏，不要追“走遍”。\n3. Fóia（902m，阿爾加維最高點）：最大優點是「幾乎開車即達」的視野點；天氣好時能把海岸線一路看到很遠。\n   提醒：山頂風會冷、視野很吃天氣；起霧就直接當作路過，不要硬等。\n   到了山頂怎麼玩（省力版、最不累）：\n   - **360 度視野就是主菜**：天氣極好時，視野可能一路掃到西邊的 Cabo de São Vicente；你不用追“看多遠”，站在那裡把海岸線收進眼裡就很值得。\n   - **巨石拍照（保守做法）**：山頂有一些大石頭很吸睛，但不需要爬上去；站在石旁邊拍到「人＋視野」就已經很有“世界頂端”感。\n   - **通訊塔地標**：山頂的通訊塔很顯眼，它的存在本身就在告訴你「這裡是最高點」。\n   - **補給＋小店（以當日為準）**：常見會有咖啡/小吃點或小店（有時是餐車）；如果你們想買一點「到此一遊」的小東西，小店有時也會兼賣酒、簡單紀念品（不要期待大採買）。\n   - **日落**：確實很美，但別硬撐到全黑；看完「開始變金」就可以撤退，避免越晚越冷。\n4. Caldas de Monchique（溫泉村）：綠意、樹蔭、療養氛圍，很容易讓人喜歡的 Monchique 版本。\n   玩法：把它當成「散步＋喝咖啡/下午茶」主菜，而不是追景。\n   補充（更貼近日常會在意的點）：\n   - **它為什麼這麼“像療養地”**：Caldas de Monchique 本身就是溫泉鎮（spa town）定位，溫泉/水療文化很成熟；「自羅馬時代以來就有人來用這裡的泉水」這件事，更多是一種歷史與地方傳統的背書。\n   - **不要把它當醫療承諾**：你可以把它當成一個很舒服的養生儀式——在森林裡慢走、坐下來喝水/喝咖啡、（有興趣再）做 spa/massage；但不需要期待它“治好什麼”。\n   - **Monchique 的水很常見**：你在阿爾加維超市/餐廳常會看到 `Monchique` 的瓶裝水（在地人也很習慣喝），把它當成「到此一遊的日常小體驗」就好。\n\n   Caldas 散步怎麼走（不攻頂、很省力）：\n   - **路線感覺**：溪流邊／公園感的樹蔭路線，濕潤、涼爽，跟海岸完全不同。\n   - **節奏**：把目標設定成「走 10–20 分鐘 → 坐下喝一杯 → 再走一段」，比追里程更舒服。\n   - **可加碼**：如果同行有人想做 spa/massage，這裡就是最合理的地方（預約與開放以當日為準）。\n\nMonchique 小鎮（Town walk）怎麼玩（人文散步版）：\n- **巷弄慢走**：狹窄鵝卵石街道＋小店＋咖啡館；不追景點，追的是山城生活節奏。\n- **視覺差異**：比海岸白房子更“山城”，常見會有更繽紛的房屋色調。\n- **文化駐足點（看到就停一下）**：鎮中心通常會有一兩座教堂；巷弄裡也可能遇到「修道院/宗教建築遺跡」這種意外的歷史感（以現場標示為準）。\n- **提醒**：鎮上有坡，照舊用「走一段 → 坐一下」模式；把它當作 Caldas 之後的輕鬆加碼。\n\n逛街期待值（先講白會更舒服）：\n- Monchique 的重點比較像「氛圍與自然」，不像 Lagos / Carvoeiro 那樣有一整排伴手禮店。想買東西可以把期待放在 Fóia 山頂的小店或零星小店；鎮中心更多是用來「散步拍照、喝咖啡、感受山城生活」。\n5. Jeep Safari / Off-road（可選）：可以用「坐車看山景」的方式深入森林/軟木橡樹地景，有時也會搭配品酒或在地小點（以行程內容為準）。\n   提醒：越野段通常顛、噪、久坐也累；若要選，務必挑「短時長、路況溫和、車況新、座位有支撐」的團，否則寧可不做。\n\nMonchique 的森林步道小抄（跟海岸步道完全不同）：\n- **1) 植被是主角**：你走進去看到的不是乾燥海岸，而是「阿爾加維的綠肺」：軟木橡樹林、桉樹林、甚至零星果園/柑橘地景（季節與路段不同會有差）。\n- **2) 體感更涼爽，但更需要一件薄外套**：海拔＋樹蔭讓它比海邊舒服；同時風起來也更冷（尤其傍晚/山頂）。\n- **3) 路線跨度很大（從散步到全景）**：\n  - 想要最省力：`Caldas de Monchique` 周邊公園/樹蔭路徑慢走就很夠（把它當森林浴）。\n  - 想要全景但不想爬：`Fóia` 用「開車上去 → 走很短一段 → 看完就走」的方式最適合省力玩法。\n- **4) 不想走路也有“山林版本”**：如果你們想看山林但不想走太久，就回到上面的 `Jeep Safari（可選）` 概念；但請記得越野顛簸是代價，不是人人都適合。\n\n地形與交通提醒：\n- Silves 老城/城堡有坡。\n- Monchique 更吃力。\n- 不自駕的話：Silves 火車/巴士可到，但車站離老城有距離；Monchique 公車彈性低。\n\nMonchique 省力版本（半日很夠）：Caldas de Monchique（溫泉村）→ Fóia（最高點，開車直達）→ Monchique 小鎮。山路彎、山頂風冷，起霧就直接放棄視野點，把重點放在溫泉村與小鎮散步。\n\n最穩的一日排法（不折騰版，照抄就好）：\n- **上午 Silves**：城堡（看景為主）＋老城喝咖啡/吃午餐\n- **下午 Monchique**：Caldas de Monchique 慢走（樹蔭）→（想要人文就加碼）Monchique 小鎮巷弄散步 → 天氣很好再加碼 Fóia\n\n補一句（很實用）：Caldas de Monchique 這種「療養溫泉村」氛圍，自帶慢節奏；你們可以把它當成「散步＋喝咖啡」的主菜，而不是硬要爬坡追景。"
+            "content": "@card: 動線建議：不自駕也能成立但時間要抓寬；先把 Silves（城堡＋老城）做主菜，再看天氣與交通決定要不要加 Monchique（把它當甜點）。\n最穩（不自駕也成立）的排法：\n- 版本 A（最穩）：Silves 半日～一日（紅色城堡＋老城散步）→ 早回 Lagos 休息\n- 版本 B（想要地形反差、但不勉強）：如果天氣很好、你也抓得到交通，再評估 Monchique（通常要早出門，而且回程別壓太晚）\n\n五大亮點（把它當作「內陸一日遊菜單」挑就好，不用全做）：\n1. Castelo de Silves（紅城堡）：最有代表性的摩爾城堡；站在上面看全城與山谷很有感。\n   小加分：有些旅客很喜歡在城堡區域小坐喝點東西，把它當成「城堡頂端的休息站」（以現場營運為準）。\n2. Silves 舊城＋大教堂：城堡下來就是老城散步區（鵝卵石路＋咖啡館＋歷史感）。\n   提醒：老城有坡，就用「走一段 → 坐一下」節奏，不要追“走遍”。\n3. Fóia（902m，阿爾加維最高點）：最大優點是「幾乎開車即達」的視野點；天氣好時能把海岸線一路看到很遠。\n   提醒：山頂風會冷、視野很吃天氣；起霧就直接當作路過，不要硬等。\n   到了山頂怎麼玩（省力版、最不累）：\n   - **360 度視野就是主菜**：天氣極好時，視野可能一路掃到西邊的 Cabo de São Vicente；你不用追“看多遠”，站在那裡把海岸線收進眼裡就很值得。\n   - **巨石拍照（保守做法）**：山頂有一些大石頭很吸睛，但不需要爬上去；站在石旁邊拍到「人＋視野」就已經很有“世界頂端”感。\n   - **通訊塔地標**：山頂的通訊塔很顯眼，它的存在本身就在告訴你「這裡是最高點」。\n   - **補給＋小店（以當日為準）**：常見會有咖啡/小吃點或小店（有時是餐車）；如果你們想買一點「到此一遊」的小東西，小店有時也會兼賣酒、簡單紀念品（不要期待大採買）。\n   - **日落**：確實很美，但別硬撐到全黑；看完「開始變金」就可以撤退，避免越晚越冷。\n4. Caldas de Monchique（溫泉村）：綠意、樹蔭、療養氛圍，很容易讓人喜歡的 Monchique 版本。\n   玩法：把它當成「散步＋喝咖啡/下午茶」主菜，而不是追景。\n   補充（更貼近日常會在意的點）：\n   - **它為什麼這麼“像療養地”**：Caldas de Monchique 本身就是 {{bi:溫泉鎮|spa town}}定位，溫泉/水療文化很成熟；「自羅馬時代以來就有人來用這裡的泉水」這件事，更多是一種歷史與地方傳統的背書。\n   - **不要把它當醫療承諾**：你可以把它當成一個很舒服的養生儀式——在森林裡慢走、坐下來喝水/喝咖啡、（有興趣再）做 spa/massage；但不需要期待它“治好什麼”。\n   - **Monchique 的水很常見**：你在阿爾加維超市/餐廳常會看到 `Monchique` 的瓶裝水（在地人也很習慣喝），把它當成「到此一遊的日常小體驗」就好。\n\n   Caldas 散步怎麼走（不攻頂、很省力）：\n   - **路線感覺**：溪流邊／公園感的樹蔭路線，濕潤、涼爽，跟海岸完全不同。\n   - **節奏**：把目標設定成「走 10–20 分鐘 → 坐下喝一杯 → 再走一段」，比追里程更舒服。\n   - **可加碼**：如果同行有人想做 spa/massage，這裡就是最合理的地方（預約與開放以當日為準）。\n\nMonchique {{bi:小鎮|Town walk}}怎麼玩（人文散步版）：\n- **巷弄慢走**：狹窄鵝卵石街道＋小店＋咖啡館；不追景點，追的是山城生活節奏。\n- **視覺差異**：比海岸白房子更“山城”，常見會有更繽紛的房屋色調。\n- **文化駐足點（看到就停一下）**：鎮中心通常會有一兩座教堂；巷弄裡也可能遇到「修道院/宗教建築遺跡」這種意外的歷史感（以現場標示為準）。\n- **提醒**：鎮上有坡，照舊用「走一段 → 坐一下」模式；把它當作 Caldas 之後的輕鬆加碼。\n\n逛街期待值（先講白會更舒服）：\n- Monchique 的重點比較像「氛圍與自然」，不像 Lagos / Carvoeiro 那樣有一整排伴手禮店。想買東西可以把期待放在 Fóia 山頂的小店或零星小店；鎮中心更多是用來「散步拍照、喝咖啡、感受山城生活」。\n5. Jeep Safari / Off-road（可選）：可以用「坐車看山景」的方式深入森林/軟木橡樹地景，有時也會搭配品酒或在地小點（以行程內容為準）。\n   提醒：越野段通常顛、噪、久坐也累；若要選，務必挑「短時長、路況溫和、車況新、座位有支撐」的團，否則寧可不做。\n\nMonchique 的森林步道小抄（跟海岸步道完全不同）：\n- **1) 植被是主角**：你走進去看到的不是乾燥海岸，而是「阿爾加維的綠肺」：軟木橡樹林、桉樹林、甚至零星果園/柑橘地景（季節與路段不同會有差）。\n- **2) 體感更涼爽，但更需要一件薄外套**：海拔＋樹蔭讓它比海邊舒服；同時風起來也更冷（尤其傍晚/山頂）。\n- **3) 路線跨度很大（從散步到全景）**：\n  - 想要最省力：`Caldas de Monchique` 周邊公園/樹蔭路徑慢走就很夠（把它當森林浴）。\n  - 想要全景但不想爬：`Fóia` 用「開車上去 → 走很短一段 → 看完就走」的方式最適合省力玩法。\n- **4) 不想走路也有“山林版本”**：如果你們想看山林但不想走太久，就回到上面的 `Jeep Safari（可選）` 概念；但請記得越野顛簸是代價，不是人人都適合。\n\n地形與交通提醒：\n- Silves 老城/城堡有坡。\n- Monchique 更吃力。\n- 不自駕的話：Silves 火車/巴士可到，但車站離老城有距離；Monchique 公車彈性低。\n\nMonchique 省力版本（半日很夠）：Caldas de Monchique（溫泉村）→ Fóia（最高點，開車直達）→ Monchique 小鎮。山路彎、山頂風冷，起霧就直接放棄視野點，把重點放在溫泉村與小鎮散步。\n\n最穩的一日排法（不折騰版，照抄就好）：\n- **上午 Silves**：城堡（看景為主）＋老城喝咖啡/吃午餐\n- **下午 Monchique**：Caldas de Monchique 慢走（樹蔭）→（想要人文就加碼）Monchique 小鎮巷弄散步 → 天氣很好再加碼 Fóia\n\n補一句（很實用）：Caldas de Monchique 這種「療養溫泉村」氛圍，自帶慢節奏；你們可以把它當成「散步＋喝咖啡」的主菜，而不是硬要爬坡追景。"
           },
           {
             "key": "cost",
@@ -238,18 +238,18 @@ export const EXTENSIONS_DATA: CityExtensions[] = [
           {
             "key": "backup",
             "title": "雨備/Plan B（Backup）",
-            "content": "@card: Plan B：陰天/起霧就把 Monchique 降級或砍掉，回到 Silves 主菜早回海邊休息；也可用酒莊/SPA/品酒當室內替代，把這天維持在舒服節奏。\n如果陰天/起霧：Monchique 視野可能沒那麼值，改成 Silves + 早回海邊休息。\n\n想把陰雨天過得更「度假」，可考慮酒莊導覽＋室內品酒，例如 Silves 附近的 `Arvad Winery` 這類型（是否開放、需不需要預約以當日為準）。若有品酒，回程就直接叫車或請酒莊協助安排接送（以當日為準）。\n\nMonchique 的溫泉/下午茶也可當雨天備案：若雨勢不大、想避海風，可以往內陸山城（Monchique）找飯店喝下午茶或做 SPA；但山路可能有霧、視線差時就別勉強。"
+            "content": "@card: Plan B：陰天/起霧就把 Monchique 降級或砍掉，回到 Silves 主菜早回海邊休息；也可用酒莊/SPA/品酒當室內替代，把這天維持在舒服節奏。\n如果陰天/起霧：Monchique 視野可能沒那麼值，改成 Silves + 早回海邊休息。\n\n想把陰雨天過得更「度假」，可考慮酒莊導覽＋室內品酒，例如 Silves 附近的 `Arvad Winery` 這類型（是否開放、需不需要預約以當日為準）。若有品酒，回程就直接叫車或請酒莊協助安排接送（以當日為準）。\n\nMonchique 的溫泉/下午茶也可當雨天備案：若雨勢不大、想避海風， {{bi:可以往內陸山城|Monchique}}找飯店喝下午茶或做 SPA；但山路可能有霧、視線差時就別勉強。"
           },
           {
             "key": "sources",
             "title": "資料來源（Sources）",
-            "content": "@card: 資料來源與查詢入口：需要核對規則、交通或活動資訊可從這裡往下追。\nAlgarve Tourist（Algarve day trips）：https://www.algarve-tourist.com/guides/algarve-day-trips.html\n\nLagosPortugalGuide（day trips overview）：https://www.lagosportugalguide.com/lagos-algarve/lagos-day-trips-excursions-portugal.html\n\nWikivoyage（Silves）：https://en.wikivoyage.org/wiki/Silves\n\nSilves Medieval Fair（活動資訊彙整）：https://www.myguidealgarve.com/events/silves-medieval-fair\n\nWikipedia（Fóia）：https://en.wikipedia.org/wiki/F%C3%B3ia_(mountain)"
+            "content": "@card: 資料來源與查詢入口：需要核對規則、交通或活動資訊可從這裡往下追。\nAlgarve {{bi:Tourist|Algarve day trips}}：https://www.algarve-tourist.com/guides/algarve-day-trips.html\n\n{{bi:LagosPortugalGuide|day trips overview}}：https://www.lagosportugalguide.com/lagos-algarve/lagos-day-trips-excursions-portugal.html\n\n{{bi:Wikivoyage|Silves}}：https://en.wikivoyage.org/wiki/Silves\n\nSilves Medieval Fair（活動資訊彙整）：https://www.myguidealgarve.com/events/silves-medieval-fair\n\n{{bi:Wikipedia|Fóia}}：https://en.wikipedia.org/wiki/F%C3%B3ia_(mountain)"
           }
         ]
       },
       {
         "id": "ferragudo",
-        "title": "費拉古多（Ferragudo）（傳統漁村 + 河口風景）",
+        "title": "{{bi:費拉古多|Ferragudo}}（傳統漁村 + 河口風景）",
         "sections": [
           {
             "key": "notes",
@@ -269,7 +269,7 @@ export const EXTENSIONS_DATA: CityExtensions[] = [
           {
             "key": "how",
             "title": "怎麼去（How to go）",
-            "content": "@card: 交通重點：沒有 Lagos → Ferragudo 的定期公共渡輪；最穩是先到 Portimão 再用水上計程車過河，把船段留在河口內通常更平穩、體感也更好。\n先講一句最重要的：目前沒有 Lagos → Ferragudo 的「定期公共渡輪」。\n如果你硬要「從 Lagos 搭船去 Ferragudo」，通常會變成商業遊船/快艇（走外海），風浪與座椅型態體感不太友善。\n\n最穩、最省腦的做法是「陸路接駁 + 河上過河」（把船段留在河口內，通常比外海平穩很多）：\n\nStep 1｜Lagos → Portimão（陸路）\n- 最推薦：Bolt / Uber 直達 Portimão 河岸一帶（比火車更省走路）\n- 下車點可用：\n  - `Museu de Portimão`（博物館周邊就是河岸散步區）\n  - `Clube Naval de Portimão`（河岸碼頭一帶）\n\nStep 2｜Portimão → Ferragudo（河上水上計程車/小船過河）\n- 在 Portimão 河岸附近找標示 `Taxi Boat` / `Taxi Ferry` / `Water Taxi` 的小船（是否營運、時段以當日為準）\n- 航程通常很短（常見 5–10 分鐘），而且是在 `Arade River` 河口內行駛：體感會比外海平穩非常多\n- 下船後你就會在 Ferragudo 河岸核心區附近活動：最適合把重心放在「河邊坐下來吃一頓」\n\n半日走法（不用趕）：\n你們可以照這個順序走就好：Ferragudo 巷弄慢走 → 河口邊坐下來喝咖啡/吃午餐（很推薦把「吃魚」當成重點）→（想看就看）遠眺 Fort of São João do Arade → 有精神再去海邊收尾（如 Praia Grande 一帶）→ 回程。\n\n五大亮點（把它當成「慢遊選單」，不用全部做完）：\n1. 老城巷弄（Old Town）：白房子＋鵝卵石＋花花草草，拍照很好看；但老城會有坡，請用「走一段就回到平地」的節奏。\n2. 河岸景觀（Arade River views）：Ferragudo 的精華常常不是“景點”，而是「坐在河邊看對岸 Portimão」的反差感。\n3. 漁港/漁船氛圍：它仍是運作中的漁村，早晚散步時常能看到漁船與漁獲的日常。\n4. 露天烤魚（Open grill）：把「吃一餐」當主菜最不會後悔；找河岸餐廳點烤魚，配海風與河景，CP 值很高。\n5. Praia Grande（寬闊平坦的海灘散步）：想走沙灘但不想爬上爬下，Praia Grande 這種平坦長灘很友善（風大就縮短時間）。\n\n小提醒：\n- `Fort of São João do Arade` 多數時間是私人財產、不能進去參觀；把它當成「遠眺更好看」的畫面點就好。\n- Ferragudo 的漂亮點很多是「巷弄＋坡＋階梯」的組合：穿好走鞋、不要趕路，體驗會更好。\n\n省力策略（很重要）：\n- **主要活動區域放在河岸/廣場附近**：把上坡巷弄當成「可選加碼」，不要為了“走遍”而走遍。\n- 如果想更省力：下車/下船後先在河岸坐下來喝咖啡，再決定要不要走巷弄；這樣節奏最像度假。"
+            "content": "@card: 交通重點：沒有 Lagos → Ferragudo 的定期公共渡輪；最穩是先到 Portimão 再用水上計程車過河，把船段留在河口內通常更平穩、體感也更好。\n先講一句最重要的：目前沒有 Lagos → Ferragudo 的「定期公共渡輪」。\n如果你硬要「從 Lagos 搭船去 Ferragudo」，通常會變成商業遊船/快艇（走外海），風浪與座椅型態體感不太友善。\n\n最穩、最省腦的做法是「陸路接駁 + 河上過河」（把船段留在河口內，通常比外海平穩很多）：\n\nStep 1｜Lagos → Portimão（陸路）\n- 最推薦：Bolt / Uber 直達 Portimão 河岸一帶（比火車更省走路）\n- 下車點可用：\n  - `Museu de Portimão`（博物館周邊就是河岸散步區）\n  - `Clube Naval de Portimão`（河岸碼頭一帶）\n\nStep 2｜Portimão → Ferragudo（河上水上計程車/小船過河）\n- 在 Portimão 河岸附近找標示 `Taxi Boat` / `Taxi Ferry` / `Water Taxi` 的小船（是否營運、時段以當日為準）\n- 航程通常很短（常見 5–10 分鐘），而且是在 `Arade River` 河口內行駛：體感會比外海平穩非常多\n- 下船後你就會在 Ferragudo 河岸核心區附近活動：最適合把重心放在「河邊坐下來吃一頓」\n\n半日走法（不用趕）：\n你們可以照這個順序走就好：Ferragudo 巷弄慢走 → 河口邊坐下來喝咖啡/吃午餐（很推薦把「吃魚」當成重點）→（想看就看）遠眺 Fort of São João do Arade → 有精神再去海邊收尾（如 Praia Grande 一帶）→ 回程。\n\n五大亮點（把它當成「慢遊選單」，不用全部做完）：\n1. {{bi:老城巷弄|Old Town}}：白房子＋鵝卵石＋花花草草，拍照很好看；但老城會有坡，請用「走一段就回到平地」的節奏。\n2. {{bi:河岸景觀|Arade River views}}：Ferragudo 的精華常常不是“景點”，而是「坐在河邊看對岸 Portimão」的反差感。\n3. 漁港/漁船氛圍：它仍是運作中的漁村，早晚散步時常能看到漁船與漁獲的日常。\n4. {{bi:露天烤魚|Open grill}}：把「吃一餐」當主菜最不會後悔；找河岸餐廳點烤魚，配海風與河景，CP 值很高。\n5. Praia Grande（寬闊平坦的海灘散步）：想走沙灘但不想爬上爬下，Praia Grande 這種平坦長灘很友善（風大就縮短時間）。\n\n小提醒：\n- `Fort of São João do Arade` 多數時間是私人財產、不能進去參觀；把它當成「遠眺更好看」的畫面點就好。\n- Ferragudo 的漂亮點很多是「巷弄＋坡＋階梯」的組合：穿好走鞋、不要趕路，體驗會更好。\n\n省力策略（很重要）：\n- **主要活動區域放在河岸/廣場附近**：把上坡巷弄當成「可選加碼」，不要為了“走遍”而走遍。\n- 如果想更省力：下車/下船後先在河岸坐下來喝咖啡，再決定要不要走巷弄；這樣節奏最像度假。"
           },
           {
             "key": "cost",
@@ -284,13 +284,13 @@ export const EXTENSIONS_DATA: CityExtensions[] = [
           {
             "key": "sources",
             "title": "資料來源（Sources）",
-            "content": "@card: 資料來源與查詢入口：需要核對交通、開放或地點資訊可從這裡往下追。\nWikivoyage（Portimão）：https://en.wikivoyage.org/wiki/Portim%C3%A3o\n\nWikivoyage（Ferragudo）：https://en.wikivoyage.org/wiki/Ferragudo"
+            "content": "@card: 資料來源與查詢入口：需要核對交通、開放或地點資訊可從這裡往下追。\n{{bi:Wikivoyage|Portimão}}：https://en.wikivoyage.org/wiki/Portim%C3%A3o\n\n{{bi:Wikivoyage|Ferragudo}}：https://en.wikivoyage.org/wiki/Ferragudo"
           }
         ]
       },
       {
         "id": "faro",
-        "title": "法魯（Faro）（舊城 + 補給日，一日）",
+        "title": "{{bi:法魯|Faro}}（舊城 + 補給日，一日）",
         "sections": [
           {
             "key": "notes",
@@ -310,7 +310,7 @@ export const EXTENSIONS_DATA: CityExtensions[] = [
           {
             "key": "how",
             "title": "怎麼去（How to go）",
-            "content": "@card: 交通與動線重點整理：先把 Lagos ↔ Faro 班次抓穩，再挑 2–3 個點慢慢走；想更度假才加潟湖段，不加也完全成立。\n先把交通抓穩：Lagos ↔ Faro（火車/巴士，以當日班次為準；先查再排回程）。\n\n保守走法（半天～一日都成立）：\n1. `Igreja do Carmo + Capela dos Ossos`（想看才去；它的衝擊感很強）\n2. `Cidade Velha / Vila Adentro`（城牆內老城散步：巷弄＋廣場＋咖啡）\n3. 有時間再加：Ria Formosa 周邊走一段（潟湖地形收尾；想更完整就直接看 `ria-formosa` 的潟湖船遊玩法）\n\nFaro 十大亮點（把它當成「城市慢遊菜單」，不用全部做完）：\n你不用把它當成清單題庫。最舒服的做法是：先挑 2–3 個你有興趣的，剩下的就當作「路過看到再加碼」。\n1. Cidade Velha（舊城）：Faro 的靈魂；鵝卵石路、城牆內巷弄、小廣場，適合慢慢走。\n2. Igreja do Carmo + Capela dos Ossos（人骨禮拜堂）：全城最“有記憶點”的室內點；如果你或同行有人不喜歡這類題材就直接跳過。\n3. Ria Formosa 自然地景：Faro 的王牌不是海灘本身，而是「城市旁邊就是潟湖濕地」。\n4. 船遊（Boat tour，可選）：想把行程變得更度假，就用 1–2 小時短程把潟湖/沙洲看一圈（以當日供應為準）。\n5. 賞鳥（Birdwatching）：季節對了有機會看到火烈鳥等水鳥；就算不追鳥，也很適合在木棧道/濕地邊散步放空。\n6. Marina & squares（碼頭＋廣場）：最省力的散步路線之一：走幾步就能坐下喝咖啡，看船、看人、看城市節奏。\n7. 外島海灘（The islands & beaches，可選）：Faro 的海灘多在屏障島上，通常要渡輪/水上計程車；把它當成「有精神才加碼」。\n8. 建築混血感（Roman/Moorish 影響）：你不用上課，走在舊城裡就會感覺到它跟西岸漁村氣質不一樣。\n9. 咖啡＋蛋塔：在舊城或碼頭找一家坐下來，這就是最不會後悔的 Faro 玩法。\n10. 罐頭魚專門店（sardines & tinned fish）：如果你們愛買伴手禮，可以把“精緻罐頭魚”當作 Faro 的小趣味補給（店家以當日為準）。"
+            "content": "@card: 交通與動線重點整理：先把 Lagos ↔ Faro 班次抓穩，再挑 2–3 個點慢慢走；想更度假才加潟湖段，不加也完全成立。\n先把交通抓穩：Lagos ↔ Faro（火車/巴士，以當日班次為準；先查再排回程）。\n\n保守走法（半天～一日都成立）：\n1. `Igreja do Carmo + Capela dos Ossos`（想看才去；它的衝擊感很強）\n2. `Cidade Velha / Vila Adentro`（城牆內老城散步：巷弄＋廣場＋咖啡）\n3. 有時間再加：Ria Formosa 周邊走一段（潟湖地形收尾；想更完整就直接看 `ria-formosa` 的潟湖船遊玩法）\n\nFaro 十大亮點（把它當成「城市慢遊菜單」，不用全部做完）：\n你不用把它當成清單題庫。最舒服的做法是：先挑 2–3 個你有興趣的，剩下的就當作「路過看到再加碼」。\n1. Cidade Velha（舊城）：Faro 的靈魂；鵝卵石路、城牆內巷弄、小廣場，適合慢慢走。\n2. Igreja do Carmo + Capela dos Ossos（人骨禮拜堂）：全城最“有記憶點”的室內點；如果你或同行有人不喜歡這類題材就直接跳過。\n3. Ria Formosa 自然地景：Faro 的王牌不是海灘本身，而是「城市旁邊就是潟湖濕地」。\n4. 船遊（Boat tour，可選）：想把行程變得更度假，就用 1–2 小時短程把潟湖/沙洲看一圈（以當日供應為準）。\n5. {{bi:賞鳥|Birdwatching}}：季節對了有機會看到火烈鳥等水鳥；就算不追鳥，也很適合在木棧道/濕地邊散步放空。\n6. Marina & squares（碼頭＋廣場）：最省力的散步路線之一：走幾步就能坐下喝咖啡，看船、看人、看城市節奏。\n7. 外島海灘（The islands & beaches，可選）：Faro 的海灘多在屏障島上，通常要渡輪/水上計程車；把它當成「有精神才加碼」。\n8. 建築混血感（Roman/Moorish 影響）：你不用上課，走在舊城裡就會感覺到它跟西岸漁村氣質不一樣。\n9. 咖啡＋蛋塔：在舊城或碼頭找一家坐下來，這就是最不會後悔的 Faro 玩法。\n10. {{bi:罐頭魚專門店|sardines & tinned fish}}：如果你們愛買伴手禮，可以把“精緻罐頭魚”當作 Faro 的小趣味補給（店家以當日為準）。"
           },
           {
             "key": "cost",
@@ -320,12 +320,12 @@ export const EXTENSIONS_DATA: CityExtensions[] = [
           {
             "key": "backup",
             "title": "雨備/Plan B（Backup）",
-            "content": "@card: Plan B：下雨就把行程縮成咖啡＋短段散步（Faro 比海岸步道更好撤退）；想逛市場就改去 Olhão，讓雨天也有生活感。\n如果下雨：改成商場/咖啡＋短段散步（Faro 比海岸步道更好撤退）。\n\n如果你本來就打算往東邊走：Olhão 市場（Mercado de Olhão）雨天逛市場比硬跑景點更舒服（以當日開放為準）。"
+            "content": "@card: Plan B：下雨就把行程縮成咖啡＋短段散步（Faro 比海岸步道更好撤退）；想逛市場就改去 Olhão，讓雨天也有生活感。\n如果下雨：改成商場/咖啡＋短段散步（Faro 比海岸步道更好撤退）。\n\n如果你本來就打算往東邊走：Olhão {{bi:市場|Mercado de Olhão}}雨天逛市場比硬跑景點更舒服（以當日開放為準）。"
           },
           {
             "key": "sources",
             "title": "資料來源（Sources）",
-            "content": "@card: 資料來源與查詢入口：需要核對規則、交通或官方資訊可從這裡往下追。\nWikivoyage（Faro）：https://en.wikivoyage.org/wiki/Faro\n\nFaro Portugal Tourism（Igreja do Carmo + Capela dos Ossos 參觀資訊）：https://www.faroportugaltourism.com/turismo/guia/igreja-do-carmo-capela-dos-ossos.html\n\nVisitPortugal（Ria Formosa Natural Park）：https://www.visitportugal.com/en/content/parque-natural-da-ria-formosa\n\nCP（查班次）：https://www.cp.pt/passageiros/en"
+            "content": "@card: 資料來源與查詢入口：需要核對規則、交通或官方資訊可從這裡往下追。\n{{bi:Wikivoyage|Faro}}：https://en.wikivoyage.org/wiki/Faro\n\nFaro Portugal Tourism（Igreja do Carmo + Capela dos Ossos 參觀資訊）：https://www.faroportugaltourism.com/turismo/guia/igreja-do-carmo-capela-dos-ossos.html\n\n{{bi:VisitPortugal|Ria Formosa Natural Park}}：https://www.visitportugal.com/en/content/parque-natural-da-ria-formosa\n\nCP（查班次）：https://www.cp.pt/passageiros/en"
           }
         ]
       },
@@ -366,13 +366,13 @@ export const EXTENSIONS_DATA: CityExtensions[] = [
           {
             "key": "sources",
             "title": "資料來源（Sources）",
-            "content": "@card: 資料來源與查詢入口：需要核對規則、自然公園資訊或當日公告可從這裡往下追。\nVisitPortugal（Ria Formosa Natural Park）：https://www.visitportugal.com/en/content/parque-natural-da-ria-formosa\n\nWikipedia（Ria Formosa）：https://en.wikipedia.org/wiki/Ria_Formosa"
+            "content": "@card: 資料來源與查詢入口：需要核對規則、自然公園資訊或當日公告可從這裡往下追。\n{{bi:VisitPortugal|Ria Formosa Natural Park}}：https://www.visitportugal.com/en/content/parque-natural-da-ria-formosa\n\n{{bi:Wikipedia|Ria Formosa}}：https://en.wikipedia.org/wiki/Ria_Formosa"
           }
         ]
       },
       {
         "id": "tavira",
-        "title": "塔維拉（Tavira）（東阿爾加維：更安靜的小城）",
+        "title": "{{bi:塔維拉|Tavira}}（東阿爾加維：更安靜的小城）",
         "sections": [
           {
             "key": "notes",
@@ -392,23 +392,23 @@ export const EXTENSIONS_DATA: CityExtensions[] = [
           {
             "key": "how",
             "title": "怎麼去（How to go）",
-            "content": "@card: 交通與動線重點整理：通常先到 Faro 再接下一段，回程別壓太晚；如果不想轉乘，直接改去 `faro` 會更輕鬆。\n交通通常需要先到 Faro 再接下一段（看當天班次；回程別壓太晚）。如果你不想轉乘，就直接改去 `faro`，體感會更輕鬆。\n\nTavira 五大亮點（偏慢遊、很省力的那種）：\n1. 舊城慢走（Historic Old Town）：鵝卵石街道＋白色房子＋小廣場，重點是「舒服」不是「打卡」。\n2. Rio Gilão 河岸：河邊很多地方是平坦散步帶，找一段你喜歡的河景坐下來喝咖啡就很值得。\n3. 橋（常被叫作 Roman Bridge）：你不需要研究它到底是不是“真的羅馬時期”，把它當作「把兩岸串起來、最適合拍河景」的散步點就好。\n4. 渡輪去 Ilha de Tavira（把海灘當成加碼）：Tavira 的有趣之處在於「城在河邊、海灘在島上」，所以坐一段短短的船去看白沙灘，本身就很度假。\n5. 歷史層次（Roman + Moorish）：Tavira 是一座古城，走在街上會看到不同時代疊在一起的建築語氣；很適合用「看城」取代「追景」。\n\n如果你想把「Tavira 的海灘」一起做掉（更像一日遊、但依然要省力）：\n- 先在 Tavira 老城慢走（河岸＋橋＋午餐/咖啡）\n- 再去搭渡輪上 `Ilha de Tavira` 看白沙灘（渡輪季節性會有不同出發點；常見的是 Quatro Águas，旺季也可能有市區碼頭）\n- **風太大就不要硬去島上**：改成留在城裡逛巷弄＋河岸坐著發呆，體驗更好\n- 下午回到 Tavira 或直接收工回程"
+            "content": "@card: 交通與動線重點整理：通常先到 Faro 再接下一段，回程別壓太晚；如果不想轉乘，直接改去 `faro` 會更輕鬆。\n交通通常需要先到 Faro 再接下一段（看當天班次；回程別壓太晚）。如果你不想轉乘，就直接改去 `faro`，體感會更輕鬆。\n\nTavira 五大亮點（偏慢遊、很省力的那種）：\n1. {{bi:舊城慢走|Historic Old Town}}：鵝卵石街道＋白色房子＋小廣場，重點是「舒服」不是「打卡」。\n2. Rio Gilão 河岸：河邊很多地方是平坦散步帶，找一段你喜歡的河景坐下來喝咖啡就很值得。\n3. 橋（常被叫作 Roman Bridge）：你不需要研究它到底是不是“真的羅馬時期”，把它當作「把兩岸串起來、最適合拍河景」的散步點就好。\n4. 渡輪去 Ilha de Tavira（把海灘當成加碼）：Tavira 的有趣之處在於「城在河邊、海灘在島上」，所以坐一段短短的船去看白沙灘，本身就很度假。\n5. {{bi:歷史層次|Roman + Moorish}}：Tavira 是一座古城，走在街上會看到不同時代疊在一起的建築語氣；很適合用「看城」取代「追景」。\n\n如果你想把「Tavira 的海灘」一起做掉（更像一日遊、但依然要省力）：\n- 先在 Tavira 老城慢走（河岸＋橋＋午餐/咖啡）\n- 再去搭渡輪上 `Ilha de Tavira` 看白沙灘（渡輪季節性會有不同出發點；常見的是 Quatro Águas，旺季也可能有市區碼頭）\n- **風太大就不要硬去島上**：改成留在城裡逛巷弄＋河岸坐著發呆，體驗更好\n- 下午回到 Tavira 或直接收工回程"
           },
           {
             "key": "cost",
             "title": "花費/票務（Cost & tickets）",
-            "content": "@card: 花費/票務與時間成本提醒：交通（多段轉乘）＋預留一餐慢慢坐下來吃；若加碼島上海灘，渡輪/水上計程車票價看季節與現場公告。\n以官方查詢為準。保守抓法：\n- **交通**：Lagos ↔ Faro ↔ Tavira（可能是火車/巴士組合）\n- **餐飲**：Tavira 適合慢慢吃，預留一餐坐下來很值得\n- **加碼（Ilha de Tavira）**：若搭渡輪/水上計程車會有船票（票價與季節以現場/官方公告為準）"
+            "content": "@card: 花費/票務與時間成本提醒：交通（多段轉乘）＋預留一餐慢慢坐下來吃；若加碼島上海灘，渡輪/水上計程車票價看季節與現場公告。\n以官方查詢為準。保守抓法：\n- **交通**：Lagos ↔ Faro ↔ Tavira（可能是火車/巴士組合）\n- **餐飲**：Tavira 適合慢慢吃，預留一餐坐下來很值得\n- ** {{bi:加碼|Ilha de Tavira}}**：若搭渡輪/水上計程車會有船票（票價與季節以現場/官方公告為準）"
           },
           {
             "key": "sources",
             "title": "資料來源（Sources）",
-            "content": "@card: 資料來源與查詢入口：需要核對規則、交通或官方資訊可從這裡往下追。\nWikivoyage（Tavira）：https://en.wikivoyage.org/wiki/Tavira\n\nVisitPortugal（Tavira）：https://www.visitportugal.com/en/NR/exeres/5517ED19-9087-4BA0-B403-47344CD6C198"
+            "content": "@card: 資料來源與查詢入口：需要核對規則、交通或官方資訊可從這裡往下追。\n{{bi:Wikivoyage|Tavira}}：https://en.wikivoyage.org/wiki/Tavira\n\n{{bi:VisitPortugal|Tavira}}：https://www.visitportugal.com/en/NR/exeres/5517ED19-9087-4BA0-B403-47344CD6C198"
           }
         ]
       },
       {
         "id": "luz",
-        "title": "盧什（Praia da Luz）（安靜鄰居：平坦海濱長廊＋下午茶）",
+        "title": "{{bi:盧什|Praia da Luz}}（安靜鄰居：平坦海濱長廊＋下午茶）",
         "sections": [
           {
             "key": "notes",
@@ -443,13 +443,13 @@ export const EXTENSIONS_DATA: CityExtensions[] = [
           {
             "key": "sources",
             "title": "資料來源（Sources）",
-            "content": "@card: 資料來源與查詢入口：需要核對規則、交通或官方資訊可從這裡往下追。\nLagos Portugal Tourism（Praia da Luz）：https://www.lagosportugaltourism.com/beaches/praia-da-luz.html\n\nWikipedia（Praia da Luz）：https://en.wikipedia.org/wiki/Praia_da_Luz"
+            "content": "@card: 資料來源與查詢入口：需要核對規則、交通或官方資訊可從這裡往下追。\nLagos Portugal {{bi:Tourism|Praia da Luz}}：https://www.lagosportugaltourism.com/beaches/praia-da-luz.html\n\n{{bi:Wikipedia|Praia da Luz}}：https://en.wikipedia.org/wiki/Praia_da_Luz"
           }
         ]
       },
       {
         "id": "alvor",
-        "title": "阿爾沃爾（Alvor）（潟湖木棧道：最平最省體力）",
+        "title": "{{bi:阿爾沃爾|Alvor}}（潟湖木棧道：最平最省體力）",
         "sections": [
           {
             "key": "notes",
@@ -469,7 +469,7 @@ export const EXTENSIONS_DATA: CityExtensions[] = [
           {
             "key": "how",
             "title": "怎麼去（How to go）",
-            "content": "@card: 玩法定位：河口生態＋度假小鎮；半日照抄版是傍晚前到木棧道看潟湖、再回鎮上坐下來吃一餐，把它當「復健型散步」最對味。\n先講定位：如果 Ferragudo 是「坡上的漁村」，Alvor 更像「河口生態＋度假小鎮」。你可以在濕地放空，也可以回到鎮上坐下來好好吃一餐。\n\n最省力的半日排法（照抄就好）：\n- 傍晚前到（光線柔、也更像散步時間） → 走 `Passadiços de Alvor` 木棧道看潟湖 → 回鎮上吃晚餐/喝咖啡 → 收工回 Lagos\n\nAlvor 五大亮點（省力版）：\n1. Ria de Alvor（Alvor 河口/潟湖）：這裡的主角不是“海蝕崖”，而是濕地水道、沙洲與鳥；看的是「安靜感」。\n2. 賞鳥（有機會遇到紅鶴）：季節對、運氣好時可能看到火烈鳥；也常見各種水鳥與猛禽（不需要懂鳥名，看到就很值得）。\n3. Quinta da Rocha 一帶：河口旁的半島/鹽田/濕地地景，是候鳥覓食與停留的典型棲地（春秋更有感）。\n4. A Rocha Delicada（PR1 PTM）可選：想看更完整的河口地景，可以走這條環線的一小段就回頭；但它是步道而非純木棧道，路面可能較原始，請以當天體力為準。\n5. 鎮中心餐廳密度高：Alvor 很適合把「晚餐＋飯後散步」當成主菜，氛圍偏度假、選擇也多。\n\n小提醒（很實用）：\n- **風從內陸吹下來會冷**：傍晚散步請帶防風層（比你在海邊想像的更需要）。\n- **Rocha Delicada 的路段不要硬吃**：如果遇到路況顛/不平，就把主菜留在木棧道，已經很夠。"
+            "content": "@card: 玩法定位：河口生態＋度假小鎮；半日照抄版是傍晚前到木棧道看潟湖、再回鎮上坐下來吃一餐，把它當「復健型散步」最對味。\n先講定位：如果 Ferragudo 是「坡上的漁村」，Alvor 更像「河口生態＋度假小鎮」。你可以在濕地放空，也可以回到鎮上坐下來好好吃一餐。\n\n最省力的半日排法（照抄就好）：\n- 傍晚前到（光線柔、也更像散步時間） → 走 `Passadiços de Alvor` 木棧道看潟湖 → 回鎮上吃晚餐/喝咖啡 → 收工回 Lagos\n\nAlvor 五大亮點（省力版）：\n1. Ria de Alvor（Alvor 河口/潟湖）：這裡的主角不是“海蝕崖”，而是濕地水道、沙洲與鳥；看的是「安靜感」。\n2. 賞鳥（有機會遇到紅鶴）：季節對、運氣好時可能看到火烈鳥；也常見各種水鳥與猛禽（不需要懂鳥名，看到就很值得）。\n3. Quinta da Rocha 一帶：河口旁的半島/鹽田/濕地地景，是候鳥覓食與停留的典型棲地（春秋更有感）。\n4. A Rocha {{bi:Delicada|PR1 PTM}}可選：想看更完整的河口地景，可以走這條環線的一小段就回頭；但它是步道而非純木棧道，路面可能較原始，請以當天體力為準。\n5. 鎮中心餐廳密度高：Alvor 很適合把「晚餐＋飯後散步」當成主菜，氛圍偏度假、選擇也多。\n\n小提醒（很實用）：\n- **風從內陸吹下來會冷**：傍晚散步請帶防風層（比你在海邊想像的更需要）。\n- **Rocha Delicada 的路段不要硬吃**：如果遇到路況顛/不平，就把主菜留在木棧道，已經很夠。"
           },
           {
             "key": "cost",
@@ -479,13 +479,13 @@ export const EXTENSIONS_DATA: CityExtensions[] = [
           {
             "key": "sources",
             "title": "資料來源（Sources）",
-            "content": "@card: 資料來源與查詢入口：需要核對規則、步道或官方資訊可從這裡往下追。\nWikivoyage（Alvor）：https://en.wikivoyage.org/wiki/Alvor\n\nVia Algarviana（PR1 PTM – A Rocha Delicada）：https://viaalgarviana.org/en/524/pr1-ptm-%E2%80%93-a-rocha-delicada-portimao\n\nFirst Nature（Ria de Alvor Nature Reserve / wildlife）：https://www.first-nature.com/algarve/reserves-riadealvor.php"
+            "content": "@card: 資料來源與查詢入口：需要核對規則、步道或官方資訊可從這裡往下追。\n{{bi:Wikivoyage|Alvor}}：https://en.wikivoyage.org/wiki/Alvor\n\nVia {{bi:Algarviana|PR1 PTM – A Rocha Delicada}}：https://viaalgarviana.org/en/524/pr1-ptm-%E2%80%93-a-rocha-delicada-portimao\n\nFirst {{bi:Nature|Ria de Alvor Nature Reserve / wildlife}}：https://www.first-nature.com/algarve/reserves-riadealvor.php"
           }
         ]
       },
       {
         "id": "carvoeiro-marinha",
-        "title": "卡爾沃埃羅（Carvoeiro）+ 馬里尼亞海灘（Praia da Marinha）（陸上岩岸代表作）",
+        "title": "{{bi:卡爾沃埃羅|Carvoeiro}}+ {{bi:馬里尼亞海灘|Praia da Marinha}}（陸上岩岸代表作）",
         "sections": [
           {
             "key": "notes",
@@ -500,23 +500,23 @@ export const EXTENSIONS_DATA: CityExtensions[] = [
           {
             "key": "how",
             "title": "怎麼去（How to go）",
-            "content": "@card: 動線照抄：上午 Carvoeiro（Algar Seco/木棧道）→ 午後 Marinha（上方觀景＋短步道）→ 回 Lagos；重點放在「上面看」，不把自己逼去下沙灘爬上爬下。\n最穩走法（可照抄）：上午 Carvoeiro（Algar Seco）→ 午後 Marinha（觀景＋短步道）→ 回 Lagos。\n\n省力攻略（視覺享受 > 體力挑戰）：\n- **核心玩法：Carvoeiro Boardwalk（木棧道）**：路面相對平、視野開闊。想省力就把這段當主菜。\n- **Algar Seco + Boneca Bar**：岩區路面不平；膝蓋不穩就停在上方觀景點看海即可。\n- **Marinha 的核心策略：主要在「上面」玩**：上方觀景點通常比下沙灘更容易拿到全景構圖。\n\nCarvoeiro Top 5（省力版，把「走路量」控制住）：\n1. Carvoeiro Boardwalk（日落散步首選）：木棧道沿崖頂修；你可以把它當成「看海的大露台」，不必走到很遠。\n2. Algar Seco + A Boneca（天然窗）：想看就看、想停就停；石區不平就只留在上方視野點。\n   如果你們願意走幾階：`Boneca Bar` 的位置很有記憶點，但以膝蓋為準，不用勉強。\n3. Seven Hanging Valleys Trail（只走一小段就夠）：它很美，但全走很累；省力玩法是「挑一段平/好撤退的路段走 20–40 分鐘就回頭」。\n4. 小船洞穴導覽（想解鎖 Benagil 時）：Carvoeiro 是到 Benagil 的近點之一；要訂船就直接參考 `benagil` 的 `### comfort`（船型/出發地/上午時段/不登陸新規）。\n5. 鎮中心吃一餐＋小店補給：Carvoeiro 的強項是「把時間花在坐下來」，餐廳密度高；想買軟木、橄欖油、海鹽這類伴手禮也很好逛（店家以當日為準）。\n\n小叮嚀（很實用）：\n- **停車**：鎮中心停車位常吃緊；能早到就早到，或把車停遠一點再慢走進來。\n- **季節/人潮**：7–8 月會明顯擁擠；5–6 月或 9 月通常更舒服（以當年狀況為準）。\n- **衣著**：日落看海帶一件薄外套，風起來體感會差很多。"
+            "content": "@card: 動線照抄：上午 Carvoeiro（Algar Seco/木棧道）→ 午後 Marinha（上方觀景＋短步道）→ 回 Lagos；重點放在「上面看」，不把自己逼去下沙灘爬上爬下。\n最穩走法（可照抄）：上午 {{bi:Carvoeiro|Algar Seco}}→ 午後 Marinha（觀景＋短步道）→ 回 Lagos。\n\n省力攻略（視覺享受 > 體力挑戰）：\n- **核心玩法：Carvoeiro Boardwalk（木棧道）**：路面相對平、視野開闊。想省力就把這段當主菜。\n- **Algar Seco + Boneca Bar**：岩區路面不平；膝蓋不穩就停在上方觀景點看海即可。\n- **Marinha 的核心策略：主要在「上面」玩**：上方觀景點通常比下沙灘更容易拿到全景構圖。\n\nCarvoeiro Top 5（省力版，把「走路量」控制住）：\n1. Carvoeiro Boardwalk（日落散步首選）：木棧道沿崖頂修；你可以把它當成「看海的大露台」，不必走到很遠。\n2. Algar Seco + A Boneca（天然窗）：想看就看、想停就停；石區不平就只留在上方視野點。\n   如果你們願意走幾階：`Boneca Bar` 的位置很有記憶點，但以膝蓋為準，不用勉強。\n3. Seven Hanging Valleys Trail（只走一小段就夠）：它很美，但全走很累；省力玩法是「挑一段平/好撤退的路段走 20–40 分鐘就回頭」。\n4. 小船洞穴導覽（想解鎖 Benagil 時）：Carvoeiro 是到 Benagil 的近點之一；要訂船就直接參考 `benagil` 的 `### comfort`（船型/出發地/上午時段/不登陸新規）。\n5. 鎮中心吃一餐＋小店補給：Carvoeiro 的強項是「把時間花在坐下來」，餐廳密度高；想買軟木、橄欖油、海鹽這類伴手禮也很好逛（店家以當日為準）。\n\n小叮嚀（很實用）：\n- **停車**：鎮中心停車位常吃緊；能早到就早到，或把車停遠一點再慢走進來。\n- **季節/人潮**：7–8 月會明顯擁擠；5–6 月或 9 月通常更舒服（以當年狀況為準）。\n- **衣著**：日落看海帶一件薄外套，風起來體感會差很多。"
           },
           {
             "key": "backup",
             "title": "雨備/Plan B（Backup）",
-            "content": "@card: Plan B：只想半日就把主菜留在 Carvoeiro（Algar Seco）即可，回報很直接；把 Marinha 留給天氣好、時間更寬鬆的一天。\n如果只想半日：只做 Carvoeiro（Algar Seco）就很有感。"
+            "content": "@card: Plan B：只想半日就把主菜留在 {{bi:Carvoeiro|Algar Seco}}即可，回報很直接；把 Marinha 留給天氣好、時間更寬鬆的一天。\n如果只想半日：只做 {{bi:Carvoeiro|Algar Seco}}就很有感。"
           },
           {
             "key": "sources",
             "title": "資料來源（Sources）",
-            "content": "@card: 資料來源與查詢入口：需要核對規則、步道或官方資訊可從這裡往下追。\nWikivoyage（Carvoeiro）：https://en.wikivoyage.org/wiki/Carvoeiro"
+            "content": "@card: 資料來源與查詢入口：需要核對規則、步道或官方資訊可從這裡往下追。\n{{bi:Wikivoyage|Carvoeiro}}：https://en.wikivoyage.org/wiki/Carvoeiro"
           }
         ]
       },
       {
         "id": "benagil",
-        "title": "貝納吉爾海洞（Algar de Benagil）（規則很多：看好再去）",
+        "title": "{{bi:貝納吉爾海洞|Algar de Benagil}}（規則很多：看好再去）",
         "sections": [
           {
             "key": "notes",
@@ -541,7 +541,7 @@ export const EXTENSIONS_DATA: CityExtensions[] = [
           {
             "key": "comfort-benagil",
             "title": "comfort | 省力/舒適版：怎麼訂到「舒服又安全」的 Benagil",
-            "content": "@card: Benagil 舒適安全版：先挑船型與出發地（短程、好上下船）比挑旅行社名字更重要；上午通常較穩，下午起風就改陸上觀景，別把行程押在洞穴上。\n先講結論：想坐得舒服、又要安全，`船型` 與 `出發地點` 比哪家旅行社更重要。旅行社名字換來換去，但船跟碼頭條件是「當下就會影響體感」的。\n\n#### 1) 船型：先挑「能進洞」又「坐得住」的\n市面上常見兩大類：\n- **大船（Catamaran / 大型觀光船）**：較穩，但通常只停在洞口外；你可能看不到「天窗」的完整角度。\n- **小船（Small Boat / 10–12 人座觀光船）**：更容易真正駛入洞內，但更吃海況與座位設計。\n\n舒適首選（預訂時就用這個條件去篩）：\n- 10–12 人座 Small Boat，並確認有：\n  - 軟墊座位（Cushioned seats）\n  - 靠背（Back support）\n- 避開需要跨坐在橡皮艇充氣邊緣的 `RIB / 快艇型`（對腰背與核心負擔大，顛簸感也更直接）。\n\n#### 2) 出發地：強烈建議 Portimão 或 Carvoeiro（不要從 Lagos 硬撐）\n策略是：把「在海上顛簸的時間」縮到最短。\n\n- 方案 A：Carvoeiro 出發（最近、船程最短）\n  - **優勢**：距離洞穴近，船程約 15–20 分鐘（海上顛簸時間最短）。\n  - **代價**：常見需要涉水上船（wet boarding）。工作人員會協助，但記得：褲管能捲、鞋子不怕濕更好。\n  - **搜尋關鍵字**：`Carvoeiro caves tour from Carvoeiro beach`、`Benagil small boat from Carvoeiro`\n\n- 方案 B：Portimão Marina 出發（上下船最穩、最舒服）\n  - **優勢**：碼頭設施完整，可以從平穩棧橋上下船，不用涉水；整體舒適度最好。\n  - **行程型態**：通常 1–1.5 小時，沿途還會看更多海岸線。\n  - **搜尋關鍵字**：`Benagil cave tour from Portimão`、`small boat Benagil Portimão`\n\n#### 3) 預訂操作：時間、關鍵字、以及你要「問清楚」的點\n- **建議提前 2–3 天線上訂**：方便挑海況較好的時段，也比較容易挑到「有靠背/軟墊」的船。\n- **推薦時段：09:30–11:00**：阿爾加維下午常起風，早上通常更平順、光也更好。\n- **請直接用關鍵字確認新規玩法**：\n  - `no landing`（提醒：依 2024-08 新規，現在基本上是 禁止在洞內沙灘登陸，以船上觀賞為主）\n  - `small boat` / `cushioned seats`\n\n預訂前（或到現場）建議用一句話確認的三件事：\n- 能否進洞內（不是只停洞口外）\n- 是否有靠背/軟墊座位\n- **登船方式**：碼頭棧橋上船（Portimão）或涉水上船（Carvoeiro）\n\n#### 4) 額外叮嚀（比行程本身更重要）\n- **防暈**：易暈船者建議登船前 30 分鐘吃暈船藥；上船後盡量看水平線、不要低頭滑手機。\n- **防濕防風**：小船容易濺水，帶輕便雨衣/防風外套；手機相機用防水袋或夾鏈袋。\n- **避免選項**：不建議訂 `Kayak / SUP`（太吃力、也更受海況影響；且同樣多為禁止登陸洞內沙灘）。\n\n小結（最保守、成功率高的版本）：\n- Portimão Marina 出發 + 1–1.5 小時 small boat + 上午時段。\n  你們可以穩穩從碼頭上船、短時間進洞看天窗、海況不行也比較好撤退（直接改做陸上岩岸 Plan B）。"
+            "content": "@card: Benagil 舒適安全版：先挑船型與出發地（短程、好上下船）比挑旅行社名字更重要；上午通常較穩，下午起風就改陸上觀景，別把行程押在洞穴上。\n先講結論：想坐得舒服、又要安全，`船型` 與 `出發地點` 比哪家旅行社更重要。旅行社名字換來換去，但船跟碼頭條件是「當下就會影響體感」的。\n\n#### 1) 船型：先挑「能進洞」又「坐得住」的\n市面上常見兩大類：\n- **大船（Catamaran / 大型觀光船）**：較穩，但通常只停在洞口外；你可能看不到「天窗」的完整角度。\n- **小船（Small Boat / 10–12 人座觀光船）**：更容易真正駛入洞內，但更吃海況與座位設計。\n\n舒適首選（預訂時就用這個條件去篩）：\n- 10–12 人座 Small Boat，並確認有：\n  - {{bi:軟墊座位|Cushioned seats}}\n  - {{bi:靠背|Back support}}\n- 避開需要跨坐在橡皮艇充氣邊緣的 `RIB / 快艇型`（對腰背與核心負擔大，顛簸感也更直接）。\n\n#### 2) 出發地：強烈建議 Portimão 或 Carvoeiro（不要從 Lagos 硬撐）\n策略是：把「在海上顛簸的時間」縮到最短。\n\n- 方案 A：Carvoeiro 出發（最近、船程最短）\n  - **優勢**：距離洞穴近，船程約 15–20 分鐘（海上顛簸時間最短）。\n  - **代價**： {{bi:常見需要涉水上船|wet boarding}}。工作人員會協助，但記得：褲管能捲、鞋子不怕濕更好。\n  - **搜尋關鍵字**：`Carvoeiro caves tour from Carvoeiro beach`、`Benagil small boat from Carvoeiro`\n\n- 方案 B：Portimão Marina 出發（上下船最穩、最舒服）\n  - **優勢**：碼頭設施完整，可以從平穩棧橋上下船，不用涉水；整體舒適度最好。\n  - **行程型態**：通常 1–1.5 小時，沿途還會看更多海岸線。\n  - **搜尋關鍵字**：`Benagil cave tour from Portimão`、`small boat Benagil Portimão`\n\n#### 3) 預訂操作：時間、關鍵字、以及你要「問清楚」的點\n- **建議提前 2–3 天線上訂**：方便挑海況較好的時段，也比較容易挑到「有靠背/軟墊」的船。\n- **推薦時段：09:30–11:00**：阿爾加維下午常起風，早上通常更平順、光也更好。\n- **請直接用關鍵字確認新規玩法**：\n  - `no landing`（提醒：依 2024-08 新規，現在基本上是 禁止在洞內沙灘登陸，以船上觀賞為主）\n  - `small boat` / `cushioned seats`\n\n預訂前（或到現場）建議用一句話確認的三件事：\n- 能否進洞內（不是只停洞口外）\n- 是否有靠背/軟墊座位\n- **登船方式**： {{bi:碼頭棧橋上船|Portimão}} {{bi:或涉水上船|Carvoeiro}}\n\n#### 4) 額外叮嚀（比行程本身更重要）\n- **防暈**：易暈船者建議登船前 30 分鐘吃暈船藥；上船後盡量看水平線、不要低頭滑手機。\n- **防濕防風**：小船容易濺水，帶輕便雨衣/防風外套；手機相機用防水袋或夾鏈袋。\n- **避免選項**：不建議訂 `Kayak / SUP`（太吃力、也更受海況影響；且同樣多為禁止登陸洞內沙灘）。\n\n小結（最保守、成功率高的版本）：\n- Portimão Marina 出發 + 1–1.5 小時 small boat + 上午時段。\n  你們可以穩穩從碼頭上船、短時間進洞看天窗、海況不行也比較好撤退（直接改做陸上岩岸 Plan B）。"
           },
           {
             "key": "cost",
@@ -564,11 +564,11 @@ export const EXTENSIONS_DATA: CityExtensions[] = [
   },
   {
     "cityId": "lisbon",
-    "title": "里斯本（Lisbon）延伸行程（詳情）",
+    "title": "{{bi:里斯本|Lisbon}}延伸行程（詳情）",
     "trips": [
       {
         "id": "obidos-nazare",
-        "title": "奧比杜斯（Óbidos）+ 納扎雷（Nazaré）（中世紀小鎮 + 海岸懸崖）",
+        "title": "{{bi:奧比杜斯|Óbidos}}+ {{bi:納扎雷|Nazaré}}（中世紀小鎮 + 海岸懸崖）",
         "sections": [
           {
             "key": "notes",
@@ -603,7 +603,7 @@ export const EXTENSIONS_DATA: CityExtensions[] = [
           {
             "key": "sources",
             "title": "資料來源（Sources）",
-            "content": "@card: 資料來源與查詢入口：需要核對規則、班次或官方公告可從這裡往下追。\nVisitPortugal（Óbidos）：https://www.visitportugal.com/es/content/obidos\n\nRick Steves 社群討論（交通/安排經驗）：https://community.ricksteves.com/travel-forum/portugal/nazare-obidos-coimbra-day-tripping-out-of-lisbon\n\nRede Expressos（官方查班次/買票入口）：https://rede-expressos.pt/pt/horarios-bilhetes\n\nWikivoyage（Óbidos）：https://en.wikivoyage.org/wiki/%C3%93bidos\n\nWikivoyage（Nazaré）：https://en.wikivoyage.org/wiki/Nazar%C3%A9"
+            "content": "@card: 資料來源與查詢入口：需要核對規則、班次或官方公告可從這裡往下追。\n{{bi:VisitPortugal|Óbidos}}：https://www.visitportugal.com/es/content/obidos\n\nRick Steves 社群討論（交通/安排經驗）：https://community.ricksteves.com/travel-forum/portugal/nazare-obidos-coimbra-day-tripping-out-of-lisbon\n\nRede Expressos（官方查班次/買票入口）：https://rede-expressos.pt/pt/horarios-bilhetes\n\n{{bi:Wikivoyage|Óbidos}}：https://en.wikivoyage.org/wiki/%C3%93bidos\n\n{{bi:Wikivoyage|Nazaré}}：https://en.wikivoyage.org/wiki/Nazar%C3%A9"
           }
         ]
       },
@@ -634,7 +634,7 @@ export const EXTENSIONS_DATA: CityExtensions[] = [
           {
             "key": "sources",
             "title": "資料來源（Sources）",
-            "content": "@card: 資料來源與查詢入口：需要核對規則、班次或官方公告可從這裡往下追。\nVisitPortugal（Évora World Heritage）：https://www.visitportugal.com/en/destinos/alentejo/73787\n\nCP（官方查火車班次）：https://www.cp.pt/passageiros/pt/consultar-horarios\n\nRede Expressos（官方查班次/買票入口）：https://rede-expressos.pt/pt/horarios-bilhetes\n\nWikivoyage（Évora）：https://en.wikivoyage.org/wiki/%C3%89vora"
+            "content": "@card: 資料來源與查詢入口：需要核對規則、班次或官方公告可從這裡往下追。\n{{bi:VisitPortugal|Évora World Heritage}}：https://www.visitportugal.com/en/destinos/alentejo/73787\n\nCP（官方查火車班次）：https://www.cp.pt/passageiros/pt/consultar-horarios\n\nRede Expressos（官方查班次/買票入口）：https://rede-expressos.pt/pt/horarios-bilhetes\n\n{{bi:Wikivoyage|Évora}}：https://en.wikivoyage.org/wiki/%C3%89vora"
           }
         ]
       },
@@ -655,12 +655,12 @@ export const EXTENSIONS_DATA: CityExtensions[] = [
           {
             "key": "how",
             "title": "怎麼去（How to go）",
-            "content": "@card: 交通與動線重點整理：從 `Cais do Sodré` 直達 Cascais，班次密集很彈性；重點是海岸線慢走＋小鎮氛圍，把它當作低風險回血日。\n先抓結論：Lisboa（Cais do Sodré）↔ Cascais 走 CP 市區線，班次密集，所以這天可以很彈性（不一定要早起衝行程）。\n\n順序建議（照做就很順）：\n1. 到 Cais do Sodré 上車 → 到 Cascais 下車。\n2. 出站先用小鎮＋海邊暖身（想坐咖啡就先坐，這天的重點本來就不是跑點）。\n3. 走去 Boca do Inferno（步道/海岸岩洞感，回報很快）。\n4. 累了就折返，沿海慢慢走回站 → 回里斯本吃晚餐。\n\n（加分、看交通/體力）如果你還想再補一個海岸名場面：可以看一下 Azenhas do Mar（海邊白屋村） [Azenhas do Mar Portugal](https://www.google.com/maps/search/?api=1&query=Azenhas%20do%20Mar%20Portugal)。白屋貼著懸崖的構圖非常上相，是那種看到照片就知道在哪的葡萄牙海岸名場面。"
+            "content": "@card: 交通與動線重點整理：從 `Cais do Sodré` 直達 Cascais，班次密集很彈性；重點是海岸線慢走＋小鎮氛圍，把它當作低風險回血日。\n先抓結論： {{bi:Lisboa|Cais do Sodré}}↔ Cascais 走 CP 市區線，班次密集，所以這天可以很彈性（不一定要早起衝行程）。\n\n順序建議（照做就很順）：\n1. 到 Cais do Sodré 上車 → 到 Cascais 下車。\n2. 出站先用小鎮＋海邊暖身（想坐咖啡就先坐，這天的重點本來就不是跑點）。\n3. 走去 Boca do Inferno（步道/海岸岩洞感，回報很快）。\n4. 累了就折返，沿海慢慢走回站 → 回里斯本吃晚餐。\n\n（加分、看交通/體力）如果你還想再補一個海岸名場面：可以看一下 Azenhas do Mar（海邊白屋村） [Azenhas do Mar Portugal](https://www.google.com/maps/search/?api=1&query=Azenhas%20do%20Mar%20Portugal)。白屋貼著懸崖的構圖非常上相，是那種看到照片就知道在哪的葡萄牙海岸名場面。"
           },
           {
             "key": "sources",
             "title": "資料來源（Sources）",
-            "content": "@card: 資料來源與查詢入口：需要核對規則、班次或官方公告可從這裡往下追。\nCP（Cascais Line / Stations）：https://www.cp.pt/passageiros/en/train-times/Stations/cascais-station\n\nWikivoyage（Cascais）：https://en.wikivoyage.org/wiki/Cascais"
+            "content": "@card: 資料來源與查詢入口：需要核對規則、班次或官方公告可從這裡往下追。\n{{bi:CP|Cascais Line / Stations}}：https://www.cp.pt/passageiros/en/train-times/Stations/cascais-station\n\n{{bi:Wikivoyage|Cascais}}：https://en.wikivoyage.org/wiki/Cascais"
           }
         ]
       }
@@ -668,7 +668,7 @@ export const EXTENSIONS_DATA: CityExtensions[] = [
   },
   {
     "cityId": "madrid",
-    "title": "馬德里（Madrid）延伸行程（詳情）",
+    "title": "{{bi:馬德里|Madrid}}延伸行程（詳情）",
     "trips": [
       {
         "id": "quick-pick",
@@ -683,12 +683,12 @@ export const EXTENSIONS_DATA: CityExtensions[] = [
       },
       {
         "id": "toledo",
-        "title": "托雷多（Toledo）（UNESCO 古城，一日）",
+        "title": "{{bi:托雷多|Toledo}}（UNESCO 古城，一日）",
         "sections": [
           {
             "key": "notes",
             "title": "重點（Notes）",
-            "content": "這是一個很適合放在 `itinerary.md` Day 14 緩衝日的一日遊：先用 Mirador del Valle 收河谷與古城的招牌視角（早班去人少、回報最值），再進老城慢走。托雷多（Toledo）像把西班牙歷史濃縮成一個山城，基督教、伊斯蘭、猶太傳統在同一座城裡交疊，逛起來層次很直接；但老城確實有上坡與樓梯，如果其中一人完全不想爬樓梯就要保守。交通可用 Renfe＋市區公車/走路，想省力就把動線做成少走上坡版本；真的卡在車站到老城這段再用短程計程車也通常不貴。"
+            "content": "這是一個很適合放在 `itinerary.md` Day 14 緩衝日的一日遊：先用 Mirador del Valle 收河谷與古城的招牌視角（早班去人少、回報最值），再進老城慢走。 {{bi:托雷多|Toledo}}像把西班牙歷史濃縮成一個山城，基督教、伊斯蘭、猶太傳統在同一座城裡交疊，逛起來層次很直接；但老城確實有上坡與樓梯，如果其中一人完全不想爬樓梯就要保守。交通可用 Renfe＋市區公車/走路，想省力就把動線做成少走上坡版本；真的卡在車站到老城這段再用短程計程車也通常不貴。"
           },
           {
             "key": "images",
@@ -698,23 +698,23 @@ export const EXTENSIONS_DATA: CityExtensions[] = [
           {
             "key": "how",
             "title": "怎麼去（How to go）",
-            "content": "@card: 交通與動線重點整理：火車往返＋老城慢走的節奏怎麼排、以及如何把上坡成本壓下來；先拿 Mirador 招牌視角，再進城慢慢走最穩。\n火車：Renfe 高速火車（Avant）Madrid ↔ 托雷多（Toledo）（先看班次再決定出發/回程）。\n\n最後一哩：到 托雷多（Toledo）站後進老城可搭市區公車；或走 Safont 自動扶梯方向減少上坡（以現場指標為準）。\n早到 → 先去 Mirador del Valle → 再進老城散步 → 下午回馬德里。單程約 30–35 分鐘級（以 Renfe 班次為準）+ 老城步行為主。"
+            "content": "@card: 交通與動線重點整理：火車往返＋老城慢走的節奏怎麼排、以及如何把上坡成本壓下來；先拿 Mirador 招牌視角，再進城慢慢走最穩。\n火車：Renfe {{bi:高速火車|Avant}}Madrid ↔ {{bi:托雷多|Toledo}}（先看班次再決定出發/回程）。\n\n最後一哩：到 {{bi:托雷多|Toledo}}站後進老城可搭市區公車；或走 Safont 自動扶梯方向減少上坡（以現場指標為準）。\n早到 → 先去 Mirador del Valle → 再進老城散步 → 下午回馬德里。單程約 30–35 分鐘級（以 Renfe 班次為準）+ 老城步行為主。"
           },
           {
-            "key": "bonus-galletas-de-convento",
-            "title": "bonus | 修女餅乾（Galletas de Convento）：一個「不見面」的伴手禮體驗",
-            "content": "@card: 加碼伴手禮體驗：修道院轉盤窗口買修女餅乾——不見面、只聽聲音，儀式感很強；把它當加分，不必硬追營業時間。\n如果你想帶一個很在地、又有儀式感的點心，托雷多（Toledo）有些修道院會用「轉盤窗口」販售修女自製餅乾：你只會看到一個木製旋轉窗（turnstile），跟看不見的修女點單、付現金、拿到餅乾，全程不會面。\n\n常見做法：\n- 進到修道院對外的販售空間後，找到木製旋轉窗。\n- 對著窗/牆面說要買的品項與數量（西文不熟就指/說簡單關鍵字也行）。\n- 修女把餅乾放上轉盤轉出來，你把現金放上去再轉回去。\n\n口味建議（看現場供應）：\n- 杏仁餅乾（almendra）：最常見、最保守不踩雷。\n- 雪球餅（nevaditos）：表面糖粉、口感偏酥鬆；有些版本會帶一點酒香（例如加白酒的配方）。\n-（如果你有去 Toledo）杏仁糖（mazapán / marzipan）：托雷多的經典甜點之一，很多修道院/老店會賣（很適合當伴手禮）。\n-（節慶系但有時全年買得到）mantecados / polvorones：用豬油/奶油做的傳統酥餅，口感會「在嘴裡碎開」那種。\n\n小提醒：這種點通常營業時間很「修道院風格」（不一定天天開、可能中午休），建議把它當作加碼而不是必達；身上備點零錢/現金更穩。"
+            "key": "bonus-bi-galletas-de-convento",
+            "title": "bonus | {{bi:修女餅乾|Galletas de Convento}}：一個「不見面」的伴手禮體驗",
+            "content": "@card: 加碼伴手禮體驗：修道院轉盤窗口買修女餅乾——不見面、只聽聲音，儀式感很強；把它當加分，不必硬追營業時間。\n如果你想帶一個很在地、又有儀式感的點心， {{bi:托雷多|Toledo}}有些修道院會用「轉盤窗口」販售修女自製餅乾：你只 {{bi:會看到一個木製旋轉窗|turnstile}}，跟看不見的修女點單、付現金、拿到餅乾，全程不會面。\n\n常見做法：\n- 進到修道院對外的販售空間後，找到木製旋轉窗。\n- 對著窗/牆面說要買的品項與數量（西文不熟就指/說簡單關鍵字也行）。\n- 修女把餅乾放上轉盤轉出來，你把現金放上去再轉回去。\n\n口味建議（看現場供應）：\n- {{bi:杏仁餅乾|almendra}}：最常見、最保守不踩雷。\n- {{bi:雪球餅|nevaditos}}：表面糖粉、口感偏酥鬆；有些版本會帶一點酒香（例如加白酒的配方）。\n-（如果你有去 Toledo） {{bi:杏仁糖|mazapán / marzipan}}：托雷多的經典甜點之一，很多修道院/老店會賣（很適合當伴手禮）。\n-（節慶系但有時全年買得到）mantecados / polvorones：用豬油/奶油做的傳統酥餅，口感會「在嘴裡碎開」那種。\n\n小提醒：這種點通常營業時間很「修道院風格」（不一定天天開、可能中午休），建議把它當作加碼而不是必達；身上備點零錢/現金更穩。"
           },
           {
             "key": "sources",
             "title": "資料來源（Sources）",
-            "content": "@card: 資料來源與查詢入口：需要核對規則、交通或官方資訊可從這裡往下追。\nTourism Madrid（Day Trips）：https://www.esmadrid.com/en/day-trips-madrid\n\nRenfe（Madrid–Toledo）：https://www.renfe.com/es/en/inspirate/rutas/madrid-toledo\n\nWikivoyage（Toledo）：https://en.wikivoyage.org/wiki/Toledo\n\nToledo 自動扶梯（彙整）：https://toledospain.click/escalators-in-toledo-timetables-and-location/"
+            "content": "@card: 資料來源與查詢入口：需要核對規則、交通或官方資訊可從這裡往下追。\nTourism {{bi:Madrid|Day Trips}}：https://www.esmadrid.com/en/day-trips-madrid\n\n{{bi:Renfe|Madrid–Toledo}}：https://www.renfe.com/es/en/inspirate/rutas/madrid-toledo\n\n{{bi:Wikivoyage|Toledo}}：https://en.wikivoyage.org/wiki/Toledo\n\nToledo 自動扶梯（彙整）：https://toledospain.click/escalators-in-toledo-timetables-and-location/"
           }
         ]
       },
       {
         "id": "segovia",
-        "title": "塞哥維亞（Segovia）（羅馬水道橋，一日）",
+        "title": "{{bi:塞哥維亞|Segovia}}（羅馬水道橋，一日）",
         "sections": [
           {
             "key": "notes",
@@ -729,17 +729,17 @@ export const EXTENSIONS_DATA: CityExtensions[] = [
           {
             "key": "how",
             "title": "怎麼去（How to go）",
-            "content": "@card: 交通與動線重點整理：火車往返＋水道橋主菜，走路負擔相對可控；想加老城/城堡再看體力，不必把一日遊變成全收任務。\n火車：Renfe（Madrid–塞哥維亞 Segovia；注意到站可能是 Segovia-Guiomar）。\n\n最後一哩：Segovia-Guiomar 到市中心/水道橋可轉市區公車（路線以當地當季為準）。\n到 塞哥維亞（Segovia）→ 水道橋 →（選配）老城散步/城堡 → 回馬德里。高速火車（Renfe Avant）單程常見 30 分鐘上下級（依班次/站點為準）。"
+            "content": "@card: 交通與動線重點整理：火車往返＋水道橋主菜，走路負擔相對可控；想加老城/城堡再看體力，不必把一日遊變成全收任務。\n火車：Renfe（Madrid–塞哥維亞 Segovia；注意到站可能是 Segovia-Guiomar）。\n\n最後一哩：Segovia-Guiomar 到市中心/水道橋可轉市區公車（路線以當地當季為準）。\n到 {{bi:塞哥維亞|Segovia}}→ 水道橋 →（選配）老城散步/城堡 → 回馬德里。 {{bi:高速火車|Renfe Avant}}單程常見 30 分鐘上下級（依班次/站點為準）。"
           },
           {
-            "key": "food-cochinillo-asado",
-            "title": "food | 烤乳豬（Cochinillo Asado）：找「用盤子切肉」的傳統店",
-            "content": "@card: 塞哥維亞必吃加碼：烤乳豬的傳統儀式（盤子切肉/有時摔盤）與點餐搭配方向；想吃這種「公開證明皮脆肉嫩」就看這段。\n塞哥維亞的招牌就是烤乳豬。最「道地」的辨識點不是裝潢，而是傳統儀式：\n- **盤子切肉**：主廚用瓷盤邊緣（不是刀子）切開乳豬，證明外皮酥到可以「用盤子就切開」。\n- **（有時）摔盤**：有些店會在切完後把盤子摔碎當作儀式收尾（不一定每次都有）。\n\n儀式的核心意思其實很直白：用最鈍的工具完成分切，等於在你面前公開證明「皮夠脆、肉夠嫩」。\n\n點餐與搭配：\n- 乳豬通常整體調味很簡單（鹽為主），吃的是皮脆肉嫩的反差。\n- 想平衡油脂／冷天想暖胃，可搭：\n  - 塞哥維亞濃湯（Sopa Castellana）：常見是麵包＋蒜＋蛋＋高湯的古早味濃湯，口感偏濃稠、很暖。\n  - **陶盆料理**：例如 chorizo（臘腸）類的陶盆小菜，配麵包很搭。\n  - 炒蘑菇（setas / champiñones）：經典開胃菜，趁熱吃更好（冷了油感會更明顯）。\n\n如果塞哥維亞沒吃到：馬德里主廣場附近的 `Sobrino de Botín` 也以傳統烤乳豬/烤乳羊聞名，可當作備案。"
+            "key": "food-bi-cochinillo-asado",
+            "title": "food | {{bi:烤乳豬|Cochinillo Asado}}：找「用盤子切肉」的傳統店",
+            "content": "@card: 塞哥維亞必吃加碼：烤乳豬的傳統儀式（盤子切肉/有時摔盤）與點餐搭配方向；想吃這種「公開證明皮脆肉嫩」就看這段。\n塞哥維亞的招牌就是烤乳豬。最「道地」的辨識點不是裝潢，而是傳統儀式：\n- **盤子切肉**：主廚用瓷盤邊緣（不是刀子）切開乳豬，證明外皮酥到可以「用盤子就切開」。\n- **（有時）摔盤**：有些店會在切完後把盤子摔碎當作儀式收尾（不一定每次都有）。\n\n儀式的核心意思其實很直白：用最鈍的工具完成分切，等於在你面前公開證明「皮夠脆、肉夠嫩」。\n\n點餐與搭配：\n- 乳豬通常整體調味很簡單（鹽為主），吃的是皮脆肉嫩的反差。\n- 想平衡油脂／冷天想暖胃，可搭：\n  - {{bi:塞哥維亞濃湯|Sopa Castellana}}：常見是麵包＋蒜＋蛋＋高湯的古早味濃湯，口感偏濃稠、很暖。\n  - **陶盆料理**：例如 chorizo（臘腸）類的陶盆小菜，配麵包很搭。\n  - {{bi:炒蘑菇|setas / champiñones}}：經典開胃菜，趁熱吃更好（冷了油感會更明顯）。\n\n如果塞哥維亞沒吃到：馬德里主廣場附近的 `Sobrino de Botín` 也以傳統烤乳豬/烤乳羊聞名，可當作備案。"
           },
           {
             "key": "sources",
             "title": "資料來源（Sources）",
-            "content": "@card: 資料來源與查詢入口：需要核對規則、交通或官方資訊可從這裡往下追。\nTourism Madrid（Day Trips）：https://www.esmadrid.com/en/day-trips-madrid\n\nRenfe（Madrid–Segovia）：https://www.renfe.com/es/en/inspirate/rutas/madrid-segovia\n\nWikivoyage（Segovia）：https://en.wikivoyage.org/wiki/Segovia"
+            "content": "@card: 資料來源與查詢入口：需要核對規則、交通或官方資訊可從這裡往下追。\nTourism {{bi:Madrid|Day Trips}}：https://www.esmadrid.com/en/day-trips-madrid\n\n{{bi:Renfe|Madrid–Segovia}}：https://www.renfe.com/es/en/inspirate/rutas/madrid-segovia\n\n{{bi:Wikivoyage|Segovia}}：https://en.wikivoyage.org/wiki/Segovia"
           }
         ]
       },
@@ -750,7 +750,7 @@ export const EXTENSIONS_DATA: CityExtensions[] = [
           {
             "key": "notes",
             "title": "重點（Notes）",
-            "content": "除了托雷多（Toledo）和塞哥維亞（Segovia）之外，馬德里周邊其實還有不少「一日就能完成」的選擇。\n\n你不用一次看完，先用下面這段做快速挑選：看你想要的題材是城牆、花園、地形，還是偏文學的大學城。\n\n@card: 周邊一日遊用題材選就好：城牆（Ávila）、花園（Aranjuez）、帝國建築（El Escorial）、地形（Cuenca）、文學大學城（Alcalá）、傳統小鎮（Chinchón）。\n- 喜歡壯觀建築與宗教歷史：首選 `阿維拉（Ávila）` 或 `埃斯科里亞爾（El Escorial）`。\n- 喜歡優雅花園與輕鬆散步：選擇 阿蘭胡埃斯（Aranjuez）。\n- 喜歡奇特地形與拍照：選擇 昆卡（Cuenca）。\n- 喜歡文學氣息：選擇 阿爾卡拉（Alcalá de Henares）。"
+            "content": "除了托雷多（To {{bi:和塞哥維亞|Segovia）之外，馬德里周邊其實還有不少「一日就能完成」的選擇。\n\n你不用一次看完，先用下面這段做快速挑選：看你想要的題材是城牆、花園、地形，還是偏文學的大學城。\n\n@card: 周邊一日遊用題材選就好： {{bi:城牆|Ávila}}、 {{bi:花園|Aranjuez}}、 {{bi:帝國建築|El Escorial}}、 {{bi:地形|Cuenca}}、 {{bi:文學大學城|Alcalá}}、 {{bi:傳統小鎮|Chinchón}}。\n- 喜歡壯觀建築與宗教歷史：首選 {{bi:阿維拉|Ávila}} 或 {{bi:埃斯科里亞爾|El Escorial}}。\n- 喜歡優雅花園與輕鬆散步：選擇 {{bi:阿蘭胡埃斯|Aranjuez}}。\n- 喜歡奇特地形與拍照：選擇 {{bi:昆卡|Cuenca}}。\n- 喜歡文學氣息：選擇 {{bi:阿爾卡拉|Alcalá de Henares}}。"
           },
           {
             "key": "images",
@@ -758,40 +758,40 @@ export const EXTENSIONS_DATA: CityExtensions[] = [
             "content": "@card: 圖庫：一張代表一個題材，先用畫面快速選（城牆/花園/帝國建築/地形/文學大學城/傳統小鎮）。\n{{gallery:Madrid 周邊一日遊（題材快速選）|https://source.unsplash.com/b43Wkc5YiHo/1800x1200|https://source.unsplash.com/mokdRB8Io2o/1800x1200|https://source.unsplash.com/uB1Quc9_Hko/1800x1200|https://source.unsplash.com/4HWBIUH9yRM/1800x1200|https://source.unsplash.com/swFgtTgcpLA/1800x1200|https://source.unsplash.com/cXU6tNxhub0/1800x1200}}"
           },
           {
-            "key": "1-vila",
-            "title": "1. 阿維拉（Ávila）— 中世紀城牆本體",
-            "content": "@card: 一日遊候選—Ávila：中世紀城牆本體最完整；不走上城牆也能很有感，交通約 1.5 小時級（依班次），節奏穩、回報直接。\n{{gallery:Ávila|https://source.unsplash.com/mokdRB8Io2o/1800x1200|https://source.unsplash.com/78F9oyKIo9g/1800x1200|https://source.unsplash.com/b43Wkc5YiHo/1800x1200|https://source.unsplash.com/2TjxFYkae2k/1800x1200}}\n這座城市以保存很完整的中世紀城牆聞名，是 UNESCO 世界遺產。就算你不走上城牆，光看外觀＋老城慢走也很有感。\n\n- 特色亮點\n  - **中世紀城牆（The Walls）**：歐洲保存最好的中世紀防禦工事之一，可走上城牆俯瞰周邊景色。\n  - **聖德雷莎修道院（Convent of Santa Teresa）**：紀念該市著名的聖人。\n- **交通**：從馬德里搭火車或巴士皆可抵達，常見約 1.5 小時上下（以當日班次為準）。"
+            "key": "1-bi-vila",
+            "title": "1. {{bi:阿維拉|Ávila}}— 中世紀城牆本體",
+            "content": "@card: 一日遊候選—Ávila：中世紀城牆本體最完整；不走上城牆也能很有感，交通約 1.5 小時級（依班次），節奏穩、回報直接。\n{{gallery:Ávila|https://source.unsplash.com/mokdRB8Io2o/1800x1200|https://source.unsplash.com/78F9oyKIo9g/1800x1200|https://source.unsplash.com/b43Wkc5YiHo/1800x1200|https://source.unsplash.com/2TjxFYkae2k/1800x1200}}\n這座城市以保存很完整的中世紀城牆聞名，是 UNESCO 世界遺產。就算你不走上城牆，光看外觀＋老城慢走也很有感。\n\n- 特色亮點\n  - ** {{bi:中世紀城牆|The Walls}}**：歐洲保存最好的中世紀防禦工事之一，可走上城牆俯瞰周邊景色。\n  - ** {{bi:聖德雷莎修道院|Convent of Santa Teresa}}**：紀念該市著名的聖人。\n- **交通**：從馬德里搭火車或巴士皆可抵達，常見約 1.5 小時上下（以當日班次為準）。"
           },
           {
-            "key": "2-aranjuez",
-            "title": "2. 阿蘭胡埃斯（Aranjuez）— 皇室花園與草莓",
-            "content": "@card: 一日遊候選—Aranjuez：皇室花園＋度假感，比古城更優雅放鬆；近郊火車可達、步行量可控，還能順便吃草莓與蘆筍。\n{{gallery:Aranjuez|https://source.unsplash.com/ac2e7EdspVo/1800x1200|https://source.unsplash.com/BNYEBEu9G4s/1800x1200|https://source.unsplash.com/Qu80xglQJ3k/1800x1200|https://source.unsplash.com/uB1Quc9_Hko/1800x1200}}\n位於馬德里南方，這裡有皇宮與很大的花園。氛圍比古城更優雅放鬆，適合想走得輕鬆、又想看「王室＋花園」的人。\n\n- 特色亮點\n  - **阿蘭胡埃斯王宮（Royal Palace）**：西班牙皇室的春季行宮，內部裝飾華麗。\n  - **皇家花園**：王子花園、島嶼花園等腹地很大，散步很舒服。\n- **必吃特產**：當地盛產草莓與蘆筍，很有名。\n- **交通**：近郊火車或巴士可達，常見約 45–55 分鐘（以當日班次為準）。"
+            "key": "2-bi-aranjuez",
+            "title": "2. {{bi:阿蘭胡埃斯|Aranjuez}}— 皇室花園與草莓",
+            "content": "@card: 一日遊候選—Aranjuez：皇室花園＋度假感，比古城更優雅放鬆；近郊火車可達、步行量可控，還能順便吃草莓與蘆筍。\n{{gallery:Aranjuez|https://source.unsplash.com/ac2e7EdspVo/1800x1200|https://source.unsplash.com/BNYEBEu9G4s/1800x1200|https://source.unsplash.com/Qu80xglQJ3k/1800x1200|https://source.unsplash.com/uB1Quc9_Hko/1800x1200}}\n位於馬德里南方，這裡有皇宮與很大的花園。氛圍比古城更優雅放鬆，適合想走得輕鬆、又想看「王室＋花園」的人。\n\n- 特色亮點\n  - ** {{bi:阿蘭胡埃斯王宮|Royal Palace}}**：西班牙皇室的春季行宮，內部裝飾華麗。\n  - **皇家花園**：王子花園、島嶼花園等腹地很大，散步很舒服。\n- **必吃特產**：當地盛產草莓與蘆筍，很有名。\n- **交通**：近郊火車或巴士可達，常見約 45–55 分鐘（以當日班次為準）。"
           },
           {
-            "key": "3-san-lorenzo-de-el-escorial",
-            "title": "3. 埃斯科里亞爾（San Lorenzo de El Escorial）— 西班牙文藝復興傑作",
-            "content": "@card: 一日遊候選—El Escorial：帝國尺度的皇家修道院，建築/宗教/權力題材濃；近郊火車約 40 分鐘級，走路量相對可控，氣勢很硬派。\n{{gallery:El Escorial|https://source.unsplash.com/Qu80xglQJ3k/1800x1200|https://source.unsplash.com/uB1Quc9_Hko/1800x1200|https://source.unsplash.com/LjJV56L48CQ/1800x1200|https://source.unsplash.com/Tol_xw9Y22w/1800x1200}}\n這裡的皇家修道院規模非常大，氣勢很「帝國」。如果你喜歡建築、宗教與權力題材，這個點很穩。\n\n- 特色亮點\n  - **埃斯科里亞爾修道院（Royal Palace of El Escorial）**：結合皇宮、修道院、圖書館與陵墓的巨大建築群，呈現西班牙黃金時代的權力與宗教想像。\n- **交通**：從馬德里搭近郊火車可達，常見約 40 分鐘上下（以當日班次為準）。"
+            "key": "3-bi-san-lorenzo-de-el-escorial",
+            "title": "3. {{bi:埃斯科里亞爾|San Lorenzo de El Escorial}}— 西班牙文藝復興傑作",
+            "content": "@card: 一日遊候選—El Escorial：帝國尺度的皇家修道院，建築/宗教/權力題材濃；近郊火車約 40 分鐘級，走路量相對可控，氣勢很硬派。\n{{gallery:El Escorial|https://source.unsplash.com/Qu80xglQJ3k/1800x1200|https://source.unsplash.com/uB1Quc9_Hko/1800x1200|https://source.unsplash.com/LjJV56L48CQ/1800x1200|https://source.unsplash.com/Tol_xw9Y22w/1800x1200}}\n這裡的皇家修道院規模非常大，氣勢很「帝國」。如果你喜歡建築、宗教與權力題材，這個點很穩。\n\n- 特色亮點\n  - ** {{bi:埃斯科里亞爾修道院|Royal Palace of El Escorial}}**：結合皇宮、修道院、圖書館與陵墓的巨大建築群，呈現西班牙黃金時代的權力與宗教想像。\n- **交通**：從馬德里搭近郊火車可達，常見約 40 分鐘上下（以當日班次為準）。"
           },
           {
-            "key": "4-cuenca",
-            "title": "4. 昆卡（Cuenca）— 懸崖上的魔法之城",
-            "content": "@card: 一日遊候選—Cuenca：懸崖之城視覺很猛但更吃力；火車可達但老城上坡多，適合願意為地形與拍照回報付出體力的人。\n{{gallery:Cuenca|https://source.unsplash.com/fHpwEl_Rmek/1800x1200|https://source.unsplash.com/oq0MsN2fnxo/1800x1200|https://source.unsplash.com/b43Wkc5YiHo/1800x1200|https://source.unsplash.com/2TjxFYkae2k/1800x1200}}\n如果你願意跑遠一點（搭火車也方便），昆卡的地形景觀通常會讓人很驚艷。但它也比較吃力：老城上坡多，保守的人可能會覺得累。\n\n- 特色亮點\n  - **懸空之屋（Hanging Houses / Casas Colgadas）**：房子蓋在懸崖邊緣，陽台懸空在深谷之上，視覺很震撼。\n  - **聖帕布羅橋（San Pablo Bridge）**：連接峽谷兩端，是拍攝懸空之屋的經典角度。\n- **交通**：火車可達；若希望時間更好控，建議優先查較快的班次（例如較快車種常見約 1 小時上下，以當日班次為準）。"
+            "key": "4-bi-cuenca",
+            "title": "4. {{bi:昆卡|Cuenca}}— 懸崖上的魔法之城",
+            "content": "@card: 一日遊候選—Cuenca：懸崖之城視覺很猛但更吃力；火車可達但老城上坡多，適合願意為地形與拍照回報付出體力的人。\n{{gallery:Cuenca|https://source.unsplash.com/fHpwEl_Rmek/1800x1200|https://source.unsplash.com/oq0MsN2fnxo/1800x1200|https://source.unsplash.com/b43Wkc5YiHo/1800x1200|https://source.unsplash.com/2TjxFYkae2k/1800x1200}}\n如果你願意跑遠一點（搭火車也方便），昆卡的地形景觀通常會讓人很驚艷。但它也比較吃力：老城上坡多，保守的人可能會覺得累。\n\n- 特色亮點\n  - ** {{bi:懸空之屋|Hanging Houses / Casas Colgadas}}**：房子蓋在懸崖邊緣，陽台懸空在深谷之上，視覺很震撼。\n  - ** {{bi:聖帕布羅橋|San Pablo Bridge}}**：連接峽谷兩端，是拍攝懸空之屋的經典角度。\n- **交通**：火車可達；若希望時間更好控，建議優先查較快的班次（例如較快車種常見約 1 小時上下，以當日班次為準）。"
           },
           {
-            "key": "5-alcal-de-henares",
-            "title": "5. 阿爾卡拉・德・埃納雷斯（Alcalá de Henares）— 文學與大學城",
-            "content": "@card: 一日遊候選—Alcalá：文學與大學城氛圍，全平地好走、近郊火車方便；想做一個低風險文化散步、又不想爬坡很穩。\n{{gallery:Alcalá de Henares|https://source.unsplash.com/K1_BKJO583A/1800x1200|https://source.unsplash.com/s_alWUC7_Ro/1800x1200|https://source.unsplash.com/uB1Quc9_Hko/1800x1200|https://source.unsplash.com/cXU6tNxhub0/1800x1200}}\n這裡是《唐吉訶德》作者塞萬提斯的故鄉，也是一座充滿學術氣息的大學城。\n\n- 特色亮點\n  - **塞萬提斯故居博物館（Cervantes Birthplace Museum）**：參觀大文豪的出生地。\n  - **歷史街道**：漫步在鵝卵石街道與寧靜廣場，欣賞文藝復興風格建築。\n- **交通**：近郊火車班次密集，交通很方便，常見約 45 分鐘上下（以當日班次為準）。"
+            "key": "5-bi-alcal-de-henares",
+            "title": "5. {{bi:阿爾卡拉・德・埃納雷斯|Alcalá de Henares}}— 文學與大學城",
+            "content": "@card: 一日遊候選—Alcalá：文學與大學城氛圍，全平地好走、近郊火車方便；想做一個低風險文化散步、又不想爬坡很穩。\n{{gallery:Alcalá de Henares|https://source.unsplash.com/K1_BKJO583A/1800x1200|https://source.unsplash.com/s_alWUC7_Ro/1800x1200|https://source.unsplash.com/uB1Quc9_Hko/1800x1200|https://source.unsplash.com/cXU6tNxhub0/1800x1200}}\n這裡是《唐吉訶德》作者塞萬提斯的故鄉，也是一座充滿學術氣息的大學城。\n\n- 特色亮點\n  - ** {{bi:塞萬提斯故居博物館|Cervantes Birthplace Museum}}**：參觀大文豪的出生地。\n  - **歷史街道**：漫步在鵝卵石街道與寧靜廣場，欣賞文藝復興風格建築。\n- **交通**：近郊火車班次密集，交通很方便，常見約 45 分鐘上下（以當日班次為準）。"
           },
           {
-            "key": "6-chinch-n",
-            "title": "6. 欽瓊（Chinchón）— 傳統廣場與茴香酒",
-            "content": "@card: 一日遊候選—Chinchón：傳統主廣場＋小鎮日常，節奏慢、觀光壓力小；適合半日～一日的舒服備案，也能試 `Anís` 當作小鎮記憶點。\n{{gallery:Chinchón|https://source.unsplash.com/ufm2_BJBRGc/1800x1200|https://source.unsplash.com/moCexie9Qbo/1800x1200|https://source.unsplash.com/b43Wkc5YiHo/1800x1200|https://source.unsplash.com/2TjxFYkae2k/1800x1200}}\n這是一個相對「不那麼主流」但很有魅力的小鎮，適合想體驗傳統小鎮風情、又不想行程太緊的人。\n\n- 特色亮點\n  - **主廣場（Plaza Mayor）**：被認為是馬德里周邊最美的廣場之一；白色房子搭配綠色木造陽台很有辨識度。\n  - **特產**：以 `Anís（茴香酒）` 聞名，可試試當地利口酒。\n- **交通**：通常以巴士最方便，常見約 45–75 分鐘（依班次/路況，以當日公告為準）。"
+            "key": "6-bi-chinch-n",
+            "title": "6. {{bi:欽瓊|Chinchón}}— 傳統廣場與茴香酒",
+            "content": "@card: 一日遊候選—Chinchón：傳統主廣場＋小鎮日常，節奏慢、觀光壓力小；適合半日～一日的舒服備案，也能試 `Anís` 當作小鎮記憶點。\n{{gallery:Chinchón|https://source.unsplash.com/ufm2_BJBRGc/1800x1200|https://source.unsplash.com/moCexie9Qbo/1800x1200|https://source.unsplash.com/b43Wkc5YiHo/1800x1200|https://source.unsplash.com/2TjxFYkae2k/1800x1200}}\n這是一個相對「不那麼主流」但很有魅力的小鎮，適合想體驗傳統小鎮風情、又不想行程太緊的人。\n\n- 特色亮點\n  - ** {{bi:主廣場|Plaza Mayor}}**：被認為是馬德里周邊最美的廣場之一；白色房子搭配綠色木造陽台很有辨識度。\n  - **特產**：以 `Anís（茴香酒）` 聞名，可試試當地利口酒。\n- **交通**：通常以巴士最方便，常見約 45–75 分鐘（依班次/路況，以當日公告為準）。"
           }
         ]
       },
       {
         "id": "escorial-aranjuez",
-        "title": "埃斯科里亞爾（El Escorial）/ 阿蘭胡埃斯（Aranjuez）（多住 +2 天加碼）",
+        "title": "{{bi:埃斯科里亞爾|El Escorial}}/ {{bi:阿蘭胡埃斯|Aranjuez}}（多住 +2 天加碼）",
         "sections": [
           {
             "key": "notes",
@@ -811,18 +811,18 @@ export const EXTENSIONS_DATA: CityExtensions[] = [
           {
             "key": "sources",
             "title": "資料來源（Sources）",
-            "content": "@card: 資料來源與查詢入口：需要核對規則、交通或官方資訊可從這裡往下追。\nRenfe Cercanías Madrid（地圖/路線）：https://www.renfe.com/es/en/cercanias/cercanias-madrid/mapas\n\nWikivoyage（San Lorenzo de El Escorial）：https://en.wikivoyage.org/wiki/San_Lorenzo_de_El_Escorial\n\nWikivoyage（Aranjuez）：https://en.wikivoyage.org/wiki/Aranjuez"
+            "content": "@card: 資料來源與查詢入口：需要核對規則、交通或官方資訊可從這裡往下追。\nRenfe Cercanías Madrid（地圖/路線）：https://www.renfe.com/es/en/cercanias/cercanias-madrid/mapas\n\n{{bi:Wikivoyage|San Lorenzo de El Escorial}}：https://en.wikivoyage.org/wiki/San_Lorenzo_de_El_Escorial\n\n{{bi:Wikivoyage|Aranjuez}}：https://en.wikivoyage.org/wiki/Aranjuez"
           }
         ]
       },
       {
         "id": "avila",
-        "title": "阿維拉（Ávila）（城牆古城：半日～一日）",
+        "title": "{{bi:阿維拉|Ávila}}（城牆古城：半日～一日）",
         "sections": [
           {
             "key": "notes",
             "title": "重點（Notes）",
-            "content": "如果你想看城牆到底能多完整，阿維拉（Ávila）幾乎就是答案：它像把中世紀防禦城市直接封存到今天，走在城牆上會很直覺理解這不是裝飾，而是城市生存策略。想走城牆需要爬上去，但你也可以只看外觀＋老城散步，把體力消耗壓到最低；交通火車可達，到站後靠走路即可，保守做法就是少走城牆、多看外觀。早到拍照/散步人少很多，半日～一日都能成立，節奏也不需要排很累。"
+            "content": "如果你想看城牆到底能多完整， {{bi:阿維拉|Ávila}}幾乎就是答案：它像把中世紀防禦城市直接封存到今天，走在城牆上會很直覺理解這不是裝飾，而是城市生存策略。想走城牆需要爬上去，但你也可以只看外觀＋老城散步，把體力消耗壓到最低；交通火車可達，到站後靠走路即可，保守做法就是少走城牆、多看外觀。早到拍照/散步人少很多，半日～一日都能成立，節奏也不需要排很累。"
           },
           {
             "key": "images",
@@ -832,7 +832,7 @@ export const EXTENSIONS_DATA: CityExtensions[] = [
           {
             "key": "how",
             "title": "怎麼去（How to go）",
-            "content": "@card: 交通與動線重點整理：火車往返＋城牆外觀/老城慢走；想走上城牆再看體力，早到人少回報更好，半日～一日都成立。\n火車：Renfe（Madrid ↔ 阿維拉 Ávila；先查班次再排回程）。\n早到 阿維拉（Ávila）→ 城牆/老城慢走 → 下午回 Madrid。時間建議抓整天或半日加碼（看你想走多久）。"
+            "content": "@card: 交通與動線重點整理：火車往返＋城牆外觀/老城慢走；想走上城牆再看體力，早到人少回報更好，半日～一日都成立。\n火車：Renfe（Madrid ↔ 阿維拉 Ávila；先查班次再排回程）。\n早到 {{bi:阿維拉|Ávila}}→ 城牆/老城慢走 → 下午回 Madrid。時間建議抓整天或半日加碼（看你想走多久）。"
           },
           {
             "key": "backup",
@@ -842,13 +842,13 @@ export const EXTENSIONS_DATA: CityExtensions[] = [
           {
             "key": "sources",
             "title": "資料來源（Sources）",
-            "content": "@card: 資料來源與查詢入口：需要核對規則、交通或官方資訊可從這裡往下追。\nRenfe（查班次/購票）：https://www.renfe.com/es/en\n\nWikivoyage（Ávila）：https://en.wikivoyage.org/wiki/%C3%81vila"
+            "content": "@card: 資料來源與查詢入口：需要核對規則、交通或官方資訊可從這裡往下追。\nRenfe（查班次/購票）：https://www.renfe.com/es/en\n\n{{bi:Wikivoyage|Ávila}}：https://en.wikivoyage.org/wiki/%C3%81vila"
           }
         ]
       },
       {
         "id": "alcala",
-        "title": "阿爾卡拉・德・埃納雷斯（Alcalá de Henares）（大學城：低風險半日）",
+        "title": "{{bi:阿爾卡拉・德・埃納雷斯|Alcalá de Henares}}（大學城：低風險半日）",
         "sections": [
           {
             "key": "notes",
@@ -863,7 +863,7 @@ export const EXTENSIONS_DATA: CityExtensions[] = [
           {
             "key": "how",
             "title": "怎麼去（How to go）",
-            "content": "@card: 交通與動線重點整理：近郊火車＋全平地散步，屬於睡晚一點也能去的低風險半日；適合當緩衝日把節奏放慢。\n近郊火車：Renfe Cercanías（把它當作睡晚一點也能去的備案）。\n半日：到 阿爾卡拉・德・埃納雷斯（Alcalá de Henares）→ 老城走走吃午餐 → 回 Madrid 繼續逛。半日很夠（也可做成緩衝日）。"
+            "content": "@card: 交通與動線重點整理：近郊火車＋全平地散步，屬於睡晚一點也能去的低風險半日；適合當緩衝日把節奏放慢。\n近郊火車：Renfe Cercanías（把它當作睡晚一點也能去的備案）。\n半日：到 {{bi:阿爾卡拉・德・埃納雷斯|Alcalá de Henares}}→ 老城走走吃午餐 → 回 Madrid 繼續逛。半日很夠（也可做成緩衝日）。"
           },
           {
             "key": "backup",
@@ -873,18 +873,18 @@ export const EXTENSIONS_DATA: CityExtensions[] = [
           {
             "key": "sources",
             "title": "資料來源（Sources）",
-            "content": "@card: 資料來源與查詢入口：需要核對規則、交通或官方資訊可從這裡往下追。\nRenfe Cercanías Madrid（地圖/路線）：https://www.renfe.com/es/en/cercanias/cercanias-madrid/mapas\n\nWikivoyage（Alcalá de Henares）：https://en.wikivoyage.org/wiki/Alcal%C3%A1_de_Henares"
+            "content": "@card: 資料來源與查詢入口：需要核對規則、交通或官方資訊可從這裡往下追。\nRenfe Cercanías Madrid（地圖/路線）：https://www.renfe.com/es/en/cercanias/cercanias-madrid/mapas\n\n{{bi:Wikivoyage|Alcalá de Henares}}：https://en.wikivoyage.org/wiki/Alcal%C3%A1_de_Henares"
           }
         ]
       },
       {
         "id": "cuenca",
-        "title": "昆卡（Cuenca）（懸崖古城：視野很猛，一日）",
+        "title": "{{bi:昆卡|Cuenca}}（懸崖古城：視野很猛，一日）",
         "sections": [
           {
             "key": "notes",
             "title": "重點（Notes）",
-            "content": "如果你想看馬德里附近最不一樣的地形，昆卡（Cuenca）的懸崖屋視覺衝擊非常強，拍照回報也很高；它的主題不是單一建築，而是「人把城市蓋在地形邊界上」這件事。代價也很明確：懸崖城＋上坡，走路比 托雷多（Toledo）/塞哥維亞（Segovia）更吃力，對不想爬樓梯的人很不友善；雖然火車可達，但老城走路成本高，保守做法是有疑慮就直接跳過。若要做就早去早回，避免累到拖回程，才不會把一日遊變成硬撐日。"
+            "content": "如果你想看馬德里附近最不一樣的地形， {{bi:昆卡|Cuenca}}的懸崖屋視覺衝擊非常強，拍照回報也很高；它的主題不是單一建築，而是「人把城市蓋在地形邊界上」這件事。代價也很明確：懸崖城＋上坡，走路比 {{bi:托雷多|Toledo}} {{bi:/塞哥維亞|Segovia}}更吃力，對不想爬樓梯的人很不友善；雖然火車可達，但老城走路成本高，保守做法是有疑慮就直接跳過。若要做就早去早回，避免累到拖回程，才不會把一日遊變成硬撐日。"
           },
           {
             "key": "images",
@@ -894,7 +894,7 @@ export const EXTENSIONS_DATA: CityExtensions[] = [
           {
             "key": "how",
             "title": "怎麼去（How to go）",
-            "content": "@card: 交通與動線重點整理：火車往返＋老城地形視野；回報很猛但上坡多，建議早去早回，把一日遊留在「好玩」而不是「硬撐」。\n火車：Renfe（Madrid ↔ 昆卡 Cuenca；先查班次再排回程）。\n早出發 → 昆卡（Cuenca）老城散步/景觀點 → 傍晚回 Madrid。建議抓整天。"
+            "content": "@card: 交通與動線重點整理：火車往返＋老城地形視野；回報很猛但上坡多，建議早去早回，把一日遊留在「好玩」而不是「硬撐」。\n火車：Renfe（Madrid ↔ 昆卡 Cuenca；先查班次再排回程）。\n早出發 → {{bi:昆卡|Cuenca}}老城散步/景觀點 → 傍晚回 Madrid。建議抓整天。"
           },
           {
             "key": "backup",
@@ -904,18 +904,18 @@ export const EXTENSIONS_DATA: CityExtensions[] = [
           {
             "key": "sources",
             "title": "資料來源（Sources）",
-            "content": "@card: 資料來源與查詢入口：需要核對規則、交通或官方資訊可從這裡往下追。\nRenfe（查班次/購票）：https://www.renfe.com/es/en\n\nWikivoyage（Cuenca）：https://en.wikivoyage.org/wiki/Cuenca_(Spain)"
+            "content": "@card: 資料來源與查詢入口：需要核對規則、交通或官方資訊可從這裡往下追。\nRenfe（查班次/購票）：https://www.renfe.com/es/en\n\n{{bi:Wikivoyage|Cuenca}}：https://en.wikivoyage.org/wiki/Cuenca_(Spain)"
           }
         ]
       },
       {
         "id": "chinchon",
-        "title": "欽瓊（Chinchón）（傳統小鎮：主廣場散步，半日～一日）",
+        "title": "{{bi:欽瓊|Chinchón}}（傳統小鎮：主廣場散步，半日～一日）",
         "sections": [
           {
             "key": "notes",
             "title": "重點（Notes）",
-            "content": "如果你想要一個「很西班牙」但不會太觀光壓力的小鎮，欽瓊（Chinchón）很適合：重點幾乎就是主廣場與周邊巷弄的日常感。最經典的玩法是到主廣場找間有陽台視野的咖啡/餐廳坐一下，慢慢看廣場怎麼活著；再補一小段巷弄散步，把節奏放慢。對不想爬樓梯的人也相對友善（主要看你走多少巷弄坡度）；交通多以巴士為主，屬於「不用拚早、不用跑遠」的舒適備案。"
+            "content": "如果你想要一個「很西班牙」但不會太觀光壓力的小鎮， {{bi:欽瓊|Chinchón}}很適合：重點幾乎就是主廣場與周邊巷弄的日常感。最經典的玩法是到主廣場找間有陽台視野的咖啡/餐廳坐一下，慢慢看廣場怎麼活著；再補一小段巷弄散步，把節奏放慢。對不想爬樓梯的人也相對友善（主要看你走多少巷弄坡度）；交通多以巴士為主，屬於「不用拚早、不用跑遠」的舒適備案。"
           },
           {
             "key": "images",
@@ -925,7 +925,7 @@ export const EXTENSIONS_DATA: CityExtensions[] = [
           {
             "key": "how",
             "title": "怎麼去（How to go）",
-            "content": "@card: 交通與動線重點整理：巴士往返，把它當「主廣場坐下來慢慢看」的小鎮半日；不必拚早、不必跑遠，適合舒適備案。\n巴士：從 Madrid 市區客運站出發前往 Chinchón（常見約 45–75 分鐘，依班次/路況，以當日公告為準）。\n半日～一日：主廣場（Plaza Mayor）→ 巷弄散步 →（選配）買一瓶 Anís 當伴手禮 → 回 Madrid。"
+            "content": "@card: 交通與動線重點整理：巴士往返，把它當「主廣場坐下來慢慢看」的小鎮半日；不必拚早、不必跑遠，適合舒適備案。\n巴士：從 Madrid 市區客運站出發前往 Chinchón（常見約 45–75 分鐘，依班次/路況，以當日公告為準）。\n半日～一日： {{bi:主廣場|Plaza Mayor}}→ 巷弄散步 →（選配）買一瓶 Anís 當伴手禮 → 回 Madrid。"
           },
           {
             "key": "backup",
@@ -935,7 +935,7 @@ export const EXTENSIONS_DATA: CityExtensions[] = [
           {
             "key": "sources",
             "title": "資料來源（Sources）",
-            "content": "@card: 資料來源與查詢入口：需要核對規則、交通或官方資訊可從這裡往下追。\nWikivoyage（Chinchón）：https://en.wikivoyage.org/wiki/Chinch%C3%B3n"
+            "content": "@card: 資料來源與查詢入口：需要核對規則、交通或官方資訊可從這裡往下追。\n{{bi:Wikivoyage|Chinchón}}：https://en.wikivoyage.org/wiki/Chinch%C3%B3n"
           }
         ]
       }

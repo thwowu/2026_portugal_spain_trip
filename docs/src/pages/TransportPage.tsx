@@ -1,10 +1,9 @@
-import { useEffect, useMemo, useState } from 'react'
-import { TRANSPORT_DATA } from '../generated'
+import { useMemo, useState } from 'react'
+import { TRANSPORT_DATA } from '../data/transport'
 import { TRANSPORT_SEGMENTS, type TransportSegmentId } from '../data/core'
-import { useProgress } from '../state/progress'
+import { useReveal } from '../hooks/useReveal'
 import { Lightbox } from '../components/Lightbox'
 import { useHashScroll } from '../hooks/useHashScroll'
-import { useReveal } from '../hooks/useReveal'
 import { ILLUSTRATION } from '../illustrations'
 import { PageHero } from '../components/PageHero'
 import { withBaseUrl } from '../utils/asset'
@@ -66,7 +65,6 @@ function Accordion({
 }
 
 export function TransportPage() {
-  const { actions: progressActions } = useProgress()
   const [lightbox, setLightbox] = useState<{ src: string; title: string } | null>(null)
   useHashScroll()
 
@@ -124,7 +122,7 @@ export function TransportPage() {
           const mapPoints = TRANSPORT_MAP_POINTS[seg.id] ?? []
 
           return (
-            <RevealSection key={seg.id} id={`seg-${seg.id}`} segmentId={seg.id} onSeen={progressActions.markTransportSeen}>
+            <RevealSection key={seg.id} id={`seg-${seg.id}`}>
               <div className="card">
                 <div className="cardInner">
                   <div style={{ display: 'flex', alignItems: 'baseline', gap: 10, flexWrap: 'wrap' }}>
@@ -234,32 +232,12 @@ export function TransportPage() {
 
 function RevealSection({
   id,
-  segmentId,
-  onSeen,
   children,
 }: {
   id: string
-  segmentId: TransportSegmentId
-  onSeen: (id: TransportSegmentId) => void
   children: React.ReactNode
 }) {
   const ref = useReveal<HTMLElement>()
-  useEffect(() => {
-    const el = ref.current
-    if (!el) return
-    const io = new IntersectionObserver(
-      (entries) => {
-        for (const e of entries) {
-          if (!e.isIntersecting) continue
-          onSeen(segmentId)
-          io.unobserve(e.target)
-        }
-      },
-      { root: null, rootMargin: '0px 0px -30% 0px', threshold: 0.25 },
-    )
-    io.observe(el)
-    return () => io.disconnect()
-  }, [onSeen, segmentId, ref])
   return (
     <section id={id} className="reveal" ref={ref}>
       {children}

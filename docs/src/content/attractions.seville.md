@@ -1,10 +1,10 @@
 ---
 schema: v1
 cityId: seville
-title: 塞維爾（Seville）
+title: {{bi:塞維爾|Seville}}
 ---
 
-# 塞維爾（Seville）
+# {{bi:塞維爾|Seville}}
 
 讀法：路線看 `routes`；雨天看 `rain`；吃什麼看 `food`；安全看 `safety`。
 
@@ -18,11 +18,11 @@ title: 塞維爾（Seville）
 
 如果你只有一個下午＋一個晚上，又住在大教堂附近，最省力的走法是這樣：大教堂周邊先用「室內避雨/避熱＋短休息點」把節奏穩住（`Archivo de Indias` → `Plaza del Cabildo` → `Santa Cruz`），接著一路往南走進樹蔭去 `西班牙廣場` 坐著拍照；傍晚再看體力選一個收尾——河岸散步或 `Setas` 看日落/夜景。
 
-再補一個很實用的論點：你既然住在大教堂旁邊，大教堂外觀（尤其晚上打燈）隨時都能慢慢看。所以如果時間/體力只允許你「入內參觀」擇一，通常會更建議把那張門票留給 王宮（Real Alcázar）——它的細節密度、庭園散步感，往往更像「只有在塞維爾才會遇到」的體驗。
+再補一個很實用的論點：你既然住在大教堂旁邊，大教堂外觀（尤其晚上打燈）隨時都能慢慢看。所以如果時間/體力只允許你「入內參觀」擇一，通常會更建議把那張門票留給 {{bi:王宮|Real Alcázar}}——它的細節密度、庭園散步感，往往更像「只有在塞維爾才會遇到」的體驗。
 
 塞維爾好玩不在「把點全部打卡完」，而在你走到一半會一直遇到小驚喜：一條白牆窄巷、一道磁磚細節、或一個突然安靜下來的小廣場。你只要把「有椅子可坐、下一站不遠」這兩件事抓好，就會走得很舒服。
 
-### [（同街區的免費室內短停）印地亞斯總檔案館（Archivo General de Indias）](https://www.google.com/maps/search/?api=1&query=Archivo%20General%20de%20Indias%20Seville)
+### {{bilink:（同街區的免費室內短停） 印地亞斯總檔案館|Archivo General de Indias Seville|https://www.google.com/maps/search/?api=1&query=Archivo%20General%20de%20Indias%20Seville}}
 @card: ::免費又很涼:: 的室內短停點，走大教堂/王宮那圈累了就進來 15–30 分鐘回血。
 {{gallery:Archivo General de Indias|https://source.unsplash.com/NqIH2O7xJF0/1800x1200|https://source.unsplash.com/s6zDB6SrUvk/1800x1200|https://source.unsplash.com/BNYEBEu9G4s/1800x1200|https://source.unsplash.com/t3BXq0tMOWU/1800x1200}}
 
@@ -32,7 +32,7 @@ title: 塞維爾（Seville）
 
 它被列為世界遺產的一部分，收藏與西班牙海外帝國相關的資料，規模常被形容非常驚人；現場通常也會有小型展覽（有時是複製品、也可能有部分原件），內容偶爾會跟航海探索時代的人物或航程有關（實際展出以現場為準）。
 
-### [卡比爾多廣場（Plaza del Cabildo）](https://www.google.com/maps/search/?api=1&query=Plaza%20del%20Cabildo%20Seville)：大教堂旁的安靜休息點
+### {{bilink:卡比爾多廣場|Plaza del Cabildo|https://www.google.com/maps/search/?api=1&query=Plaza%20del%20Cabildo%20Seville}}：大教堂旁的安靜休息點
 @card: 大教堂旁的「安靜口袋」：::有長椅可坐::、音量瞬間變小，最適合當轉場休息點。
 {{gallery:Plaza del Cabildo（Seville）|https://source.unsplash.com/4HWBIUH9yRM/1800x1200|https://source.unsplash.com/t3BXq0tMOWU/1800x1200|https://source.unsplash.com/BNYEBEu9G4s/1800x1200|https://source.unsplash.com/NqIH2O7xJF0/1800x1200}}
 
@@ -42,7 +42,7 @@ title: 塞維爾（Seville）
 
 如果你剛好是週日早上，這裡有時會有集郵/錢幣小市集（大約 10:00–14:00 這個時段比較常見，依當天狀況為準）；就算你不收藏，也很適合在拱廊下坐著看人、順便把腳放鬆一下。
 
-### [塞維爾主教座堂＋吉拉達塔（Giralda）](https://www.google.com/maps/search/?api=1&query=Seville%20Cathedral%20Giralda)：想上高點就選它
+### {{bilink:塞維爾主教座堂＋ 吉拉達塔|Seville Cathedral Giralda|https://www.google.com/maps/search/?api=1&query=Seville%20Cathedral%20Giralda}}：想上高點就選它
 @card: 想看市景就上 Giralda：::走坡道不是樓梯::；若只挑一個「入內大景」，多數人會更偏向王宮。
 {{gallery:Seville Cathedral + Giralda|https://source.unsplash.com/t3BXq0tMOWU/1800x1200|https://source.unsplash.com/4HWBIUH9yRM/1800x1200|https://source.unsplash.com/NqIH2O7xJF0/1800x1200|https://source.unsplash.com/BNYEBEu9G4s/1800x1200|https://source.unsplash.com/T2LyjmBBoAk/1800x1200}}
 
@@ -80,7 +80,7 @@ title: 塞維爾（Seville）
 
 （可選）隱藏加分：有些票種/購票方案可能會讓你同時有其他合作景點的入場/折抵（例如 Triana 的陶瓷相關場館、或 Setas 地下的 `Antiquarium` 這類）。這種規則會變動，最穩的做法是：買票時看清楚票券文字/QR 說明，有就當賺到，沒有也不用失望。
 
-### [皇家菸廠／塞維爾大學（Real Fábrica de Tabacos / Universidad de Sevilla）](https://www.google.com/maps/search/?api=1&query=Real%20F%C3%A1brica%20de%20Tabacos%20Seville)：走去西班牙廣場的故事點
+### {{bilink:皇家菸廠／ 塞維爾大學|Real Fábrica de Tabacos Seville|https://www.google.com/maps/search/?api=1&query=Real%20F%C3%A1brica%20de%20Tabacos%20Seville}}：走去西班牙廣場的故事點
 @card: 往西班牙廣場路上最順的「故事停靠」：路過進庭院 5–10 分鐘就很有感，不用特地排。
 {{gallery:Real Fábrica de Tabacos（Universidad de Sevilla）|https://source.unsplash.com/4HWBIUH9yRM/1800x1200|https://source.unsplash.com/t3BXq0tMOWU/1800x1200|https://source.unsplash.com/BNYEBEu9G4s/1800x1200|https://source.unsplash.com/NqIH2O7xJF0/1800x1200}}
 
@@ -88,7 +88,7 @@ title: 塞維爾（Seville）
 
 這裡不用特別買票；路過時進去看一下庭院與迴廊就好，當作「走路中途的小停靠」很剛好。
 
-### [（Day 10 半天快閃，推薦順序）西班牙廣場＋瑪麗亞路易莎公園（Plaza de España + Parque de María Luisa）](https://www.google.com/maps/search/?api=1&query=Plaza%20de%20Espa%C3%B1a%20Seville%20Parque%20de%20Mar%C3%ADa%20Luisa)
+### {{bilink:（Day 10 半天快閃，推薦順序）西班牙廣場＋ 瑪麗亞路易莎公園|Plaza de España Seville Parque de María Luisa|https://www.google.com/maps/search/?api=1&query=Plaza%20de%20Espa%C3%B1a%20Seville%20Parque%20de%20Mar%C3%ADa%20Luisa}}
 @card: 最穩的「代表照」與休息點：::平路好走、座位多::，不用趕行程也成立。
 {{gallery:Plaza de España|https://source.unsplash.com/-obj1_oSNA4/1800x1200|https://source.unsplash.com/XxN_4HuqzRw/1800x1200|https://source.unsplash.com/4HWBIUH9yRM/1800x1200|https://source.unsplash.com/zsgZDg_OwLk/1800x1200}}
 
@@ -96,7 +96,7 @@ title: 塞維爾（Seville）
 
 它跟 1929 年的展覽計畫有關，半圓形的尺度很有壓迫感；外圈那一排彩色磁磚壁龕（常被稱為各省代表席位/壁龕）也很值得慢慢看。很多西班牙旅人會找自己的家鄉那一格拍照，你也可以當作小遊戲玩一下。
 
-### [黃金塔（Torre del Oro）](https://www.google.com/maps/search/?api=1&query=Torre%20del%20Oro%20Seville)＋河岸步道（平路好走）＋河岸步道（平路好走）
+### {{bilink:黃金塔|Torre del Oro|https://www.google.com/maps/search/?api=1&query=Torre%20del%20Oro%20Seville}}＋河岸步道（平路好走）＋河岸步道（平路好走）
 @card: 回程走河岸最省力：平坦、風舒服，把黃金塔當作路標收掉就好。
 {{gallery:Torre del Oro|https://source.unsplash.com/k3utyKmWIR8/1800x1200|https://source.unsplash.com/ac2e7EdspVo/1800x1200|https://source.unsplash.com/t3BXq0tMOWU/1800x1200|https://source.unsplash.com/DYXMWfcd-g8/1800x1200}}
 
@@ -104,7 +104,7 @@ title: 塞維爾（Seville）
 
 黃金塔和河防、航運的歷史有關；至於「金磚」之類的說法，就當成城市傳說聽聽就好。
 
-### [塞維爾蘑菇（Setas de Sevilla / Metropol Parasol）](https://www.google.com/maps/search/?api=1&query=Metropol%20Parasol%20Seville)：晚上的收尾點很穩
+### {{bilink:塞維爾蘑菇|Setas de Sevilla / Metropol Parasol|https://www.google.com/maps/search/?api=1&query=Metropol%20Parasol%20Seville}}：晚上的收尾點很穩
 @card: ::最省腦的日落/夜景收尾::：電梯上頂層步道，抓日落前 30 分鐘到就很夠。
 {{gallery:Setas / Metropol Parasol|https://source.unsplash.com/G4uT4GqrDjU/1800x1200|https://source.unsplash.com/TVLHmlAy31c/1800x1200|https://source.unsplash.com/2aGHUP3gkEk/1800x1200}}
 
@@ -112,13 +112,13 @@ title: 塞維爾（Seville）
 
 晚一點這裡有時也會有燈光效果或活動（依當天檔期/公告為準）。如果剛好遇到，就當作加分；沒有也不會失望，夜景本身就很夠。
 
-### [彼拉多之家（Casa de Pilatos）](https://www.google.com/maps/search/?api=1&query=Casa%20de%20Pilatos%20Seville)：王宮的精緻替代選項
+### {{bilink:彼拉多之家|Casa de Pilatos|https://www.google.com/maps/search/?api=1&query=Casa%20de%20Pilatos%20Seville}}：王宮的精緻替代選項
 @card: 王宮人太多的替代：尺度小、人較少，::1 小時內收掉::，雨天也能用。
 {{gallery:Casa de Pilatos|https://source.unsplash.com/BNYEBEu9G4s/1800x1200|https://source.unsplash.com/lsb1qSQUHm4/1800x1200|https://source.unsplash.com/NqIH2O7xJF0/1800x1200}}
 
 如果你覺得王宮人太多、又還想看「貼滿磁磚的華麗庭院」，彼拉多之家很值得收——它常被叫做「微縮版的塞維爾王宮」。尺度比較剛好、人也通常少一點，適合慢慢走、慢慢看，雨天也能用。
 
-它迷人的地方是那種很安達魯西亞的混搭：穆德哈爾的拱門與石膏細節、彩色磁磚（`azulejos`），再加上一點文藝復興的秩序感。主中庭就是精華，別急著走，站在邊邊看一圈，你會發現細節真的密。
+它迷人的地方是那種很安達魯西亞的混搭：穆德哈爾的拱門與石膏細節、 {{bi:彩色磁磚|azulejos}}，再加上一點文藝復興的秩序感。主中庭就是精華，別急著走，站在邊邊看一圈，你會發現細節真的密。
 
 小故事也很可愛：常見說法是，屋主（Tarifa 侯爵）朝聖回來後，拿「從這裡走到城外 `Cruz del Campo`」的距離去對照耶路撒冷的受難路線，才把這座宅邸跟「彼拉多」的名字連在一起（細節以現場解說為準）。
 
@@ -127,7 +127,7 @@ title: 塞維爾（Seville）
 - **語音導覽**：票券有時會包含語音導覽/可下載（依票種而定），帶自己的耳機會更省事。
 - **位置**：離大教堂不遠但也不是正旁邊，步行約 10–15 分鐘；把它當成「體力還夠就加」的升級項目最剛好。
 
-### [聖十字街區（Barrio Santa Cruz）](https://www.google.com/maps/search/?api=1&query=Barrio%20Santa%20Cruz%20Seville)：老城核心散步
+### {{bilink:聖十字街區|Barrio Santa Cruz|https://www.google.com/maps/search/?api=1&query=Barrio%20Santa%20Cruz%20Seville}}：老城核心散步
 @card: 老城散步就選 Santa Cruz：::不用追導航::，走累就找長椅坐，想回家就往大教堂方向撤退。
 {{gallery:Barrio Santa Cruz|https://source.unsplash.com/Z95viY3WaZs/1800x1200|https://source.unsplash.com/NqIH2O7xJF0/1800x1200|https://source.unsplash.com/t3BXq0tMOWU/1800x1200}}
 
@@ -148,13 +148,13 @@ title: 塞維爾（Seville）
 
 小訣竅：午休時段（大約 14:00–16:00）Santa Cruz 的巷弄常常會突然變得更空一點；你如果不趕時間，反而可以把「鑽巷子」留到這段來走，體感會差很多。
 
-### [特里亞納（Triana）](https://www.google.com/maps/search/?api=1&query=Triana%20Seville)：想要更在地就過橋
+### {{bilink:特里亞納|Triana|https://www.google.com/maps/search/?api=1&query=Triana%20Seville}}：想要更在地就過橋
 @card: 想離開觀光老城、吃得更舒服就::過橋去 Triana::；市場＋附近酒吧半天很順。
 {{gallery:Triana|https://source.unsplash.com/k3utyKmWIR8/1800x1200|https://source.unsplash.com/DYXMWfcd-g8/1800x1200|https://source.unsplash.com/4HWBIUH9yRM/1800x1200}}
 
 想吃 tapas 或逛市場，比一直待在最觀光的老城更舒服。它長期以工藝與日常生活氛圍著稱，形成與觀光核心不同的 Sevilla 另一面。
 
-### [特里亞納市場（Mercado de Triana）](https://www.google.com/maps/search/?api=1&query=Mercado%20de%20Triana%20Seville)：補給/在地市場感
+### {{bilink:特里亞納市場|Mercado de Triana|https://www.google.com/maps/search/?api=1&query=Mercado%20de%20Triana%20Seville}}：補給/在地市場感
 @card: 雨天/補給很好用：早上～中午最有市場感；::過橋順路就能收::。
 {{gallery:Mercado de Triana|https://source.unsplash.com/XJ6u9E2WyMo/1800x1200|https://source.unsplash.com/-fAUftK9QPI/1800x1200|https://source.unsplash.com/oBQIWhy2Obs/1800x1200}}
 
@@ -176,17 +176,17 @@ title: 塞維爾（Seville）
 ### 晚餐後散步（兩條線，選一條就好）
 @card: 晚餐後散步二選一：河岸線看倒影放鬆、風比較舒服；老城線看打燈與小巷氛圍。選一條就能把夜晚走得很塞維爾。
 
-- **河岸線（平坦、風比較舒服）**： [從大教堂往河邊走，經過 聖特爾莫橋（Puente de San Telmo）](https://www.google.com/maps/search/?api=1&query=Puente%20de%20San%20Telmo%20Seville) 一帶，再走到黃金塔。河面會有倒影，走起來很放鬆。
+- **河岸線（平坦、風比較舒服）**： {{bilink:從大教堂往河邊走，經過 聖特爾莫橋|Puente de San Telmo Seville|https://www.google.com/maps/search/?api=1&query=Puente%20de%20San%20Telmo%20Seville}} 一帶，再走到黃金塔。河面會有倒影，走起來很放鬆。
 - **老城線（燈光＋小巷）**：吃飽後在大教堂周邊繞一圈看夜間打燈，再鑽進 Santa Cruz 的巷弄慢慢走回住宿。晚上人少一點，氛圍反而更好。
 
-### culture | 塞維爾德比（El Gran Derbi）
+### culture | {{bi:塞維爾德比|El Gran Derbi}}
 @card: 塞維爾德比是「城市氣氛教材」：紅白 vs 綠白的街區認同與酒吧熱度都會被放大。遇到比賽週就把交通、用餐與訂位抓保守。
 
 你在街上很容易看到紅白或綠白：前者多半是 Sevilla FC，後者是 Real Betis。這場德比的故事跟城市的社會脈絡有關，傳統上常被解讀成階級與街區的對照，但放到今天也不需要把它看得那麼絕對——你只要知道「比賽週氣氛會很熱」，就足夠理解為什麼酒吧裡那麼多人在討論。
 
 其他如果你還有力氣：
-- 海格力斯大道（Alameda de Hércules）- [海格力斯大道（Alameda de Hércules）](https://www.google.com/maps/search/?api=1&query=Alameda%20de%20H%C3%A9rcules%20Seville)：晚間氛圍舒服，想離開觀光老城時很好用。：晚間氛圍舒服，想離開觀光老城時很好用。
-- 鬥牛場（Plaza de Toros）- [鬥牛場（Plaza de Toros）](https://www.google.com/maps/search/?api=1&query=Plaza%20de%20Toros%20Seville)：對文化符號有興趣就路過看外觀拍照即可。：對文化符號有興趣就路過看外觀拍照即可。
+- {{bi:海格力斯大道|Alameda de Hércules}}- {{bilink:海格力斯大道|Alameda de Hércules|https://www.google.com/maps/search/?api=1&query=Alameda%20de%20H%C3%A9rcules%20Seville}}：晚間氛圍舒服，想離開觀光老城時很好用。：晚間氛圍舒服，想離開觀光老城時很好用。
+- {{bi:鬥牛場|Plaza de Toros}}- {{bilink:鬥牛場|Plaza de Toros|https://www.google.com/maps/search/?api=1&query=Plaza%20de%20Toros%20Seville}}：對文化符號有興趣就路過看外觀拍照即可。：對文化符號有興趣就路過看外觀拍照即可。
 
 ## rain
 
@@ -199,7 +199,7 @@ title: 塞維爾（Seville）
 
 - **主教座堂**：空間大、可以慢慢看，不用趕。想上 Giralda 的話要注意：上塔大多在室內坡道，但塔頂觀景區相對開放；風雨大的時候就把上塔當作可選項，別硬拚。
 - **`Archivo de Indias`**：就在旁邊，通常安靜、走廊很舒服，也常被當作躲雨的短停點（實際開放與票務以現場為準）。
-- **王宮（Real Alcázar）**：雨天一樣能走，庭園有些區域會受天氣影響，但室內本身就夠你逛一段時間；而且裡面通常也比較容易找到能坐下來休息的角落（以當天人潮為準）。
+- ** {{bi:王宮|Real Alcázar}}**：雨天一樣能走，庭園有些區域會受天氣影響，但室內本身就夠你逛一段時間；而且裡面通常也比較容易找到能坐下來休息的角落（以當天人潮為準）。
 
 ### 有屋頂的市場/室內建築（不想一直看展也成立）
 @card: 不想一直看展的雨備：用室內市場、Setas 的地下/地面層、再加一個美術館把步調放慢；走累就坐下來，雨天也能很有內容。
@@ -219,14 +219,14 @@ title: 塞維爾（Seville）
 
 如果你想把晚上留給一場表演，可以找 Santa Cruz 附近的 tablao。像 `Los Gallos` 這類老字號常被提到（場地不大、離舞台近），但還是建議以當天場次與票務為準，選你們時間最順的一場就好。
 
-如果你想要「冷氣＋坐著看得很舒服」的版本，也可以考慮 佛朗明哥舞蹈博物館（Museo del Baile Flamenco） 的演出：多半比較像劇場型的座位安排，對想省體力的人很友善。很多地方一天會有兩場（例如 19:00/21:00 這種節奏）；你如果想看完再去吃晚餐，就挑早一點的場次比較從容。
+如果你想要「冷氣＋坐著看得很舒服」的版本，也可以考慮 {{bi:佛朗明哥舞蹈博物館|Museo del Baile Flamenco}} 的演出：多半比較像劇場型的座位安排，對想省體力的人很友善。很多地方一天會有兩場（例如 19:00/21:00 這種節奏）；你如果想看完再去吃晚餐，就挑早一點的場次比較從容。
 
 ### Bar Garlochí（如果你想喝一杯、又想看點不一樣的）
 @card: 想要不一樣的飯後一杯：聖週宗教意象混搭的「有點怪但很有記憶點」酒吧，當作夜晚小插曲就好；不喝酒也完全成立。
 
 這家酒吧的裝潢主題很強烈，帶點聖週宗教意象的混搭風格。你如果不排斥這種「有點怪但很有記憶點」的地方，當作飯後一杯的小插曲就好；不喝酒也完全不用勉強。
 
-塞維爾美術館（Museo de Bellas Artes） [Museo de Bellas Artes de Sevilla](https://www.google.com/maps/search/?api=1&query=Museo%20de%20Bellas%20Artes%20de%20Sevilla)也是很好的室內備案。
+{{bi:塞維爾美術館|Museo de Bellas Artes}} [Museo de Bellas Artes de Sevilla](https://www.google.com/maps/search/?api=1&query=Museo%20de%20Bellas%20Artes%20de%20Sevilla)也是很好的室內備案。
 
 ## views
 
@@ -296,7 +296,8 @@ title: 塞維爾（Seville）
 
 塞維爾整體治安算不錯，重大暴力犯罪不常見；但對觀光客（尤其長輩）來說，真的要防的是「小騙局＋走路摔倒/擦撞」這種很煩、但很容易發生的事。這段就當作避雷小抄，出門前 30 秒掃過去就好。
 
-- 迷迭香（Rosemary）騙局：大教堂周邊很常見。做法就一個：不要接、不要回話、直接走（細節我放在 `safety`）。
+- {{bi:迷迭香|Rosemary}}騙局：大教堂周邊很常見。做法就一個：不要接、不要回話、直接走（細節我放在 `safety`）。
+- **走散集合點**：如果真的人潮太擠、走散了，最省事的集合點就是 {{bilink:塞維爾主教座堂|Seville Cathedral|https://www.google.com/maps/search/?api=1&query=Seville%20Cathedral}} 正門外（人多但好找、也好叫車撤退）。
 - **自行車道很「隱形」**：舊城很多車道邊界不是白線，而是地面銀色小圓扣；走路時記得留意腳下、別站在車道上（`safety` 也有提）。
 - **巷子太窄，車不一定會讓你**：Santa Cruz 那種窄巷，有時車子/計程車會慢慢鑽過來。聽到車聲就靠牆、躲進門廊讓車先過，不要期待它繞你。
 - **路邊橘子不要吃、地上爛橘子別踩**：市區很多橘子樹多半是苦橙，看起來很香但很苦；掉在地上的果子踩到會滑、鞋底也會黏。
@@ -330,9 +331,9 @@ title: 塞維爾（Seville）
 
 如果你只有半天、又想走得舒服，我會把它當成「只買一個室內大景」來選：大教堂外觀你隨時都能路過看，但入內參觀就會吃掉不少體力與時間；王宮則是「細節很多、走起來比較像逛一座有樹蔭的庭院」。
 
-簡單講結論：多數人會覺得王宮（Real Alcázar）更像來一趟塞維爾才有的體驗；除非你對宗教建築的「大場面」、或哥倫布相關的歷史文物特別有感，那才把大教堂當作你唯一的入內選項。
+簡單講結論： {{bi:多數人會覺得王宮|Real Alcázar}}更像來一趟塞維爾才有的體驗；除非你對宗教建築的「大場面」、或哥倫布相關的歷史文物特別有感，那才把大教堂當作你唯一的入內選項。
 
-- **選王宮（Real Alcázar）比較適合你，如果**：你喜歡磁磚、雕飾、光影這種「越看越多」的細節；你也喜歡邊走邊停、走累就找長椅坐一下的節奏。王宮的花園是它的重點之一，走起來比較能自己控制步調。
+- ** {{bi:選王宮|Real Alcázar}}比較適合你，如果**：你喜歡磁磚、雕飾、光影這種「越看越多」的細節；你也喜歡邊走邊停、走累就找長椅坐一下的節奏。王宮的花園是它的重點之一，走起來比較能自己控制步調。
 - **選大教堂＋Giralda 比較適合你，如果**：你想看那種「一進去就覺得人很渺小」的宏偉空間；你也很想上 Giralda 看城市全景（但上塔是一路走斜坡，當天走累就別硬拚）。
 
 票務上也很現實：王宮比較常遇到提前售罄，能先預約就先預約；大教堂如果沒先買到票，才用上面那招去 `Plaza del Salvador` 的薩爾瓦多教堂買聯票，回來走已持票入口會舒服很多。
@@ -368,7 +369,7 @@ title: 塞維爾（Seville）
 
 重點不是「一定要吃到哪一家」，而是你可以照體力與人潮彈性換：
 
-- **`Casa Morales`（1850）**：如果你今天只想找一家「坐下來好好吃」的老店，選它很穩；它通常有吧台區跟比較裡面的用餐區，想坐得舒服一點就直接往裡面走、問有沒有座位（`mesa`），順便感受牆邊一排古董陶製酒缸（Tinajas）的氣氛。點菜我會用燉肉當主軸（`Carrillada`、`Rabo de Toro` 這種），再加 `Espinacas con Garbanzos` 或火腿/起司當保底；菜單如果有看到 `Bacalao con Salmorejo`（炸鱈魚配涼湯）也很值得試試。
+- **`Casa Morales`（1850）**：如果你今天只想找一家「坐下來好好吃」的老店，選它很穩；它通常有吧台區跟比較裡面的用餐區，想坐得舒服一點就直接往裡面走、 {{bi:問有沒有座位|mesa}}， {{bi:順便感受牆邊一排古董陶製酒缸|Tinajas}}的氣氛。點菜我會用燉肉當主軸（`Carrillada`、`Rabo de Toro` 這種），再加 `Espinacas con Garbanzos` 或火腿/起司當保底；菜單如果有看到 `Bacalao con Salmorejo`（炸鱈魚配涼湯）也很值得試試。
 - **`Bodeguita Romero`**：想用一個 `Montadito de Pringá` 快速收一個「塞維爾味」的記憶點，就去這家（靠 Arenal 一帶、離大教堂走路不遠）；人多但翻桌快，挑剛開店或避開尖峰去通常比較不會等太久。除了 `Pringá`，你也可以點 `Solomillo al Whisky`；如果覺得肉味偏重，就加一份 `Papas Aliñás`（醃漬馬鈴薯）把味道拉回來。
 - **`Bodega Santa Cruz "Las Columnas"`（又叫 Las Columnas）**：想看一眼「塞維爾酒吧日常的節奏」就選這家——轉角那種很熱鬧、服務生喊單很快的類型，外觀也很好認。想吃得最經典，我會點 `Solomillo al Whisky`（蒜香威士忌醬很適合拿麵包沾）或 `Montadito de Pringá`；想加一個像零食的鹹甜口味，就點 `Berenjenas con Miel`（炸茄子淋糖蜜）。吧台區常見要站著吃；如果想坐，記得往店裡更裡面走找座位，或直接看戶外有沒有位子。
 - **`Cervecería Giralda`**：如果你想找一間「坐著吃塔帕斯、順便看古蹟」的地方，這家很有意思。它常被介紹成在舊時伊斯蘭浴場遺跡旁/之上用餐的空間，店內會看到拱門與磚牆的味道；你就把它當成一頓晚餐＋一段歷史氛圍的合體版（以現場實際空間為準）。
@@ -392,7 +393,7 @@ title: 塞維爾（Seville）
 - **無酒精啤酒 `Cerveza sin` / `0.0`**：如果你想要「在塔帕斯店喝一杯」的氣氛，但不喝酒精，點這個很常見，也不突兀。
 
 ### 點餐小筆記（省力也省錢）
-@card: 點餐小筆記：份量（`tapa/media/ración`）、分食節奏、結帳與小費習慣一次講清楚；懂這套就能吃得更像在地節奏，也比較不容易超預算。
+@card: 點餐小筆記： {{bi:份量|tapa/media/ración}}、分食節奏、結帳與小費習慣一次講清楚；懂這套就能吃得更像在地節奏，也比較不容易超預算。
 
 - **份量怎麼選**：很多老店的菜單會很直覺，直接分成三欄或三個價位：`Tapa`（小份）、`Media`/`Media ración`（半份）、`Ración`（整份）。想多吃幾樣、又不想一下子點太滿，我會先點 2–3 道 `Tapa` 試水溫，覺得好吃再加點；兩個人通常 3–4 道 `Tapa` 就會有飽足感，不夠再補就好。
 - **不要一次點完**：塔帕斯的節奏是「邊吃邊點」。先點飲料＋1–2 道，吃完再看要不要加點；你會更像在跟酒吧一起呼吸，也比較不會點到太撐。
@@ -403,12 +404,12 @@ title: 塞維爾（Seville）
 - **小費怎麼給（很隨性）**：酒吧/咖啡廳通常不用算比例，最常見就是「湊整數」或留幾個零錢在桌上就好；如果是坐下來好好吃一頓、服務也很到位，留個大約 10% 左右的小費會很受歡迎，但不是硬性規定。
 - **怎麼結帳＆刷卡/現金**：想買單就看服務生、說 `La cuenta, por favor.`。現在多數地方刷卡很普及，但身上帶一點小額現金會更自在（有些小店可能有最低刷卡金額、或你想留零錢小費時很方便）。
 - **粉筆記帳不用嚇到**：有些老店會把你點的東西跟金額用粉筆寫在吧台/木頭上（付完就擦掉），這其實是很經典的老派作法；你只要最後說 `La cuenta, por favor.` 結帳就好。
-- **避開拉客＆觀光化主線**：大教堂正對面、或主要幹道上「站在門口招呼客人」的店，常見比較貴也比較不穩。做法很簡單：轉進旁邊的小巷，氛圍跟價格通常就順很多。至於大教堂周邊如果遇到有人想把迷迭香（Rosemary）塞給你那種搭訕，照 `safety` 那段做就好：不要接、不要回話、直接走。
+- **避開拉客＆觀光化主線**：大教堂正對面、或主要幹道上「站在門口招呼客人」的店，常見比較貴也比較不穩。做法很簡單：轉進旁邊的小巷，氛圍跟價格通常就順很多。至於大教堂周邊如果遇到有人想把 {{bi:迷迭香|Rosemary}}塞給你那種搭訕，照 `safety` 那段做就好：不要接、不要回話、直接走。
 - **桌面小習慣（不用太緊張）**：有些店的麵包會直接放在桌上、大家也會用麵包去把醬汁沾乾淨；你跟著做就好，不用拘謹。餐巾紙或殼類垃圾也先放盤子/桌上最安全，不用刻意學「丟地上」那種老派傳說。
 
 ## photo
 
-![Plaza de España（Seville）](https://source.unsplash.com/-obj1_oSNA4/1600x1000)
+! {{bilink:Plaza de España|Seville|https://source.unsplash.com/-obj1_oSNA4/1600x1000}}
 
 如果你只想拍幾個點又不想太累，通常這三段就很夠：西班牙廣場（含公園）→ Setas（日落）→ Santa Cruz 小巷的白牆/磁磚細節。
 
@@ -416,7 +417,9 @@ title: 塞維爾（Seville）
 
 先講做法：人多的地方把包包前背、拉鍊拉好，::手機不要拿在手上走路::。觀光區（廣場、市中心步行街）特別要注意扒手。
 
-如果有人拿著一根迷迭香（Rosemary）想塞到你手裡、說要送你「好運」，最省事的應對就是：不要接、不要回話、直接走。這類搭訕有時會一路纏上來，拖越久越麻煩。
+如果有人拿著一根 {{bi:迷迭香|Rosemary}}想塞到你手裡、說要送你「好運」，最省事的應對就是：不要接、不要回話、直接走。這類搭訕有時會一路纏上來，拖越久越麻煩。
+
+如果真的人潮太擠、走散了：最省事的集合點就是 {{bilink:塞維爾主教座堂|Seville Cathedral|https://www.google.com/maps/search/?api=1&query=Seville%20Cathedral}} 正門外（人多但好找、也好叫車撤退）。
 
 路面很多是石板路，鞋子盡量選防滑、好走的；另外有些路段會跟自行車道共用，地上偶爾會看到銀色小圓點的標示，走路時留意一下旁邊來車就好。
 

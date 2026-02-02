@@ -88,6 +88,9 @@
   --text-color: #4a4a4a;
   --card-position: right;
   color: var(--text-color);
+  /* Force a dedicated stacking context so the fixed map can sit "under" all itinerary UI. */
+  position: relative;
+  isolation: isolate;
 }
 
 .pageItinerary .muted {
@@ -146,7 +149,10 @@
   inset: 0;
   width: 100vw;
   height: 100vh;
-  z-index: 0;
+  /* Lock map hard to the bottom layer (but still visible through transparent UI). */
+  z-index: -1;
+  /* Background-only: never block scrolling/clicking on itinerary UI. */
+  pointer-events: none;
 }
 
 .pageItinerary #scroll .scroll__text {
@@ -158,7 +164,8 @@
   display: flex;
   flex-direction: column;
   /* User request: keep ~half-screen separation between day cards */
-  gap: 50vh;
+  /* On small screens, 50vh creates huge perceived blank space; clamp it. */
+  gap: clamp(32px, 18vh, 50vh);
   /* card-position: right */
   margin-left: auto;
   /* Keep typography scoped to itinerary only. */
@@ -284,6 +291,8 @@
   .pageItinerary #scroll .scroll__text {
     max-width: 100%;
     margin-left: 0;
+    /* Mobile: keep the scrolly feel without massive whitespace. */
+    gap: clamp(24px, 14vh, 240px);
   }
 }
 
@@ -309,6 +318,15 @@
 
   /* Reserve space so the bottom floating bar never covers the last content. */
   padding-bottom: calc(var(--pad-page) + var(--bottomnav-h, 72px) + 76px);
+}
+
+.pageAttractions a {
+  /* A11y: ensure link color meets contrast on white cards. */
+  color: var(--accent-2);
+}
+
+.pageAttractions a:hover {
+  color: color-mix(in oklab, var(--accent-2) 82%, black);
 }
 
 .pageAttractions .card {
@@ -428,16 +446,20 @@ body {
 }
 
 a {
-  color: var(--accent);
-  text-decoration: none;
+  color: var(--accent-2);
+  /* A11y: links must be distinguishable without relying on color alone. */
+  text-decoration: underline;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 2px;
+  text-decoration-color: color-mix(in oklab, currentColor 45%, transparent);
   /* Prevent long URLs from causing horizontal overflow (e.g. transport notes). */
   overflow-wrap: anywhere;
   word-break: break-word;
 }
 
 a:hover {
-  color: var(--accent-2);
-  text-decoration: underline;
+  color: var(--accent);
+  text-decoration-color: color-mix(in oklab, currentColor 55%, transparent);
 }
 
 a.mapsIconLink {
@@ -858,6 +880,10 @@ select:focus-visible {
     --rc-quote-pad: 10px 12px;
     --rc-quote-radius: 12px;
     --rc-quote-border: 4px;
+
+    /* Section hue (defaults to page accent; can be overridden by parent via inline CSS vars) */
+    --rc-sec-accent: var(--accent);
+    --rc-sec-accent-2: var(--accent-2);
   }
 
   /* Blog-post-like readability pack (scoped: only when we opt-in). */
@@ -894,12 +920,37 @@ select:focus-visible {
     color: var(--accent-2);
   }
 
-  .attrProseEditorial .longformHeading:not([data-rc-first='1'])::before {
+  /* Stronger section separation: make H3 look like a “section card header”. */
+  .rcSectionHeading {
+    padding: 12px 14px;
+    border-radius: 16px;
+    border: 1px solid color-mix(in oklab, var(--rc-sec-accent) 18%, var(--hairline));
+    border-left-width: 6px;
+    border-left-color: color-mix(in oklab, var(--rc-sec-accent) 70%, var(--rc-sec-accent-2));
+    background: color-mix(in oklab, var(--rc-sec-accent) 8%, var(--surface));
+    box-shadow: 0 1px 0 rgba(18, 17, 14, 0.04);
+  }
+
+  .attrProseEditorial .rcSectionHeading {
+    padding: 14px 16px;
+    border-left-width: 7px;
+    background: color-mix(in oklab, var(--rc-sec-accent) 10%, var(--surface));
+  }
+
+  /* Lighter sub-heading separation for #### */
+  .rcSubHeading {
+    position: relative;
+    padding-left: 10px;
+  }
+  .rcSubHeading::before {
     content: '';
-    display: block;
-    height: 1px;
-    background: color-mix(in oklab, var(--hairline) 78%, white);
-    margin-bottom: 10px;
+    position: absolute;
+    left: 0;
+    top: 0.2em;
+    bottom: 0.2em;
+    width: 3px;
+    border-radius: 999px;
+    background: color-mix(in oklab, var(--rc-sec-accent) 30%, var(--hairline));
   }
 
   .attrProse img,
@@ -1075,6 +1126,113 @@ mark {
   background: color-mix(in oklab, var(--accent) 16%, transparent);
   box-decoration-break: clone;
   -webkit-box-decoration-break: clone;
+}
+
+/* Bilingual inline hints: {{bi:中文|English}} / {{bilink:中文|English|href}} */
+.bi {
+  position: relative;
+  display: inline-block;
+  padding-right: 1.05em; /* reserve space for the tiny hint glyph */
+}
+
+.biZh {
+  display: inline;
+}
+
+.biHintBtn {
+  position: absolute;
+  right: 0;
+  bottom: -0.08em; /* slightly below baseline to feel like “lower-right corner” */
+  width: 22px;
+  height: 22px;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: color-mix(in oklab, var(--muted) 85%, var(--text));
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  line-height: 1;
+  opacity: 0.55;
+}
+
+.biHintGlyph {
+  font-size: 12px;
+  font-weight: 950;
+}
+
+.biBubble {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  margin-top: 8px;
+  max-width: min(340px, 74vw);
+  padding: 8px 10px;
+  border-radius: 12px;
+  border: 1px solid var(--hairline);
+  background: color-mix(in oklab, var(--surface) 92%, var(--surface-2));
+  box-shadow: var(--shadow);
+  color: var(--muted);
+  font-size: var(--text-xs);
+  line-height: 1.35;
+  z-index: 60;
+}
+
+.biEnInline {
+  display: none;
+  margin-top: 8px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid var(--hairline);
+  background: color-mix(in oklab, var(--surface) 90%, var(--surface-2));
+  color: var(--muted);
+  font-size: var(--text-sm);
+  line-height: 1.55;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .biHintBtn {
+    opacity: 0.25;
+  }
+  .bi:hover .biHintBtn,
+  .bi:focus-within .biHintBtn {
+    opacity: 0.9;
+    background: color-mix(in oklab, var(--accent) 10%, transparent);
+  }
+
+  .bi:hover .biBubble,
+  .bi:focus-within .biBubble {
+    display: block;
+  }
+
+  /* Desktop: do not expand inline by click; keep the reading flow clean. */
+  .biEnInline {
+    display: none !important;
+  }
+}
+
+@media (hover: none) and (pointer: coarse) {
+  /* Mobile: show the hint clearly and use “push layout” expansion. */
+  .biHintBtn {
+    opacity: 0.85;
+    width: 28px;
+    height: 28px;
+  }
+  .biHintGlyph {
+    font-size: 13px;
+  }
+
+  .bi[data-open='1'] .biEnInline {
+    display: block;
+  }
+
+  /* Mobile: never show hover tooltip bubble. */
+  .biBubble {
+    display: none !important;
+  }
 }
 
 /* Attractions nested list (md->generated TS preserves indentation, UI must too) */

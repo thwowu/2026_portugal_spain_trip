@@ -1,12 +1,12 @@
 ---
 schema: v1
 cityId: lisbon
-title: 里斯本（Lisbon）延伸行程（詳情）
+title: {{bi:里斯本|Lisbon}}延伸行程（詳情）
 ---
 
-# 里斯本（Lisbon）延伸行程（詳情）
+# {{bi:里斯本|Lisbon}}延伸行程（詳情）
 
-## obidos-nazare | 奧比杜斯（Óbidos）+ 納扎雷（Nazaré）（中世紀小鎮 + 海岸懸崖）
+## obidos-nazare | {{bi:奧比杜斯|Óbidos}}+ {{bi:納扎雷|Nazaré}}（中世紀小鎮 + 海岸懸崖）
 
 - **Key takeaways**：
   - **節奏**：上午 Óbidos（巷弄/城牆看體力）→ 下午 Nazaré（懸崖視角）→ 早點回里斯本。
@@ -58,15 +58,15 @@ title: 里斯本（Lisbon）延伸行程（詳情）
 
 ### sources
 @card: 資料來源與查詢入口：需要核對規則、班次或官方公告可從這裡往下追。
-VisitPortugal（Óbidos）：https://www.visitportugal.com/es/content/obidos
+{{bi:VisitPortugal|Óbidos}}：https://www.visitportugal.com/es/content/obidos
 
 Rick Steves 社群討論（交通/安排經驗）：https://community.ricksteves.com/travel-forum/portugal/nazare-obidos-coimbra-day-tripping-out-of-lisbon
 
 Rede Expressos（官方查班次/買票入口）：https://rede-expressos.pt/pt/horarios-bilhetes
 
-Wikivoyage（Óbidos）：https://en.wikivoyage.org/wiki/%C3%93bidos
+{{bi:Wikivoyage|Óbidos}}：https://en.wikivoyage.org/wiki/%C3%93bidos
 
-Wikivoyage（Nazaré）：https://en.wikivoyage.org/wiki/Nazar%C3%A9
+{{bi:Wikivoyage|Nazaré}}：https://en.wikivoyage.org/wiki/Nazar%C3%A9
 
 ## evora | 埃武拉（Évora；UNESCO 古城：羅馬神殿/老城）
 
@@ -99,13 +99,13 @@ Wikivoyage（Nazaré）：https://en.wikivoyage.org/wiki/Nazar%C3%A9
 
 ### sources
 @card: 資料來源與查詢入口：需要核對規則、班次或官方公告可從這裡往下追。
-VisitPortugal（Évora World Heritage）：https://www.visitportugal.com/en/destinos/alentejo/73787
+{{bi:VisitPortugal|Évora World Heritage}}：https://www.visitportugal.com/en/destinos/alentejo/73787
 
 CP（官方查火車班次）：https://www.cp.pt/passageiros/pt/consultar-horarios
 
 Rede Expressos（官方查班次/買票入口）：https://rede-expressos.pt/pt/horarios-bilhetes
 
-Wikivoyage（Évora）：https://en.wikivoyage.org/wiki/%C3%89vora
+{{bi:Wikivoyage|Évora}}：https://en.wikivoyage.org/wiki/%C3%89vora
 
 ## cascais | 卡斯凱什（Cascais；近郊海岸線：你行程 Day 3）
 
@@ -120,7 +120,7 @@ Wikivoyage（Évora）：https://en.wikivoyage.org/wiki/%C3%89vora
 
 ### how
 @card: 交通與動線重點整理：從 `Cais do Sodré` 直達 Cascais，班次密集很彈性；重點是海岸線慢走＋小鎮氛圍，把它當作低風險回血日。
-先抓結論：Lisboa（Cais do Sodré）↔ Cascais 走 CP 市區線，班次密集，所以這天可以很彈性（不一定要早起衝行程）。
+先抓結論： {{bi:Lisboa|Cais do Sodré}}↔ Cascais 走 CP 市區線，班次密集，所以這天可以很彈性（不一定要早起衝行程）。
 
 順序建議（照做就很順）：
 1. 到 Cais do Sodré 上車 → 到 Cascais 下車。
@@ -132,7 +132,7 @@ Wikivoyage（Évora）：https://en.wikivoyage.org/wiki/%C3%89vora
 
 ### sources
 @card: 資料來源與查詢入口：需要核對規則、班次或官方公告可從這裡往下追。
-CP（Cascais Line / Stations）：https://www.cp.pt/passageiros/en/train-times/Stations/cascais-station
+{{bi:CP|Cascais Line / Stations}}：https://www.cp.pt/passageiros/en/train-times/Stations/cascais-station
 
-Wikivoyage（Cascais）：https://en.wikivoyage.org/wiki/Cascais
+{{bi:Wikivoyage|Cascais}}：https://en.wikivoyage.org/wiki/Cascais
 

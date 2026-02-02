@@ -1,10 +1,10 @@
 ---
 schema: v1
 cityId: lagos
-title: 拉各斯（Lagos）延伸行程（詳情）
+title: {{bi:拉各斯|Lagos}}延伸行程（詳情）
 ---
 
-# 拉各斯（Lagos）延伸行程（詳情）
+# {{bi:拉各斯|Lagos}}延伸行程（詳情）
 
 - Key takeaways:
   - **先挑「今天不想踩的雷」**：風浪？膝蓋？交通成本？先決定，再選題目。
@@ -53,7 +53,7 @@ title: 拉各斯（Lagos）延伸行程（詳情）
 把這句對照到你們會去的點（最常用的連結）：
 
 - **Seven Hanging Valleys / Marinha**：崖頂裂縫/塌陷孔很多，走步道更要避免靠崖緣。
-- **Benagil（Algar de Benagil）**：天窗是「上方弱化後的塌陷」把光打進海蝕洞裡。
+- ** {{bi:Benagil|Algar de Benagil}}**：天窗是「上方弱化後的塌陷」把光打進海蝕洞裡。
 - **Sagres（blowhole 概念）**：海浪把聲音與氣流往上推，風浪大時更有感。
 
 （用「歷史腳手架」看風景）如果你想把海岸線看得更有故事感，這三句很夠用：
@@ -65,11 +65,11 @@ title: 拉各斯（Lagos）延伸行程（詳情）
 ### sources
 @card: 資料來源與查詢入口：步道、海象、交通與安全的連結都在這裡，想核對規則或做最後確認可從這段往下追。
 
-Algarve Portugal Tourism（Seven Hanging Valleys Trail）：https://www.algarveportugaltourism.com/lagoa/seven-hanging-valleys-trail.html
+Algarve Portugal {{bi:Tourism|Seven Hanging Valleys Trail}}：https://www.algarveportugaltourism.com/lagoa/seven-hanging-valleys-trail.html
 
-Lagos Portugal Tourism（Ponta da Piedade）：https://www.lagosportugaltourism.com/guide/ponta-da-piedade.html
+Lagos Portugal {{bi:Tourism|Ponta da Piedade}}：https://www.lagosportugaltourism.com/guide/ponta-da-piedade.html
 
-Geoparque Algarvensis（Geological history）：https://geoparquealgarvensis.pt/en/explore/geological-history
+Geoparque {{bi:Algarvensis|Geological history}}：https://geoparquealgarvensis.pt/en/explore/geological-history
 
 Britannica（blowhole 基本機制）：https://www.britannica.com/science/blowhole-sea-cave
 
@@ -77,21 +77,21 @@ CP（官方網站）：https://www.cp.pt/passageiros/en
 
 SeaTemperature（Algarve 海溫月平均資料）：https://www.seatemperature.org/europe/portugal/algarve/march.htm
 
-Portugal driving laws（roundabout lane rule）：https://portugaldrivinglaws.com/roundabouts.php
+Portugal driving {{bi:laws|roundabout lane rule}}：https://portugaldrivinglaws.com/roundabouts.php
 
-The Portugal News（Algarve cliff collapse warning）：https://www.theportugalnews.com/news/2024-01-16/algarve-cliff-collapse-warning/85153
+The Portugal {{bi:News|Algarve cliff collapse warning}}：https://www.theportugalnews.com/news/2024-01-16/algarve-cliff-collapse-warning/85153
 
-Lagos Portugal Tourism（Slave Market / Mercado de Escravos）：https://www.lagosportugaltourism.com/guide/slave-market.html
+Lagos Portugal {{bi:Tourism|Slave Market / Mercado de Escravos}}：https://www.lagosportugaltourism.com/guide/slave-market.html
 
-Lagos Portugal Tourism（Igreja de Santo António）：https://www.lagosportugaltourism.com/guide/igreja-de-santo-antonio-church-museum.html
+Lagos Portugal {{bi:Tourism|Igreja de Santo António}}：https://www.lagosportugaltourism.com/guide/igreja-de-santo-antonio-church-museum.html
 
-VisitPortugal（Forte da Ponta da Bandeira）：https://www.visitportugal.com/pt-pt/NR/exeres/C411AAEA-06C3-48DE-AF94-F497E49D39D5
+{{bi:VisitPortugal|Forte da Ponta da Bandeira}}：https://www.visitportugal.com/pt-pt/NR/exeres/C411AAEA-06C3-48DE-AF94-F497E49D39D5
 
 Museu de Portimão（museological programme / 前身為罐頭工廠脈絡）：https://museudeportimao.pt/en/museum/museological-mission-and-programme
 
 Wikivoyage（Lagos 城牆與防禦體系脈絡）：https://en.wikivoyage.org/wiki/Lagos
 
-## sagres-cabo | 薩格雷什（Sagres）+ 聖文森特角（Cabo de São Vicente）（西岸懸崖/燈塔）
+## sagres-cabo | {{bi:薩格雷什|Sagres}}+ {{bi:聖文森特角|Cabo de São Vicente}}（西岸懸崖/燈塔）
 
 一句話定位：這天比較像「去看海的規模」，不是跑景點清單。風很大、視野很硬派，但你就算完全不上船，也照樣會覺得值。
 
@@ -115,13 +115,13 @@ Wikivoyage（Lagos 城牆與防禦體系脈絡）：https://en.wikivoyage.org/wi
 
 - 午後從 Lagos 出發 → 先去 `Sagres Fortress`（裡面相對平坦，風吹很大也能用「慢走＋停一下」的節奏）→ 再去 `Cabo` 燈塔短停 → 視體力決定要不要等日落（想等就一定要帶保暖層）→ 回 Lagos 吃晚餐。
 
-堡壘（Fortaleza de Sagres）重點（走進去才值）：
+{{bi:堡壘|Fortaleza de Sagres}}重點（走進去才值）：
 - **環狀散步路線**：沿岬角懸崖邊緣慢慢走一圈；地形相對平坦、視野很開。
-- **A Voz do Mar（Sound Chamber / 海的聲音）**：設在天然裂縫/海蝕洞（blowhole）上方的裝置。風浪越大越有感，但也越冷、越需要防風。
+- **A Voz do Mar（Sound Chamber / 海的聲）**：{{bi:天然裂縫/海蝕洞|blowhole}}上方的裝置。風浪越大越有感，但也越冷、越需要防風。
 - **Rosa dos Ventos（羅盤玫瑰 / 風羅盤）**：這是堡壘最「神祕又標誌性」的一筆。
   - **你會看到什麼**：一個直接刻在地面上的巨大圓形圖案，直徑約 `43 公尺`；走進堡壘內那段寬闊平地，它幾乎就是「在你腳下展開」。
-  - **它為什麼有名**：Sagres 與「恩里克王子（Henry the Navigator）」、以及葡萄牙早期航海探索的象徵綁得很深；這個巨大的圓形遺跡，常被拿來當作「大航海時代起點」的視覺符號。
-  - **傳說 vs. 現代說法（先知道會更舒服）**：所謂「薩格雷什航海學校（School of Sagres）」的具體形貌與運作方式，在史學上其實爭議不少；所以與其把它當作“有一所正式學校在此授課”，不如把它當作「在世界邊界的岬角上，人類開始學會理解風、海與未知」的象徵。
+  - **它為什麼有名**：Sagres 與「 {{bi:恩里克王子|Henry the Navigator}}」、以及葡萄牙早期航海探索的象徵綁得很深；這個巨大的圓形遺跡，常被拿來當作「大航海時代起點」的視覺符號。
+  - **傳說 vs. 現代說法（先知道會更舒服）**：所謂「 {{bi:薩格雷什航海學校|School of Sagres}}」的具體形貌與運作方式，在史學上其實爭議不少；所以與其把它當作“有一所正式學校在此授課”，不如把它當作「在世界邊界的岬角上，人類開始學會理解風、海與未知」的象徵。
   - **看法（最有感、也最省力）**：不用追解釋、也不用走很多路——站在圓心附近停 `30 秒`，往岬角方向看出去，再回頭看腳下的圖案，你會自然把它連到「從恐懼未知到走向遠洋」那股轉折感。
 
 步行友善度（膝蓋友善度重點）：
@@ -168,17 +168,17 @@ Cabo（燈塔）重點（短停就好）：
 
 ### sources
 @card: 資料來源與查詢入口：Vicentina Coast、堡壘官網（時間/票價）、以及航海學校/燈塔等背景連結，想補充脈絡可從這段往下追。
-VisitPortugal（Vicentina Coast）：https://www.visitportugal.com/en/content/vicentina-coast
+{{bi:VisitPortugal|Vicentina Coast}}：https://www.visitportugal.com/en/content/vicentina-coast
 
 Fortaleza de Sagres（官方網站：開放時間）：https://fortalezadesagres.pt/en/useful-information/schedules/
 
 Fortaleza de Sagres（官方網站：票價）：https://fortalezadesagres.pt/en/useful-information/prices/
 
-VisitPortugal（Fortaleza de Sagres）：https://www.visitportugal.com/en/content/fortaleza-de-sagres
+{{bi:VisitPortugal|Fortaleza de Sagres}}：https://www.visitportugal.com/en/content/fortaleza-de-sagres
 
-LagosPortugalGuide（Sagres day trip）：https://www.lagosportugalguide.com/lagos-algarve/sagres-day-trip-from-lagos.html
+{{bi:LagosPortugalGuide|Sagres day trip}}：https://www.lagosportugalguide.com/lagos-algarve/sagres-day-trip-from-lagos.html
 
-Wikivoyage（Sagres）：https://en.wikivoyage.org/wiki/Sagres
+{{bi:Wikivoyage|Sagres}}：https://en.wikivoyage.org/wiki/Sagres
 
 Wikipedia（Escola de Sagres：關於「航海學校」爭議與脈絡）：https://en.wikipedia.org/wiki/Escola_de_Sagres
 
@@ -188,7 +188,7 @@ ArchDaily（A Voz do Mar 介紹）：https://www.archdaily.com/980220/a-voz-do-m
 
 Letzte Bratwurst vor Amerika（餐車梗）：現場看到就買，無需特定連結。
 
-## silves-monchique | 席爾維什（Silves）+ 蒙希克（Monchique）（古城 + 山區）
+## silves-monchique | {{bi:席爾維什|Silves}}+ {{bi:蒙希克|Monchique}}（古城 + 山區）
 
 一句話定位：把節奏從「海岸線」切回「古城＋山城」。Silves 是主菜；Monchique 是天氣好、你還有力氣時再加碼的甜點。
 
@@ -224,7 +224,7 @@ Letzte Bratwurst vor Amerika（餐車梗）：現場看到就買，無需特定�
 4. Caldas de Monchique（溫泉村）：綠意、樹蔭、療養氛圍，很容易讓人喜歡的 Monchique 版本。
    玩法：把它當成「散步＋喝咖啡/下午茶」主菜，而不是追景。
    補充（更貼近日常會在意的點）：
-   - **它為什麼這麼“像療養地”**：Caldas de Monchique 本身就是溫泉鎮（spa town）定位，溫泉/水療文化很成熟；「自羅馬時代以來就有人來用這裡的泉水」這件事，更多是一種歷史與地方傳統的背書。
+   - **它為什麼這麼“像療養地”**：Caldas de Monchique 本身就是 {{bi:溫泉鎮|spa town}}定位，溫泉/水療文化很成熟；「自羅馬時代以來就有人來用這裡的泉水」這件事，更多是一種歷史與地方傳統的背書。
    - **不要把它當醫療承諾**：你可以把它當成一個很舒服的養生儀式——在森林裡慢走、坐下來喝水/喝咖啡、（有興趣再）做 spa/massage；但不需要期待它“治好什麼”。
    - **Monchique 的水很常見**：你在阿爾加維超市/餐廳常會看到 `Monchique` 的瓶裝水（在地人也很習慣喝），把它當成「到此一遊的日常小體驗」就好。
 
@@ -233,7 +233,7 @@ Letzte Bratwurst vor Amerika（餐車梗）：現場看到就買，無需特定�
    - **節奏**：把目標設定成「走 10–20 分鐘 → 坐下喝一杯 → 再走一段」，比追里程更舒服。
    - **可加碼**：如果同行有人想做 spa/massage，這裡就是最合理的地方（預約與開放以當日為準）。
 
-Monchique 小鎮（Town walk）怎麼玩（人文散步版）：
+Monchique {{bi:小鎮|Town walk}}怎麼玩（人文散步版）：
 - **巷弄慢走**：狹窄鵝卵石街道＋小店＋咖啡館；不追景點，追的是山城生活節奏。
 - **視覺差異**：比海岸白房子更“山城”，常見會有更繽紛的房屋色調。
 - **文化駐足點（看到就停一下）**：鎮中心通常會有一兩座教堂；巷弄裡也可能遇到「修道院/宗教建築遺跡」這種意外的歷史感（以現場標示為準）。
@@ -278,21 +278,21 @@ Monchique 省力版本（半日很夠）：Caldas de Monchique（溫泉村）→
 
 想把陰雨天過得更「度假」，可考慮酒莊導覽＋室內品酒，例如 Silves 附近的 `Arvad Winery` 這類型（是否開放、需不需要預約以當日為準）。若有品酒，回程就直接叫車或請酒莊協助安排接送（以當日為準）。
 
-Monchique 的溫泉/下午茶也可當雨天備案：若雨勢不大、想避海風，可以往內陸山城（Monchique）找飯店喝下午茶或做 SPA；但山路可能有霧、視線差時就別勉強。
+Monchique 的溫泉/下午茶也可當雨天備案：若雨勢不大、想避海風， {{bi:可以往內陸山城|Monchique}}找飯店喝下午茶或做 SPA；但山路可能有霧、視線差時就別勉強。
 
 ### sources
 @card: 資料來源與查詢入口：需要核對規則、交通或活動資訊可從這裡往下追。
-Algarve Tourist（Algarve day trips）：https://www.algarve-tourist.com/guides/algarve-day-trips.html
+Algarve {{bi:Tourist|Algarve day trips}}：https://www.algarve-tourist.com/guides/algarve-day-trips.html
 
-LagosPortugalGuide（day trips overview）：https://www.lagosportugalguide.com/lagos-algarve/lagos-day-trips-excursions-portugal.html
+{{bi:LagosPortugalGuide|day trips overview}}：https://www.lagosportugalguide.com/lagos-algarve/lagos-day-trips-excursions-portugal.html
 
-Wikivoyage（Silves）：https://en.wikivoyage.org/wiki/Silves
+{{bi:Wikivoyage|Silves}}：https://en.wikivoyage.org/wiki/Silves
 
 Silves Medieval Fair（活動資訊彙整）：https://www.myguidealgarve.com/events/silves-medieval-fair
 
-Wikipedia（Fóia）：https://en.wikipedia.org/wiki/F%C3%B3ia_(mountain)
+{{bi:Wikipedia|Fóia}}：https://en.wikipedia.org/wiki/F%C3%B3ia_(mountain)
 
-## ferragudo | 費拉古多（Ferragudo）（傳統漁村 + 河口風景）
+## ferragudo | {{bi:費拉古多|Ferragudo}}（傳統漁村 + 河口風景）
 
 一句話定位：半日就很舒服的「河口明信片漁村」。你不用追大景，重點是巷弄慢走，然後找一張河景座位坐下來吃一頓。
 
@@ -326,10 +326,10 @@ Step 2｜Portimão → Ferragudo（河上水上計程車/小船過河）
 你們可以照這個順序走就好：Ferragudo 巷弄慢走 → 河口邊坐下來喝咖啡/吃午餐（很推薦把「吃魚」當成重點）→（想看就看）遠眺 Fort of São João do Arade → 有精神再去海邊收尾（如 Praia Grande 一帶）→ 回程。
 
 五大亮點（把它當成「慢遊選單」，不用全部做完）：
-1. 老城巷弄（Old Town）：白房子＋鵝卵石＋花花草草，拍照很好看；但老城會有坡，請用「走一段就回到平地」的節奏。
-2. 河岸景觀（Arade River views）：Ferragudo 的精華常常不是“景點”，而是「坐在河邊看對岸 Portimão」的反差感。
+1. {{bi:老城巷弄|Old Town}}：白房子＋鵝卵石＋花花草草，拍照很好看；但老城會有坡，請用「走一段就回到平地」的節奏。
+2. {{bi:河岸景觀|Arade River views}}：Ferragudo 的精華常常不是“景點”，而是「坐在河邊看對岸 Portimão」的反差感。
 3. 漁港/漁船氛圍：它仍是運作中的漁村，早晚散步時常能看到漁船與漁獲的日常。
-4. 露天烤魚（Open grill）：把「吃一餐」當主菜最不會後悔；找河岸餐廳點烤魚，配海風與河景，CP 值很高。
+4. {{bi:露天烤魚|Open grill}}：把「吃一餐」當主菜最不會後悔；找河岸餐廳點烤魚，配海風與河景，CP 值很高。
 5. Praia Grande（寬闊平坦的海灘散步）：想走沙灘但不想爬上爬下，Praia Grande 這種平坦長灘很友善（風大就縮短時間）。
 
 小提醒：
@@ -353,11 +353,11 @@ Step 2｜Portimão → Ferragudo（河上水上計程車/小船過河）
 
 ### sources
 @card: 資料來源與查詢入口：需要核對交通、開放或地點資訊可從這裡往下追。
-Wikivoyage（Portimão）：https://en.wikivoyage.org/wiki/Portim%C3%A3o
+{{bi:Wikivoyage|Portimão}}：https://en.wikivoyage.org/wiki/Portim%C3%A3o
 
-Wikivoyage（Ferragudo）：https://en.wikivoyage.org/wiki/Ferragudo
+{{bi:Wikivoyage|Ferragudo}}：https://en.wikivoyage.org/wiki/Ferragudo
 
-## faro | 法魯（Faro）（舊城 + 補給日，一日）
+## faro | {{bi:法魯|Faro}}（舊城 + 補給日，一日）
 
 一句話定位：當你看了很多海岸線後，去 Faro 把節奏切回「城市生活」：老城慢走＋補給。它很適合當休息日，也很適合當強風天的替代方案。
 
@@ -384,12 +384,12 @@ Faro 十大亮點（把它當成「城市慢遊菜單」，不用全部做完）
 2. Igreja do Carmo + Capela dos Ossos（人骨禮拜堂）：全城最“有記憶點”的室內點；如果你或同行有人不喜歡這類題材就直接跳過。
 3. Ria Formosa 自然地景：Faro 的王牌不是海灘本身，而是「城市旁邊就是潟湖濕地」。
 4. 船遊（Boat tour，可選）：想把行程變得更度假，就用 1–2 小時短程把潟湖/沙洲看一圈（以當日供應為準）。
-5. 賞鳥（Birdwatching）：季節對了有機會看到火烈鳥等水鳥；就算不追鳥，也很適合在木棧道/濕地邊散步放空。
+5. {{bi:賞鳥|Birdwatching}}：季節對了有機會看到火烈鳥等水鳥；就算不追鳥，也很適合在木棧道/濕地邊散步放空。
 6. Marina & squares（碼頭＋廣場）：最省力的散步路線之一：走幾步就能坐下喝咖啡，看船、看人、看城市節奏。
 7. 外島海灘（The islands & beaches，可選）：Faro 的海灘多在屏障島上，通常要渡輪/水上計程車；把它當成「有精神才加碼」。
 8. 建築混血感（Roman/Moorish 影響）：你不用上課，走在舊城裡就會感覺到它跟西岸漁村氣質不一樣。
 9. 咖啡＋蛋塔：在舊城或碼頭找一家坐下來，這就是最不會後悔的 Faro 玩法。
-10. 罐頭魚專門店（sardines & tinned fish）：如果你們愛買伴手禮，可以把“精緻罐頭魚”當作 Faro 的小趣味補給（店家以當日為準）。
+10. {{bi:罐頭魚專門店|sardines & tinned fish}}：如果你們愛買伴手禮，可以把“精緻罐頭魚”當作 Faro 的小趣味補給（店家以當日為準）。
 
 ### cost
 @card: 花費/票務與時間成本提醒：交通＋（可選）人骨禮拜堂小額門票＋（可選）潟湖船遊；不做加碼也能很完整，先抓結構就好。
@@ -402,15 +402,15 @@ Faro 十大亮點（把它當成「城市慢遊菜單」，不用全部做完）
 @card: Plan B：下雨就把行程縮成咖啡＋短段散步（Faro 比海岸步道更好撤退）；想逛市場就改去 Olhão，讓雨天也有生活感。
 如果下雨：改成商場/咖啡＋短段散步（Faro 比海岸步道更好撤退）。
 
-如果你本來就打算往東邊走：Olhão 市場（Mercado de Olhão）雨天逛市場比硬跑景點更舒服（以當日開放為準）。
+如果你本來就打算往東邊走：Olhão {{bi:市場|Mercado de Olhão}}雨天逛市場比硬跑景點更舒服（以當日開放為準）。
 
 ### sources
 @card: 資料來源與查詢入口：需要核對規則、交通或官方資訊可從這裡往下追。
-Wikivoyage（Faro）：https://en.wikivoyage.org/wiki/Faro
+{{bi:Wikivoyage|Faro}}：https://en.wikivoyage.org/wiki/Faro
 
 Faro Portugal Tourism（Igreja do Carmo + Capela dos Ossos 參觀資訊）：https://www.faroportugaltourism.com/turismo/guia/igreja-do-carmo-capela-dos-ossos.html
 
-VisitPortugal（Ria Formosa Natural Park）：https://www.visitportugal.com/en/content/parque-natural-da-ria-formosa
+{{bi:VisitPortugal|Ria Formosa Natural Park}}：https://www.visitportugal.com/en/content/parque-natural-da-ria-formosa
 
 CP（查班次）：https://www.cp.pt/passageiros/en
 
@@ -443,11 +443,11 @@ CP（查班次）：https://www.cp.pt/passageiros/en
 
 ### sources
 @card: 資料來源與查詢入口：需要核對規則、自然公園資訊或當日公告可從這裡往下追。
-VisitPortugal（Ria Formosa Natural Park）：https://www.visitportugal.com/en/content/parque-natural-da-ria-formosa
+{{bi:VisitPortugal|Ria Formosa Natural Park}}：https://www.visitportugal.com/en/content/parque-natural-da-ria-formosa
 
-Wikipedia（Ria Formosa）：https://en.wikipedia.org/wiki/Ria_Formosa
+{{bi:Wikipedia|Ria Formosa}}：https://en.wikipedia.org/wiki/Ria_Formosa
 
-## tavira | 塔維拉（Tavira）（東阿爾加維：更安靜的小城）
+## tavira | {{bi:塔維拉|Tavira}}（東阿爾加維：更安靜的小城）
 
 一句話定位：Tavira 是「不追大景、追舒服」的河岸小城；氣質跟 Lagos 很不一樣，但交通成本也更高。你如果想把行程排得輕鬆，回程時間一定要留得更寬鬆。
 
@@ -464,11 +464,11 @@ Wikipedia（Ria Formosa）：https://en.wikipedia.org/wiki/Ria_Formosa
 交通通常需要先到 Faro 再接下一段（看當天班次；回程別壓太晚）。如果你不想轉乘，就直接改去 `faro`，體感會更輕鬆。
 
 Tavira 五大亮點（偏慢遊、很省力的那種）：
-1. 舊城慢走（Historic Old Town）：鵝卵石街道＋白色房子＋小廣場，重點是「舒服」不是「打卡」。
+1. {{bi:舊城慢走|Historic Old Town}}：鵝卵石街道＋白色房子＋小廣場，重點是「舒服」不是「打卡」。
 2. Rio Gilão 河岸：河邊很多地方是平坦散步帶，找一段你喜歡的河景坐下來喝咖啡就很值得。
 3. 橋（常被叫作 Roman Bridge）：你不需要研究它到底是不是“真的羅馬時期”，把它當作「把兩岸串起來、最適合拍河景」的散步點就好。
 4. 渡輪去 Ilha de Tavira（把海灘當成加碼）：Tavira 的有趣之處在於「城在河邊、海灘在島上」，所以坐一段短短的船去看白沙灘，本身就很度假。
-5. 歷史層次（Roman + Moorish）：Tavira 是一座古城，走在街上會看到不同時代疊在一起的建築語氣；很適合用「看城」取代「追景」。
+5. {{bi:歷史層次|Roman + Moorish}}：Tavira 是一座古城，走在街上會看到不同時代疊在一起的建築語氣；很適合用「看城」取代「追景」。
 
 如果你想把「Tavira 的海灘」一起做掉（更像一日遊、但依然要省力）：
 - 先在 Tavira 老城慢走（河岸＋橋＋午餐/咖啡）
@@ -481,15 +481,15 @@ Tavira 五大亮點（偏慢遊、很省力的那種）：
 以官方查詢為準。保守抓法：
 - **交通**：Lagos ↔ Faro ↔ Tavira（可能是火車/巴士組合）
 - **餐飲**：Tavira 適合慢慢吃，預留一餐坐下來很值得
-- **加碼（Ilha de Tavira）**：若搭渡輪/水上計程車會有船票（票價與季節以現場/官方公告為準）
+- ** {{bi:加碼|Ilha de Tavira}}**：若搭渡輪/水上計程車會有船票（票價與季節以現場/官方公告為準）
 
 ### sources
 @card: 資料來源與查詢入口：需要核對規則、交通或官方資訊可從這裡往下追。
-Wikivoyage（Tavira）：https://en.wikivoyage.org/wiki/Tavira
+{{bi:Wikivoyage|Tavira}}：https://en.wikivoyage.org/wiki/Tavira
 
-VisitPortugal（Tavira）：https://www.visitportugal.com/en/NR/exeres/5517ED19-9087-4BA0-B403-47344CD6C198
+{{bi:VisitPortugal|Tavira}}：https://www.visitportugal.com/en/NR/exeres/5517ED19-9087-4BA0-B403-47344CD6C198
 
-## luz | 盧什（Praia da Luz）（安靜鄰居：平坦海濱長廊＋下午茶）
+## luz | {{bi:盧什|Praia da Luz}}（安靜鄰居：平坦海濱長廊＋下午茶）
 
 一句話定位：你如果想要「離 Lagos 最近、最不折騰、又很像度假」的半日，Luz 幾乎是標準答案：海濱長廊平坦好走。主菜就是慢走＋坐下來看海，不需要追景點。
 
@@ -531,11 +531,11 @@ VisitPortugal（Tavira）：https://www.visitportugal.com/en/NR/exeres/5517ED19-
 
 ### sources
 @card: 資料來源與查詢入口：需要核對規則、交通或官方資訊可從這裡往下追。
-Lagos Portugal Tourism（Praia da Luz）：https://www.lagosportugaltourism.com/beaches/praia-da-luz.html
+Lagos Portugal {{bi:Tourism|Praia da Luz}}：https://www.lagosportugaltourism.com/beaches/praia-da-luz.html
 
-Wikipedia（Praia da Luz）：https://en.wikipedia.org/wiki/Praia_da_Luz
+{{bi:Wikipedia|Praia da Luz}}：https://en.wikipedia.org/wiki/Praia_da_Luz
 
-## alvor | 阿爾沃爾（Alvor）（潟湖木棧道：最平最省體力）
+## alvor | {{bi:阿爾沃爾|Alvor}}（潟湖木棧道：最平最省體力）
 
 一句話定位：這是「復健型半日」：幾乎全平地的木棧道，適合膝蓋想休息、但又想出門走走的那天。
 
@@ -560,7 +560,7 @@ Alvor 五大亮點（省力版）：
 1. Ria de Alvor（Alvor 河口/潟湖）：這裡的主角不是“海蝕崖”，而是濕地水道、沙洲與鳥；看的是「安靜感」。
 2. 賞鳥（有機會遇到紅鶴）：季節對、運氣好時可能看到火烈鳥；也常見各種水鳥與猛禽（不需要懂鳥名，看到就很值得）。
 3. Quinta da Rocha 一帶：河口旁的半島/鹽田/濕地地景，是候鳥覓食與停留的典型棲地（春秋更有感）。
-4. A Rocha Delicada（PR1 PTM）可選：想看更完整的河口地景，可以走這條環線的一小段就回頭；但它是步道而非純木棧道，路面可能較原始，請以當天體力為準。
+4. A Rocha {{bi:Delicada|PR1 PTM}}可選：想看更完整的河口地景，可以走這條環線的一小段就回頭；但它是步道而非純木棧道，路面可能較原始，請以當天體力為準。
 5. 鎮中心餐廳密度高：Alvor 很適合把「晚餐＋飯後散步」當成主菜，氛圍偏度假、選擇也多。
 
 小提醒（很實用）：
@@ -573,13 +573,13 @@ Alvor 五大亮點（省力版）：
 
 ### sources
 @card: 資料來源與查詢入口：需要核對規則、步道或官方資訊可從這裡往下追。
-Wikivoyage（Alvor）：https://en.wikivoyage.org/wiki/Alvor
+{{bi:Wikivoyage|Alvor}}：https://en.wikivoyage.org/wiki/Alvor
 
-Via Algarviana（PR1 PTM – A Rocha Delicada）：https://viaalgarviana.org/en/524/pr1-ptm-%E2%80%93-a-rocha-delicada-portimao
+Via {{bi:Algarviana|PR1 PTM – A Rocha Delicada}}：https://viaalgarviana.org/en/524/pr1-ptm-%E2%80%93-a-rocha-delicada-portimao
 
-First Nature（Ria de Alvor Nature Reserve / wildlife）：https://www.first-nature.com/algarve/reserves-riadealvor.php
+First {{bi:Nature|Ria de Alvor Nature Reserve / wildlife}}：https://www.first-nature.com/algarve/reserves-riadealvor.php
 
-## carvoeiro-marinha | 卡爾沃埃羅（Carvoeiro）+ 馬里尼亞海灘（Praia da Marinha）（陸上岩岸代表作）
+## carvoeiro-marinha | {{bi:卡爾沃埃羅|Carvoeiro}}+ {{bi:馬里尼亞海灘|Praia da Marinha}}（陸上岩岸代表作）
 
 一句話定位：這是「不靠出海」也能把阿爾加維代表級岩岸收好的一天：Algar Seco 的岩洞/天然窗 + Marinha 的上方觀景點。重點放在「上面看」，不把自己逼去下沙灘、爬上爬下。
 
@@ -593,7 +593,7 @@ First Nature（Ria de Alvor Nature Reserve / wildlife）：https://www.first-nat
 
 ### how
 @card: 動線照抄：上午 Carvoeiro（Algar Seco/木棧道）→ 午後 Marinha（上方觀景＋短步道）→ 回 Lagos；重點放在「上面看」，不把自己逼去下沙灘爬上爬下。
-最穩走法（可照抄）：上午 Carvoeiro（Algar Seco）→ 午後 Marinha（觀景＋短步道）→ 回 Lagos。
+最穩走法（可照抄）：上午 {{bi:Carvoeiro|Algar Seco}}→ 午後 Marinha（觀景＋短步道）→ 回 Lagos。
 
 省力攻略（視覺享受 > 體力挑戰）：
 - **核心玩法：Carvoeiro Boardwalk（木棧道）**：路面相對平、視野開闊。想省力就把這段當主菜。
@@ -614,14 +614,14 @@ Carvoeiro Top 5（省力版，把「走路量」控制住）：
 - **衣著**：日落看海帶一件薄外套，風起來體感會差很多。
 
 ### backup
-@card: Plan B：只想半日就把主菜留在 Carvoeiro（Algar Seco）即可，回報很直接；把 Marinha 留給天氣好、時間更寬鬆的一天。
-如果只想半日：只做 Carvoeiro（Algar Seco）就很有感。
+@card: Plan B：只想半日就把主菜留在 {{bi:Carvoeiro|Algar Seco}}即可，回報很直接；把 Marinha 留給天氣好、時間更寬鬆的一天。
+如果只想半日：只做 {{bi:Carvoeiro|Algar Seco}}就很有感。
 
 ### sources
 @card: 資料來源與查詢入口：需要核對規則、步道或官方資訊可從這裡往下追。
-Wikivoyage（Carvoeiro）：https://en.wikivoyage.org/wiki/Carvoeiro
+{{bi:Wikivoyage|Carvoeiro}}：https://en.wikivoyage.org/wiki/Carvoeiro
 
-## benagil | 貝納吉爾海洞（Algar de Benagil）（規則很多：看好再去）
+## benagil | {{bi:貝納吉爾海洞|Algar de Benagil}}（規則很多：看好再去）
 
 Benagil 是阿爾加維最「名片級」的海洞，但現在的重點不再是「進去踩沙灘拍照」，而是 在合法方式下、用很短的時間進洞內仰望天窗。如果你抱著老照片那種玩法去，很容易失望或踩規則。（所以我才把它放在延伸：當作「可取消的加碼」會最舒服。）
 
@@ -667,8 +667,8 @@ Benagil 是阿爾加維最「名片級」的海洞，但現在的重點不再是
 
 舒適首選（預訂時就用這個條件去篩）：
 - 10–12 人座 Small Boat，並確認有：
-  - 軟墊座位（Cushioned seats）
-  - 靠背（Back support）
+  - {{bi:軟墊座位|Cushioned seats}}
+  - {{bi:靠背|Back support}}
 - 避開需要跨坐在橡皮艇充氣邊緣的 `RIB / 快艇型`（對腰背與核心負擔大，顛簸感也更直接）。
 
 #### 2) 出發地：強烈建議 Portimão 或 Carvoeiro（不要從 Lagos 硬撐）
@@ -676,7 +676,7 @@ Benagil 是阿爾加維最「名片級」的海洞，但現在的重點不再是
 
 - 方案 A：Carvoeiro 出發（最近、船程最短）
   - **優勢**：距離洞穴近，船程約 15–20 分鐘（海上顛簸時間最短）。
-  - **代價**：常見需要涉水上船（wet boarding）。工作人員會協助，但記得：褲管能捲、鞋子不怕濕更好。
+  - **代價**： {{bi:常見需要涉水上船|wet boarding}}。工作人員會協助，但記得：褲管能捲、鞋子不怕濕更好。
   - **搜尋關鍵字**：`Carvoeiro caves tour from Carvoeiro beach`、`Benagil small boat from Carvoeiro`
 
 - 方案 B：Portimão Marina 出發（上下船最穩、最舒服）
@@ -694,7 +694,7 @@ Benagil 是阿爾加維最「名片級」的海洞，但現在的重點不再是
 預訂前（或到現場）建議用一句話確認的三件事：
 - 能否進洞內（不是只停洞口外）
 - 是否有靠背/軟墊座位
-- **登船方式**：碼頭棧橋上船（Portimão）或涉水上船（Carvoeiro）
+- **登船方式**： {{bi:碼頭棧橋上船|Portimão}} {{bi:或涉水上船|Carvoeiro}}
 
 #### 4) 額外叮嚀（比行程本身更重要）
 - **防暈**：易暈船者建議登船前 30 分鐘吃暈船藥；上船後盡量看水平線、不要低頭滑手機。

@@ -1,7 +1,10 @@
 import { useSettings } from '../state/settings'
 
 export function MotionToggle() {
-  const { motion, uiMode, prefersReducedMotion, setMotion, setUiMode } = useSettings()
+  const {
+    state: { motion, uiMode, prefersReducedMotion },
+    actions: { setMotion, setUiMode },
+  } = useSettings()
 
   return (
     <div style={{ display: 'grid', gap: 8, justifyItems: 'end' }}>

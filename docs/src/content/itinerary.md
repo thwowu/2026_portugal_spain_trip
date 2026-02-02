@@ -11,7 +11,7 @@ schema: v1
   - **交通日不塞景點**：先穩定抵達/入住/補給，隔天再開逛。
   - **上坡/人潮就換 Plan B**：體力與心情優先，能好撤退才是好行程。
 
-## phase phase-lisbon | 里斯本 + 辛特拉（Sintra）（5 天）
+## phase phase-lisbon | 里斯本 + {{bi:辛特拉|Sintra}}（5 天）
 
 ### day 1 | 里斯本 | 抵達日（時差回收）
 - tags: easy
@@ -29,7 +29,7 @@ schema: v1
 - tags: wow, ticket
 - summary:
   - morning: 熱羅尼莫斯修道院（建議早上）
-  - noon: 貝倫（Belém）午餐＋蛋塔、MAAT、河岸散步
+  - noon: {{bi:貝倫|Belém}}午餐＋蛋塔、MAAT、河岸散步
   - evening: 輕收尾調整時差
 - details:
   - notes:
@@ -39,10 +39,10 @@ schema: v1
     - **Plan B（聖週/排隊）**：排隊超過可接受範圍就改 MAAT 外觀＋河岸散步＋蛋塔（不硬追）
     - **安全**：人多處手機別拿在手上一路拍，包包放前面
 
-### day 3 | 里斯本 | 卡斯凱什（Cascais）海岸線＋燈塔（放鬆日）
+### day 3 | 里斯本 | {{bi:卡斯凱什|Cascais}}海岸線＋燈塔（放鬆日）
 - tags: easy
 - summary:
-  - morning: 火車到 卡斯凱什（Cascais），再去燈塔
+  - morning: 火車到 {{bi:卡斯凱什|Cascais}}，再去燈塔
   - noon: 逛衝浪小鎮，回里斯本
   - evening: 休息
 - details:
@@ -53,24 +53,7 @@ schema: v1
     - **Plan B（風雨）**：風大/下雨就改里斯本室內（博物館/逛街/咖啡廳）
     - **安全**：車站/景點人潮照顧包包與手機
 
-### day 4 | 辛特拉（Sintra） | 夢幻宮殿（一日 WOW）
-- tags: wow, ticket
-- summary:
-  - morning: 羅西奧（Rossio）→ 辛特拉（Sintra）火車
-  - noon: 佩納宮（先）→ 摩爾人城堡 → 鎮中心補給 → 雷加萊拉莊園（主菜 1–2 個即可）
-  - evening: 傍晚回里斯本
-- details:
-  - morning: 早出門（避開人潮）＋火車到 辛特拉（Sintra）
-  - noon: 建議「由高往低」：佩納宮（外觀/露台為主）→ 摩爾人城堡 → 鎮中心午餐甜點 → 雷加萊拉莊園（或霧太濃就改 Monserrate/辛特拉宮）
-  - evening: 回里斯本早休息
-  - notes:
-    - **今天目標**：只打 1 個主景點（WOW），平安回里斯本
-    - **時間錨點**：早出門；若有時段票＝以入場時間為全日錨點
-    - **省力走法**：上坡/走路多就把景點縮到 1–2 個主菜；避開佩納宮室內長隊（外觀/露台回報最穩）；需要就短程 Uber/Bolt（通常不貴），不要硬撐走坡
-    - **Plan B（霧牆/聖週/人潮）**：霧太濃就砍掉摩爾人城堡（視野回報歸零），改 Monserrate/辛特拉宮；巴士滿/排隊太久→直接縮到 1–2 個點（或回鎮上慢走）；錯過時段→立刻換備案（不硬追）
-    - **安全**：熱門景點與車站人擠人，包包放前、手機收好
-
-### day 5 | 里斯本 | 文化＋高處視角日
+### day 4 | 里斯本 | 文化＋高處視角日
 - tags: rain_ok
 - summary:
   - morning: 磁磚博物館（主菜）
@@ -84,9 +67,26 @@ schema: v1
     - **Plan B（下雨）**：下雨就改室內博物館/逛街，不走石板上坡路
     - **安全**：過馬路多留意（車不一定讓人）
 
-## phase phase-lagos | 阿爾加維・拉各斯（Lagos）（3 天）
+### day 5 | {{bi:辛特拉|Sintra}} | 夢幻宮殿（一日 WOW）
+- tags: wow, ticket
+- summary:
+  - morning: {{bi:羅西奧|Rossio}}→ {{bi:辛特拉|Sintra}}火車
+  - noon: 佩納宮（先）→ 摩爾人城堡 → 鎮中心補給 → 雷加萊拉莊園（主菜 1–2 個即可）
+  - evening: 傍晚回里斯本
+- details:
+  - morning: 早出門（避開人潮）＋火車到 {{bi:辛特拉|Sintra}}
+  - noon: 建議「由高往低」：佩納宮（外觀/露台為主）→ 摩爾人城堡 → 鎮中心午餐甜點 → 雷加萊拉莊園（或霧太濃就改 Monserrate/辛特拉宮）
+  - evening: 回里斯本早休息
+  - notes:
+    - **今天目標**：只打 1 {{bi:個主景點|WOW}}，平安回里斯本
+    - **時間錨點**：早出門；若有時段票＝以入場時間為全日錨點
+    - **省力走法**：上坡/走路多就把景點縮到 1–2 個主菜；避開佩納宮室內長隊（外觀/露台回報最穩）；需要就短程 Uber/Bolt（通常不貴），不要硬撐走坡
+    - **Plan B（霧牆/聖週/人潮）**：霧太濃就砍掉摩爾人城堡（視野回報歸零），改 Monserrate/辛特拉宮；巴士滿/排隊太久→直接縮到 1–2 個點（或回鎮上慢走）；錯過時段→立刻換備案（不硬追）
+    - **安全**：熱門景點與車站人擠人，包包放前、手機收好
 
-### day 6 | 拉各斯（Lagos） | 里斯本 → 拉各斯（交通日）
+## phase phase-lagos | {{bi:阿爾加維・拉各斯|Lagos}}（3 天）
+
+### day 6 | {{bi:拉各斯|Lagos}} | 里斯本 → 拉各斯（交通日）
 - tags: travel_day
 - summary:
   - morning: 火車約 4 小時
@@ -100,7 +100,7 @@ schema: v1
     - **Plan B（聖週/班次）**：不要壓末班；遇到延誤就直接取消晚間行程
     - **安全**：拖行李時最容易分心，顧好包包與證件
 
-### day 7 | 拉各斯（Lagos） | 皮耶達德角（Ponta da Piedade；WOW）
+### day 7 | {{bi:拉各斯|Lagos}} | {{bi:皮耶達德角|Ponta da Piedade；WOW}}
 - tags: wow, easy
 - summary:
   - morning: 上方步道＋觀景台
@@ -114,12 +114,12 @@ schema: v1
     - **Plan B（風大）**：風大就縮短停留，只在安全觀景點拍照後撤退
     - **安全**：崖邊別站太靠外，人多時避免被推擠
 
-### day 8 | 拉各斯（Lagos） | 貝納吉爾藍洞（Benagil；WOW）
+### day 8 | {{bi:拉各斯|Lagos}} | {{bi:貝納吉爾藍洞|Benagil；WOW}}
 - tags: wow
 - summary:
-  - morning: 貝納吉爾（Benagil）搭船
-  - noon: 卡爾沃埃羅（Carvoeiro）/ 馬里尼亞海灘（Marinha）擇
-  - evening: 回 拉各斯（Lagos）
+  - morning: {{bi:貝納吉爾|Benagil}}搭船
+  - noon: {{bi:卡爾沃埃羅|Carvoeiro}}/ {{bi:馬里尼亞海灘|Marinha}}擇
+  - evening: 回 {{bi:拉各斯|Lagos}}
 - details:
   - notes:
     - **今天目標**：完成 1 次海上行程（成行就賺到）
@@ -130,7 +130,7 @@ schema: v1
 
 ## phase phase-seville-granada | 塞維爾 + 格拉納達
 
-### day 9 | 塞維爾 | 拉各斯（Lagos）→ 塞維爾（交通日）
+### day 9 | 塞維爾 | {{bi:拉各斯|Lagos}}→ 塞維爾（交通日）
 - tags: travel_day
 - summary:
   - morning: 首班巴士（早班）
@@ -167,7 +167,7 @@ schema: v1
     - **Plan B（聖週/封路）**：遇到封路/人潮→留在公園周邊或車站附近，不跨區奔波
     - **安全**：車站/人潮區顧好包包，別把手機放外套口袋
 
-### day 11 | 格拉納達 | 阿爾罕布拉宮（WOW）
+### day 11 | 格拉納達 | {{bi:阿爾罕布拉宮|WOW}}
 - tags: wow, ticket
 - summary:
   - morning: 宮殿完整時段（需預約）
@@ -201,9 +201,9 @@ schema: v1
 ### day 13 | 馬德里 | 文化之日
 - tags: rain_ok, ticket
 - summary:
-  - morning: 索菲亞王后國家藝術中心（Reina Sofía）
+  - morning: {{bi:索菲亞王后國家藝術中心|Reina Sofía}}
   - noon: 阿托查熱帶花園/市集
-  - evening: 麗池公園（Retiro）＋ Gran Vía 夜景（或 Debod 夕陽）
+  - evening: {{bi:麗池公園|Retiro}}＋ Gran Vía 夜景（或 Debod 夕陽）
 - details:
   - notes:
     - **今天目標**：用博物館＋公園把馬德里“慢慢看”

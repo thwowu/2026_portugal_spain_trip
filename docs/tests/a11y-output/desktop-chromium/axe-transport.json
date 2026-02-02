@@ -13,7 +13,7 @@
     "orientationAngle": 0,
     "orientationType": "landscape-primary"
   },
-  "timestamp": "2026-02-01T20:51:19.058Z",
+  "timestamp": "2026-02-02T11:50:46.765Z",
   "url": "http://127.0.0.1:4173/transport",
   "toolOptions": {
     "reporter": "v1"
@@ -6318,7 +6318,7 @@
           ],
           "none": [],
           "impact": null,
-          "html": "<div style=\"display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap;\"><div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">里斯本（Lisbon）→ 拉各斯（Lagos）</div></div>",
+          "html": "<div style=\"display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap;\"><div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">{{bi:里斯本|Lisbon}}→ {{bi:拉各斯|Lagos}}</div></div>",
           "target": [
             "#seg-lisbon-lagos > .card > .cardInner > div:nth-child(1)"
           ]
@@ -6350,7 +6350,7 @@
           ],
           "none": [],
           "impact": null,
-          "html": "<div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">里斯本（Lisbon）→ 拉各斯（Lagos）</div>",
+          "html": "<div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">{{bi:里斯本|Lisbon}}→ {{bi:拉各斯|Lagos}}</div>",
           "target": [
             "#seg-lisbon-lagos > .card > .cardInner > div:nth-child(1) > div"
           ]
@@ -7022,7 +7022,7 @@
           ],
           "none": [],
           "impact": null,
-          "html": "<div style=\"display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap;\"><div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">拉各斯（Lagos）→ 塞維爾（Seville）</div></div>",
+          "html": "<div style=\"display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap;\"><div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">{{bi:拉各斯|Lagos}}→ {{bi:塞維爾|Seville}}</div></div>",
           "target": [
             "#seg-lagos-seville > .card > .cardInner > div:nth-child(1)"
           ]
@@ -7054,7 +7054,7 @@
           ],
           "none": [],
           "impact": null,
-          "html": "<div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">拉各斯（Lagos）→ 塞維爾（Seville）</div>",
+          "html": "<div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">{{bi:拉各斯|Lagos}}→ {{bi:塞維爾|Seville}}</div>",
           "target": [
             "#seg-lagos-seville > .card > .cardInner > div:nth-child(1) > div"
           ]
@@ -7758,7 +7758,7 @@
           ],
           "none": [],
           "impact": null,
-          "html": "<div style=\"display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap;\"><div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">塞維爾（Seville）→ 格拉納達（Granada）</div></div>",
+          "html": "<div style=\"display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap;\"><div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">{{bi:塞維爾|Seville}}→ {{bi:格拉納達|Granada}}</div></div>",
           "target": [
             "#seg-seville-granada > .card > .cardInner > div:nth-child(1)"
           ]
@@ -7790,7 +7790,7 @@
           ],
           "none": [],
           "impact": null,
-          "html": "<div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">塞維爾（Seville）→ 格拉納達（Granada）</div>",
+          "html": "<div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">{{bi:塞維爾|Seville}}→ {{bi:格拉納達|Granada}}</div>",
           "target": [
             "#seg-seville-granada > .card > .cardInner > div:nth-child(1) > div"
           ]
@@ -8430,7 +8430,7 @@
           ],
           "none": [],
           "impact": null,
-          "html": "<div style=\"display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap;\"><div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">格拉納達（Granada）→ 馬德里（Madrid）</div></div>",
+          "html": "<div style=\"display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap;\"><div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">{{bi:格拉納達|Granada}}→ {{bi:馬德里|Madrid}}</div></div>",
           "target": [
             "#seg-granada-madrid > .card > .cardInner > div:nth-child(1)"
           ]
@@ -8462,7 +8462,7 @@
           ],
           "none": [],
           "impact": null,
-          "html": "<div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">格拉納達（Granada）→ 馬德里（Madrid）</div>",
+          "html": "<div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">{{bi:格拉納達|Granada}}→ {{bi:馬德里|Madrid}}</div>",
           "target": [
             "#seg-granada-madrid > .card > .cardInner > div:nth-child(1) > div"
           ]
@@ -9739,7 +9739,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">里斯本（Lisbon）→ 拉各斯（Lagos）</div>",
+          "html": "<div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">{{bi:里斯本|Lisbon}}→ {{bi:拉各斯|Lagos}}</div>",
           "target": [
             "#seg-lisbon-lagos > .card > .cardInner > div:nth-child(1) > div"
           ]
@@ -10189,7 +10189,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">拉各斯（Lagos）→ 塞維爾（Seville）</div>",
+          "html": "<div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">{{bi:拉各斯|Lagos}}→ {{bi:塞維爾|Seville}}</div>",
           "target": [
             "#seg-lagos-seville > .card > .cardInner > div:nth-child(1) > div"
           ]
@@ -10664,7 +10664,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">塞維爾（Seville）→ 格拉納達（Granada）</div>",
+          "html": "<div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">{{bi:塞維爾|Seville}}→ {{bi:格拉納達|Granada}}</div>",
           "target": [
             "#seg-seville-granada > .card > .cardInner > div:nth-child(1) > div"
           ]
@@ -11039,7 +11039,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">格拉納達（Granada）→ 馬德里（Madrid）</div>",
+          "html": "<div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">{{bi:格拉納達|Granada}}→ {{bi:馬德里|Madrid}}</div>",
           "target": [
             "#seg-granada-madrid > .card > .cardInner > div:nth-child(1) > div"
           ]
@@ -15300,7 +15300,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div style=\"display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap;\"><div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">里斯本（Lisbon）→ 拉各斯（Lagos）</div></div>",
+          "html": "<div style=\"display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap;\"><div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">{{bi:里斯本|Lisbon}}→ {{bi:拉各斯|Lagos}}</div></div>",
           "target": [
             "#seg-lisbon-lagos > .card > .cardInner > div:nth-child(1)"
           ]
@@ -15320,7 +15320,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">里斯本（Lisbon）→ 拉各斯（Lagos）</div>",
+          "html": "<div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">{{bi:里斯本|Lisbon}}→ {{bi:拉各斯|Lagos}}</div>",
           "target": [
             "#seg-lisbon-lagos > .card > .cardInner > div:nth-child(1) > div"
           ]
@@ -16460,7 +16460,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div style=\"display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap;\"><div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">拉各斯（Lagos）→ 塞維爾（Seville）</div></div>",
+          "html": "<div style=\"display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap;\"><div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">{{bi:拉各斯|Lagos}}→ {{bi:塞維爾|Seville}}</div></div>",
           "target": [
             "#seg-lagos-seville > .card > .cardInner > div:nth-child(1)"
           ]
@@ -16480,7 +16480,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">拉各斯（Lagos）→ 塞維爾（Seville）</div>",
+          "html": "<div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">{{bi:拉各斯|Lagos}}→ {{bi:塞維爾|Seville}}</div>",
           "target": [
             "#seg-lagos-seville > .card > .cardInner > div:nth-child(1) > div"
           ]
@@ -17640,7 +17640,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div style=\"display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap;\"><div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">塞維爾（Seville）→ 格拉納達（Granada）</div></div>",
+          "html": "<div style=\"display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap;\"><div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">{{bi:塞維爾|Seville}}→ {{bi:格拉納達|Granada}}</div></div>",
           "target": [
             "#seg-seville-granada > .card > .cardInner > div:nth-child(1)"
           ]
@@ -17660,7 +17660,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">塞維爾（Seville）→ 格拉納達（Granada）</div>",
+          "html": "<div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">{{bi:塞維爾|Seville}}→ {{bi:格拉納達|Granada}}</div>",
           "target": [
             "#seg-seville-granada > .card > .cardInner > div:nth-child(1) > div"
           ]
@@ -18620,7 +18620,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div style=\"display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap;\"><div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">格拉納達（Granada）→ 馬德里（Madrid）</div></div>",
+          "html": "<div style=\"display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap;\"><div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">{{bi:格拉納達|Granada}}→ {{bi:馬德里|Madrid}}</div></div>",
           "target": [
             "#seg-granada-madrid > .card > .cardInner > div:nth-child(1)"
           ]
@@ -18640,7 +18640,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">格拉納達（Granada）→ 馬德里（Madrid）</div>",
+          "html": "<div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">{{bi:格拉納達|Granada}}→ {{bi:馬德里|Madrid}}</div>",
           "target": [
             "#seg-granada-madrid > .card > .cardInner > div:nth-child(1) > div"
           ]

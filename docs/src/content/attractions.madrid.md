@@ -1,10 +1,10 @@
 ---
 schema: v1
 cityId: madrid
-title: 馬德里（Madrid）
+title: {{bi:馬德里|Madrid}}
 ---
 
-# 馬德里（Madrid）
+# {{bi:馬德里|Madrid}}
 
 讀法：路線看 `routes`；雨天看 `rain`；吃什麼看 `food`；安全看 `safety`。
 
@@ -19,29 +19,29 @@ title: 馬德里（Madrid）
 ### Day 12 *（晚到/緩衝）*：先用「馬德里城市感」開機
 @card: 晚到那晚先用 Gran Vía → Sol/Plaza Mayor 開機：大路好走、城市感直接，走一段就完成「到馬德里了」的儀式感與方向感。
 
-#### [格蘭大道（Gran Vía）](https://www.google.com/maps/search/?api=1&query=Gran%20V%C3%ADa%20Madrid) *（夜景/電影感；大路好走）* *（夜景/電影感；大路好走）*
+#### {{bilink:格蘭大道|Gran Vía|https://www.google.com/maps/search/?api=1&query=Gran%20V%C3%ADa%20Madrid}} *（夜景/電影感；大路好走）* *（夜景/電影感；大路好走）*
 {{gallery:Gran Vía|https://source.unsplash.com/K1_BKJO583A/1800x1200|https://source.unsplash.com/s_alWUC7_Ro/1800x1200|https://source.unsplash.com/todqwBAEpfM/1800x1200|https://source.unsplash.com/cXU6tNxhub0/1800x1200}}
 
 晚到那天先走 Gran Vía 就好：大路好走、街景密度高，走一段就會有「到馬德里了」的感覺。
 
 小加分：路口的 `Metrópolis` 圓頂很好認，拍一張當作今晚收尾剛剛好。
 
-#### [太陽門／主廣場（Puerta del Sol / Plaza Mayor）](https://www.google.com/maps/search/?api=1&query=Puerta%20del%20Sol%20Plaza%20Mayor%20Madrid)
+#### {{bilink:太陽門／ 主廣場|Puerta del Sol Plaza Mayor Madrid|https://www.google.com/maps/search/?api=1&query=Puerta%20del%20Sol%20Plaza%20Mayor%20Madrid}}
 {{gallery:Sol / Plaza Mayor|https://source.unsplash.com/ufm2_BJBRGc/1800x1200|https://source.unsplash.com/moCexie9Qbo/1800x1200|https://source.unsplash.com/K1_BKJO583A/1800x1200|https://source.unsplash.com/cXU6tNxhub0/1800x1200}}
 
 把這一段當成「認路用」：不必久留，但走過一圈，你會比較知道自己在市中心哪裡。
 
-Sol 的小任務：看到「零公里（Km 0）」標誌、以及「熊與草莓樹」（馬德里市徽）就算完成。
+Sol 的小任務：看到「 {{bi:零公里|Km 0}}」標誌、以及「熊與草莓樹」（馬德里市徽）就算完成。
 
-#### [聖米格爾市場（Mercado de San Miguel）](https://www.google.com/maps/search/?api=1&query=Mercado%20de%20San%20Miguel%20Madrid) *：點心站（吃 2–3 樣就撤退）* *：點心站（吃 2–3 樣就撤退）*
+#### {{bilink:聖米格爾市場|Mercado de San Miguel|https://www.google.com/maps/search/?api=1&query=Mercado%20de%20San%20Miguel%20Madrid}} *：點心站（吃 2–3 樣就撤退）* *：點心站（吃 2–3 樣就撤退）*
 {{gallery:Mercado de San Miguel|https://source.unsplash.com/XJ6u9E2WyMo/1800x1200|https://source.unsplash.com/oBQIWhy2Obs/1800x1200|https://source.unsplash.com/-fAUftK9QPI/1800x1200}}
 
 把它當成「點心站」最剛好：挑 2–3 樣想吃的就撤退，時間和預算比較好控。人多時顧好手機/錢包。
 
 ### Day 13 *（文化之日）*：一館＋一個公園，就很完整
-@card: 一館＋一個公園就很完整：用 Reina Sofía 把現代藝術的主菜吃到（Guernica），再去 Retiro 當降噪段，把文化與休息放在同一個節奏裡。
+@card: 一館＋一個公園就很完整：用 Reina Sofía 把現代藝術的 {{bi:主菜吃到|Guernica}}，再去 Retiro 當降噪段，把文化與休息放在同一個節奏裡。
 
-#### [索菲亞王后國家藝術中心（Reina Sofía / Museo Reina Sofía）](https://www.google.com/maps/search/?api=1&query=Museo%20Reina%20Sof%C3%ADa%20Madrid) *（Guernica《格爾尼卡》；建議早到/開門就到）* *（Guernica《格爾尼卡》；建議早到/開門就到）*
+#### {{bilink:索菲亞王后國家藝術中心|Reina Sofía / Museo Reina Sofía|https://www.google.com/maps/search/?api=1&query=Museo%20Reina%20Sof%C3%ADa%20Madrid}} *（Guernica《格爾尼卡》；建議早到/開門就到）* *（Guernica《格爾尼卡》；建議早到/開門就到）*
 {{gallery:Reina Sofía|https://source.unsplash.com/EuHDnOXodak/1800x1200|https://source.unsplash.com/uB1Quc9_Hko/1800x1200|https://source.unsplash.com/cXU6tNxhub0/1800x1200}}
 
 如果你只選一個近代/現代大館，這裡最有代表性。建議早到，先把 Guernica 看完，再慢慢逛會舒服很多。
@@ -51,23 +51,23 @@ Sol 的小任務：看到「零公里（Km 0）」標誌、以及「熊與草莓
 
 同一個動線上就能用室內綠意休息一下（10–20 分鐘很剛好）。你如果剛好要搭車/轉乘，順路繞進去最省力。
 
-#### [麗池公園（Parque del Retiro）](https://www.google.com/maps/search/?api=1&query=Parque%20del%20Retiro%20Madrid) *（含水晶宮；平路好走、長椅多）* *（含水晶宮；平路好走、長椅多）*
+#### {{bilink:麗池公園|Parque del Retiro|https://www.google.com/maps/search/?api=1&query=Parque%20del%20Retiro%20Madrid}} *（含水晶宮；平路好走、長椅多）* *（含水晶宮；平路好走、長椅多）*
 {{gallery:Retiro|https://source.unsplash.com/QlLTj9dgbOk/1800x1200|https://source.unsplash.com/ONXX00obH28/1800x1200|https://source.unsplash.com/0aB2bvIOcZs/1800x1200}}
 
-把它當成「降噪段」就好：平路好走、長椅多，走累了也好休息。水晶宮（Palacio de Cristal）很上相，走到那裡拍幾張、坐一下，就很值得。
+把它當成「降噪段」就好：平路好走、長椅多，走累了也好休息。 {{bi:水晶宮|Palacio de Cristal}}很上相，走到那裡拍幾張、坐一下，就很值得。
 
 （順路可收）`Puerta de Alcalá` 在公園周邊，路過拍一張就有城市標誌感。
 
-### [（選配）馬德里王宮（Royal Palace）＋東方廣場](https://www.google.com/maps/search/?api=1&query=Royal%20Palace%20of%20Madrid)
+### {{bilink:（選配） 馬德里王宮＋東方廣場|Royal Palace of Madrid|https://www.google.com/maps/search/?api=1&query=Royal%20Palace%20of%20Madrid}}
 @card: 想補「首都大場面」就用王宮一帶：不進去也能靠外觀＋東方廣場拿到氣勢；若要入內，先把票務與時段鎖好避免排隊拖節奏。
 {{gallery:Royal Palace|https://source.unsplash.com/0jUWesk1I5U/1800x1200|https://source.unsplash.com/Tol_xw9Y22w/1800x1200|https://source.unsplash.com/LjJV56L48CQ/1800x1200|https://source.unsplash.com/uB1Quc9_Hko/1800x1200}}
 
 不一定要進去；外觀＋廣場走一圈就很有感。想進去的話，建議先查好票務/時段，避免把時間花在排隊。
 
-#### [（同區加分）阿穆德納聖母主教座堂（Almudena Cathedral）](https://www.google.com/maps/search/?api=1&query=Almudena%20Cathedral%20Madrid)
+#### {{bilink:（同區加分） 阿穆德納聖母主教座堂|Almudena Cathedral Madrid|https://www.google.com/maps/search/?api=1&query=Almudena%20Cathedral%20Madrid}}
 就在王宮旁邊，同動線一起收很省力。想要視野再看體力決定要不要上去（不用硬上）。
 
-#### [（同區加分）皇家劇院（Teatro Real）](https://www.google.com/maps/search/?api=1&query=Teatro%20Real%20Madrid)
+#### {{bilink:（同區加分） 皇家劇院|Teatro Real Madrid|https://www.google.com/maps/search/?api=1&query=Teatro%20Real%20Madrid}}
 在 `Plaza de Oriente` 一帶，路過看看外觀就很夠；想更深入再加導覽/歌劇即可。
 
 ### [（選配）Prado](https://www.google.com/maps/search/?api=1&query=Museo%20del%20Prado%20Madrid) / Thyssen [Thyssen-Bornemisza Museum Madrid](https://www.google.com/maps/search/?api=1&query=Thyssen-Bornemisza%20Museum%20Madrid)（二選一就好） / Thyssen### [（選配）Prado [Museo del Prado Madrid](https://www.google.com/maps/search/?api=1&query=Museo%20del%20Prado%20Madrid) / Thyssen](https://www.google.com/maps/search/?api=1&query=Thyssen-Bornemisza%20Museum%20Madrid)（二選一就好）（二選一就好）
@@ -214,7 +214,7 @@ San Miguel 不要在這裡解決一整餐，很容易超預算（把它當點心
 3. 天氣與營業時間要抓保守（四月初早晚溫差大；Easter Sunday 可能縮短營業）。
 
 補充細節：
-- 索菲亞王后國家藝術中心（Reina Sofía）常見週二休館（以官網公告為準）。Guernica 在館內固定展區，建議早到避人潮。
+- {{bi:索菲亞王后國家藝術中心|Reina Sofía}}常見週二休館（以官網公告為準）。Guernica 在館內固定展區，建議早到避人潮。
 - Royal Palace 票務屬 Patrimonio Nacional。遇官方活動可能臨時關閉/限流。
 - 四月初白天約 18–20°C、晚上約 8–10°C，帶薄外套；偶爾下雨帶折傘。Easter Sunday（2026/4/5）部分店家/景點可能縮短營業。
 
@@ -234,8 +234,8 @@ refs：`https://entradas.museoreinasofia.es/en/?lang=es`、`https://tickets.patr
 @card: 第一次來最穩的城市節奏：一段散步建立方向感、一段補給坐下來回血、最後用免費高點收尾；把馬德里跑成舒服的網格城市。
 第一次來最省腦的三件套是：巧克力吉拿棒、炸魷魚三明治、馬德里燉鍋。
 
-- 巧克力吉拿棒（churros con chocolate）：更適合早餐或宵夜；`Chocolatería San Ginés` 這種 24/7 老店很方便。
-- 炸魷魚三明治（bocadillo de calamares）：主廣場周邊的平民名物，像 `La Campana` 這種店快速又直接。
+- {{bi:巧克力吉拿棒|churros con chocolate}}：更適合早餐或宵夜；`Chocolatería San Ginés` 這種 24/7 老店很方便。
+- {{bi:炸魷魚三明治|bocadillo de calamares}}：主廣場周邊的平民名物，像 `La Campana` 這種店快速又直接。
 - cocido madrileño（馬德里燉鍋）：冷天很踏實，建議放在中午吃（份量通常不小）。
 
 ### Tortilla（西班牙烘蛋）：在馬德里真的很值得專程吃
@@ -262,7 +262,7 @@ refs：`https://entradas.museoreinasofia.es/en/?lang=es`、`https://tickets.patr
 
 ### 甜點/伴手禮（喜歡「傳統老派」就看這段）
 @card: 喜歡傳統老派就看這段：把修道院餅乾、杜隆糖與傳統酥餅等好帶走的選擇整理好，讓味覺記憶延續到回家也更好送人。
-想買「有故事」的甜點，可以留意修道院餅乾（convento sweets）：有些修道院用轉盤窗口販售，流程很特別。
+想買「有故事」的甜點， {{bi:可以留意修道院餅乾|convento sweets}}：有些修道院用轉盤窗口販售，流程很特別。
 
 但它的開放時間與當天供應很看季節與現場狀況，建議當作「路過遇到就買」的加碼點，不要把它排成必達。
 
@@ -284,7 +284,7 @@ refs：`https://entradas.museoreinasofia.es/en/?lang=es`、`https://tickets.patr
 
 ## photo
 
-![Plaza Mayor（Madrid）](https://source.unsplash.com/NqHJ-ogQRZQ/1600x1000)
+! {{bilink:Plaza Mayor|Madrid|https://source.unsplash.com/NqHJ-ogQRZQ/1600x1000}}
 
 高回報畫面大多集中在幾個點：Gran Vía 夜景、水晶宮、皇宮廣場、Cibeles 噴泉與市政宮周邊。
 如果你不想跑很多地方，就挑其中 2–3 個拍到滿意就好。

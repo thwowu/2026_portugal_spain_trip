@@ -1,10 +1,10 @@
 ---
 schema: v1
 segmentId: granada-madrid
-title: 格拉納達（Granada）→ 馬德里（Madrid）
+title: {{bi:格拉納達|Granada}}→ {{bi:馬德里|Madrid}}
 ---
 
-# 格拉納達（Granada）→ 馬德里（Madrid）
+# {{bi:格拉納達|Granada}}→ {{bi:馬德里|Madrid}}
 
 讀法：先看 `tldr` 抓結論；再看 `options`（bus/train）走細節。
 
@@ -18,7 +18,7 @@ title: 格拉納達（Granada）→ 馬德里（Madrid）
   - 有大行李：訂票時把行李與座位規則先看過，當天會順很多。
 
 ## options
-### train | 火車（AVE）
+### train | {{bi:火車|AVE}}
 - summary: 約 3.5 小時，直達為主。
 - steps:
   - 先在 Renfe 查 `Granada` → `Madrid`，並留意「抵達站點」。

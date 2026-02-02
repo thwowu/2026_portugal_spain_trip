@@ -1,7 +1,106 @@
-import React from 'react'
+import React, { useId, useMemo, useState } from 'react'
 import { IconGoogleMaps } from './NavIcons'
 import { parseBasicBlocks } from '../markdownLite/blocks'
 import { tokenizeInline } from '../markdownLite/inline'
+import { sanitizeHref } from '../utils/sanitizeHref'
+
+function toSafeDomId(raw: string) {
+  const s = (raw ?? '').toString()
+  const cleaned = s.replace(/[^a-zA-Z0-9_-]/g, '')
+  return cleaned || 'id'
+}
+
+function BilingualInline({ zh, en }: { zh: string; en: string }) {
+  const [open, setOpen] = useState(false)
+  const rid = useId()
+  const safe = useMemo(() => toSafeDomId(rid), [rid])
+  const inlineId = `bi-en-${safe}`
+  const bubbleId = `bi-tip-${safe}`
+
+  return (
+    <span className="bi" data-open={open ? '1' : '0'}>
+      <span className="biZh">{zh}</span>
+
+      <button
+        type="button"
+        className="biHintBtn"
+        aria-expanded={open}
+        aria-controls={inlineId}
+        aria-describedby={bubbleId}
+        aria-label={open ? `隱藏英文：${zh}` : `顯示英文：${zh}`}
+        onClick={() => setOpen((v) => !v)}
+      >
+        <span aria-hidden="true" className="biHintGlyph">
+          {open ? '◃' : '►'}
+        </span>
+      </button>
+
+      {/* Desktop hover/focus tooltip (CSS-controlled). */}
+      <span id={bubbleId} role="tooltip" className="biBubble" aria-hidden="true">
+        {en}
+      </span>
+
+      {/* Mobile expand: push layout (rendered when open so tests can assert easily). */}
+      {open ? (
+        <span id={inlineId} className="biEnInline">
+          {en}
+        </span>
+      ) : null}
+    </span>
+  )
+}
+
+function BilingualLinkInline({ zh, en, href }: { zh: string; en: string; href: string }) {
+  const [open, setOpen] = useState(false)
+  const rid = useId()
+  const safe = useMemo(() => toSafeDomId(rid), [rid])
+  const inlineId = `bi-en-${safe}`
+  const bubbleId = `bi-tip-${safe}`
+
+  const safeHref = useMemo(() => sanitizeHref(href), [href])
+  const isMaps = safeHref ? isGoogleMapsHref(safeHref) : false
+
+  return (
+    <span className="bi" data-open={open ? '1' : '0'}>
+      <span className="biZh">
+        {safeHref ? (
+          <a href={safeHref} target="_blank" rel="noreferrer noopener" title={safeHref}>
+            {zh}
+          </a>
+        ) : (
+          zh
+        )}
+      </span>
+
+      {/* Keep existing Maps icon UX. */}
+      {isMaps && safeHref ? renderMapsIconLink({ key: `${safe}-maps`, href: safeHref }) : null}
+
+      <button
+        type="button"
+        className="biHintBtn"
+        aria-expanded={open}
+        aria-controls={inlineId}
+        aria-describedby={bubbleId}
+        aria-label={open ? `隱藏英文：${zh}` : `顯示英文：${zh}`}
+        onClick={() => setOpen((v) => !v)}
+      >
+        <span aria-hidden="true" className="biHintGlyph">
+          {open ? '◃' : '►'}
+        </span>
+      </button>
+
+      <span id={bubbleId} role="tooltip" className="biBubble" aria-hidden="true">
+        {en}
+      </span>
+
+      {open ? (
+        <span id={inlineId} className="biEnInline">
+          {en}
+        </span>
+      ) : null}
+    </span>
+  )
+}
 
 function isGoogleMapsHref(href: string) {
   try {
@@ -81,7 +180,13 @@ function formatUrlLabel(href: string) {
   return '連結'
 }
 
-export function FormattedInline({ text }: { text: string }) {
+export function FormattedInline({
+  text,
+  allowInteractiveBilingual = true,
+}: {
+  text: string
+  allowInteractiveBilingual?: boolean
+}) {
   const tokens = tokenizeInline(text)
   if (tokens.length === 0) return null
 
@@ -90,22 +195,34 @@ export function FormattedInline({ text }: { text: string }) {
       {tokens.map((t, i) => {
         if (t.kind === 'text') return <React.Fragment key={i}>{t.value}</React.Fragment>
         if (t.kind === 'code') return <code key={i}>{t.value}</code>
+        if (t.kind === 'bilingual') {
+          if (!allowInteractiveBilingual) return <span key={i} title={t.en}>{t.zh}</span>
+          return <BilingualInline key={i} zh={t.zh} en={t.en} />
+        }
+        if (t.kind === 'bilingual_link') {
+          if (!allowInteractiveBilingual) return <span key={i} title={`${t.en} (${t.href})`}>{t.zh}</span>
+          return <BilingualLinkInline key={i} zh={t.zh} en={t.en} href={t.href} />
+        }
         if (t.kind === 'bold') return <strong key={i}>{t.value}</strong>
         if (t.kind === 'italic') return <em key={i}>{t.value}</em>
         if (t.kind === 'mark') return <mark key={i}>{t.value}</mark>
         if (t.kind === 'link') {
-          if (isGoogleMapsHref(t.href)) return renderMapsTextPlusIcon({ key: i, label: t.label, href: t.href })
+          const safeHref = sanitizeHref(t.href)
+          if (!safeHref) return <React.Fragment key={i}>{t.label}</React.Fragment>
+          if (isGoogleMapsHref(safeHref)) return renderMapsTextPlusIcon({ key: i, label: t.label, href: safeHref })
           return (
-            <a key={i} href={t.href} target="_blank" rel="noreferrer noopener">
+            <a key={i} href={safeHref} target="_blank" rel="noreferrer noopener">
               {t.label}
             </a>
           )
         }
         if (t.kind === 'url') {
+          const safeHref = sanitizeHref(t.href)
           const label = formatUrlLabel(t.href)
-          if (isGoogleMapsHref(t.href)) return renderMapsTextPlusIcon({ key: i, label, href: t.href })
+          if (!safeHref) return <React.Fragment key={i}>{t.href}</React.Fragment>
+          if (isGoogleMapsHref(safeHref)) return renderMapsTextPlusIcon({ key: i, label, href: safeHref })
           return (
-            <a key={i} href={t.href} target="_blank" rel="noreferrer noopener" title={t.href}>
+            <a key={i} href={safeHref} target="_blank" rel="noreferrer noopener" title={safeHref}>
               {label}
             </a>
           )

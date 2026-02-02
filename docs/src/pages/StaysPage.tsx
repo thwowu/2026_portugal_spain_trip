@@ -1,5 +1,5 @@
 import { useMemo } from 'react'
-import { STAYS_DATA } from '../generated'
+import { STAYS_DATA } from '../data/stays'
 import { CITIES, STAYS_CITY_ORDER } from '../data/core'
 import { useHashScroll } from '../hooks/useHashScroll'
 import { useReveal } from '../hooks/useReveal'

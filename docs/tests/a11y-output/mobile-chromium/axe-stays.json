@@ -8,12 +8,12 @@
   },
   "testEnvironment": {
     "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.0 Mobile/15E148 Safari/604.1",
-    "windowWidth": 525,
-    "windowHeight": 894,
+    "windowWidth": 390,
+    "windowHeight": 664,
     "orientationAngle": 0,
     "orientationType": "portrait-primary"
   },
-  "timestamp": "2026-02-01T20:51:19.825Z",
+  "timestamp": "2026-02-02T11:51:07.566Z",
   "url": "http://127.0.0.1:4173/stays",
   "toolOptions": {
     "reporter": "v1"
@@ -5543,7 +5543,7 @@
           ],
           "none": [],
           "impact": null,
-          "html": "<div style=\"display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap;\"><div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">里斯本（Lisbon）住宿</div></div>",
+          "html": "<div style=\"display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap;\"><div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">{{bi:里斯本|Lisbon}}住宿</div></div>",
           "target": [
             "#stay-lisbon > .card > .cardInner > div:nth-child(1)"
           ]
@@ -5575,7 +5575,7 @@
           ],
           "none": [],
           "impact": null,
-          "html": "<div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">里斯本（Lisbon）住宿</div>",
+          "html": "<div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">{{bi:里斯本|Lisbon}}住宿</div>",
           "target": [
             "#stay-lisbon > .card > .cardInner > div:nth-child(1) > div"
           ]
@@ -5735,7 +5735,7 @@
           ],
           "none": [],
           "impact": null,
-          "html": "<div style=\"display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap;\"><div style=\"font-weight: 900;\">盧澤羅斯套房（Luzeiros Suites）- [盧澤羅斯套房（Luzeiros Suites）](https://maps.app.goo.gl/szKwdhc3Yp7RuU8e8)</div></div>",
+          "html": "<div style=\"display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap;\"><div style=\"font-weight: 900;\">{{bi:盧澤羅斯套房</div></div>",
           "target": [
             "#stay-lisbon > .card > .cardInner > div:nth-child(3) > div > div:nth-child(2) > .card > .cardInner > div:nth-child(1)"
           ]
@@ -5767,7 +5767,7 @@
           ],
           "none": [],
           "impact": null,
-          "html": "<div style=\"font-weight: 900;\">盧澤羅斯套房（Luzeiros Suites）- [盧澤羅斯套房（Luzeiros Suites）](https://maps.app.goo.gl/szKwdhc3Yp7RuU8e8)</div>",
+          "html": "<div style=\"font-weight: 900;\">{{bi:盧澤羅斯套房</div>",
           "target": [
             "#stay-lisbon > .card > .cardInner > div:nth-child(3) > div > div:nth-child(2) > .card > .cardInner > div:nth-child(1) > div"
           ]
@@ -5927,7 +5927,7 @@
           ],
           "none": [],
           "impact": null,
-          "html": "<div style=\"display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap;\"><div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">拉各斯（Lagos）住宿</div></div>",
+          "html": "<div style=\"display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap;\"><div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">{{bi:拉各斯|Lagos}}住宿</div></div>",
           "target": [
             "#stay-lagos > .card > .cardInner > div:nth-child(1)"
           ]
@@ -5959,7 +5959,7 @@
           ],
           "none": [],
           "impact": null,
-          "html": "<div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">拉各斯（Lagos）住宿</div>",
+          "html": "<div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">{{bi:拉各斯|Lagos}}住宿</div>",
           "target": [
             "#stay-lagos > .card > .cardInner > div:nth-child(1) > div"
           ]
@@ -7399,7 +7399,7 @@
           ],
           "none": [],
           "impact": null,
-          "html": "<div style=\"display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap;\"><div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">塞維爾（Seville）住宿</div></div>",
+          "html": "<div style=\"display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap;\"><div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">{{bi:塞維爾|Seville}}住宿</div></div>",
           "target": [
             "#stay-seville > .card > .cardInner > div:nth-child(1)"
           ]
@@ -7431,7 +7431,7 @@
           ],
           "none": [],
           "impact": null,
-          "html": "<div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">塞維爾（Seville）住宿</div>",
+          "html": "<div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">{{bi:塞維爾|Seville}}住宿</div>",
           "target": [
             "#stay-seville > .card > .cardInner > div:nth-child(1) > div"
           ]
@@ -8871,7 +8871,7 @@
           ],
           "none": [],
           "impact": null,
-          "html": "<div style=\"display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap;\"><div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">格拉納達（Granada）住宿</div></div>",
+          "html": "<div style=\"display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap;\"><div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">{{bi:格拉納達|Granada}}住宿</div></div>",
           "target": [
             "#stay-granada > .card > .cardInner > div:nth-child(1)"
           ]
@@ -8903,7 +8903,7 @@
           ],
           "none": [],
           "impact": null,
-          "html": "<div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">格拉納達（Granada）住宿</div>",
+          "html": "<div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">{{bi:格拉納達|Granada}}住宿</div>",
           "target": [
             "#stay-granada > .card > .cardInner > div:nth-child(1) > div"
           ]
@@ -10343,7 +10343,7 @@
           ],
           "none": [],
           "impact": null,
-          "html": "<div style=\"display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap;\"><div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">馬德里（Madrid）住宿</div></div>",
+          "html": "<div style=\"display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap;\"><div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">{{bi:馬德里|Madrid}}住宿</div></div>",
           "target": [
             "#stay-madrid > .card > .cardInner > div:nth-child(1)"
           ]
@@ -10375,7 +10375,7 @@
           ],
           "none": [],
           "impact": null,
-          "html": "<div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">馬德里（Madrid）住宿</div>",
+          "html": "<div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">{{bi:馬德里|Madrid}}住宿</div>",
           "target": [
             "#stay-madrid > .card > .cardInner > div:nth-child(1) > div"
           ]
@@ -12382,7 +12382,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">里斯本（Lisbon）住宿</div>",
+          "html": "<div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">{{bi:里斯本|Lisbon}}住宿</div>",
           "target": [
             "#stay-lisbon > .card > .cardInner > div:nth-child(1) > div"
           ]
@@ -12410,6 +12410,56 @@
           "html": "<div style=\"font-weight: 900;\">住宿推薦</div>",
           "target": [
             "#stay-lisbon > .card > .cardInner > div:nth-child(3) > div > div:nth-child(1)"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#1c1b18",
+                "bgColor": "#ffffff",
+                "contrastRatio": 17.22,
+                "fontSize": "13.5pt (18px)",
+                "fontWeight": "bold",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 17.22"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div style=\"font-weight: 900;\">{{bi:盧澤羅斯套房</div>",
+          "target": [
+            "#stay-lisbon > .card > .cardInner > div:nth-child(3) > div > div:nth-child(2) > .card > .cardInner > div:nth-child(1) > div"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#5b574f",
+                "bgColor": "#ffffff",
+                "contrastRatio": 7.18,
+                "fontSize": "13.5pt (18px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 7.18"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p style=\"white-space: pre-wrap;\">",
+          "target": [
+            "#stay-lisbon > .card > .cardInner > div:nth-child(3) > div > div:nth-child(2) > .card > .cardInner > .muted > .prose > p"
           ]
         },
         {
@@ -12582,7 +12632,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">拉各斯（Lagos）住宿</div>",
+          "html": "<div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">{{bi:拉各斯|Lagos}}住宿</div>",
           "target": [
             "#stay-lagos > .card > .cardInner > div:nth-child(1) > div"
           ]
@@ -13182,7 +13232,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">塞維爾（Seville）住宿</div>",
+          "html": "<div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">{{bi:塞維爾|Seville}}住宿</div>",
           "target": [
             "#stay-seville > .card > .cardInner > div:nth-child(1) > div"
           ]
@@ -13782,7 +13832,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">格拉納達（Granada）住宿</div>",
+          "html": "<div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">{{bi:格拉納達|Granada}}住宿</div>",
           "target": [
             "#stay-granada > .card > .cardInner > div:nth-child(1) > div"
           ]
@@ -13985,6 +14035,31 @@
           "html": "<div style=\"font-weight: 900;\">雷阿萊霍（Realejo；次選：靠近阿爾罕布拉山腳）</div>",
           "target": [
             "#stay-granada > .card > .cardInner > div:nth-child(3) > div > div:nth-child(2) > .card:nth-child(2) > .cardInner > div:nth-child(1) > div"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#5b574f",
+                "bgColor": "#ffffff",
+                "contrastRatio": 7.18,
+                "fontSize": "13.5pt (18px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 7.18"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<p style=\"white-space: pre-wrap;\">位置介於市中心與上坡區之間，行程想安排 Alhambra 會比較順。</p>",
+          "target": [
+            "#stay-granada > .card > .cardInner > div:nth-child(3) > div > div:nth-child(2) > .card:nth-child(2) > .cardInner > .muted > .prose > p"
           ]
         },
         {
@@ -14357,7 +14432,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">馬德里（Madrid）住宿</div>",
+          "html": "<div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">{{bi:馬德里|Madrid}}住宿</div>",
           "target": [
             "#stay-madrid > .card > .cardInner > div:nth-child(1) > div"
           ]
@@ -18151,7 +18226,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div style=\"display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap;\"><div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">里斯本（Lisbon）住宿</div></div>",
+          "html": "<div style=\"display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap;\"><div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">{{bi:里斯本|Lisbon}}住宿</div></div>",
           "target": [
             "#stay-lisbon > .card > .cardInner > div:nth-child(1)"
           ]
@@ -18171,7 +18246,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">里斯本（Lisbon）住宿</div>",
+          "html": "<div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">{{bi:里斯本|Lisbon}}住宿</div>",
           "target": [
             "#stay-lisbon > .card > .cardInner > div:nth-child(1) > div"
           ]
@@ -18331,7 +18406,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div style=\"display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap;\"><div style=\"font-weight: 900;\">盧澤羅斯套房（Luzeiros Suites）- [盧澤羅斯套房（Luzeiros Suites）](https://maps.app.goo.gl/szKwdhc3Yp7RuU8e8)</div></div>",
+          "html": "<div style=\"display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap;\"><div style=\"font-weight: 900;\">{{bi:盧澤羅斯套房</div></div>",
           "target": [
             "#stay-lisbon > .card > .cardInner > div:nth-child(3) > div > div:nth-child(2) > .card > .cardInner > div:nth-child(1)"
           ]
@@ -18351,7 +18426,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div style=\"font-weight: 900;\">盧澤羅斯套房（Luzeiros Suites）- [盧澤羅斯套房（Luzeiros Suites）](https://maps.app.goo.gl/szKwdhc3Yp7RuU8e8)</div>",
+          "html": "<div style=\"font-weight: 900;\">{{bi:盧澤羅斯套房</div>",
           "target": [
             "#stay-lisbon > .card > .cardInner > div:nth-child(3) > div > div:nth-child(2) > .card > .cardInner > div:nth-child(1) > div"
           ]
@@ -18731,7 +18806,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div style=\"display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap;\"><div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">拉各斯（Lagos）住宿</div></div>",
+          "html": "<div style=\"display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap;\"><div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">{{bi:拉各斯|Lagos}}住宿</div></div>",
           "target": [
             "#stay-lagos > .card > .cardInner > div:nth-child(1)"
           ]
@@ -18751,7 +18826,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">拉各斯（Lagos）住宿</div>",
+          "html": "<div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">{{bi:拉各斯|Lagos}}住宿</div>",
           "target": [
             "#stay-lagos > .card > .cardInner > div:nth-child(1) > div"
           ]
@@ -20271,7 +20346,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div style=\"display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap;\"><div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">塞維爾（Seville）住宿</div></div>",
+          "html": "<div style=\"display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap;\"><div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">{{bi:塞維爾|Seville}}住宿</div></div>",
           "target": [
             "#stay-seville > .card > .cardInner > div:nth-child(1)"
           ]
@@ -20291,7 +20366,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">塞維爾（Seville）住宿</div>",
+          "html": "<div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">{{bi:塞維爾|Seville}}住宿</div>",
           "target": [
             "#stay-seville > .card > .cardInner > div:nth-child(1) > div"
           ]
@@ -21811,7 +21886,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div style=\"display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap;\"><div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">格拉納達（Granada）住宿</div></div>",
+          "html": "<div style=\"display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap;\"><div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">{{bi:格拉納達|Granada}}住宿</div></div>",
           "target": [
             "#stay-granada > .card > .cardInner > div:nth-child(1)"
           ]
@@ -21831,7 +21906,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">格拉納達（Granada）住宿</div>",
+          "html": "<div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">{{bi:格拉納達|Granada}}住宿</div>",
           "target": [
             "#stay-granada > .card > .cardInner > div:nth-child(1) > div"
           ]
@@ -23351,7 +23426,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div style=\"display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap;\"><div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">馬德里（Madrid）住宿</div></div>",
+          "html": "<div style=\"display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap;\"><div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">{{bi:馬德里|Madrid}}住宿</div></div>",
           "target": [
             "#stay-madrid > .card > .cardInner > div:nth-child(1)"
           ]
@@ -23371,7 +23446,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">馬德里（Madrid）住宿</div>",
+          "html": "<div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">{{bi:馬德里|Madrid}}住宿</div>",
           "target": [
             "#stay-madrid > .card > .cardInner > div:nth-child(1) > div"
           ]
@@ -25226,81 +25301,6 @@
             ".pageHeroSubtitle"
           ],
           "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "contrastRatio": 0,
-                "fontSize": "13.5pt (18px)",
-                "fontWeight": "bold",
-                "messageKey": "elmPartiallyObscuring",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element's background color could not be determined because it partially overlaps other elements"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": "serious",
-          "html": "<div style=\"font-weight: 900;\">盧澤羅斯套房（Luzeiros Suites）- [盧澤羅斯套房（Luzeiros Suites）](https://maps.app.goo.gl/szKwdhc3Yp7RuU8e8)</div>",
-          "target": [
-            "#stay-lisbon > .card > .cardInner > div:nth-child(3) > div > div:nth-child(2) > .card > .cardInner > div:nth-child(1) > div"
-          ],
-          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it partially overlaps other elements"
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "contrastRatio": 0,
-                "fontSize": "13.5pt (18px)",
-                "fontWeight": "normal",
-                "messageKey": "elmPartiallyObscuring",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element's background color could not be determined because it partially overlaps other elements"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": "serious",
-          "html": "<p style=\"white-space: pre-wrap;\">",
-          "target": [
-            "#stay-lisbon > .card > .cardInner > div:nth-child(3) > div > div:nth-child(2) > .card > .cardInner > .muted > .prose > p"
-          ],
-          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it partially overlaps other elements"
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "contrastRatio": 0,
-                "fontSize": "13.5pt (18px)",
-                "fontWeight": "normal",
-                "messageKey": "elmPartiallyObscuring",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element's background color could not be determined because it partially overlaps other elements"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": "serious",
-          "html": "<p style=\"white-space: pre-wrap;\">位置介於市中心與上坡區之間，行程想安排 Alhambra 會比較順。</p>",
-          "target": [
-            "#stay-granada > .card > .cardInner > div:nth-child(3) > div > div:nth-child(2) > .card:nth-child(2) > .cardInner > .muted > .prose > p"
-          ],
-          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it partially overlaps other elements"
         }
       ]
     }

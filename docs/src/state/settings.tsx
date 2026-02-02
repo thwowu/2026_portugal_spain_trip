@@ -1,23 +1,31 @@
 /* eslint-disable react-refresh/only-export-components */
 import { createContext, useContext, useEffect, useMemo, useState } from 'react'
-import { loadJson, saveJson } from './storage'
+import { usePersistedJsonState } from './persist'
 
 export type MotionSetting = 'standard' | 'low'
 export type UiMode = 'standard' | 'senior'
 export type FontScale = 0 | 1 | 2
 
-type SettingsState = {
+export type SettingsState = {
   motion: MotionSetting
   uiMode: UiMode
   fontScale: FontScale
   prefersReducedMotion: boolean
+}
+
+export type SettingsActions = {
   setMotion: (next: MotionSetting) => void
   setUiMode: (next: UiMode) => void
   setFontScale: (next: FontScale) => void
   resetRecommended: () => void
 }
 
-const SettingsContext = createContext<SettingsState | null>(null)
+type SettingsContextValue = {
+  state: SettingsState
+  actions: SettingsActions
+}
+
+const SettingsContext = createContext<SettingsContextValue | null>(null)
 
 const STORAGE_KEY = 'tripPlanner.settings.v1'
 
@@ -33,18 +41,15 @@ function defaultPersisted(): PersistedSettings {
 }
 
 export function SettingsProvider({ children }: { children: React.ReactNode }) {
-  const persisted = useMemo(
-    () => loadJson<PersistedSettings>(STORAGE_KEY, defaultPersisted()),
-    [],
+  const [persisted, setPersisted] = usePersistedJsonState<PersistedSettings>(
+    STORAGE_KEY,
+    () => defaultPersisted(),
   )
-  const [uiMode, setUiMode] = useState<UiMode>(persisted.uiMode ?? 'senior')
-  const [motion, setMotion] = useState<MotionSetting>(persisted.motion ?? 'low')
-  const [fontScale, setFontScale] = useState<FontScale>(persisted.fontScale ?? 1)
-  const [prefersReducedMotion, setPrefersReducedMotion] = useState(false)
 
-  useEffect(() => {
-    saveJson<PersistedSettings>(STORAGE_KEY, { motion, uiMode, fontScale })
-  }, [motion, uiMode, fontScale])
+  const uiMode: UiMode = persisted.uiMode ?? 'senior'
+  const motion: MotionSetting = persisted.motion ?? 'low'
+  const fontScale: FontScale = persisted.fontScale ?? 1
+  const [prefersReducedMotion, setPrefersReducedMotion] = useState(false)
 
   useEffect(() => {
     // Let CSS react to UI mode.
@@ -72,40 +77,42 @@ export function SettingsProvider({ children }: { children: React.ReactNode }) {
     }
   }, [])
 
-  const value = useMemo<SettingsState>(
-    () => ({
-      motion,
-      uiMode,
-      fontScale,
-      prefersReducedMotion,
-      setMotion,
-      setUiMode: (next) => {
-        // In senior mode, default to low motion (but still allow manual override).
-        // Do this in the setter (user action), not in an effect.
-        setUiMode(next)
-        if (next === 'senior') setMotion('low')
-      },
-      setFontScale,
-      resetRecommended: () => {
-        setUiMode('senior')
-        setMotion('low')
-        setFontScale(1)
-      },
-    }),
-    [motion, uiMode, fontScale, prefersReducedMotion],
+  const state = useMemo<SettingsState>(
+    () => ({ motion, uiMode, fontScale, prefersReducedMotion }),
+    [fontScale, motion, prefersReducedMotion, uiMode],
   )
+
+  const actions = useMemo<SettingsActions>(
+    () => ({
+      setMotion: (next) => setPersisted((s) => ({ ...s, motion: next })),
+      setUiMode: (next) =>
+        setPersisted((s) => {
+          // In senior mode, default to low motion (but still allow manual override).
+          // Do this in the setter (user action), not in an effect.
+          const nextMotion: MotionSetting = next === 'senior' ? 'low' : (s.motion ?? 'low')
+          return { ...s, uiMode: next, motion: nextMotion }
+        }),
+      setFontScale: (next) => setPersisted((s) => ({ ...s, fontScale: next })),
+      resetRecommended: () => setPersisted(defaultPersisted()),
+    }),
+    [setPersisted],
+  )
+
+  const value = useMemo<SettingsContextValue>(() => ({ state, actions }), [actions, state])
 
   return <SettingsContext.Provider value={value}>{children}</SettingsContext.Provider>
 }
 
-export function useSettings(): SettingsState {
+export function useSettings(): SettingsContextValue {
   const ctx = useContext(SettingsContext)
   if (!ctx) throw new Error('useSettings must be used within SettingsProvider')
   return ctx
 }
 
 export function useMotionEnabled(): boolean {
-  const { motion, prefersReducedMotion } = useSettings()
+  const {
+    state: { motion, prefersReducedMotion },
+  } = useSettings()
   return motion === 'standard' && !prefersReducedMotion
 }
 

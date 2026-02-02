@@ -24,7 +24,10 @@ export function SettingsModal({
   open: boolean
   onClose: () => void
 }) {
-  const { fontScale, setFontScale, resetRecommended } = useSettings()
+  const {
+    state: { fontScale },
+    actions: { setFontScale, resetRecommended },
+  } = useSettings()
   const { state: planning, actions: planningActions } = usePlanning()
   const [importStatus, setImportStatus] = useState<{ kind: 'idle' | 'ok' | 'error'; message: string }>({
     kind: 'idle',

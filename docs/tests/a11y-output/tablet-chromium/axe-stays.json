@@ -13,7 +13,7 @@
     "orientationAngle": 0,
     "orientationType": "portrait-primary"
   },
-  "timestamp": "2026-02-01T20:51:19.926Z",
+  "timestamp": "2026-02-02T11:50:58.109Z",
   "url": "http://127.0.0.1:4173/stays",
   "toolOptions": {
     "reporter": "v1"
@@ -5543,7 +5543,7 @@
           ],
           "none": [],
           "impact": null,
-          "html": "<div style=\"display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap;\"><div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">里斯本（Lisbon）住宿</div></div>",
+          "html": "<div style=\"display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap;\"><div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">{{bi:里斯本|Lisbon}}住宿</div></div>",
           "target": [
             "#stay-lisbon > .card > .cardInner > div:nth-child(1)"
           ]
@@ -5575,7 +5575,7 @@
           ],
           "none": [],
           "impact": null,
-          "html": "<div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">里斯本（Lisbon）住宿</div>",
+          "html": "<div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">{{bi:里斯本|Lisbon}}住宿</div>",
           "target": [
             "#stay-lisbon > .card > .cardInner > div:nth-child(1) > div"
           ]
@@ -5735,7 +5735,7 @@
           ],
           "none": [],
           "impact": null,
-          "html": "<div style=\"display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap;\"><div style=\"font-weight: 900;\">盧澤羅斯套房（Luzeiros Suites）- [盧澤羅斯套房（Luzeiros Suites）](https://maps.app.goo.gl/szKwdhc3Yp7RuU8e8)</div></div>",
+          "html": "<div style=\"display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap;\"><div style=\"font-weight: 900;\">{{bi:盧澤羅斯套房</div></div>",
           "target": [
             "#stay-lisbon > .card > .cardInner > div:nth-child(3) > div > div:nth-child(2) > .card > .cardInner > div:nth-child(1)"
           ]
@@ -5767,7 +5767,7 @@
           ],
           "none": [],
           "impact": null,
-          "html": "<div style=\"font-weight: 900;\">盧澤羅斯套房（Luzeiros Suites）- [盧澤羅斯套房（Luzeiros Suites）](https://maps.app.goo.gl/szKwdhc3Yp7RuU8e8)</div>",
+          "html": "<div style=\"font-weight: 900;\">{{bi:盧澤羅斯套房</div>",
           "target": [
             "#stay-lisbon > .card > .cardInner > div:nth-child(3) > div > div:nth-child(2) > .card > .cardInner > div:nth-child(1) > div"
           ]
@@ -5927,7 +5927,7 @@
           ],
           "none": [],
           "impact": null,
-          "html": "<div style=\"display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap;\"><div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">拉各斯（Lagos）住宿</div></div>",
+          "html": "<div style=\"display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap;\"><div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">{{bi:拉各斯|Lagos}}住宿</div></div>",
           "target": [
             "#stay-lagos > .card > .cardInner > div:nth-child(1)"
           ]
@@ -5959,7 +5959,7 @@
           ],
           "none": [],
           "impact": null,
-          "html": "<div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">拉各斯（Lagos）住宿</div>",
+          "html": "<div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">{{bi:拉各斯|Lagos}}住宿</div>",
           "target": [
             "#stay-lagos > .card > .cardInner > div:nth-child(1) > div"
           ]
@@ -7399,7 +7399,7 @@
           ],
           "none": [],
           "impact": null,
-          "html": "<div style=\"display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap;\"><div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">塞維爾（Seville）住宿</div></div>",
+          "html": "<div style=\"display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap;\"><div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">{{bi:塞維爾|Seville}}住宿</div></div>",
           "target": [
             "#stay-seville > .card > .cardInner > div:nth-child(1)"
           ]
@@ -7431,7 +7431,7 @@
           ],
           "none": [],
           "impact": null,
-          "html": "<div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">塞維爾（Seville）住宿</div>",
+          "html": "<div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">{{bi:塞維爾|Seville}}住宿</div>",
           "target": [
             "#stay-seville > .card > .cardInner > div:nth-child(1) > div"
           ]
@@ -8871,7 +8871,7 @@
           ],
           "none": [],
           "impact": null,
-          "html": "<div style=\"display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap;\"><div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">格拉納達（Granada）住宿</div></div>",
+          "html": "<div style=\"display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap;\"><div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">{{bi:格拉納達|Granada}}住宿</div></div>",
           "target": [
             "#stay-granada > .card > .cardInner > div:nth-child(1)"
           ]
@@ -8903,7 +8903,7 @@
           ],
           "none": [],
           "impact": null,
-          "html": "<div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">格拉納達（Granada）住宿</div>",
+          "html": "<div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">{{bi:格拉納達|Granada}}住宿</div>",
           "target": [
             "#stay-granada > .card > .cardInner > div:nth-child(1) > div"
           ]
@@ -10343,7 +10343,7 @@
           ],
           "none": [],
           "impact": null,
-          "html": "<div style=\"display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap;\"><div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">馬德里（Madrid）住宿</div></div>",
+          "html": "<div style=\"display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap;\"><div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">{{bi:馬德里|Madrid}}住宿</div></div>",
           "target": [
             "#stay-madrid > .card > .cardInner > div:nth-child(1)"
           ]
@@ -10375,7 +10375,7 @@
           ],
           "none": [],
           "impact": null,
-          "html": "<div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">馬德里（Madrid）住宿</div>",
+          "html": "<div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">{{bi:馬德里|Madrid}}住宿</div>",
           "target": [
             "#stay-madrid > .card > .cardInner > div:nth-child(1) > div"
           ]
@@ -12407,7 +12407,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">里斯本（Lisbon）住宿</div>",
+          "html": "<div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">{{bi:里斯本|Lisbon}}住宿</div>",
           "target": [
             "#stay-lisbon > .card > .cardInner > div:nth-child(1) > div"
           ]
@@ -12457,7 +12457,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div style=\"font-weight: 900;\">盧澤羅斯套房（Luzeiros Suites）- [盧澤羅斯套房（Luzeiros Suites）](https://maps.app.goo.gl/szKwdhc3Yp7RuU8e8)</div>",
+          "html": "<div style=\"font-weight: 900;\">{{bi:盧澤羅斯套房</div>",
           "target": [
             "#stay-lisbon > .card > .cardInner > div:nth-child(3) > div > div:nth-child(2) > .card > .cardInner > div:nth-child(1) > div"
           ]
@@ -12657,7 +12657,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">拉各斯（Lagos）住宿</div>",
+          "html": "<div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">{{bi:拉各斯|Lagos}}住宿</div>",
           "target": [
             "#stay-lagos > .card > .cardInner > div:nth-child(1) > div"
           ]
@@ -13257,7 +13257,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">塞維爾（Seville）住宿</div>",
+          "html": "<div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">{{bi:塞維爾|Seville}}住宿</div>",
           "target": [
             "#stay-seville > .card > .cardInner > div:nth-child(1) > div"
           ]
@@ -13857,7 +13857,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">格拉納達（Granada）住宿</div>",
+          "html": "<div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">{{bi:格拉納達|Granada}}住宿</div>",
           "target": [
             "#stay-granada > .card > .cardInner > div:nth-child(1) > div"
           ]
@@ -14457,7 +14457,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">馬德里（Madrid）住宿</div>",
+          "html": "<div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">{{bi:馬德里|Madrid}}住宿</div>",
           "target": [
             "#stay-madrid > .card > .cardInner > div:nth-child(1) > div"
           ]
@@ -18271,7 +18271,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div style=\"display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap;\"><div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">里斯本（Lisbon）住宿</div></div>",
+          "html": "<div style=\"display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap;\"><div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">{{bi:里斯本|Lisbon}}住宿</div></div>",
           "target": [
             "#stay-lisbon > .card > .cardInner > div:nth-child(1)"
           ]
@@ -18291,7 +18291,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">里斯本（Lisbon）住宿</div>",
+          "html": "<div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">{{bi:里斯本|Lisbon}}住宿</div>",
           "target": [
             "#stay-lisbon > .card > .cardInner > div:nth-child(1) > div"
           ]
@@ -18451,7 +18451,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div style=\"display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap;\"><div style=\"font-weight: 900;\">盧澤羅斯套房（Luzeiros Suites）- [盧澤羅斯套房（Luzeiros Suites）](https://maps.app.goo.gl/szKwdhc3Yp7RuU8e8)</div></div>",
+          "html": "<div style=\"display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap;\"><div style=\"font-weight: 900;\">{{bi:盧澤羅斯套房</div></div>",
           "target": [
             "#stay-lisbon > .card > .cardInner > div:nth-child(3) > div > div:nth-child(2) > .card > .cardInner > div:nth-child(1)"
           ]
@@ -18471,7 +18471,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div style=\"font-weight: 900;\">盧澤羅斯套房（Luzeiros Suites）- [盧澤羅斯套房（Luzeiros Suites）](https://maps.app.goo.gl/szKwdhc3Yp7RuU8e8)</div>",
+          "html": "<div style=\"font-weight: 900;\">{{bi:盧澤羅斯套房</div>",
           "target": [
             "#stay-lisbon > .card > .cardInner > div:nth-child(3) > div > div:nth-child(2) > .card > .cardInner > div:nth-child(1) > div"
           ]
@@ -18851,7 +18851,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div style=\"display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap;\"><div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">拉各斯（Lagos）住宿</div></div>",
+          "html": "<div style=\"display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap;\"><div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">{{bi:拉各斯|Lagos}}住宿</div></div>",
           "target": [
             "#stay-lagos > .card > .cardInner > div:nth-child(1)"
           ]
@@ -18871,7 +18871,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">拉各斯（Lagos）住宿</div>",
+          "html": "<div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">{{bi:拉各斯|Lagos}}住宿</div>",
           "target": [
             "#stay-lagos > .card > .cardInner > div:nth-child(1) > div"
           ]
@@ -20391,7 +20391,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div style=\"display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap;\"><div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">塞維爾（Seville）住宿</div></div>",
+          "html": "<div style=\"display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap;\"><div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">{{bi:塞維爾|Seville}}住宿</div></div>",
           "target": [
             "#stay-seville > .card > .cardInner > div:nth-child(1)"
           ]
@@ -20411,7 +20411,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">塞維爾（Seville）住宿</div>",
+          "html": "<div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">{{bi:塞維爾|Seville}}住宿</div>",
           "target": [
             "#stay-seville > .card > .cardInner > div:nth-child(1) > div"
           ]
@@ -21931,7 +21931,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div style=\"display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap;\"><div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">格拉納達（Granada）住宿</div></div>",
+          "html": "<div style=\"display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap;\"><div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">{{bi:格拉納達|Granada}}住宿</div></div>",
           "target": [
             "#stay-granada > .card > .cardInner > div:nth-child(1)"
           ]
@@ -21951,7 +21951,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">格拉納達（Granada）住宿</div>",
+          "html": "<div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">{{bi:格拉納達|Granada}}住宿</div>",
           "target": [
             "#stay-granada > .card > .cardInner > div:nth-child(1) > div"
           ]
@@ -23471,7 +23471,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div style=\"display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap;\"><div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">馬德里（Madrid）住宿</div></div>",
+          "html": "<div style=\"display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap;\"><div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">{{bi:馬德里|Madrid}}住宿</div></div>",
           "target": [
             "#stay-madrid > .card > .cardInner > div:nth-child(1)"
           ]
@@ -23491,7 +23491,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">馬德里（Madrid）住宿</div>",
+          "html": "<div style=\"font-weight: 950; font-size: var(--text-xl); line-height: 1.15;\">{{bi:馬德里|Madrid}}住宿</div>",
           "target": [
             "#stay-madrid > .card > .cardInner > div:nth-child(1) > div"
           ]

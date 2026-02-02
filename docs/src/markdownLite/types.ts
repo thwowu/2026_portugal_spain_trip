@@ -2,6 +2,8 @@ export type InlineToken =
   | { kind: 'text'; value: string }
   | { kind: 'code'; value: string }
   | { kind: 'link'; label: string; href: string }
+  | { kind: 'bilingual'; zh: string; en: string }
+  | { kind: 'bilingual_link'; zh: string; en: string; href: string }
   | { kind: 'bold'; value: string }
   | { kind: 'italic'; value: string }
   | { kind: 'mark'; value: string }

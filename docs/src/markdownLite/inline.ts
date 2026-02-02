@@ -3,11 +3,16 @@ import { splitTrailingUrlPunct } from './utils'
 
 const LINK_MD_RE = /\[([^\]]+)\]\((https?:\/\/[^)\s]+)\)/g
 const BARE_URL_RE = /(https?:\/\/[^\s)]+)(?![^<]*>)/g
+const BI_RE = /\{\{bi:([^|\n}]+?)\|([^}\n]+?)\}\}/g
+// Keep bilink href strict (http/https only). Rendering also sanitizes defensively.
+const BILINK_RE = /\{\{bilink:([^|\n}]+?)\|([^|\n}]+?)\|(https?:\/\/[^}\n]+?)\}\}/g
 
 export function tokenizeInline(input: string): InlineToken[] {
   // Priority order:
   // 1) inline code: `...`
   // 2) markdown links: [label](https://...)
+  // 3) bilingual: {{bi:中文|English}} (safe syntax)
+  // 4) bilingual link: {{bilink:中文|English|https://...}} (safe syntax)
   // 3) mark: ::...::
   // 4) bold: **...**
   // 5) italic: *...*  (very simple; avoids matching "**")
@@ -54,12 +59,57 @@ export function tokenizeInline(input: string): InlineToken[] {
       continue
     }
 
-    // Mark: ::...::
-    const markParts: InlineToken[] = []
+    // Bilingual link: {{bilink:中文|English|href}}
+    const bilinkParts: InlineToken[] = []
     {
       let cursor0 = 0
       const s0 = t.value
-      const markRe = /::([^\n]+?)::/g
+      for (const m of s0.matchAll(BILINK_RE)) {
+        const idx = m.index ?? -1
+        if (idx < 0) continue
+        if (idx > cursor0) bilinkParts.push({ kind: 'text', value: s0.slice(cursor0, idx) })
+        const zh = (m[1] ?? '').trim()
+        const en = (m[2] ?? '').trim()
+        const href = (m[3] ?? '').trim()
+        if (zh && en && href) bilinkParts.push({ kind: 'bilingual_link', zh, en, href })
+        cursor0 = idx + m[0].length
+      }
+      if (cursor0 < s0.length) bilinkParts.push({ kind: 'text', value: s0.slice(cursor0) })
+    }
+
+    // Bilingual: {{bi:中文|English}}
+    const biParts: InlineToken[] = []
+    {
+      for (const bp of bilinkParts) {
+        if (bp.kind !== 'text') {
+          biParts.push(bp)
+          continue
+        }
+        let cursor0 = 0
+        const s0 = bp.value
+        for (const m of s0.matchAll(BI_RE)) {
+          const idx = m.index ?? -1
+          if (idx < 0) continue
+          if (idx > cursor0) biParts.push({ kind: 'text', value: s0.slice(cursor0, idx) })
+          const zh = (m[1] ?? '').trim()
+          const en = (m[2] ?? '').trim()
+          if (zh && en) biParts.push({ kind: 'bilingual', zh, en })
+          cursor0 = idx + m[0].length
+        }
+        if (cursor0 < s0.length) biParts.push({ kind: 'text', value: s0.slice(cursor0) })
+      }
+    }
+
+    // Mark: ::...::
+    const markParts: InlineToken[] = []
+    const markRe = /::([^\n]+?)::/g
+    for (const bp of biParts) {
+      if (bp.kind !== 'text') {
+        markParts.push(bp)
+        continue
+      }
+      let cursor0 = 0
+      const s0 = bp.value
       for (const m of s0.matchAll(markRe)) {
         const idx = m.index ?? -1
         if (idx < 0) continue
@@ -146,5 +196,29 @@ export function tokenizeInline(input: string): InlineToken[] {
   }
 
   return final
+}
+
+/**
+ * Convert our supported inline markdown subset into plain text.
+ * Useful for aria-labels where raw markdown punctuation ("**", "`") is noisy.
+ */
+export function inlineToPlainText(input: string): string {
+  const tokens = tokenizeInline(input ?? '')
+  const raw = tokens
+    .map((t) => {
+      if (t.kind === 'text') return t.value
+      if (t.kind === 'code') return t.value
+      if (t.kind === 'bilingual') return t.zh
+      if (t.kind === 'bilingual_link') return t.zh
+      if (t.kind === 'bold') return t.value
+      if (t.kind === 'italic') return t.value
+      if (t.kind === 'mark') return t.value
+      if (t.kind === 'link') return t.label || t.href
+      if (t.kind === 'url') return t.href
+      return ''
+    })
+    .join('')
+
+  return raw.replace(/\s+/g, ' ').trim()
 }
 

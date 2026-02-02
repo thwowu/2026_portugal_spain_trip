@@ -1,10 +1,10 @@
 ---
 schema: v1
 cityId: lagos
-title: 拉各斯（Lagos）住宿
+title: {{bi:拉各斯|Lagos}}住宿
 ---
 
-# 拉各斯（Lagos）住宿
+# {{bi:拉各斯|Lagos}}住宿
 
 讀法：先看 `options` 選區域；再看 `publicTransportHowToBuy`；最後看 `moneySavingTips`。
 
@@ -36,7 +36,7 @@ title: 拉各斯（Lagos）住宿
   - 若會搭多次：可買 `Bilhete de 1 dia / 3 dias / 5 dias / 7 dias` 或預買多次票（到指定售點辦理/加值）。（A ONDA：[`Tarifários`](https://aonda.pt/onda-tarifas/)）
   - 售點在哪：最常用的是 `Terminal Rodoviário (S. João)`，也可在 Luz / Odiáxere / Bensafrim / Barão S. João 等售點辦理。（A ONDA：[`Postos de Venda`](https://aonda.pt/onda-venda/)）
 - 阿爾加維跨城巴士（VAMUS Algarve，用於 Lagos ↔ Portimão / Albufeira / Faro 等）：若你會用巴士跑多個城鎮，可留意 VAMUS 的 `Tourist Pass`（3 日 / 7 日無限搭；以官方公告為準）。（VAMUS：[`Passe Turístico / Tourist Pass` PDF](http://vamus.pt/wp-content/uploads/2022/06/Flyer-Passe-Turistico-_08Abril2022-2.pdf)）
-- 火車（CP）：區域線可往 Portimão / Faro / Tunes；想省排隊就用 CP 官網或 CP App 線上購票/查班次。（CP：[`Buy tickets`](https://www.cp.pt/passageiros/en/buy-tickets)；Wikivoyage：[`Lagos (Portugal)`](https://en.wikivoyage.org/wiki/Lagos_(Portugal))）
+- {{bi:火車|CP}}：區域線可往 Portimão / Faro / Tunes；想省排隊就用 CP 官網或 CP App 線上購票/查班次。（CP：[`Buy tickets`](https://www.cp.pt/passageiros/en/buy-tickets)；Wikivoyage：[`Lagos (Portugal)`](https://en.wikivoyage.org/wiki/Lagos_(Portugal))）
 
 ## moneySavingTips
 ### Key takeaways

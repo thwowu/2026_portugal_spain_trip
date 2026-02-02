@@ -1,7 +1,7 @@
 /* eslint-disable react-refresh/only-export-components */
-import { createContext, useContext, useEffect, useMemo, useState } from 'react'
-import type { CityId, TransportSegmentId } from '../data/core'
-import { loadJson, saveJson } from './storage'
+import { createContext, useContext, useMemo } from 'react'
+import { CITIES, type CityId, type TransportSegmentId } from '../data/core'
+import { usePersistedJsonState } from './persist'
 
 export type DecisionStatus = 'candidate' | 'decided' | 'rejected'
 
@@ -72,15 +72,7 @@ export function PlanningProvider({
   children: React.ReactNode
   initialState: PlanningState
 }) {
-  const persisted = useMemo(
-    () => loadJson<PlanningState | null>(STORAGE_KEY, null),
-    [],
-  )
-  const [state, setState] = useState<PlanningState>(persisted ?? initialState)
-
-  useEffect(() => {
-    saveJson(STORAGE_KEY, state)
-  }, [state])
+  const [state, setState] = usePersistedJsonState<PlanningState>(STORAGE_KEY, () => initialState)
 
   const actions = useMemo<PlanningActions>(
     () => ({
@@ -141,7 +133,7 @@ export function PlanningProvider({
         setState(next)
       },
     }),
-    [],
+    [setState],
   )
 
   const value = useMemo(() => ({ state, actions }), [state, actions])
@@ -153,5 +145,20 @@ export function usePlanning() {
   const ctx = useContext(PlanningContext)
   if (!ctx) throw new Error('usePlanning must be used within PlanningProvider')
   return ctx
+}
+
+export function createDefaultPlanningState(): PlanningState {
+  return {
+    attractionDecisions: (Object.keys(CITIES) as CityId[]).reduce(
+      (acc, cityId) => {
+        acc[cityId] = { cityId, mustSee: [], optional: [], skip: [] }
+        return acc
+      },
+      {} as Record<CityId, { cityId: CityId; mustSee: string[]; optional: string[]; skip: string[] }>,
+    ),
+    transportDecisions: {},
+    checklist: [],
+    changelog: [],
+  }
 }
 

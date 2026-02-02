@@ -47,4 +47,57 @@ export default defineConfig([
       },
     },
   },
+  // ---- Dependency direction guardrails (layer-first) ----
+  {
+    files: ['src/pages/**/*.{ts,tsx}'],
+    rules: {
+      'no-restricted-imports': [
+        'error',
+        {
+          patterns: [
+            {
+              group: ['../generated', '../generated/*'],
+              message: 'Pages should not import from generated/* directly. Import from data/* (or domain/* helpers) instead.',
+            },
+          ],
+        },
+      ],
+    },
+  },
+  {
+    files: ['src/state/**/*.{ts,tsx}'],
+    rules: {
+      'no-restricted-imports': [
+        'error',
+        {
+          patterns: [
+            {
+              group: ['../pages/**', '../components/**'],
+              message: 'state/* must not depend on pages/* or components/*.',
+            },
+          ],
+        },
+      ],
+    },
+  },
+  {
+    files: ['src/domain/**/*.{ts,tsx}'],
+    rules: {
+      'no-restricted-imports': [
+        'error',
+        {
+          paths: [
+            { name: 'react', message: 'domain/* must be pure (no React imports).' },
+            { name: 'react-dom', message: 'domain/* must be pure (no React DOM imports).' },
+          ],
+          patterns: [
+            {
+              group: ['../pages/**', '../components/**', '../hooks/**', '../state/**'],
+              message: 'domain/* must not depend on UI or state layers.',
+            },
+          ],
+        },
+      ],
+    },
+  },
 ])

@@ -1,10 +1,10 @@
 ---
 schema: v1
 cityId: sintra
-title: 辛特拉（Sintra）
+title: {{bi:辛特拉|Sintra}}
 ---
 
-# 辛特拉（Sintra）
+# {{bi:辛特拉|Sintra}}
 
 一句話：辛特拉是「童話外觀」＋「微氣候霧牆」＋「一路上坡」的組合。
 
@@ -26,7 +26,7 @@ title: 辛特拉（Sintra）
 - **霧牆/風雨就砍視野點**：天氣差時摩爾人城堡回報會歸零，果斷換備案。
 - **上坡段別硬走**：需要就用短程 Uber/Bolt/巴士，把膝蓋留給景點本體。
 
-### 一日遊黃金順序（對應行程 Day 4；邏輯是「先控不確定性，再一路往下收尾」）
+### 一日遊黃金順序（對應行程 Day 5；邏輯是「先控不確定性，再一路往下收尾」）
 @card: 把辛特拉當成「控不確定性」的一日遊：先做山頂最熱門，再一路往下收尾，用順序把排隊、人潮與上坡成本鎖住，節奏最容易成功。
 
 先講清楚為什麼是這個順序：辛特拉最容易把人玩崩的不是景點，而是「上山＋排隊＋人潮」的連鎖反應。
@@ -44,7 +44,7 @@ title: 辛特拉（Sintra）
 - 班次密集、車程約 40 分鐘。越早出發越舒服（避開旅行團尖峰）。
 - 票務：用 `Viva Viagem / Navegante` 走 `Zapping（儲值扣款）` 通常最省腦、也少排隊。保守做法是在 `Rossio` 先加值好（尖峰機器偏慢，提早到站處理最穩）。
 
-#### [Step 1：佩納宮（Palácio da Pena）](https://www.google.com/maps/search/?api=1&query=Pal%C3%A1cio%20da%20Pena%20Sintra)（先做最熱門的）（先做最熱門的）
+#### {{bilink:Step 1： 佩納宮|Palácio da Pena Sintra|https://www.google.com/maps/search/?api=1&query=Pal%C3%A1cio%20da%20Pena%20Sintra}}（先做最熱門的）（先做最熱門的）
 {{gallery:Palácio da Pena|https://source.unsplash.com/Q1YHAmV6JIo/1800x1200|https://source.unsplash.com/oz--wcq-5BQ/1800x1200|https://source.unsplash.com/ML7tR9erUps/1800x1200|https://source.unsplash.com/LhYFlcgQQJA/1800x1200|https://source.unsplash.com/ar9jizD0V88/1800x1200}}
 
 為什麼去：色彩與混合風格的外觀是辛特拉的視覺圖騰，回報最直接。
@@ -60,7 +60,7 @@ title: 辛特拉（Sintra）
 
 更完整的票務、排隊與時間抓法，統一放在下面的 `## practical`（避免你在這份筆記裡讀到同一件事三次）。
 
-#### [Step 2：摩爾人城堡（Castelo dos Mouros）](https://www.google.com/maps/search/?api=1&query=Castelo%20dos%20Mouros%20Sintra)（從佩納宮走 10–15 分）（從佩納宮走 10–15 分）
+#### {{bilink:Step 2： 摩爾人城堡|Castelo dos Mouros Sintra|https://www.google.com/maps/search/?api=1&query=Castelo%20dos%20Mouros%20Sintra}}（從佩納宮走 10–15 分）（從佩納宮走 10–15 分）
 {{gallery:Castelo dos Mouros|https://source.unsplash.com/gKYrC6ozs6A/1800x1200|https://source.unsplash.com/ar9jizD0V88/1800x1200|https://source.unsplash.com/rpMRy2L68ds/1800x1200|https://source.unsplash.com/JBbM9wAKQ_0/1800x1200}}
 
 亮點：像「葡萄牙萬里長城」的城牆線，也是拍佩納宮全景最穩的角度之一。
@@ -77,7 +77,7 @@ title: 辛特拉（Sintra）
 正餐候選：
 - `Tascantiga`（tapas；也常見推薦豬頰肉）
 
-#### [Step 4：雷加萊拉莊園（Quinta da Regaleira）](https://www.google.com/maps/search/?api=1&query=Quinta%20da%20Regaleira%20Sintra)（迷宮花園＋地下動線）（迷宮花園＋地下動線）
+#### {{bilink:Step 4： 雷加萊拉莊園|Quinta da Regaleira Sintra|https://www.google.com/maps/search/?api=1&query=Quinta%20da%20Regaleira%20Sintra}}（迷宮花園＋地下動線）（迷宮花園＋地下動線）
 {{gallery:Quinta da Regaleira|https://source.unsplash.com/5v4KLhE62a0/1800x1200|https://source.unsplash.com/7-rEzi6T8oo/1800x1200|https://source.unsplash.com/SvSQZtBr544/1800x1200}}
 
 先講做法：不要只為「井」衝進來拍一張就走。
@@ -88,7 +88,7 @@ title: 辛特拉（Sintra）
 
 霧天取捨與安全提醒，下面的 `## rain` 和 `## safety` 有整理。
 
-#### 啟蒙之井（Initiation Well / Poço Iniciático）：它不是水井，而是一座「倒塔」
+#### {{bi:啟蒙之井|Initiation Well / Poço Iniciático}}：它不是水井，而是一座「倒塔」
 
 #### 先用一句話抓住它
 
@@ -103,19 +103,19 @@ title: 辛特拉（Sintra）
 常見的「入會儀式」傳說（把它當作故事看，別當成可考證歷史）
 - 傳說版本中，候選人會被蒙眼、以劍貼胸，沿螺旋階梯下降（不知道自己身在何處）。
 - 抵達井底後必須在黑暗中選路，穿越地下隧道系統。
-- 最後穿過「東方石窟（Grotto of the East）」附近的出口，踩著踏腳石離開（有些解讀會把它連到「行走水面」的象徵），完成「重見光明」的收束。
+- 最後穿過「 {{bi:東方石窟|Grotto of the East}}」附近的出口，踩著踏腳石離開（有些解讀會把它連到「行走水面」的象徵），完成「重見光明」的收束。
 
-踏腳石（Stepping stones）/ 瀑布出口：為什麼「跨水」是整段戲的句點
+{{bi:踏腳石|Stepping stones}}/ 瀑布出口：為什麼「跨水」是整段戲的句點
 - 動線上，你會在隧道後抵達一個帶瀑布的小水池（常被連結到「東方石窟」一帶），必須踩著踏腳石跨過去。
 - 這一步常被用「象徵性解讀」來看：在完成「黑暗迷宮」後，跨越水面重見光明，像是把整段旅程收束成一次克服恐懼 → 走向開悟/重生的終章。
 - 有些說法會把它對應到「基督行走水面」的神蹟意象：不是要你相信它曾真實發生，而是說設計者用這個「跨水」動作，讓你在心理上產生儀式的完成感。
 
-井底符號：羅盤玫瑰（Wind rose）＋十字
-- 井底地面常見的解讀焦點，是羅盤玫瑰（方位/航海象徵）上疊加的十字圖樣；它也常被連結到莊園主人 安東尼奧・卡瓦略・蒙泰羅（Antonio Carvalho Monteiro）偏好的神祕學符號系統（共濟會、聖殿騎士團、玫瑰十字、煉金術等），讓整個空間像是一座「符號展覽館」。
+井底符號： {{bi:羅盤玫瑰|Wind rose}}＋十字
+- 井底地面常見的解讀焦點，是羅盤玫瑰（方位/航海象徵）上疊加的十字圖樣；它也常被連結到莊園主人 {{bi:安東尼奧・卡瓦略・蒙泰羅|Antonio Carvalho Monteiro}}偏好的神祕學符號系統（共濟會、聖殿騎士團、玫瑰十字、煉金術等），讓整個空間像是一座「符號展覽館」。
 
 設計背景（你會更懂為什麼這裡像一場劇）
 - 莊園在 19 世紀末到 20 世紀初完成，由富豪蒙泰羅與建築師 `Luigi Manini`共同規劃。
-- 園內大量混用哥德、曼努埃爾式（Manueline）與文藝復興元素，再加上地下隧道、洞穴、瀑布的串連，讓你有「走進一套設定完整的世界觀」的感覺。
+- 園內大量混用哥德、 {{bi:曼努埃爾式|Manueline}}與文藝復興元素，再加上地下隧道、洞穴、瀑布的串連，讓你有「走進一套設定完整的世界觀」的感覺。
 - 很重要的一點是：啟蒙之井不是單點，它是地下迷宮網的一個節點；你走完井，再走隧道/瀑布出口，整段體驗才完整。
 
 怎麼玩才不踩雷（直接照做）
@@ -123,7 +123,7 @@ title: 辛特拉（Sintra）
 - 地下段落偏暗、地面可能濕：手機先開手電筒、鞋底要抓地。
 - 別把它當「拍一張就走」：井本體＋隧道出口＋瀑布/踏腳石，才是它的完整敘事。
 
-#### [Step 5（選修）：辛特拉宮（Palácio Nacional de Sintra）](https://www.google.com/maps/search/?api=1&query=Pal%C3%A1cio%20Nacional%20de%20Sintra) 或直接回里斯本 或直接回里斯本
+#### {{bilink:Step 5（選修）： 辛特拉宮|Palácio Nacional de Sintra|https://www.google.com/maps/search/?api=1&query=Pal%C3%A1cio%20Nacional%20de%20Sintra}} 或直接回里斯本 或直接回里斯本
 
 先講結論：想把一天收得漂亮，有兩個選項就夠了。
 
@@ -140,16 +140,16 @@ title: 辛特拉（Sintra）
 
 三個最值得抓的室內看點（照這個走就夠）
 
-1) 徽章廳（Sala dos Brasões / Heraldic Hall）— 視覺最震撼
+1) {{bi:徽章廳|Sala dos Brasões / Heraldic Hall}}— 視覺最震撼
 - 重點是圓頂天花板上的徽章（王室＋貴族家族紋章）＋牆面藍白磁磚的「整面包覆感」。
 - 如果你今天只想在辛特拉選一個室內廳堂看細節，這間通常最能讓人「一進門就哇」。
 
-2) 天鵝廳（Sala dos Cisnes / Swan Hall）— 鳥類主題天花板
+2) {{bi:天鵝廳|Sala dos Cisnes / Swan Hall}}— 鳥類主題天花板
 - 很適合當作你進宮後的第一個記憶點：抬頭看「天鵝」主題天花板，再看周邊房間的彩繪磁磚，會很有皇室生活的儀式感。
 
 3) Hispano‑Moresque / Mudéjar 的脈絡（摩爾-西班牙風格）
 - 這裡和佩納宮的浪漫主義不一樣：它更古老、更「中世紀宮廷」。
-- 你可以把它當成一次快速的風格課：哥德/曼努埃爾式（Manueline）與穆德哈爾（Mudéjar）語彙混在一起，磁磚題材也更偏幾何與摩爾系統的裝飾感。
+- 你可以把它當成一次快速的風格課： {{bi:哥德/曼努埃爾式|Manueline}} {{bi:與穆德哈爾|Mudéjar}}語彙混在一起，磁磚題材也更偏幾何與摩爾系統的裝飾感。
 
 時間抓法：45–60 分鐘就很有感；如果你真的很愛磁磚與細節，抓到 75–90 分也不會浪費。
 
@@ -159,7 +159,7 @@ title: 辛特拉（Sintra）
 @card: 只做 2 個主菜也很成立：給你兩個低壓版本（雷加萊拉/蒙塞拉特為主），把歷史中心甜點與補給放進節奏裡，照樣能玩到辛特拉的精華。
 
 - **版本 A（最穩）**：雷加萊拉莊園（花園慢走）→ 歷史中心甜點 →（有力再加）辛特拉宮
-- **版本 B（怕人潮）**：蒙塞拉特宮（Monserrate）→ 歷史中心甜點 → 回里斯本
+- **版本 B（怕人潮）**： {{bi:蒙塞拉特宮|Monserrate}}→ 歷史中心甜點 → 回里斯本
 
 ## rain
 
@@ -170,20 +170,20 @@ title: 辛特拉（Sintra）
 
 #### 霧天最推薦（按優先順序）
 
-1) 雷加萊拉莊園（Quinta da Regaleira）
+1) {{bi:雷加萊拉莊園|Quinta da Regaleira}}
 - 霧天/陰天反而更像暗黑童話：青苔石牆、洞穴、隧道、啟蒙井的戲劇感會被放大。
 - 它的回報主要來自「花園細節＋地下迷宮」，不靠遠景，所以能見度差也很成立。
 - 如果你今天只想選 1 個點讓「霧」變成加分題：選它。
 
-2) 蒙塞拉特宮（Monserrate）
+2) {{bi:蒙塞拉特宮|Monserrate}}
 - 溼冷霧氣會讓蕨類、植物園更翠綠；加上人相對少，霧中慢走反而很舒服。
 - 宮殿走廊與雕刻細節很精緻，屬於「近看就賺」的類型。
 
-3) 辛特拉國立宮（Palácio Nacional de Sintra）
+3) {{bi:辛特拉國立宮|Palácio Nacional de Sintra}}
 - 完全室內導向：徽章廳、天鵝廳、磁磚與天花板不吃天氣。
 - 交通方便、也不用爬山，是霧大又帶雨時最穩的避風港。
 
-4) 佩納宮（Pena Palace）— 兩極，但可以把霧當成題材
+4) {{bi:佩納宮|Pena Palace}}— 兩極，但可以把霧當成題材
 - 霧裡的紅黃外牆會很「雲中城堡」；但你會失去露台遠眺（看海線/看城堡線條）的回報。
 - 如果你已經買票/卡了時段：就去，但把心態改成「拍外觀色塊＋露台近景細節」。（拍照策略已在 `## photo` 裡。）
 
@@ -198,7 +198,7 @@ title: 辛特拉（Sintra）
   - 海拔較低、被森林包住，霧會變成「近景氛圍」而不是「視野歸零」
   - 人通常比佩納宮少，霧天更容易拍到乾淨構圖、慢慢看細節
 
-#### 霧天明確避雷：摩爾人城堡（Moorish Castle）
+#### 霧天明確避雷： {{bi:摩爾人城堡|Moorish Castle}}
 
 - 它的核心回報是「爬上城牆後的視野」：霧太濃時，你爬完只會看到白牆。
 - 霧天常伴隨溼滑，城牆石面更滑；這時候把體力留給雷加萊拉/室內點會更值。
@@ -214,7 +214,7 @@ title: 辛特拉（Sintra）
 @card: 最穩的視野回報是摩爾人城堡城牆（也能抓佩納宮全景角度）；羅卡角是加分但別為它打散本日節奏，除非時間與交通都很順。
 
 - **摩爾人城堡城牆**：看辛特拉小鎮＋抓佩納宮全景角度。
-- 羅卡角（Cabo da Roca）（時間/交通允許才加）：大西洋懸崖「世界盡頭」感很強，但別為了它把本日節奏打散。
+- {{bi:羅卡角|Cabo da Roca}}（時間/交通允許才加）：大西洋懸崖「世界盡頭」感很強，但別為了它把本日節奏打散。
 
 ## routes
 
@@ -235,12 +235,12 @@ title: 辛特拉（Sintra）
 - **434 巴士**：能到，但旺季排隊/滿車上不了的風險最高
 - **不要徒步上山**：會把體力與時間直接燒掉
 
-第一站：佩納宮（Palácio da Pena）
+第一站： {{bi:佩納宮|Palácio da Pena}}
 - 目標是拿到最早一批入場時段作為全日錨點
 - 你如果要進室內：預約時間前 30–60 分鐘到「公園大門」附近（大門到宮殿入口還要上坡/排隊/可能搭接駁）
 - 時間有限就走「Park Only」：外觀＋露台回報最大，省下的時間留給後面
 
-第二站：摩爾人城堡（Castelo dos Mouros）
+第二站： {{bi:摩爾人城堡|Castelo dos Mouros}}
 - 從佩納宮步行約 10–15 分鐘就到（通常是平路/下坡，這段很合理）
 - 上城牆回望佩納宮全景（也是你想拍全景最穩的角度）
 - 如果你體力不佳/霧太濃：這站就是最該砍掉的一站（直接下山去吃飯）
@@ -251,7 +251,7 @@ title: 辛特拉（Sintra）
   - **叫車/搭車**：更穩、更省腿
 - 午餐後一定要補甜點：`Piriquita` 枕頭酥、`Queijadas da Sapa` 起司塔
 
-收尾：雷加萊拉莊園（Quinta da Regaleira）
+收尾： {{bi:雷加萊拉莊園|Quinta da Regaleira}}
 - 從市中心步行約 10–15 分鐘就到（路線相對平）
 - 進場後先衝 啟蒙井（通常會排隊），拍完再走花園＋隧道＋瀑布出口踏腳石
 - 光線：日光偏斜時井內常更有「光束＋重生」的戲劇感；人潮方面則常是「越晚越好」
@@ -380,7 +380,7 @@ Day B：Pena（按時段）→（選配）Monserrate（人通常較少）。
 @card: 資料來源與查詢入口：需要核對票務、規則或官方公告可從這裡往下追。
 Parques de Sintra（Pena 官方票務）：https://www.parquesdesintra.pt/en/plan-your-visit/tickets-palace-of-pena/
 
-Wikivoyage（Sintra）：https://en.wikivoyage.org/wiki/Sintra
+{{bi:Wikivoyage|Sintra}}：https://en.wikivoyage.org/wiki/Sintra
 
 ### transit-strategy｜434/435 + 避排隊策略（旺季保命）
 @card: 旺季保命策略：434/435 當幹線、早班＋早場避尖峰；公車排爆就把點數縮到 2 個內，時間回到景點本體。
@@ -410,9 +410,9 @@ Wikivoyage（Sintra）：https://en.wikivoyage.org/wiki/Sintra
 
 #### sources
 @card: 資料來源與查詢入口：需要核對票務、規則或官方公告可從這裡往下追。
-Wikivoyage（Sintra）：https://en.wikivoyage.org/wiki/Sintra
+{{bi:Wikivoyage|Sintra}}：https://en.wikivoyage.org/wiki/Sintra
 
-### monserrate｜蒙塞拉特宮（Monserrate）（避人潮的舒服收尾）
+### monserrate｜ {{bi:蒙塞拉特宮|Monserrate}}（避人潮的舒服收尾）
 @card: 避人潮的舒服收尾：Monserrate 以花園散步為主、節奏可慢，放在 Pena/Regaleira 後當第二站很順。
 
 如果你已經被 Pena 擠到煩、又不想放棄 Sintra 的精緻，Monserrate 很適合當作舒服的收尾：花園散步為主、節奏可以很慢，拍照也好看，重點是終於能好好逛而不是一直被人潮推著走。它把 Sintra 那種浪漫主義「把自然當舞台」的美學延伸做得很完整，但人通常少很多。交通以公車/接駁為主（先看當天路線與班次），也不必拚很早，放在人潮最煩的一天最後一站剛剛好。
@@ -423,7 +423,7 @@ Wikivoyage（Sintra）：https://en.wikivoyage.org/wiki/Sintra
 
 #### how
 @card: 交通與動線重點整理：把 Monserrate 當作「避人潮的舒服收尾」；花園散步為主、節奏慢，適合放在 Pena 後或 Regaleira 後當第二站。
-做法：把 Monserrate 當作 Day B 的第二站（Pena 後）或 Day A 的收尾（Regaleira 後）。
+做法：把 Monserrate 當作 Day B 的第二站（Pena 後）或 的收尾（Regaleira 後）。
 半日/收尾版：Pena（按時段）→ Monserrate（走花園＋休息）→ 回鎮上吃甜點。建議抓 2–3 小時（含交通）。
 
 #### backup
@@ -432,9 +432,9 @@ Wikivoyage（Sintra）：https://en.wikivoyage.org/wiki/Sintra
 
 #### sources
 @card: 資料來源與查詢入口：需要核對票務、規則或官方公告可從這裡往下追。
-Monserrate（Parques de Sintra）：https://www.parquesdesintra.pt/en/wifi-landing-pages/park-and-palace-of-monserrate/
+{{bi:Monserrate|Parques de Sintra}}：https://www.parquesdesintra.pt/en/wifi-landing-pages/park-and-palace-of-monserrate/
 
-### capuchos｜卡普舒什修道院（Convento dos Capuchos）（森林修道院：小眾但很有味道）
+### capuchos｜ {{bi:卡普舒什修道院|Convento dos Capuchos}}（森林修道院：小眾但很有味道）
 @card: 小眾換腦題材：森林＋極簡苦修的修道院。路面較原始、雨天濕滑；不搭計程車就別硬塞。
 
 如果你在 Sintra 看了一堆浪漫主義的華麗，Capuchos 會用「森林＋極簡苦修」把你直接拉回地面，很有效換腦：洞穴/花崗岩與修道院的生活痕跡不是豪華建築，而是一種貼近自然的生活方式。這裡路面比較原始，雨天可能濕滑，怕滑就要保守；而且公車不方便，不搭計程車的話不建議硬塞。真要去就早去早回，天氣差就乾脆取消，體感會更好。
@@ -454,9 +454,9 @@ Monserrate（Parques de Sintra）：https://www.parquesdesintra.pt/en/wifi-landi
 
 #### sources
 @card: 資料來源與查詢入口：需要核對票務、規則或官方公告可從這裡往下追。
-Wikivoyage（Sintra）：https://en.wikivoyage.org/wiki/Sintra
+{{bi:Wikivoyage|Sintra}}：https://en.wikivoyage.org/wiki/Sintra
 
-### cabo-roca-azenhas｜羅卡角（Cabo da Roca）+ 海邊白屋村（Azenhas do Mar）（海岸線加點）
+### cabo-roca-azenhas｜ {{bi:羅卡角|Cabo da Roca}}+ {{bi:海邊白屋村|Azenhas do Mar}}（海岸線加點）
 @card: 海岸線加點（很吃天氣/交通）：風大懸崖視野很強，但別為它打散本日節奏；不搭計程車就不要壓時間。
 
 這個加點是把 Sintra 的山城故事接到大西洋邊界：風很大，但視野會讓你覺得自己真的到了「最西端」。Cabo da Roca 的象徵感很強，Azenhas 則用白屋與峭壁把畫面直接做滿；但它很吃天氣，天氣好才值。地形是懸崖風口（走路不一定長，但站久很消耗），交通以公車為主，班次/轉乘務必抓寬，不搭計程車就不要壓時間；建議早去比較不趕，風大時就短停拍照收工即可。
@@ -476,10 +476,10 @@ Wikivoyage（Sintra）：https://en.wikivoyage.org/wiki/Sintra
 
 #### sources
 @card: 資料來源與查詢入口：需要核對票務、規則或官方公告可從這裡往下追。
-Wikivoyage（Sintra）：https://en.wikivoyage.org/wiki/Sintra
+{{bi:Wikivoyage|Sintra}}：https://en.wikivoyage.org/wiki/Sintra
 
-### coast-cascais｜沿海連動：辛特拉（Sintra）+ 卡斯凱什（Cascais）（海岸放鬆日）
-@card: 更舒服的拆法：一天跑山（Sintra），一天跑海（Cascais），避免硬把海岸線塞進同一天把兩邊都玩壞。
+### coast-cascais｜沿海連動： {{bi:辛特拉|Sintra}}+ {{bi:卡斯凱什|Cascais}}（海岸放鬆日）
+@card: 更舒服的拆法： {{bi:一天跑山|Sintra}}， {{bi:一天跑海|Cascais}}，避免硬把海岸線塞進同一天把兩邊都玩壞。
 
 這個兩天拆法的目的只有一個：讓你每天都舒服。Sintra 本來就容易累，硬把海岸線塞進同一天只會讓兩邊都不好玩；拆成「一天跑山、一天跑海」才是最順的節奏。Day 1 早上做 Sintra 把票務/人潮最硬的部分先處理掉，Day 2 就晚點出門去 Cascais 放鬆走海岸線；兩天都能用火車/公車完成，完全符合不搭計程車，而且每天都能走得很保守、不會走到爆。
 
@@ -501,7 +501,7 @@ Day 2：Cascais 海岸線散步（輕鬆收尾）。
 
 #### sources
 @card: 資料來源與查詢入口：需要核對票務、規則或官方公告可從這裡往下追。
-Wikivoyage（Sintra）：https://en.wikivoyage.org/wiki/Sintra
+{{bi:Wikivoyage|Sintra}}：https://en.wikivoyage.org/wiki/Sintra
 
 ## skip
 
@@ -546,7 +546,7 @@ Wikivoyage（Sintra）：https://en.wikivoyage.org/wiki/Sintra
 - **訊號問題**：佩納宮/摩爾人城堡周邊可能訊號不穩、叫車會卡。做法是：離開景點前先在有訊號的位置把車叫好，或先走到比較開闊的路口再叫。
 - **離線地圖**：山區訊號不穩是常態，出發前把 Offline Maps（離線地圖）下載好，避免在森林/城牆邊導航失靈。
 - **單行道＋塞車**：辛特拉山路常是單行道，你叫車也得跟車流排隊；遇到堵塞就別硬「跨區跳點」，把行程縮成 1–2 個主菜更賺。
-- **尖峰加價（Surge）**：早段或人潮爆的時候可能會跳價。想省錢也想省時間：一下火車就先叫車上山（越早通常越友善）。
+- ** {{bi:尖峰加價|Surge}}**：早段或人潮爆的時候可能會跳價。想省錢也想省時間：一下火車就先叫車上山（越早通常越友善）。
 - **山上可能較難叫到車**：司機多在車站/鎮中心，所以「先上山」通常更穩；離開景點時也記得提前在有訊號的地方把車叫好。
 - **遠點更值得叫車**：如果你要跑 `Monserrate` 這種比較偏遠的點，公車班次少/排隊風險高，叫車通常是最穩的做法。
 
@@ -655,37 +655,37 @@ Wikivoyage（Sintra）：https://en.wikivoyage.org/wiki/Sintra
 
 辛特拉的景點在地圖上看起來很近，但「山路＋接駁＋排隊」會把時間吃掉。下面是比較保守、實戰可用的抓法（含排隊/走路緩衝）。
 
-#### 佩納宮（Pena Palace）：2–4 小時（最容易超時）
+#### {{bi:佩納宮|Pena Palace}}：2–4 小時（最容易超時）
 
 - **只看外觀＋露台＋公園一小段**：約 `1.5–2 小時`
 - **要進室內（定時票）＋拍外部＋公園**：抓 `2.5–4 小時`
 - **重要時間錨點**：如果你有室內時段票，建議在入場時段前 `30–60 分鐘` 就到「公園大門」附近（從大門走到宮殿入口本身還要上坡/排隊/可能搭接駁）。
 
-#### 雷加萊拉莊園（Quinta da Regaleira）：2–3 小時
+#### {{bi:雷加萊拉莊園|Quinta da Regaleira}}：2–3 小時
 
 - 花園＋隧道＋瀑布出口很像大型遊樂場，時間很容易默默流失。
 - **啟蒙之井排隊**：常見要再多抓 `25–30 分鐘`（旺季更久）。
 - **策略**：一入園先直奔「井」→ 再慢慢逛花園（反過來通常會排更久）。
 
-#### 摩爾人城堡（Moorish Castle）：1–1.5 小時（體力活）
+#### {{bi:摩爾人城堡|Moorish Castle}}：1–1.5 小時（體力活）
 
 - 城牆與階梯多，走起來很像「迷你萬里長城」。
 - **霧太濃/風雨**：視野回報會大幅下降，這時停留時間自然會縮短（也更值得直接砍掉換室內點）。
 
-#### 辛特拉國立宮（National Palace）：45–60 分鐘（市中心、低體力）
+#### {{bi:辛特拉國立宮|National Palace}}：45–60 分鐘（市中心、低體力）
 
 - 在鎮中心，主要看室內房間與裝飾，不需要爬山；很適合當「霧牆/腿累」備案。
 
-#### 蒙塞拉特宮（Monserrate Palace）：1.5–2 小時（人少但遠）
+#### {{bi:蒙塞拉特宮|Monserrate Palace}}：1.5–2 小時（人少但遠）
 
 - 宮殿本體精緻、花園安靜；如果你想避開佩納宮的人潮，它是很好的替代主菜。
 - **室內別跳過**：連續拱門長廊＋雕刻細節是它的王牌，而且因為人少，你比較能停下來慢慢看/拍。
 - **花園要用「分區概念」走**：選 2–3 個你最想看的分區（例如 Mexican Garden/蕨類谷/廢墟教堂＋瀑布），不要想把整座植物園一口氣集郵。
 - 缺點是距離較遠，交通時間要抓鬆（別把它硬塞在已經爆掉的一天）。
 
-#### 歷史中心（Historic Center）：1–2 小時
+#### {{bi:歷史中心|Historic Center}}：1–2 小時
 
-- 午餐＋甜點（Travesseiros / Queijadas）＋逛小店，抓 1–2 小時最合理。
+- 午餐＋ {{bi:甜點|Travesseiros / Queijadas}}＋逛小店，抓 1–2 小時最合理。
 
 ### 移動時間（真的會決定你今天玩得爽不爽）
 @card: 移動時間會決定體感：上坡、排隊與轉乘的實際耗時，這段讓你用時間去選景點，而不是用幻想；辛特拉的一日遊本質就是時間管理遊戲。
@@ -727,14 +727,14 @@ Wikivoyage（Sintra）：https://en.wikivoyage.org/wiki/Sintra
 
 ## food
 
-辛特拉的美食不是「剛好路過可以吃」，而是跟它的 微氣候（Microclimate）綁在一起：山上濕冷多霧、山下（里斯本）可能大晴。這種溫差與濕度，讓甜點（蛋黃/杏仁/起司）和熱食（燉肉/湯）在體感上特別加分。
+辛特拉的美食不是「剛好路過可以吃」，而是跟它的 {{bi:微氣候|Microclimate}}綁在一起：山上濕冷多霧、山下（里斯本）可能大晴。這種溫差與濕度，讓甜點（蛋黃/杏仁/起司）和熱食（燉肉/湯）在體感上特別加分。
 
 ### 兩大傳奇甜點（先吃這兩個就夠你記一輩子）
 @card: 辛特拉甜點兩大傳奇：枕頭酥與起司塔；先吃這兩個就抓到山城的味覺記憶點，剩下的甜點可以當加菜慢慢補。
 
 #### Travesseiros（枕頭酥）：酥皮崩解＋溫熱杏仁蛋黃餡
 
-關鍵口感：外皮像菲洛（Filo）風格的酥皮層層碎裂，內餡是溫熱、柔滑的杏仁泥＋蛋黃奶油——是辛特拉「最溫柔的擁抱」。
+關鍵口感： {{bi:外皮像菲洛|Filo}}風格的酥皮層層碎裂，內餡是溫熱、柔滑的杏仁泥＋蛋黃奶油——是辛特拉「最溫柔的擁抱」。
 
 吃法建議：
 - **越早越好**：店剛開始忙之前去最舒服，也更容易吃到溫熱出爐版本。
@@ -755,17 +755,17 @@ Wikivoyage（Sintra）：https://en.wikivoyage.org/wiki/Sintra
 ### 甜點背後的兩個「風味基石」（你吃到的不是糖，是原料工藝）
 @card: 你吃到的不只是糖：蛋黃、奶脂與烤焙工藝才是甜點迷人的底層；這段用「風味基石」的角度，讓你更懂辛特拉甜點為什麼好吃。
 
-- **杏仁泥（Almond paste）**：是枕頭酥的靈魂。杏仁香在加熱後和蛋黃餡融合，會出現一種「溫潤、厚實、安慰感很強」的甜味。
-- **地方鮮起司（Regional fresh cheese）**：起司塔的核心。它不是超市那種切片起司，而是更適合烘焙、能和糖/肉桂產生凝乳反應的質地，才做得出那種黏稠與回彈。
+- ** {{bi:杏仁泥|Almond paste}}**：是枕頭酥的靈魂。杏仁香在加熱後和蛋黃餡融合，會出現一種「溫潤、厚實、安慰感很強」的甜味。
+- ** {{bi:地方鮮起司|Regional fresh cheese}}**：起司塔的核心。它不是超市那種切片起司，而是更適合烘焙、能和糖/肉桂產生凝乳反應的質地，才做得出那種黏稠與回彈。
 
 ### 鹹食必點（把甜吃完後，用這些把體力救回來）
 @card: 甜吃多了用鹹食把體力救回來：這段整理最穩的鹹食方向與選擇邏輯，讓你不會只靠糖撐一整天，也更容易把節奏接回正餐。
 
-辛特拉的鹹食常受鄰近阿連特茹（Alentejo）影響：黑豬肉、燉煮料理、蒜香與香腸都很常見。
+辛特拉的 {{bi:鹹食常受鄰近阿連特茹|Alentejo}}影響：黑豬肉、燉煮料理、蒜香與香腸都很常見。
 
-- **慢燉豬頰肉（Pork Cheeks / Bochechas）**：肉質軟到像要化掉、但又有回彈；蒜酥香氣很犯規
-- **鴨肉飯（Arroz de Pato）**：把鴨肉香、米飯與香腸油脂全部黏在一起的濃厚系主食
-- **甘藍湯（Caldo Verde）**：馬鈴薯泥湯底＋蒜香＋青甘藍細絲＋香腸片，冷天/霧天超加分
+- ** {{bi:慢燉豬頰肉|Pork Cheeks / Bochechas}}**：肉質軟到像要化掉、但又有回彈；蒜酥香氣很犯規
+- ** {{bi:鴨肉飯|Arroz de Pato}}**：把鴨肉香、米飯與香腸油脂全部黏在一起的濃厚系主食
+- ** {{bi:甘藍湯|Caldo Verde}}**：馬鈴薯泥湯底＋蒜香＋青甘藍細絲＋香腸片，冷天/霧天超加分
 
 ### 微醺怎麼點（簡單兩杯就很到位）
 @card: 微醺不用複雜：兩杯就到位的辛特拉喝法（照你的口味選甜酒/氣泡酒），用輕量酒精把山城氛圍補滿，而不是把自己喝到失控。
@@ -797,7 +797,7 @@ Wikivoyage（Sintra）：https://en.wikivoyage.org/wiki/Sintra
 - 摩爾人城堡：城牆線條＋遠眺佩納宮
 - 雷加萊拉：
   - 啟蒙之井：入口俯拍＋螺旋階梯「倒塔」視覺（最有戲）
-  - 井底圖樣：羅盤玫瑰（Wind rose）＋十字符號（很多人會漏拍）
+  - 井底圖樣： {{bi:羅盤玫瑰|Wind rose}}＋十字符號（很多人會漏拍）
   - 隧道出口/瀑布踏腳石：收「重見光明」的故事感（也最像冒險遊戲）
 
 ### 雷加萊拉「啟蒙井」拍照攻略（光差地獄＋人潮地獄的解法）
@@ -827,7 +827,7 @@ Wikivoyage（Sintra）：https://en.wikivoyage.org/wiki/Sintra
 - 下行樓梯通常很難長停：先想好要拍的 1–2 個畫面（俯視、仰視），到點就抓拍。
 - **廣角更吃香**：能把垂直深度與螺旋曲線一次吞進去。
 
-### 佩納宮（Palácio da Pena）拍照攻略（給你「最好看的點」清單）
+### {{bi:佩納宮|Palácio da Pena}}拍照攻略（給你「最好看的點」清單）
 @card: 佩納宮最好看的點清單：把外觀色塊、露台角度與構圖位置一次列好，讓你知道「該把時間花在哪裡」，拍到代表畫面就能收工不後悔。
 
 你會發現：佩納宮最漂亮的照片，常常不是「站在它門口拍」，而是用幾個位置把它拍成童話。
@@ -835,11 +835,11 @@ Wikivoyage（Sintra）：https://en.wikivoyage.org/wiki/Sintra
 #### 1) 拍全景（最壯觀）：從摩爾人城堡看過去
 
 - **最佳點**：摩爾人城堡的城牆高處／塔樓附近視角
-  位置： 摩爾人城堡（Castelo dos Mouros） [Castelo dos Mouros Sintra](https://www.google.com/maps/search/?api=1&query=Castelo%20dos%20Mouros%20Sintra)
+  位置： {{bi:摩爾人城堡|Castelo dos Mouros}} [Castelo dos Mouros Sintra](https://www.google.com/maps/search/?api=1&query=Castelo%20dos%20Mouros%20Sintra)
 - **拍到什麼**：佩納宮完整輪廓「立在山頂」，紅黃宮殿＋綠色森林對比非常強
 - **霧的兩面性**：薄霧＝像漂浮在雲上；霧太濃＝直接什麼都看不到（這天就不要硬追全景）
 
-#### 2) 拍建築細節＋俯瞰風景（最值得）：宮殿外部露台/城牆步道（Wall Walk / Terraces）
+#### 2) 拍建築細節＋俯瞰風景（最值得）： {{bi:宮殿外部露台/城牆步道|Wall Walk / Terraces}}
 
 結論先講：先逛外部再決定要不要排室內。外部露台的回報通常最大。
 
@@ -847,12 +847,12 @@ Wikivoyage（Sintra）：https://en.wikivoyage.org/wiki/Sintra
 - **拍到什麼**：
   - 轉角會出現不同色塊外牆（紅/黃/藍磁磚），很容易拍到「隱藏版立面」
   - 從露台俯瞰：摩爾人城堡、辛特拉小鎮、天氣好時甚至能看到遠方海線
-  - 鐘樓（Clock Tower）與中庭構圖（近景也很有戲）
+  - {{bi:鐘樓|Clock Tower}}與中庭構圖（近景也很有戲）
 
-#### 3) 拍「森林包圍的宮殿」（風景派最愛）：高十字架（Cruz Alta / High Cross）
+#### 3) 拍「森林包圍的宮殿」（風景派最愛）： {{bi:高十字架|Cruz Alta / High Cross}}
 
-- **位置**：佩納宮公園（Pena Park）內最高點之一
-  位置： Cruz Alta（High Cross） [Cruz Alta Sintra](https://www.google.com/maps/search/?api=1&query=Cruz%20Alta%20Sintra)
+- **位置**： {{bi:佩納宮公園|Pena Park}}內最高點之一
+  位置： Cruz {{bi:Alta|High Cross}} [Cruz Alta Sintra](https://www.google.com/maps/search/?api=1&query=Cruz%20Alta%20Sintra)
 - **拍到什麼**：宮殿被森林包住的尺度感（更像「住在山裡的城堡」）
 - **提醒**：這點需要走路/健行；時間不夠或霧太濃就跳過，把力氣留給主菜
 

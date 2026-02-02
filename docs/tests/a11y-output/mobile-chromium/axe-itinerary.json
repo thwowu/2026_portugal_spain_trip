@@ -13,7 +13,7 @@
     "orientationAngle": 0,
     "orientationType": "portrait-primary"
   },
-  "timestamp": "2026-02-01T20:51:17.481Z",
+  "timestamp": "2026-02-02T11:51:05.120Z",
   "url": "http://127.0.0.1:4173/itinerary",
   "toolOptions": {
     "reporter": "v1"
@@ -4169,38 +4169,6 @@
           ],
           "none": [],
           "impact": null,
-          "html": "<div class=\"container\" style=\"position: relative; z-index: 1;\">",
-          "target": [
-            ".container"
-          ]
-        },
-        {
-          "any": [],
-          "all": [
-            {
-              "id": "important-letter-spacing",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
-            },
-            {
-              "id": "important-word-spacing",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
-            },
-            {
-              "id": "important-line-height",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "line-height in the style attribute is not set to !important, or meets the minimum"
-            }
-          ],
-          "none": [],
-          "impact": null,
           "html": "<div style=\"display: grid; grid-template-columns: 1fr 120px; gap: 14px;\">",
           "target": [
             ".container > .card > .cardInner > div"
@@ -4491,7 +4459,7 @@
           "impact": null,
           "html": "<img alt=\"\" src=\"https://b.tile.openstreetmap.org/7/61/48.png\" class=\"leaflet-tile leaflet-tile-loaded\" style=\"width: 256px; height: 256px; transform: translate3d(17px, 72px, 0px); opacity: 1;\">",
           "target": [
-            ".leaflet-tile-loaded.leaflet-tile[alt=\"\"]:nth-child(1)"
+            ".leaflet-tile.leaflet-tile-loaded[alt=\"\"]:nth-child(1)"
           ]
         },
         {
@@ -4523,7 +4491,7 @@
           "impact": null,
           "html": "<img alt=\"\" src=\"https://c.tile.openstreetmap.org/7/61/49.png\" class=\"leaflet-tile leaflet-tile-loaded\" style=\"width: 256px; height: 256px; transform: translate3d(17px, 328px, 0px); opacity: 1;\">",
           "target": [
-            ".leaflet-tile-loaded.leaflet-tile[alt=\"\"]:nth-child(2)"
+            ".leaflet-tile.leaflet-tile-loaded[alt=\"\"]:nth-child(2)"
           ]
         },
         {
@@ -4555,7 +4523,7 @@
           "impact": null,
           "html": "<img alt=\"\" src=\"https://a.tile.openstreetmap.org/7/60/48.png\" class=\"leaflet-tile leaflet-tile-loaded\" style=\"width: 256px; height: 256px; transform: translate3d(-239px, 72px, 0px); opacity: 1;\">",
           "target": [
-            ".leaflet-tile-loaded.leaflet-tile[alt=\"\"]:nth-child(3)"
+            ".leaflet-tile.leaflet-tile-loaded[alt=\"\"]:nth-child(3)"
           ]
         },
         {
@@ -4587,7 +4555,7 @@
           "impact": null,
           "html": "<img alt=\"\" src=\"https://b.tile.openstreetmap.org/7/60/49.png\" class=\"leaflet-tile leaflet-tile-loaded\" style=\"width: 256px; height: 256px; transform: translate3d(-239px, 328px, 0px); opacity: 1;\">",
           "target": [
-            ".leaflet-tile-loaded.leaflet-tile[alt=\"\"]:nth-child(5)"
+            ".leaflet-tile.leaflet-tile-loaded[alt=\"\"]:nth-child(5)"
           ]
         },
         {
@@ -4619,7 +4587,7 @@
           "impact": null,
           "html": "<img alt=\"\" src=\"https://a.tile.openstreetmap.org/7/61/47.png\" class=\"leaflet-tile leaflet-tile-loaded\" style=\"width: 256px; height: 256px; transform: translate3d(17px, -184px, 0px); opacity: 1;\">",
           "target": [
-            ".leaflet-tile-loaded.leaflet-tile[alt=\"\"]:nth-child(7)"
+            ".leaflet-tile.leaflet-tile-loaded[alt=\"\"]:nth-child(7)"
           ]
         },
         {
@@ -4651,7 +4619,7 @@
           "impact": null,
           "html": "<img alt=\"\" src=\"https://a.tile.openstreetmap.org/7/61/50.png\" class=\"leaflet-tile leaflet-tile-loaded\" style=\"width: 256px; height: 256px; transform: translate3d(17px, 584px, 0px); opacity: 1;\">",
           "target": [
-            ".leaflet-tile-loaded.leaflet-tile[alt=\"\"]:nth-child(8)"
+            ".leaflet-tile.leaflet-tile-loaded[alt=\"\"]:nth-child(8)"
           ]
         },
         {
@@ -4683,7 +4651,7 @@
           "impact": null,
           "html": "<img alt=\"\" src=\"https://c.tile.openstreetmap.org/7/60/47.png\" class=\"leaflet-tile leaflet-tile-loaded\" style=\"width: 256px; height: 256px; transform: translate3d(-239px, -184px, 0px); opacity: 1;\">",
           "target": [
-            ".leaflet-tile-loaded.leaflet-tile[alt=\"\"]:nth-child(9)"
+            ".leaflet-tile.leaflet-tile-loaded[alt=\"\"]:nth-child(9)"
           ]
         },
         {
@@ -4715,7 +4683,7 @@
           "impact": null,
           "html": "<img alt=\"\" src=\"https://c.tile.openstreetmap.org/7/60/50.png\" class=\"leaflet-tile leaflet-tile-loaded\" style=\"width: 256px; height: 256px; transform: translate3d(-239px, 584px, 0px); opacity: 1;\">",
           "target": [
-            ".leaflet-tile-loaded.leaflet-tile[alt=\"\"]:nth-child(11)"
+            ".leaflet-tile.leaflet-tile-loaded[alt=\"\"]:nth-child(11)"
           ]
         },
         {
@@ -4745,7 +4713,7 @@
           ],
           "none": [],
           "impact": null,
-          "html": "<svg pointer-events=\"none\" class=\"leaflet-zoom-animated\" width=\"468\" height=\"797\" viewBox=\"-281 -58 468 797\" style=\"transform: translate3d(-281px, -58px, 0px);\">",
+          "html": "<svg pointer-events=\"none\" class=\"leaflet-zoom-animated\" width=\"468\" height=\"797\" viewBox=\"-39 -66 468 797\" style=\"transform: translate3d(-39px, -66.4px, 0px) scale(1);\">",
           "target": [
             "svg[pointer-events=\"none\"]"
           ]
@@ -4873,7 +4841,7 @@
           ],
           "none": [],
           "impact": null,
-          "html": "<div class=\"leaflet-marker-icon number-icon leaflet-zoom-animated leaflet-interactive\" style=\"margin-left: -12px; margin-top: -12px; width: 24px; height: 24px; transform: translate3d(-69px, 330px, 0px); z-index: 330;\"><div>4</div></div>",
+          "html": "<div class=\"leaflet-marker-icon number-icon leaflet-zoom-animated leaflet-interactive\" style=\"margin-left: -12px; margin-top: -12px; width: 24px; height: 24px; transform: translate3d(-47px, 340px, 0px); z-index: 340;\"><div>4</div></div>",
           "target": [
             ".number-icon.leaflet-marker-icon.leaflet-interactive:nth-child(4)"
           ]
@@ -4905,7 +4873,7 @@
           ],
           "none": [],
           "impact": null,
-          "html": "<div class=\"leaflet-marker-icon number-icon leaflet-zoom-animated leaflet-interactive\" style=\"margin-left: -12px; margin-top: -12px; width: 24px; height: 24px; transform: translate3d(-47px, 340px, 0px); z-index: 340;\"><div>5</div></div>",
+          "html": "<div class=\"leaflet-marker-icon number-icon leaflet-zoom-animated leaflet-interactive\" style=\"margin-left: -12px; margin-top: -12px; width: 24px; height: 24px; transform: translate3d(-69px, 330px, 0px); z-index: 330;\"><div>5</div></div>",
           "target": [
             ".number-icon.leaflet-marker-icon.leaflet-interactive:nth-child(5)"
           ]
@@ -5004,6 +4972,70 @@
           "html": "<div class=\"leaflet-marker-icon number-icon leaflet-zoom-animated leaflet-interactive\" style=\"margin-left: -12px; margin-top: -12px; width: 24px; height: 24px; transform: translate3d(-5px, 527px, 0px); z-index: 527;\"><div>8</div></div>",
           "target": [
             ".number-icon.leaflet-marker-icon.leaflet-interactive:nth-child(8)"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "important-letter-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-word-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-line-height",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+            }
+          ],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"leaflet-marker-icon number-icon leaflet-zoom-animated leaflet-interactive\" style=\"margin-left: -12px; margin-top: -12px; width: 24px; height: 24px; transform: translate3d(-5px, 527px, 0px); z-index: 527;\"><div>9</div></div>",
+          "target": [
+            ".number-icon.leaflet-marker-icon.leaflet-interactive:nth-child(9)"
+          ]
+        },
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "important-letter-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-word-spacing",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+            },
+            {
+              "id": "important-line-height",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+            }
+          ],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"leaflet-marker-icon number-icon leaflet-zoom-animated leaflet-interactive\" style=\"margin-left: -12px; margin-top: -12px; width: 24px; height: 24px; transform: translate3d(-47px, 340px, 0px); z-index: 340;\"><div>11</div></div>",
+          "target": [
+            ".number-icon.leaflet-marker-icon.leaflet-interactive:nth-child(11)"
           ]
         },
         {
@@ -5513,13 +5545,13 @@
                   ]
                 },
                 {
-                  "html": "<h2 class=\"itDayHeading\">Day 3</h2>",
+                  "html": "<h2 class=\"itDayHeading\">Day 3｜里斯本</h2>",
                   "target": [
                     "article[data-step=\"3\"] > .cardInner > h2"
                   ]
                 },
                 {
-                  "html": "<h3 class=\"itCityHeading\">里斯本</h3>",
+                  "html": "<h3 class=\"itCityHeading\">{{bi:卡斯凱什</h3>",
                   "target": [
                     "article[data-step=\"3\"] > .cardInner > h3"
                   ]
@@ -5531,67 +5563,67 @@
                   ]
                 },
                 {
-                  "html": "<h3 class=\"itCityHeading\">辛特拉（Sintra）</h3>",
+                  "html": "<h3 class=\"itCityHeading\">里斯本</h3>",
                   "target": [
                     "article[data-step=\"4\"] > .cardInner > h3"
                   ]
                 },
                 {
-                  "html": "<h2 class=\"itDayHeading\">Day 5</h2>",
+                  "html": "<h2 class=\"itDayHeading\">Day 5｜{{bi:辛特拉</h2>",
                   "target": [
                     "article[data-step=\"5\"] > .cardInner > h2"
                   ]
                 },
                 {
-                  "html": "<h3 class=\"itCityHeading\">里斯本</h3>",
+                  "html": "<h3 class=\"itCityHeading\">Sintra}}</h3>",
                   "target": [
                     "article[data-step=\"5\"] > .cardInner > h3"
                   ]
                 },
                 {
-                  "html": "<h2 class=\"itDayHeading\">Day 6</h2>",
+                  "html": "<h2 class=\"itDayHeading\">Day 6｜{{bi:拉各斯</h2>",
                   "target": [
                     "article[data-step=\"6\"] > .cardInner > h2"
                   ]
                 },
                 {
-                  "html": "<h3 class=\"itCityHeading\">拉各斯（Lagos）</h3>",
+                  "html": "<h3 class=\"itCityHeading\">Lagos}}</h3>",
                   "target": [
                     "article[data-step=\"6\"] > .cardInner > h3"
                   ]
                 },
                 {
-                  "html": "<h2 class=\"itDayHeading\">Day 7</h2>",
+                  "html": "<h2 class=\"itDayHeading\">Day 7｜{{bi:拉各斯</h2>",
                   "target": [
                     "article[data-step=\"7\"] > .cardInner > h2"
                   ]
                 },
                 {
-                  "html": "<h3 class=\"itCityHeading\">拉各斯（Lagos）</h3>",
+                  "html": "<h3 class=\"itCityHeading\">Lagos}}</h3>",
                   "target": [
                     "article[data-step=\"7\"] > .cardInner > h3"
                   ]
                 },
                 {
-                  "html": "<h2 class=\"itDayHeading\">Day 8</h2>",
+                  "html": "<h2 class=\"itDayHeading\">Day 8｜{{bi:拉各斯</h2>",
                   "target": [
                     "article[data-step=\"8\"] > .cardInner > h2"
                   ]
                 },
                 {
-                  "html": "<h3 class=\"itCityHeading\">拉各斯（Lagos）</h3>",
+                  "html": "<h3 class=\"itCityHeading\">Lagos}}</h3>",
                   "target": [
                     "article[data-step=\"8\"] > .cardInner > h3"
                   ]
                 },
                 {
-                  "html": "<h2 class=\"itDayHeading\">Day 9</h2>",
+                  "html": "<h2 class=\"itDayHeading\">Day 9｜塞維爾</h2>",
                   "target": [
                     "article[data-step=\"9\"] > .cardInner > h2"
                   ]
                 },
                 {
-                  "html": "<h3 class=\"itCityHeading\">塞維爾</h3>",
+                  "html": "<h3 class=\"itCityHeading\">{{bi:拉各斯</h3>",
                   "target": [
                     "article[data-step=\"9\"] > .cardInner > h3"
                   ]
@@ -5609,13 +5641,13 @@
                   ]
                 },
                 {
-                  "html": "<h2 class=\"itDayHeading\">Day 11</h2>",
+                  "html": "<h2 class=\"itDayHeading\">Day 11｜格拉納達</h2>",
                   "target": [
                     "article[data-step=\"11\"] > .cardInner > h2"
                   ]
                 },
                 {
-                  "html": "<h3 class=\"itCityHeading\">格拉納達</h3>",
+                  "html": "<h3 class=\"itCityHeading\">{{bi:阿爾罕布拉宮</h3>",
                   "target": [
                     "article[data-step=\"11\"] > .cardInner > h3"
                   ]
@@ -5850,7 +5882,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2 class=\"itDayHeading\">Day 3</h2>",
+          "html": "<h2 class=\"itDayHeading\">Day 3｜里斯本</h2>",
           "target": [
             "article[data-step=\"3\"] > .cardInner > h2"
           ]
@@ -5868,7 +5900,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h3 class=\"itCityHeading\">里斯本</h3>",
+          "html": "<h3 class=\"itCityHeading\">{{bi:卡斯凱什</h3>",
           "target": [
             "article[data-step=\"3\"] > .cardInner > h3"
           ]
@@ -5904,7 +5936,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h3 class=\"itCityHeading\">辛特拉（Sintra）</h3>",
+          "html": "<h3 class=\"itCityHeading\">里斯本</h3>",
           "target": [
             "article[data-step=\"4\"] > .cardInner > h3"
           ]
@@ -5922,7 +5954,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2 class=\"itDayHeading\">Day 5</h2>",
+          "html": "<h2 class=\"itDayHeading\">Day 5｜{{bi:辛特拉</h2>",
           "target": [
             "article[data-step=\"5\"] > .cardInner > h2"
           ]
@@ -5940,7 +5972,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h3 class=\"itCityHeading\">里斯本</h3>",
+          "html": "<h3 class=\"itCityHeading\">Sintra}}</h3>",
           "target": [
             "article[data-step=\"5\"] > .cardInner > h3"
           ]
@@ -5958,7 +5990,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2 class=\"itDayHeading\">Day 6</h2>",
+          "html": "<h2 class=\"itDayHeading\">Day 6｜{{bi:拉各斯</h2>",
           "target": [
             "article[data-step=\"6\"] > .cardInner > h2"
           ]
@@ -5976,7 +6008,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h3 class=\"itCityHeading\">拉各斯（Lagos）</h3>",
+          "html": "<h3 class=\"itCityHeading\">Lagos}}</h3>",
           "target": [
             "article[data-step=\"6\"] > .cardInner > h3"
           ]
@@ -5994,7 +6026,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2 class=\"itDayHeading\">Day 7</h2>",
+          "html": "<h2 class=\"itDayHeading\">Day 7｜{{bi:拉各斯</h2>",
           "target": [
             "article[data-step=\"7\"] > .cardInner > h2"
           ]
@@ -6012,7 +6044,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h3 class=\"itCityHeading\">拉各斯（Lagos）</h3>",
+          "html": "<h3 class=\"itCityHeading\">Lagos}}</h3>",
           "target": [
             "article[data-step=\"7\"] > .cardInner > h3"
           ]
@@ -6030,7 +6062,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2 class=\"itDayHeading\">Day 8</h2>",
+          "html": "<h2 class=\"itDayHeading\">Day 8｜{{bi:拉各斯</h2>",
           "target": [
             "article[data-step=\"8\"] > .cardInner > h2"
           ]
@@ -6048,7 +6080,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h3 class=\"itCityHeading\">拉各斯（Lagos）</h3>",
+          "html": "<h3 class=\"itCityHeading\">Lagos}}</h3>",
           "target": [
             "article[data-step=\"8\"] > .cardInner > h3"
           ]
@@ -6066,7 +6098,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2 class=\"itDayHeading\">Day 9</h2>",
+          "html": "<h2 class=\"itDayHeading\">Day 9｜塞維爾</h2>",
           "target": [
             "article[data-step=\"9\"] > .cardInner > h2"
           ]
@@ -6084,7 +6116,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h3 class=\"itCityHeading\">塞維爾</h3>",
+          "html": "<h3 class=\"itCityHeading\">{{bi:拉各斯</h3>",
           "target": [
             "article[data-step=\"9\"] > .cardInner > h3"
           ]
@@ -6138,7 +6170,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2 class=\"itDayHeading\">Day 11</h2>",
+          "html": "<h2 class=\"itDayHeading\">Day 11｜格拉納達</h2>",
           "target": [
             "article[data-step=\"11\"] > .cardInner > h2"
           ]
@@ -6156,7 +6188,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h3 class=\"itCityHeading\">格拉納達</h3>",
+          "html": "<h3 class=\"itCityHeading\">{{bi:阿爾罕布拉宮</h3>",
           "target": [
             "article[data-step=\"11\"] > .cardInner > h3"
           ]
@@ -6610,7 +6642,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2 class=\"itDayHeading\">Day 3</h2>",
+          "html": "<h2 class=\"itDayHeading\">Day 3｜里斯本</h2>",
           "target": [
             "article[data-step=\"3\"] > .cardInner > h2"
           ]
@@ -6628,7 +6660,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h3 class=\"itCityHeading\">里斯本</h3>",
+          "html": "<h3 class=\"itCityHeading\">{{bi:卡斯凱什</h3>",
           "target": [
             "article[data-step=\"3\"] > .cardInner > h3"
           ]
@@ -6664,7 +6696,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h3 class=\"itCityHeading\">辛特拉（Sintra）</h3>",
+          "html": "<h3 class=\"itCityHeading\">里斯本</h3>",
           "target": [
             "article[data-step=\"4\"] > .cardInner > h3"
           ]
@@ -6682,7 +6714,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2 class=\"itDayHeading\">Day 5</h2>",
+          "html": "<h2 class=\"itDayHeading\">Day 5｜{{bi:辛特拉</h2>",
           "target": [
             "article[data-step=\"5\"] > .cardInner > h2"
           ]
@@ -6700,7 +6732,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h3 class=\"itCityHeading\">里斯本</h3>",
+          "html": "<h3 class=\"itCityHeading\">Sintra}}</h3>",
           "target": [
             "article[data-step=\"5\"] > .cardInner > h3"
           ]
@@ -6718,7 +6750,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2 class=\"itDayHeading\">Day 6</h2>",
+          "html": "<h2 class=\"itDayHeading\">Day 6｜{{bi:拉各斯</h2>",
           "target": [
             "article[data-step=\"6\"] > .cardInner > h2"
           ]
@@ -6736,7 +6768,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h3 class=\"itCityHeading\">拉各斯（Lagos）</h3>",
+          "html": "<h3 class=\"itCityHeading\">Lagos}}</h3>",
           "target": [
             "article[data-step=\"6\"] > .cardInner > h3"
           ]
@@ -6754,7 +6786,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2 class=\"itDayHeading\">Day 7</h2>",
+          "html": "<h2 class=\"itDayHeading\">Day 7｜{{bi:拉各斯</h2>",
           "target": [
             "article[data-step=\"7\"] > .cardInner > h2"
           ]
@@ -6772,7 +6804,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h3 class=\"itCityHeading\">拉各斯（Lagos）</h3>",
+          "html": "<h3 class=\"itCityHeading\">Lagos}}</h3>",
           "target": [
             "article[data-step=\"7\"] > .cardInner > h3"
           ]
@@ -6790,7 +6822,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2 class=\"itDayHeading\">Day 8</h2>",
+          "html": "<h2 class=\"itDayHeading\">Day 8｜{{bi:拉各斯</h2>",
           "target": [
             "article[data-step=\"8\"] > .cardInner > h2"
           ]
@@ -6808,7 +6840,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h3 class=\"itCityHeading\">拉各斯（Lagos）</h3>",
+          "html": "<h3 class=\"itCityHeading\">Lagos}}</h3>",
           "target": [
             "article[data-step=\"8\"] > .cardInner > h3"
           ]
@@ -6826,7 +6858,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2 class=\"itDayHeading\">Day 9</h2>",
+          "html": "<h2 class=\"itDayHeading\">Day 9｜塞維爾</h2>",
           "target": [
             "article[data-step=\"9\"] > .cardInner > h2"
           ]
@@ -6844,7 +6876,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h3 class=\"itCityHeading\">塞維爾</h3>",
+          "html": "<h3 class=\"itCityHeading\">{{bi:拉各斯</h3>",
           "target": [
             "article[data-step=\"9\"] > .cardInner > h3"
           ]
@@ -6898,7 +6930,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2 class=\"itDayHeading\">Day 11</h2>",
+          "html": "<h2 class=\"itDayHeading\">Day 11｜格拉納達</h2>",
           "target": [
             "article[data-step=\"11\"] > .cardInner > h2"
           ]
@@ -6916,7 +6948,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h3 class=\"itCityHeading\">格拉納達</h3>",
+          "html": "<h3 class=\"itCityHeading\">{{bi:阿爾罕布拉宮</h3>",
           "target": [
             "article[data-step=\"11\"] > .cardInner > h3"
           ]
@@ -7225,7 +7257,7 @@
           "impact": null,
           "html": "<img alt=\"\" src=\"https://b.tile.openstreetmap.org/7/61/48.png\" class=\"leaflet-tile leaflet-tile-loaded\" style=\"width: 256px; height: 256px; transform: translate3d(17px, 72px, 0px); opacity: 1;\">",
           "target": [
-            ".leaflet-tile-loaded.leaflet-tile[alt=\"\"]:nth-child(1)"
+            ".leaflet-tile.leaflet-tile-loaded[alt=\"\"]:nth-child(1)"
           ]
         },
         {
@@ -7260,7 +7292,7 @@
           "impact": null,
           "html": "<img alt=\"\" src=\"https://c.tile.openstreetmap.org/7/61/49.png\" class=\"leaflet-tile leaflet-tile-loaded\" style=\"width: 256px; height: 256px; transform: translate3d(17px, 328px, 0px); opacity: 1;\">",
           "target": [
-            ".leaflet-tile-loaded.leaflet-tile[alt=\"\"]:nth-child(2)"
+            ".leaflet-tile.leaflet-tile-loaded[alt=\"\"]:nth-child(2)"
           ]
         },
         {
@@ -7295,7 +7327,7 @@
           "impact": null,
           "html": "<img alt=\"\" src=\"https://a.tile.openstreetmap.org/7/60/48.png\" class=\"leaflet-tile leaflet-tile-loaded\" style=\"width: 256px; height: 256px; transform: translate3d(-239px, 72px, 0px); opacity: 1;\">",
           "target": [
-            ".leaflet-tile-loaded.leaflet-tile[alt=\"\"]:nth-child(3)"
+            ".leaflet-tile.leaflet-tile-loaded[alt=\"\"]:nth-child(3)"
           ]
         },
         {
@@ -7330,7 +7362,7 @@
           "impact": null,
           "html": "<img alt=\"\" src=\"https://c.tile.openstreetmap.org/7/62/48.png\" class=\"leaflet-tile leaflet-tile-loaded\" style=\"width: 256px; height: 256px; transform: translate3d(273px, 72px, 0px); opacity: 1;\">",
           "target": [
-            ".leaflet-tile-loaded.leaflet-tile[alt=\"\"]:nth-child(4)"
+            ".leaflet-tile.leaflet-tile-loaded[alt=\"\"]:nth-child(4)"
           ]
         },
         {
@@ -7365,7 +7397,7 @@
           "impact": null,
           "html": "<img alt=\"\" src=\"https://b.tile.openstreetmap.org/7/60/49.png\" class=\"leaflet-tile leaflet-tile-loaded\" style=\"width: 256px; height: 256px; transform: translate3d(-239px, 328px, 0px); opacity: 1;\">",
           "target": [
-            ".leaflet-tile-loaded.leaflet-tile[alt=\"\"]:nth-child(5)"
+            ".leaflet-tile.leaflet-tile-loaded[alt=\"\"]:nth-child(5)"
           ]
         },
         {
@@ -7400,7 +7432,7 @@
           "impact": null,
           "html": "<img alt=\"\" src=\"https://a.tile.openstreetmap.org/7/62/49.png\" class=\"leaflet-tile leaflet-tile-loaded\" style=\"width: 256px; height: 256px; transform: translate3d(273px, 328px, 0px); opacity: 1;\">",
           "target": [
-            ".leaflet-tile-loaded.leaflet-tile[alt=\"\"]:nth-child(6)"
+            ".leaflet-tile.leaflet-tile-loaded[alt=\"\"]:nth-child(6)"
           ]
         },
         {
@@ -7435,7 +7467,7 @@
           "impact": null,
           "html": "<img alt=\"\" src=\"https://a.tile.openstreetmap.org/7/61/47.png\" class=\"leaflet-tile leaflet-tile-loaded\" style=\"width: 256px; height: 256px; transform: translate3d(17px, -184px, 0px); opacity: 1;\">",
           "target": [
-            ".leaflet-tile-loaded.leaflet-tile[alt=\"\"]:nth-child(7)"
+            ".leaflet-tile.leaflet-tile-loaded[alt=\"\"]:nth-child(7)"
           ]
         },
         {
@@ -7470,7 +7502,7 @@
           "impact": null,
           "html": "<img alt=\"\" src=\"https://a.tile.openstreetmap.org/7/61/50.png\" class=\"leaflet-tile leaflet-tile-loaded\" style=\"width: 256px; height: 256px; transform: translate3d(17px, 584px, 0px); opacity: 1;\">",
           "target": [
-            ".leaflet-tile-loaded.leaflet-tile[alt=\"\"]:nth-child(8)"
+            ".leaflet-tile.leaflet-tile-loaded[alt=\"\"]:nth-child(8)"
           ]
         },
         {
@@ -7505,7 +7537,7 @@
           "impact": null,
           "html": "<img alt=\"\" src=\"https://c.tile.openstreetmap.org/7/60/47.png\" class=\"leaflet-tile leaflet-tile-loaded\" style=\"width: 256px; height: 256px; transform: translate3d(-239px, -184px, 0px); opacity: 1;\">",
           "target": [
-            ".leaflet-tile-loaded.leaflet-tile[alt=\"\"]:nth-child(9)"
+            ".leaflet-tile.leaflet-tile-loaded[alt=\"\"]:nth-child(9)"
           ]
         },
         {
@@ -7540,7 +7572,7 @@
           "impact": null,
           "html": "<img alt=\"\" src=\"https://b.tile.openstreetmap.org/7/62/47.png\" class=\"leaflet-tile leaflet-tile-loaded\" style=\"width: 256px; height: 256px; transform: translate3d(273px, -184px, 0px); opacity: 1;\">",
           "target": [
-            ".leaflet-tile-loaded.leaflet-tile[alt=\"\"]:nth-child(10)"
+            ".leaflet-tile.leaflet-tile-loaded[alt=\"\"]:nth-child(10)"
           ]
         },
         {
@@ -7575,7 +7607,7 @@
           "impact": null,
           "html": "<img alt=\"\" src=\"https://c.tile.openstreetmap.org/7/60/50.png\" class=\"leaflet-tile leaflet-tile-loaded\" style=\"width: 256px; height: 256px; transform: translate3d(-239px, 584px, 0px); opacity: 1;\">",
           "target": [
-            ".leaflet-tile-loaded.leaflet-tile[alt=\"\"]:nth-child(11)"
+            ".leaflet-tile.leaflet-tile-loaded[alt=\"\"]:nth-child(11)"
           ]
         },
         {
@@ -7610,7 +7642,7 @@
           "impact": null,
           "html": "<img alt=\"\" src=\"https://b.tile.openstreetmap.org/7/62/50.png\" class=\"leaflet-tile leaflet-tile-loaded\" style=\"width: 256px; height: 256px; transform: translate3d(273px, 584px, 0px); opacity: 1;\">",
           "target": [
-            ".leaflet-tile-loaded.leaflet-tile[alt=\"\"]:nth-child(12)"
+            ".leaflet-tile.leaflet-tile-loaded[alt=\"\"]:nth-child(12)"
           ]
         }
       ]
@@ -7659,7 +7691,7 @@
           "impact": null,
           "html": "<img alt=\"\" src=\"https://b.tile.openstreetmap.org/7/61/48.png\" class=\"leaflet-tile leaflet-tile-loaded\" style=\"width: 256px; height: 256px; transform: translate3d(17px, 72px, 0px); opacity: 1;\">",
           "target": [
-            ".leaflet-tile-loaded.leaflet-tile[alt=\"\"]:nth-child(1)"
+            ".leaflet-tile.leaflet-tile-loaded[alt=\"\"]:nth-child(1)"
           ]
         },
         {
@@ -7677,7 +7709,7 @@
           "impact": null,
           "html": "<img alt=\"\" src=\"https://c.tile.openstreetmap.org/7/61/49.png\" class=\"leaflet-tile leaflet-tile-loaded\" style=\"width: 256px; height: 256px; transform: translate3d(17px, 328px, 0px); opacity: 1;\">",
           "target": [
-            ".leaflet-tile-loaded.leaflet-tile[alt=\"\"]:nth-child(2)"
+            ".leaflet-tile.leaflet-tile-loaded[alt=\"\"]:nth-child(2)"
           ]
         },
         {
@@ -7695,7 +7727,7 @@
           "impact": null,
           "html": "<img alt=\"\" src=\"https://a.tile.openstreetmap.org/7/60/48.png\" class=\"leaflet-tile leaflet-tile-loaded\" style=\"width: 256px; height: 256px; transform: translate3d(-239px, 72px, 0px); opacity: 1;\">",
           "target": [
-            ".leaflet-tile-loaded.leaflet-tile[alt=\"\"]:nth-child(3)"
+            ".leaflet-tile.leaflet-tile-loaded[alt=\"\"]:nth-child(3)"
           ]
         },
         {
@@ -7713,7 +7745,7 @@
           "impact": null,
           "html": "<img alt=\"\" src=\"https://c.tile.openstreetmap.org/7/62/48.png\" class=\"leaflet-tile leaflet-tile-loaded\" style=\"width: 256px; height: 256px; transform: translate3d(273px, 72px, 0px); opacity: 1;\">",
           "target": [
-            ".leaflet-tile-loaded.leaflet-tile[alt=\"\"]:nth-child(4)"
+            ".leaflet-tile.leaflet-tile-loaded[alt=\"\"]:nth-child(4)"
           ]
         },
         {
@@ -7731,7 +7763,7 @@
           "impact": null,
           "html": "<img alt=\"\" src=\"https://b.tile.openstreetmap.org/7/60/49.png\" class=\"leaflet-tile leaflet-tile-loaded\" style=\"width: 256px; height: 256px; transform: translate3d(-239px, 328px, 0px); opacity: 1;\">",
           "target": [
-            ".leaflet-tile-loaded.leaflet-tile[alt=\"\"]:nth-child(5)"
+            ".leaflet-tile.leaflet-tile-loaded[alt=\"\"]:nth-child(5)"
           ]
         },
         {
@@ -7749,7 +7781,7 @@
           "impact": null,
           "html": "<img alt=\"\" src=\"https://a.tile.openstreetmap.org/7/62/49.png\" class=\"leaflet-tile leaflet-tile-loaded\" style=\"width: 256px; height: 256px; transform: translate3d(273px, 328px, 0px); opacity: 1;\">",
           "target": [
-            ".leaflet-tile-loaded.leaflet-tile[alt=\"\"]:nth-child(6)"
+            ".leaflet-tile.leaflet-tile-loaded[alt=\"\"]:nth-child(6)"
           ]
         },
         {
@@ -7767,7 +7799,7 @@
           "impact": null,
           "html": "<img alt=\"\" src=\"https://a.tile.openstreetmap.org/7/61/47.png\" class=\"leaflet-tile leaflet-tile-loaded\" style=\"width: 256px; height: 256px; transform: translate3d(17px, -184px, 0px); opacity: 1;\">",
           "target": [
-            ".leaflet-tile-loaded.leaflet-tile[alt=\"\"]:nth-child(7)"
+            ".leaflet-tile.leaflet-tile-loaded[alt=\"\"]:nth-child(7)"
           ]
         },
         {
@@ -7785,7 +7817,7 @@
           "impact": null,
           "html": "<img alt=\"\" src=\"https://a.tile.openstreetmap.org/7/61/50.png\" class=\"leaflet-tile leaflet-tile-loaded\" style=\"width: 256px; height: 256px; transform: translate3d(17px, 584px, 0px); opacity: 1;\">",
           "target": [
-            ".leaflet-tile-loaded.leaflet-tile[alt=\"\"]:nth-child(8)"
+            ".leaflet-tile.leaflet-tile-loaded[alt=\"\"]:nth-child(8)"
           ]
         },
         {
@@ -7803,7 +7835,7 @@
           "impact": null,
           "html": "<img alt=\"\" src=\"https://c.tile.openstreetmap.org/7/60/47.png\" class=\"leaflet-tile leaflet-tile-loaded\" style=\"width: 256px; height: 256px; transform: translate3d(-239px, -184px, 0px); opacity: 1;\">",
           "target": [
-            ".leaflet-tile-loaded.leaflet-tile[alt=\"\"]:nth-child(9)"
+            ".leaflet-tile.leaflet-tile-loaded[alt=\"\"]:nth-child(9)"
           ]
         },
         {
@@ -7821,7 +7853,7 @@
           "impact": null,
           "html": "<img alt=\"\" src=\"https://b.tile.openstreetmap.org/7/62/47.png\" class=\"leaflet-tile leaflet-tile-loaded\" style=\"width: 256px; height: 256px; transform: translate3d(273px, -184px, 0px); opacity: 1;\">",
           "target": [
-            ".leaflet-tile-loaded.leaflet-tile[alt=\"\"]:nth-child(10)"
+            ".leaflet-tile.leaflet-tile-loaded[alt=\"\"]:nth-child(10)"
           ]
         },
         {
@@ -7839,7 +7871,7 @@
           "impact": null,
           "html": "<img alt=\"\" src=\"https://c.tile.openstreetmap.org/7/60/50.png\" class=\"leaflet-tile leaflet-tile-loaded\" style=\"width: 256px; height: 256px; transform: translate3d(-239px, 584px, 0px); opacity: 1;\">",
           "target": [
-            ".leaflet-tile-loaded.leaflet-tile[alt=\"\"]:nth-child(11)"
+            ".leaflet-tile.leaflet-tile-loaded[alt=\"\"]:nth-child(11)"
           ]
         },
         {
@@ -7857,7 +7889,7 @@
           "impact": null,
           "html": "<img alt=\"\" src=\"https://b.tile.openstreetmap.org/7/62/50.png\" class=\"leaflet-tile leaflet-tile-loaded\" style=\"width: 256px; height: 256px; transform: translate3d(273px, 584px, 0px); opacity: 1;\">",
           "target": [
-            ".leaflet-tile-loaded.leaflet-tile[alt=\"\"]:nth-child(12)"
+            ".leaflet-tile.leaflet-tile-loaded[alt=\"\"]:nth-child(12)"
           ]
         }
       ]
@@ -8038,7 +8070,14 @@
             {
               "id": "page-has-main",
               "data": null,
-              "relatedNodes": [],
+              "relatedNodes": [
+                {
+                  "html": "<main class=\"appShell\" id=\"main\">",
+                  "target": [
+                    "#main"
+                  ]
+                }
+              ],
               "impact": "moderate",
               "message": "Document has at least one main landmark"
             }
@@ -8847,7 +8886,14 @@
             {
               "id": "page-has-heading-one",
               "data": null,
-              "relatedNodes": [],
+              "relatedNodes": [
+                {
+                  "html": "<h1 class=\"srOnly\">行程（Itinerary）</h1>",
+                  "target": [
+                    "h1"
+                  ]
+                }
+              ],
               "impact": "moderate",
               "message": "Page has at least one level-one heading"
             }
@@ -8895,7 +8941,7 @@
           "impact": null,
           "html": "<img alt=\"\" src=\"https://b.tile.openstreetmap.org/7/61/48.png\" class=\"leaflet-tile leaflet-tile-loaded\" style=\"width: 256px; height: 256px; transform: translate3d(17px, 72px, 0px); opacity: 1;\">",
           "target": [
-            ".leaflet-tile-loaded.leaflet-tile[alt=\"\"]:nth-child(1)"
+            ".leaflet-tile.leaflet-tile-loaded[alt=\"\"]:nth-child(1)"
           ]
         },
         {
@@ -8920,7 +8966,7 @@
           "impact": null,
           "html": "<img alt=\"\" src=\"https://c.tile.openstreetmap.org/7/61/49.png\" class=\"leaflet-tile leaflet-tile-loaded\" style=\"width: 256px; height: 256px; transform: translate3d(17px, 328px, 0px); opacity: 1;\">",
           "target": [
-            ".leaflet-tile-loaded.leaflet-tile[alt=\"\"]:nth-child(2)"
+            ".leaflet-tile.leaflet-tile-loaded[alt=\"\"]:nth-child(2)"
           ]
         },
         {
@@ -8945,7 +8991,7 @@
           "impact": null,
           "html": "<img alt=\"\" src=\"https://a.tile.openstreetmap.org/7/60/48.png\" class=\"leaflet-tile leaflet-tile-loaded\" style=\"width: 256px; height: 256px; transform: translate3d(-239px, 72px, 0px); opacity: 1;\">",
           "target": [
-            ".leaflet-tile-loaded.leaflet-tile[alt=\"\"]:nth-child(3)"
+            ".leaflet-tile.leaflet-tile-loaded[alt=\"\"]:nth-child(3)"
           ]
         },
         {
@@ -8970,7 +9016,7 @@
           "impact": null,
           "html": "<img alt=\"\" src=\"https://c.tile.openstreetmap.org/7/62/48.png\" class=\"leaflet-tile leaflet-tile-loaded\" style=\"width: 256px; height: 256px; transform: translate3d(273px, 72px, 0px); opacity: 1;\">",
           "target": [
-            ".leaflet-tile-loaded.leaflet-tile[alt=\"\"]:nth-child(4)"
+            ".leaflet-tile.leaflet-tile-loaded[alt=\"\"]:nth-child(4)"
           ]
         },
         {
@@ -8995,7 +9041,7 @@
           "impact": null,
           "html": "<img alt=\"\" src=\"https://b.tile.openstreetmap.org/7/60/49.png\" class=\"leaflet-tile leaflet-tile-loaded\" style=\"width: 256px; height: 256px; transform: translate3d(-239px, 328px, 0px); opacity: 1;\">",
           "target": [
-            ".leaflet-tile-loaded.leaflet-tile[alt=\"\"]:nth-child(5)"
+            ".leaflet-tile.leaflet-tile-loaded[alt=\"\"]:nth-child(5)"
           ]
         },
         {
@@ -9020,7 +9066,7 @@
           "impact": null,
           "html": "<img alt=\"\" src=\"https://a.tile.openstreetmap.org/7/62/49.png\" class=\"leaflet-tile leaflet-tile-loaded\" style=\"width: 256px; height: 256px; transform: translate3d(273px, 328px, 0px); opacity: 1;\">",
           "target": [
-            ".leaflet-tile-loaded.leaflet-tile[alt=\"\"]:nth-child(6)"
+            ".leaflet-tile.leaflet-tile-loaded[alt=\"\"]:nth-child(6)"
           ]
         },
         {
@@ -9045,7 +9091,7 @@
           "impact": null,
           "html": "<img alt=\"\" src=\"https://a.tile.openstreetmap.org/7/61/47.png\" class=\"leaflet-tile leaflet-tile-loaded\" style=\"width: 256px; height: 256px; transform: translate3d(17px, -184px, 0px); opacity: 1;\">",
           "target": [
-            ".leaflet-tile-loaded.leaflet-tile[alt=\"\"]:nth-child(7)"
+            ".leaflet-tile.leaflet-tile-loaded[alt=\"\"]:nth-child(7)"
           ]
         },
         {
@@ -9070,7 +9116,7 @@
           "impact": null,
           "html": "<img alt=\"\" src=\"https://a.tile.openstreetmap.org/7/61/50.png\" class=\"leaflet-tile leaflet-tile-loaded\" style=\"width: 256px; height: 256px; transform: translate3d(17px, 584px, 0px); opacity: 1;\">",
           "target": [
-            ".leaflet-tile-loaded.leaflet-tile[alt=\"\"]:nth-child(8)"
+            ".leaflet-tile.leaflet-tile-loaded[alt=\"\"]:nth-child(8)"
           ]
         },
         {
@@ -9095,7 +9141,7 @@
           "impact": null,
           "html": "<img alt=\"\" src=\"https://c.tile.openstreetmap.org/7/60/47.png\" class=\"leaflet-tile leaflet-tile-loaded\" style=\"width: 256px; height: 256px; transform: translate3d(-239px, -184px, 0px); opacity: 1;\">",
           "target": [
-            ".leaflet-tile-loaded.leaflet-tile[alt=\"\"]:nth-child(9)"
+            ".leaflet-tile.leaflet-tile-loaded[alt=\"\"]:nth-child(9)"
           ]
         },
         {
@@ -9120,7 +9166,7 @@
           "impact": null,
           "html": "<img alt=\"\" src=\"https://b.tile.openstreetmap.org/7/62/47.png\" class=\"leaflet-tile leaflet-tile-loaded\" style=\"width: 256px; height: 256px; transform: translate3d(273px, -184px, 0px); opacity: 1;\">",
           "target": [
-            ".leaflet-tile-loaded.leaflet-tile[alt=\"\"]:nth-child(10)"
+            ".leaflet-tile.leaflet-tile-loaded[alt=\"\"]:nth-child(10)"
           ]
         },
         {
@@ -9145,7 +9191,7 @@
           "impact": null,
           "html": "<img alt=\"\" src=\"https://c.tile.openstreetmap.org/7/60/50.png\" class=\"leaflet-tile leaflet-tile-loaded\" style=\"width: 256px; height: 256px; transform: translate3d(-239px, 584px, 0px); opacity: 1;\">",
           "target": [
-            ".leaflet-tile-loaded.leaflet-tile[alt=\"\"]:nth-child(11)"
+            ".leaflet-tile.leaflet-tile-loaded[alt=\"\"]:nth-child(11)"
           ]
         },
         {
@@ -9170,7 +9216,7 @@
           "impact": null,
           "html": "<img alt=\"\" src=\"https://b.tile.openstreetmap.org/7/62/50.png\" class=\"leaflet-tile leaflet-tile-loaded\" style=\"width: 256px; height: 256px; transform: translate3d(273px, 584px, 0px); opacity: 1;\">",
           "target": [
-            ".leaflet-tile-loaded.leaflet-tile[alt=\"\"]:nth-child(12)"
+            ".leaflet-tile.leaflet-tile-loaded[alt=\"\"]:nth-child(12)"
           ]
         }
       ]
@@ -9423,7 +9469,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"container\" style=\"position: relative; z-index: 1;\">",
+          "html": "<div class=\"container\">",
           "target": [
             ".container"
           ]
@@ -9723,7 +9769,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"leaflet-pane leaflet-map-pane\" style=\"transform: translate3d(242px, -8px, 0px);\">",
+          "html": "<div class=\"leaflet-pane leaflet-map-pane leaflet-pan-anim\" style=\"transform: translate3d(238.515px, -7.8848px, 0px);\">",
           "target": [
             ".leaflet-map-pane"
           ]
@@ -9805,7 +9851,7 @@
           "impact": null,
           "html": "<img alt=\"\" src=\"https://b.tile.openstreetmap.org/7/61/48.png\" class=\"leaflet-tile leaflet-tile-loaded\" style=\"width: 256px; height: 256px; transform: translate3d(17px, 72px, 0px); opacity: 1;\">",
           "target": [
-            ".leaflet-tile-loaded.leaflet-tile[alt=\"\"]:nth-child(1)"
+            ".leaflet-tile.leaflet-tile-loaded[alt=\"\"]:nth-child(1)"
           ]
         },
         {
@@ -9825,7 +9871,7 @@
           "impact": null,
           "html": "<img alt=\"\" src=\"https://c.tile.openstreetmap.org/7/61/49.png\" class=\"leaflet-tile leaflet-tile-loaded\" style=\"width: 256px; height: 256px; transform: translate3d(17px, 328px, 0px); opacity: 1;\">",
           "target": [
-            ".leaflet-tile-loaded.leaflet-tile[alt=\"\"]:nth-child(2)"
+            ".leaflet-tile.leaflet-tile-loaded[alt=\"\"]:nth-child(2)"
           ]
         },
         {
@@ -9845,7 +9891,7 @@
           "impact": null,
           "html": "<img alt=\"\" src=\"https://a.tile.openstreetmap.org/7/60/48.png\" class=\"leaflet-tile leaflet-tile-loaded\" style=\"width: 256px; height: 256px; transform: translate3d(-239px, 72px, 0px); opacity: 1;\">",
           "target": [
-            ".leaflet-tile-loaded.leaflet-tile[alt=\"\"]:nth-child(3)"
+            ".leaflet-tile.leaflet-tile-loaded[alt=\"\"]:nth-child(3)"
           ]
         },
         {
@@ -9865,7 +9911,7 @@
           "impact": null,
           "html": "<img alt=\"\" src=\"https://c.tile.openstreetmap.org/7/62/48.png\" class=\"leaflet-tile leaflet-tile-loaded\" style=\"width: 256px; height: 256px; transform: translate3d(273px, 72px, 0px); opacity: 1;\">",
           "target": [
-            ".leaflet-tile-loaded.leaflet-tile[alt=\"\"]:nth-child(4)"
+            ".leaflet-tile.leaflet-tile-loaded[alt=\"\"]:nth-child(4)"
           ]
         },
         {
@@ -9885,7 +9931,7 @@
           "impact": null,
           "html": "<img alt=\"\" src=\"https://b.tile.openstreetmap.org/7/60/49.png\" class=\"leaflet-tile leaflet-tile-loaded\" style=\"width: 256px; height: 256px; transform: translate3d(-239px, 328px, 0px); opacity: 1;\">",
           "target": [
-            ".leaflet-tile-loaded.leaflet-tile[alt=\"\"]:nth-child(5)"
+            ".leaflet-tile.leaflet-tile-loaded[alt=\"\"]:nth-child(5)"
           ]
         },
         {
@@ -9905,7 +9951,7 @@
           "impact": null,
           "html": "<img alt=\"\" src=\"https://a.tile.openstreetmap.org/7/62/49.png\" class=\"leaflet-tile leaflet-tile-loaded\" style=\"width: 256px; height: 256px; transform: translate3d(273px, 328px, 0px); opacity: 1;\">",
           "target": [
-            ".leaflet-tile-loaded.leaflet-tile[alt=\"\"]:nth-child(6)"
+            ".leaflet-tile.leaflet-tile-loaded[alt=\"\"]:nth-child(6)"
           ]
         },
         {
@@ -9925,7 +9971,7 @@
           "impact": null,
           "html": "<img alt=\"\" src=\"https://a.tile.openstreetmap.org/7/61/47.png\" class=\"leaflet-tile leaflet-tile-loaded\" style=\"width: 256px; height: 256px; transform: translate3d(17px, -184px, 0px); opacity: 1;\">",
           "target": [
-            ".leaflet-tile-loaded.leaflet-tile[alt=\"\"]:nth-child(7)"
+            ".leaflet-tile.leaflet-tile-loaded[alt=\"\"]:nth-child(7)"
           ]
         },
         {
@@ -9945,7 +9991,7 @@
           "impact": null,
           "html": "<img alt=\"\" src=\"https://a.tile.openstreetmap.org/7/61/50.png\" class=\"leaflet-tile leaflet-tile-loaded\" style=\"width: 256px; height: 256px; transform: translate3d(17px, 584px, 0px); opacity: 1;\">",
           "target": [
-            ".leaflet-tile-loaded.leaflet-tile[alt=\"\"]:nth-child(8)"
+            ".leaflet-tile.leaflet-tile-loaded[alt=\"\"]:nth-child(8)"
           ]
         },
         {
@@ -9965,7 +10011,7 @@
           "impact": null,
           "html": "<img alt=\"\" src=\"https://c.tile.openstreetmap.org/7/60/47.png\" class=\"leaflet-tile leaflet-tile-loaded\" style=\"width: 256px; height: 256px; transform: translate3d(-239px, -184px, 0px); opacity: 1;\">",
           "target": [
-            ".leaflet-tile-loaded.leaflet-tile[alt=\"\"]:nth-child(9)"
+            ".leaflet-tile.leaflet-tile-loaded[alt=\"\"]:nth-child(9)"
           ]
         },
         {
@@ -9985,7 +10031,7 @@
           "impact": null,
           "html": "<img alt=\"\" src=\"https://b.tile.openstreetmap.org/7/62/47.png\" class=\"leaflet-tile leaflet-tile-loaded\" style=\"width: 256px; height: 256px; transform: translate3d(273px, -184px, 0px); opacity: 1;\">",
           "target": [
-            ".leaflet-tile-loaded.leaflet-tile[alt=\"\"]:nth-child(10)"
+            ".leaflet-tile.leaflet-tile-loaded[alt=\"\"]:nth-child(10)"
           ]
         },
         {
@@ -10005,7 +10051,7 @@
           "impact": null,
           "html": "<img alt=\"\" src=\"https://c.tile.openstreetmap.org/7/60/50.png\" class=\"leaflet-tile leaflet-tile-loaded\" style=\"width: 256px; height: 256px; transform: translate3d(-239px, 584px, 0px); opacity: 1;\">",
           "target": [
-            ".leaflet-tile-loaded.leaflet-tile[alt=\"\"]:nth-child(11)"
+            ".leaflet-tile.leaflet-tile-loaded[alt=\"\"]:nth-child(11)"
           ]
         },
         {
@@ -10025,7 +10071,7 @@
           "impact": null,
           "html": "<img alt=\"\" src=\"https://b.tile.openstreetmap.org/7/62/50.png\" class=\"leaflet-tile leaflet-tile-loaded\" style=\"width: 256px; height: 256px; transform: translate3d(273px, 584px, 0px); opacity: 1;\">",
           "target": [
-            ".leaflet-tile-loaded.leaflet-tile[alt=\"\"]:nth-child(12)"
+            ".leaflet-tile.leaflet-tile-loaded[alt=\"\"]:nth-child(12)"
           ]
         },
         {
@@ -10063,7 +10109,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<svg pointer-events=\"none\" class=\"leaflet-zoom-animated\" width=\"468\" height=\"797\" viewBox=\"-281 -58 468 797\" style=\"transform: translate3d(-281px, -58px, 0px);\">",
+          "html": "<svg pointer-events=\"none\" class=\"leaflet-zoom-animated\" width=\"468\" height=\"797\" viewBox=\"-39 -66 468 797\" style=\"transform: translate3d(-39px, -66.4px, 0px) scale(1);\">",
           "target": [
             "svg[pointer-events=\"none\"]"
           ]
@@ -10083,7 +10129,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<g><path class=\"leaflet-interactive\" stroke=\"#a05d34\" stroke-opacity=\"0.9\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"12 12\" fill=\"none\" d=\"M-47 340L-69 330L-47 340L-5 527L187 501\"></path></g>",
+          "html": "<g><path class=\"leaflet-interactive\" stroke=\"#a05d34\" stroke-opacity=\"0.9\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"12 12\" fill=\"none\" d=\"M-39 422L-5 527L240 494L-39 344M-39 343L429 508\"></path></g>",
           "target": [
             "svg[pointer-events=\"none\"] > g"
           ]
@@ -10103,7 +10149,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<path class=\"leaflet-interactive\" stroke=\"#a05d34\" stroke-opacity=\"0.9\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"12 12\" fill=\"none\" d=\"M-47 340L-69 330L-47 340L-5 527L187 501\"></path>",
+          "html": "<path class=\"leaflet-interactive\" stroke=\"#a05d34\" stroke-opacity=\"0.9\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-dasharray=\"12 12\" fill=\"none\" d=\"M-39 422L-5 527L240 494L-39 344M-39 343L429 508\"></path>",
           "target": [
             "path[stroke=\"#a05d34\"]"
           ]
@@ -10283,7 +10329,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"leaflet-marker-icon number-icon leaflet-zoom-animated leaflet-interactive\" style=\"margin-left: -12px; margin-top: -12px; width: 24px; height: 24px; transform: translate3d(-69px, 330px, 0px); z-index: 330;\"><div>4</div></div>",
+          "html": "<div class=\"leaflet-marker-icon number-icon leaflet-zoom-animated leaflet-interactive\" style=\"margin-left: -12px; margin-top: -12px; width: 24px; height: 24px; transform: translate3d(-47px, 340px, 0px); z-index: 340;\"><div>4</div></div>",
           "target": [
             ".number-icon.leaflet-marker-icon.leaflet-interactive:nth-child(4)"
           ]
@@ -10323,7 +10369,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"leaflet-marker-icon number-icon leaflet-zoom-animated leaflet-interactive\" style=\"margin-left: -12px; margin-top: -12px; width: 24px; height: 24px; transform: translate3d(-47px, 340px, 0px); z-index: 340;\"><div>5</div></div>",
+          "html": "<div class=\"leaflet-marker-icon number-icon leaflet-zoom-animated leaflet-interactive\" style=\"margin-left: -12px; margin-top: -12px; width: 24px; height: 24px; transform: translate3d(-69px, 330px, 0px); z-index: 330;\"><div>5</div></div>",
           "target": [
             ".number-icon.leaflet-marker-icon.leaflet-interactive:nth-child(5)"
           ]
@@ -10483,7 +10529,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"leaflet-marker-icon number-icon leaflet-zoom-animated leaflet-interactive\" style=\"margin-left: -12px; margin-top: -12px; width: 24px; height: 24px; transform: translate3d(240px, 494px, 0px); z-index: 494;\"><div>9</div></div>",
+          "html": "<div class=\"leaflet-marker-icon number-icon leaflet-zoom-animated leaflet-interactive\" style=\"margin-left: -12px; margin-top: -12px; width: 24px; height: 24px; transform: translate3d(-5px, 527px, 0px); z-index: 527;\"><div>9</div></div>",
           "target": [
             ".number-icon.leaflet-marker-icon.leaflet-interactive:nth-child(9)"
           ]
@@ -10563,7 +10609,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"leaflet-marker-icon number-icon leaflet-zoom-animated leaflet-interactive\" style=\"margin-left: -12px; margin-top: -12px; width: 24px; height: 24px; transform: translate3d(457px, 518px, 0px); z-index: 518;\"><div>11</div></div>",
+          "html": "<div class=\"leaflet-marker-icon number-icon leaflet-zoom-animated leaflet-interactive\" style=\"margin-left: -12px; margin-top: -12px; width: 24px; height: 24px; transform: translate3d(-47px, 340px, 0px); z-index: 340;\"><div>11</div></div>",
           "target": [
             ".number-icon.leaflet-marker-icon.leaflet-interactive:nth-child(11)"
           ]
@@ -10823,7 +10869,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"leaflet-proxy leaflet-zoom-animated\" style=\"transform: translate3d(15552px, 12556px, 0px) scale(64);\"></div>",
+          "html": "<div class=\"leaflet-proxy leaflet-zoom-animated\" style=\"transform: translate3d(15794px, 12548px, 0px) scale(64);\"></div>",
           "target": [
             ".leaflet-proxy"
           ]
@@ -11343,7 +11389,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p class=\"itSummaryText\">早：熱羅尼莫斯修道院（建議早上）\n中：貝倫（Belém）午餐＋蛋塔、MAAT、河岸散步\n晚：輕收尾調整時差</p>",
+          "html": "<p class=\"itSummaryText\">早：熱羅尼莫斯修道院（建議早上）\n中：{{bi:貝倫|Belém}}午餐＋蛋塔、MAAT、河岸散步\n晚：輕收尾調整時差</p>",
           "target": [
             "article[data-step=\"2\"] > .cardInner > .itSummaryText"
           ]
@@ -11443,7 +11489,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2 class=\"itDayHeading\">Day 3</h2>",
+          "html": "<h2 class=\"itDayHeading\">Day 3｜里斯本</h2>",
           "target": [
             "article[data-step=\"3\"] > .cardInner > h2"
           ]
@@ -11463,7 +11509,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h3 class=\"itCityHeading\">里斯本</h3>",
+          "html": "<h3 class=\"itCityHeading\">{{bi:卡斯凱什</h3>",
           "target": [
             "article[data-step=\"3\"] > .cardInner > h3"
           ]
@@ -11483,7 +11529,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p class=\"itTitleText\">卡斯凱什（Cascais）海岸線＋燈塔（放鬆日）</p>",
+          "html": "<p class=\"itTitleText\">Cascais}}海岸線＋燈塔（放鬆日）</p>",
           "target": [
             "article[data-step=\"3\"] > .cardInner > .itTitleText"
           ]
@@ -11503,7 +11549,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p class=\"itSummaryText\">早：火車到 卡斯凱什（Cascais），再去燈塔\n中：逛衝浪小鎮，回里斯本\n晚：休息</p>",
+          "html": "<p class=\"itSummaryText\">早：火車到 {{bi:卡斯凱什|Cascais}}，再去燈塔\n中：逛衝浪小鎮，回里斯本\n晚：休息</p>",
           "target": [
             "article[data-step=\"3\"] > .cardInner > .itSummaryText"
           ]
@@ -11623,7 +11669,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h3 class=\"itCityHeading\">辛特拉（Sintra）</h3>",
+          "html": "<h3 class=\"itCityHeading\">里斯本</h3>",
           "target": [
             "article[data-step=\"4\"] > .cardInner > h3"
           ]
@@ -11643,7 +11689,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p class=\"itTitleText\">夢幻宮殿（一日 WOW）</p>",
+          "html": "<p class=\"itTitleText\">文化＋高處視角日</p>",
           "target": [
             "article[data-step=\"4\"] > .cardInner > .itTitleText"
           ]
@@ -11663,7 +11709,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p class=\"itSummaryText\">早：羅西奧（Rossio）→ 辛特拉（Sintra）火車\n中：佩納宮（先）→ 摩爾人城堡 → 鎮中心補給 → 雷加萊拉莊園（主菜 1–2 個即可）\n晚：傍晚回里斯本</p>",
+          "html": "<p class=\"itSummaryText\">早：磁磚博物館（主菜）\n中：眺望點（二選一）＋午休\n晚：博物館/植物園/逛街擇一</p>",
           "target": [
             "article[data-step=\"4\"] > .cardInner > .itSummaryText"
           ]
@@ -11763,7 +11809,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2 class=\"itDayHeading\">Day 5</h2>",
+          "html": "<h2 class=\"itDayHeading\">Day 5｜{{bi:辛特拉</h2>",
           "target": [
             "article[data-step=\"5\"] > .cardInner > h2"
           ]
@@ -11783,7 +11829,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h3 class=\"itCityHeading\">里斯本</h3>",
+          "html": "<h3 class=\"itCityHeading\">Sintra}}</h3>",
           "target": [
             "article[data-step=\"5\"] > .cardInner > h3"
           ]
@@ -11803,7 +11849,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p class=\"itTitleText\">文化＋高處視角日</p>",
+          "html": "<p class=\"itTitleText\">夢幻宮殿（一日 WOW）</p>",
           "target": [
             "article[data-step=\"5\"] > .cardInner > .itTitleText"
           ]
@@ -11823,7 +11869,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p class=\"itSummaryText\">早：磁磚博物館（主菜）\n中：眺望點（二選一）＋午休\n晚：博物館/植物園/逛街擇一</p>",
+          "html": "<p class=\"itSummaryText\">早：{{bi:羅西奧|Rossio}}→ {{bi:辛特拉|Sintra}}火車\n中：佩納宮（先）→ 摩爾人城堡 → 鎮中心補給 → 雷加萊拉莊園（主菜 1–2 個即可）\n晚：傍晚回里斯本</p>",
           "target": [
             "article[data-step=\"5\"] > .cardInner > .itSummaryText"
           ]
@@ -11923,7 +11969,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2 class=\"itDayHeading\">Day 6</h2>",
+          "html": "<h2 class=\"itDayHeading\">Day 6｜{{bi:拉各斯</h2>",
           "target": [
             "article[data-step=\"6\"] > .cardInner > h2"
           ]
@@ -11943,7 +11989,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h3 class=\"itCityHeading\">拉各斯（Lagos）</h3>",
+          "html": "<h3 class=\"itCityHeading\">Lagos}}</h3>",
           "target": [
             "article[data-step=\"6\"] > .cardInner > h3"
           ]
@@ -12083,7 +12129,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2 class=\"itDayHeading\">Day 7</h2>",
+          "html": "<h2 class=\"itDayHeading\">Day 7｜{{bi:拉各斯</h2>",
           "target": [
             "article[data-step=\"7\"] > .cardInner > h2"
           ]
@@ -12103,7 +12149,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h3 class=\"itCityHeading\">拉各斯（Lagos）</h3>",
+          "html": "<h3 class=\"itCityHeading\">Lagos}}</h3>",
           "target": [
             "article[data-step=\"7\"] > .cardInner > h3"
           ]
@@ -12123,7 +12169,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p class=\"itTitleText\">皮耶達德角（Ponta da Piedade；WOW）</p>",
+          "html": "<p class=\"itTitleText\">{{bi:皮耶達德角|Ponta da Piedade；WOW}}</p>",
           "target": [
             "article[data-step=\"7\"] > .cardInner > .itTitleText"
           ]
@@ -12243,7 +12289,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2 class=\"itDayHeading\">Day 8</h2>",
+          "html": "<h2 class=\"itDayHeading\">Day 8｜{{bi:拉各斯</h2>",
           "target": [
             "article[data-step=\"8\"] > .cardInner > h2"
           ]
@@ -12263,7 +12309,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h3 class=\"itCityHeading\">拉各斯（Lagos）</h3>",
+          "html": "<h3 class=\"itCityHeading\">Lagos}}</h3>",
           "target": [
             "article[data-step=\"8\"] > .cardInner > h3"
           ]
@@ -12283,7 +12329,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p class=\"itTitleText\">貝納吉爾藍洞（Benagil；WOW）</p>",
+          "html": "<p class=\"itTitleText\">{{bi:貝納吉爾藍洞|Benagil；WOW}}</p>",
           "target": [
             "article[data-step=\"8\"] > .cardInner > .itTitleText"
           ]
@@ -12303,7 +12349,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p class=\"itSummaryText\">早：貝納吉爾（Benagil）搭船\n中：卡爾沃埃羅（Carvoeiro）/ 馬里尼亞海灘（Marinha）擇\n晚：回 拉各斯（Lagos）</p>",
+          "html": "<p class=\"itSummaryText\">早：{{bi:貝納吉爾|Benagil}}搭船\n中：{{bi:卡爾沃埃羅|Carvoeiro}}/ {{bi:馬里尼亞海灘|Marinha}}擇\n晚：回 {{bi:拉各斯|Lagos}}</p>",
           "target": [
             "article[data-step=\"8\"] > .cardInner > .itSummaryText"
           ]
@@ -12403,7 +12449,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2 class=\"itDayHeading\">Day 9</h2>",
+          "html": "<h2 class=\"itDayHeading\">Day 9｜塞維爾</h2>",
           "target": [
             "article[data-step=\"9\"] > .cardInner > h2"
           ]
@@ -12423,7 +12469,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h3 class=\"itCityHeading\">塞維爾</h3>",
+          "html": "<h3 class=\"itCityHeading\">{{bi:拉各斯</h3>",
           "target": [
             "article[data-step=\"9\"] > .cardInner > h3"
           ]
@@ -12443,7 +12489,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p class=\"itTitleText\">拉各斯（Lagos）→ 塞維爾（交通日）</p>",
+          "html": "<p class=\"itTitleText\">Lagos}}→ 塞維爾（交通日）</p>",
           "target": [
             "article[data-step=\"9\"] > .cardInner > .itTitleText"
           ]
@@ -12723,7 +12769,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2 class=\"itDayHeading\">Day 11</h2>",
+          "html": "<h2 class=\"itDayHeading\">Day 11｜格拉納達</h2>",
           "target": [
             "article[data-step=\"11\"] > .cardInner > h2"
           ]
@@ -12743,7 +12789,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h3 class=\"itCityHeading\">格拉納達</h3>",
+          "html": "<h3 class=\"itCityHeading\">{{bi:阿爾罕布拉宮</h3>",
           "target": [
             "article[data-step=\"11\"] > .cardInner > h3"
           ]
@@ -12763,7 +12809,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p class=\"itTitleText\">阿爾罕布拉宮（WOW）</p>",
+          "html": "<p class=\"itTitleText\">WOW}}</p>",
           "target": [
             "article[data-step=\"11\"] > .cardInner > .itTitleText"
           ]
@@ -13103,7 +13149,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<p class=\"itSummaryText\">早：索菲亞王后國家藝術中心（Reina Sofía）\n中：阿托查熱帶花園/市集\n晚：麗池公園（Retiro）＋ Gran Vía 夜景（或 Debod 夕陽）</p>",
+          "html": "<p class=\"itSummaryText\">早：{{bi:索菲亞王后國家藝術中心|Reina Sofía}}\n中：阿托查熱帶花園/市集\n晚：{{bi:麗池公園|Retiro}}＋ Gran Vía 夜景（或 Debod 夕陽）</p>",
           "target": [
             "article[data-step=\"13\"] > .cardInner > .itSummaryText"
           ]

@@ -60,14 +60,30 @@ export function parsePlanningExportV1(input: unknown): PlanningExportV1 | null {
   return r.data as PlanningExportV1
 }
 
+const POISON_KEYS = new Set(['__proto__', 'prototype', 'constructor'])
+
+function isPlainRecord(v: unknown): v is Record<string, unknown> {
+  return !!v && typeof v === 'object' && !Array.isArray(v)
+}
+
+function safeMergeRecord<T extends Record<string, unknown>>(base: T, patch: unknown): T {
+  if (!isPlainRecord(patch)) return base
+  const out = { ...base } as T
+  for (const [k, v] of Object.entries(patch)) {
+    if (POISON_KEYS.has(k)) continue
+    ;(out as Record<string, unknown>)[k] = v
+  }
+  return out
+}
+
 export function mergePlanningState(base: PlanningState, incoming: unknown): PlanningState {
   if (!incoming || typeof incoming !== 'object') return base
   const p = incoming as Partial<PlanningState>
 
   return {
     ...base,
-    attractionDecisions: { ...base.attractionDecisions, ...(p.attractionDecisions ?? {}) },
-    transportDecisions: { ...base.transportDecisions, ...(p.transportDecisions ?? {}) },
+    attractionDecisions: safeMergeRecord(base.attractionDecisions as unknown as Record<string, unknown>, p.attractionDecisions) as unknown as PlanningState['attractionDecisions'],
+    transportDecisions: safeMergeRecord(base.transportDecisions as unknown as Record<string, unknown>, p.transportDecisions) as unknown as PlanningState['transportDecisions'],
     checklist: Array.isArray(p.checklist) ? (p.checklist as PlanningState['checklist']) : base.checklist,
     changelog: Array.isArray(p.changelog) ? (p.changelog as PlanningState['changelog']) : base.changelog,
   }

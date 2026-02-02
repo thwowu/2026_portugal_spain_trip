@@ -7,7 +7,7 @@ import type { TransportSegment } from '../data/transport'
 export const TRANSPORT_DATA: TransportSegment[] = [
   {
     "id": "granada-madrid",
-    "label": "格拉納達（Granada）→ 馬德里（Madrid）",
+    "label": "{{bi:格拉納達|Granada}}→ {{bi:馬德里|Madrid}}",
     "tldr": {
       "recommended": "train",
       "because": "省時間（約 3.5 小時）且路線清楚，適合先把移動日定下來。",
@@ -21,7 +21,7 @@ export const TRANSPORT_DATA: TransportSegment[] = [
     "options": [
       {
         "mode": "train",
-        "title": "火車（AVE）",
+        "title": "{{bi:火車 | AVE}}",
         "summary": "約 3.5 小時，直達為主。",
         "steps": [
           "先在 Renfe 查 `Granada` → `Madrid`，並留意「抵達站點」。",
@@ -109,7 +109,7 @@ export const TRANSPORT_DATA: TransportSegment[] = [
   },
   {
     "id": "lagos-seville",
-    "label": "拉各斯（Lagos）→ 塞維爾（Seville）",
+    "label": "{{bi:拉各斯|Lagos}}→ {{bi:塞維爾|Seville}}",
     "tldr": {
       "recommended": "bus",
       "because": "跨境用直達巴士最直覺；FlixBus 可直達塞維爾（Seville；常見到 Plaza de Armas 等站）。",
@@ -125,7 +125,7 @@ export const TRANSPORT_DATA: TransportSegment[] = [
       {
         "mode": "bus",
         "title": "巴士（直達、時間較短）",
-        "summary": "直達省心；FlixBus 路線頁會列出 Seville 的主要下車點（Plaza de Armas / Prado / Santa Justa）。",
+        "summary": "直達省心；FlixBus 路線頁會列出 Seville 的 {{bi:主要下車點|Plaza de Armas / Prado / Santa Justa}}。",
         "steps": [
           "先線上買票，確認「上車點」與「Seville 下車點」（會寫在車票上）。",
           "當天提早到 Lagos terminal → 找到月台/站牌 → 上車（如有托運就先處理行李）→ 抵達 Seville（依車票顯示站點）。",
@@ -155,7 +155,7 @@ export const TRANSPORT_DATA: TransportSegment[] = [
       {
         "mode": "bus",
         "title": "轉乘方案（經 法魯（Faro），更彈性但比較累）",
-        "summary": "若直達班次不合/滿位：先到 法魯（Faro）（火車/巴士）→ 再接國際巴士到 塞維爾（Seville）。",
+        "summary": "若直達班次不合/滿位：先到 {{bi:法魯|Faro}}（火車/巴士）→ 再接國際巴士到 {{bi:塞維爾|Seville}}。",
         "steps": [
           "第一步：Lagos → Faro（CP 火車或區域巴士，依你當天班次）。",
           "第二步：Faro → Seville（FlixBus 等國際巴士；依班次為準）。",
@@ -188,7 +188,7 @@ export const TRANSPORT_DATA: TransportSegment[] = [
   },
   {
     "id": "lisbon-lagos",
-    "label": "里斯本（Lisbon）→ 拉各斯（Lagos）",
+    "label": "{{bi:里斯本|Lisbon}}→ {{bi:拉各斯|Lagos}}",
     "tldr": {
       "recommended": "bus",
       "because": "直達、少轉乘；帶大行李比較不折騰，班次也多（常見從 Oriente / Sete Rios 出發）。",
@@ -262,7 +262,7 @@ export const TRANSPORT_DATA: TransportSegment[] = [
         ],
         "riskNotes": [
           "主要風險是塞車/誤點（出發前可用官方 tracker 看車況）。",
-          "出發站點（Oriente/Sete Rios）要先確認，避免跑錯站。"
+          "{{bi:出發站點|Oriente/Sete Rios}}要先確認，避免跑錯站。"
         ],
         "screenshots": [
           {
@@ -275,7 +275,7 @@ export const TRANSPORT_DATA: TransportSegment[] = [
   },
   {
     "id": "seville-granada",
-    "label": "塞維爾（Seville）→ 格拉納達（Granada）",
+    "label": "{{bi:塞維爾|Seville}}→ {{bi:格拉納達|Granada}}",
     "tldr": {
       "recommended": "train",
       "because": "整體更穩、也比較舒服；抵達後通常比較好接住宿休息。",

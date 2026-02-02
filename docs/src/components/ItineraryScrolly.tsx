@@ -1,9 +1,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
-import type { ItineraryDay } from '../data/itinerary'
-import { ITINERARY_PHASES } from '../generated'
+import { ITINERARY_PHASES, type ItineraryDay } from '../data/itinerary'
 import { ItineraryLeafletMap } from './ItineraryLeafletMap'
 import { useMotionEnabled } from '../state/settings'
-import { useProgress } from '../state/progress'
 import { FormattedText } from './FormattedText'
 import { Modal } from './Modal'
 import { cityIdFromLabel } from '../utils/cityIdFromLabel'
@@ -18,7 +16,6 @@ function dayCardText(d: ItineraryDay) {
 
 export function ItineraryScrolly() {
   const motionEnabled = useMotionEnabled()
-  const { actions: progressActions } = useProgress()
   const prefersReducedMotion =
     typeof window !== 'undefined' && typeof window.matchMedia !== 'undefined'
       ? window.matchMedia('(prefers-reduced-motion: reduce)').matches
@@ -40,11 +37,6 @@ export function ItineraryScrolly() {
   const [selectedDay, setSelectedDay] = useState<ItineraryDay | null>(null)
   const stepRefs = useRef<Map<number, HTMLElement>>(new Map())
   const ioRef = useRef<IntersectionObserver | null>(null)
-
-  useEffect(() => {
-    const d = days[activeStep]
-    if (d) progressActions.markItineraryDaySeen(d.day)
-  }, [activeStep, days, progressActions])
 
   const jumpToIndex = useCallback((idx: number) => {
     const el = stepRefs.current.get(idx)

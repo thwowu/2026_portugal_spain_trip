@@ -17,7 +17,7 @@ title: 拉各斯（Lagos，阿爾加維 Algarve）
 - **夕陽用「坐著看」**：挑有椅子的觀景平台，比貼邊站著更舒服更安全。
 - **今天腿酸就把重點縮到 1 個主菜**：海岸線的回報很高，點不用多。
 
-### [皮耶達德角（Ponta da Piedade）](https://www.google.com/maps/search/?api=1&query=Ponta%20da%20Piedade%20Lagos)（Day 7 主菜）（Day 7 主菜）
+### {{bilink:皮耶達德角|Ponta da Piedade|https://www.google.com/maps/search/?api=1&query=Ponta%20da%20Piedade%20Lagos}}（Day 7 主菜）（Day 7 主菜）
 @card: 阿爾加維海蝕地形的名片級主菜：站上方木棧道就能把拱門、海蝕柱與海色一次看懂，不用把重點押在下海或下長樓梯。
 {{gallery:Ponta da Piedade|https://source.unsplash.com/PqQczLH4jQQ/1800x1200|https://source.unsplash.com/yfQRbv7oYCg/1800x1200|https://source.unsplash.com/e1ygWz8fNL4/1800x1200}}
 
@@ -32,7 +32,7 @@ title: 拉各斯（Lagos，阿爾加維 Algarve）
 
 想看夕陽，也不用站著硬撐（最省力、也最舒服）：
 
-- **最佳座位區**：上方木棧道（boardwalk）的觀景平台常有長椅。你們下車後沿木棧道慢慢走，挑一個面海的位置坐下來就好（不必找岩石、也不必貼近邊緣）。
+- **最佳座位區**： {{bi:上方木棧道|boardwalk}}的觀景平台常有長椅。你們下車後沿木棧道慢慢走，挑一個面海的位置坐下來就好（不必找岩石、也不必貼近邊緣）。
 - **不想走太遠的替代點**：燈塔周邊也有相對平坦的區域可以停留拍照/休息；今天腿酸或懶得走，就待在這一帶就很夠了。
 - **抵達時間**：日落前 `1 小時` 到最舒服——慢慢走、慢慢挑位子，不用趕，也比較不會跟人擠。
 - **再補兩個避雷**：木棧道以外的泥土小徑（沒護欄、路面不平）就先不要走；夕陽天色變暗時更容易踩空。
@@ -45,7 +45,7 @@ title: 拉各斯（Lagos，阿爾加維 Algarve）
 補一點背景（看景會更有感）：
 
 - **名字在說什麼**：`Piedade` 在葡文裡有「憐憫/慈悲」的意思。常見的說法是：在早期航海年代，這段岬角外海風浪與暗礁更難判斷，水手/漁民出海與返航時會祈求平安，於是留下了這個帶著祈禱語感的地名（更像傳說與民間解釋，當作旅途故事聽就好）。
-- **地形怎麼來的**：這裡主要是石灰岩（limestone）。海浪與風雨「慢慢雕」了很久，才把岩層做成今天看到的拱門、洞穴、海蝕柱；也因為岩色偏金、海水偏綠松石，光線一好就很像明信片。
+- **地形怎麼來的**：這裡主要是 {{bi:石灰岩|limestone}}。海浪與風雨「慢慢雕」了很久，才把岩層做成今天看到的拱門、洞穴、海蝕柱；也因為岩色偏金、海水偏綠松石，光線一好就很像明信片。
 - **燈塔是什麼**：你們走上方步道看到的燈塔是海岸線的導航地標（通常不以「進去參觀」為重點），更像是提醒：這裡以前對船隻來說是需要被「特別注意」的海岬。
 - **船夫的「岩石綽號」**：坐船時導遊常會指岩石讓大家找形狀（駱駝/大象/接吻的情侶之類）。不用當成官方名稱，把它當成一個「找圖形」的小遊戲就好。
 
@@ -54,12 +54,12 @@ title: 拉各斯（Lagos，阿爾加維 Algarve）
 
 如果你只想選一個海灘當下午主菜：Dona Ana 比較「好到、很穩」；Camilo 比較「夢幻、但膝蓋要付費」。
 
-#### [唐娜安娜海灘（Praia Dona Ana）](https://www.google.com/maps/search/?api=1&query=Praia%20Dona%20Ana%20Lagos)
+#### {{bilink:唐娜安娜海灘|Praia Dona Ana|https://www.google.com/maps/search/?api=1&query=Praia%20Dona%20Ana%20Lagos}}
 {{gallery:Praia Dona Ana|https://source.unsplash.com/PqQczLH4jQQ/1800x1200|https://source.unsplash.com/yfQRbv7oYCg/1800x1200|https://source.unsplash.com/e1ygWz8fNL4/1800x1200|https://source.unsplash.com/ziA-EKzRm6Y/1800x1200|https://source.unsplash.com/fYVqIyU5BKg/1800x1200}}
 
 為什麼去：岩壁層次與海色很阿爾加維，又相對好到達；把它當成 Day 7 的放鬆主菜很穩。它屬於 Lagos 最知名的海灘群之一，因地形與視覺辨識度高而長期被視為阿爾加維代表海灘。
 
-#### [卡米洛海灘（Praia do Camilo）](https://www.google.com/maps/search/?api=1&query=Praia%20do%20Camilo%20Lagos)
+#### {{bilink:卡米洛海灘|Praia do Camilo|https://www.google.com/maps/search/?api=1&query=Praia%20do%20Camilo%20Lagos}}
 {{gallery:Praia do Camilo|https://source.unsplash.com/RPk4aFw1K4w/1800x1200|https://source.unsplash.com/PqQczLH4jQQ/1800x1200|https://source.unsplash.com/yfQRbv7oYCg/1800x1200|https://source.unsplash.com/e1ygWz8fNL4/1800x1200}}
 
 更夢幻，但樓梯很長（膝蓋挑戰）。如果你們想走得省力一點，先把它當成「上方拍照點」會最穩（後面 `must` 也有單獨整理「上方觀景台」的省力拍法）。
@@ -75,7 +75,7 @@ title: 拉各斯（Lagos，阿爾加維 Algarve）
 
 想「真的下去」才看：先看潮汐與人潮——Camilo 的沙灘面積不大，漲潮會更擠；想舒服一點通常是早上較早到（避開最擠的時段）。
 
-### [舊奴隸市場（Antigo Mercado de Escravos）](https://www.google.com/maps/search/?api=1&query=Antigo%20Mercado%20de%20Escravos%20Lagos)（小型展館）（小型展館）
+### {{bilink:舊奴隸市場|Antigo Mercado de Escravos|https://www.google.com/maps/search/?api=1&query=Antigo%20Mercado%20de%20Escravos%20Lagos}}（小型展館）（小型展館）
 @card: 小型展館但題材沉重：把 Lagos 的港口角色從「海岸很美」拉回大航海時代的另一面，適合想在風景之外多留一段歷史記憶的人。
 {{gallery:Antigo Mercado de Escravos|https://source.unsplash.com/EdiSQeVj0wc/1800x1200|https://source.unsplash.com/0rzUepBXHN0/1800x1200|https://source.unsplash.com/swFgtTgcpLA/1800x1200}}
 
@@ -88,7 +88,7 @@ title: 拉各斯（Lagos，阿爾加維 Algarve）
 - **省力點**：展館小、動線短，通常 `30–45 分鐘` 就能看完（看你們閱讀停留的速度）；很適合當作「中途補一段室內文化」。
 - **怎麼看才不累**：不要硬把每段文字都看完。先抓兩個問題：Lagos 在大航海時代扮演什麼角色？奴隸貿易在這裡如何被呈現？看懂這兩個重點就很夠了。
 
-如果你想把它「看完就走」的風險降到最低，有一個很簡單的走法：從碼頭（Marina）往舊城走，先看一眼街景再進去。不要急著拍照，先讓自己感覺一下那個落差，反而比較記得住。
+如果你想把它「看完就走」的風險降到最低，有一個很簡單的走法：從 {{bi:碼頭|Marina}}往舊城走，先看一眼街景再進去。不要急著拍照，先讓自己感覺一下那個落差，反而比較記得住。
 
 ### [（風浪 OK 才加）Ponta da Piedade 船/皮划艇/小船](https://www.google.com/maps/search/?api=1&query=Ponta%20da%20Piedade%20boat%20tour%20Lagos)
 @card: 把「看地形」變成「進入地形」：海象允許時從海上貼近拱門與洞穴，感受會放大；風浪不穩就把這段當作可取消的加分項。
@@ -102,7 +102,7 @@ title: 拉各斯（Lagos，阿爾加維 Algarve）
 - **省力優先**：挑「坐船」而不是 Kayak/SUP；早上通常更穩一點（仍看當日海象）。
 - **怕暈船/怕晃**：不要硬上；直接回到上方步道一樣很值。
 
-### [（更好走的替代海灘）波爾圖德莫斯海灘（Praia do Porto de Mós）](https://www.google.com/maps/search/?api=1&query=Praia%20do%20Porto%20de%20M%C3%B3s%20Lagos)
+### {{bilink:（更好走的替代海灘） 波爾圖德莫斯海灘|Praia do Porto de Mós Lagos|https://www.google.com/maps/search/?api=1&query=Praia%20do%20Porto%20de%20M%C3%B3s%20Lagos}}
 @card: 更好走、畫面更大的海灘選項：通常不用挑戰長樓梯也能得到開闊視野，適合把午後留給散步、坐著看海與慢慢放空。
 {{gallery:Praia do Porto de Mós|https://source.unsplash.com/z8j6KnfUT9E/1800x1200|https://source.unsplash.com/ziA-EKzRm6Y/1800x1200|https://source.unsplash.com/fYVqIyU5BKg/1800x1200|https://source.unsplash.com/PqQczLH4jQQ/1800x1200}}
 
@@ -131,12 +131,12 @@ title: 拉各斯（Lagos，阿爾加維 Algarve）
 
 如果你今天想省力，照這個版本走就好：只走上方步道 + 選一個平坦好撤退的點坐下來。你會覺得自己有「真的玩到」，但不會累到影響隔天。
 
-抵達日（Day 6）想輕鬆一點：巴塔塔海灘（Praia da Batata） [Praia da Batata Lagos](https://www.google.com/maps/search/?api=1&query=Praia%20da%20Batata%20Lagos) 看日落＋散步就很夠，走一小段就收工。
+{{bi:抵達日|Day 6}}想輕鬆一點： {{bi:巴塔塔海灘|Praia da Batata}} [Praia da Batata Lagos](https://www.google.com/maps/search/?api=1&query=Praia%20da%20Batata%20Lagos) 看日落＋散步就很夠，走一小段就收工。
 
-如果你只想輕鬆看海（省力友善）：梅亞海灘（Meia Praia） [Meia Praia Lagos](https://www.google.com/maps/search/?api=1&query=Meia%20Praia%20Lagos) 視野開闊、幾乎全平地、撤退也簡單。
+如果你只想輕鬆看海（省力友善）： {{bi:梅亞海灘|Meia Praia}} [Meia Praia Lagos](https://www.google.com/maps/search/?api=1&query=Meia%20Praia%20Lagos) 視野開闊、幾乎全平地、撤退也簡單。
 對膝蓋來說，它比 Camilo / Dona Ana 這種「下去要階梯」的口袋海灘更友善。
 
-碼頭區（Marina）/ 河口邊散步：Marina de Lagos [Marina de Lagos](https://www.google.com/maps/search/?api=1&query=Marina%20de%20Lagos) 平路好走、餐廳多，適合當作腿酸的休息日選項。
+{{bi:碼頭區|Marina}}/ 河口邊散步：Marina de Lagos [Marina de Lagos](https://www.google.com/maps/search/?api=1&query=Marina%20de%20Lagos) 平路好走、餐廳多，適合當作腿酸的休息日選項。
 
 ### Marina de Lagos 超省力玩法（傍晚散步＋晚餐最穩）
 @card: 把傍晚留給碼頭水岸：路面平、空間寬、椅子多，走路壓力小但度假感很滿，特別適合用散步＋晚餐把一天收尾。
@@ -158,21 +158,21 @@ title: 拉各斯（Lagos，阿爾加維 Algarve）
 
 如果你們想避開「爬上爬下」的景點，但又不想整天只坐著看海，Lagos 老城其實有幾個很剛好的點：路面大多平、距離短、看完就能坐下來休息。
 
-#### [聖安東尼奧教堂（Igreja de Santo António）](https://www.google.com/maps/search/?api=1&query=Igreja%20de%20Santo%20Ant%C3%B3nio%20Lagos)
-外觀低調，但內部是那種「一走進去就會安靜三秒」的等級：金色巴洛克木雕＋藍白瓷磚（Azulejo）非常滿。
+#### {{bilink:聖安東尼奧教堂|Igreja de Santo António|https://www.google.com/maps/search/?api=1&query=Igreja%20de%20Santo%20Ant%C3%B3nio%20Lagos}}
+外觀低調，但內部是那種「一走進去就會安靜三秒」的等級：金色巴洛克木雕＋ {{bi:藍白瓷磚|Azulejo}}非常滿。
 省力點：它在老城區內、路線短，而且偏室內行程，太陽大/風大都能把它當作舒服的避風港。
 
-（加值走法）如果你想把室內行程再延長一點：它附近也有 Lagos 市立博物館（Museu Municipal Dr. José Formosinho） [Museu Municipal Dr. José Formosinho Lagos](https://www.google.com/maps/search/?api=1&query=Museu%20Municipal%20Dr.%20Jos%C3%A9%20Formosinho%20Lagos) 可順路補充背景，適合當作「吹風太冷 / 太熱」的備案。
+（加值走法）如果你想把室內行程再延長一點：它附近也有 Lagos {{bi:市立博物館|Museu Municipal Dr. José Formosinho}} [Museu Municipal Dr. José Formosinho Lagos](https://www.google.com/maps/search/?api=1&query=Museu%20Municipal%20Dr.%20Jos%C3%A9%20Formosinho%20Lagos) 可順路補充背景，適合當作「吹風太冷 / 太熱」的備案。
 
-#### [班德拉堡壘（Forte da Ponta da Bandeira）](https://www.google.com/maps/search/?api=1&query=Forte%20da%20Ponta%20da%20Bandeira%20Lagos)
+#### {{bilink:班德拉堡壘|Forte da Ponta da Bandeira|https://www.google.com/maps/search/?api=1&query=Forte%20da%20Ponta%20da%20Bandeira%20Lagos}}
 位在運河入口旁邊，走到就到。過吊橋進去，裡面有小教堂與海事相關展示；如果天氣好，站到矮矮的城牆上回望港口，視野很開。
 省力點：基本是平路可達；需要的階梯不多，想省力就只逛內部展間＋門口看海也很夠。
 
-#### [學生海灘（Praia dos Estudantes）＆「羅馬拱橋」](https://www.google.com/maps/search/?api=1&query=Praia%20dos%20Estudantes%20Lagos)
-這個點很適合「想要有一張漂亮合照、但不想走很遠」：最有記憶點的是連接岩壁的拱橋（Roman-style bridge）。
+#### {{bilink:學生海灘|Praia dos Estudantes|https://www.google.com/maps/search/?api=1&query=Praia%20dos%20Estudantes%20Lagos}}＆「羅馬拱橋」
+這個點很適合「想要有一張漂亮合照、但不想走很遠」：最有記憶點的是連接岩壁的 {{bi:拱橋|Roman-style bridge}}。
 省力走法：它離 Praia da Batata [Praia da Batata Lagos](https://www.google.com/maps/search/?api=1&query=Praia%20da%20Batata%20Lagos) 很近，很多人會直接從旁邊的通道/隧道繞過去。你們可以視當天體力決定「走到能拍照的位置就回頭」，不用硬踩沙走很遠。
 
-#### [Lagos 市政市場（Mercado Municipal de Lagos）](https://www.google.com/maps/search/?api=1&query=Mercado%20Municipal%20de%20Lagos)
+#### {{bilink:Lagos 市政市場|Mercado Municipal de Lagos|https://www.google.com/maps/search/?api=1&query=Mercado%20Municipal%20de%20Lagos}}
 別只在一樓看魚。這裡真正的亮點是「頂樓/露台的碼頭全景」：如果有開放上層/屋頂露台酒吧或餐廳，直接搭電梯上去坐著看船最舒服，完全不需要在老城石路上硬走。
 實用建議（省力版）：
 
@@ -187,11 +187,11 @@ title: 拉各斯（Lagos，阿爾加維 Algarve）
 
 Lagos 老城「內陸那側」確實會越走越陡；省力的秘訣是：不要往高處鑽，沿著下城區與濱海大道走。你會得到很完整的歷史感，但膝蓋幾乎不用付費。
 
-這條路線的主軸是：發現者大道（Avenida dos Descobrimentos） [Avenida dos Descobrimentos Lagos](https://www.google.com/maps/search/?api=1&query=Avenida%20dos%20Descobrimentos%20Lagos) ——路面相對平整、空間也寬，和老城裡那種凹凸的碎石路是兩種體感。
+這條路線的主軸是： {{bi:發現者大道|Avenida dos Descobrimentos}} [Avenida dos Descobrimentos Lagos](https://www.google.com/maps/search/?api=1&query=Avenida%20dos%20Descobrimentos%20Lagos) ——路面相對平整、空間也寬，和老城裡那種凹凸的碎石路是兩種體感。
 
-- **[恩里克王子廣場（Praça Infante Dom Henrique）](https://www.google.com/maps/search/?api=1&query=Pra%C3%A7a%20Infante%20Dom%20Henrique%20Lagos)**： 把它當作起點最順；廣場平坦、好休息，也很適合先集合拍照再出發。
-- **[城牆＆聖貢薩洛拱門（Arco de São Gonçalo / City Walls）](https://www.google.com/maps/search/?api=1&query=Arco%20de%20S%C3%A3o%20Gon%C3%A7alo%20Lagos)**： 不用爬上城牆，沿著大道在平地「側看/仰望」其實更能感受到防禦工事的厚度。
-- **[班德拉堡壘（Forte da Ponta da Bandeira）](https://www.google.com/maps/search/?api=1&query=Forte%20da%20Ponta%20da%20Bandeira%20Lagos)**： 走到濱海端點收尾；想省力就外圍看海＋拍一張港口照即可。
+- ** {{bilink:恩里克王子廣場|Praça Infante Dom Henrique|https://www.google.com/maps/search/?api=1&query=Pra%C3%A7a%20Infante%20Dom%20Henrique%20Lagos}}**： 把它當作起點最順；廣場平坦、好休息，也很適合先集合拍照再出發。
+- ** {{bilink:城牆＆ 聖貢薩洛拱門|Arco de São Gonçalo Lagos|https://www.google.com/maps/search/?api=1&query=Arco%20de%20S%C3%A3o%20Gon%C3%A7alo%20Lagos}}**： 不用爬上城牆，沿著大道在平地「側看/仰望」其實更能感受到防禦工事的厚度。
+- ** {{bilink:班德拉堡壘|Forte da Ponta da Bandeira|https://www.google.com/maps/search/?api=1&query=Forte%20da%20Ponta%20da%20Bandeira%20Lagos}}**： 走到濱海端點收尾；想省力就外圍看海＋拍一張港口照即可。
 - **[Marina de Lagos](https://www.google.com/maps/search/?api=1&query=Marina%20de%20Lagos)**： 要「最舒服的終點」就過橋去碼頭喝咖啡；木棧道/平滑路面比老城石路友善太多。
 
 可照抄順序（全程盡量平）：
@@ -204,19 +204,19 @@ Lagos 老城「內陸那側」確實會越走越陡；省力的秘訣是：不�
 ### 老城咖啡漫遊（平坦廣場＋坐著就好）
 @card: 這段的重點是「坐進老城日常」：挑幾個相對平坦、椅子多的廣場，喝咖啡看人來人往，比硬走滿巷弄更像度假。
 
-Lagos 老城的路面很多是葡式碎石路（Calçada），走久腳底會有感、下雨還會偏滑；但只要把活動半徑鎖在幾個相對平坦、椅子多的廣場，你就能得到很道地的「坐著看人來人往」體驗，而且幾乎不用爬坡。
+Lagos 老城的路面很多是 {{bi:葡式碎石路|Calçada}}，走久腳底會有感、下雨還會偏滑；但只要把活動半徑鎖在幾個相對平坦、椅子多的廣場，你就能得到很道地的「坐著看人來人往」體驗，而且幾乎不用爬坡。
 
 #### 平坦廣場（省力優先選這些）
 
-- **[吉爾・埃內斯廣場（Praça Gil Eanes）](https://www.google.com/maps/search/?api=1&query=Pra%C3%A7a%20Gil%20Eanes%20Lagos)**： 老城最熱鬧的核心點之一，露天座位多、也常有街頭表演；很適合把它當作「先坐下來再說」的集合點。
-- **[恩里克王子廣場（Praça Infante Dom Henrique）](https://www.google.com/maps/search/?api=1&query=Pra%C3%A7a%20Infante%20Dom%20Henrique%20Lagos)**： 靠近海邊與文化點（教堂/博物館一帶），視野開闊、長椅也多，參觀完室內景點後來這裡放空很剛好。
-- **[路易・德・賈梅士廣場（Praça Luís de Camões）](https://www.google.com/maps/search/?api=1&query=Pra%C3%A7a%20Lu%C3%ADs%20de%20Cam%C3%B5es%20Lagos)**： 相對安靜一點，適合不喜歡太吵的人；周邊建築也很有葡萄牙味。
+- ** {{bilink:吉爾・埃內斯廣場|Praça Gil Eanes|https://www.google.com/maps/search/?api=1&query=Pra%C3%A7a%20Gil%20Eanes%20Lagos}}**： 老城最熱鬧的核心點之一，露天座位多、也常有街頭表演；很適合把它當作「先坐下來再說」的集合點。
+- ** {{bilink:恩里克王子廣場|Praça Infante Dom Henrique|https://www.google.com/maps/search/?api=1&query=Pra%C3%A7a%20Infante%20Dom%20Henrique%20Lagos}}**： 靠近海邊與文化點（教堂/博物館一帶），視野開闊、長椅也多，參觀完室內景點後來這裡放空很剛好。
+- ** {{bilink:路易・德・賈梅士廣場|Praça Luís de Camões|https://www.google.com/maps/search/?api=1&query=Pra%C3%A7a%20Lu%C3%ADs%20de%20Cam%C3%B5es%20Lagos}}**： 相對安靜一點，適合不喜歡太吵的人；周邊建築也很有葡萄牙味。
 
 #### 咖啡店/麵包店（把它當作「參考名單」，以當天營業與座位為準）
 
 這些店名可以直接丟進 Google Maps 看距離與營業時間；到了現場再決定「坐外面曬太陽」或「坐裡面避風」。
 
-- **[A Doce Vida](https://www.google.com/maps/search/?api=1&query=A%20Doce%20Vida%20Lagos)**： 很多人會為了蛋塔（Pastel de Nata）來；如果你們只想完成一個「蛋塔＋咖啡」的小確幸，這種店型最適合。
+- **[A Doce Vida](https://www.google.com/maps/search/?api=1&query=A%20Doce%20Vida%20Lagos)**： 很多人會為 {{bi:了蛋塔|Pastel de Nata}}來；如果你們只想完成一個「蛋塔＋咖啡」的小確幸，這種店型最適合。
 - **[Nina](https://www.google.com/maps/search/?api=1&query=Nina%20Lagos%20Algarve)**： 偏早午餐/輕食路線，適合想吃得稍微「像一餐」但又不想太正式的那種中午。
 - **[Black and White Coffee](https://www.google.com/maps/search/?api=1&query=Black%20and%20White%20Coffee%20Lagos)**： 比較現代的咖啡店氛圍，通常咖啡品質與早餐選擇更穩（熱門時段可能要等）。
 - **[Goji Cafe](https://www.google.com/maps/search/?api=1&query=Goji%20Cafe%20Lagos)**： 偏健康、清爽路線；如果不想吃太油，這種店會更對胃。
@@ -236,7 +236,7 @@ Lagos 老城的路面很多是葡式碎石路（Calçada），走久腳底會有
 
 ## rain
 
-雨天最大的敵人其實不是「濕」，而是「滑」：葡式碎石路（Calçada Portuguesa）一旦沾水，體感很像在溜冰。
+雨天最大的敵人其實不是「濕」，而是「滑」： {{bi:葡式碎石路|Calçada Portuguesa}}一旦沾水，體感很像在溜冰。
 雨備的核心原則也很直白：少走戶外石路、改成室內或平坦地形，並且把「出海」當成第一個可取消項。
 
 ### 雨天四個舒適選項（室內／平地優先）
@@ -247,7 +247,7 @@ Lagos 老城的路面很多是葡式碎石路（Calçada），走久腳底會有
 省力版推薦地形是 `Lagos Marina`：路面更平整、撤退容易。
 
 2) 室內市場：逛一點生活感、順便找午餐/下午茶
-- **Lagos 市政市場（Mercado Municipal de Lagos）**：室內好逛，走累就坐下來喝咖啡。
+- **Lagos {{bi:市政市場|Mercado Municipal de Lagos}}**：室內好逛，走累就坐下來喝咖啡。
 
 3) 小型室內點：拿來補時間剛剛好
 Lagos 博物館/市立博物館不大，但雨天很適合：看完就走，不會把自己走爆。
@@ -255,7 +255,7 @@ Lagos 博物館/市立博物館不大，但雨天很適合：看完就走，不�
 4) 把半徑縮小：Marina → 咖啡/午餐 → 回住宿
 雨天不是一定要取消所有行程，你只要把動線縮到這種小半徑，滑倒風險會直接降一半。
 
-### ⚠️ 雨天安全守則（Safety First）
+### ⚠️ {{bi:雨天安全守則|Safety First}}
 @card: 雨天真的會把路面變成溜冰場：避開濕滑石路與斜坡、果斷取消出海，把安全當作第一優先，行程自然就會順。
 
 1. 避開老城斜坡與濕滑石路：雨天盡量不要把「逛老城」當主菜；改去 Marina、室內市場、博物館，或用叫車縮短步行距離。
@@ -274,7 +274,7 @@ Lagos 博物館/市立博物館不大，但雨天很適合：看完就走，不�
 ### 2 天濃縮版（可照抄）
 @card: 兩天抓住 Lagos 的主旋律：第一天把海蝕地形與海灘吃到主菜，第二天用碼頭平地把節奏放回度假模式，讓體力與回憶都更平均。
 
-- **Day 1**：Ponta da Piedade（上方步道/觀景台）＋海灘（Dona Ana / Porto de Mós）。
+- **Day 1**：Ponta da Piedade（上方步道/觀景台）＋ {{bi:海灘|Dona Ana / Porto de Mós}}。
   做法：先去懸崖上方把畫面收好，再去海灘坐著放空；不要硬走很遠，留體力給隔天。
 
 - **Day 2**：平地回血：Marina 散步 → Meia Praia 或 Porto de Mós 坐著看海 → 早點吃晚餐。
@@ -285,9 +285,9 @@ Lagos 博物館/市立博物館不大，但雨天很適合：看完就走，不�
 
 一個很順的節奏是：室內文化 → 平地看海 → 小堡壘收尾 → 晚上碼頭吃飯。
 
-- **上午**： [聖安東尼奧教堂（Igreja de Santo António）](https://www.google.com/maps/search/?api=1&query=Igreja%20de%20Santo%20Ant%C3%B3nio%20Lagos) （室內、短程、很有內容）
+- **上午**： {{bilink:聖安東尼奧教堂|Igreja de Santo António|https://www.google.com/maps/search/?api=1&query=Igreja%20de%20Santo%20Ant%C3%B3nio%20Lagos}} （室內、短程、很有內容）
 - **中午**： [去 Meia Praia](https://www.google.com/maps/search/?api=1&query=Meia%20Praia%20Lagos) 海邊坐著吃午餐/喝咖啡（平坦好走、撤退快）
-- **下午**： [班德拉堡壘（Forte da Ponta da Bandeira）](https://www.google.com/maps/search/?api=1&query=Forte%20da%20Ponta%20da%20Bandeira%20Lagos) 走一圈＋順路看一眼 [學生海灘（Praia dos Estudantes）](https://www.google.com/maps/search/?api=1&query=Praia%20dos%20Estudantes%20Lagos) 拱橋拍照
+- **下午**： {{bilink:班德拉堡壘|Forte da Ponta da Bandeira|https://www.google.com/maps/search/?api=1&query=Forte%20da%20Ponta%20da%20Bandeira%20Lagos}} 走一圈＋順路看一眼 {{bilink:學生海灘|Praia dos Estudantes|https://www.google.com/maps/search/?api=1&query=Praia%20dos%20Estudantes%20Lagos}} 拱橋拍照
 - **傍晚/晚餐**： [回到 Marina de Lagos](https://www.google.com/maps/search/?api=1&query=Marina%20de%20Lagos) 一帶吃飯散步，地面更平整、也更好走
 
 #### 省力時間表版：Lagos 輕鬆文化一日遊（含時間，可照抄）
@@ -295,15 +295,15 @@ Lagos 博物館/市立博物館不大，但雨天很適合：看完就走，不�
 這版的核心只有一句：少走路、多看點、隨時能坐下來。
 做法是把活動範圍鎖在「老城下城區＋濱海大道＋碼頭」，避開內陸越走越陡的街道。
 
-- 10:00｜聖安東尼奧教堂（Igreja de Santo António）- [10:00｜聖安東尼奧教堂（Igreja de Santo António）](https://www.google.com/maps/search/?api=1&query=Igreja%20de%20Santo%20Ant%C3%B3nio%20Lagos)
-  這是今天的文化主菜：金色巴洛克木雕（Talha Dourada）＋藍白瓷磚（Azulejos）很有震撼力，而且室內、路線短，體感會很好。
-- 10:45–11:30｜（加值）Lagos 市立博物館（Museu Municipal Dr. José Formosinho）- [10:45–11:30｜（加值）Lagos 市立博物館（Museu Municipal Dr. José Formosinho）](https://www.google.com/maps/search/?api=1&query=Museu%20Municipal%20Dr.%20Jos%C3%A9%20Formosinho%20Lagos)
+- 10:00｜ {{bi:聖安東尼奧教堂|Igreja de Santo António}}- {{bilink:10:00｜ 聖安東尼奧教堂|Igreja de Santo António Lagos|https://www.google.com/maps/search/?api=1&query=Igreja%20de%20Santo%20Ant%C3%B3nio%20Lagos}}
+  這是今天的文化主菜： {{bi:金色巴洛克木雕|Talha Dourada}}＋ {{bi:藍白瓷磚|Azulejos}}很有震撼力，而且室內、路線短，體感會很好。
+- 10:45–11:30｜（加值）Lagos {{bi:市立博物館|Museu Municipal Dr. José Formosinho}}- {{bilink:10:45–11:30｜（加值）Lagos 市立博物館|Museu Municipal Dr. José Formosinho Lagos|https://www.google.com/maps/search/?api=1&query=Museu%20Municipal%20Dr.%20Jos%C3%A9%20Formosinho%20Lagos}}
   想再多一點背景再進去；覺得累就直接跳過，去廣場坐一下更舒服。
-- 11:30｜恩里克王子廣場（Praça Infante Dom Henrique）- [11:30｜恩里克王子廣場（Praça Infante Dom Henrique）](https://www.google.com/maps/search/?api=1&query=Pra%C3%A7a%20Infante%20Dom%20Henrique%20Lagos)
+- 11:30｜ {{bi:恩里克王子廣場|Praça Infante Dom Henrique}}- {{bilink:11:30｜ 恩里克王子廣場|Praça Infante Dom Henrique Lagos|https://www.google.com/maps/search/?api=1&query=Pra%C3%A7a%20Infante%20Dom%20Henrique%20Lagos}}
   平坦、好休息，有長椅也有樹蔭。這裡很適合「先坐 10 分鐘」再繼續走。
 - 12:30｜午餐（老城區/碼頭邊都可）
-  點菜方向就照 `food`：`Cataplana（海鮮銅鍋燉菜）`、`烤魚（peixe do dia）` 最穩。飯後再補一個 `Pastel de Nata`，節奏會很剛好。
-- 14:30｜班德拉堡壘（Forte da Ponta da Bandeira）- [14:30｜班德拉堡壘（Forte da Ponta da Bandeira）](https://www.google.com/maps/search/?api=1&query=Forte%20da%20Ponta%20da%20Bandeira%20Lagos)
+  點菜方向就照 `food`：`Cataplana（海鮮銅鍋燉菜）`、 {{bi:烤魚|peixe do dia}} 最穩。飯後再補一個 `Pastel de Nata`，節奏會很剛好。
+- 14:30｜ {{bi:班德拉堡壘|Forte da Ponta da Bandeira}}- {{bilink:14:30｜ 班德拉堡壘|Forte da Ponta da Bandeira Lagos|https://www.google.com/maps/search/?api=1&query=Forte%20da%20Ponta%20da%20Bandeira%20Lagos}}
   平地可達、看海角度很好。想省力就逛內部＋外圍看海，不必硬爬到處。
 - 16:00｜沿 Avenida dos Descobrimentos- [16:00｜沿 Avenida dos Descobrimentos](https://www.google.com/maps/search/?api=1&query=Avenida%20dos%20Descobrimentos%20Lagos) 往 Marina de Lagos [Marina de Lagos](https://www.google.com/maps/search/?api=1&query=Marina%20de%20Lagos) 走（或直接叫車）   往 Marina de Lagos- [16:00｜沿 Avenida dos Descobrimentos [Avenida dos Descobrimentos Lagos](https://www.google.com/maps/search/?api=1&query=Avenida%20dos%20Descobrimentos%20Lagos) 往 Marina de Lagos](https://www.google.com/maps/search/?api=1&query=Marina%20de%20Lagos) 走（或直接叫車）   走（或直接叫車）
   這段路面相對平整、空間也寬，走累就縮短距離：叫車不丟臉，反而最符合省力版精神。
@@ -348,9 +348,9 @@ Lagos 博物館/市立博物館不大，但雨天很適合：看完就走，不�
 
 - **步行**：舊城區吃飯逛街、碼頭散步、以及 `Dona Ana / Camilo ↔ Ponta da Piedade` 的上方串連步道。走累就折返，別硬走到底。
 - **搭船 / Kayak / SUP**：海象允許時，用「水面視角」進洞穴、穿拱門。想省力就選坐著的船；Kayak/SUP 比較吃體力。
-- **叫車（Uber / Bolt）**：最常用的情境是住宿 ↔ `Ponta da Piedade 上方入口`、住宿 ↔ `Porto de Mós`、晚餐後回程上坡（以當日報價與可停靠點為準）。
+- ** {{bi:叫車|Uber / Bolt}}**：最常用的情境是住宿 ↔ `Ponta da Piedade 上方入口`、住宿 ↔ `Porto de Mós`、晚餐後回程上坡（以當日報價與可停靠點為準）。
 
-### 超實用：Lagos 觀光小火車（Tourist Train / Comboio Turístico）
+### 超實用：Lagos {{bi:觀光小火車|Tourist Train / Comboio Turístico}}
 @card: 想用「坐著」換到城市尺度感：觀光小火車能把碼頭、老城與海邊串成一段舒服的移動，特別適合把午後留給風景而不是腳底板。
 
 如果你想用少量步行換到「看見城市的感覺」，這個真的很加分：而且可以把 Marina / 老城 / Meia Praia 這些點用更舒服的方式串起來。
@@ -378,14 +378,14 @@ Lagos 的購物不太像「去百貨公司掃貨」，而是更像：在老城�
 ### 必買伴手禮方向（比記店名更實用）
 @card: 不追店名，先抓「買回家用得上」的方向：軟木、磁磚/陶瓷與實用小物最能帶走葡萄牙感，也更容易控制重量與尺寸。
 
-- **軟木（Cork）小物**：葡萄牙很代表性的材質（常見說法是葡萄牙供應全球軟木的大宗）。它的優點是輕、好帶、也比較不怕摔，而且軟木採收通常不需要砍樹，拿來當「環保系伴手禮」很適合。
+- ** {{bi:軟木|Cork}}小物**：葡萄牙很代表性的材質（常見說法是葡萄牙供應全球軟木的大宗）。它的優點是輕、好帶、也比較不怕摔，而且軟木採收通常不需要砍樹，拿來當「環保系伴手禮」很適合。
   - **怎麼買才不容易買貴（參考抓手）**：價錢會跟地點/設計/做工差很多，但你可以先用這種「常見小物區間」當 sanity check：小配件（杯墊/小盒）常落在 `€3–€5` 左右；基本款軟木包通常 `€10` 起；小工具（如開瓶器）常見 `€3` 左右。看到明顯高出很多的，就多比兩家再決定。
   - **買什麼最實用**：護照套、眼鏡盒、皮夾/零錢包、杯墊、簡單的托特包；也有些會把 `Azulejos` 圖案融進設計，送人更有「葡萄牙感」。
   - **⚠️ 開瓶器/刀具類**：如果你們買到含金屬尖端的 `corkscrew` / 小刀類，隨身行李可能會被安檢攔下；保守做法是直接放託運。
-- **葡萄牙磁磚（Azulejos）/ 陶瓷**：當作家裡的小裝飾很有味道；買之前先想好「尺寸與重量」，避免帶到最後行李爆炸。
-- **實用型小物**：看到像「盤子研磨器（plate grater）」這類有趣的廚房小物，可以當作送人不踩雷的選項（以你們家用得上為前提）。
+- ** {{bi:葡萄牙磁磚|Azulejos}}/ 陶瓷**：當作家裡的小裝飾很有味道；買之前先想好「尺寸與重量」，避免帶到最後行李爆炸。
+- **實用型小物**：看到像「 {{bi:盤子研磨器|plate grater}}」這類有趣的廚房小物，可以當作送人不踩雷的選項（以你們家用得上為前提）。
 
-### 市政市場（Mercado）買什麼、什麼時候去
+### {{bi:市政市場|Mercado}}買什麼、什麼時候去
 @card: 市政市場更像生活感補給點：上午接近中午前去最有市場氛圍，順手把午餐、食材或小伴手禮一起解決，逛起來也更舒服。
 
 `Mercado Municipal de Lagos` 更像「生活感」點位：一樓常見海鮮/魚，中間層有蔬果/農產品；建議挑 上午接近中午前 去，比較像市場氛圍、也不會被午後風吹得太冷。
@@ -408,7 +408,7 @@ Lagos 的購物不太像「去百貨公司掃貨」，而是更像：在老城�
 - **Cataplana（海鮮銅鍋燉菜）**：阿爾加維代表作，份量偏大，直接當成分食主菜最剛好。
 - **Arroz de marisco（海鮮飯/海鮮燉飯）**：葡式版本常更「湯汁感」，想吃暖胃又想吃到一堆海鮮，點這道最穩。
 - **烤魚/烤沙丁魚**：看到菜單寫 `fish of the day / peixe do dia`，通常比固定菜更接近當日漁獲。
-- **章魚（polvo）**：怕踩雷就先從章魚沙拉開始，口味比較好掌控。
+- ** {{bi:章魚|polvo}}**：怕踩雷就先從章魚沙拉開始，口味比較好掌控。
 - **Piri-piri 烤雞**：便宜、節奏快，適合走完步道只想快速補能量的那餐。
 - **甜點**：Dom Rodrigo（阿爾加維在地甜）＋ Pastel de Nata（熱的最值得，撒肉桂粉更像葡萄牙）。
 
@@ -432,7 +432,7 @@ Lagos 的購物不太像「去百貨公司掃貨」，而是更像：在老城�
 
 小技巧：想吃到比較好吃的蛋塔，「溫熱」比店名更重要。看到剛出爐就直接買，通常不太會錯。
 
-### 碼頭區（Marina）吃喝策略（省力、不踩雷版）
+### {{bi:碼頭區|Marina}}吃喝策略（省力、不踩雷版）
 @card: 在碼頭區吃喝的核心是「先選景色，再選餐點」：把視野換成飲料/咖啡，再去更舒服的水岸餐廳吃正餐，體感往往更穩。
 
 - **先用「景色」換「飲料」**： [如果你們想找一個不用走很遠、又能舒服坐著看船的點，可以先去 Mercado Municipal de Lagos](https://www.google.com/maps/search/?api=1&query=Mercado%20Municipal%20de%20Lagos) 看看是否有上層/露台座位；有的話直接搭電梯上去喝咖啡/飲料（夕陽時段更值得）。這裡的「賣點通常是景色」，餐點評價可能兩極，所以正餐建議另外選。
@@ -443,7 +443,7 @@ Lagos 的購物不太像「去百貨公司掃貨」，而是更像：在老城�
 
 ## photo
 
-![Ponta da Piedade（Lagos）](https://source.unsplash.com/PqQczLH4jQQ/1600x1000)
+! {{bilink:Ponta da Piedade|Lagos|https://source.unsplash.com/PqQczLH4jQQ/1600x1000}}
 
 如果你只想挑一個拍照點：就去 Ponta da Piedade 的上方觀景台，畫面最穩、也最省力。
 

@@ -1,13 +1,13 @@
 ---
 schema: v1
 cityId: lisbon
-title: 里斯本（Lisbon）住宿
+title: {{bi:里斯本|Lisbon}}住宿
 ---
 
-# 里斯本（Lisbon）住宿
+# {{bi:里斯本|Lisbon}}住宿
 
 ## options
-- 盧澤羅斯套房（Luzeiros Suites）- [盧澤羅斯套房（Luzeiros Suites）](https://maps.app.goo.gl/szKwdhc3Yp7RuU8e8)
+- {{bi:盧澤羅斯套房|Luzeiros Suites}}- {{bilink:盧澤羅斯套房|Luzeiros Suites|https://maps.app.goo.gl/szKwdhc3Yp7RuU8e8}}
   - why: 我們已預訂房型「Superior Room, Courtyard View」（約 20 ㎡，最多 3 人，1 張 Queen Bed 或 2 張單人床）。第一晚就用它當「落地保險」：抵達後先穩定入住，把體力睡回來。
 
     位置：在 Campo Pequeno 斗牛場一帶，周邊步行友善。
@@ -94,7 +94,7 @@ title: 里斯本（Lisbon）住宿
 
 多人同行：從機場進城這種「一趟就到」的行程，分攤 Uber/Bolt 常更省力也可能更划算；尖峰時段要考慮塞車。
 
-### 避坡交通密技：保膝蓋（Start at the Top）
+### 避坡交通密技： {{bi:保膝蓋|Start at the Top}}
 里斯本找古蹟最省力的核心邏輯只有一句：先上高處，再一路往下逛。不要從低處硬爬上去看景點；先把自己送到「山頂街區」，再順著重力散步穿過各段街區。
 
 - **1)「由上往下」的遊覽策略**：用電車/纜車/巴士、或乾脆 Uber/Bolt 先到高處（例如 `Graça` / `Príncipe Real` 一帶），看完高點與展望，再慢慢走下來接到市中心或河岸。

@@ -7,7 +7,7 @@ import type { ItineraryPhase } from '../data/itinerary'
 export const ITINERARY_PHASES: ItineraryPhase[] = [
   {
     "id": "phase-lisbon",
-    "label": "里斯本 + 辛特拉（Sintra）（5 天）",
+    "label": "里斯本 + {{bi:辛特拉",
     "days": [
       {
         "day": 1,
@@ -41,7 +41,7 @@ export const ITINERARY_PHASES: ItineraryPhase[] = [
         ],
         "summary": {
           "morning": "熱羅尼莫斯修道院（建議早上）",
-          "noon": "貝倫（Belém）午餐＋蛋塔、MAAT、河岸散步",
+          "noon": "{{bi:貝倫|Belém}}午餐＋蛋塔、MAAT、河岸散步",
           "evening": "輕收尾調整時差"
         },
         "details": {
@@ -56,14 +56,14 @@ export const ITINERARY_PHASES: ItineraryPhase[] = [
       },
       {
         "day": 3,
-        "dateLabel": "",
-        "cityLabel": "里斯本",
-        "title": "卡斯凱什（Cascais）海岸線＋燈塔（放鬆日）",
+        "dateLabel": "里斯本",
+        "cityLabel": "{{bi:卡斯凱什",
+        "title": "Cascais}}海岸線＋燈塔（放鬆日）",
         "tags": [
           "easy"
         ],
         "summary": {
-          "morning": "火車到 卡斯凱什（Cascais），再去燈塔",
+          "morning": "火車到 {{bi:卡斯凱什|Cascais}}，再去燈塔",
           "noon": "逛衝浪小鎮，回里斯本",
           "evening": "休息"
         },
@@ -79,33 +79,6 @@ export const ITINERARY_PHASES: ItineraryPhase[] = [
       },
       {
         "day": 4,
-        "dateLabel": "",
-        "cityLabel": "辛特拉（Sintra）",
-        "title": "夢幻宮殿（一日 WOW）",
-        "tags": [
-          "wow",
-          "ticket"
-        ],
-        "summary": {
-          "morning": "羅西奧（Rossio）→ 辛特拉（Sintra）火車",
-          "noon": "佩納宮（先）→ 摩爾人城堡 → 鎮中心補給 → 雷加萊拉莊園（主菜 1–2 個即可）",
-          "evening": "傍晚回里斯本"
-        },
-        "details": {
-          "morning": "早出門（避開人潮）＋火車到 辛特拉（Sintra）",
-          "noon": "建議「由高往低」：佩納宮（外觀/露台為主）→ 摩爾人城堡 → 鎮中心午餐甜點 → 雷加萊拉莊園（或霧太濃就改 Monserrate/辛特拉宮）",
-          "evening": "回里斯本早休息",
-          "notes": [
-            "**今天目標**：只打 1 個主景點（WOW），平安回里斯本",
-            "**時間錨點**：早出門；若有時段票＝以入場時間為全日錨點",
-            "**省力走法**：上坡/走路多就把景點縮到 1–2 個主菜；避開佩納宮室內長隊（外觀/露台回報最穩）；需要就短程 Uber/Bolt（通常不貴），不要硬撐走坡",
-            "**Plan B（霧牆/聖週/人潮）**：霧太濃就砍掉摩爾人城堡（視野回報歸零），改 Monserrate/辛特拉宮；巴士滿/排隊太久→直接縮到 1–2 個點（或回鎮上慢走）；錯過時段→立刻換備案（不硬追）",
-            "**安全**：熱門景點與車站人擠人，包包放前、手機收好"
-          ]
-        }
-      },
-      {
-        "day": 5,
         "dateLabel": "",
         "cityLabel": "里斯本",
         "title": "文化＋高處視角日",
@@ -126,17 +99,44 @@ export const ITINERARY_PHASES: ItineraryPhase[] = [
             "**安全**：過馬路多留意（車不一定讓人）"
           ]
         }
+      },
+      {
+        "day": 5,
+        "dateLabel": "{{bi:辛特拉",
+        "cityLabel": "Sintra}}",
+        "title": "夢幻宮殿（一日 WOW）",
+        "tags": [
+          "wow",
+          "ticket"
+        ],
+        "summary": {
+          "morning": "{{bi:羅西奧|Rossio}}→ {{bi:辛特拉|Sintra}}火車",
+          "noon": "佩納宮（先）→ 摩爾人城堡 → 鎮中心補給 → 雷加萊拉莊園（主菜 1–2 個即可）",
+          "evening": "傍晚回里斯本"
+        },
+        "details": {
+          "morning": "早出門（避開人潮）＋火車到 {{bi:辛特拉|Sintra}}",
+          "noon": "建議「由高往低」：佩納宮（外觀/露台為主）→ 摩爾人城堡 → 鎮中心午餐甜點 → 雷加萊拉莊園（或霧太濃就改 Monserrate/辛特拉宮）",
+          "evening": "回里斯本早休息",
+          "notes": [
+            "**今天目標**：只打 1 {{bi:個主景點|WOW}}，平安回里斯本",
+            "**時間錨點**：早出門；若有時段票＝以入場時間為全日錨點",
+            "**省力走法**：上坡/走路多就把景點縮到 1–2 個主菜；避開佩納宮室內長隊（外觀/露台回報最穩）；需要就短程 Uber/Bolt（通常不貴），不要硬撐走坡",
+            "**Plan B（霧牆/聖週/人潮）**：霧太濃就砍掉摩爾人城堡（視野回報歸零），改 Monserrate/辛特拉宮；巴士滿/排隊太久→直接縮到 1–2 個點（或回鎮上慢走）；錯過時段→立刻換備案（不硬追）",
+            "**安全**：熱門景點與車站人擠人，包包放前、手機收好"
+          ]
+        }
       }
     ]
   },
   {
     "id": "phase-lagos",
-    "label": "阿爾加維・拉各斯（Lagos）（3 天）",
+    "label": "{{bi:阿爾加維・拉各斯",
     "days": [
       {
         "day": 6,
-        "dateLabel": "",
-        "cityLabel": "拉各斯（Lagos）",
+        "dateLabel": "{{bi:拉各斯",
+        "cityLabel": "Lagos}}",
         "title": "里斯本 → 拉各斯（交通日）",
         "tags": [
           "travel_day"
@@ -158,9 +158,9 @@ export const ITINERARY_PHASES: ItineraryPhase[] = [
       },
       {
         "day": 7,
-        "dateLabel": "",
-        "cityLabel": "拉各斯（Lagos）",
-        "title": "皮耶達德角（Ponta da Piedade；WOW）",
+        "dateLabel": "{{bi:拉各斯",
+        "cityLabel": "Lagos}}",
+        "title": "{{bi:皮耶達德角|Ponta da Piedade；WOW}}",
         "tags": [
           "wow",
           "easy"
@@ -182,16 +182,16 @@ export const ITINERARY_PHASES: ItineraryPhase[] = [
       },
       {
         "day": 8,
-        "dateLabel": "",
-        "cityLabel": "拉各斯（Lagos）",
-        "title": "貝納吉爾藍洞（Benagil；WOW）",
+        "dateLabel": "{{bi:拉各斯",
+        "cityLabel": "Lagos}}",
+        "title": "{{bi:貝納吉爾藍洞|Benagil；WOW}}",
         "tags": [
           "wow"
         ],
         "summary": {
-          "morning": "貝納吉爾（Benagil）搭船",
-          "noon": "卡爾沃埃羅（Carvoeiro）/ 馬里尼亞海灘（Marinha）擇",
-          "evening": "回 拉各斯（Lagos）"
+          "morning": "{{bi:貝納吉爾|Benagil}}搭船",
+          "noon": "{{bi:卡爾沃埃羅|Carvoeiro}}/ {{bi:馬里尼亞海灘|Marinha}}擇",
+          "evening": "回 {{bi:拉各斯|Lagos}}"
         },
         "details": {
           "notes": [
@@ -211,9 +211,9 @@ export const ITINERARY_PHASES: ItineraryPhase[] = [
     "days": [
       {
         "day": 9,
-        "dateLabel": "",
-        "cityLabel": "塞維爾",
-        "title": "拉各斯（Lagos）→ 塞維爾（交通日）",
+        "dateLabel": "塞維爾",
+        "cityLabel": "{{bi:拉各斯",
+        "title": "Lagos}}→ 塞維爾（交通日）",
         "tags": [
           "travel_day"
         ],
@@ -266,9 +266,9 @@ export const ITINERARY_PHASES: ItineraryPhase[] = [
       },
       {
         "day": 11,
-        "dateLabel": "",
-        "cityLabel": "格拉納達",
-        "title": "阿爾罕布拉宮（WOW）",
+        "dateLabel": "格拉納達",
+        "cityLabel": "{{bi:阿爾罕布拉宮",
+        "title": "WOW}}",
         "tags": [
           "wow",
           "ticket"
@@ -328,9 +328,9 @@ export const ITINERARY_PHASES: ItineraryPhase[] = [
           "ticket"
         ],
         "summary": {
-          "morning": "索菲亞王后國家藝術中心（Reina Sofía）",
+          "morning": "{{bi:索菲亞王后國家藝術中心|Reina Sofía}}",
           "noon": "阿托查熱帶花園/市集",
-          "evening": "麗池公園（Retiro）＋ Gran Vía 夜景（或 Debod 夕陽）"
+          "evening": "{{bi:麗池公園|Retiro}}＋ Gran Vía 夜景（或 Debod 夕陽）"
         },
         "details": {
           "notes": [

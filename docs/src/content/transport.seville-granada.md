@@ -1,10 +1,10 @@
 ---
 schema: v1
 segmentId: seville-granada
-title: 塞維爾（Seville）→ 格拉納達（Granada）
+title: {{bi:塞維爾|Seville}}→ {{bi:格拉納達|Granada}}
 ---
 
-# 塞維爾（Seville）→ 格拉納達（Granada）
+# {{bi:塞維爾|Seville}}→ {{bi:格拉納達|Granada}}
 
 讀法：先看 `tldr` 抓結論；再看 `options`（bus/train）走細節。
 
